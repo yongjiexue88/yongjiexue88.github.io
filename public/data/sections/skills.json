@@ -1,0 +1,244 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Skills",
+                "title_short_nav": "Skills",
+                "title_long_prefix": "Explore",
+                "title_long": "My {{Skill Set}}"
+            },
+            "zh": {
+                "title_short": "\u4e13\u4e1a\u6280\u80fd",
+                "title_short_nav": "\u4e13\u4e1a\u6280\u80fd",
+                "title_long_prefix": "\u63a2\u7d22",
+                "title_long": "\u6211\u7684 {{\u6280\u672f\u6808}}"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-server",
+                    "locales": {
+                        "en": {
+                            "title": "{{Backend}} & Cloud",
+                            "text": "Building robust, globally distributed systems using Node.js, Python, and GCP."
+                        },
+                        "zh": {
+                            "title": "{{\u540e\u7aef}} \u4e0e\u4e91\u539f\u751f",
+                            "text": "\u4f7f\u7528 Node.js\u3001Python \u548c GCP \u6784\u5efa\u9ad8\u53ef\u7528\u7684\u5168\u7403\u5206\u5e03\u5f0f\u7cfb\u7edf\u3002"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-layer-group",
+                    "locales": {
+                        "en": {
+                            "title": "{{Frontend}} Architecture",
+                            "text": "Designing highly reactive Single Page Applications employing React and Angular."
+                        },
+                        "zh": {
+                            "title": "{{\u524d\u7aef}} \u67b6\u6784",
+                            "text": "\u4f7f\u7528 React \u548c Angular \u8bbe\u8ba1\u5feb\u901f\u54cd\u5e94\u7684\u73b0\u4ee3\u5355\u9875\u5e94\u7528\u3002"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-microchip",
+                    "locales": {
+                        "en": {
+                            "title": "{{AI}} & ML Systems",
+                            "text": "Deep experience deploying LLMs, RAG semantics, and generative orchestrators."
+                        },
+                        "zh": {
+                            "title": "{{AI}} \u4e0e\u673a\u5668\u5b66\u4e60\u7cfb\u7edf",
+                            "text": "\u5728\u90e8\u7f72 LLMs\u3001RAG \u8bed\u4e49\u6a21\u578b\u53ca\u751f\u6210\u5f0f AI \u7f16\u6392\u5668\u65b9\u9762\u6709\u6781\u5176\u6df1\u5165\u7684\u7ecf\u9a8c\u3002"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {
+                    "title": "Backend & Cloud Stack"
+                },
+                "zh": {
+                    "title": "\u540e\u7aef\u4e0e\u4e91\u539f\u751f\u6280\u672f"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-brands fa-node-js",
+                    "faIconColors": {
+                        "fill": "#339933"
+                    },
+                    "percentage": 99,
+                    "locales": {
+                        "en": {
+                            "title": "Node.js & FastAPI",
+                            "text": "Core expertise for building real-time websockets and REST APIs."
+                        },
+                        "zh": {
+                            "title": "Node.js & FastAPI",
+                            "text": "\u6784\u5efa\u5b9e\u65f6 websockets \u548c REST API \u7684\u6838\u5fc3\u4e13\u957f\u3002"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-brands fa-python",
+                    "faIconColors": {
+                        "fill": "#306998"
+                    },
+                    "percentage": 95,
+                    "locales": {
+                        "en": {
+                            "title": "Python",
+                            "text": "Driving AI pipelines, analytics dashboards, and massive background pipelines."
+                        },
+                        "zh": {
+                            "title": "Python",
+                            "text": "\u8d1f\u8d23\u9a71\u52a8 AI \u6d41\u6c34\u7ebf\u3001\u6307\u6807\u6d1e\u5bdf\u9762\u677f\u53ca\u65f6\u5ef6\u654f\u611f\u7684\u540e\u53f0\u4efb\u52a1\u3002"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {
+                        "fill": "#4479A1"
+                    },
+                    "percentage": 92,
+                    "locales": {
+                        "en": {
+                            "title": "PostgreSQL & Redis",
+                            "text": "Scaling vector DBs and in-memory caches."
+                        },
+                        "zh": {
+                            "title": "PostgreSQL & Redis",
+                            "text": "\u64c5\u957f\u4f18\u5316\u5411\u91cf\u6570\u636e\u5e93\u548c\u5185\u5b58\u7f13\u5b58\u7b56\u7565\u3002"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-brands fa-google",
+                    "faIconColors": {
+                        "fill": "#4285F4"
+                    },
+                    "percentage": 88,
+                    "locales": {
+                        "en": {
+                            "title": "Google Cloud",
+                            "text": "GKE, Cloud Run, Firestore."
+                        },
+                        "zh": {
+                            "title": "Google Cloud",
+                            "text": "\u719f\u7ec3\u638c\u63e1 GKE, Cloud Run \u548c Firestore \u670d\u52a1\u3002"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {
+                    "title": "Frontend Stack"
+                },
+                "zh": {
+                    "title": "\u524d\u7aef\u6280\u672f\u6808"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-brands fa-react",
+                    "faIconColors": {
+                        "fill": "#61DAFB"
+                    },
+                    "percentage": 99,
+                    "locales": {
+                        "en": {
+                            "title": "React",
+                            "text": "Advanced state management with Redux/React Query."
+                        },
+                        "zh": {
+                            "title": "React",
+                            "text": "\u7cbe\u901a\u8fd0\u7528 Redux/React Query \u638c\u63a7\u9ad8\u7ea7\u72b6\u6001\u7ba1\u7406\u3002"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-brands fa-angular",
+                    "faIconColors": {
+                        "fill": "#DD0031"
+                    },
+                    "percentage": 90,
+                    "locales": {
+                        "en": {
+                            "title": "Angular",
+                            "text": "Upgraded legacy ecosystems to Modern Angular (17+)."
+                        },
+                        "zh": {
+                            "title": "Angular",
+                            "text": "\u4e3b\u5bfc\u5c06\u5e9e\u5927\u7956\u4f20\u67b6\u6784\u5347\u7ea7\u81f3\u73b0\u4ee3\u5316 Angular (17+)\u3002"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-brands fa-js",
+                    "faIconColors": {
+                        "fill": "#F7DF1E"
+                    },
+                    "percentage": 95,
+                    "locales": {
+                        "en": {
+                            "title": "TypeScript",
+                            "text": "Type-safety across massive monorepos."
+                        },
+                        "zh": {
+                            "title": "TypeScript",
+                            "text": "\u5728\u5927\u578b\u4ee3\u7801\u5e93\u4e2d\u5168\u9762\u5f15\u5165\u9759\u6001\u7c7b\u578b\u5b89\u5168\u9632\u62a4\u3002"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

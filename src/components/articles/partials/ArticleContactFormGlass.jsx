@@ -1,0 +1,64 @@
+import "./ArticleContactFormGlass.scss"
+import React, {useState} from 'react'
+import { Parallax } from 'react-next-parallax'
+import { useLanguage } from "/src/providers/LanguageProvider.jsx"
+import StandardButton from "/src/components/buttons/StandardButton.jsx"
+
+export default function ArticleContactFormGlass({ name, setName, email, setEmail, message, setMessage }) {
+    const language = useLanguage()
+
+    return (
+        <div className="contact-glass-parallax-wrapper">
+            <div className="contact-glass-container">
+                <h2 className="contact-glass-title">
+                    SEND ME A MESSAGE
+                </h2>
+
+                <div className="contact-glass-form-group">
+                    <i className="fa-solid fa-user contact-glass-icon"></i>
+                    <input 
+                        type="text" 
+                        className="contact-glass-input" 
+                        placeholder="Your Name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <div className="contact-glass-form-group">
+                    <i className="fa-solid fa-envelope contact-glass-icon"></i>
+                    <input 
+                        type="email" 
+                        className="contact-glass-input" 
+                        placeholder="Email Address"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <div className="contact-glass-form-group-textarea">
+                    <textarea 
+                        className="contact-glass-input" 
+                        placeholder="Message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        rows={5}
+                        required
+                    />
+                </div>
+
+                <div className="contact-glass-submit-wrapper">
+                    <StandardButton 
+                        type="submit"
+                        variant="primary"
+                        faIcon="fa-solid fa-paper-plane"
+                        label="SEND MESSAGE"
+                        className="contact-glass-submit-btn"
+                    />
+                </div>
+            </div>
+        </div>
+    )
+}
