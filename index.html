@@ -1,123 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yongjie Xue | Personal Website</title>
-    <meta
-      name="description"
-      content="Personal website for Yongjie Xue, focused on software engineering, product delivery, and modern web systems."
-    >
-    <meta name="theme-color" content="#f4efe5">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
-      rel="stylesheet"
-    >
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top">YX</a>
-        <nav class="site-nav">
-          <a href="#about">About</a>
-          <a href="#focus">Focus</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Yongjie Xue | Full Stack Engineer</title>
 
-      <main id="top">
-        <section class="hero">
-          <p class="eyebrow">Personal website</p>
-          <h1>Yongjie Xue builds thoughtful software for the web.</h1>
-          <p class="hero-copy">
-            This is a simple home base for my work, interests, and future projects.
-            I care about practical engineering, clear interfaces, and shipping things
-            that people can actually use.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/yongjiexue88">GitHub</a>
-            <a class="button button-secondary" href="#contact">Say hello</a>
-          </div>
-          <div class="hero-grid" aria-label="Highlights">
-            <article class="hero-card">
-              <span class="card-label">Work style</span>
-              <p>Hands-on, product minded, and focused on usable outcomes.</p>
-            </article>
-            <article class="hero-card">
-              <span class="card-label">Interests</span>
-              <p>Full-stack development, AI tooling, front-end systems, and clean deployment flows.</p>
-            </article>
-            <article class="hero-card">
-              <span class="card-label">Current goal</span>
-              <p>Keep this site as a lightweight place to share projects and experiments.</p>
-            </article>
-          </div>
-        </section>
+        <!-- FavIcon -->
+        <link rel="icon" type="image/svg+xml" href="/images/svg/logo.svg" />
 
-        <section class="section" id="about">
-          <div class="section-heading">
-            <p class="eyebrow">About</p>
-            <h2>A clean starting point for a personal site.</h2>
-          </div>
-          <div class="section-content split">
-            <p>
-              This page is intentionally simple. It gives you a polished landing page
-              today, while keeping the structure easy to expand later with projects,
-              writing, a resume, or a contact form.
-            </p>
-            <p>
-              Everything here is static HTML, CSS, and a tiny bit of JavaScript, so it
-              deploys directly on GitHub Pages with no build pipeline required.
-            </p>
-          </div>
-        </section>
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://yongjiexue88.github.io/" />
 
-        <section class="section" id="focus">
-          <div class="section-heading">
-            <p class="eyebrow">Focus</p>
-            <h2>What this site can grow into.</h2>
-          </div>
-          <div class="tiles">
-            <article class="tile">
-              <h3>Projects</h3>
-              <p>Showcase selected work with short case studies, screenshots, and links.</p>
-            </article>
-            <article class="tile">
-              <h3>Experience</h3>
-              <p>Add a concise timeline covering technical roles, achievements, and tools.</p>
-            </article>
-            <article class="tile">
-              <h3>Writing</h3>
-              <p>Publish notes on engineering decisions, experiments, and lessons learned.</p>
-            </article>
-          </div>
-        </section>
+        <!-- Meta: Configurations -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="format-detection" content="address=no"/>
+        <meta name="color-scheme" content="dark">
 
-        <section class="section section-accent" id="contact">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2>Open to collaboration and new ideas.</h2>
-          </div>
-          <div class="contact-panel">
-            <p>
-              The fastest way to reach me right now is through GitHub. This site can be
-              extended later with a dedicated email address, social links, and project details.
-            </p>
-            <a class="button button-primary" href="https://github.com/yongjiexue88">Visit my GitHub</a>
-          </div>
-        </section>
-      </main>
+        <!-- Meta: SEO -->
+        <meta name="description" content="The professional portfolio of Yongjie Xue, a Full Stack & AI Systems Engineer."/>
+        <meta name="keywords" content="yongjie xue, portfolio, full stack engineer, software developer, ai engineer"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="googlebot" content="index, follow"/>
+        <meta name="google" content="notranslate"/>
+        <meta name="author" content="Yongjie Xue"/>
+        <meta name="theme-color" content="#111111"/>
 
-      <footer class="site-footer">
-        <p>Yongjie Xue</p>
-        <p>Published on GitHub Pages</p>
-        <p>&copy; <span id="year"></span></p>
-      </footer>
-    </div>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yongjiexue88.github.io/" />
+        <meta property="og:title" content="Yongjie Xue | Full Stack Engineer" />
+        <meta property="og:description" content="The professional portfolio of Yongjie Xue, a Full Stack & AI Systems Engineer." />
+        <meta property="og:image" content="https://yongjiexue88.github.io/images/pictures/og-image.jpg" />
 
-    <script src="script.js"></script>
-  </body>
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://yongjiexue88.github.io/" />
+        <meta property="twitter:title" content="Yongjie Xue | Full Stack Engineer" />
+        <meta property="twitter:description" content="The professional portfolio of Yongjie Xue, a Full Stack & AI Systems Engineer." />
+        <meta property="twitter:image" content="https://yongjiexue88.github.io/images/pictures/og-image.jpg" />
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Yongjie Xue",
+            "description": "The professional portfolio of Yongjie Xue, a Full Stack & AI Systems Engineer.",
+            "url": "https://yongjiexue88.github.io/"
+        }
+        </script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Saira:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+    <body style="background-color: #111111">
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>

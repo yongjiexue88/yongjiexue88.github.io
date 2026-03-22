@@ -1,0 +1,52 @@
+{
+    "categories": [
+        {
+            "id": "home",
+            "faIcon": "fa-regular fa-user",
+            "locales": {
+                "en": {
+                    "title": "Home"
+                },
+                "zh": {
+                    "title": "主页"
+                }
+            }
+        },
+        {
+            "id": "background",
+            "faIcon": "fa-regular fa-clock",
+            "locales": {
+                "en": {
+                    "title": "History"
+                },
+                "zh": {
+                    "title": "履历"
+                }
+            }
+        },
+        {
+            "id": "showcase",
+            "faIcon": "fa-regular fa-folder-open",
+            "locales": {
+                "en": {
+                    "title": "Showcase"
+                },
+                "zh": {
+                    "title": "展示"
+                }
+            }
+        },
+        {
+            "id": "more",
+            "faIcon": "fa-regular fa-object-ungroup",
+            "locales": {
+                "en": {
+                    "title": "More"
+                },
+                "zh": {
+                    "title": "更多"
+                }
+            }
+        }
+    ]
+}
