@@ -25,6 +25,7 @@ export default class ArticleDataWrapper {
         this._section = section
 
         this.id = id
+        this.rawData = rawData
         this.component = rawData.component
         this.locales = this._parseLocales(rawData, language)
         this.settings = this._parseSettings(rawData)
