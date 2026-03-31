@@ -58,6 +58,10 @@
                     "Combine Two Tables": {
                         "thoughts": "这题的难点主要在于理解SQL中的`JOIN`操作，特别是`LEFT JOIN`（左连接）的用法。我们需要将`Person`表和`Address`表的数据合并起来。关键在于，即使`Address`表中没有某个人的地址信息，我们也需要保留`Person`表中这个人的所有信息（例如，他的`firstName`和`lastName`）。如果使用`INNER JOIN`（内连接），那么只有在两个表都有匹配项时才会返回结果，这样就会丢失没有地址的人的信息。而`LEFT JOIN`则能确保`Person`表（左表）的所有行都被包含，即使右表（`Address`表）没有匹配项，此时右表的列会显示为`NULL`。所以，理解并正确运用`LEFT JOIN`是解决此题的核心。\n\n请注意，此题是LeetCode的数据库题目，其解决方案是SQL查询语句，而非Java代码。因此，下面提供的是最优的SQL解决方案。",
                         "solution": "```sql\nSELECT\n    p.firstName,\n    p.lastName,\n    a.city,\n    a.state\nFROM\n    Person p\nLEFT JOIN\n    Address a ON p.personId = a.personId;\n```"
+                    },
+                    "Remove Duplicates from Sorted List": {
+                        "thoughts": "这题的难点在于如何正确地操作链表指针，在遍历过程中遇到连续重复的节点时，能够有效地跳过所有重复项，同时确保不丢失后续节点，并正确处理链表的各种边界情况（如空链表、只有一个节点、所有节点都重复等）。核心是当 `current.val` 等于 `current.next.val` 时，只移动 `current.next` 指针（`current.next = current.next.next`），而不移动 `current` 本身，直到 `current.val` 与 `current.next.val` 不再相等，这样才能处理多个连续重复的情况。",
+                        "solution": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode deleteDuplicates(ListNode head) {\n        // Handle edge cases: empty list or list with only one node\n        if (head == null || head.next == null) {\n            return head;\n        }\n\n        ListNode current = head;\n\n        // Iterate through the list until current or current.next is null\n        while (current != null && current.next != null) {\n            // If current node's value is the same as the next node's value\n            if (current.val == current.next.val) {\n                // Skip the duplicate node by pointing current.next to current.next.next\n                // We do NOT advance 'current' here because the new current.next\n                // might also be a duplicate of current.val\n                current.next = current.next.next;\n            } else {\n                // If values are different, no duplicate found, move to the next node\n                current = current.next;\n            }\n        }\n\n        return head;\n    }\n}\n"
                     }
                 },
                 "streakDays": 0,
@@ -305,6 +309,14 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Remove Duplicates from Sorted List",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "3/31/2026"
+                    },
                     {
                         "id": null,
                         "name": "Palindrome Number",
