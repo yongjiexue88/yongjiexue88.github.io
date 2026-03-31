@@ -612,3 +612,219 @@
     }
 }
 
+/* ============================
+   Clickable Rows & Icons
+   ============================ */
+.leetcode-problem-row-clickable {
+    cursor: pointer;
+    position: relative;
+    
+    &::after {
+        content: '\f054'; /* fa-chevron-right */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%) translateX(-10px);
+        opacity: 0;
+        color: var(--lc-accent);
+        font-size: 0.7rem;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        background: rgba(157, 255, 142, 0.08);
+        border-color: var(--lc-accent);
+        transform: translateX(6px);
+        box-shadow: 0 4px 12px rgba(157, 255, 142, 0.1);
+
+        &::after {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+    }
+}
+
+.leetcode-problem-note-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+    color: var(--lc-medium);
+    font-size: 0.8rem;
+    background: rgba(255, 192, 30, 0.15);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 192, 30, 0.3);
+}
+
+/* ============================
+   Note Modal Overlay
+   ============================ */
+.leetcode-modal-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: lcFadeIn 0.2s ease-out;
+    border-radius: 8px; /* Match Article padding if necessary */
+}
+
+.leetcode-modal-content {
+    background: var(--lc-bg-panel);
+    border: 1px solid var(--lc-border);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 650px;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(157, 255, 142, 0.1);
+    animation: lcModalSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: var(--lc-accent);
+        box-shadow: 0 0 10px var(--lc-accent);
+    }
+}
+
+@keyframes lcModalSlideIn {
+    from { opacity: 0; transform: scale(0.95) translateY(20px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.leetcode-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(157, 255, 142, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.leetcode-modal-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Orbitron', monospace;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--lc-text-primary);
+    
+    i {
+        color: var(--lc-accent);
+        font-size: 1.1rem;
+    }
+}
+
+.leetcode-modal-close {
+    background: none;
+    border: none;
+    color: var(--lc-text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+        color: var(--lc-hard);
+        transform: scale(1.1);
+    }
+}
+
+.leetcode-modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2); 
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--lc-border); 
+        border-radius: 3px;
+    }
+}
+
+.leetcode-modal-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.leetcode-modal-section-title {
+    font-family: 'Saira', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--lc-text-secondary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    i {
+        color: var(--lc-accent);
+        opacity: 0.8;
+    }
+}
+
+.leetcode-modal-text {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--lc-text-primary);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 14px 18px;
+    border-radius: 6px;
+    border-left: 3px solid var(--lc-medium);
+    white-space: pre-wrap; /* Preserve simple line breaks */
+}
+
+.leetcode-modal-code {
+    background: #0d0d0d;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    position: relative;
+    
+    pre {
+        margin: 0;
+        padding: 16px;
+        overflow-x: auto;
+        font-family: 'JetBrains Mono', Consolas, monospace;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        color: #e6e6e6;
+        
+        /* Basic scrollbar for code block */
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+        }
+    }
+}

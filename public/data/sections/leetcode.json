@@ -30,6 +30,36 @@
             "tracking": {
                 "username": "YongjieXue",
                 "profileUrl": "https://leetcode.com/u/YongjieXue",
+                "notes": {
+                    "Duplicate Emails": {
+                        "thoughts": "Since we need to find all unique emails that appear more than once, we can use a simple GROUP BY clause in SQL and then filter using HAVING COUNT() > 1.",
+                        "solution": "```sql\nSELECT email AS Email\nFROM Person\nGROUP BY email\nHAVING COUNT(email) > 1;\n```"
+                    },
+                    "Create Hello World Function": {
+                        "thoughts": "The optimal approach involves defining an outer function `createHelloWorld` that simply returns an inner, anonymous function. This inner function, when invoked, directly returns the string 'Hello World', fulfilling the problem's requirement with minimal overhead.",
+                        "solution": "```python\ndef createHelloWorld():\n    def helloWorld():\n        return \"Hello World\"\n    return helloWorld\n```"
+                    },
+                    "Regular Expression Matching": {
+                        "thoughts": "The optimal approach employs dynamic programming, where `dp[i][j]` signifies whether the prefix `s[0...i-1]` matches the pattern prefix `p[0...j-1]`. Transitions involve checking direct character matches or the `.` wildcard, and for `*`, considering both zero occurrences of the preceding character and one or more occurrences if the preceding character matches the current string character.",
+                        "solution": "class Solution:\n    def isMatch(self, s: str, p: str) -> bool:\n        m, n = len(s), len(p)\n        \n        # dp[i][j] will be true if s[0...i-1] matches p[0...j-1]\n        dp = [[False] * (n + 1) for _ in range(m + 1)]\n        \n        # Base case: empty string matches empty pattern\n        dp[0][0] = True\n        \n        # Handle patterns like a*, a*b*, etc. matching empty string\n        for j in range(1, n + 1):\n            if p[j-1] == '*':\n                dp[0][j] = dp[0][j-2] # Zero occurrences of p[j-2]\n                \n        for i in range(1, m + 1):\n            for j in range(1, n + 1):\n                if p[j-1] == s[i-1] or p[j-1] == '.':\n                    dp[i][j] = dp[i-1][j-1]\n                elif p[j-1] == '*':\n                    # Case 1: Zero occurrences of p[j-2]\n                    # e.g., s = \"a\", p = \"ab*\" -> dp[1][3] = dp[1][1] (match \"a\" with \"a\")\n                    dp[i][j] = dp[i][j-2]\n                    \n                    # Case 2: One or more occurrences of p[j-2]\n                    # This is only possible if p[j-2] matches s[i-1] or p[j-2] is '.'\n                    if p[j-2] == s[i-1] or p[j-2] == '.':\n                        # If p[j-2] matches s[i-1], then s[0...i-1] matches p[0...j-1]\n                        # if s[0...i-2] matches p[0...j-1] (one more char matched by '*')\n                        dp[i][j] = dp[i][j] or dp[i-1][j]\n                        \n        return dp[m][n]\n"
+                    },
+                    "Employees Earning More Than Their Managers": {
+                        "thoughts": "The optimal approach involves performing a self-join on the `Employee` table, linking each employee to their manager using `e1.managerId = e2.id`. Then, filter the results to include only those employees (`e1`) whose salary is strictly greater than their corresponding manager's salary (`e2.salary`).",
+                        "solution": "SELECT\n    e1.name AS Employee\nFROM\n    Employee e1\nJOIN\n    Employee e2 ON e1.managerId = e2.id\nWHERE\n    e1.salary > e2.salary;"
+                    },
+                    "Customers Who Never Order": {
+                        "thoughts": "The optimal approach involves performing a LEFT JOIN between the `Customers` and `Orders` tables on their respective customer IDs. Then, filter the results to identify customers where the `Orders.customerId` column is NULL, indicating they have no corresponding entries in the `Orders` table.",
+                        "solution": "SELECT c.name\nFROM Customers c\nLEFT JOIN Orders o ON c.id = o.customerId\nWHERE o.customerId IS NULL;"
+                    },
+                    "Palindrome Number": {
+                        "thoughts": "The optimal approach involves reversing only the second half of the number and comparing it with the first half. This avoids potential integer overflow if the full reversed number is too large and is more efficient than converting to a string.",
+                        "solution": "```python\nclass Solution:\n    def isPalindrome(self, x: int) -> bool:\n        # Special cases:\n        # As discussed above, when x < 0, x is not a palindrome.\n        # Also if the last digit of the number is 0, in order for it to be a palindrome,\n        # the first digit also needs to be 0. Only 0 itself satisfies this.\n        if x < 0 or (x % 10 == 0 and x != 0):\n            return False\n\n        reverted_number = 0\n        while x > reverted_number:\n            reverted_number = reverted_number * 10 + x % 10\n            x //= 10\n\n        # When the length is an odd number, we can get rid of the middle digit by reverted_number // 10\n        # For example, when the input is 12321, at the end of the while loop, x = 12, and reverted_number = 123\n        # Since the middle digit doesn't matter in a palindrome (it's always equal to itself),\n        # we can simply remove it from the reverted_number and then compare.\n        return x == reverted_number or x == reverted_number // 10\n\n```"
+                    },
+                    "Combine Two Tables": {
+                        "thoughts": "这题的难点主要在于理解SQL中的`JOIN`操作，特别是`LEFT JOIN`（左连接）的用法。我们需要将`Person`表和`Address`表的数据合并起来。关键在于，即使`Address`表中没有某个人的地址信息，我们也需要保留`Person`表中这个人的所有信息（例如，他的`firstName`和`lastName`）。如果使用`INNER JOIN`（内连接），那么只有在两个表都有匹配项时才会返回结果，这样就会丢失没有地址的人的信息。而`LEFT JOIN`则能确保`Person`表（左表）的所有行都被包含，即使右表（`Address`表）没有匹配项，此时右表的列会显示为`NULL`。所以，理解并正确运用`LEFT JOIN`是解决此题的核心。\n\n请注意，此题是LeetCode的数据库题目，其解决方案是SQL查询语句，而非Java代码。因此，下面提供的是最优的SQL解决方案。",
+                        "solution": "```sql\nSELECT\n    p.firstName,\n    p.lastName,\n    a.city,\n    a.state\nFROM\n    Person p\nLEFT JOIN\n    Address a ON p.personId = a.personId;\n```"
+                    }
+                },
                 "streakDays": 0,
                 "stats": {
                     "easy": 92,
@@ -39,145 +69,419 @@
                     "totalAttempted": 718
                 },
                 "activity": [
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [1, 0, 0, 0, 1, 0, 0],
-                    [0, 0, 0, 1, 0, 0, 0],
-                    [0, 0, 0, 0, 1, 0, 0],
-                    [1, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 1, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 1, 0, 0, 0, 0, 0],
-                    [0, 0, 1, 0, 0, 1, 0],
-                    [0, 2, 0, 1, 0, 0, 0],
-                    [0, 0, 1, 0, 1, 0, 0],
-                    [1, 0, 1, 0, 1, 0, 0],
-                    [0, 0, 0, 0, 0, 0, 0],
-                    [0, 0, 0, 4, 0, 0, 0]
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        2,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        1,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        4,
+                        0,
+                        0,
+                        0
+                    ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Palindrome Number",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "3/30/2026"
+                    },
                     {
                         "id": 183,
                         "name": "Customers Who Never Order",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["SQL", "Database"]
+                        "tags": [
+                            "SQL",
+                            "Database"
+                        ],
+                        "timestamp": "3/27/2026"
                     },
                     {
                         "id": 182,
                         "name": "Duplicate Emails",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["SQL", "Database"]
+                        "tags": [
+                            "SQL",
+                            "Database"
+                        ],
+                        "timestamp": "3/27/2026"
                     },
                     {
                         "id": 181,
                         "name": "Employees Earning More Than Their Managers",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["SQL", "Database"]
+                        "tags": [
+                            "SQL",
+                            "Database"
+                        ],
+                        "timestamp": "3/27/2026"
                     },
                     {
                         "id": 175,
                         "name": "Combine Two Tables",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["SQL", "Database"]
+                        "tags": [
+                            "SQL",
+                            "Database"
+                        ],
+                        "timestamp": "3/27/2026"
                     },
                     {
                         "id": 10,
                         "name": "Regular Expression Matching",
                         "difficulty": "Hard",
                         "status": "solved",
-                        "tags": ["String", "DP", "Recursion"]
+                        "tags": [
+                            "String",
+                            "DP",
+                            "Recursion"
+                        ],
+                        "timestamp": "10/26/2025"
                     },
                     {
                         "id": 2667,
                         "name": "Create Hello World Function",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["JavaScript"]
+                        "tags": [
+                            "JavaScript"
+                        ],
+                        "timestamp": "5/18/2025"
                     },
                     {
                         "id": 15,
                         "name": "3Sum",
                         "difficulty": "Medium",
                         "status": "solved",
-                        "tags": ["Array", "Two Pointers", "Sorting"]
+                        "tags": [
+                            "Array",
+                            "Two Pointers",
+                            "Sorting"
+                        ]
                     },
                     {
                         "id": 128,
                         "name": "Longest Consecutive Sequence",
                         "difficulty": "Medium",
                         "status": "solved",
-                        "tags": ["Array", "Hash Table"]
+                        "tags": [
+                            "Array",
+                            "Hash Table"
+                        ]
                     },
                     {
                         "id": 238,
                         "name": "Product of Array Except Self",
                         "difficulty": "Medium",
                         "status": "solved",
-                        "tags": ["Array", "Prefix Sum"]
+                        "tags": [
+                            "Array",
+                            "Prefix Sum"
+                        ]
                     },
                     {
                         "id": 347,
                         "name": "Top K Frequent Elements",
                         "difficulty": "Medium",
                         "status": "solved",
-                        "tags": ["Array", "Hash Table", "Heap"]
+                        "tags": [
+                            "Array",
+                            "Hash Table",
+                            "Heap"
+                        ]
                     },
                     {
                         "id": 1,
                         "name": "Two Sum",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["Array", "Hash Table"]
+                        "tags": [
+                            "Array",
+                            "Hash Table"
+                        ]
                     },
                     {
                         "id": 242,
                         "name": "Valid Anagram",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["Hash Table", "String", "Sorting"]
+                        "tags": [
+                            "Hash Table",
+                            "String",
+                            "Sorting"
+                        ]
                     },
                     {
                         "id": 75,
                         "name": "Sort Colors",
                         "difficulty": "Medium",
                         "status": "solved",
-                        "tags": ["Array", "Two Pointers", "Sorting"]
+                        "tags": [
+                            "Array",
+                            "Two Pointers",
+                            "Sorting"
+                        ]
                     },
                     {
                         "id": 912,
                         "name": "Sort an Array",
                         "difficulty": "Medium",
                         "status": "solved",
-                        "tags": ["Array", "Sorting"]
+                        "tags": [
+                            "Array",
+                            "Sorting"
+                        ]
                     },
                     {
                         "id": 706,
                         "name": "Design HashMap",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["Hash Table", "Design"]
+                        "tags": [
+                            "Hash Table",
+                            "Design"
+                        ]
                     },
                     {
                         "id": 705,
                         "name": "Design HashSet",
                         "difficulty": "Easy",
                         "status": "solved",
-                        "tags": ["Hash Table", "Design"]
+                        "tags": [
+                            "Hash Table",
+                            "Design"
+                        ]
                     }
                 ]
             },

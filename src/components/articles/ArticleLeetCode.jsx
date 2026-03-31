@@ -23,6 +23,7 @@ function ArticleLeetCode({ dataWrapper, id }) {
 
     // Fallback to static JSON data if API fails
     const fallbackData = trackingConfig
+    const [selectedNote, setSelectedNote] = useState(null)
 
     const fetchLeetCodeData = useCallback(async () => {
         if (!username) {
@@ -55,7 +56,7 @@ function ArticleLeetCode({ dataWrapper, id }) {
             const stats = parseSolvedStats(solved)
 
             // Parse recent submissions into problem list
-            const recentProblems = parseSubmissions(submissions)
+            const recentProblems = parseSubmissions(submissions, fallbackData)
 
             // Parse submission calendar into heatmap
             const activity = parseCalendar(calendar)
@@ -86,6 +87,7 @@ function ArticleLeetCode({ dataWrapper, id }) {
                 streakDays: liveData.streakDays,
                 activity: liveData.activity,
                 recentProblems: liveData.recentProblems,
+                notes: fallbackData.notes || {},
                 profileUrl
             }
         }
@@ -95,9 +97,19 @@ function ArticleLeetCode({ dataWrapper, id }) {
             streakDays: fallbackData.streakDays || 0,
             activity: fallbackData.activity || [],
             recentProblems: fallbackData.recentProblems || [],
+            notes: fallbackData.notes || {},
             profileUrl
         }
     }, [liveData, fallbackData, profileUrl])
+
+    // Close modal on escape key
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') setSelectedNote(null)
+        }
+        window.addEventListener('keydown', handleKeyDown)
+        return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [])
 
     return (
         <Article id={dataWrapper.uniqueId}
@@ -198,9 +210,17 @@ function ArticleLeetCode({ dataWrapper, id }) {
                                 </span>
                             </div>
                             <div className="leetcode-problems-list">
-                                {displayData.recentProblems.map((problem, idx) => (
-                                    <LeetCodeProblemRow key={idx} problem={problem} />
-                                ))}
+                                {displayData.recentProblems.map((problem, idx) => {
+                                    const note = displayData.notes[problem.name]
+                                    return (
+                                        <LeetCodeProblemRow 
+                                            key={idx} 
+                                            problem={problem} 
+                                            note={note}
+                                            onClick={note ? () => setSelectedNote({ problemName: problem.name, ...note }) : undefined}
+                                        />
+                                    )
+                                })}
                                 {displayData.recentProblems.length === 0 && (
                                     <div className="leetcode-empty-state">
                                         <i className="fa-solid fa-code"/>
@@ -220,6 +240,14 @@ function ArticleLeetCode({ dataWrapper, id }) {
                             <span className="leetcode-profile-link-arrow">&gt;&gt;</span>
                         </a>
                     </>
+                )}
+
+                {/* Note Modal Overlay */}
+                {selectedNote && (
+                    <LeetCodeNoteModal 
+                        note={selectedNote} 
+                        onClose={() => setSelectedNote(null)} 
+                    />
                 )}
             </div>
         </Article>
@@ -265,28 +293,90 @@ function parseSolvedStats(data) {
     return { easy, medium, hard, totalSolved, totalAttempted: totalQuestions }
 }
 
-function parseSubmissions(data) {
+function parseSubmissions(data, fallbackData = {}) {
     const submissions = data?.data?.recentSubmissionList || data?.submission || []
+    const staticProblems = fallbackData.recentProblems || []
+    const notes = fallbackData.notes || {}
     
-    const seen = new Set()
-    const problems = []
+    // Create a map to combine data
+    const mergedMap = new Map()
 
-    for (const sub of submissions) {
-        const title = sub.title || sub.titleSlug || ''
-        if (seen.has(title)) continue
-        seen.add(title)
-
-        problems.push({
-            id: null,
-            name: title,
-            difficulty: sub.difficulty || '',
-            status: sub.statusDisplay === 'Accepted' ? 'solved' : 'attempted',
-            tags: [],
-            timestamp: sub.timestamp ? new Date(parseInt(sub.timestamp) * 1000).toLocaleDateString() : ''
-        })
+    // 1. Add static fallback data
+    for (const sub of staticProblems) {
+        if (sub.name) {
+            mergedMap.set(sub.name, { 
+                id: sub.id || null,
+                name: sub.name,
+                difficulty: sub.difficulty || '',
+                status: sub.status || 'solved',
+                tags: sub.tags || [],
+                timestamp: sub.timestamp || '',
+                retention: sub.retention
+            })
+        }
     }
 
-    return problems.slice(0, 15)
+    // 2. Add properties for any problem that has notes
+    for (const noteName of Object.keys(notes)) {
+        if (!mergedMap.has(noteName)) {
+            mergedMap.set(noteName, {
+                id: null,
+                name: noteName,
+                difficulty: '',
+                status: 'solved',
+                tags: [],
+                timestamp: ''
+            })
+        }
+    }
+
+    // 3. Keep track of live submission order
+    const liveOrder = []
+    
+    for (const sub of submissions) {
+        const title = sub.title || sub.titleSlug || ''
+        if (!title) continue
+        
+        if (!liveOrder.includes(title)) {
+            liveOrder.push(title)
+        }
+
+        const timestamp = sub.timestamp ? new Date(parseInt(sub.timestamp) * 1000).toLocaleDateString() : ''
+        const status = sub.statusDisplay === 'Accepted' ? 'solved' : 'attempted'
+        
+        if (mergedMap.has(title)) {
+            const existing = mergedMap.get(title)
+            if (!existing.timestamp) existing.timestamp = timestamp
+            existing.status = status
+            if (sub.difficulty && !existing.difficulty) existing.difficulty = sub.difficulty
+        } else {
+            mergedMap.set(title, {
+                id: null,
+                name: title,
+                difficulty: sub.difficulty || '',
+                status,
+                tags: [],
+                timestamp
+            })
+        }
+    }
+
+    // Construct final array prioritizing live order first
+    const finalProblems = []
+    
+    for (const title of liveOrder) {
+        finalProblems.push(mergedMap.get(title))
+        mergedMap.delete(title) 
+    }
+    
+    // Next, cleanly push all the older pinned problems
+    const remaining = Array.from(mergedMap.values())
+    // Sort the older ones alphabetically
+    remaining.sort((a, b) => a.name.localeCompare(b.name))
+    
+    finalProblems.push(...remaining)
+
+    return finalProblems
 }
 
 function parseCalendar(data) {
@@ -422,7 +512,7 @@ function LeetCodeHeatmap({ activity }) {
     )
 }
 
-function LeetCodeProblemRow({ problem }) {
+function LeetCodeProblemRow({ problem, note, onClick }) {
     const difficultyClass = `leetcode-difficulty-${problem.difficulty?.toLowerCase() || 'easy'}`
     const statusIcon = problem.status === 'solved' 
         ? 'fa-solid fa-circle-check' 
@@ -431,13 +521,18 @@ function LeetCodeProblemRow({ problem }) {
         : 'fa-regular fa-circle'
 
     return (
-        <div className="leetcode-problem-row">
+        <div className={`leetcode-problem-row ${note ? 'leetcode-problem-row-clickable' : ''}`} onClick={onClick}>
             <div className="leetcode-problem-status">
                 <i className={statusIcon}/>
             </div>
             <div className="leetcode-problem-info">
                 {problem.id && <span className="leetcode-problem-id">#{problem.id}</span>}
                 <span className="leetcode-problem-name">{problem.name}</span>
+                {note && (
+                    <span className="leetcode-problem-note-icon" title="Notes Available">
+                        <i className="fa-solid fa-note-sticky" />
+                    </span>
+                )}
             </div>
             <div className="leetcode-problem-meta">
                 {problem.tags && problem.tags.map((tag, idx) => (
@@ -460,6 +555,48 @@ function LeetCodeProblemRow({ problem }) {
                     <span className="leetcode-retention-value">{problem.retention}%</span>
                 </div>
             )}
+        </div>
+    )
+}
+
+function LeetCodeNoteModal({ note, onClose }) {
+    return (
+        <div className="leetcode-modal-overlay" onClick={onClose}>
+            <div className="leetcode-modal-content" onClick={(e) => e.stopPropagation()}>
+                <div className="leetcode-modal-header">
+                    <div className="leetcode-modal-title">
+                        <i className="fa-solid fa-book-journal-whills" />
+                        <span>Notes: {note.problemName}</span>
+                    </div>
+                    <button className="leetcode-modal-close" onClick={onClose}>
+                        <i className="fa-solid fa-xmark" />
+                    </button>
+                </div>
+                
+                <div className="leetcode-modal-body">
+                    {note.thoughts && (
+                        <div className="leetcode-modal-section">
+                            <h4 className="leetcode-modal-section-title">
+                                <i className="fa-solid fa-brain" /> General Thoughts
+                            </h4>
+                            <div className="leetcode-modal-text">
+                                {note.thoughts}
+                            </div>
+                        </div>
+                    )}
+                    
+                    {note.solution && (
+                        <div className="leetcode-modal-section">
+                            <h4 className="leetcode-modal-section-title">
+                                <i className="fa-solid fa-code" /> Solution
+                            </h4>
+                            <div className="leetcode-modal-code">
+                                <pre><code>{note.solution}</code></pre>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
         </div>
     )
 }
