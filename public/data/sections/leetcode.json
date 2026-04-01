@@ -62,6 +62,22 @@
                     "Remove Duplicates from Sorted List": {
                         "thoughts": "这题的难点在于如何正确地操作链表指针，在遍历过程中遇到连续重复的节点时，能够有效地跳过所有重复项，同时确保不丢失后续节点，并正确处理链表的各种边界情况（如空链表、只有一个节点、所有节点都重复等）。核心是当 `current.val` 等于 `current.next.val` 时，只移动 `current.next` 指针（`current.next = current.next.next`），而不移动 `current` 本身，直到 `current.val` 与 `current.next.val` 不再相等，这样才能处理多个连续重复的情况。",
                         "solution": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode deleteDuplicates(ListNode head) {\n        // Handle edge cases: empty list or list with only one node\n        if (head == null || head.next == null) {\n            return head;\n        }\n\n        ListNode current = head;\n\n        // Iterate through the list until current or current.next is null\n        while (current != null && current.next != null) {\n            // If current node's value is the same as the next node's value\n            if (current.val == current.next.val) {\n                // Skip the duplicate node by pointing current.next to current.next.next\n                // We do NOT advance 'current' here because the new current.next\n                // might also be a duplicate of current.val\n                current.next = current.next.next;\n            } else {\n                // If values are different, no duplicate found, move to the next node\n                current = current.next;\n            }\n        }\n\n        return head;\n    }\n}\n"
+                    },
+                    "Contains Duplicate": {
+                        "thoughts": "这题的难点不在于理解问题本身（判断数组中是否有重复元素），而在于如何找到最高效的解决方案。最直观的方法是双重循环（O(n^2)），但效率很低。稍微优化一点可以先排序（O(n log n)），再遍历一次。但最优解是利用哈希表（HashSet）的特性：它能以平均O(1)的时间复杂度进行插入和查找。所以，难点在于想到并熟练运用哈希表这种数据结构，将时间复杂度优化到O(n)，这是解决这类“查找是否存在”问题的常见且高效模式。",
+                        "solution": "```java\nimport java.util.HashSet;\nimport java.util.Set;\n\nclass Solution {\n    public boolean containsDuplicate(int[] nums) {\n        Set<Integer> seen = new HashSet<>();\n        for (int num : nums) {\n            // 如果集合中已经包含当前数字，说明找到了重复项\n            if (seen.contains(num)) {\n                return true;\n            }\n            // 否则，将当前数字添加到集合中\n            seen.add(num);\n        }\n        // 遍历完所有数字都没有找到重复项\n        return false;\n    }\n}\n```"
+                    },
+                    "Valid Anagram": {
+                        "thoughts": "这题的难点不在于理解什么是字母异位词（即两个字符串包含相同字符，且每个字符的数量也相同），而在于如何高效地判断这一点。最直观的方法可能是将两个字符串排序后进行比较，但排序的时间复杂度是 O(N log N)。更优的解法是利用哈希表或固定大小的数组（因为题目通常限定为小写英文字母，所以一个大小为26的数组就足够了）来统计字符频率。通过遍历第一个字符串增加字符计数，再遍历第二个字符串减少字符计数，最后检查所有计数是否都为零，可以将时间复杂度优化到 O(N)，同时空间复杂度为 O(1)（对于固定字符集）。",
+                        "solution": "```java\nclass Solution {\n    public boolean isAnagram(String s, String t) {\n        if (s.length() != t.length()) {\n            return false;\n        }\n\n        // Using an array of size 26 for lowercase English letters\n        int[] charCounts = new int[26];\n\n        // Increment counts for characters in string s\n        for (char c : s.toCharArray()) {\n            charCounts[c - 'a']++;\n        }\n\n        // Decrement counts for characters in string t\n        for (char c : t.toCharArray()) {\n            charCounts[c - 'a']--;\n        }\n\n        // Check if all counts are zero\n        // If they are, it means both strings had the same characters with the same frequencies\n        for (int count : charCounts) {\n            if (count != 0) {\n                return false;\n            }\n        }\n\n        return true;\n    }\n}\n```"
+                    },
+                    "Two Sum": {
+                        "thoughts": "这题的难点主要在于如何从一个直观但效率低下的 O(n^2) 双重循环解法，优化到更高效的 O(n) 解法。核心在于利用哈希表（HashMap）的快速查找特性。我们遍历数组时，对于每个数字，计算出它需要的“补数”（即 `target - 当前数字`）。如果这个补数已经在哈希表中，说明我们找到了答案；否则，就把当前数字和它的索引存入哈希表，以供后续查找。这样，每次查找和存储的平均时间复杂度都是 O(1)，从而将整体时间复杂度降到了 O(n)。",
+                        "solution": "```java\nimport java.util.HashMap;\nimport java.util.Map;\n\nclass Solution {\n    public int[] twoSum(int[] nums, int target) {\n        // 使用HashMap来存储数字及其对应的索引\n        // 键是数组中的数字，值是该数字的索引\n        Map<Integer, Integer> map = new HashMap<>();\n        \n        // 遍历数组\n        for (int i = 0; i < nums.length; i++) {\n            // 计算当前数字的“补数”，即我们需要找到的另一个数字\n            int complement = target - nums[i];\n            \n            // 检查HashMap中是否已经存在这个“补数”\n            if (map.containsKey(complement)) {\n                // 如果存在，说明我们找到了两个数字，返回它们的索引\n                return new int[] { map.get(complement), i };\n            }\n            \n            // 如果“补数”不存在，则将当前数字和它的索引存入HashMap\n            // 以便后续的数字可以查找它\n            map.put(nums[i], i);\n        }\n        \n        // 根据题目描述，总会恰好有一个有效解，所以理论上不会执行到这里。\n        // 如果没有找到解（例如题目条件允许无解），可以抛出异常或返回特定值。\n        throw new IllegalArgumentException(\"No two sum solution\");\n    }\n}\n```"
+                    },
+                    "Group Anagrams": {
+                        "thoughts": "这题的难点在于如何高效地判断两个字符串是否是字母异位词（anagrams），并以此为依据进行分组。核心思路是：如果两个字符串是字母异位词，那么它们包含的字符种类和数量都是完全相同的。因此，我们可以将每个字符串进行“标准化”处理，例如，将字符串中的字符按字母顺序排序。这样，所有互为字母异位词的字符串，经过排序后都会得到同一个“标准形式”的字符串。我们就可以用这个“标准形式”作为哈希表的键（key），将所有原始字符串存入对应的值（value）列表中，从而实现分组。",
+                        "solution": "```java\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\nclass Solution {\n    public List<List<String>> groupAnagrams(String[] strs) {\n        if (strs == null || strs.length == 0) {\n            return new ArrayList<>();\n        }\n\n        // Use a HashMap to store groups of anagrams.\n        // The key will be the sorted version of a string (canonical form).\n        // The value will be a list of original strings that are anagrams.\n        Map<String, List<String>> anagramGroups = new HashMap<>();\n\n        for (String str : strs) {\n            // Convert the string to a character array to sort it.\n            char[] charArray = str.toCharArray();\n            // Sort the character array. This creates the canonical form.\n            Arrays.sort(charArray);\n            // Convert the sorted character array back to a string.\n            String sortedStr = new String(charArray);\n\n            // If the sorted string (key) is not yet in the map,\n            // create a new list for it.\n            if (!anagramGroups.containsKey(sortedStr)) {\n                anagramGroups.put(sortedStr, new ArrayList<>());\n            }\n            // Add the original string to the list associated with its sorted form.\n            anagramGroups.get(sortedStr).add(str);\n        }\n\n        // The result is a list of all the lists stored as values in the map.\n        return new ArrayList<>(anagramGroups.values());\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -311,6 +327,45 @@
                 "recentProblems": [
                     {
                         "id": null,
+                        "name": "Group Anagrams",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "3/31/2026"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Two Sum",
+                        "difficulty": "Easy",
+                        "status": "solved",
+                        "tags": [
+                            "Array",
+                            "Hash Table"
+                        ],
+                        "timestamp": "3/31/2026"
+                    },
+                    {
+                        "id": 242,
+                        "name": "Valid Anagram",
+                        "difficulty": "Easy",
+                        "status": "solved",
+                        "tags": [
+                            "Hash Table",
+                            "String",
+                            "Sorting"
+                        ],
+                        "timestamp": "3/31/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Contains Duplicate",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "3/31/2026"
+                    },
+                    {
+                        "id": null,
                         "name": "Remove Duplicates from Sorted List",
                         "difficulty": "",
                         "status": "solved",
@@ -431,27 +486,6 @@
                             "Array",
                             "Hash Table",
                             "Heap"
-                        ]
-                    },
-                    {
-                        "id": 1,
-                        "name": "Two Sum",
-                        "difficulty": "Easy",
-                        "status": "solved",
-                        "tags": [
-                            "Array",
-                            "Hash Table"
-                        ]
-                    },
-                    {
-                        "id": 242,
-                        "name": "Valid Anagram",
-                        "difficulty": "Easy",
-                        "status": "solved",
-                        "tags": [
-                            "Hash Table",
-                            "String",
-                            "Sorting"
                         ]
                     },
                     {
