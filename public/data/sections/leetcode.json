@@ -78,6 +78,10 @@
                     "Group Anagrams": {
                         "thoughts": "这题的难点在于如何高效地判断两个字符串是否是字母异位词（anagrams），并以此为依据进行分组。核心思路是：如果两个字符串是字母异位词，那么它们包含的字符种类和数量都是完全相同的。因此，我们可以将每个字符串进行“标准化”处理，例如，将字符串中的字符按字母顺序排序。这样，所有互为字母异位词的字符串，经过排序后都会得到同一个“标准形式”的字符串。我们就可以用这个“标准形式”作为哈希表的键（key），将所有原始字符串存入对应的值（value）列表中，从而实现分组。",
                         "solution": "```java\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\nclass Solution {\n    public List<List<String>> groupAnagrams(String[] strs) {\n        if (strs == null || strs.length == 0) {\n            return new ArrayList<>();\n        }\n\n        // Use a HashMap to store groups of anagrams.\n        // The key will be the sorted version of a string (canonical form).\n        // The value will be a list of original strings that are anagrams.\n        Map<String, List<String>> anagramGroups = new HashMap<>();\n\n        for (String str : strs) {\n            // Convert the string to a character array to sort it.\n            char[] charArray = str.toCharArray();\n            // Sort the character array. This creates the canonical form.\n            Arrays.sort(charArray);\n            // Convert the sorted character array back to a string.\n            String sortedStr = new String(charArray);\n\n            // If the sorted string (key) is not yet in the map,\n            // create a new list for it.\n            if (!anagramGroups.containsKey(sortedStr)) {\n                anagramGroups.put(sortedStr, new ArrayList<>());\n            }\n            // Add the original string to the list associated with its sorted form.\n            anagramGroups.get(sortedStr).add(str);\n        }\n\n        // The result is a list of all the lists stored as values in the map.\n        return new ArrayList<>(anagramGroups.values());\n    }\n}\n```"
+                    },
+                    "Top K Frequent Elements": {
+                        "thoughts": "这道题的难点主要在于如何高效地找出频率最高的K个元素。第一步统计每个数字的频率比较直接，使用哈希表（HashMap）即可在O(N)时间复杂度内完成。真正的挑战在于第二步：\n\n1.  **朴素方法（排序）：** 最直观的想法是把所有数字及其频率存入一个列表，然后按频率降序排序，取出前K个。这种方法的排序时间复杂度是O(M log M)，其中M是不同数字的数量，最坏情况下M接近N，所以是O(N log N)。这虽然能解决问题，但不是最优解。\n\n2.  **进阶方法（最小堆/优先队列）：** 针对“Top K”问题，最小堆（min-heap，Java中的PriorityQueue）是一个常用且高效的工具。我们可以遍历频率哈希表，将每个(数字, 频率)对加入一个大小为K的最小堆。如果堆的大小超过K，就移除堆顶元素（即频率最小的那个）。这样，堆中始终维护着当前遇到的频率最高的K个元素。这种方法的时间复杂度是O(N log K)，比直接排序要好。\n\n3.  **最优方法（桶排序/频率数组）：** 这才是这道题的真正“难点”和最优解法。它利用了频率的特性：一个数字的频率最大不会超过数组的长度N。我们可以创建一个大小为N+1的列表数组（或者说“桶”），`buckets[i]` 存储所有频率为 `i` 的数字。遍历频率哈希表，将每个数字放入其对应频率的桶中。最后，从 `N` 频率的桶开始，倒序遍历到 `1` 频率的桶，依次取出数字，直到收集到K个为止。这种方法的时间复杂度是O(N)，因为它避免了任何形式的比较排序，只是简单的哈希表操作和数组遍历，是最高效的解决方案。",
+                        "solution": "```java\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\nclass Solution {\n    public int[] topKFrequent(int[] nums, int k) {\n        // Step 1: Count the frequency of each number using a HashMap.\n        Map<Integer, Integer> freqMap = new HashMap<>();\n        for (int num : nums) {\n            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);\n        }\n\n        // Step 2: Create an array of lists (buckets) where the index represents the frequency.\n        // buckets[i] will store all numbers that appear 'i' times.\n        // The maximum possible frequency is nums.length.\n        List<Integer>[] buckets = new List[nums.length + 1];\n\n        // Step 3: Populate the buckets with numbers based on their frequencies.\n        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {\n            int num = entry.getKey();\n            int freq = entry.getValue();\n            if (buckets[freq] == null) {\n                buckets[freq] = new ArrayList<>();\n            }\n            buckets[freq].add(num);\n        }\n\n        // Step 4: Collect the top K frequent elements by iterating buckets from highest frequency to lowest.\n        List<Integer> resultList = new ArrayList<>();\n        // Iterate from the highest possible frequency down to 1.\n        for (int i = nums.length; i >= 1 && resultList.size() < k; i--) {\n            if (buckets[i] != null) {\n                for (int num : buckets[i]) {\n                    resultList.add(num);\n                    if (resultList.size() == k) {\n                        break; // Found K elements, no need to continue.\n                    }\n                }\n            }\n        }\n\n        // Convert the List<Integer> to int[] as required by the problem.\n        int[] resultArray = new int[k];\n        for (int i = 0; i < k; i++) {\n            resultArray[i] = resultList.get(i);\n        }\n\n        return resultArray;\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -326,12 +330,24 @@
                 ],
                 "recentProblems": [
                     {
+                        "id": 347,
+                        "name": "Top K Frequent Elements",
+                        "difficulty": "Medium",
+                        "status": "solved",
+                        "tags": [
+                            "Array",
+                            "Hash Table",
+                            "Heap"
+                        ],
+                        "timestamp": "4/1/2026"
+                    },
+                    {
                         "id": null,
                         "name": "Group Anagrams",
                         "difficulty": "",
                         "status": "solved",
                         "tags": [],
-                        "timestamp": "3/31/2026"
+                        "timestamp": "4/1/2026"
                     },
                     {
                         "id": 1,
@@ -475,17 +491,6 @@
                         "tags": [
                             "Array",
                             "Prefix Sum"
-                        ]
-                    },
-                    {
-                        "id": 347,
-                        "name": "Top K Frequent Elements",
-                        "difficulty": "Medium",
-                        "status": "solved",
-                        "tags": [
-                            "Array",
-                            "Hash Table",
-                            "Heap"
                         ]
                     },
                     {
