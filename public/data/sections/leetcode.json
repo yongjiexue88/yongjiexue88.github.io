@@ -82,6 +82,10 @@
                     "Top K Frequent Elements": {
                         "thoughts": "这道题的难点主要在于如何高效地找出频率最高的K个元素。第一步统计每个数字的频率比较直接，使用哈希表（HashMap）即可在O(N)时间复杂度内完成。真正的挑战在于第二步：\n\n1.  **朴素方法（排序）：** 最直观的想法是把所有数字及其频率存入一个列表，然后按频率降序排序，取出前K个。这种方法的排序时间复杂度是O(M log M)，其中M是不同数字的数量，最坏情况下M接近N，所以是O(N log N)。这虽然能解决问题，但不是最优解。\n\n2.  **进阶方法（最小堆/优先队列）：** 针对“Top K”问题，最小堆（min-heap，Java中的PriorityQueue）是一个常用且高效的工具。我们可以遍历频率哈希表，将每个(数字, 频率)对加入一个大小为K的最小堆。如果堆的大小超过K，就移除堆顶元素（即频率最小的那个）。这样，堆中始终维护着当前遇到的频率最高的K个元素。这种方法的时间复杂度是O(N log K)，比直接排序要好。\n\n3.  **最优方法（桶排序/频率数组）：** 这才是这道题的真正“难点”和最优解法。它利用了频率的特性：一个数字的频率最大不会超过数组的长度N。我们可以创建一个大小为N+1的列表数组（或者说“桶”），`buckets[i]` 存储所有频率为 `i` 的数字。遍历频率哈希表，将每个数字放入其对应频率的桶中。最后，从 `N` 频率的桶开始，倒序遍历到 `1` 频率的桶，依次取出数字，直到收集到K个为止。这种方法的时间复杂度是O(N)，因为它避免了任何形式的比较排序，只是简单的哈希表操作和数组遍历，是最高效的解决方案。",
                         "solution": "```java\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\nclass Solution {\n    public int[] topKFrequent(int[] nums, int k) {\n        // Step 1: Count the frequency of each number using a HashMap.\n        Map<Integer, Integer> freqMap = new HashMap<>();\n        for (int num : nums) {\n            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);\n        }\n\n        // Step 2: Create an array of lists (buckets) where the index represents the frequency.\n        // buckets[i] will store all numbers that appear 'i' times.\n        // The maximum possible frequency is nums.length.\n        List<Integer>[] buckets = new List[nums.length + 1];\n\n        // Step 3: Populate the buckets with numbers based on their frequencies.\n        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {\n            int num = entry.getKey();\n            int freq = entry.getValue();\n            if (buckets[freq] == null) {\n                buckets[freq] = new ArrayList<>();\n            }\n            buckets[freq].add(num);\n        }\n\n        // Step 4: Collect the top K frequent elements by iterating buckets from highest frequency to lowest.\n        List<Integer> resultList = new ArrayList<>();\n        // Iterate from the highest possible frequency down to 1.\n        for (int i = nums.length; i >= 1 && resultList.size() < k; i--) {\n            if (buckets[i] != null) {\n                for (int num : buckets[i]) {\n                    resultList.add(num);\n                    if (resultList.size() == k) {\n                        break; // Found K elements, no need to continue.\n                    }\n                }\n            }\n        }\n\n        // Convert the List<Integer> to int[] as required by the problem.\n        int[] resultArray = new int[k];\n        for (int i = 0; i < k; i++) {\n            resultArray[i] = resultList.get(i);\n        }\n\n        return resultArray;\n    }\n}\n```"
+                    },
+                    "Max Consecutive Ones": {
+                        "thoughts": "这题的难点不在于复杂的算法或数据结构，而在于如何简洁有效地在一次遍历中管理两个关键状态：当前连续1的计数（`currentCount`）和迄今为止遇到的最大连续1的计数（`maxCount`）。当遍历到1时，`currentCount`增加；当遍历到0时，`currentCount`归零。同时，每次`currentCount`可能更新（或归零）时，都要与`maxCount`进行比较并更新`maxCount`。这是一个典型的单次遍历（one-pass）问题，考察的是对循环中状态变量的精确控制，以及处理数组末尾连续1的边界情况。",
+                        "solution": "```java\nclass Solution {\n    public int findMaxConsecutiveOnes(int[] nums) {\n        int maxCount = 0; // 用于存储全局最大连续1的个数\n        int currentCount = 0; // 用于存储当前连续1的个数\n\n        for (int num : nums) {\n            if (num == 1) {\n                currentCount++; // 如果是1，当前连续计数增加\n            } else {\n                // 如果是0，说明连续1中断了\n                // 在重置currentCount之前，先将当前连续计数与全局最大计数比较，更新maxCount\n                maxCount = Math.max(maxCount, currentCount);\n                currentCount = 0; // 重置当前连续计数\n            }\n        }\n\n        // 循环结束后，需要再次比较一次。因为如果数组以一个或多个1结尾，\n        // 那么最后一个currentCount可能还没有被用来更新maxCount。\n        maxCount = Math.max(maxCount, currentCount);\n\n        return maxCount;\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -329,6 +333,14 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Max Consecutive Ones",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/2/2026"
+                    },
                     {
                         "id": 347,
                         "name": "Top K Frequent Elements",
