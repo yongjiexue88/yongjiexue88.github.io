@@ -41,6 +41,27 @@ export const _fileUtils = {
 
     /**
      * @param {String} path
+     * @return {Promise<String|null>}
+     */
+    loadText: async (path) => {
+        const resolvedPath = _fileUtils.resolvePath(path)
+
+        try {
+            const response = await fetch(resolvedPath)
+            if(!response.ok) {
+                return null
+            }
+
+            return await response.text()
+        }
+        catch (error) {
+            console.error(`Failed to load text from ${resolvedPath}:`, error)
+            return null
+        }
+    },
+
+    /**
+     * @param {String} path
      * @return {String}
      */
     resolvePath: (path) => {

@@ -49,6 +49,12 @@
             "faIcon": "fa-solid fa-rss"
         },
         {
+            "id": "system-design",
+            "categoryId": "more",
+            "jsonPath": "/data/sections/system-design.json",
+            "faIcon": "fa-solid fa-diagram-project"
+        },
+        {
             "id": "contact",
             "categoryId": "more",
             "jsonPath": "/data/sections/contact.json",
