@@ -6,7 +6,7 @@
         "version": "2.0.3"
     },
     "preloaderSettings": {
-        "enabled": true,
+        "enabled": false,
         "title": "Yongjie <strong>Xue</strong>",
         "subtitle": "Full Stack & AI Engineer",
         "logoOffset": {
