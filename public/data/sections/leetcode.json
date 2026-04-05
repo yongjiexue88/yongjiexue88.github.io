@@ -86,6 +86,22 @@
                     "Max Consecutive Ones": {
                         "thoughts": "这题的难点不在于复杂的算法或数据结构，而在于如何简洁有效地在一次遍历中管理两个关键状态：当前连续1的计数（`currentCount`）和迄今为止遇到的最大连续1的计数（`maxCount`）。当遍历到1时，`currentCount`增加；当遍历到0时，`currentCount`归零。同时，每次`currentCount`可能更新（或归零）时，都要与`maxCount`进行比较并更新`maxCount`。这是一个典型的单次遍历（one-pass）问题，考察的是对循环中状态变量的精确控制，以及处理数组末尾连续1的边界情况。",
                         "solution": "```java\nclass Solution {\n    public int findMaxConsecutiveOnes(int[] nums) {\n        int maxCount = 0; // 用于存储全局最大连续1的个数\n        int currentCount = 0; // 用于存储当前连续1的个数\n\n        for (int num : nums) {\n            if (num == 1) {\n                currentCount++; // 如果是1，当前连续计数增加\n            } else {\n                // 如果是0，说明连续1中断了\n                // 在重置currentCount之前，先将当前连续计数与全局最大计数比较，更新maxCount\n                maxCount = Math.max(maxCount, currentCount);\n                currentCount = 0; // 重置当前连续计数\n            }\n        }\n\n        // 循环结束后，需要再次比较一次。因为如果数组以一个或多个1结尾，\n        // 那么最后一个currentCount可能还没有被用来更新maxCount。\n        maxCount = Math.max(maxCount, currentCount);\n\n        return maxCount;\n    }\n}\n```"
+                    },
+                    "Product of Array Except Self": {
+                        "thoughts": "这题的难点在于，不能使用除法，并且要求在 O(n) 时间复杂度内完成。这意味着我们不能简单地计算所有数的总乘积再除以当前数。核心思路是对于每个位置，其结果等于它左边所有数的乘积乘以它右边所有数的乘积。我们可以通过两次遍历来实现：第一次从左到右计算每个位置左侧的乘积，存储在一个数组中；第二次从右到左计算每个位置右侧的乘积，并将其与之前存储的左侧乘积相乘，得到最终结果。",
+                        "solution": "```java\nclass Solution {\n    public int[] productExceptSelf(int[] nums) {\n        int n = nums.length;\n        int[] result = new int[n];\n\n        // Pass 1: Calculate prefix products\n        // result[i] will contain the product of all elements to the left of i\n        // For index 0, there are no elements to the left, so the product is 1.\n        result[0] = 1;\n        for (int i = 1; i < n; i++) {\n            result[i] = result[i - 1] * nums[i - 1];\n        }\n\n        // Pass 2: Calculate suffix products and combine with prefix products\n        // rightProduct will store the product of all elements to the right of the current index\n        int rightProduct = 1;\n        for (int i = n - 1; i >= 0; i--) {\n            // For the current index i, result[i] already holds the product of elements to its left.\n            // We multiply it by the product of elements to its right (rightProduct).\n            result[i] = result[i] * rightProduct;\n            // Update rightProduct for the next iteration (to the left)\n            rightProduct = rightProduct * nums[i];\n        }\n\n        return result;\n    }\n}\n```"
+                    },
+                    "Maximum Product Subarray": {
+                        "thoughts": "这题的难点主要在于处理负数。与“最大子数组和”问题（Maximum Subarray Sum）不同，负数在乘法中扮演着特殊的角色：两个负数相乘会得到一个正数。这意味着一个非常小的负数，在乘以另一个负数后，可能会变成一个非常大的正数，从而成为新的最大乘积。因此，我们不能只跟踪当前的最大乘积，还需要同时跟踪当前的最小乘积。当遇到一个负数时，当前的最大乘积可能会由之前的最小乘积乘以当前负数得到，而当前的最小乘积可能会由之前的最大乘积乘以当前负数得到。所以，在每一步，我们需要比较当前数字本身、当前数字乘以之前的最大乘积、以及当前数字乘以之前的最小乘积，来更新当前的最大和最小乘积，并用当前的最大乘积来更新全局的最大乘积。",
+                        "solution": "class Solution {\n    public int maxProduct(int[] nums) {\n        if (nums == null || nums.length == 0) {\n            return 0;\n        }\n\n        // max_so_far stores the maximum product ending at the current position\n        // min_so_far stores the minimum product ending at the current position\n        int max_so_far = nums[0];\n        int min_so_far = nums[0];\n        // result stores the overall maximum product found so far\n        int result = nums[0];\n\n        for (int i = 1; i < nums.length; i++) {\n            int curr = nums[i];\n            // We need to store max_so_far from the previous step\n            // because it will be used to calculate both new max_so_far and new min_so_far\n            // and max_so_far itself will be updated first.\n            int temp_max = max_so_far;\n\n            max_so_far = Math.max(curr, Math.max(temp_max * curr, min_so_far * curr));\n            min_so_far = Math.min(curr, Math.min(temp_max * curr, min_so_far * curr));\n\n            result = Math.max(result, max_so_far);\n        }\n\n        return result;\n    }\n}"
+                    },
+                    "Valid Sudoku": {
+                        "thoughts": "这题的难点主要不在于复杂的算法，而在于如何高效且正确地同时检查三个维度：行、列和3x3小九宫格。特别是如何将任意一个单元格 `(r, c)` 映射到它所属的3x3小九宫格的唯一索引（通常是 `(r / 3) * 3 + (c / 3)`），这是需要仔细思考和实现的。同时，为了避免重复检查，需要为每个行、列和九宫格维护一个记录已出现数字的数据结构（比如布尔数组或哈希集合），并确保在遍历过程中正确更新和查询这些数据。",
+                        "solution": "```java\nclass Solution {\n    public boolean isValidSudoku(char[][] board) {\n        // Three boolean arrays to keep track of seen numbers in rows, columns, and 3x3 subgrids.\n        // The first dimension (0-8) represents the row/column/box index.\n        // The second dimension (0-8) represents the digit (e.g., '1' maps to index 0, '9' maps to index 8).\n        boolean[][] rows = new boolean[9][9];\n        boolean[][] cols = new boolean[9][9];\n        boolean[][] boxes = new boolean[9][9]; // For 3x3 subgrids\n\n        for (int i = 0; i < 9; i++) {\n            for (int j = 0; j < 9; j++) {\n                char c = board[i][j];\n\n                if (c != '.') {\n                    int num = c - '1'; // Convert char '1'-'9' to int 0-8\n\n                    // Check row\n                    if (rows[i][num]) {\n                        return false;\n                    }\n                    rows[i][num] = true;\n\n                    // Check column\n                    if (cols[j][num]) {\n                        return false;\n                    }\n                    cols[j][num] = true;\n\n                    // Check 3x3 subgrid\n                    // Calculate the index for the current 3x3 box\n                    // There are 9 boxes, indexed from 0 to 8\n                    // Example: (0,0) -> box 0, (0,3) -> box 1, (3,0) -> box 3\n                    int boxIndex = (i / 3) * 3 + (j / 3);\n                    if (boxes[boxIndex][num]) {\n                        return false;\n                    }\n                    boxes[boxIndex][num] = true;\n                }\n            }\n        }\n\n        return true;\n    }\n}\n```"
+                    },
+                    "Longest Palindromic Substring": {
+                        "thoughts": "这题的难点主要在于如何高效地找到最长回文子串，避免重复计算。最直观的暴力解法是枚举所有可能的子串，然后对每个子串判断它是否是回文，这样时间复杂度会达到 O(N^3)，对于较长的字符串会超时。优化的关键在于利用回文串的对称性：一个回文串总是围绕着它的中心对称展开的。因此，我们可以枚举所有可能的“回文中心”，然后从中心向两边扩展来寻找最长的回文。回文中心有两种情况：单个字符（对应奇数长度的回文串，如 'aba' 中心是 'b'）或者两个字符之间的空隙（对应偶数长度的回文串，如 'abba' 中心是 'bb' 之间的空隙）。对每个这样的中心，我们向两边扩展，直到字符不匹配或者到达字符串边界。这种“中心扩展法”的时间复杂度是 O(N^2)，空间复杂度是 O(1)，是面试中最常见且被接受的优化方案。虽然还有更高级的 Manacher 算法可以达到 O(N) 的时间复杂度，但其实现复杂，通常不是这道题考察的重点，理解并实现 O(N^2) 的中心扩展法是主要的挑战。",
+                        "solution": "class Solution {\n    private int maxLength = 0;\n    private int start = 0;\n\n    public String longestPalindrome(String s) {\n        if (s == null || s.length() < 1) {\n            return \"\";\n        }\n\n        for (int i = 0; i < s.length(); i++) {\n            // 考虑以 s[i] 为中心的奇数长度回文串\n            expandAroundCenter(s, i, i);\n            // 考虑以 s[i] 和 s[i+1] 之间的空隙为中心的偶数长度回文串\n            expandAroundCenter(s, i, i + 1);\n        }\n\n        return s.substring(start, start + maxLength);\n    }\n\n    private void expandAroundCenter(String s, int left, int right) {\n        // 当 left 和 right 在字符串范围内，并且 s[left] == s[right] 时，继续向外扩展\n        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {\n            left--;\n            right++;\n        }\n\n        // 循环结束后，s[left+1 ... right-1] 是一个回文串\n        // 计算当前回文串的长度\n        int currentLength = right - 1 - (left + 1) + 1; // 等价于 right - 1 - left\n\n        // 如果当前回文串更长，则更新最长回文串的起始位置和长度\n        if (currentLength > maxLength) {\n            maxLength = currentLength;\n            start = left + 1; // 回文串的实际起始位置是 left + 1\n        }\n    }\n}"
                     }
                 },
                 "streakDays": 0,
@@ -335,6 +351,41 @@
                 "recentProblems": [
                     {
                         "id": null,
+                        "name": "Longest Palindromic Substring",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/4/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Valid Sudoku",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/4/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Maximum Product Subarray",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/4/2026"
+                    },
+                    {
+                        "id": 238,
+                        "name": "Product of Array Except Self",
+                        "difficulty": "Medium",
+                        "status": "solved",
+                        "tags": [
+                            "Array",
+                            "Prefix Sum"
+                        ],
+                        "timestamp": "4/4/2026"
+                    },
+                    {
+                        "id": null,
                         "name": "Max Consecutive Ones",
                         "difficulty": "",
                         "status": "solved",
@@ -493,16 +544,6 @@
                         "tags": [
                             "Array",
                             "Hash Table"
-                        ]
-                    },
-                    {
-                        "id": 238,
-                        "name": "Product of Array Except Self",
-                        "difficulty": "Medium",
-                        "status": "solved",
-                        "tags": [
-                            "Array",
-                            "Prefix Sum"
                         ]
                     },
                     {
