@@ -102,6 +102,30 @@
                     "Longest Palindromic Substring": {
                         "thoughts": "这题的难点主要在于如何高效地找到最长回文子串，避免重复计算。最直观的暴力解法是枚举所有可能的子串，然后对每个子串判断它是否是回文，这样时间复杂度会达到 O(N^3)，对于较长的字符串会超时。优化的关键在于利用回文串的对称性：一个回文串总是围绕着它的中心对称展开的。因此，我们可以枚举所有可能的“回文中心”，然后从中心向两边扩展来寻找最长的回文。回文中心有两种情况：单个字符（对应奇数长度的回文串，如 'aba' 中心是 'b'）或者两个字符之间的空隙（对应偶数长度的回文串，如 'abba' 中心是 'bb' 之间的空隙）。对每个这样的中心，我们向两边扩展，直到字符不匹配或者到达字符串边界。这种“中心扩展法”的时间复杂度是 O(N^2)，空间复杂度是 O(1)，是面试中最常见且被接受的优化方案。虽然还有更高级的 Manacher 算法可以达到 O(N) 的时间复杂度，但其实现复杂，通常不是这道题考察的重点，理解并实现 O(N^2) 的中心扩展法是主要的挑战。",
                         "solution": "class Solution {\n    private int maxLength = 0;\n    private int start = 0;\n\n    public String longestPalindrome(String s) {\n        if (s == null || s.length() < 1) {\n            return \"\";\n        }\n\n        for (int i = 0; i < s.length(); i++) {\n            // 考虑以 s[i] 为中心的奇数长度回文串\n            expandAroundCenter(s, i, i);\n            // 考虑以 s[i] 和 s[i+1] 之间的空隙为中心的偶数长度回文串\n            expandAroundCenter(s, i, i + 1);\n        }\n\n        return s.substring(start, start + maxLength);\n    }\n\n    private void expandAroundCenter(String s, int left, int right) {\n        // 当 left 和 right 在字符串范围内，并且 s[left] == s[right] 时，继续向外扩展\n        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {\n            left--;\n            right++;\n        }\n\n        // 循环结束后，s[left+1 ... right-1] 是一个回文串\n        // 计算当前回文串的长度\n        int currentLength = right - 1 - (left + 1) + 1; // 等价于 right - 1 - left\n\n        // 如果当前回文串更长，则更新最长回文串的起始位置和长度\n        if (currentLength > maxLength) {\n            maxLength = currentLength;\n            start = left + 1; // 回文串的实际起始位置是 left + 1\n        }\n    }\n}"
+                    },
+                    "Two Sum II - Input Array Is Sorted": {
+                        "thoughts": "这题的难点在于，虽然可以使用哈希表（像普通Two Sum一样）在O(N)时间复杂度下解决，但它没有充分利用输入数组已排序的特性。真正的难点在于识别并应用“双指针”技巧。通过将一个指针放在数组开头，另一个放在数组末尾，我们可以根据当前两数之和与目标值的比较结果，有效地移动指针（和太小则左指针右移，和太大则右指针左移），从而在O(N)时间复杂度下，将空间复杂度优化到O(1)。这比哈希表方案更优，因为它避免了额外的存储空间。",
+                        "solution": "```java\nclass Solution {\n    public int[] twoSum(int[] numbers, int target) {\n        int left = 0;\n        int right = numbers.length - 1;\n\n        while (left < right) {\n            int currentSum = numbers[left] + numbers[right];\n            if (currentSum == target) {\n                // Problem asks for 1-indexed output\n                return new int[]{left + 1, right + 1};\n            } else if (currentSum < target) {\n                left++; // Need a larger sum, move left pointer right\n            } else { // currentSum > target\n                right--; // Need a smaller sum, move right pointer left\n            }\n        }\n        // According to the problem description, there will always be exactly one solution.\n        // This line should ideally not be reached if the input guarantees are met.\n        return new int[]{-1, -1}; \n    }\n}\n```"
+                    },
+                    "3Sum": {
+                        "thoughts": "这题的难点主要在于两点：\n1.  **如何避免重复的三元组：** 题目要求返回不重复的三元组。如果只是简单地找到所有和为零的组合，会包含大量重复项。\n2.  **如何优化时间复杂度：** 最直观的三重循环是 O(N^3)，对于 N 较大的情况会超时。我们需要找到一个更高效的方法，通常是 O(N^2)。\n\n解决这两个难点的关键在于：\n*   **排序数组：** 首先对数组进行排序。这不仅有助于快速跳过重复元素，也为后续的双指针法创造了条件。\n*   **固定一数，双指针查找：** 排序后，我们可以固定一个数 `nums[i]`，然后将问题转化为在 `nums[i+1]` 到 `nums[n-1]` 的子数组中寻找两个数，使其和为 `0 - nums[i]`。这时，使用双指针（一个从左往右，一个从右往左）可以在 O(N) 时间内找到所有符合条件的对。\n*   **精细的去重逻辑：** 在固定 `nums[i]` 时，如果 `nums[i]` 与 `nums[i-1]` 相同，则可以跳过 `nums[i]`。在双指针移动过程中，如果 `left` 指针指向的数与 `left+1` 指针指向的数相同，或者 `right` 指针指向的数与 `right-1` 指针指向的数相同，也需要跳过，以确保最终结果中没有重复的三元组。\n\n因此，核心难点是在 O(N^2) 的时间复杂度下，正确且全面地处理所有去重情况。",
+                        "solution": "```java\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\n\nclass Solution {\n    public List<List<Integer>> threeSum(int[] nums) {\n        List<List<Integer>> result = new ArrayList<>();\n        if (nums == null || nums.length < 3) {\n            return result;\n        }\n\n        Arrays.sort(nums); // Sort the array to easily handle duplicates and use two-pointer technique\n\n        int n = nums.length;\n        for (int i = 0; i < n - 2; i++) {\n            // Skip duplicate for the first element\n            if (i > 0 && nums[i] == nums[i - 1]) {\n                continue;\n            }\n\n            // Optimization: if nums[i] is already positive, sum cannot be zero with other positive numbers\n            if (nums[i] > 0) {\n                break;\n            }\n\n            int left = i + 1;\n            int right = n - 1;\n            int target = -nums[i]; // We need nums[left] + nums[right] == -nums[i]\n\n            while (left < right) {\n                int sum = nums[left] + nums[right];\n\n                if (sum == target) {\n                    result.add(Arrays.asList(nums[i], nums[left], nums[right]));\n\n                    // Skip duplicates for left pointer\n                    while (left < right && nums[left] == nums[left + 1]) {\n                        left++;\n                    }\n                    // Skip duplicates for right pointer\n                    while (left < right && nums[right] == nums[right - 1]) {\n                        right--;\n                    }\n\n                    left++;\n                    right--;\n                } else if (sum < target) {\n                    left++;\n                } else { // sum > target\n                    right--;\n                }\n            }\n        }\n\n        return result;\n    }\n}\n```"
+                    },
+                    "Container With Most Water": {
+                        "thoughts": "这题的难点在于如何从暴力解法（O(n^2)）优化到最优解（O(n)），并理解双指针贪心策略的正确性。直观上，我们想最大化面积，面积是宽度乘以高度。双指针法从两端开始，此时宽度最大。每次移动指针，宽度都会减小。为了弥补宽度减小的损失，我们必须尝试找到更高的柱子。关键在于：我们应该移动哪根柱子？如果当前左边柱子比右边矮，那么当前容器的高度就由左边柱子决定。如果我们移动右边柱子（高的那根），新的容器高度仍然会受限于左边柱子（或者新的右边柱子，但肯定不会比原来的左边柱子高），而宽度却减小了，所以面积不可能变大。因此，我们必须移动矮的那根柱子，因为只有移动矮的柱子，才有机会找到一根更高的柱子来提升容器的整体高度，从而有可能获得更大的面积。理解并证明这个“移动矮柱子”的贪心策略是难点。",
+                        "solution": "```java\nclass Solution {\n    public int maxArea(int[] height) {\n        int maxArea = 0;\n        int left = 0;\n        int right = height.length - 1;\n\n        while (left < right) {\n            // Calculate the current area\n            int currentHeight = Math.min(height[left], height[right]);\n            int currentWidth = right - left;\n            maxArea = Math.max(maxArea, currentHeight * currentWidth);\n\n            // Move the pointer pointing to the shorter line\n            // because moving the taller line will definitely not increase the height\n            // and will decrease the width, thus reducing or keeping the area the same.\n            if (height[left] < height[right]) {\n                left++;\n            } else {\n                right--;\n            }\n        }\n\n        return maxArea;\n    }\n}\n```"
+                    },
+                    "Trapping Rain Water": {
+                        "thoughts": "这题的难点主要在于如何高效地确定每个位置能积多少水。一个位置能积水的量，取决于它左边最高的墙和右边最高的墙中较矮的那一个，再减去当前位置的高度。直观的 O(N^2) 方法是，对每个位置都向左和向右扫描一遍来找到左右最高墙，但这效率太低。\n\n优化的 O(N) 时间复杂度的思路是，可以预先计算出每个位置的 `max_left` (它左边最高的墙) 和 `max_right` (它右边最高的墙) 数组，这需要两次 O(N) 遍历。然后第三次 O(N) 遍历计算总水量。\n\n而最巧妙且最优的 O(N) 时间和 O(1) 空间复杂度的解法是双指针法。它避免了显式存储 `max_left` 和 `max_right` 数组。核心思想是：我们维护 `leftMax` 和 `rightMax` 分别代表当前左指针和右指针遇到的最高墙。每次移动指针时，我们总是移动当前 `height[left]` 和 `height[right]` 中较矮的那一侧的指针。因为如果 `height[left] < height[right]`，那么 `left` 位置能积水的上限一定是由 `leftMax` 决定的（因为右边至少有一堵 `height[right]` 那么高的墙，它肯定不比 `leftMax` 矮，所以 `leftMax` 才是真正的瓶颈）。反之亦然。这样，我们就能在一次遍历中，以 O(1) 额外空间完成计算。",
+                        "solution": "```java\nclass Solution {\n    public int trap(int[] height) {\n        if (height == null || height.length < 3) {\n            return 0;\n        }\n\n        int left = 0;\n        int right = height.length - 1;\n        int leftMax = 0; // 记录从左边到当前left指针位置的最高墙高度\n        int rightMax = 0; // 记录从右边到当前right指针位置的最高墙高度\n        int trappedWater = 0;\n\n        while (left < right) {\n            // 总是处理较矮的那一侧，因为较矮的一侧决定了当前能积水的上限\n            if (height[left] < height[right]) {\n                // 如果左边的墙更矮，那么当前left位置能积水的上限由leftMax决定\n                if (height[left] >= leftMax) {\n                    // 如果当前墙比leftMax高，更新leftMax\n                    leftMax = height[left];\n                } else {\n                    // 否则，当前位置可以积水，水量为 leftMax - height[left]\n                    trappedWater += leftMax - height[left];\n                }\n                left++; // 移动左指针\n            } else {\n                // 如果右边的墙更矮或相等，那么当前right位置能积水的上限由rightMax决定\n                if (height[right] >= rightMax) {\n                    // 如果当前墙比rightMax高，更新rightMax\n                    rightMax = height[right];\n                } else {\n                    // 否则，当前位置可以积水，水量为 rightMax - height[right]\n                    trappedWater += rightMax - height[right];\n                }\n                right--; // 移动右指针\n            }\n        }\n        return trappedWater;\n    }\n}\n```"
+                    },
+                    "Best Time to Buy and Sell Stock": {
+                        "thoughts": "这题的难点在于如何从直观的 O(n^2) 暴力解法（尝试所有买卖组合）优化到 O(n) 的线性时间解法。关键在于，我们不需要真的去回溯寻找最佳买入点。在遍历股票价格时，我们只需要维护一个变量来记录到目前为止遇到的最低买入价格（`minPrice`）。对于当前遍历到的每一天，我们计算如果今天卖出能获得的最大利润（当前价格减去历史最低买入价），并更新全局最大利润（`maxProfit`）。同时，如果当前价格比历史最低价更低，就更新历史最低价。这样，我们只需一次遍历就能找到最优解，避免了重复计算。",
+                        "solution": "```java\nclass Solution {\n    public int maxProfit(int[] prices) {\n        if (prices == null || prices.length <= 1) {\n            return 0;\n        }\n\n        int minPrice = Integer.MAX_VALUE; // 记录到目前为止遇到的最低价格\n        int maxProfit = 0;               // 记录最大利润\n\n        for (int price : prices) {\n            // 尝试在当前价格卖出，计算潜在利润，并更新最大利润\n            maxProfit = Math.max(maxProfit, price - minPrice);\n            // 更新最低价格，以便后续计算\n            minPrice = Math.min(minPrice, price);\n        }\n\n        return maxProfit;\n    }\n}\n```"
+                    },
+                    "Robot Return to Origin": {
+                        "thoughts": "这道题其实非常简单，并没有什么复杂的算法或数据结构难点。它主要考察的是如何准确地模拟机器人根据指令移动的过程，并实时追踪其当前位置。核心思想就是维护一个二维坐标 (x, y)，根据每个移动指令更新坐标，最后判断机器人是否回到了原点 (0, 0)。可以说，这道题的难点在于理解题意并将其转化为简单的坐标操作，而不是算法本身的复杂性。",
+                        "solution": "```java\nclass Solution {\n    public boolean judgeCircle(String moves) {\n        int x = 0; // Horizontal position\n        int y = 0; // Vertical position\n\n        for (char move : moves.toCharArray()) {\n            switch (move) {\n                case 'U':\n                    y++;\n                    break;\n                case 'D':\n                    y--;\n                    break;\n                case 'L':\n                    x--;\n                    break;\n                case 'R':\n                    x++;\n                    break;\n            }\n        }\n\n        // The robot returns to the origin if both x and y coordinates are 0\n        return x == 0 && y == 0;\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -351,6 +375,58 @@
                 "recentProblems": [
                     {
                         "id": null,
+                        "name": "Robot Return to Origin",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/5/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Best Time to Buy and Sell Stock",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/5/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Trapping Rain Water",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/5/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Container With Most Water",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/5/2026"
+                    },
+                    {
+                        "id": 15,
+                        "name": "3Sum",
+                        "difficulty": "Medium",
+                        "status": "solved",
+                        "tags": [
+                            "Array",
+                            "Two Pointers",
+                            "Sorting"
+                        ],
+                        "timestamp": "4/5/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Two Sum II - Input Array Is Sorted",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/5/2026"
+                    },
+                    {
+                        "id": null,
                         "name": "Longest Palindromic Substring",
                         "difficulty": "",
                         "status": "solved",
@@ -524,17 +600,6 @@
                             "JavaScript"
                         ],
                         "timestamp": "5/18/2025"
-                    },
-                    {
-                        "id": 15,
-                        "name": "3Sum",
-                        "difficulty": "Medium",
-                        "status": "solved",
-                        "tags": [
-                            "Array",
-                            "Two Pointers",
-                            "Sorting"
-                        ]
                     },
                     {
                         "id": 128,
