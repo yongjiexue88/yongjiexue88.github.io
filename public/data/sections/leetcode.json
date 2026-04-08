@@ -126,6 +126,18 @@
                     "Robot Return to Origin": {
                         "thoughts": "这道题其实非常简单，并没有什么复杂的算法或数据结构难点。它主要考察的是如何准确地模拟机器人根据指令移动的过程，并实时追踪其当前位置。核心思想就是维护一个二维坐标 (x, y)，根据每个移动指令更新坐标，最后判断机器人是否回到了原点 (0, 0)。可以说，这道题的难点在于理解题意并将其转化为简单的坐标操作，而不是算法本身的复杂性。",
                         "solution": "```java\nclass Solution {\n    public boolean judgeCircle(String moves) {\n        int x = 0; // Horizontal position\n        int y = 0; // Vertical position\n\n        for (char move : moves.toCharArray()) {\n            switch (move) {\n                case 'U':\n                    y++;\n                    break;\n                case 'D':\n                    y--;\n                    break;\n                case 'L':\n                    x--;\n                    break;\n                case 'R':\n                    x++;\n                    break;\n            }\n        }\n\n        // The robot returns to the origin if both x and y coordinates are 0\n        return x == 0 && y == 0;\n    }\n}\n```"
+                    },
+                    "Longest Substring Without Repeating Characters": {
+                        "thoughts": "这题的难点在于如何高效地判断一个子串是否包含重复字符，并在找到重复字符时，快速调整子串的起始位置。如果简单地遍历所有可能的子串，效率会很低。核心思想是使用‘滑动窗口’：用两个指针（左右边界）维护一个窗口，当窗口内出现重复字符时，左指针需要向前移动，直到重复字符被排除。如何高效地记录窗口内字符及其位置，以便快速调整左指针，是解决问题的关键。",
+                        "solution": "```java\nimport java.util.HashMap;\nimport java.util.Map;\n\nclass Solution {\n    public int lengthOfLongestSubstring(String s) {\n        if (s == null || s.length() == 0) {\n            return 0;\n        }\n\n        // 使用HashMap来存储字符及其在字符串中最后一次出现的索引\n        // 键是字符，值是该字符的索引\n        Map<Character, Integer> charIndexMap = new HashMap<>();\n        int maxLength = 0;\n        int left = 0; // 滑动窗口的左边界\n\n        // 遍历字符串，right是滑动窗口的右边界\n        for (int right = 0; right < s.length(); right++) {\n            char currentChar = s.charAt(right);\n\n            // 如果当前字符已经在map中，并且它上次出现的索引在当前窗口的左边界或之后\n            // 说明当前字符是重复的，并且重复的字符在当前窗口内\n            if (charIndexMap.containsKey(currentChar) && charIndexMap.get(currentChar) >= left) {\n                // 移动左边界到重复字符的下一个位置\n                left = charIndexMap.get(currentChar) + 1;\n            }\n\n            // 更新当前字符的最新索引\n            charIndexMap.put(currentChar, right);\n\n            // 计算当前窗口的长度，并更新最大长度\n            maxLength = Math.max(maxLength, right - left + 1);\n        }\n\n        return maxLength;\n    }\n}\n```"
+                    },
+                    "Walking Robot Simulation II": {
+                        "thoughts": "这题的难点主要在于 `step(num)` 方法的实现。机器人在一个矩形网格的边界上移动，当它碰到墙壁时，会自动顺时针转向90度并继续移动。`num` 可以非常大（10^9），因此不能一步步地模拟。核心挑战在于：\n\n1.  **动态转向的模拟：** 机器人不是简单地沿着一个固定方向走完 `num` 步，而是在遇到墙壁时会改变方向。这意味着我们不能直接通过对总周长取模来计算最终位置。\n2.  **高效的大步长移动：** 针对 `num` 很大的情况，需要优化模拟过程。解决方案是分段模拟：计算机器人在当前方向上能走多远直到碰到墙壁，走完这段距离，然后检查是否还有剩余步数。如果有，就转向并重复这个过程。由于矩形只有四条边，这个循环最多执行四次，因此效率很高。\n3.  **状态管理：** 正确维护机器人的当前 `(x, y)` 坐标、方向 (`dirIdx`) 以及是否已开始移动 (`started` 标志)，以满足 `getPos()` 和 `getDir()` 的要求。",
+                        "solution": "```java\nclass WalkingRobot {\n    private int width;\n    private int height;\n    private int x;\n    private int y;\n    private int dirIdx; // 0: East (1,0), 1: North (0,1), 2: West (-1,0), 3: South (0,-1)\n    private boolean started; // Flag to track if step() has been called at least once\n\n    // Directions: East, North, West, South\n    private static final int[][] DIRS = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};\n\n    public WalkingRobot(int width, int height) {\n        this.width = width;\n        this.height = height;\n        this.x = 0;\n        this.y = 0;\n        this.dirIdx = 0; // Initially East\n        this.started = false;\n    }\n\n    public void step(int num) {\n        this.started = true;\n\n        while (num > 0) {\n            int stepsToWall;\n            // Calculate steps remaining to hit a wall in the current direction\n            if (dirIdx == 0) { // East\n                stepsToWall = width - 1 - x;\n            } else if (dirIdx == 1) { // North\n                stepsToWall = height - 1 - y;\n            } else if (dirIdx == 2) { // West\n                stepsToWall = x - 0; // Distance to left wall (x=0)\n            } else { // dirIdx == 3, South\n                stepsToWall = y - 0; // Distance to bottom wall (y=0)\n            }\n\n            // Determine how many steps to actually take in this segment\n            // We take min(remaining_steps_in_num, steps_to_wall)\n            int actualSteps = Math.min(num, stepsToWall);\n\n            // Move the robot\n            x += actualSteps * DIRS[dirIdx][0];\n            y += actualSteps * DIRS[dirIdx][1];\n            num -= actualSteps;\n\n            // If there are still steps left (num > 0), it means we hit a wall and need to turn\n            if (num > 0) {\n                dirIdx = (dirIdx + 1) % 4; // Turn 90 degrees clockwise\n            }\n        }\n    }\n\n    public void turnLeft() {\n        // Turn 90 degrees counter-clockwise\n        dirIdx = (dirIdx + 1) % 4;\n    }\n\n    public void turnRight() {\n        // Turn 90 degrees clockwise\n        // (dirIdx - 1 + 4) % 4 ensures positive result for modulo with negative numbers\n        dirIdx = (dirIdx + 3) % 4;\n    }\n\n    public int[] getPos() {\n        return new int[]{x, y};\n    }\n\n    public int[] getDir() {\n        // If not started, direction is considered East\n        if (!started) {\n            return DIRS[0]; // East\n        }\n        return DIRS[dirIdx];\n    }\n}\n```"
+                    },
+                    "Longest Repeating Character Replacement": {
+                        "thoughts": "这题的难点在于识别并正确应用滑动窗口（Sliding Window）算法。核心思想是维护一个窗口 `[left, right]`，使得窗口内出现次数最多的字符，通过替换最多 `k` 个其他字符，可以使整个窗口都变成这个字符。这意味着 `窗口长度 - 窗口内出现次数最多的字符的频率 <= k`。当这个条件满足时，我们可以尝试扩大窗口（`right++`）；当不满足时，我们需要缩小窗口（`left++`）。难点在于如何高效地维护窗口内字符的频率，以及理解当窗口左边界移动时，`max_frequency`（窗口内最大字符频率）的更新策略。它并不需要每次都精确地重新计算当前窗口的最大频率，而是可以巧妙地利用历史最大值来保证算法的效率，因为我们只关心最终能达到的最长窗口长度。",
+                        "solution": "```java\nclass Solution {\n    public int characterReplacement(String s, int k) {\n        // freq 数组用于记录当前窗口内每个字符的出现次数\n        int[] freq = new int[26];\n        // maxFreq 记录当前窗口内（或历史窗口中）出现过的最大字符频率\n        int maxFreq = 0;\n        // maxLength 记录找到的最长有效窗口的长度\n        int maxLength = 0;\n        // left 是滑动窗口的左边界\n        int left = 0;\n\n        // right 是滑动窗口的右边界，遍历字符串\n        for (int right = 0; right < s.length(); right++) {\n            char currentChar = s.charAt(right);\n            // 增加当前字符的频率计数\n            freq[currentChar - 'A']++;\n            // 更新 maxFreq，它始终是当前窗口内出现频率最高的字符的频率\n            // 注意：这里 maxFreq 实际上是记录了从窗口开始到当前 right 为止，\n            // 任何一个字符在某个时刻达到的最大频率。它不一定严格代表当前 [left, right] 窗口的最大频率。\n            // 这种处理方式是 O(N) 复杂度的关键。\n            maxFreq = Math.max(maxFreq, freq[currentChar - 'A']);\n\n            // 计算当前窗口的长度\n            int windowLength = right - left + 1;\n            // 判断当前窗口是否有效：\n            // 如果 (窗口长度 - 窗口内出现次数最多的字符的频率) > k，\n            // 说明需要替换的字符数量超过了 k，窗口无效，需要缩小。\n            if (windowLength - maxFreq > k) {\n                char leftChar = s.charAt(left);\n                // 缩小窗口，将左边界字符的频率减一\n                freq[leftChar - 'A']--;\n                // 左边界右移\n                left++;\n                // 注意：这里不需要重新计算 maxFreq。因为我们只关心最长窗口，\n                // 如果 maxFreq 减小，意味着当前窗口“纯度”降低，\n                // 即使窗口长度不变，也无法形成更长的有效窗口。\n                // 只有当 maxFreq 增加时，才可能形成更长的有效窗口。\n            }\n\n            // 无论窗口是否缩小，当前 [left, right] 都是一个有效的（或刚刚调整为有效的）窗口。\n            // 更新 maxLength，取当前窗口长度和之前最大长度的较大值。\n            maxLength = Math.max(maxLength, right - left + 1);\n        }\n\n        return maxLength;\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -373,6 +385,30 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Longest Repeating Character Replacement",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/7/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Walking Robot Simulation II",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/7/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Longest Substring Without Repeating Characters",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/7/2026"
+                    },
                     {
                         "id": null,
                         "name": "Robot Return to Origin",
