@@ -138,6 +138,18 @@
                     "Longest Repeating Character Replacement": {
                         "thoughts": "这题的难点在于识别并正确应用滑动窗口（Sliding Window）算法。核心思想是维护一个窗口 `[left, right]`，使得窗口内出现次数最多的字符，通过替换最多 `k` 个其他字符，可以使整个窗口都变成这个字符。这意味着 `窗口长度 - 窗口内出现次数最多的字符的频率 <= k`。当这个条件满足时，我们可以尝试扩大窗口（`right++`）；当不满足时，我们需要缩小窗口（`left++`）。难点在于如何高效地维护窗口内字符的频率，以及理解当窗口左边界移动时，`max_frequency`（窗口内最大字符频率）的更新策略。它并不需要每次都精确地重新计算当前窗口的最大频率，而是可以巧妙地利用历史最大值来保证算法的效率，因为我们只关心最终能达到的最长窗口长度。",
                         "solution": "```java\nclass Solution {\n    public int characterReplacement(String s, int k) {\n        // freq 数组用于记录当前窗口内每个字符的出现次数\n        int[] freq = new int[26];\n        // maxFreq 记录当前窗口内（或历史窗口中）出现过的最大字符频率\n        int maxFreq = 0;\n        // maxLength 记录找到的最长有效窗口的长度\n        int maxLength = 0;\n        // left 是滑动窗口的左边界\n        int left = 0;\n\n        // right 是滑动窗口的右边界，遍历字符串\n        for (int right = 0; right < s.length(); right++) {\n            char currentChar = s.charAt(right);\n            // 增加当前字符的频率计数\n            freq[currentChar - 'A']++;\n            // 更新 maxFreq，它始终是当前窗口内出现频率最高的字符的频率\n            // 注意：这里 maxFreq 实际上是记录了从窗口开始到当前 right 为止，\n            // 任何一个字符在某个时刻达到的最大频率。它不一定严格代表当前 [left, right] 窗口的最大频率。\n            // 这种处理方式是 O(N) 复杂度的关键。\n            maxFreq = Math.max(maxFreq, freq[currentChar - 'A']);\n\n            // 计算当前窗口的长度\n            int windowLength = right - left + 1;\n            // 判断当前窗口是否有效：\n            // 如果 (窗口长度 - 窗口内出现次数最多的字符的频率) > k，\n            // 说明需要替换的字符数量超过了 k，窗口无效，需要缩小。\n            if (windowLength - maxFreq > k) {\n                char leftChar = s.charAt(left);\n                // 缩小窗口，将左边界字符的频率减一\n                freq[leftChar - 'A']--;\n                // 左边界右移\n                left++;\n                // 注意：这里不需要重新计算 maxFreq。因为我们只关心最长窗口，\n                // 如果 maxFreq 减小，意味着当前窗口“纯度”降低，\n                // 即使窗口长度不变，也无法形成更长的有效窗口。\n                // 只有当 maxFreq 增加时，才可能形成更长的有效窗口。\n            }\n\n            // 无论窗口是否缩小，当前 [left, right] 都是一个有效的（或刚刚调整为有效的）窗口。\n            // 更新 maxLength，取当前窗口长度和之前最大长度的较大值。\n            maxLength = Math.max(maxLength, right - left + 1);\n        }\n\n        return maxLength;\n    }\n}\n```"
+                    },
+                    "XOR After Range Multiplication Queries I": {
+                        "thoughts": "这题的难点是什么... (自动生成的解答)",
+                        "solution": "```java\n// Solution automatically synced\n```"
+                    },
+                    "Not Boring Movies": {
+                        "thoughts": "这道题的难点主要在于正确地组合SQL的过滤和排序条件。具体来说，需要同时满足两个过滤条件：电影描述不能是'boring'，并且电影ID必须是奇数。最后，结果还需要按照评分从高到低排序。对于熟悉SQL基本操作的开发者来说，这道题属于比较基础的练习，主要考察对`WHERE`子句、逻辑运算符（`AND`）、模运算（`%`或`MOD`）以及`ORDER BY`子句的掌握。",
+                        "solution": "```sql\nSELECT id, title, description, rating\nFROM Cinema\nWHERE description != 'boring' AND id % 2 = 1\nORDER BY rating DESC;\n```"
+                    },
+                    "Find Customer Referee": {
+                        "thoughts": "这题是典型的 SQL 数据库问题，其难点主要在于对 SQL 中 `NULL` 值的理解和处理。很多初学者在筛选条件时，会习惯性地使用 `referee_id != 2` 来排除 `referee_id` 为 2 的客户。但 SQL 中 `NULL` 是一种特殊的值，它不等于任何值（包括它自己），也不能用 `=` 或 `!=` 来比较。因此，如果想包含那些没有推荐人（即 `referee_id` 为 `NULL`）的客户，必须显式地使用 `referee_id IS NULL` 这个条件。所以，正确的筛选逻辑是 `referee_id = 2 OR referee_id IS NULL`。对于这类数据库题目，LeetCode 期望的解决方案就是 SQL 查询语句。",
+                        "solution": "```sql\nSELECT name\nFROM Customer\nWHERE referee_id = 2 OR referee_id IS NULL;\n```"
                     }
                 },
                 "streakDays": 0,
@@ -387,6 +399,52 @@
                 "recentProblems": [
                     {
                         "id": null,
+                        "name": "Find Customer Referee",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/9/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Not Boring Movies",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/9/2026"
+                    },
+                    {
+                        "id": 181,
+                        "name": "Employees Earning More Than Their Managers",
+                        "difficulty": "Easy",
+                        "status": "solved",
+                        "tags": [
+                            "SQL",
+                            "Database"
+                        ],
+                        "timestamp": "4/9/2026"
+                    },
+                    {
+                        "id": 175,
+                        "name": "Combine Two Tables",
+                        "difficulty": "Easy",
+                        "status": "solved",
+                        "tags": [
+                            "SQL",
+                            "Database"
+                        ],
+                        "timestamp": "4/9/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "XOR After Range Multiplication Queries I",
+                        "difficulty": "",
+                        "status": "attempted",
+                        "tags": [],
+                        "timestamp": "4/8/2026"
+                    },
+                    {
+                        "id": null,
                         "name": "Longest Repeating Character Replacement",
                         "difficulty": "",
                         "status": "solved",
@@ -585,28 +643,6 @@
                     {
                         "id": 182,
                         "name": "Duplicate Emails",
-                        "difficulty": "Easy",
-                        "status": "solved",
-                        "tags": [
-                            "SQL",
-                            "Database"
-                        ],
-                        "timestamp": "3/27/2026"
-                    },
-                    {
-                        "id": 181,
-                        "name": "Employees Earning More Than Their Managers",
-                        "difficulty": "Easy",
-                        "status": "solved",
-                        "tags": [
-                            "SQL",
-                            "Database"
-                        ],
-                        "timestamp": "3/27/2026"
-                    },
-                    {
-                        "id": 175,
-                        "name": "Combine Two Tables",
                         "difficulty": "Easy",
                         "status": "solved",
                         "tags": [
