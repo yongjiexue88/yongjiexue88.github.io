@@ -150,6 +150,10 @@
                     "Find Customer Referee": {
                         "thoughts": "这题是典型的 SQL 数据库问题，其难点主要在于对 SQL 中 `NULL` 值的理解和处理。很多初学者在筛选条件时，会习惯性地使用 `referee_id != 2` 来排除 `referee_id` 为 2 的客户。但 SQL 中 `NULL` 是一种特殊的值，它不等于任何值（包括它自己），也不能用 `=` 或 `!=` 来比较。因此，如果想包含那些没有推荐人（即 `referee_id` 为 `NULL`）的客户，必须显式地使用 `referee_id IS NULL` 这个条件。所以，正确的筛选逻辑是 `referee_id = 2 OR referee_id IS NULL`。对于这类数据库题目，LeetCode 期望的解决方案就是 SQL 查询语句。",
                         "solution": "```sql\nSELECT name\nFROM Customer\nWHERE referee_id = 2 OR referee_id IS NULL;\n```"
+                    },
+                    "XOR After Range Multiplication Queries II": {
+                        "thoughts": "这题的难点是什么... (自动生成的解答)",
+                        "solution": "```java\n// Solution automatically synced\n```"
                     }
                 },
                 "streakDays": 0,
@@ -397,6 +401,14 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "XOR After Range Multiplication Queries II",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/9/2026"
+                    },
                     {
                         "id": null,
                         "name": "Find Customer Referee",
