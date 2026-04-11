@@ -8,7 +8,8 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 /**
  * Asks the Gemini API for a standard explanation and solution for a LeetCode problem.
- * Falls back to a blank template if API key is missing or call fails.
+ * Retries up to 3 times with exponential backoff on 429/529 errors.
+ * Falls back to a blank template if API key is missing or all retries fail.
  */
 async function generateNoteForProblem(problemName) {
     const blankTemplate = {
@@ -32,40 +33,67 @@ async function generateNoteForProblem(problemName) {
         }
     };
 
-    try {
-        console.log(`🤖 Generating AI notes for: ${problemName}...`);
-        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        });
+    const MAX_RETRIES = 3;
+    const BASE_DELAY_MS = 2000;
 
-        if (!res.ok) {
-            console.error(`[!] Gemini API Error: ${res.statusText}`);
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+        try {
+            if (attempt > 0) {
+                const delay = BASE_DELAY_MS * Math.pow(2, attempt - 1);
+                console.log(`⏳ Retry ${attempt}/${MAX_RETRIES} for "${problemName}" after ${delay / 1000}s...`);
+                await new Promise(resolve => setTimeout(resolve, delay));
+            }
+
+            console.log(`🤖 Generating AI notes for: ${problemName}...`);
+            const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if ((res.status === 429 || res.status === 529) && attempt < MAX_RETRIES) {
+                console.warn(`[!] Gemini API returned ${res.status}, will retry...`);
+                continue;
+            }
+
+            if (!res.ok) {
+                console.error(`[!] Gemini API Error: ${res.status} ${res.statusText}`);
+                return blankTemplate;
+            }
+
+            const data = await res.json();
+            const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+            if (!text) {
+                if (attempt < MAX_RETRIES) {
+                    console.warn(`[!] Gemini returned empty response for "${problemName}", will retry...`);
+                    continue;
+                }
+                return blankTemplate;
+            }
+
+            let cleanText = text.trim();
+            if (cleanText.startsWith('```json')) cleanText = cleanText.substring(7);
+            if (cleanText.startsWith('```')) cleanText = cleanText.substring(3);
+            if (cleanText.endsWith('```')) cleanText = cleanText.substring(0, cleanText.length - 3);
+
+            const aiResponse = JSON.parse(cleanText.trim());
+            return {
+                thoughts: aiResponse.thoughts || blankTemplate.thoughts,
+                solution: aiResponse.solution || blankTemplate.solution
+            };
+
+        } catch (e) {
+            if (attempt < MAX_RETRIES) {
+                console.warn(`[!] Attempt ${attempt + 1} failed for "${problemName}": ${e.message}, retrying...`);
+                continue;
+            }
+            console.error(`[!] Failed to parse or fetch AI note for "${problemName}" after ${MAX_RETRIES + 1} attempts:`, e.message);
             return blankTemplate;
         }
-
-        const data = await res.json();
-        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-        
-        if (!text) return blankTemplate;
-        
-        // Sometimes the AI wraps the JSON in markdown backticks anyway. Try to strip them.
-        let cleanText = text.trim();
-        if (cleanText.startsWith('```json')) cleanText = cleanText.substring(7);
-        if (cleanText.startsWith('```')) cleanText = cleanText.substring(3);
-        if (cleanText.endsWith('```')) cleanText = cleanText.substring(0, cleanText.length - 3);
-
-        const aiResponse = JSON.parse(cleanText.trim());
-        return {
-            thoughts: aiResponse.thoughts || blankTemplate.thoughts,
-            solution: aiResponse.solution || blankTemplate.solution
-        };
-
-    } catch (e) {
-        console.error(`[!] Failed to parse or fetch AI note for "${problemName}":`, e.message);
-        return blankTemplate;
     }
+
+    return blankTemplate;
 }
 
 async function sync() {
