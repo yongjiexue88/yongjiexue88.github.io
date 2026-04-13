@@ -166,6 +166,26 @@
                     "Valid Parentheses": {
                         "thoughts": "这题的难点主要在于如何正确地处理括号的**嵌套**和**匹配顺序**。它不仅仅是简单地统计左右括号的数量是否相等，更重要的是要确保每个右括号都能找到它对应的、最近的、类型正确的左括号。例如，`([)]` 这种虽然左右括号数量都对，但顺序不对，是无效的。解决这个问题的关键在于认识到，当你遇到一个右括号时，它必须与**最近一个未闭合的左括号**相匹配。这种“后进先出”的匹配逻辑，正是**栈（Stack）**数据结构的典型应用场景。通过栈，我们可以有效地追踪那些等待被匹配的左括号，从而判断整个字符串的有效性。",
                         "solution": "import java.util.Stack;\nimport java.util.HashMap;\n\nclass Solution {\n    public boolean isValid(String s) {\n        // 使用HashMap存储括号对，方便查找匹配\n        HashMap<Character, Character> mappings = new HashMap<>();\n        mappings.put(')', '(');\n        mappings.put('}', '{');\n        mappings.put(']', '[');\n\n        // 使用栈来存储遇到的左括号\n        Stack<Character> stack = new Stack<>();\n\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n\n            // 如果当前字符是右括号\n            if (mappings.containsKey(c)) {\n                // 栈为空，或者栈顶元素与当前右括号不匹配，则无效\n                // stack.empty() 检查栈是否为空，防止在空栈上执行pop操作\n                // stack.pop() 获取并移除栈顶元素，与当前右括号的匹配左括号进行比较\n                char topElement = stack.empty() ? '#' : stack.pop();\n                if (topElement != mappings.get(c)) {\n                    return false;\n                }\n            } else {\n                // 如果是左括号，则压入栈中\n                stack.push(c);\n            }\n        }\n\n        // 遍历完所有字符后，如果栈为空，说明所有括号都已正确匹配\n        return stack.empty();\n    }\n}"
+                    },
+                    "Min Stack": {
+                        "thoughts": "这题的难点在于，我们不仅要实现普通栈的 `push`、`pop` 和 `top` 操作，还要额外提供一个 `getMin` 操作，并且所有这些操作的时间复杂度都必须是 O(1)。如果只用一个普通栈，`getMin` 操作就需要遍历整个栈来找到最小值，时间复杂度会是 O(N)，不符合要求。所以核心挑战是如何在 O(1) 时间内动态地维护当前栈中的最小值。",
+                        "solution": "```java\nimport java.util.Stack;\n\nclass MinStack {\n    private Stack<Integer> mainStack;\n    private Stack<Integer> minStack;\n\n    public MinStack() {\n        mainStack = new Stack<>();\n        minStack = new Stack<>();\n    }\n    \n    public void push(int val) {\n        mainStack.push(val);\n        // Only push to minStack if the new value is less than or equal to the current minimum\n        // (or if minStack is empty). Using <= handles duplicate minimums correctly.\n        if (minStack.isEmpty() || val <= minStack.peek()) {\n            minStack.push(val);\n        }\n    }\n    \n    public void pop() {\n        // If the element being popped from mainStack is the current minimum,\n        // then it must also be popped from minStack.\n        if (mainStack.peek().equals(minStack.peek())) {\n            minStack.pop();\n        }\n        mainStack.pop();\n    }\n    \n    public int top() {\n        return mainStack.peek();\n    }\n    \n    public int getMin() {\n        return minStack.peek();\n    }\n}\n\n/**\n * Your MinStack object will be instantiated and called as such:\n * MinStack obj = new MinStack();\n * obj.push(val);\n * obj.pop();\n * int param_3 = obj.top();\n * int param_4 = obj.getMin();\n */\n```"
+                    },
+                    "Evaluate Reverse Polish Notation": {
+                        "thoughts": "这题的难点主要在于理解逆波兰表达式（RPN）的求值机制，并将其高效地映射到合适的数据结构上。RPN的特点是操作符在其操作数之后，这意味着我们需要一种方式来‘记住’之前的数字，直到遇到操作符。栈（Stack）是解决这个问题的天然选择。难点在于识别出这种模式，并正确地实现栈的入栈（遇到数字）和出栈（遇到操作符时取出两个数进行运算，再将结果入栈）逻辑，确保操作顺序和结果的正确性，尤其是在处理减法和除法时，出栈的顺序至关重要。",
+                        "solution": "```java\nimport java.util.Deque;\nimport java.util.ArrayDeque;\n\nclass Solution {\n    public int evalRPN(String[] tokens) {\n        // 使用Deque作为栈，ArrayDeque是实现Deque接口的双端队列，效率高\n        Deque<Integer> stack = new ArrayDeque<>();\n\n        for (String token : tokens) {\n            switch (token) {\n                case \"+\":\n                    // 弹出两个操作数，执行加法，结果入栈\n                    stack.push(stack.pop() + stack.pop());\n                    break;\n                case \"-\":\n                    // 注意减法和除法的操作数顺序：先弹出的为右操作数，后弹出的为左操作数\n                    int b = stack.pop(); // 第二个操作数\n                    int a = stack.pop(); // 第一个操作数\n                    stack.push(a - b);\n                    break;\n                case \"*\":\n                    // 弹出两个操作数，执行乘法，结果入栈\n                    stack.push(stack.pop() * stack.pop());\n                    break;\n                case \"/\":\n                    // 注意减法和除法的操作数顺序\n                    int divisor = stack.pop(); // 除数\n                    int dividend = stack.pop(); // 被除数\n                    stack.push(dividend / divisor);\n                    break;\n                default:\n                    // 如果不是操作符，则认为是数字，将其转换为整数并入栈\n                    stack.push(Integer.parseInt(token));\n                    break;\n            }\n        }\n\n        // 最终栈中剩下的唯一元素就是表达式的结果\n        return stack.pop();\n    }\n}\n```"
+                    },
+                    "Daily Temperatures": {
+                        "thoughts": "这题的难点主要在于如何高效地找到每个日期之后第一个比它温度高的日期。最直观的暴力解法是对于每个日期 `i`，都向后遍历 `j = i+1, i+2, ...` 直到找到第一个 `temperatures[j] > temperatures[i]`。这种方法在最坏情况下（例如温度递减）需要 `O(N^2)` 的时间复杂度，对于 `N` 较大的情况会超时。\n\n优化的关键在于利用**单调栈（Monotonic Stack）**。我们维护一个栈，里面存储的是日期的**索引**。这个栈是**单调递减**的：从栈底到栈顶，对应的温度是递减的。\n\n当我们遍历到当前日期 `i` 的温度 `temperatures[i]` 时：\n1.  如果栈不为空，并且 `temperatures[i]` 比栈顶索引对应的温度 `temperatures[stack.peek()]` **高**，这意味着 `temperatures[i]` 就是 `stack.peek()` 之后第一个更高的温度。我们就可以计算 `i - stack.peek()` 作为等待天数，并弹出栈顶。重复这个过程，直到栈为空或者 `temperatures[i]` 不再比栈顶温度高。\n2.  处理完所有比 `temperatures[i]` 低的栈顶元素后，将当前日期 `i` 的索引压入栈中。\n\n通过这种方式，每个元素最多入栈一次、出栈一次，总时间复杂度降为 `O(N)`。所以，这题的难点在于识别出这是“寻找下一个更大元素”的问题，并巧妙地利用单调栈来将时间复杂度从 `O(N^2)` 优化到 `O(N)`。",
+                        "solution": "import java.util.ArrayDeque;\nimport java.util.Deque;\n\nclass Solution {\n    public int[] dailyTemperatures(int[] temperatures) {\n        int n = temperatures.length;\n        int[] result = new int[n];\n        // 使用双端队列作为栈，存储元素的索引\n        Deque<Integer> stack = new ArrayDeque<>(); \n\n        for (int i = 0; i < n; i++) {\n            // 当栈不为空，且当前温度大于栈顶索引对应的温度时\n            while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {\n                int prevIndex = stack.pop(); // 弹出栈顶索引\n                result[prevIndex] = i - prevIndex; // 计算等待天数\n            }\n            // 将当前索引压入栈中，保持栈中元素对应的温度是单调递减的\n            stack.push(i);\n        }\n        \n        // 栈中剩余的元素，表示它们之后没有更高的温度，其结果默认为0，无需额外处理\n        return result;\n    }\n}"
+                    },
+                    "Minimum Distance to Type a Word Using Two Fingers": {
+                        "thoughts": "这题的难点在于如何正确地设计动态规划的状态。我们需要跟踪当前正在输入的字符索引，以及两个手指在键盘上的具体位置。由于两个手指是等价的，需要确保状态定义能够正确处理这种对称性，同时避免重复计算。此外，题目中提到两个手指最初都在键盘之外，这意味着第一次使用某个手指时，移动成本为0。这需要一个特殊的“键盘外”位置来表示，并在计算移动成本时进行特殊处理。对于每个字符，我们有两个选择：用左手手指打字，或者用右手手指打字。这两种选择都会改变其中一个手指的位置，而另一个手指保持不变。DP状态的转移需要清晰地反映这两种选择及其带来的成本和新的手指位置。",
+                        "solution": "```java\nimport java.util.Arrays;\n\nclass Solution {\n\n    // Precompute character coordinates on the 6x5 keyboard\n    // 'A' -> (0,0), 'B' -> (0,1), ..., 'F' -> (0,5)\n    // 'G' -> (1,0), ..., 'L' -> (1,5)\n    // ...\n    // 'Z' -> (4,1) (since 26 chars, 25 is 0-indexed. 25 / 6 = 4, 25 % 6 = 1)\n    private static int[][] charCoords = new int[26][2];\n\n    static {\n        for (int i = 0; i < 26; i++) {\n            charCoords[i][0] = i / 6; // row\n            charCoords[i][1] = i % 6; // column\n        }\n    }\n\n    // Calculate Manhattan distance between two key positions\n    private int getDistance(int p1, int p2) {\n        // p1 and p2 are 0-25 representing 'A'-'Z'\n        int r1 = charCoords[p1][0];\n        int c1 = charCoords[p1][1];\n        int r2 = charCoords[p2][0];\n        int c2 = charCoords[p2][1];\n        return Math.abs(r1 - r2) + Math.abs(c1 - c2);\n    }\n\n    public int minimumDistance(String word) {\n        int n = word.length();\n        // dp[k][f1_pos][f2_pos] stores the minimum cost to type word[0...k-1]\n        // such that one finger is at f1_pos and the other at f2_pos.\n        // f1_pos and f2_pos range from 0-25 (for 'A'-'Z') or 26 (for OFF_KEYBOARD).\n        // Using 27 for array size to accommodate index 26.\n        int[][][] dp = new int[n + 1][27][27];\n\n        // Initialize dp table with a large value\n        for (int i = 0; i <= n; i++) {\n            for (int j = 0; j < 27; j++) {\n                Arrays.fill(dp[i][j], Integer.MAX_VALUE / 2); // Use /2 to prevent overflow on addition\n            }\n        }\n\n        // Base case: Before typing any character (k=0), both fingers are off the keyboard.\n        // Cost is 0.\n        int OFF_KEYBOARD = 26;\n        dp[0][OFF_KEYBOARD][OFF_KEYBOARD] = 0;\n\n        // Iterate through each character in the word\n        for (int k = 0; k < n; k++) {\n            int currCharPos = word.charAt(k) - 'A'; // Position of the current character to type\n\n            // Iterate through all possible previous finger positions\n            for (int prevF1Pos = 0; prevF1Pos < 27; prevF1Pos++) {\n                for (int prevF2Pos = 0; prevF2Pos < 27; prevF2Pos++) {\n                    if (dp[k][prevF1Pos][prevF2Pos] == Integer.MAX_VALUE / 2) {\n                        continue; // This state is unreachable\n                    }\n\n                    // Option 1: Use finger 1 to type word[k]\n                    int cost1 = (prevF1Pos == OFF_KEYBOARD) ? 0 : getDistance(prevF1Pos, currCharPos);\n                    int newCost1 = dp[k][prevF1Pos][prevF2Pos] + cost1;\n                    // Update the next state: finger 1 moves to currCharPos, finger 2 stays at prevF2Pos\n                    dp[k + 1][currCharPos][prevF2Pos] = Math.min(dp[k + 1][currCharPos][prevF2Pos], newCost1);\n\n                    // Option 2: Use finger 2 to type word[k]\n                    int cost2 = (prevF2Pos == OFF_KEYBOARD) ? 0 : getDistance(prevF2Pos, currCharPos);\n                    int newCost2 = dp[k][prevF1Pos][prevF2Pos] + cost2;\n                    // Update the next state: finger 1 stays at prevF1Pos, finger 2 moves to currCharPos\n                    dp[k + 1][prevF1Pos][currCharPos] = Math.min(dp[k + 1][prevF1Pos][currCharPos], newCost2);\n                }\n            }\n        }\n\n        // After processing all characters, find the minimum cost among all possible final finger positions\n        int minTotalDistance = Integer.MAX_VALUE;\n        for (int f1Pos = 0; f1Pos < 27; f1Pos++) {\n            for (int f2Pos = 0; f2Pos < 27; f2Pos++) {\n                minTotalDistance = Math.min(minTotalDistance, dp[n][f1Pos][f2Pos]);\n            }\n        }\n\n        return minTotalDistance;\n    }\n}\n```"
+                    },
+                    "Car Fleet": {
+                        "thoughts": "这题的难点主要在于理解“车队”的形成机制以及如何高效地处理车辆。核心思想是：如果一辆车能追上它前面的慢车，它们就会合并成一个车队，并以慢车的速度前进。一旦合并，它们就作为一个整体。\n\n具体难点在于：\n1.  **处理顺序：** 必须将车辆按离终点的距离从近到远（即位置从大到小）排序。这样，当我们考虑一辆车时，它前面（更接近终点）的情况已经确定，我们只需要与它前面最近的那个车队进行比较。\n2.  **车队判断：** 遍历排序后的车辆，计算每辆车到达终点所需的时间 `(target - position) / speed`。如果当前车辆的到达时间小于或等于它前面那个车队（或单车）的到达时间，它就会追上并加入该车队。此时，这个车队到达终点的时间仍然由最慢的那辆车（即它追上的那辆车）决定。如果它到达终点的时间更晚，那么它将无法追上前面的车队，从而形成一个新的车队。\n\n所以，关键在于找到正确的处理顺序（从终点倒着处理），并基于车辆到达终点的时间来判断车队是否合并或新建。",
+                        "solution": "import java.util.Arrays;\nimport java.util.Comparator;\n\nclass Solution {\n    public int carFleet(int target, int[] position, int[] speed) {\n        int n = position.length;\n        if (n == 0) {\n            return 0;\n        }\n\n        // 创建一个二维数组来存储每辆车的 [位置, 速度]\n        // 使用 double 是为了避免浮点数除法时可能出现的精度问题，虽然这里用 int 也可以，但 double 更通用\n        double[][] cars = new double[n][2];\n        for (int i = 0; i < n; i++) {\n            cars[i][0] = position[i];\n            cars[i][1] = speed[i];\n        }\n\n        // 按照车辆的位置从大到小排序（即从离终点最近的开始处理）\n        Arrays.sort(cars, (a, b) -> Double.compare(b[0], a[0]));\n\n        int fleetCount = 0;\n        // 记录当前最前面车队（或单车）到达终点所需的时间\n        // 初始值为0.0，确保第一辆车（最接近终点）总会形成一个新车队\n        double currentTimeToTarget = 0.0;\n\n        // 遍历排序后的车辆\n        for (int i = 0; i < n; i++) {\n            double pos = cars[i][0];\n            double spd = cars[i][1];\n\n            // 计算当前车辆到达终点所需的时间\n            double time = (target - pos) / spd;\n\n            // 如果当前车辆到达终点的时间比当前最前面车队的时间更晚，\n            // 说明它无法追上前面的车队，因此会形成一个新的车队。\n            if (time > currentTimeToTarget) {\n                fleetCount++;\n                currentTimeToTarget = time; // 更新当前最前面车队的时间为这个新车队的时间\n            }\n            // 如果当前车辆到达终点的时间小于或等于当前最前面车队的时间，\n            // 说明它会追上前面的车队并加入其中。此时，车队到达终点的时间\n            // 仍然由最慢的那辆车（即 currentTimeToTarget 所代表的车队）决定，\n            // 所以 currentTimeToTarget 不需要更新。\n        }\n\n        return fleetCount;\n    }\n}"
                     }
                 },
                 "streakDays": 0,
@@ -413,6 +433,46 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Car Fleet",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/12/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Minimum Distance to Type a Word Using Two Fingers",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/12/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Daily Temperatures",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/12/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Evaluate Reverse Polish Notation",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/12/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Min Stack",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/12/2026"
+                    },
                     {
                         "id": null,
                         "name": "Valid Parentheses",
