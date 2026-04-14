@@ -186,6 +186,38 @@
                     "Car Fleet": {
                         "thoughts": "这题的难点主要在于理解“车队”的形成机制以及如何高效地处理车辆。核心思想是：如果一辆车能追上它前面的慢车，它们就会合并成一个车队，并以慢车的速度前进。一旦合并，它们就作为一个整体。\n\n具体难点在于：\n1.  **处理顺序：** 必须将车辆按离终点的距离从近到远（即位置从大到小）排序。这样，当我们考虑一辆车时，它前面（更接近终点）的情况已经确定，我们只需要与它前面最近的那个车队进行比较。\n2.  **车队判断：** 遍历排序后的车辆，计算每辆车到达终点所需的时间 `(target - position) / speed`。如果当前车辆的到达时间小于或等于它前面那个车队（或单车）的到达时间，它就会追上并加入该车队。此时，这个车队到达终点的时间仍然由最慢的那辆车（即它追上的那辆车）决定。如果它到达终点的时间更晚，那么它将无法追上前面的车队，从而形成一个新的车队。\n\n所以，关键在于找到正确的处理顺序（从终点倒着处理），并基于车辆到达终点的时间来判断车队是否合并或新建。",
                         "solution": "import java.util.Arrays;\nimport java.util.Comparator;\n\nclass Solution {\n    public int carFleet(int target, int[] position, int[] speed) {\n        int n = position.length;\n        if (n == 0) {\n            return 0;\n        }\n\n        // 创建一个二维数组来存储每辆车的 [位置, 速度]\n        // 使用 double 是为了避免浮点数除法时可能出现的精度问题，虽然这里用 int 也可以，但 double 更通用\n        double[][] cars = new double[n][2];\n        for (int i = 0; i < n; i++) {\n            cars[i][0] = position[i];\n            cars[i][1] = speed[i];\n        }\n\n        // 按照车辆的位置从大到小排序（即从离终点最近的开始处理）\n        Arrays.sort(cars, (a, b) -> Double.compare(b[0], a[0]));\n\n        int fleetCount = 0;\n        // 记录当前最前面车队（或单车）到达终点所需的时间\n        // 初始值为0.0，确保第一辆车（最接近终点）总会形成一个新车队\n        double currentTimeToTarget = 0.0;\n\n        // 遍历排序后的车辆\n        for (int i = 0; i < n; i++) {\n            double pos = cars[i][0];\n            double spd = cars[i][1];\n\n            // 计算当前车辆到达终点所需的时间\n            double time = (target - pos) / spd;\n\n            // 如果当前车辆到达终点的时间比当前最前面车队的时间更晚，\n            // 说明它无法追上前面的车队，因此会形成一个新的车队。\n            if (time > currentTimeToTarget) {\n                fleetCount++;\n                currentTimeToTarget = time; // 更新当前最前面车队的时间为这个新车队的时间\n            }\n            // 如果当前车辆到达终点的时间小于或等于当前最前面车队的时间，\n            // 说明它会追上前面的车队并加入其中。此时，车队到达终点的时间\n            // 仍然由最慢的那辆车（即 currentTimeToTarget 所代表的车队）决定，\n            // 所以 currentTimeToTarget 不需要更新。\n        }\n\n        return fleetCount;\n    }\n}"
+                    },
+                    "Minimum Distance to the Target Element": {
+                        "thoughts": "这题的难点是什么... (自动生成的解答)",
+                        "solution": "```java\n// Solution automatically synced\n```"
+                    },
+                    "Binary Search": {
+                        "thoughts": "这题的难点不在于二分查找的基本思想（分治），而在于如何正确处理边界条件和循环不变量。具体来说，是关于 `left` 和 `right` 的初始化、循环条件（`left <= right` 还是 `left < right`）、以及 `left` 和 `right` 更新（`mid + 1` / `mid - 1` 还是 `mid`）的选择。这些细节稍有不慎就可能导致死循环、越界错误或结果不正确。掌握这些微妙的边界处理是实现一个正确且健壮的二分查找的关键。",
+                        "solution": "```java\nclass Solution {\n    public int search(int[] nums, int target) {\n        int left = 0;\n        int right = nums.length - 1; // 搜索区间是 [left, right] （闭区间）\n\n        while (left <= right) { // 当 left <= right 时，搜索区间有效\n            // 防止 left + right 溢出，等价于 (left + right) / 2\n            int mid = left + (right - left) / 2; \n\n            if (nums[mid] == target) {\n                return mid; // 找到目标值\n            } else if (nums[mid] < target) {\n                left = mid + 1; // 目标值在右半部分，排除 mid\n            } else { // nums[mid] > target\n                right = mid - 1; // 目标值在左半部分，排除 mid\n            }\n        }\n\n        return -1; // 未找到目标值\n    }\n}\n```"
+                    },
+                    "Search a 2D Matrix": {
+                        "thoughts": "这题的难点是什么... (自动生成的解答)",
+                        "solution": "```java\n// Solution automatically synced\n```"
+                    },
+                    "Customer Placing the Largest Number of Orders": {
+                        "thoughts": "这题的难点是什么... (自动生成的解答)",
+                        "solution": "```java\n// Solution automatically synced\n```"
+                    },
+                    "Classes With at Least 5 Students": {
+                        "thoughts": "这题的难点在于正确使用 SQL 的 `GROUP BY` 子句来按课程分组，并使用 `COUNT` 函数计算每门课程的学生数量。更重要的是，需要知道如何使用 `HAVING` 子句来过滤分组后的结果，因为 `WHERE` 子句不能直接用于聚合函数的条件判断。对于 SQL 初学者来说，区分 `WHERE` 和 `HAVING` 可能是个小难点。",
+                        "solution": "```java\nclass Solution {\n    /**\n     * This problem is fundamentally a SQL query problem. \n     * The \"optimal Java solution\" in this context typically refers to the SQL query itself,\n     * which would be executed from a Java application using JDBC or an ORM.\n     * This method returns the SQL query string that solves the problem.\n     *\n     * @return The SQL query to find classes with at least 5 students.\n     */\n    public String getSqlSolution() {\n        return \"SELECT class FROM Courses GROUP BY class HAVING COUNT(student) >= 5;\";\n    }\n}\n```"
+                    },
+                    "Monthly Transactions I": {
+                        "thoughts": "这题的难点是什么... (自动生成的解答)",
+                        "solution": "```java\n// Solution automatically synced\n```"
+                    },
+                    "User Activity for the Past 30 Days I": {
+                        "thoughts": "这题的难点主要在于正确理解“过去30天”这个时间窗口的定义，以及如何将其精确地转化为SQL的日期范围条件。题目明确指定了“今天”是'2019-07-27'，那么“过去30天”的活动日期范围就是从'2019-06-27'（含）到'2019-07-27'（含）。很多时候，开发者可能会误用日期函数（如`DATEDIFF`或`DATE_SUB`）来计算，或者错误地理解了30天的边界。一旦明确了固定的日期范围，问题就变得简单了。此外，还需要注意结果需要对`user_id`和`activity_date`进行去重（`DISTINCT`）。",
+                        "solution": "```sql\nSELECT DISTINCT user_id, activity_date\nFROM Activity\nWHERE activity_date BETWEEN '2019-06-27' AND '2019-07-27';\n```"
+                    },
+                    "LRU Cache": {
+                        "thoughts": "这题的难点在于如何在O(1)时间复杂度内同时实现以下两个核心功能：\n1. **快速查找和更新数据 (get/put):** 这需要一个哈希表 (HashMap) 来通过键快速定位到值。\n2. **维护数据的使用顺序并高效淘汰最久未使用的项 (LRU):** 这需要一个数据结构来记录访问顺序，并且在缓存满时，能够O(1)地移除最久未使用的项，同时在数据被访问或更新时，能够O(1)地将其移动到“最新使用”的位置。\n\n单独使用哈希表无法维护顺序，单独使用链表无法O(1)查找。因此，解决方案是将两者结合：使用一个**哈希表**存储 `key -> 节点` 的映射，同时使用一个**双向链表**来维护节点的访问顺序。链表头部代表最新使用，尾部代表最久未使用。这样，通过哈希表O(1)找到节点后，再通过双向链表O(1)进行删除和插入操作，从而实现整体O(1)的时间复杂度。",
+                        "solution": "```java\nimport java.util.HashMap;\nimport java.util.Map;\n\nclass LRUCache {\n\n    // 定义双向链表节点\n    class Node {\n        int key;\n        int value;\n        Node prev;\n        Node next;\n\n        public Node(int key, int value) {\n            this.key = key;\n            this.value = value;\n        }\n    }\n\n    private Map<Integer, Node> cache; // 存储 key 到 Node 的映射，实现 O(1) 查找\n    private int capacity;             // 缓存容量\n    private Node head;                // 虚拟头节点，指向最近使用的节点\n    private Node tail;                // 虚拟尾节点，指向最久未使用的节点\n\n    public LRUCache(int capacity) {\n        this.capacity = capacity;\n        cache = new HashMap<>();\n        head = new Node(0, 0); // 使用虚拟节点简化边界处理\n        tail = new Node(0, 0); // 使用虚拟节点简化边界处理\n        head.next = tail;\n        tail.prev = head;\n    }\n\n    public int get(int key) {\n        if (!cache.containsKey(key)) {\n            return -1;\n        }\n        Node node = cache.get(key);\n        moveToHead(node); // 节点被访问，移动到链表头部（最新使用）\n        return node.value;\n    }\n\n    public void put(int key, int value) {\n        if (cache.containsKey(key)) {\n            // 如果 key 已存在，更新值并移动到头部\n            Node node = cache.get(key);\n            node.value = value;\n            moveToHead(node);\n        } else {\n            // 如果 key 不存在，创建新节点\n            Node newNode = new Node(key, value);\n            cache.put(key, newNode);\n            addNode(newNode); // 添加到链表头部\n\n            // 如果缓存超出容量，移除最久未使用的节点\n            if (cache.size() > capacity) {\n                Node lruNode = popTail(); // 移除尾部节点（最久未使用）\n                cache.remove(lruNode.key);\n            }\n        }\n    }\n\n    // --- 双向链表操作辅助方法 ---\n\n    // 将节点添加到链表头部（在虚拟头节点head之后）\n    private void addNode(Node node) {\n        node.prev = head;\n        node.next = head.next;\n        head.next.prev = node;\n        head.next = node;\n    }\n\n    // 从链表中移除一个节点\n    private void removeNode(Node node) {\n        node.prev.next = node.next;\n        node.next.prev = node.prev;\n    }\n\n    // 将一个已存在的节点移动到链表头部\n    private void moveToHead(Node node) {\n        removeNode(node);\n        addNode(node);\n    }\n\n    // 移除并返回链表尾部节点（最久未使用的节点，在虚拟尾节点tail之前）\n    private Node popTail() {\n        Node res = tail.prev;\n        removeNode(res);\n        return res;\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -435,11 +467,75 @@
                 "recentProblems": [
                     {
                         "id": null,
+                        "name": "LRU Cache",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "User Activity for the Past 30 Days I",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Monthly Transactions I",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Classes With at Least 5 Students",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Customer Placing the Largest Number of Orders",
+                        "difficulty": "",
+                        "status": "attempted",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Search a 2D Matrix",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Binary Search",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
                         "name": "Car Fleet",
                         "difficulty": "",
                         "status": "solved",
                         "tags": [],
-                        "timestamp": "4/12/2026"
+                        "timestamp": "4/13/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Minimum Distance to the Target Element",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/13/2026"
                     },
                     {
                         "id": null,
