@@ -218,6 +218,10 @@
                     "LRU Cache": {
                         "thoughts": "这题的难点在于如何在O(1)时间复杂度内同时实现以下两个核心功能：\n1. **快速查找和更新数据 (get/put):** 这需要一个哈希表 (HashMap) 来通过键快速定位到值。\n2. **维护数据的使用顺序并高效淘汰最久未使用的项 (LRU):** 这需要一个数据结构来记录访问顺序，并且在缓存满时，能够O(1)地移除最久未使用的项，同时在数据被访问或更新时，能够O(1)地将其移动到“最新使用”的位置。\n\n单独使用哈希表无法维护顺序，单独使用链表无法O(1)查找。因此，解决方案是将两者结合：使用一个**哈希表**存储 `key -> 节点` 的映射，同时使用一个**双向链表**来维护节点的访问顺序。链表头部代表最新使用，尾部代表最久未使用。这样，通过哈希表O(1)找到节点后，再通过双向链表O(1)进行删除和插入操作，从而实现整体O(1)的时间复杂度。",
                         "solution": "```java\nimport java.util.HashMap;\nimport java.util.Map;\n\nclass LRUCache {\n\n    // 定义双向链表节点\n    class Node {\n        int key;\n        int value;\n        Node prev;\n        Node next;\n\n        public Node(int key, int value) {\n            this.key = key;\n            this.value = value;\n        }\n    }\n\n    private Map<Integer, Node> cache; // 存储 key 到 Node 的映射，实现 O(1) 查找\n    private int capacity;             // 缓存容量\n    private Node head;                // 虚拟头节点，指向最近使用的节点\n    private Node tail;                // 虚拟尾节点，指向最久未使用的节点\n\n    public LRUCache(int capacity) {\n        this.capacity = capacity;\n        cache = new HashMap<>();\n        head = new Node(0, 0); // 使用虚拟节点简化边界处理\n        tail = new Node(0, 0); // 使用虚拟节点简化边界处理\n        head.next = tail;\n        tail.prev = head;\n    }\n\n    public int get(int key) {\n        if (!cache.containsKey(key)) {\n            return -1;\n        }\n        Node node = cache.get(key);\n        moveToHead(node); // 节点被访问，移动到链表头部（最新使用）\n        return node.value;\n    }\n\n    public void put(int key, int value) {\n        if (cache.containsKey(key)) {\n            // 如果 key 已存在，更新值并移动到头部\n            Node node = cache.get(key);\n            node.value = value;\n            moveToHead(node);\n        } else {\n            // 如果 key 不存在，创建新节点\n            Node newNode = new Node(key, value);\n            cache.put(key, newNode);\n            addNode(newNode); // 添加到链表头部\n\n            // 如果缓存超出容量，移除最久未使用的节点\n            if (cache.size() > capacity) {\n                Node lruNode = popTail(); // 移除尾部节点（最久未使用）\n                cache.remove(lruNode.key);\n            }\n        }\n    }\n\n    // --- 双向链表操作辅助方法 ---\n\n    // 将节点添加到链表头部（在虚拟头节点head之后）\n    private void addNode(Node node) {\n        node.prev = head;\n        node.next = head.next;\n        head.next.prev = node;\n        head.next = node;\n    }\n\n    // 从链表中移除一个节点\n    private void removeNode(Node node) {\n        node.prev.next = node.next;\n        node.next.prev = node.prev;\n    }\n\n    // 将一个已存在的节点移动到链表头部\n    private void moveToHead(Node node) {\n        removeNode(node);\n        addNode(node);\n    }\n\n    // 移除并返回链表尾部节点（最久未使用的节点，在虚拟尾节点tail之前）\n    private Node popTail() {\n        Node res = tail.prev;\n        removeNode(res);\n        return res;\n    }\n}\n```"
+                    },
+                    "Shortest Distance to Target String in a Circular Array": {
+                        "thoughts": "这题的难点是什么... (自动生成的解答)",
+                        "solution": "```java\n// Solution automatically synced\n```"
                     }
                 },
                 "streakDays": 0,
@@ -465,6 +469,14 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Shortest Distance to Target String in a Circular Array",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/15/2026"
+                    },
                     {
                         "id": null,
                         "name": "LRU Cache",
