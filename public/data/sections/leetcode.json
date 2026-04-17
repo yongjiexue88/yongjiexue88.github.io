@@ -222,6 +222,10 @@
                     "Shortest Distance to Target String in a Circular Array": {
                         "thoughts": "这题的难点是什么... (自动生成的解答)",
                         "solution": "```java\n// Solution automatically synced\n```"
+                    },
+                    "Merge Intervals": {
+                        "thoughts": "这题的难点主要在于如何高效且正确地处理所有重叠的区间。直观上可能会想到各种复杂的比较方式，但真正的关键在于，如果我们首先将所有区间按照它们的起始点进行排序，那么问题就大大简化了。排序后，我们只需要顺序遍历，每次比较当前区间和上一个已经合并的区间，就能非常简洁地判断是否重叠并进行合并。排序是解决这个问题的核心思路，也是很多人一开始容易忽略的关键一步。",
+                        "solution": "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.Comparator;\nimport java.util.List;\n\nclass Solution {\n    public int[][] merge(int[][] intervals) {\n        if (intervals == null || intervals.length == 0) {\n            return new int[0][0];\n        }\n\n        // Sort intervals based on their start times\n        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));\n\n        List<int[]> merged = new ArrayList<>();\n\n        for (int[] interval : intervals) {\n            // If the list of merged intervals is empty or if the current interval does not overlap with the previous one\n            // (i.e., current interval's start is greater than the end of the last merged interval),\n            // then add the current interval to the merged list.\n            if (merged.isEmpty() || interval[0] > merged.get(merged.size() - 1)[1]) {\n                merged.add(interval);\n            } else {\n                // Otherwise, there is an overlap, so merge the current and previous intervals.\n                // Update the end of the last merged interval if the current interval extends further.\n                merged.get(merged.size() - 1)[1] = Math.max(merged.get(merged.size() - 1)[1], interval[1]);\n            }\n        }\n\n        return merged.toArray(new int[merged.size()][]);\n    }\n}"
                     }
                 },
                 "streakDays": 0,
@@ -469,6 +473,22 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "House Robber",
+                        "difficulty": "",
+                        "status": "attempted",
+                        "tags": [],
+                        "timestamp": "4/16/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Merge Intervals",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/16/2026"
+                    },
                     {
                         "id": null,
                         "name": "Shortest Distance to Target String in a Circular Array",
