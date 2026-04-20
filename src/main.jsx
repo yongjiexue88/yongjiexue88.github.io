@@ -61,12 +61,6 @@ const AppEssentialsWrapper = ({children}) => {
         utils.file.loadJSON("/data/settings.json").then(response => {
             _applyDeveloperSettings(response)
             setSettings(response)
-
-            const consoleMessageForDevelopers = response?.consoleMessageForDevelopers
-            if(consoleMessageForDevelopers) {
-                const primaryColor = utils.css.getRootSCSSVariable('--bs-primary')
-                utils.log.info(consoleMessageForDevelopers.title, consoleMessageForDevelopers.items, primaryColor)
-            }
         })
 
         api.analytics.reportVisit().then(() => {})
