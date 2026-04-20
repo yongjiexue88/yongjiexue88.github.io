@@ -69,7 +69,10 @@ app.get("/api/finance/overview", async (req, res) => {
 
             return {
                 ...overview,
-                source: "live"
+                source: "live",
+                sync: {
+                    trigger: "api"
+                }
             }
         }, async ({cachedValue}) => {
             if(cachedValue) {
@@ -90,8 +93,14 @@ app.get("/api/finance/overview", async (req, res) => {
             return undefined
         })
 
+        console.info(
+            `[finance] overview served source=${payload.source || "unknown"} ` +
+            `generatedAt=${payload.generatedAt || "n/a"} ` +
+            `trigger=${payload.sync?.trigger || "n/a"}`
+        )
         res.json(payload)
     } catch (error) {
+        console.error("[finance] overview request failed", error)
         res.status(500).json({error: error?.message || "Unable to load finance overview"})
     }
 })

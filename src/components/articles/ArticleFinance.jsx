@@ -15,7 +15,6 @@ const FINANCE_COPY = {
         subtitle: "Track NASDAQ Composite and S&P 500 performance with trailing P/E proxy data inside the portfolio layout.",
         chartTitle: "Normalized performance",
         chartSubtitle: "Base 100 from {period1} to {period2}",
-        live: "Live API",
         cached: "Cached",
         snapshot: "Snapshot",
         syncing: "Syncing",
@@ -25,12 +24,26 @@ const FINANCE_COPY = {
         previousClose: "Prev close",
         proxyNote: "via {proxy}",
         cachedNotice: "Live finance refresh failed. Showing the most recent successful data.",
-        fallbackNotice: "Live finance API is unavailable. Showing the latest snapshot bundled with the site.",
         unavailable: "Finance data is currently unavailable.",
         chartEmpty: "No chart data available yet.",
         baseNote: "Yahoo Finance does not expose index P/E directly, so the dashboard uses QQQ for ^IXIC and SPY for ^GSPC.",
         price: "Price",
         performance: "Performance",
+        manualRefreshRequested: "Manual refresh requested.",
+        manualRefreshCompleted: "Manual refresh completed from {source}.",
+        initialLoadCompleted: "Finance data loaded from {source}.",
+        backgroundRefreshCompleted: "Background refresh checked from {source}.",
+        snapshotUpdateDetected: "New {trigger} snapshot detected.",
+        refreshFailedLog: "Refresh failed. Existing data is still on screen when available.",
+        dataTimestampDetail: "Data timestamp {time}.",
+        snapshotGeneratedDetail: "Snapshot generated {time}.",
+        snapshotUnchangedDetail: "Snapshot timestamp unchanged at {time}.",
+        triggerSchedule: "scheduled GitHub",
+        triggerPush: "push deploy",
+        triggerWorkflowDispatch: "manual deploy",
+        triggerApi: "live API",
+        triggerLocal: "local build",
+        triggerUnknown: "background",
     },
     zh: {
         eyebrow: "市场观察",
@@ -38,7 +51,6 @@ const FINANCE_COPY = {
         subtitle: "在当前作品集布局中查看纳斯达克综合指数与标普 500 的表现曲线和市盈率代理数据。",
         chartTitle: "归一化走势",
         chartSubtitle: "以 100 为基准，时间范围 {period1} 至 {period2}",
-        live: "实时接口",
         cached: "缓存数据",
         snapshot: "静态快照",
         syncing: "同步中",
@@ -48,23 +60,35 @@ const FINANCE_COPY = {
         previousClose: "前收盘",
         proxyNote: "通过 {proxy}",
         cachedNotice: "实时财经刷新失败，当前显示最近一次成功获取的数据。",
-        fallbackNotice: "实时财经接口当前不可用，已切换为站点内置的最新快照数据。",
         unavailable: "当前无法加载财经数据。",
         chartEmpty: "暂时没有可显示的图表数据。",
         baseNote: "Yahoo Finance 不直接提供指数市盈率，因此这里使用 QQQ 作为 ^IXIC 代理、SPY 作为 ^GSPC 代理。",
         price: "价格",
         performance: "表现",
+        manualRefreshRequested: "已发起手动刷新。",
+        manualRefreshCompleted: "手动刷新已完成，来源：{source}。",
+        initialLoadCompleted: "财经数据已加载，来源：{source}。",
+        backgroundRefreshCompleted: "后台同步已检查，来源：{source}。",
+        snapshotUpdateDetected: "检测到新的 {trigger} 快照更新。",
+        refreshFailedLog: "刷新失败；如有旧数据，页面会继续显示旧数据。",
+        dataTimestampDetail: "数据时间：{time}。",
+        snapshotGeneratedDetail: "快照生成时间：{time}。",
+        snapshotUnchangedDetail: "快照时间未变化：{time}。",
+        triggerSchedule: "定时 GitHub",
+        triggerPush: "推送部署",
+        triggerWorkflowDispatch: "手动部署",
+        triggerApi: "实时接口",
+        triggerLocal: "本地构建",
+        triggerUnknown: "后台同步",
     }
 }
 
-function ArticleFinance({ dataWrapper, id }) {
+function ArticleFinance({ dataWrapper }) {
     const [selectedItemCategoryId, setSelectedItemCategoryId] = useState(null)
     const [overview, setOverview] = useState(null)
     const [loading, setLoading] = useState(true)
     const [refreshing, setRefreshing] = useState(false)
     const [error, setError] = useState(null)
-    const [notice, setNotice] = useState(null)
-    const [source, setSource] = useState(null)
 
     const theme = useTheme()
     const language = useLanguage()
@@ -76,6 +100,7 @@ function ArticleFinance({ dataWrapper, id }) {
     const liveEndpoint = financeConfig.apiEndpoint || `${apiBase || ""}/api/finance/overview`
     const fallbackEndpoint = financeConfig.fallbackEndpoint || "/data/finance/overview.json"
     const refreshIntervalMs = financeConfig.refreshIntervalMs || 0
+    const shouldTryLiveApi = Boolean(financeConfig.apiEndpoint || apiBase || import.meta.env.DEV)
 
     const copy = useMemo(() => {
         return FINANCE_COPY[language.selectedLanguageId] || FINANCE_COPY.en
@@ -114,57 +139,113 @@ function ArticleFinance({ dataWrapper, id }) {
         return data
     }, [resolveUrl])
 
-    const loadOverview = useCallback(async () => {
+    const appendActivity = useCallback((entry) => {
+        const activity = {
+            id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+            recordedAt: new Date().toISOString(),
+            ...entry
+        }
+
+        const consoleMethod = activity.tone === "error"
+            ? console.error
+            : activity.tone === "warning"
+                ? console.warn
+                : console.info
+
+        consoleMethod("[finance-sync]", activity.message, {
+            detail: activity.detail || null,
+            source: activity.sourceLabel || null,
+            trigger: activity.triggerLabel || null,
+            runUrl: activity.runUrl || null
+        })
+    }, [])
+
+    const loadOverview = useCallback(async ({ reason = "initial" } = {}) => {
         const hasOverview = Boolean(overviewRef.current)
+        const previousOverview = overviewRef.current
+        const previousGeneratedAt = previousOverview?.generatedAt || null
 
         if(mountedRef.current) {
             setLoading(!hasOverview)
             setRefreshing(hasOverview)
             setError(null)
-            setNotice(null)
+        }
+
+        if(reason === "manual") {
+            appendActivity({
+                tone: "info",
+                message: copy.manualRefreshRequested
+            })
         }
 
         try {
-            const liveOverview = await loadJson(liveEndpoint, {cache: "no-store"})
+            if(shouldTryLiveApi) {
+                const liveOverview = await loadJson(liveEndpoint, {cache: "no-store"})
+                if(!mountedRef.current)
+                    return
+
+                appendActivity(createSuccessActivityEntry({
+                    reason,
+                    source: liveOverview.source || "live",
+                    overview: liveOverview,
+                    previousGeneratedAt,
+                    copy,
+                    languageId: language.selectedLanguageId
+                }))
+                setOverview(liveOverview)
+                return
+            }
+        } catch (liveError) {
+            appendActivity({
+                tone: "warning",
+                message: copy.cachedNotice,
+                detail: liveError?.message || null
+            })
+        }
+
+        try {
+            const snapshotOverview = await loadJson(fallbackEndpoint, {cache: "no-store"})
             if(!mountedRef.current)
                 return
 
-            setOverview(liveOverview)
-            setSource(liveOverview.source || "live")
-            setNotice(
-                liveOverview.source === "cached"
-                    ? copy.cachedNotice
-                    : liveOverview.source === "snapshot"
-                        ? copy.fallbackNotice
-                        : null
-            )
-        } catch (liveError) {
-            try {
-                const snapshotOverview = await loadJson(fallbackEndpoint, {cache: "no-store"})
-                if(!mountedRef.current)
-                    return
+            appendActivity(createSuccessActivityEntry({
+                reason,
+                source: "snapshot",
+                overview: snapshotOverview,
+                previousGeneratedAt,
+                copy,
+                languageId: language.selectedLanguageId
+            }))
+            setOverview(snapshotOverview)
+        } catch (snapshotError) {
+            if(!mountedRef.current)
+                return
 
-                setOverview(snapshotOverview)
-                setSource("snapshot")
-                setNotice(copy.fallbackNotice)
-            } catch (snapshotError) {
-                if(!mountedRef.current)
-                    return
-
-                setOverview(null)
-                setSource(null)
-                setError(snapshotError?.message || liveError?.message || copy.unavailable)
-            }
+            setOverview(null)
+            setError(snapshotError?.message || copy.unavailable)
+            appendActivity({
+                tone: "error",
+                message: copy.refreshFailedLog,
+                detail: snapshotError?.message || copy.unavailable
+            })
         } finally {
             if(mountedRef.current) {
                 setLoading(false)
                 setRefreshing(false)
             }
         }
-    }, [copy.fallbackNotice, copy.unavailable, fallbackEndpoint, liveEndpoint, loadJson])
+    }, [
+        appendActivity,
+        copy,
+        fallbackEndpoint,
+        language.selectedLanguageId,
+        liveEndpoint,
+        loadJson,
+        shouldTryLiveApi
+    ])
 
     useEffect(() => {
-        loadOverview()
+        loadOverview({reason: "initial"})
     }, [loadOverview])
 
     useEffect(() => {
@@ -172,7 +253,7 @@ function ArticleFinance({ dataWrapper, id }) {
             return
 
         const intervalId = window.setInterval(() => {
-            loadOverview()
+            loadOverview({reason: "interval"})
         }, refreshIntervalMs)
 
         return () => {
@@ -185,13 +266,6 @@ function ArticleFinance({ dataWrapper, id }) {
     }) || []
 
     const isSyncing = loading || refreshing
-    const sourceLabel = isSyncing
-        ? copy.syncing
-        : source === "cached"
-            ? copy.cached
-            : source === "snapshot"
-                ? copy.snapshot
-                : copy.live
 
     return (
         <Article id={dataWrapper.uniqueId}
@@ -212,14 +286,16 @@ function ArticleFinance({ dataWrapper, id }) {
 
                         <div className={`finance-dashboard-actions`}>
                             <div className={`finance-dashboard-status-row`}>
-                                <span className={`finance-status-pill finance-status-pill-${source || "idle"} ${isSyncing ? "finance-status-pill-loading" : ""}`}>
-                                    <span className={`finance-status-dot`}/>
-                                    {sourceLabel}
-                                </span>
+                                {isSyncing && (
+                                    <span className={`finance-status-pill finance-status-pill-loading`}>
+                                        <span className={`finance-status-dot`}/>
+                                        {copy.syncing}
+                                    </span>
+                                )}
 
                                 <button className={`finance-refresh-button`}
                                         type={`button`}
-                                        onClick={loadOverview}
+                                        onClick={() => loadOverview({reason: "manual"})}
                                         disabled={isSyncing}>
                                     <i className={`fa-solid fa-rotate-right`}/>
                                     <span>{copy.retry}</span>
@@ -234,10 +310,6 @@ function ArticleFinance({ dataWrapper, id }) {
                             )}
                         </div>
                     </div>
-
-                    {notice && (
-                        <FinanceBanner tone={`notice`} text={notice}/>
-                    )}
 
                     {error && (
                         <FinanceBanner tone={`error`} text={error}/>
@@ -561,6 +633,110 @@ function formatAxisDate(value, languageId = "en") {
         }).format(date)
     } catch (error) {
         return value
+    }
+}
+
+function createSuccessActivityEntry({
+    reason,
+    source,
+    overview,
+    previousGeneratedAt,
+    copy,
+    languageId
+}) {
+    const sourceLabel = resolveSourceLabel(source, copy)
+    const triggerLabel = resolveTriggerLabel(overview?.sync?.trigger, copy)
+    const generatedAtChanged = previousGeneratedAt !== overview?.generatedAt
+    const detail = buildActivityDetail({
+        source,
+        generatedAt: overview?.generatedAt,
+        generatedAtChanged,
+        copy,
+        languageId
+    })
+
+    let message = copy.backgroundRefreshCompleted.replace("{source}", sourceLabel)
+    let tone = "info"
+
+    if(reason === "manual") {
+        message = copy.manualRefreshCompleted.replace("{source}", sourceLabel)
+        tone = source === "cached" ? "warning" : "success"
+    } else if(reason === "initial") {
+        message = copy.initialLoadCompleted.replace("{source}", sourceLabel)
+    } else if(source === "snapshot" && generatedAtChanged) {
+        message = copy.snapshotUpdateDetected.replace("{trigger}", triggerLabel || sourceLabel)
+        tone = "success"
+    } else if(source === "cached") {
+        tone = "warning"
+    }
+
+    return {
+        tone,
+        message,
+        detail,
+        sourceLabel,
+        triggerLabel: source === "snapshot" ? triggerLabel : null,
+        runUrl: overview?.sync?.runUrl || null
+    }
+}
+
+function buildActivityDetail({
+    source,
+    generatedAt,
+    generatedAtChanged,
+    copy,
+    languageId
+}) {
+    if(!generatedAt)
+        return null
+
+    const timestamp = formatTimestamp(generatedAt, languageId)
+    if(source === "snapshot") {
+        return generatedAtChanged
+            ? copy.snapshotGeneratedDetail.replace("{time}", timestamp)
+            : copy.snapshotUnchangedDetail.replace("{time}", timestamp)
+    }
+
+    return copy.dataTimestampDetail.replace("{time}", timestamp)
+}
+
+function resolveSourceLabel(source, copy) {
+    if(source === "cached")
+        return copy.cached
+
+    if(source === "snapshot")
+        return copy.snapshot
+
+    return "API"
+}
+
+function resolveTriggerLabel(trigger, copy) {
+    switch (trigger) {
+        case "schedule":
+            return copy.triggerSchedule
+        case "push":
+            return copy.triggerPush
+        case "workflow_dispatch":
+            return copy.triggerWorkflowDispatch
+        case "api":
+            return copy.triggerApi
+        case "local":
+            return copy.triggerLocal
+        default:
+            return trigger ? trigger.replace(/_/g, " ") : copy.triggerUnknown
+    }
+}
+
+function resolveActivityIcon(tone) {
+    switch (tone) {
+        case "success":
+            return "fa-circle-check"
+        case "warning":
+            return "fa-clock-rotate-left"
+        case "error":
+            return "fa-triangle-exclamation"
+        default:
+            return "fa-arrows-rotate"
     }
 }
 
