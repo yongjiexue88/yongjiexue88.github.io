@@ -4,6 +4,7 @@ import {useParser} from "/src/hooks/parser.js"
 import ArticleCards from "/src/components/articles/ArticleCards.jsx"
 import ArticleAccordion from "/src/components/articles/ArticleAccordion.jsx"
 import ArticleContactForm from "/src/components/articles/ArticleContactForm.jsx"
+import ArticleFinance from "/src/components/articles/ArticleFinance.jsx"
 import ArticleFacts from "/src/components/articles/ArticleFacts.jsx"
 import ArticleInfoList from "/src/components/articles/ArticleInfoList.jsx"
 import ArticleInlineList from "/src/components/articles/ArticleInlineList.jsx"
@@ -37,6 +38,7 @@ SectionBody.ARTICLES = {
     ArticleAccordion,
     ArticleCards,
     ArticleContactForm,
+    ArticleFinance,
     ArticleFacts,
     ArticleInfoList,
     ArticleInlineList,

@@ -9,6 +9,8 @@
         "build": "vite build",
         "lint": "eslint .",
         "preview": "vite preview",
+        "finance:api": "node server/finance/server.mjs",
+        "finance:snapshot": "node scripts/generate-finance-snapshot.mjs",
         "resume:make:article": "node npm/npm-resume-new-article.js",
         "resume:clear": "node npm/npm-resume-clear.js"
     },
@@ -16,13 +18,16 @@
         "@emailjs/browser": "^4.4.1",
         "@fortawesome/fontawesome-free": "^6.6.0",
         "bootstrap": "^5.3.3",
+        "chart.js": "^4.5.1",
+        "express": "^5.2.1",
         "primeicons": "^7.0.0",
         "react": "^18.3.1",
         "react-bootstrap": "^2.10.4",
         "react-dom": "^18.3.1",
         "react-next-parallax": "^0.1.0",
         "smooth-scrollbar": "^8.8.4",
-        "swiper": "^12.1.2"
+        "swiper": "^12.1.2",
+        "yahoo-finance2": "^3.14.0"
     },
     "devDependencies": {
         "@eslint/js": "^9.9.0",
