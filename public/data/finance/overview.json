@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T01:09:54.663Z",
+  "generatedAt": "2026-04-20T01:34:51.437Z",
   "period1": "2024-01-01",
   "period2": "2026-04-20",
   "markets": [
@@ -4631,5 +4631,15 @@
         }
       ]
     }
-  ]
+  ],
+  "sync": {
+    "trigger": "local",
+    "workflow": null,
+    "runId": null,
+    "runAttempt": null,
+    "sha": null,
+    "branch": null,
+    "actor": null,
+    "runUrl": null
+  }
 }
