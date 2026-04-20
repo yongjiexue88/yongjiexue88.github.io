@@ -49,6 +49,12 @@
             "faIcon": "fa-solid fa-rss"
         },
         {
+            "id": "finance",
+            "categoryId": "more",
+            "jsonPath": "/data/sections/finance.json",
+            "faIcon": "fa-solid fa-chart-line"
+        },
+        {
             "id": "system-design",
             "categoryId": "more",
             "jsonPath": "/data/sections/system-design.json",

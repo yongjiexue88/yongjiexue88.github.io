@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # GitHub Actions schedules are evaluated in UTC.
+    # This runs every 5 minutes, offset from minute 0 to reduce queue delays.
+    - cron: '3,8,13,18,23,28,33,38,43,48,53,58 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -34,6 +38,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Generate finance snapshot
+        run: npm run finance:snapshot
 
       - name: Build site
         run: npm run build
