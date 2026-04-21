@@ -226,6 +226,22 @@
                     "Merge Intervals": {
                         "thoughts": "这题的难点主要在于如何高效且正确地处理所有重叠的区间。直观上可能会想到各种复杂的比较方式，但真正的关键在于，如果我们首先将所有区间按照它们的起始点进行排序，那么问题就大大简化了。排序后，我们只需要顺序遍历，每次比较当前区间和上一个已经合并的区间，就能非常简洁地判断是否重叠并进行合并。排序是解决这个问题的核心思路，也是很多人一开始容易忽略的关键一步。",
                         "solution": "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.Comparator;\nimport java.util.List;\n\nclass Solution {\n    public int[][] merge(int[][] intervals) {\n        if (intervals == null || intervals.length == 0) {\n            return new int[0][0];\n        }\n\n        // Sort intervals based on their start times\n        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));\n\n        List<int[]> merged = new ArrayList<>();\n\n        for (int[] interval : intervals) {\n            // If the list of merged intervals is empty or if the current interval does not overlap with the previous one\n            // (i.e., current interval's start is greater than the end of the last merged interval),\n            // then add the current interval to the merged list.\n            if (merged.isEmpty() || interval[0] > merged.get(merged.size() - 1)[1]) {\n                merged.add(interval);\n            } else {\n                // Otherwise, there is an overlap, so merge the current and previous intervals.\n                // Update the end of the last merged interval if the current interval extends further.\n                merged.get(merged.size() - 1)[1] = Math.max(merged.get(merged.size() - 1)[1], interval[1]);\n            }\n        }\n\n        return merged.toArray(new int[merged.size()][]);\n    }\n}"
+                    },
+                    "Koko Eating Bananas": {
+                        "thoughts": "这题的难点在于，它不是直接在给定的香蕉堆数组上进行二分查找，而是要意识到我们是在“答案空间”上进行二分查找。我们要找的是一个最小的吃香蕉速度 `k`。这个速度 `k` 具有单调性：如果速度 `k` 能在 `H` 小时内吃完所有香蕉，那么任何大于 `k` 的速度也一定能吃完。一旦识别出这种“在答案（即速度 `k`）上二分”的模式，问题就变得清晰了。我们需要确定速度 `k` 的搜索范围（最小为1，最大为香蕉堆中最大的那一堆的数量），然后实现一个 `check` 函数来判断给定速度 `k` 是否能在 `H` 小时内吃完所有香蕉。",
+                        "solution": "class Solution {\n    public int minEatingSpeed(int[] piles, int h) {\n        // 确定二分查找的范围\n        // 最小速度是1 (每小时至少吃一根)\n        int low = 1;\n        // 最大速度是香蕉堆中最大的那一堆的数量 (最坏情况，每小时吃完一整堆最大的香蕉堆)\n        int high = 0;\n        for (int pile : piles) {\n            high = Math.max(high, pile);\n        }\n\n        int ans = high; // 存储最终结果，初始化为最大可能速度\n\n        // 二分查找\n        while (low <= high) {\n            int mid = low + (high - low) / 2;\n            if (canFinish(piles, mid, h)) {\n                // 如果当前速度 mid 可以吃完，说明 mid 可能是一个答案\n                // 尝试更小的速度，所以将 mid 记录为当前最佳答案，并缩小搜索范围到 [low, mid - 1]\n                ans = mid;\n                high = mid - 1;\n            } else {\n                // 如果当前速度 mid 不能吃完，说明速度太慢了\n                // 需要提高速度，所以将搜索范围缩小到 [mid + 1, high]\n                low = mid + 1;\n            }\n        }\n\n        return ans;\n    }\n\n    /**\n     * 辅助函数：判断Koko能否以给定速度 k 在 h 小时内吃完所有香蕉\n     */\n    private boolean canFinish(int[] piles, int k, int h) {\n        long hoursNeeded = 0; // 注意这里用 long，防止小时数累加溢出\n        for (int pile : piles) {\n            // 计算吃完当前这堆香蕉所需的小时数\n            // 向上取整：(pile + k - 1) / k\n            hoursNeeded += (pile + k - 1) / k;\n            // 如果所需总小时数已经超过 h，则直接返回 false\n            if (hoursNeeded > h) {\n                return false;\n            }\n        }\n        return true; // 所有香蕉都能在 h 小时内吃完\n    }\n}"
+                    },
+                    "Two Furthest Houses With Different Colors": {
+                        "thoughts": "这题的难点在于，它看起来可能需要一个复杂的双指针或者O(N^2)的暴力解法，但实际上有一个更简单的O(N)观察。核心思想是：为了最大化两个房子之间的距离 `j - i`，我们总是希望 `j` 尽可能大，`i` 尽可能小。因此，最远的两个不同颜色的房子，其中一个必然是数组的第一个房子（索引0）或者最后一个房子（索引 `N-1`）。我们只需要计算两种情况下的最大距离：1. 从索引0的房子出发，找到最远的且颜色不同的房子。2. 从索引 `N-1` 的房子出发，找到最远的且颜色不同的房子。最终答案就是这两种情况中的最大值。所以，难点在于发现这个“最优解必然涉及端点”的性质，从而将问题简化为两次线性扫描。",
+                        "solution": "```java\nclass Solution {\n    public int maxDistance(int[] colors) {\n        int n = colors.length;\n        int maxDist = 0;\n\n        // 情况1：其中一个房子是索引0的房子\n        // 从数组末尾向前遍历，找到第一个与colors[0]颜色不同的房子\n        // 这样可以确保找到的是离索引0最远的房子\n        for (int j = n - 1; j >= 0; j--) {\n            if (colors[j] != colors[0]) {\n                maxDist = Math.max(maxDist, j - 0);\n                break; // 找到最远的了，无需继续向前找\n            }\n        }\n\n        // 情况2：其中一个房子是索引n-1的房子\n        // 从数组开头向后遍历，找到第一个与colors[n-1]颜色不同的房子\n        // 这样可以确保找到的是离索引n-1最远的房子\n        for (int i = 0; i < n; i++) {\n            if (colors[i] != colors[n - 1]) {\n                maxDist = Math.max(maxDist, (n - 1) - i);\n                break; // 找到最远的了，无需继续向后找\n            }\n        }\n\n        return maxDist;\n    }\n}\n```"
+                    },
+                    "Find Minimum in Rotated Sorted Array": {
+                        "thoughts": "这题的难点在于，如何利用数组的“部分有序”特性，通过二分查找（O(log n)时间复杂度）来高效地找到最小值。关键在于每次迭代时，比较 `nums[mid]` 和 `nums[right]` 来判断最小值可能存在于哪一半。如果 `nums[mid] > nums[right]`，说明 `mid` 位于旋转点之前，最小值在 `mid` 的右侧（即 `[mid+1, right]` 区域）。如果 `nums[mid] < nums[right]`，说明 `mid` 位于旋转点之后或就是旋转点，最小值可能就是 `nums[mid]` 或者在 `mid` 的左侧（即 `[left, mid]` 区域）。正确地缩小搜索范围，尤其是在 `nums[mid]` 可能是最小值时不能简单地排除 `mid`（所以 `right = mid` 而不是 `right = mid - 1`），是实现 O(log n) 解法的核心挑战。",
+                        "solution": "```java\nclass Solution {\n    public int findMin(int[] nums) {\n        if (nums == null || nums.length == 0) {\n            // 根据实际问题要求，可以抛出异常或返回特定值\n            throw new IllegalArgumentException(\"Input array cannot be null or empty.\");\n        }\n\n        int left = 0;\n        int right = nums.length - 1;\n\n        // 当数组未旋转（或旋转了n次）时，第一个元素就是最小值。\n        // 这种情况下，nums[left] <= nums[right] 成立。\n        // 即使没有这个提前判断，下面的二分查找逻辑也能正确处理。\n        if (nums[left] <= nums[right]) {\n            return nums[left];\n        }\n\n        while (left < right) {\n            int mid = left + (right - left) / 2;\n\n            // 如果 nums[mid] > nums[right]，说明 mid 位于旋转点之前。\n            // 最小值一定在 mid 的右侧（包括 mid+1 到 right）。\n            // 例如：[3,4,5,1,2]，mid=5，right=2。nums[mid](5) > nums[right](2)。\n            // 最小值在 [1,2] 中，所以 left = mid + 1。\n            if (nums[mid] > nums[right]) {\n                left = mid + 1;\n            }\n            // 如果 nums[mid] < nums[right]，说明 mid 位于旋转点之后，或者 mid 就是最小值。\n            // 此时，从 mid 到 right 的部分是有序的。\n            // 最小值可能就是 nums[mid]，或者在 mid 的左侧（left 到 mid-1）。\n            // 所以我们将 right 移动到 mid。不能是 mid-1，因为 nums[mid] 可能是最小值。\n            // 例如：[4,5,1,2,3]，mid=1，right=3。nums[mid](1) < nums[right](3)。\n            // 最小值在 [4,5,1] 中，所以 right = mid。\n            else { // nums[mid] < nums[right]\n                right = mid;\n            }\n        }\n\n        // 当循环结束时，left 和 right 会指向同一个索引，该索引处的元素就是最小值。\n        return nums[left];\n    }\n}\n```"
+                    },
+                    "Search in Rotated Sorted Array": {
+                        "thoughts": "这题的难点在于，它是一个在**部分有序**数组中进行查找的问题。传统的二分查找依赖于整个数组的完全有序性来判断搜索方向。而旋转数组的特点是，虽然整体无序，但**以任意一个中间点为界，其左右两边至少有一边是完全有序的**。因此，难点在于如何在每次迭代中，正确地判断出哪一边是有序的，并根据目标值 `target` 决定是进入有序的那一半，还是进入无序（可能包含旋转点）的那一半进行搜索。",
+                        "solution": "```java\nclass Solution {\n    public int search(int[] nums, int target) {\n        if (nums == null || nums.length == 0) {\n            return -1;\n        }\n\n        int low = 0;\n        int high = nums.length - 1;\n\n        while (low <= high) {\n            int mid = low + (high - low) / 2;\n\n            if (nums[mid] == target) {\n                return mid;\n            }\n\n            // Check if the left half is sorted (nums[low] to nums[mid])\n            if (nums[low] <= nums[mid]) {\n                // If target is within the sorted left half\n                if (nums[low] <= target && target < nums[mid]) {\n                    high = mid - 1; // Search in the left half\n                } else {\n                    low = mid + 1; // Target is in the right half (unsorted or sorted part beyond mid)\n                }\n            } \n            // Else, the right half is sorted (nums[mid] to nums[high])\n            else {\n                // If target is within the sorted right half\n                if (nums[mid] < target && target <= nums[high]) {\n                    low = mid + 1; // Search in the right half\n                } else {\n                    high = mid - 1; // Target is in the left half (unsorted or sorted part before mid)\n                }\n            }\n        }\n\n        return -1; // Target not found\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -473,6 +489,38 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Search in Rotated Sorted Array",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/20/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Find Minimum in Rotated Sorted Array",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/20/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Two Furthest Houses With Different Colors",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/20/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Koko Eating Bananas",
+                        "difficulty": "",
+                        "status": "attempted",
+                        "tags": [],
+                        "timestamp": "4/20/2026"
+                    },
                     {
                         "id": null,
                         "name": "House Robber",
