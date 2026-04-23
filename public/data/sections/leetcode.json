@@ -250,6 +250,14 @@
                     "Time Based Key-Value Store": {
                         "thoughts": "这题的难点在于如何高效地根据键和时间戳来查找值。对于每个键，我们可能存储了多个不同时间戳的值。当需要查询某个键在特定时间戳（或之前）的值时，我们必须找到那个时间戳最接近但又不超过查询时间戳的记录。如果只是简单地把所有记录存到一个列表中，每次查询都遍历一遍会非常慢（O(N)）。因此，关键在于为每个键维护一个按时间戳排序的记录列表，然后利用二分查找（O(logN)）来快速定位到符合条件的记录，从而达到最优的时间复杂度。",
                         "solution": "```java\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\nclass TimeMap {\n\n    // Custom Pair class to store timestamp and value together\n    private static class Entry {\n        int timestamp;\n        String value;\n\n        public Entry(int timestamp, String value) {\n            this.timestamp = timestamp;\n            this.value = value;\n        }\n    }\n\n    // Map to store key -> list of (timestamp, value) entries\n    private Map<String, List<Entry>> map;\n\n    public TimeMap() {\n        map = new HashMap<>();\n    }\n\n    public void set(String key, String value, int timestamp) {\n        // Use computeIfAbsent to ensure a list exists for the key\n        // Then add the new entry. Since timestamps for 'set' are strictly increasing,\n        // the list will always remain sorted by timestamp.\n        map.computeIfAbsent(key, k -> new ArrayList<>()).add(new Entry(timestamp, value));\n    }\n\n    public String get(String key, int timestamp) {\n        List<Entry> entries = map.get(key);\n        if (entries == null || entries.isEmpty()) {\n            return \"\"; // Key not found or no entries for the key\n        }\n\n        // Perform binary search to find the largest timestamp <= given timestamp\n        int low = 0;\n        int high = entries.size() - 1;\n        String result = \"\"; // Default result if no suitable entry is found\n\n        while (low <= high) {\n            int mid = low + (high - low) / 2;\n            Entry currentEntry = entries.get(mid);\n\n            if (currentEntry.timestamp <= timestamp) {\n                // This entry's timestamp is less than or equal to the query timestamp.\n                // It's a potential answer. Store its value and try to find a newer one\n                // by searching in the right half.\n                result = currentEntry.value;\n                low = mid + 1;\n            } else {\n                // This entry's timestamp is too large. We need an older entry,\n                // so search in the left half.\n                high = mid - 1;\n            }\n        }\n        return result;\n    }\n}\n```"
+                    },
+                    "Words Within Two Edits of Dictionary": {
+                        "thoughts": "这题的难点不在于需要设计一个复杂的算法或数据结构来优化搜索。主要的难点在于：\n1.  **正确理解“两步编辑距离”的含义**：由于题目明确指出所有单词长度相同，这里的“编辑距离”实际上简化为两个单词之间不同字符的数量（即汉明距离），而不是更复杂的莱文斯坦距离。如果误解为莱文斯坦距离，可能会导致不必要的复杂计算。\n2.  **认识到暴力解法（三重循环）的效率足够高**：在N、M、L都为100的约束下，O(N * M * L) 的时间复杂度（100 * 100 * 100 = 10^6）完全在可接受范围内。因此，无需过度设计或寻找更高级的优化方案，直接的暴力枚举就是最优解。",
+                        "solution": "```java\nimport java.util.ArrayList;\nimport java.util.List;\n\nclass Solution {\n    public List<String> wordsWithinTwoEdits(String[] queries, String[] dictionary) {\n        List<String> result = new ArrayList<>();\n\n        // 遍历每一个查询词\n        for (String query : queries) {\n            boolean foundMatch = false;\n            // 对于每个查询词，遍历字典中的所有词\n            for (String dictWord : dictionary) {\n                // 检查当前查询词和字典词的编辑距离是否在两步以内\n                if (isWithinTwoEdits(query, dictWord)) {\n                    foundMatch = true;\n                    break; // 找到一个匹配项，当前查询词符合条件，跳出内层循环\n                }\n            }\n            // 如果找到了匹配项，将查询词添加到结果列表\n            if (foundMatch) {\n                result.add(query);\n            }\n        }\n\n        return result;\n    }\n\n    /**\n     * 辅助函数：检查两个等长字符串的编辑距离（汉明距离）是否在两步以内。\n     * 由于题目说明所有单词长度相同，这里的“编辑距离”即为不同字符的数量。\n     */\n    private boolean isWithinTwoEdits(String s1, String s2) {\n        int diffCount = 0;\n        // 遍历字符串的每个字符\n        for (int i = 0; i < s1.length(); i++) {\n            // 如果对应位置的字符不同，则增加差异计数\n            if (s1.charAt(i) != s2.charAt(i)) {\n                diffCount++;\n            }\n            // 如果差异计数已经超过2，则无需继续比较，直接返回false\n            if (diffCount > 2) {\n                return false;\n            }\n        }\n        // 如果循环结束，差异计数小于等于2，则返回true\n        return true;\n    }\n}\n```"
+                    },
+                    "House Robber": {
+                        "thoughts": "这题的难点在于识别出它是一个动态规划问题，而不是一个简单的贪心问题。初学者可能会尝试各种贪心策略，比如总是抢劫价值最高的房子，或者隔一个抢一个，但这些策略都无法保证全局最优解。\n\n真正的难点在于：\n1.  **状态定义：** 如何定义 `dp[i]` 代表的含义。通常 `dp[i]` 表示到第 `i` 个房子为止，能抢到的最大金额。\n2.  **状态转移方程：** 思考在第 `i` 个房子时，我们有两种选择：\n    *   **抢劫第 `i` 个房子：** 那么就不能抢劫第 `i-1` 个房子。此时总金额是 `nums[i] + dp[i-2]` (当前房子的钱加上到 `i-2` 房子为止的最大金额)。\n    *   **不抢劫第 `i` 个房子：** 那么总金额就是 `dp[i-1]` (到 `i-1` 房子为止的最大金额)。\n    所以，`dp[i] = max(nums[i] + dp[i-2], dp[i-1])`。\n3.  **边界条件：** 正确处理 `dp[0]` 和 `dp[1]` 的初始值。\n\n一旦理解了这种决策依赖于前两个子问题最优解的结构，问题就迎刃而解了。进一步还可以通过空间优化将 `O(N)` 的空间复杂度降到 `O(1)`。",
+                        "solution": "```java\nclass Solution {\n    public int rob(int[] nums) {\n        if (nums == null || nums.length == 0) {\n            return 0;\n        }\n        if (nums.length == 1) {\n            return nums[0];\n        }\n        if (nums.length == 2) {\n            return Math.max(nums[0], nums[1]);\n        }\n\n        // 使用 O(1) 空间复杂度的动态规划\n        // prev2 存储 dp[i-2] 的最大金额\n        // prev1 存储 dp[i-1] 的最大金额\n        int prev2 = nums[0]; \n        int prev1 = Math.max(nums[0], nums[1]); \n\n        for (int i = 2; i < nums.length; i++) {\n            // 当前房子 i 的最大金额有两种选择：\n            // 1. 抢劫房子 i：金额为 nums[i] + prev2 (即 nums[i] + dp[i-2])\n            // 2. 不抢劫房子 i：金额为 prev1 (即 dp[i-1])\n            int current = Math.max(nums[i] + prev2, prev1);\n            \n            // 更新 prev2 和 prev1，为下一个迭代做准备\n            prev2 = prev1;\n            prev1 = current;\n        }\n\n        // 最终 prev1 存储的就是到最后一个房子为止的最大金额\n        return prev1;\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -499,6 +507,22 @@
                 "recentProblems": [
                     {
                         "id": null,
+                        "name": "House Robber",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/22/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Words Within Two Edits of Dictionary",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/22/2026"
+                    },
+                    {
+                        "id": null,
                         "name": "Time Based Key-Value Store",
                         "difficulty": "",
                         "status": "solved",
@@ -544,14 +568,6 @@
                         "status": "attempted",
                         "tags": [],
                         "timestamp": "4/20/2026"
-                    },
-                    {
-                        "id": null,
-                        "name": "House Robber",
-                        "difficulty": "",
-                        "status": "attempted",
-                        "tags": [],
-                        "timestamp": "4/16/2026"
                     },
                     {
                         "id": null,
