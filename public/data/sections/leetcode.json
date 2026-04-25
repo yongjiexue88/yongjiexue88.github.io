@@ -258,6 +258,18 @@
                     "House Robber": {
                         "thoughts": "这题的难点在于识别出它是一个动态规划问题，而不是一个简单的贪心问题。初学者可能会尝试各种贪心策略，比如总是抢劫价值最高的房子，或者隔一个抢一个，但这些策略都无法保证全局最优解。\n\n真正的难点在于：\n1.  **状态定义：** 如何定义 `dp[i]` 代表的含义。通常 `dp[i]` 表示到第 `i` 个房子为止，能抢到的最大金额。\n2.  **状态转移方程：** 思考在第 `i` 个房子时，我们有两种选择：\n    *   **抢劫第 `i` 个房子：** 那么就不能抢劫第 `i-1` 个房子。此时总金额是 `nums[i] + dp[i-2]` (当前房子的钱加上到 `i-2` 房子为止的最大金额)。\n    *   **不抢劫第 `i` 个房子：** 那么总金额就是 `dp[i-1]` (到 `i-1` 房子为止的最大金额)。\n    所以，`dp[i] = max(nums[i] + dp[i-2], dp[i-1])`。\n3.  **边界条件：** 正确处理 `dp[0]` 和 `dp[1]` 的初始值。\n\n一旦理解了这种决策依赖于前两个子问题最优解的结构，问题就迎刃而解了。进一步还可以通过空间优化将 `O(N)` 的空间复杂度降到 `O(1)`。",
                         "solution": "```java\nclass Solution {\n    public int rob(int[] nums) {\n        if (nums == null || nums.length == 0) {\n            return 0;\n        }\n        if (nums.length == 1) {\n            return nums[0];\n        }\n        if (nums.length == 2) {\n            return Math.max(nums[0], nums[1]);\n        }\n\n        // 使用 O(1) 空间复杂度的动态规划\n        // prev2 存储 dp[i-2] 的最大金额\n        // prev1 存储 dp[i-1] 的最大金额\n        int prev2 = nums[0]; \n        int prev1 = Math.max(nums[0], nums[1]); \n\n        for (int i = 2; i < nums.length; i++) {\n            // 当前房子 i 的最大金额有两种选择：\n            // 1. 抢劫房子 i：金额为 nums[i] + prev2 (即 nums[i] + dp[i-2])\n            // 2. 不抢劫房子 i：金额为 prev1 (即 dp[i-1])\n            int current = Math.max(nums[i] + prev2, prev1);\n            \n            // 更新 prev2 和 prev1，为下一个迭代做准备\n            prev2 = prev1;\n            prev1 = current;\n        }\n\n        // 最终 prev1 存储的就是到最后一个房子为止的最大金额\n        return prev1;\n    }\n}\n```"
+                    },
+                    "Number of Islands": {
+                        "thoughts": "这题的难点主要在于如何高效且不重复地识别并遍历每一个独立的“岛屿”。本质上，这是一个图的遍历问题（DFS或BFS）。关键在于：当你找到一个'1'（岛屿的一部分）时，你需要立即探索它所有相连的'1'，把这个完整的岛屿都“标记”为已访问（比如，把它们从'1'改成'0'），这样你就不会在后续的遍历中再次访问或重复计算这个岛屿。每次从一个未访问过的'1'开始一次新的遍历，就意味着你发现了一个新的岛屿。",
+                        "solution": "```java\nclass Solution {\n    public int numIslands(char[][] grid) {\n        if (grid == null || grid.length == 0) {\n            return 0;\n        }\n\n        int numRows = grid.length;\n        int numCols = grid[0.length];\n        int numIslands = 0;\n\n        for (int r = 0; r < numRows; r++) {\n            for (int c = 0; c < numCols; c++) {\n                if (grid[r][c] == '1') {\n                    numIslands++;\n                    // Start DFS/BFS from this '1' to mark all connected '1's as visited ('0')\n                    dfs(grid, r, c);\n                }\n            }\n        }\n\n        return numIslands;\n    }\n\n    private void dfs(char[][] grid, int r, int c) {\n        int numRows = grid.length;\n        int numCols = grid[0.length];\n\n        // Base cases for DFS:\n        // 1. Out of bounds\n        // 2. Current cell is water ('0') or already visited ('0' after being '1')\n        if (r < 0 || r >= numRows || c < 0 || c >= numCols || grid[r][c] == '0') {\n            return;\n        }\n\n        // Mark the current cell as visited by changing '1' to '0'\n        grid[r][c] = '0';\n\n        // Explore all 4 adjacent directions\n        dfs(grid, r + 1, c); // Down\n        dfs(grid, r - 1, c); // Up\n        dfs(grid, r, c + 1); // Right\n        dfs(grid, r, c - 1); // Left\n    }\n}\n```"
+                    },
+                    "Rotting Oranges": {
+                        "thoughts": "这题的难点主要在于识别出这是一个典型的广度优先搜索（BFS）问题。因为橘子是同时腐烂并向四周扩散的，这天然符合BFS一层一层向外探索的特性。正确地利用BFS来模拟这个“分钟”级别的扩散过程，并准确计算出最短时间，同时处理好所有橘子都腐烂或有橘子永远无法腐烂的边界情况，是解决此问题的关键。",
+                        "solution": "```java\nimport java.util.LinkedList;\nimport java.util.Queue;\n\nclass Solution {\n    public int orangesRotting(int[][] grid) {\n        if (grid == null || grid.length == 0) {\n            return 0;\n        }\n\n        int rows = grid.length;\n        int cols = grid[0].length;\n        Queue<int[]> queue = new LinkedList<>();\n        int freshOranges = 0;\n\n        // 1. 遍历网格，将所有初始腐烂的橘子加入队列，并统计新鲜橘子的数量\n        for (int r = 0; r < rows; r++) {\n            for (int c = 0; c < cols; c++) {\n                if (grid[r][c] == 2) {\n                    queue.offer(new int[]{r, c});\n                } else if (grid[r][c] == 1) {\n                    freshOranges++;\n                }\n            }\n        }\n\n        // 如果没有新鲜橘子，则不需要时间，直接返回0\n        if (freshOranges == 0) {\n            return 0;\n        }\n\n        int minutes = 0;\n        // 定义四个方向：右、左、下、上\n        int[][] directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};\n\n        // 2. BFS 广度优先搜索\n        while (!queue.isEmpty()) {\n            int levelSize = queue.size(); // 当前这一分钟腐烂的橘子数量\n            boolean rottedThisMinute = false; // 标记这一分钟是否有新的橘子腐烂\n\n            for (int i = 0; i < levelSize; i++) {\n                int[] current = queue.poll();\n                int r = current[0];\n                int c = current[1];\n\n                // 检查当前腐烂橘子的四个邻居\n                for (int[] dir : directions) {\n                    int nr = r + dir[0];\n                    int nc = c + dir[1];\n\n                    // 检查边界条件和是否为新鲜橘子\n                    if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid[nr][nc] == 1) {\n                        grid[nr][nc] = 2; // 将新鲜橘子标记为腐烂\n                        queue.offer(new int[]{nr, nc}); // 将新腐烂的橘子加入队列，等待下一分钟扩散\n                        freshOranges--; // 新鲜橘子数量减一\n                        rottedThisMinute = true; // 标记这一分钟有橘子腐烂\n                    }\n                }\n            }\n            \n            // 如果这一分钟有橘子腐烂，并且还有新鲜橘子待腐烂（即队列不为空），则分钟数增加\n            // 注意：如果 freshOranges == 0，说明所有橘子都腐烂了，此时不应该再增加 minutes\n            // 如果 rottedThisMinute 为 false，说明没有新的橘子腐烂，但 freshOranges > 0，则说明有橘子无法腐烂\n            if (freshOranges == 0) {\n                // 如果所有橘子都腐烂了，并且这一分钟确实有橘子腐烂，才增加分钟数\n                if (rottedThisMinute) {\n                    minutes++;\n                }\n                break; // 所有新鲜橘子都已腐烂，跳出循环\n            }\n            \n            if (rottedThisMinute) {\n                minutes++; // 只有当这一分钟确实有橘子腐烂时，才增加分钟数\n            } else {\n                // 如果这一分钟没有橘子腐烂，但仍有新鲜橘子，说明这些橘子无法被腐烂\n                break;\n            }\n        }\n\n        // 3. 检查是否所有新鲜橘子都已腐烂\n        return freshOranges == 0 ? minutes : -1;\n    }\n}\n```"
+                    },
+                    "Generate Parentheses": {
+                        "thoughts": "这题的难点主要在于如何系统地生成所有\"有效\"的括号组合，并且避免生成重复或无效的组合。它是一个经典的\"回溯法\"（backtracking）问题。\n\n核心思想是：在构建括号字符串的过程中，我们需要维护两个计数器，一个记录已使用的左括号数量，另一个记录已使用的右括号数量。在每一步，我们都有两种选择：添加一个左括号或添加一个右括号，但必须满足以下约束条件：\n\n1.  **左括号数量限制：** 任何时候，已使用的左括号数量不能超过 `n`。\n2.  **右括号数量限制：** 任何时候，已使用的右括号数量不能超过 `n`。\n3.  **有效性约束：** 任何时候，已使用的右括号数量不能超过已使用的左括号数量。这是确保括号序列\"有效\"的关键，即不能在没有匹配的左括号之前就添加右括号。\n\n当左右括号的数量都达到 `n` 时，我们就找到了一个有效的组合。难点在于如何清晰地定义这些约束条件，并用递归（回溯）的方式去探索所有可能的路径，同时在不满足条件时及时\"剪枝\"（pruning），停止无效的探索。",
+                        "solution": "import java.util.ArrayList;\nimport java.util.List;\n\nclass Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> result = new ArrayList<>();\n        // 调用回溯函数，初始字符串为空，左右括号计数都为0\n        backtrack(result, \"\", 0, 0, n);\n        return result;\n    }\n\n    /**\n     * 回溯函数，用于生成所有有效的括号组合\n     * @param result 存储所有有效组合的列表\n     * @param currentString 当前正在构建的括号字符串\n     * @param openCount 已使用的左括号数量\n     * @param closeCount 已使用的右括号数量\n     * @param n 目标括号对数\n     */\n    private void backtrack(List<String> result, String currentString, int openCount, int closeCount, int n) {\n        // 基本情况：如果当前字符串的长度达到 2 * n，说明已经形成了一个完整的括号组合\n        if (currentString.length() == 2 * n) {\n            result.add(currentString);\n            return;\n        }\n\n        // 规则1：如果左括号数量小于 n，可以添加一个左括号\n        if (openCount < n) {\n            backtrack(result, currentString + \"(\", openCount + 1, closeCount, n);\n        }\n\n        // 规则2：如果右括号数量小于左括号数量，可以添加一个右括号\n        // 这个条件保证了我们不会在没有匹配的左括号之前就添加右括号，从而确保了括号的有效性\n        if (closeCount < openCount) {\n            backtrack(result, currentString + \")\", openCount, closeCount + 1, n);\n        }\n    }\n}"
                     }
                 },
                 "streakDays": 0,
@@ -505,6 +517,30 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Generate Parentheses",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/24/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Rotting Oranges",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/24/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Number of Islands",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/24/2026"
+                    },
                     {
                         "id": null,
                         "name": "House Robber",
