@@ -274,6 +274,14 @@
                     "Check if There is a Valid Path in a Grid": {
                         "thoughts": "这题的难点在于，它不仅仅是简单地在网格中寻找一条路径，而是需要确保路径上的每一步都符合“街道连接规则”。每个单元格里的街道类型（1-6）都规定了它能从哪个方向进入，又能通往哪个方向。因此，当你从一个单元格移动到相邻单元格时，你不仅要检查当前单元格是否允许你朝那个方向离开，还要同时检查目标单元格是否允许你从你来的那个方向进入。这是一个双向兼容性的检查，需要仔细处理方向和街道类型的映射关系，确保连接的有效性。",
                         "solution": "```java\nimport java.util.LinkedList;\nimport java.util.Queue;\n\nclass Solution {\n    public boolean hasValidPath(int[][] grid) {\n        int m = grid.length;\n        int n = grid[0].length;\n\n        // connections[street_type-1] -> list of allowed relative moves (dr, dc)\n        // Each street type has two possible connections.\n        // Example: street 1 connects left (0,-1) and right (0,1)\n        // connections[0] = {{0, -1}, {0, 1}}\n        int[][][] connections = {\n            {{0, -1}, {0, 1}}, // 1: connects left, right\n            {{-1, 0}, {1, 0}}, // 2: connects up, down\n            {{0, -1}, {1, 0}}, // 3: connects left, down\n            {{0, 1}, {1, 0}},  // 4: connects right, down\n            {{0, -1}, {-1, 0}},// 5: connects left, up\n            {{0, 1}, {-1, 0}}  // 6: connects right, up\n        };\n\n        boolean[][] visited = new boolean[m][n];\n        Queue<int[]> queue = new LinkedList<>();\n\n        // Start BFS from (0,0)\n        queue.offer(new int[]{0, 0});\n        visited[0][0] = true;\n\n        while (!queue.isEmpty()) {\n            int[] current = queue.poll();\n            int r = current[0];\n            int c = current[1];\n\n            // If we reached the target cell, a valid path exists\n            if (r == m - 1 && c == n - 1) {\n                return true;\n            }\n\n            int currentStreetType = grid[r][c];\n            // Iterate through the two possible exit directions for the current street type\n            for (int[] dir : connections[currentStreetType - 1]) {\n                int nr = r + dir[0];\n                int nc = c + dir[1];\n\n                // Check bounds and if the next cell has already been visited\n                if (nr < 0 || nr >= m || nc < 0 || nc >= n || visited[nr][nc]) {\n                    continue;\n                }\n\n                // Crucial step: Check compatibility with the next cell's street type\n                int nextStreetType = grid[nr][nc];\n                boolean compatible = false;\n                \n                // The direction to enter the next cell (nr, nc) from (r, c) is the opposite of dir\n                int oppositeDr = -dir[0];\n                int oppositeDc = -dir[1];\n\n                // Check if nextStreetType allows entry from (oppositeDr, oppositeDc)\n                // This means one of nextStreetType's connections must be (oppositeDr, oppositeDc)\n                for (int[] nextDir : connections[nextStreetType - 1]) {\n                    if (nextDir[0] == oppositeDr && nextDir[1] == oppositeDc) {\n                        compatible = true;\n                        break;\n                    }\n                }\n\n                // If compatible, mark as visited and enqueue for further exploration\n                if (compatible) {\n                    visited[nr][nc] = true;\n                    queue.offer(new int[]{nr, nc});\n                }\n            }\n        }\n\n        // If the queue becomes empty and target was not reached, no valid path exists\n        return false;\n    }\n}\n```"
+                    },
+                    "Course Schedule": {
+                        "thoughts": "这题的难点主要在于将课程和先决条件的关系抽象成一个有向图，并理解问题本质是检测这个图中是否存在环（循环依赖）。\n\n1.  **图的构建：** 首先，需要将`numCourses`视为图中的节点，`prerequisites`中的每一对`[ai, bi]`表示要学习课程`ai`必须先学习课程`bi`，这意味着存在一条从`bi`指向`ai`的有向边。如果存在`A -> B -> C -> A`这样的依赖，就形成了一个环。\n2.  **环的检测：** 一旦图构建完成，问题就转化为判断这个有向图中是否存在环。如果存在环，则无法完成所有课程；否则，可以完成。\n3.  **算法选择：** 检测有向图中的环，最常用的方法是深度优先搜索（DFS）或拓扑排序（Kahn算法，基于BFS）。\n    *   **DFS方法：** 在DFS遍历过程中，我们可以用三种状态来标记节点：未访问、正在访问（在当前DFS递归栈中）、已访问（当前节点及其所有子节点都已处理完毕）。如果在DFS过程中遇到一个“正在访问”的节点，就说明找到了一个环。\n    *   **拓扑排序（Kahn算法）：** 计算每个节点的入度。将所有入度为0的节点加入队列。然后，每次从队列中取出一个节点，将其从图中移除，并将其所有邻接节点的入度减1。如果某个邻接节点的入度变为0，则将其加入队列。如果最终处理的节点数量等于总节点数量，则无环；否则，存在环。\n\n理解并正确实现这两种环检测算法是解决此题的关键。",
+                        "solution": "import java.util.ArrayList;\nimport java.util.List;\n\nclass Solution {\n    // 0: unvisited, 1: visiting (in current DFS path), 2: visited (finished processing)\n    private int[] visited;\n    private List<List<Integer>> adj;\n\n    public boolean canFinish(int numCourses, int[][] prerequisites) {\n        visited = new int[numCourses];\n        adj = new ArrayList<>();\n        for (int i = 0; i < numCourses; i++) {\n            adj.add(new ArrayList<>());\n        }\n\n        // Build the adjacency list: if [a, b] means b is a prerequisite for a,\n        // then there's an edge from b to a.\n        for (int[] prerequisite : prerequisites) {\n            int course = prerequisite[0];\n            int pre = prerequisite[1];\n            adj.get(pre).add(course);\n        }\n\n        // Perform DFS for each course\n        for (int i = 0; i < numCourses; i++) {\n            if (visited[i] == 0) { // If not visited, start DFS from this node\n                if (!dfs(i)) {\n                    return false; // Cycle detected\n                }\n            }\n        }\n\n        return true; // No cycle found\n    }\n\n    private boolean dfs(int course) {\n        visited[course] = 1; // Mark as visiting\n\n        for (int neighbor : adj.get(course)) {\n            if (visited[neighbor] == 1) {\n                return false; // Cycle detected: neighbor is currently being visited\n            } else if (visited[neighbor] == 0) {\n                if (!dfs(neighbor)) {\n                    return false; // Propagate cycle detection upwards\n                }\n            }\n            // If visited[neighbor] == 2, it means this neighbor and its subtree\n            // have already been processed and no cycle was found there, so we can skip.\n        }\n\n        visited[course] = 2; // Mark as visited (finished processing this node and its subtree)\n        return true;\n    }\n}"
+                    },
+                    "Number of Visible People in a Queue": {
+                        "thoughts": "这题的难点在于如何高效地计算每个人能看到右边多少人。如果对每个人都向右遍历，时间复杂度会达到 O(N^2)，对于 N 较大的情况会超时。核心挑战在于：当一个人 `A` 往右看时，他能看到比他矮的人，直到遇到第一个比他高或和他一样高的人 `B`，此时 `B` 会阻挡 `A` 看到 `B` 后面的人。这种“向右看”且有“阻挡”的特性，提示我们可以使用**单调栈**来解决。具体来说，从右向左遍历人群，维护一个单调递减的栈（栈底到栈顶）。当处理当前人 `i` 时：栈中所有比 `heights[i]` 矮的人，都会被 `heights[i]` 看到并弹出；如果栈中还有人（即栈顶元素比 `heights[i]` 高或相等），那么 `heights[i]` 还能看到栈顶的这个人，然后就被他阻挡了；最后，将 `heights[i]` 入栈。这样，每个元素最多入栈一次、出栈一次，总时间复杂度为 O(N)。",
+                        "solution": "import java.util.ArrayDeque;\nimport java.util.Deque;\n\nclass Solution {\n    public int[] canSeePersonsCount(int[] heights) {\n        int n = heights.length;\n        int[] ans = new int[n];\n        // 使用双端队列作为栈，存储从右往左遇到的、且高度递减的人\n        // 栈底到栈顶的元素是递减的，即栈顶元素是当前右侧最近的、且比栈中其他元素矮的人\n        Deque<Integer> stack = new ArrayDeque<>(); \n\n        // 从右向左遍历每个人\n        for (int i = n - 1; i >= 0; i--) {\n            int currentHeight = heights[i];\n            int count = 0;\n\n            // 1. 弹出栈中所有比当前人矮的人：\n            // 这些人都会被当前人看到，因为他们被当前人遮挡，无法看到更远的人。\n            // 并且当前人比他们高，可以越过他们看到更远。\n            while (!stack.isEmpty() && stack.peek() < currentHeight) {\n                stack.pop(); \n                count++;\n            }\n\n            // 2. 如果栈不为空，说明栈顶元素比当前人高或相等：\n            // 当前人能看到栈顶的这个人，但这个人会阻挡当前人看到更远的人。\n            // 如果栈为空，则当前人右边没有人比他高或相等，他能看到所有被弹出的矮个子。\n            if (!stack.isEmpty()) {\n                count++;\n            }\n            \n            ans[i] = count;\n            stack.push(currentHeight); // 将当前人入栈，等待左边的人来观察\n        }\n\n        return ans;\n    }\n}"
                     }
                 },
                 "streakDays": 0,
@@ -521,6 +529,30 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Number of Visible People in a Queue",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/30/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Course Schedule",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/30/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Best Time to Buy and Sell Stock",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "4/30/2026"
+                    },
                     {
                         "id": null,
                         "name": "Check if There is a Valid Path in a Grid",
@@ -842,14 +874,6 @@
                     {
                         "id": null,
                         "name": "Robot Return to Origin",
-                        "difficulty": "",
-                        "status": "solved",
-                        "tags": [],
-                        "timestamp": "4/5/2026"
-                    },
-                    {
-                        "id": null,
-                        "name": "Best Time to Buy and Sell Stock",
                         "difficulty": "",
                         "status": "solved",
                         "tags": [],
