@@ -282,6 +282,10 @@
                     "Number of Visible People in a Queue": {
                         "thoughts": "这题的难点在于如何高效地计算每个人能看到右边多少人。如果对每个人都向右遍历，时间复杂度会达到 O(N^2)，对于 N 较大的情况会超时。核心挑战在于：当一个人 `A` 往右看时，他能看到比他矮的人，直到遇到第一个比他高或和他一样高的人 `B`，此时 `B` 会阻挡 `A` 看到 `B` 后面的人。这种“向右看”且有“阻挡”的特性，提示我们可以使用**单调栈**来解决。具体来说，从右向左遍历人群，维护一个单调递减的栈（栈底到栈顶）。当处理当前人 `i` 时：栈中所有比 `heights[i]` 矮的人，都会被 `heights[i]` 看到并弹出；如果栈中还有人（即栈顶元素比 `heights[i]` 高或相等），那么 `heights[i]` 还能看到栈顶的这个人，然后就被他阻挡了；最后，将 `heights[i]` 入栈。这样，每个元素最多入栈一次、出栈一次，总时间复杂度为 O(N)。",
                         "solution": "import java.util.ArrayDeque;\nimport java.util.Deque;\n\nclass Solution {\n    public int[] canSeePersonsCount(int[] heights) {\n        int n = heights.length;\n        int[] ans = new int[n];\n        // 使用双端队列作为栈，存储从右往左遇到的、且高度递减的人\n        // 栈底到栈顶的元素是递减的，即栈顶元素是当前右侧最近的、且比栈中其他元素矮的人\n        Deque<Integer> stack = new ArrayDeque<>(); \n\n        // 从右向左遍历每个人\n        for (int i = n - 1; i >= 0; i--) {\n            int currentHeight = heights[i];\n            int count = 0;\n\n            // 1. 弹出栈中所有比当前人矮的人：\n            // 这些人都会被当前人看到，因为他们被当前人遮挡，无法看到更远的人。\n            // 并且当前人比他们高，可以越过他们看到更远。\n            while (!stack.isEmpty() && stack.peek() < currentHeight) {\n                stack.pop(); \n                count++;\n            }\n\n            // 2. 如果栈不为空，说明栈顶元素比当前人高或相等：\n            // 当前人能看到栈顶的这个人，但这个人会阻挡当前人看到更远的人。\n            // 如果栈为空，则当前人右边没有人比他高或相等，他能看到所有被弹出的矮个子。\n            if (!stack.isEmpty()) {\n                count++;\n            }\n            \n            ans[i] = count;\n            stack.push(currentHeight); // 将当前人入栈，等待左边的人来观察\n        }\n\n        return ans;\n    }\n}"
+                    },
+                    "Cinema Seat Allocation": {
+                        "thoughts": "这道题的难点主要在于如何处理每一行中座位组的**重叠**关系，以最大化可安排的家庭数量。电影院的每一行有10个座位，但只有中间的8个座位（2到9号）可以用来安排家庭。每个家庭需要4个连续的座位，并且有三种可能的4座区域：\n1.  左侧区域：座位 2, 3, 4, 5\n2.  中间区域：座位 4, 5, 6, 7\n3.  右侧区域：座位 6, 7, 8, 9\n\n核心的挑战在于：\n*   左侧区域 (2-5) 和右侧区域 (6-9) 是**不重叠**的，如果它们都可用，一行可以安排2个家庭，这是最大值。\n*   中间区域 (4-7) 与左侧区域 (2-5) 和右侧区域 (6-9) 都有重叠。这意味着如果左侧或右侧区域被占用，中间区域很可能就不能再用了。\n\n因此，对于每一行，最优的贪心策略是：\n1.  首先，检查**不重叠**的左侧区域 (2-5) 和右侧区域 (6-9) 是否都可用。如果都可用，则该行可以安排2个家庭。\n2.  如果不是两个都可用，那么检查是否**至少有一个**（左侧或右侧）可用。如果左侧可用，或者右侧可用，则该行可以安排1个家庭。此时，由于重叠，中间区域就不能再用了（或者说，即使中间区域可用，也无法再额外安排一个家庭）。\n3.  如果左侧区域 (2-5) 和右侧区域 (6-9) 都不可用（即它们都被预订座位阻挡了），那么最后再检查中间区域 (4-7) 是否可用。如果中间区域可用，则该行可以安排1个家庭。\n\n这个逻辑的难点在于，要避免重复计算，并且要找到最大值。不是简单地检查三个区域然后加起来，因为它们不是独立的。正确的方法是优先考虑不重叠的区域，如果它们都不能用，再考虑重叠的中间区域。此外，由于总行数 `n` 可能非常大，我们不能遍历所有行，而只能处理有预订座位的行，然后将剩余的行按每行2个家庭计算。",
+                        "solution": "```java\nimport java.util.*;\n\nclass Solution {\n    public int maxNumberOfFamilies(int n, int[][] reservedSeats) {\n        // 使用Map存储每行被预订的座位，键为行号，值为该行中被预订的列号集合\n        Map<Integer, Set<Integer>> rowToReservedCols = new HashMap<>();\n        for (int[] seat : reservedSeats) {\n            int row = seat[0];\n            int col = seat[1];\n            rowToReservedCols.computeIfAbsent(row, k -> new HashSet<>()).add(col);\n        }\n\n        int totalFamilies = 0;\n\n        // 遍历所有有预订座位的行\n        for (Map.Entry<Integer, Set<Integer>> entry : rowToReservedCols.entrySet()) {\n            Set<Integer> reservedCols = entry.getValue();\n            int familiesInThisRow = 0;\n\n            // 检查左侧区域 (2,3,4,5) 是否可用\n            boolean canSeatLeft = true;\n            if (reservedCols.contains(2) || reservedCols.contains(3) || reservedCols.contains(4) || reservedCols.contains(5)) {\n                canSeatLeft = false;\n            }\n\n            // 检查右侧区域 (6,7,8,9) 是否可用\n            boolean canSeatRight = true;\n            if (reservedCols.contains(6) || reservedCols.contains(7) || reservedCols.contains(8) || reservedCols.contains(9)) {\n                canSeatRight = false;\n            }\n\n            // 优先考虑不重叠的左右两个区域\n            if (canSeatLeft && canSeatRight) {\n                familiesInThisRow = 2; // 左右都可用，安排2个家庭\n            } else if (canSeatLeft || canSeatRight) {\n                familiesInThisRow = 1; // 只有左侧或右侧可用，安排1个家庭\n            } else {\n                // 左右区域都不可用，此时检查中间区域 (4,5,6,7) 是否可用\n                boolean canSeatMiddle = true;\n                if (reservedCols.contains(4) || reservedCols.contains(5) || reservedCols.contains(6) || reservedCols.contains(7)) {\n                    canSeatMiddle = false;\n                }\n                if (canSeatMiddle) {\n                    familiesInThisRow = 1; // 中间区域可用，安排1个家庭\n                }\n            }\n            totalFamilies += familiesInThisRow;\n        }\n\n        // 加上没有预订座位的行。每行没有预订座位的行都可以安排2个家庭。\n        // n 是总行数，rowToReservedCols.size() 是有预订座位的行数。\n        totalFamilies += (n - rowToReservedCols.size()) * 2;\n\n        return totalFamilies;\n    }\n}\n```"
                     }
                 },
                 "streakDays": 0,
@@ -529,6 +533,33 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Cinema Seat Allocation",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "5/1/2026"
+                    },
+                    {
+                        "id": 238,
+                        "name": "Product of Array Except Self",
+                        "difficulty": "Medium",
+                        "status": "solved",
+                        "tags": [
+                            "Array",
+                            "Prefix Sum"
+                        ],
+                        "timestamp": "5/1/2026"
+                    },
+                    {
+                        "id": null,
+                        "name": "Maximum Product Subarray",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "5/1/2026"
+                    },
                     {
                         "id": null,
                         "name": "Number of Visible People in a Queue",
@@ -929,25 +960,6 @@
                         "difficulty": "",
                         "status": "solved",
                         "tags": [],
-                        "timestamp": "4/4/2026"
-                    },
-                    {
-                        "id": null,
-                        "name": "Maximum Product Subarray",
-                        "difficulty": "",
-                        "status": "solved",
-                        "tags": [],
-                        "timestamp": "4/4/2026"
-                    },
-                    {
-                        "id": 238,
-                        "name": "Product of Array Except Self",
-                        "difficulty": "Medium",
-                        "status": "solved",
-                        "tags": [
-                            "Array",
-                            "Prefix Sum"
-                        ],
                         "timestamp": "4/4/2026"
                     },
                     {
