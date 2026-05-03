@@ -1,0 +1,57 @@
+---
+title: "Work"
+description: "Private and sanitized work-related software engineering notes."
+category: "work"
+subcategory: "index"
+tags: ["work", "software-engineering", "private-notes"]
+status: "draft"
+created: "2026-05-03"
+updated: "2026-05-03"
+visibility: "private"
+---
+
+# Work
+
+## Summary
+
+- Use this area for work system notes, debugging notes, tickets, architecture flows, and implementation decisions.
+- Default work notes to `status: "draft"` and `visibility: "private"`.
+- Redact secrets, internal URLs, customer data, credentials, and proprietary details.
+
+## Context
+
+Work notes are useful for remembering architecture, current behavior, proposed changes, risks, and testing checklists.
+
+## Current Flow
+
+Add system-specific current flows inside project subfolders such as `hybrid-gateway`, `hcb-desktop`, `tenacity`, `recall-ai`, and `rancher-k8s`.
+
+## Proposed Change
+
+Use individual notes for proposed changes instead of overloading this index.
+
+## Technical Details
+
+Keep examples sanitized:
+
+```txt
+proxyToken: "<redacted-proxy-token>"
+internalUrl: "<redacted-internal-url>"
+```
+
+## Risks
+
+- Accidentally publishing private work details.
+- Capturing real credentials or production identifiers.
+- Losing context by leaving rough notes outside the structured note database.
+
+## Testing Checklist
+
+- [ ] Confirm work notes use `visibility: "private"` unless explicitly approved for public use.
+- [ ] Confirm secrets and internal identifiers are redacted.
+- [ ] Confirm related notes are linked when useful.
+
+## Related Notes
+
+- [[Software Engineering]]
+- [[Drafts]]

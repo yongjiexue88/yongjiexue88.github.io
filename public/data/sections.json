@@ -43,10 +43,10 @@
             "faIcon": "fa-solid fa-rss"
         },
         {
-            "id": "system-design",
+            "id": "software-engineering",
             "categoryId": "more",
-            "jsonPath": "/data/sections/system-design.json",
-            "faIcon": "fa-solid fa-diagram-project"
+            "jsonPath": "/data/sections/software-engineering.json",
+            "faIcon": "fa-solid fa-code-branch"
         },
         {
             "id": "contact",
