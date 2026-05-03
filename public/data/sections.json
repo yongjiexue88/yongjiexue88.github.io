@@ -37,22 +37,10 @@
             "faIcon": "fa-solid fa-award"
         },
         {
-            "id": "leetcode",
-            "categoryId": "showcase",
-            "jsonPath": "/data/sections/leetcode.json",
-            "faIcon": "fa-solid fa-code"
-        },
-        {
             "id": "updates",
             "categoryId": "more",
             "jsonPath": "/data/sections/updates.json",
             "faIcon": "fa-solid fa-rss"
-        },
-        {
-            "id": "finance",
-            "categoryId": "more",
-            "jsonPath": "/data/sections/finance.json",
-            "faIcon": "fa-solid fa-chart-line"
         },
         {
             "id": "system-design",
