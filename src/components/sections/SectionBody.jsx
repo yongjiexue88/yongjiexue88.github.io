@@ -11,6 +11,7 @@ import ArticleInlineList from "/src/components/articles/ArticleInlineList.jsx"
 import ArticleLeetCode from "/src/components/articles/ArticleLeetCode.jsx"
 import ArticleNotFound from "/src/components/articles/ArticleNotFound.jsx"
 import ArticlePortfolio from "/src/components/articles/ArticlePortfolio.jsx"
+import ArticleSoftwareEngineering from "/src/components/articles/ArticleSoftwareEngineering.jsx"
 import ArticleStack from "/src/components/articles/ArticleStack.jsx"
 import ArticleSkills from "/src/components/articles/ArticleSkills.jsx"
 import ArticleTestimonials from "/src/components/articles/ArticleTestimonials.jsx"
@@ -45,6 +46,7 @@ SectionBody.ARTICLES = {
     ArticleLeetCode,
     ArticleNotFound,
     ArticlePortfolio,
+    ArticleSoftwareEngineering,
     ArticleSkills,
     ArticleStack,
     ArticleTestimonials,
