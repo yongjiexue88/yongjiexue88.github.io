@@ -306,6 +306,10 @@
                     "Maximum Product of Splitted Binary Tree": {
                         "thoughts": "这题的难点在于如何高效地计算所有可能的子树和，并利用这些和来找到最大乘积。我们需要进行两次深度优先搜索（DFS）：\n1.  **第一次DFS：** 遍历整棵树，计算出每个节点作为根的子树的总和，并将这些子树和存储起来。同时，也计算出整棵树的总和。\n2.  **第二次遍历：** 遍历所有存储的子树和。对于每个子树和 `s`，另一部分的和就是 `总和 - s`。计算 `s * (总和 - s)`，并找出所有乘积中的最大值。\n关键在于要意识到，任何一个边的断开，都会将树分成两部分，其中一部分恰好是某个节点的子树，另一部分是剩余的部分，这样就能覆盖所有情况。同时，由于乘积可能非常大，需要使用 `long` 类型来存储中间结果，并在最后取模。",
                         "solution": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n    // 用于存储整棵树的总和\n    long totalSum = 0;\n    // 用于存储所有可能的子树（以任意节点为根）的总和\n    List<Long> allSubtreeSums = new ArrayList<>();\n\n    public int maxProduct(TreeNode root) {\n        // 第一次DFS遍历：计算整棵树的总和，并收集所有子树的总和\n        totalSum = dfsSum(root);\n\n        long maxProduct = 0;\n        long MOD = 1_000_000_007;\n\n        // 第二次遍历：遍历所有收集到的子树和，计算并更新最大乘积\n        for (long s : allSubtreeSums) {\n            // 如果以s为和的子树被切分出来，那么另一部分的和就是 totalSum - s\n            maxProduct = Math.max(maxProduct, s * (totalSum - s));\n        }\n\n        // 返回最大乘积对 10^9 + 7 取模的结果\n        return (int)(maxProduct % MOD);\n    }\n\n    /**\n     * 深度优先搜索函数，计算以当前节点为根的子树的总和，并将其添加到 allSubtreeSums 列表中。\n     * @param node 当前节点\n     * @return 以当前节点为根的子树的总和\n     */\n    private long dfsSum(TreeNode node) {\n        if (node == null) {\n            return 0;\n        }\n\n        // 递归计算左右子树的和\n        long leftSum = dfsSum(node.left);\n        long rightSum = dfsSum(node.right);\n\n        // 当前子树的总和 = 节点值 + 左子树和 + 右子树和\n        long currentSubtreeSum = node.val + leftSum + rightSum;\n        \n        // 将当前子树的总和添加到列表中，以便后续计算乘积\n        allSubtreeSums.add(currentSubtreeSum);\n\n        return currentSubtreeSum;\n    }\n}"
+                    },
+                    "Minimum Remove to Make Valid Parentheses": {
+                        "thoughts": "这题的难点在于识别两种类型的无效括号：\n1.  **多余的右括号 `)`**：它们没有对应的左括号。这种比较容易发现，一旦遇到栈为空但又来了一个右括号，就知道这个右括号是多余的。\n2.  **多余的左括号 `(`**：它们没有对应的右括号。这种比较难发现，因为只有遍历完整个字符串后，才能确定栈中剩余的左括号是多余的。\n因此，需要一个策略（如使用栈）来先标记所有无效的右括号，再标记所有未匹配的左括号，最后构建出有效字符串。",
+                        "solution": "class Solution {\n    public String minRemoveToMakeValid(String s) {\n        char[] chars = s.toCharArray();\n        Stack<Integer> stack = new Stack<>();\n\n        // First pass: Identify and mark invalid ')'\n        // If a ')' appears without a preceding '(' to match, it's invalid.\n        for (int i = 0; i < chars.length; i++) {\n            if (chars[i] == '(') {\n                stack.push(i); // Store index of '('\n            } else if (chars[i] == ')') {\n                if (!stack.isEmpty()) {\n                    stack.pop(); // Found a matching pair, pop the '(' index\n                } else {\n                    // This ')' has no matching '(', mark it for removal\n                    chars[i] = '*'; \n                }\n            }\n        }\n\n        // Second pass: Identify and mark invalid '('\n        // Any '(' indices remaining in the stack are unmatched and thus invalid.\n        while (!stack.isEmpty()) {\n            chars[stack.pop()] = '*'; // Mark unmatched '(' for removal\n        }\n\n        // Build the result string, skipping all marked characters ('*')\n        StringBuilder sb = new StringBuilder();\n        for (char c : chars) {\n            if (c != '*') {\n                sb.append(c);\n            }\n        }\n\n        return sb.toString();\n    }\n}"
                     }
                 },
                 "streakDays": 0,
@@ -553,6 +557,14 @@
                     ]
                 ],
                 "recentProblems": [
+                    {
+                        "id": null,
+                        "name": "Minimum Remove to Make Valid Parentheses",
+                        "difficulty": "",
+                        "status": "solved",
+                        "tags": [],
+                        "timestamp": "5/7/2026"
+                    },
                     {
                         "id": null,
                         "name": "Maximum Product of Splitted Binary Tree",
