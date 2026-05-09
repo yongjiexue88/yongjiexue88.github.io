@@ -1,6 +1,7 @@
 import "./ArticleBlog.scss"
 import React, {useMemo, useState} from 'react'
 import Article from "/src/components/articles/base/Article.jsx"
+import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 
 const postModules = import.meta.glob("/src/content/blog/**/*.mdx", {
     eager: true,
@@ -9,7 +10,13 @@ const postModules = import.meta.glob("/src/content/blog/**/*.mdx", {
 })
 
 function ArticleBlog({ dataWrapper }) {
-    const posts = useMemo(() => parsePosts(postModules), [])
+    const {selectedLanguageId} = useLanguage()
+    const allPosts = useMemo(() => parsePosts(postModules), [])
+    const posts = useMemo(
+        () => filterPostsByLanguage(allPosts, selectedLanguageId),
+        [allPosts, selectedLanguageId]
+    )
+
     const [selectedCategory, setSelectedCategory] = useState("all")
     const [readingSlug, setReadingSlug] = useState(null)
 
@@ -173,14 +180,16 @@ function parsePosts(modules) {
     return Object.entries(modules)
         .map(([path, raw]) => {
             const parsed = parseFrontmatter(String(raw || ""))
-            const slug = path
+            const fileSlug = path
                 .replace("/src/content/blog/", "")
                 .replace(/\/index\.mdx$/, "")
                 .replace(/\.mdx$/, "")
+            const slug = parsed.frontmatter.slug || fileSlug
 
             return {
                 path,
                 slug,
+                fileSlug,
                 title: extractMarkdownTitle(parsed.body),
                 ...parsed
             }
@@ -193,6 +202,34 @@ function parsePosts(modules) {
 
             return (a.frontmatter.title || a.title).localeCompare(b.frontmatter.title || b.title)
         })
+}
+
+function filterPostsByLanguage(posts, languageId) {
+    if(!languageId) return posts
+
+    const matchesLanguage = post => (post.frontmatter.language || "en") === languageId
+    const inLanguage = posts.filter(matchesLanguage)
+    const slugsInLanguage = new Set(inLanguage.map(post => post.slug))
+
+    const fallbackPosts = posts.filter(post =>
+        !matchesLanguage(post) && !slugsInLanguage.has(post.slug)
+    )
+
+    const dedupFallback = []
+    const seenSlugs = new Set()
+    fallbackPosts.forEach(post => {
+        if(seenSlugs.has(post.slug)) return
+        seenSlugs.add(post.slug)
+        dedupFallback.push(post)
+    })
+
+    return [...inLanguage, ...dedupFallback].sort((a, b) => {
+        const aDate = a.frontmatter.created || a.frontmatter.updated || ""
+        const bDate = b.frontmatter.created || b.frontmatter.updated || ""
+        if(aDate !== bDate) return bDate.localeCompare(aDate)
+
+        return (a.frontmatter.title || a.title).localeCompare(b.frontmatter.title || b.title)
+    })
 }
 
 function parseFrontmatter(raw) {
