@@ -6,178 +6,235 @@ div.article-blog {
     }
 }
 
-div.blog-shell {
-    display: grid;
-    grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
-    gap: 18px;
-    align-items: start;
-
-    @include media-breakpoint-down(lg) {
-        grid-template-columns: 1fr;
-    }
+div.journal-page {
+    align-self: center;
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 8px 4px 48px;
+    position: relative;
+    width: 100%;
 }
 
-aside.blog-sidebar,
-article.blog-post {
-    background: var(--theme-boards-background);
-    border: 1px solid var(--theme-standard-borders);
-    border-radius: $standard-border-radius;
-}
-
-aside.blog-sidebar {
-    position: sticky;
-    top: 0;
-    max-height: calc(100vh - 140px);
-    overflow: auto;
-    padding: 16px;
-
-    @include media-breakpoint-down(lg) {
-        position: static;
-        max-height: none;
-    }
-}
-
-div.blog-sidebar-header {
-    margin-bottom: 14px;
-}
-
-span.blog-eyebrow {
+// ── Filters ──────────────────────────────────────────────
+div.journal-filters {
+    align-items: baseline;
     color: var(--theme-texts-light-2);
-    display: block;
-    font-weight: 700;
-    letter-spacing: 0;
-    margin-bottom: 4px;
-    text-transform: uppercase;
-}
-
-h5.blog-sidebar-title {
-    color: var(--theme-texts-light);
-    font-weight: 800;
-}
-
-div.blog-category-list {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.82rem;
     gap: 6px;
-    margin-bottom: 16px;
+    letter-spacing: 0.04em;
+    margin-bottom: 36px;
+    text-transform: lowercase;
 }
 
-button.blog-category,
-button.blog-list-item {
+button.journal-filter {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: var(--theme-texts-light-2);
+    cursor: pointer;
+    font: inherit;
+    letter-spacing: inherit;
+    opacity: 0.65;
+    padding: 2px 0;
+    text-transform: inherit;
+    transition: opacity 0.2s ease, color 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+button.journal-filter-active {
+    color: var(--theme-texts-light);
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+span.journal-filter-sep {
+    color: var(--theme-texts-light-2);
+    opacity: 0.4;
+}
+
+// ── Index (year groups) ──────────────────────────────────
+div.journal-index-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+section.journal-year-group {
+    align-items: start;
+    display: grid;
+    gap: 8px 24px;
+    grid-template-columns: 70px 1fr;
+
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
+
+h2.journal-year-label {
+    color: var(--theme-texts-light-2);
+    font-family: var(--theme-fonts-headings, var(--theme-fonts-base, serif));
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    margin: 12px 0 0;
+    opacity: 0.7;
+    text-align: right;
+
+    @include media-breakpoint-down(sm) {
+        margin: 0 0 4px;
+        text-align: left;
+    }
+}
+
+ol.journal-year-entries {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol.journal-year-entries li + li {
+    border-top: 1px solid rgba(127, 127, 127, 0.13);
+}
+
+button.journal-entry-row {
+    align-items: baseline;
     appearance: none;
     background: transparent;
     border: 0;
     color: var(--theme-texts-light);
     cursor: pointer;
-    font: inherit;
-    letter-spacing: 0;
-    text-align: left;
-    width: 100%;
-}
-
-button.blog-category {
-    align-items: center;
-    border: 1px solid var(--theme-standard-borders);
-    border-radius: $standard-border-radius;
-    display: flex;
-    font-weight: 700;
-    justify-content: space-between;
-    padding: 8px 10px;
-}
-
-button.blog-category-active {
-    background: var(--theme-standard-borders-accent);
-    border-color: var(--theme-standard-borders-accent);
-}
-
-nav.blog-list {
     display: grid;
-    gap: 8px;
+    font: inherit;
+    gap: 4px 18px;
+    grid-template-columns: 56px 1fr;
+    letter-spacing: 0;
+    padding: 14px 4px;
+    text-align: left;
+    transition: background-color 0.18s ease;
+    width: 100%;
+
+    &:hover {
+        background: rgba(127, 127, 127, 0.05);
+    }
+
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
 }
 
-button.blog-list-item {
-    border-left: 3px solid transparent;
-    border-radius: 0 $standard-border-radius $standard-border-radius 0;
-    padding: 8px 10px;
-}
-
-button.blog-list-item-active {
-    background: var(--theme-card-background);
-    border-left-color: var(--theme-standard-borders-accent);
-}
-
-span.blog-list-title,
-span.blog-list-meta {
-    display: block;
-}
-
-span.blog-list-title {
-    font-weight: 800;
-    line-height: 1.25;
-}
-
-span.blog-list-meta {
+span.journal-entry-row-date {
     color: var(--theme-texts-light-2);
-    font-size: 0.82em;
-    margin-top: 4px;
-}
-
-article.blog-post {
-    min-height: 520px;
-    overflow: hidden;
-}
-
-div.blog-post-header {
-    border-bottom: 1px solid var(--theme-standard-borders);
-    padding: 22px 24px;
-}
-
-div.blog-post-meta-row,
-div.blog-post-footer-row,
-div.blog-post-tags,
-div.blog-post-dates {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-div.blog-post-meta-row {
-    color: var(--theme-texts-light-2);
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+    padding-top: 3px;
     text-transform: uppercase;
 }
 
-h4.blog-post-title {
-    color: var(--theme-texts-light);
-    font-weight: 900;
+span.journal-entry-row-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
-p.blog-post-description {
+span.journal-entry-row-title {
+    color: var(--theme-texts-light);
+    font-size: 1.02rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+span.journal-entry-row-desc {
     color: var(--theme-texts-light-2);
-    max-width: 760px;
+    font-size: 0.88rem;
+    font-style: italic;
+    line-height: 1.5;
+    opacity: 0.75;
 }
 
-div.blog-post-footer-row {
-    justify-content: space-between;
-    margin-top: 16px;
-}
-
-span.blog-post-tag {
-    background: var(--theme-card-background);
-    border: 1px solid var(--theme-standard-borders);
-    border-radius: 999px;
-    color: var(--theme-texts-light);
-    padding: 4px 8px;
-}
-
-div.blog-post-dates {
+// ── Reading mode ─────────────────────────────────────────
+button.journal-back-link {
+    appearance: none;
+    background: transparent;
+    border: 0;
     color: var(--theme-texts-light-2);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+    opacity: 0.7;
+    padding: 4px 0;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    span {
+        margin-right: 6px;
+    }
 }
 
-div.blog-post-body {
+article.journal-entry {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+header.journal-entry-header {
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+time.journal-entry-date {
+    color: var(--theme-texts-light-2);
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 14px;
+    opacity: 0.75;
+    text-transform: uppercase;
+}
+
+h1.journal-entry-title {
     color: var(--theme-texts-light);
-    padding: 24px;
+    font-family: var(--theme-fonts-headings, var(--theme-fonts-base, serif));
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+p.journal-entry-description {
+    color: var(--theme-texts-light-2);
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px;
+    opacity: 0.85;
+}
+
+div.journal-entry-body {
+    color: var(--theme-texts-light);
+    font-size: 1.02rem;
+    line-height: 1.85;
+
+    > *:first-child {
+        margin-top: 0;
+    }
 
     h2,
     h3,
@@ -185,74 +242,128 @@ div.blog-post-body {
     h5,
     h6 {
         color: var(--theme-texts-light);
-        font-weight: 850;
-        margin: 1.15em 0 0.45em;
+        font-family: var(--theme-fonts-headings, var(--theme-fonts-base, serif));
+        font-weight: 500;
+        letter-spacing: -0.005em;
+        line-height: 1.3;
+        margin: 1.8em 0 0.6em;
     }
 
-    h2:first-child,
-    h3:first-child {
-        margin-top: 0;
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
     }
 
     p,
     li {
-        color: var(--theme-texts-light-2);
-        line-height: 1.75;
+        color: var(--theme-texts-light);
+        line-height: 1.85;
+        opacity: 0.92;
+    }
+
+    p {
+        margin: 0 0 1.1em;
     }
 
     blockquote {
-        border-left: 3px solid var(--theme-standard-borders-accent);
-        margin: 1.25rem 0;
-        padding-left: 1rem;
-    }
-
-    blockquote p {
+        border-left: 2px solid rgba(127, 127, 127, 0.35);
         color: var(--theme-texts-light);
-        font-style: italic;
+        margin: 1.6em 0;
+        padding: 2px 0 2px 1.1rem;
+
+        p {
+            font-style: italic;
+            opacity: 0.85;
+        }
     }
 
     ul {
-        margin-bottom: 1rem;
+        margin: 0 0 1.2em;
         padding-left: 1.2rem;
     }
 
     li + li {
-        margin-top: 0.25rem;
+        margin-top: 0.35rem;
     }
 
     a {
         color: var(--theme-texts-light);
-        font-weight: 800;
+        font-weight: 500;
         text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
     }
 
     code {
-        background: var(--theme-card-background);
-        border: 1px solid var(--theme-standard-borders);
-        border-radius: 5px;
+        background: rgba(127, 127, 127, 0.1);
+        border: 0;
+        border-radius: 4px;
         color: var(--theme-texts-light);
-        padding: 0.1em 0.35em;
+        font-size: 0.9em;
+        padding: 0.1em 0.4em;
     }
 
     pre {
-        background: var(--theme-card-background);
-        border: 1px solid var(--theme-standard-borders);
-        border-radius: $standard-border-radius;
+        background: rgba(127, 127, 127, 0.08);
+        border: 0;
+        border-radius: 6px;
         overflow: auto;
-        padding: 14px;
+        padding: 14px 16px;
 
         code {
             background: transparent;
             border: 0;
+            font-size: 0.88em;
             padding: 0;
         }
     }
 }
 
-div.blog-post-empty {
-    background: var(--theme-boards-background);
-    border: 1px solid var(--theme-standard-borders);
-    border-radius: $standard-border-radius;
+footer.journal-entry-footer {
+    align-items: baseline;
+    border-top: 1px solid rgba(127, 127, 127, 0.18);
     color: var(--theme-texts-light-2);
-    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    gap: 14px;
+    justify-content: space-between;
+    letter-spacing: 0.04em;
+    margin-top: 40px;
+    padding-top: 18px;
+}
+
+div.journal-entry-tags {
+    align-items: baseline;
+    color: var(--theme-texts-light-2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    opacity: 0.75;
+    text-transform: lowercase;
+}
+
+span.journal-entry-tag {
+    font-style: italic;
+}
+
+span.journal-tag-sep {
+    opacity: 0.4;
+}
+
+span.journal-entry-updated {
+    color: var(--theme-texts-light-2);
+    font-style: italic;
+    opacity: 0.7;
+}
+
+div.journal-empty {
+    color: var(--theme-texts-light-2);
+    font-style: italic;
+    opacity: 0.7;
+    padding: 32px 0;
+    text-align: center;
 }
