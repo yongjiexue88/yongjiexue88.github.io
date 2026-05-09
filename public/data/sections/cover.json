@@ -2,16 +2,16 @@
     "title": {
         "locales": {
             "en": {
-                "title_short": "Welcome!",
-                "title_short_nav": "About me",
+                "title_short": "Welcome",
+                "title_short_nav": "About",
                 "title_long_prefix": "Hello...",
-                "title_long": "I'm {{Yongjie Xue!}}"
+                "title_long": "I'm {{Yongjie Xue}}"
             },
             "zh": {
-                "title_short": "欢迎！",
-                "title_short_nav": "关于我",
+                "title_short": "欢迎",
+                "title_short_nav": "关于",
                 "title_long_prefix": "你好...",
-                "title_long": "我是 {{薛勇杰！}}"
+                "title_long": "我是 {{薛勇杰}}"
             }
         }
     },
@@ -46,12 +46,12 @@
                 },
                 {
                     "id": 3,
-                    "label": "in/yongjie-xue",
+                    "label": "Blog / Diary",
                     "link": {
-                        "href": "https://linkedin.com/in/yongjie-xue",
+                        "href": "#blog",
                         "tooltipString": "open_website"
                     },
-                    "faIcon": "fa-brands fa-linkedin"
+                    "faIcon": "fa-regular fa-pen-to-square"
                 }
             ]
         },
@@ -60,10 +60,10 @@
             "component": "ArticleText",
             "locales": {
                 "en": {
-                    "title": "{{A little bit}} about me..."
+                    "title": "{{A quieter}} corner of the internet"
                 },
                 "zh": {
-                    "title": "关于我{{的一小部分}}..."
+                    "title": "互联网里{{安静的一角}}"
                 }
             },
             "settings": {
@@ -81,10 +81,10 @@
                     },
                     "locales": {
                         "en": {
-                            "text": "<p>I’m a {{Full Stack Engineer}} with [[5 years of experience]] building real-time communication and cloud-native applications across telecom, SaaS, and medical devices.</p><p>I am experienced in React/Angular, Node.js, and GCP, with a track record of improving latency, reliability, and developer productivity in production systems serving thousands of daily sessions.</p><p>I look forward to collaborating [[with you!]]</p>"
+                            "text": "<p>This website is becoming a {{personal blog}} instead of a technical showcase.</p><p>I want it to be a place for diaries, self-introspection, life notes, and the small observations that are easy to lose when everything is only stored in chats, tasks, or code.</p><p>The technical material still exists, but this public space is now more about [[remembering how life feels while I am learning and changing]].</p>"
                         },
                         "zh": {
-                            "text": "<p>我是一名拥有 [[5 年经验]] 的 {{全栈工程师}}，擅长在电信、SaaS 和医疗设备领域构建实时通信和云原生应用。</p><p>我精通 React/Angular、Node.js 和 GCP（谷歌云平台），在改善支撑每日数千次会话的生产系统延迟、可靠性和开发者生产力方面拥有出色的成绩。</p><p>期待与您 [[合作！]]</p>"
+                            "text": "<p>这个网站正在从技术展示页变成一个{{个人博客}}。</p><p>我想把它当作日记、自我反思、生活记录，以及一些容易被聊天、任务和代码淹没的小观察的存放处。</p><p>技术内容仍然保留着，但这个公开空间现在更想记录[[我在学习和变化时，生活本身是什么感觉]]。</p>"
                         }
                     }
                 }
@@ -92,120 +92,6 @@
         },
         {
             "id": 3,
-            "component": "ArticleTestimonials",
-            "locales": {
-                "en": {
-                    "title": "Client {{testimonials}}"
-                },
-                "zh": {
-                    "title": "客户{{评价}}"
-                }
-            },
-            "settings": {
-                "order_items_by": "id",
-                "order_items_sort": "asc"
-            },
-            "items": [
-                {
-                    "id": 1,
-                    "label": "Anita Bath",
-                    "link": {
-                        "href": "https://linkedin.com",
-                        "tooltipString": "open_website"
-                    },
-                    "img": "images/pictures/testimonial-person-female-1.png",
-                    "faIcon": "",
-                    "faIconColors": {
-                        "bg": "",
-                        "fill": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "CEO at [[SalesForce]]",
-                            "text": "Working with Yongjie was a truly [[transformative experience]]. His outstanding programming skills and collaborative spirit not only elevated the quality of our project but also brought a renewed sense of motivation and purpose to us."
-                        },
-                        "zh": {
-                            "title": "CEO at [[SalesForce]]",
-                            "text": "Working with Yongjie was a truly [[transformative experience]]. His outstanding programming skills and collaborative spirit not only elevated the quality of our project but also brought a renewed sense of motivation and purpose to us."
-                        }
-                    }
-                },
-                {
-                    "id": 2,
-                    "label": "Lou Natic",
-                    "link": {
-                        "href": "https://github.com",
-                        "tooltipString": "open_website"
-                    },
-                    "img": "images/pictures/testimonial-person-male-1.png",
-                    "faIcon": "",
-                    "faIconColors": {
-                        "bg": "",
-                        "fill": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Lead Developer at [[GitHub]]",
-                            "text": "Having Yongjie on our team was an invaluable asset. His [[deep programming insights and mentorship]] not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
-                        },
-                        "zh": {
-                            "title": "Lead Developer at [[GitHub]]",
-                            "text": "Having Yongjie on our team was an invaluable asset. His [[deep programming insights and mentorship]] not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
-                        }
-                    }
-                },
-                {
-                    "id": 3,
-                    "label": "Paige Turner",
-                    "link": {
-                        "href": "",
-                        "tooltipString": ""
-                    },
-                    "img": "images/pictures/testimonial-person-female-2.png",
-                    "faIcon": "",
-                    "faIconColors": {
-                        "bg": "",
-                        "fill": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Managing Director at [[Dingga]]",
-                            "text": "Collaborating with Yongjie was a true [[game changer]] for our entire development process. His [[deep technical expertise]], creative problem-solving, and proactive mindset were absolutely invaluable."
-                        },
-                        "zh": {
-                            "title": "Managing Director at [[Dingga]]",
-                            "text": "Collaborating with Yongjie was a true [[game changer]] for our entire development process. His [[deep technical expertise]], creative problem-solving, and proactive mindset were absolutely invaluable."
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "label": "Chris P. Bacon",
-                    "link": {
-                        "href": "https://dribbble.com",
-                        "tooltipString": "open_website"
-                    },
-                    "img": "images/pictures/testimonial-person-male-2.png",
-                    "faIcon": "",
-                    "faIconColors": {
-                        "bg": "",
-                        "fill": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Creative Director at [[Dribbble]]",
-                            "text": "Yongjie Xue's [[attention to detail]] and his [[innovative thinking]] brought a fresh perspective to our whole design process! Simply amazing!"
-                        },
-                        "zh": {
-                            "title": "Creative Director at [[Dribbble]]",
-                            "text": "Yongjie Xue's [[attention to detail]] and his [[innovative thinking]] brought a fresh perspective to our whole design process! Simply amazing!"
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "id": 4,
             "component": "ArticleInfoList",
             "settings": {
                 "order_items_by": "id",
@@ -213,16 +99,16 @@
             },
             "locales": {
                 "en": {
-                    "title": "Personal {{interests}}"
+                    "title": "Writing {{themes}}"
                 },
                 "zh": {
-                    "title": "个人{{兴趣}}"
+                    "title": "写作{{主题}}"
                 }
             },
             "items": [
                 {
                     "id": 1,
-                    "faIcon": "fa-solid fa-video",
+                    "faIcon": "fa-regular fa-compass",
                     "faIconColors": {
                         "bg": "",
                         "fill": ""
@@ -235,18 +121,18 @@
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{AI}} video editing",
-                            "text": "Learning to use AI tools to enhance my videos."
+                            "title": "{{Self-reflection}}",
+                            "text": "Thinking through choices, patterns, fears, and the kind of person I am becoming."
                         },
                         "zh": {
-                            "title": "{{AI}} video editing",
-                            "text": "Learning to use AI tools to enhance my videos."
+                            "title": "{{自我反思}}",
+                            "text": "记录选择、模式、恐惧，以及我正在变成什么样的人。"
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "faIcon": "fa-solid fa-palette",
+                    "faIcon": "fa-regular fa-note-sticky",
                     "faIconColors": {
                         "bg": "",
                         "fill": ""
@@ -259,18 +145,18 @@
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Arts}} & Illustration",
-                            "text": "Practicing digital art and exploring new styles."
+                            "title": "{{Daily notes}}",
+                            "text": "Small memories, routines, and moments from ordinary days."
                         },
                         "zh": {
-                            "title": "{{Arts}} & Illustration",
-                            "text": "Practicing digital art and exploring new styles."
+                            "title": "{{日常记录}}",
+                            "text": "普通日子里的小记忆、习惯和片刻。"
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "faIcon": "fa-solid fa-chart-line",
+                    "faIcon": "fa-regular fa-lightbulb",
                     "faIconColors": {
                         "bg": "",
                         "fill": ""
@@ -283,85 +169,12 @@
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{Investing}} & Finance",
-                            "text": "Learning the basics of stocks and personal finance."
+                            "title": "{{Learning in public}}",
+                            "text": "Non-polished thoughts about books, language, career, technology, and life."
                         },
                         "zh": {
-                            "title": "{{Investing}} & Finance",
-                            "text": "Learning the basics of stocks and personal finance."
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "faIcon": "fa-solid fa-window-restore",
-                    "faIconColors": {
-                        "bg": "",
-                        "fill": ""
-                    },
-                    "label": null,
-                    "link": {
-                        "href": null,
-                        "tooltipString": null
-                    },
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {
-                            "title": "{{UX}} design",
-                            "text": "Studying user experience principles."
-                        },
-                        "zh": {
-                            "title": "{{UX}} design",
-                            "text": "Studying user experience principles."
-                        }
-                    }
-                },
-                {
-                    "id": 5,
-                    "img": "",
-                    "faIcon": "fa-solid fa-camera-retro",
-                    "faIconColors": {
-                        "bg": "",
-                        "fill": ""
-                    },
-                    "label": null,
-                    "link": {
-                        "href": null,
-                        "tooltipString": null
-                    },
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {
-                            "title": "{{Photography}} & Photoshop",
-                            "text": "Enhancing photos through creative editing techniques."
-                        },
-                        "zh": {
-                            "title": "{{Photography}} & Photoshop",
-                            "text": "Enhancing photos through creative editing techniques."
-                        }
-                    }
-                },
-                {
-                    "id": 6,
-                    "faIcon": "fa-solid fa-drum-steelpan",
-                    "faIconColors": {
-                        "bg": "",
-                        "fill": ""
-                    },
-                    "label": null,
-                    "link": {
-                        "href": null,
-                        "tooltipString": null
-                    },
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {
-                            "title": "Playing {{drums}}",
-                            "text": "Exploring different genres and improving my skills."
-                        },
-                        "zh": {
-                            "title": "Playing {{drums}}",
-                            "text": "Exploring different genres and improving my skills."
+                            "title": "{{公开学习}}",
+                            "text": "关于书、语言、职业、技术和生活的未必成熟的想法。"
                         }
                     }
                 }

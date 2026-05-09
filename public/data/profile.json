@@ -2,19 +2,20 @@
     "name": "Yongjie Xue",
     "profilePictureUrl": "images/pictures/profile-picture.jpg",
     "resumePdfUrl": "",
-    "statusCircleVisible": true,
+    "statusCircleVisible": false,
     "statusCircleVariant": "available",
-    "statusCircleHoverMessage": "status_message_available_for_freelance",
+    "statusCircleHoverMessage": "status_message_personal_blog",
     "locales": {
         "en": {
             "localized_name": "Yongjie Xue",
             "localized_name_stylized": " [[Yongjie {{Xue}}]]",
             "status_message_available_for_freelance": "Available for freelance!",
+            "status_message_personal_blog": "Writing and reflecting.",
             "roles": [
-                "Full Stack Engineer",
-                "Frontend Developer",
-                "Backend Developer",
-                "AI Systems Engineer"
+                "Personal Blog",
+                "Life Notes",
+                "Self-Reflection",
+                "Learning in Public"
             ],
             "name_pronunciation_ipa": "[ yông jié shwë ]",
             "name_pronunciation_audio_url": "audio/yongjie.mp3"
@@ -23,11 +24,12 @@
             "localized_name": "Yongjie Xue",
             "localized_name_stylized": " [[薛 {{勇杰}}]]",
             "status_message_available_for_freelance": "可接受自由职业合作！",
+            "status_message_personal_blog": "记录与反思中。",
             "roles": [
-                "全栈工程师",
-                "前端开发工程师",
-                "后端开发工程师",
-                "AI 系统工程师"
+                "个人博客",
+                "生活记录",
+                "自我反思",
+                "公开学习"
             ],
             "name_pronunciation_ipa": "[ yông jié shwë ]",
             "name_pronunciation_audio_url": "audio/yongjie.mp3"

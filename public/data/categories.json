@@ -13,26 +13,14 @@
             }
         },
         {
-            "id": "background",
-            "faIcon": "fa-regular fa-clock",
+            "id": "writing",
+            "faIcon": "fa-regular fa-pen-to-square",
             "locales": {
                 "en": {
-                    "title": "History"
+                    "title": "Writing"
                 },
                 "zh": {
-                    "title": "履历"
-                }
-            }
-        },
-        {
-            "id": "showcase",
-            "faIcon": "fa-regular fa-folder-open",
-            "locales": {
-                "en": {
-                    "title": "Showcase"
-                },
-                "zh": {
-                    "title": "展示"
+                    "title": "写作"
                 }
             }
         },
