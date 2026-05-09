@@ -2,16 +2,16 @@
     "title": {
         "locales": {
             "en": {
-                "title_short": "Blog",
-                "title_short_nav": "Blog",
-                "title_long_prefix": "A place for",
-                "title_long": "Personal {{Writing}}"
+                "title_short": "Journal",
+                "title_short_nav": "Journal",
+                "title_long_prefix": "Notes from",
+                "title_long": "{{quiet days}}"
             },
             "zh": {
-                "title_short": "博客",
-                "title_short_nav": "博客",
-                "title_long_prefix": "这里存放我的",
-                "title_long": "个人{{写作}}"
+                "title_short": "小记",
+                "title_short_nav": "小记",
+                "title_long_prefix": "一隅",
+                "title_long": "{{小记}}"
             }
         }
     },
@@ -21,10 +21,10 @@
             "component": "ArticleBlog",
             "locales": {
                 "en": {
-                    "title": "Diary {{Entries}}"
+                    "title": "A quiet place for notes, memories, and slow {{thoughts}}."
                 },
                 "zh": {
-                    "title": "日记{{条目}}"
+                    "title": "存放日记、片段与慢慢生长的{{思绪}}。"
                 }
             }
         }
