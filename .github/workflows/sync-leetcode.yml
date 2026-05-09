@@ -1,10 +1,8 @@
 name: Sync LeetCode Submissions
 
 on:
-  schedule:
-    # Runs at 00:00 UTC every day
-    - cron: '0 0 * * *'
-  # Allows you to run this workflow manually from the Actions tab
+  # LeetCode is no longer part of the public personal-blog site.
+  # Keep manual dispatch available in case the hidden technical archive needs a refresh.
   workflow_dispatch:
 
 jobs:
