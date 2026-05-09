@@ -12,7 +12,8 @@ section.section {
     margin: 0 auto;
     overflow: hidden;
 
-    background-color: var(--theme-card-background);
+    background-color: rgba(255, 252, 245, 0.55);
+    backdrop-filter: blur(0.5px);
     border-radius: $standard-border-radius;
     @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
         min-height: 100vh;

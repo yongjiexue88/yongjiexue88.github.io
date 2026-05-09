@@ -1,90 +1,70 @@
 @import "/src/styles/extend.scss";
 
 div.nav-profile-card {
-    --avatar-size: 140px;
-    --border-size: 6px;
-    --info-margin-top: 10px;
-    --offset-status-circle: 15px;
-    @media(min-height: 760px) {--avatar-size: 150px; --info-margin-top: 11px;}
-    @media(min-height: 800px) {--avatar-size: 155px}
-    @media(max-height: 690px) {--avatar-size: 130px}
-    @media(max-height: 650px) {--avatar-size: 120px}
-
-    display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: transparent !important;
+    display: flex;
     flex-direction: column;
-    background-color: transparent!important;
+    justify-content: center;
+    margin: 28px 15px 18px;
     position: relative;
-    margin: 15px;
+    user-select: none;
+}
 
-    &-avatar {
-        width: var(--avatar-size);
-        height: var(--avatar-size);
-        border: var(--border-size) solid var(--theme-card-background-accent);
-        border-radius: calc($standard-border-radius * 2);
-        border-top-right-radius: 0;
+div.nav-profile-card-logo {
+    align-items: center;
+    color: var(--theme-texts-light);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--theme-fonts-headings, var(--theme-fonts-base, serif));
+    gap: 8px;
+    line-height: 1.1;
+    text-align: center;
+
+    span.nav-profile-card-logo-main {
+        font-size: 2.1rem;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        padding-left: 0.16em;
     }
 
-    &-status-circle {
-        position: absolute;
-        top: calc(var(--avatar-size) - var(--offset-status-circle));
-        left: calc(50% + var(--avatar-size)/2 - var(--offset-status-circle)*1.2);
-    }
-
-    &-info {
-        margin-top: var(--info-margin-top);
-        margin-bottom: 3px;
-        user-select: none;
-        @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-            margin-top: 14px;
-            margin-bottom: 8px;
-        }
-    }
-
-    h1.nav-profile-card-name {
-        text-align: center;
-
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 4px;
-        font-size: 1.25rem!important;
-        line-height: 1.8rem!important;
-
-        @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-            font-size: 1.5rem!important;
-            margin-bottom: 7px;
-        }
-    }
-
-    h1.nav-profile-card-name-with-audio-button {
-        @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-            margin-left: 65px;
-            margin-right: 65px;
-        }
-    }
-
-    div.nav-profile-card-role {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--theme-secondary);
-        font-size: 0.9rem;
-        min-height: 25px;
-        @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-            font-size: 0.95rem;
-            min-height: 25px;
-        }
+    span.nav-profile-card-logo-sub {
+        font-size: 0.78rem;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        opacity: 0.7;
+        text-transform: lowercase;
     }
 }
 
-div.nav-profile-card-shrink {
-    --avatar-size: 80px;
-    --border-size: 3px;
-    --offset-status-circle: 12px;
+div.nav-profile-card-info {
+    margin-top: 14px;
+    text-align: center;
+}
 
-    div.nav-profile-card-avatar {
-        border-radius: calc($standard-border-radius * 2)!important;
+div.nav-profile-card-tagline {
+    color: var(--theme-texts-light-2);
+    font-size: 0.78rem;
+    font-style: italic;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    opacity: 0.75;
+    padding: 0 8px;
+}
+
+div.nav-profile-card-shrink {
+    margin: 18px 8px 12px;
+
+    div.nav-profile-card-logo {
+        span.nav-profile-card-logo-main {
+            font-size: 1.25rem;
+            letter-spacing: 0.1em;
+        }
+
+        span.nav-profile-card-logo-sub {
+            display: none;
+        }
     }
 
     div.nav-profile-card-info {

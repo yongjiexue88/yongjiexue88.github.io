@@ -1,123 +1,68 @@
 @import "/src/styles/extend.scss";
 
 div.layout-static-background {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: $z-index-background;
     background-color: var(--theme-background);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    height: 100%;
     overflow: hidden;
-    user-select: none;
     pointer-events: none;
+    position: fixed;
+    user-select: none;
+    width: 100%;
+    z-index: $z-index-background;
 }
 
-div.layout-static-background-shards-container {
-    aspect-ratio: 2880/1800;
+div.layout-static-background-paper {
+    background:
+        radial-gradient(ellipse at 18% 22%, rgba(180, 130, 130, 0.06) 0, transparent 55%),
+        radial-gradient(ellipse at 82% 78%, rgba(120, 140, 120, 0.06) 0, transparent 55%),
+        radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(80, 60, 50, 0.05) 100%);
+    inset: 0;
+    position: absolute;
+}
+
+// Rice-paper grain via inline SVG fractal noise.
+div.layout-static-background-grain {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.28  0 0 0 0 0.22  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>");
+    background-repeat: repeat;
+    inset: 0;
+    mix-blend-mode: multiply;
+    opacity: 0.18;
+    position: absolute;
+}
+
+svg.layout-static-background-mountain {
+    bottom: 0;
+    color: var(--theme-texts-light, #2a2a2a);
+    height: 32vh;
+    left: 0;
+    max-height: 320px;
+    min-height: 180px;
+    opacity: 0.55;
+    position: absolute;
     width: 100%;
-    max-width: 2880px;
-    position: relative;
-    @include media-breakpoint-down(xl) {
-        display: none;
+
+    @include media-breakpoint-down(md) {
+        height: 22vh;
+        min-height: 120px;
     }
 }
 
-div.layout-static-background-shard {
+svg.layout-static-background-sakura {
+    color: rgba(180, 95, 110, 0.85);
+    height: auto;
+    opacity: 0.6;
     position: absolute;
-    opacity: 0.7;
-    background-color: var(--theme-background-contrast);
-}
+    right: -60px;
+    top: -20px;
+    transform: scaleX(-1) rotate(-8deg);
+    transform-origin: center;
+    width: 420px;
 
-div.layout-static-background-shard-obj-1 {
-    width: 30%;
-    height: 15%;
-    top: 40%;
-    left: 30%;
-    clip-path: polygon(10% 20%, 80% 0%, 100% 70%, 20% 100%);
-    transform: rotate(15deg);
-}
+    @include media-breakpoint-down(md) {
+        width: 260px;
+    }
 
-div.layout-static-background-shard-obj-2 {
-    width: 10%;
-    height: 5%;
-    top: 10%;
-    left: 60%;
-    clip-path: polygon(0% 40%, 70% 0%, 100% 60%, 70% 100%);
-    transform: rotate(-10deg);
-}
-
-div.layout-static-background-shard-obj-3 {
-    width: 20%;
-    height: 20%;
-    top: 5%;
-    left: 35%;
-    clip-path: polygon(20% 0%, 90% 20%, 80% 100%, 10% 90%);
-    transform: rotate(25deg);
-}
-
-div.layout-static-background-shard-obj-4 {
-    width: 22%;
-    height: 14%;
-    top: 60%;
-    left: 5%;
-    clip-path: polygon(0% 0%, 100% 30%, 80% 100%, 10% 90%);
-    transform: rotate(-20deg);
-}
-
-div.layout-static-background-shard-obj-5 {
-    width: 28%;
-    height: 16%;
-    top: 64%;
-    left: 50%;
-    clip-path: polygon(15% 10%, 90% 0%, 100% 90%, 0% 80%);
-    transform: rotate(12deg);
-}
-
-div.layout-static-background-shard-obj-6 {
-    width: 18%;
-    height: 12%;
-    top: 25%;
-    left: 5%;
-    clip-path: polygon(10% 30%, 80% 10%, 90% 90%, 20% 100%);
-    transform: rotate(-8deg);
-}
-
-div.layout-static-background-shard-obj-7 {
-    width: 26%;
-    height: 20%;
-    top: 45%;
-    left: 70%;
-    clip-path: polygon(5% 0%, 95% 20%, 85% 95%, 10% 80%);
-    transform: rotate(18deg);
-}
-
-div.layout-static-background-shard-obj-8 {
-    width: 19%;
-    height: 17%;
-    top: 80%;
-    left: 25%;
-    clip-path: polygon(20% 20%, 80% 0%, 100% 60%, 30% 100%);
-    transform: rotate(-14deg);
-}
-
-div.layout-static-background-shard-obj-9 {
-    width: 24%;
-    height: 18%;
-    top: 20%;
-    left: 75%;
-    clip-path: polygon(0% 30%, 70% 0%, 100% 70%, 40% 100%);
-    transform: rotate(20deg);
-}
-
-div.layout-static-background-shard-obj-10 {
-    width: 27%;
-    height: 15%;
-    top: 85%;
-    left: 65%;
-    clip-path: polygon(15% 5%, 85% 0%, 100% 70%, 25% 100%);
-    transform: rotate(-6deg);
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 }

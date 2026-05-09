@@ -11,14 +11,19 @@ const postModules = import.meta.glob("/src/content/blog/**/*.mdx", {
 function ArticleBlog({ dataWrapper }) {
     const posts = useMemo(() => parsePosts(postModules), [])
     const [selectedCategory, setSelectedCategory] = useState("all")
-    const [selectedSlug, setSelectedSlug] = useState(posts[0]?.slug)
+    const [readingSlug, setReadingSlug] = useState(null)
 
     const visiblePosts = selectedCategory === "all" ?
         posts :
         posts.filter(post => post.frontmatter.category === selectedCategory)
 
-    const selectedPost = posts.find(post => post.slug === selectedSlug) || visiblePosts[0] || posts[0]
+    const readingPost = readingSlug ?
+        posts.find(post => post.slug === readingSlug) :
+        null
+
     const categories = buildCategoryFilters(posts)
+    const showFilters = categories.length > 1
+    const groupedByYear = groupPostsByYear(visiblePosts)
 
     return (
         <Article id={dataWrapper.uniqueId}
@@ -27,98 +32,141 @@ function ArticleBlog({ dataWrapper }) {
                  className={`article-blog`}
                  selectedItemCategoryId={null}
                  setSelectedItemCategoryId={() => {}}>
-            <div className={`blog-shell`}>
-                <aside className={`blog-sidebar`}>
-                    <div className={`blog-sidebar-header`}>
-                        <span className={`blog-eyebrow text-2`}>Personal archive</span>
-                        <h5 className={`blog-sidebar-title mb-0`}>Blog</h5>
-                    </div>
-
-                    <div className={`blog-category-list`}>
-                        {categories.map(category => (
-                            <button key={category.id}
-                                    className={`blog-category ${selectedCategory === category.id ? "blog-category-active" : ""}`}
-                                    onClick={() => {
-                                        setSelectedCategory(category.id)
-                                        const firstPost = category.id === "all" ?
-                                            posts[0] :
-                                            posts.find(post => post.frontmatter.category === category.id)
-                                        setSelectedSlug(firstPost?.slug)
-                                    }}>
-                                <span>{category.label}</span>
-                                <span>{category.count}</span>
-                            </button>
-                        ))}
-                    </div>
-
-                    <nav className={`blog-list`}>
-                        {visiblePosts.map(post => (
-                            <button key={post.slug}
-                                    className={`blog-list-item ${selectedPost?.slug === post.slug ? "blog-list-item-active" : ""}`}
-                                    onClick={() => setSelectedSlug(post.slug)}>
-                                <span className={`blog-list-title`}>{post.frontmatter.title || post.title}</span>
-                                <span className={`blog-list-meta`}>
-                                    {formatDate(post.frontmatter.created || post.frontmatter.updated)}
-                                    {post.frontmatter.mood ? ` / ${post.frontmatter.mood}` : ""}
-                                </span>
-                            </button>
-                        ))}
-                    </nav>
-                </aside>
-
-                <main className={`blog-post-view`}>
-                    {selectedPost ? (
-                        <BlogPost post={selectedPost}/>
-                    ) : (
-                        <div className={`blog-post-empty`}>
-                            No public blog posts found yet.
-                        </div>
-                    )}
-                </main>
+            <div className={`journal-page`}>
+                {readingPost ? (
+                    <ReadingMode post={readingPost}
+                                 onBack={() => setReadingSlug(null)}/>
+                ) : (
+                    <IndexMode showFilters={showFilters}
+                               categories={categories}
+                               selectedCategory={selectedCategory}
+                               setSelectedCategory={setSelectedCategory}
+                               groupedByYear={groupedByYear}
+                               onSelectPost={slug => setReadingSlug(slug)}
+                               isEmpty={visiblePosts.length === 0}/>
+                )}
             </div>
         </Article>
     )
 }
 
-function BlogPost({ post }) {
+function IndexMode({ showFilters, categories, selectedCategory, setSelectedCategory,
+                    groupedByYear, onSelectPost, isEmpty }) {
+    return (
+        <>
+            {showFilters && (
+                <div className={`journal-filters`}>
+                    {categories.map((category, index) => (
+                        <React.Fragment key={category.id}>
+                            {index > 0 && <span className={`journal-filter-sep`}>·</span>}
+                            <button className={`journal-filter ${selectedCategory === category.id ? "journal-filter-active" : ""}`}
+                                    onClick={() => setSelectedCategory(category.id)}>
+                                {category.label.toLowerCase()}
+                            </button>
+                        </React.Fragment>
+                    ))}
+                </div>
+            )}
+
+            {isEmpty ? (
+                <div className={`journal-empty`}>
+                    Nothing under this filter yet.
+                </div>
+            ) : (
+                <div className={`journal-index-list`}>
+                    {groupedByYear.map(group => (
+                        <section key={group.year} className={`journal-year-group`}>
+                            <h2 className={`journal-year-label`}>{group.year}</h2>
+                            <ol className={`journal-year-entries`}>
+                                {group.posts.map(post => (
+                                    <li key={post.slug}>
+                                        <button className={`journal-entry-row`}
+                                                onClick={() => onSelectPost(post.slug)}>
+                                            <span className={`journal-entry-row-date`}>
+                                                {formatShortDate(post.frontmatter.created || post.frontmatter.updated)}
+                                            </span>
+                                            <span className={`journal-entry-row-body`}>
+                                                <span className={`journal-entry-row-title`}>
+                                                    {post.frontmatter.title || post.title}
+                                                </span>
+                                                {post.frontmatter.description && (
+                                                    <span className={`journal-entry-row-desc`}>
+                                                        {post.frontmatter.description}
+                                                    </span>
+                                                )}
+                                            </span>
+                                        </button>
+                                    </li>
+                                ))}
+                            </ol>
+                        </section>
+                    ))}
+                </div>
+            )}
+        </>
+    )
+}
+
+function ReadingMode({ post, onBack }) {
     const {frontmatter} = post
     const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : []
+    const created = frontmatter.created || frontmatter.updated
 
     return (
-        <article className={`blog-post`}>
-            <div className={`blog-post-header`}>
-                <div className={`blog-post-meta-row text-2`}>
-                    {frontmatter.category && <span>{titleCase(frontmatter.category)}</span>}
-                    {frontmatter.theme && <span>{frontmatter.theme}</span>}
-                    {frontmatter.mood && <span>{frontmatter.mood}</span>}
-                </div>
+        <article className={`journal-entry`}>
+            <button className={`journal-back-link`} onClick={onBack}>
+                <span aria-hidden="true">←</span> All entries
+            </button>
 
-                <h4 className={`blog-post-title mb-2`}>{frontmatter.title || post.title}</h4>
-
-                {frontmatter.description && (
-                    <p className={`blog-post-description text-3 mb-0`}>{frontmatter.description}</p>
+            <header className={`journal-entry-header`}>
+                {created && (
+                    <time className={`journal-entry-date`}>{formatLongDate(created)}</time>
                 )}
+                <h1 className={`journal-entry-title`}>{frontmatter.title || post.title}</h1>
+                {frontmatter.description && (
+                    <p className={`journal-entry-description`}>{frontmatter.description}</p>
+                )}
+            </header>
 
-                <div className={`blog-post-footer-row`}>
-                    <div className={`blog-post-tags`}>
-                        {tags.map(tag => (
-                            <span key={tag} className={`blog-post-tag text-2`}>{tag}</span>
-                        ))}
-                    </div>
-
-                    <div className={`blog-post-dates text-2`}>
-                        {frontmatter.created && <span>{formatDate(frontmatter.created)}</span>}
-                        {frontmatter.updated && frontmatter.updated !== frontmatter.created && (
-                            <span>Updated {formatDate(frontmatter.updated)}</span>
-                        )}
-                    </div>
-                </div>
-            </div>
-
-            <div className={`blog-post-body`}
+            <div className={`journal-entry-body`}
                  dangerouslySetInnerHTML={{__html: markdownToHtml(post.body)}}/>
+
+            {(tags.length > 0 || (frontmatter.updated && frontmatter.updated !== frontmatter.created)) && (
+                <footer className={`journal-entry-footer`}>
+                    {tags.length > 0 && (
+                        <div className={`journal-entry-tags`}>
+                            {tags.map((tag, idx) => (
+                                <React.Fragment key={tag}>
+                                    {idx > 0 && <span className={`journal-tag-sep`}>·</span>}
+                                    <span className={`journal-entry-tag`}>{tag}</span>
+                                </React.Fragment>
+                            ))}
+                        </div>
+                    )}
+
+                    {frontmatter.updated && frontmatter.updated !== frontmatter.created && (
+                        <span className={`journal-entry-updated`}>Updated {formatShortDate(frontmatter.updated)}</span>
+                    )}
+                </footer>
+            )}
         </article>
     )
+}
+
+function groupPostsByYear(posts) {
+    const groups = new Map()
+
+    posts.forEach(post => {
+        const date = post.frontmatter.created || post.frontmatter.updated || ""
+        const year = date.slice(0, 4) || "—"
+        if(!groups.has(year))
+            groups.set(year, [])
+        groups.get(year).push(post)
+    })
+
+    return Array.from(groups.entries())
+        .map(([year, posts]) => ({ year, posts }))
+        .sort((a, b) => b.year.localeCompare(a.year))
 }
 
 function parsePosts(modules) {
@@ -204,7 +252,7 @@ function extractMarkdownTitle(body) {
 function buildCategoryFilters(posts) {
     const categories = [{
         id: "all",
-        label: "All Posts",
+        label: "All",
         count: posts.length
     }]
 
@@ -228,6 +276,7 @@ function markdownToHtml(markdown) {
     let codeBuffer = []
     let inList = false
     let inQuote = false
+    let skippedFirstH1 = false
 
     const closeList = () => {
         if(inList) {
@@ -284,8 +333,13 @@ function markdownToHtml(markdown) {
         if(heading) {
             closeList()
             closeQuote()
-            const level = Math.min(heading[1].length + 1, 6)
-            html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`)
+            const level = heading[1].length
+            if(level === 1 && !skippedFirstH1) {
+                skippedFirstH1 = true
+                return
+            }
+            const tag = Math.min(level + 1, 6)
+            html.push(`<h${tag}>${inlineMarkdown(heading[2])}</h${tag}>`)
             return
         }
 
@@ -316,6 +370,7 @@ function inlineMarkdown(text) {
         .replace(/\[([^\]]+)]\((https?:\/\/[^)]+)\)/g, "<a href=\"$2\" target=\"_blank\" rel=\"noreferrer\">$1</a>")
         .replace(/`([^`]+)`/g, "<code>$1</code>")
         .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*]+)\*/g, "<em>$1</em>")
 }
 
 function escapeHtml(value) {
@@ -327,7 +382,19 @@ function escapeHtml(value) {
         .replaceAll("'", "&#039;")
 }
 
-function formatDate(value) {
+function formatShortDate(value) {
+    if(!value) return ""
+
+    const date = new Date(`${value}T00:00:00`)
+    if(Number.isNaN(date.getTime())) return value
+
+    return date.toLocaleDateString("en", {
+        month: "short",
+        day: "numeric"
+    })
+}
+
+function formatLongDate(value) {
     if(!value) return ""
 
     const date = new Date(`${value}T00:00:00`)
@@ -335,7 +402,7 @@ function formatDate(value) {
 
     return date.toLocaleDateString("en", {
         year: "numeric",
-        month: "short",
+        month: "long",
         day: "numeric"
     })
 }

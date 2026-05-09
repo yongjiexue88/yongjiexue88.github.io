@@ -6,7 +6,6 @@ import {useFeedbacks} from "/src/providers/FeedbacksProvider.jsx"
 import {useInput} from "/src/providers/InputProvider.jsx"
 import {useViewport} from "/src/providers/ViewportProvider.jsx"
 import SectionContent from "/src/components/sections/SectionContent.jsx"
-import NavToolFullscreenToggle from "/src/components/nav/tools/NavToolFullscreenToggle.jsx"
 import {useNavigation} from "/src/providers/NavigationProvider.jsx"
 
 function Section({ section, visible, shouldTransition }) {
@@ -51,19 +50,11 @@ function Section({ section, visible, shouldTransition }) {
 }
 
 function SectionRenderer({ section, status, shouldResetScroll, setShouldResetScroll}) {
-    const viewport = useViewport()
-    const layoutConstraints = viewport.getLayoutConstraints()
-    const canToggleFullscreen = layoutConstraints.canToggleFullscreen
-
     const statusClassName = `section-${status}`
 
     return (
         <section className={`section ${statusClassName}`}
                  id={`section-${section.id}`}>
-            {canToggleFullscreen && (
-                <NavToolFullscreenToggle className={`section-fullscreen-toggle`}/>
-            )}
-
             <Scrollable id={`scrollable-${section.id}`}
                         className={`section-scrollable`}
                         pluginEnabled={status !== Section.Status.HIDDEN}
