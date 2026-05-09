@@ -1,105 +1,29 @@
 import "./NavProfileCard.scss"
-import React, {useEffect, useState} from 'react'
-import { Parallax } from 'react-next-parallax'
+import React from 'react'
 import {Card} from "react-bootstrap"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
-import {useNavigation} from "/src/providers/NavigationProvider.jsx"
-import {useUtils} from "/src/hooks/utils.js"
-import ImageView from "/src/components/generic/ImageView.jsx"
-import StatusCircle from "/src/components/generic/StatusCircle.jsx"
-import TextTyper from "/src/components/generic/TextTyper.jsx"
-import AudioButton from "/src/components/buttons/AudioButton.jsx"
 
 function NavProfileCard({ profile, expanded }) {
     const language = useLanguage()
-    const navigation = useNavigation()
-    const utils = useUtils()
 
     const expandedClass = expanded ?
         `` :
         `nav-profile-card-shrink`
 
-    const name = profile.name
-    const stylizedName = language.getTranslation(profile.locales, "localized_name_stylized", null) ||
-        language.getTranslation(profile.locales, "localized_name", null) ||
-        name
-
-    let roles = language.getTranslation(profile.locales, "roles", [])
-    if(utils.storage.getWindowVariable("suspendAnimations") && roles.length > 2)
-        roles = [roles[0]]
-
-    const profilePictureUrl = language.parseJsonText(profile.profilePictureUrl)
-
-    const statusCircleVisible = Boolean(profile.statusCircleVisible)
-    const statusCircleVariant = statusCircleVisible ?
-        profile.statusCircleVariant :
-        ""
-
-    const statusCircleHoverMessage = statusCircleVisible ?
-        language.getTranslation(profile.locales, profile.statusCircleHoverMessage) :
-        null
-
-    const statusCircleSize = expanded ?
-        StatusCircle.Sizes.DEFAULT :
-        StatusCircle.Sizes.SMALL
-
-    const namePronunciationIpa = language.getTranslation(profile.locales, "name_pronunciation_ipa", null)
-    const namePronunciationAudioUrl = language.getTranslation(profile.locales, "name_pronunciation_audio_url", null)
-    const namePronunciationButtonVisible = namePronunciationIpa || namePronunciationAudioUrl
-
-    const navProfileCardNameClass = namePronunciationButtonVisible ?
-        `nav-profile-card-name-with-audio-button` :
-        ``
-
-    const _onStatusBadgeClicked = () => {
-        navigation.navigateToSectionWithId("contact")
-    }
+    const isChinese = language.currentLanguage === "zh"
+    const logoMain = "萦怀"
+    const logoSub = "Thoughts that linger"
+    const tagline = isChinese ? "心上停留的字句。" : "Words that stay on the mind."
 
     return (
-        <Card className={`nav-profile-card ${expandedClass}`}>
-            <Parallax
-                borderRadius="50%"
-                overflowHiddenEnable={true}
-                tiltMaxAngleX={10}
-                tiltMaxAngleY={10}
-                lineGlareEnable={false}
-                spotGlareEnable={false}
-                className="nav-profile-card-avatar-parallax"
-            >
-                <ImageView src={profilePictureUrl}
-                           className={`nav-profile-card-avatar`}
-                           hideSpinner={true}
-                           alt={name}
-                           data-parallax-offset="2"/>
-            </Parallax>
-
-            {statusCircleVisible && (
-                <StatusCircle className={`nav-profile-card-status-circle`}
-                              variant={statusCircleVariant}
-                              message={statusCircleHoverMessage}
-                              size={statusCircleSize} onClick={_onStatusBadgeClicked}/>
-            )}
+        <Card className={`nav-profile-card nav-profile-card-journal ${expandedClass}`}>
+            <div className={`nav-profile-card-logo`} aria-label={`${logoMain} — ${logoSub}`}>
+                <span className={`nav-profile-card-logo-main`}>{logoMain}</span>
+                <span className={`nav-profile-card-logo-sub`}>{logoSub}</span>
+            </div>
 
             <div className={`nav-profile-card-info`}>
-                <h1 className={`nav-profile-card-name ${navProfileCardNameClass}`}>
-                    <span dangerouslySetInnerHTML={{__html: stylizedName}}/>
-                    {namePronunciationButtonVisible && (
-                        <AudioButton url={namePronunciationAudioUrl}
-                                     tooltip={namePronunciationIpa}
-                                     size={AudioButton.Sizes.DYNAMIC_FOR_NAV_TITLE}/>
-                    )}
-                </h1>
-
-                {roles?.length > 1 && (
-                    <TextTyper strings={roles}
-                               id={`role-typer`}
-                               className={`nav-profile-card-role`}/>
-                )}
-
-                {roles?.length === 1 && (
-                    <div className={`nav-profile-card-role`}
-                         dangerouslySetInnerHTML={{__html: roles[0]}}/>
-                )}
+                <div className={`nav-profile-card-tagline`}>{tagline}</div>
             </div>
         </Card>
     )
