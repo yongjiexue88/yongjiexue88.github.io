@@ -13,6 +13,12 @@
             "faIcon": "fa-solid fa-rss"
         },
         {
+            "id": "booknotes",
+            "categoryId": "writing",
+            "jsonPath": "/data/sections/booknotes.json",
+            "faIcon": "fa-solid fa-book-open"
+        },
+        {
             "id": "contact",
             "categoryId": "more",
             "jsonPath": "/data/sections/contact.json",
