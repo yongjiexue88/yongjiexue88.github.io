@@ -10,8 +10,17 @@ const postModules = import.meta.glob("/src/content/blog/**/*.mdx", {
 })
 
 function ArticleBlog({ dataWrapper }) {
+    return (
+        <ArticlePostCollection dataWrapper={dataWrapper}
+                               modules={postModules}
+                               contentRoot={`/src/content/blog/`}
+                               backLabel={`All entries`}/>
+    )
+}
+
+function ArticlePostCollection({ dataWrapper, modules, contentRoot, backLabel = "All entries" }) {
     const {selectedLanguageId} = useLanguage()
-    const allPosts = useMemo(() => parsePosts(postModules), [])
+    const allPosts = useMemo(() => parsePosts(modules, contentRoot), [modules, contentRoot])
     const posts = useMemo(
         () => filterPostsByLanguage(allPosts, selectedLanguageId),
         [allPosts, selectedLanguageId]
@@ -42,6 +51,7 @@ function ArticleBlog({ dataWrapper }) {
             <div className={`journal-page`}>
                 {readingPost ? (
                     <ReadingMode post={readingPost}
+                                 backLabel={backLabel}
                                  onBack={() => setReadingSlug(null)}/>
                 ) : (
                     <IndexMode showFilters={showFilters}
@@ -114,7 +124,7 @@ function IndexMode({ showFilters, categories, selectedCategory, setSelectedCateg
     )
 }
 
-function ReadingMode({ post, onBack }) {
+function ReadingMode({ post, backLabel, onBack }) {
     const {frontmatter} = post
     const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : []
     const created = frontmatter.created || frontmatter.updated
@@ -122,7 +132,7 @@ function ReadingMode({ post, onBack }) {
     return (
         <article className={`journal-entry`}>
             <button className={`journal-back-link`} onClick={onBack}>
-                <span aria-hidden="true">←</span> All entries
+                <span aria-hidden="true">←</span> {backLabel}
             </button>
 
             <header className={`journal-entry-header`}>
@@ -176,12 +186,12 @@ function groupPostsByYear(posts) {
         .sort((a, b) => b.year.localeCompare(a.year))
 }
 
-function parsePosts(modules) {
+function parsePosts(modules, contentRoot) {
     return Object.entries(modules)
         .map(([path, raw]) => {
             const parsed = parseFrontmatter(String(raw || ""))
             const fileSlug = path
-                .replace("/src/content/blog/", "")
+                .replace(contentRoot, "")
                 .replace(/\/index\.mdx$/, "")
                 .replace(/\.mdx$/, "")
             const slug = parsed.frontmatter.slug || fileSlug
@@ -311,14 +321,14 @@ function markdownToHtml(markdown) {
     const html = []
     let inCodeBlock = false
     let codeBuffer = []
-    let inList = false
+    let listType = null
     let inQuote = false
     let skippedFirstH1 = false
 
     const closeList = () => {
-        if(inList) {
-            html.push("</ul>")
-            inList = false
+        if(listType) {
+            html.push(`</${listType}>`)
+            listType = null
         }
     }
 
@@ -329,7 +339,16 @@ function markdownToHtml(markdown) {
         }
     }
 
-    lines.forEach(line => {
+    const openList = (type) => {
+        if(listType === type) return
+        closeList()
+        html.push(`<${type}>`)
+        listType = type
+    }
+
+    for(let i = 0; i < lines.length; i++) {
+        const line = lines[i]
+
         if(line.startsWith("```")) {
             if(inCodeBlock) {
                 html.push(`<pre><code>${escapeHtml(codeBuffer.join("\n"))}</code></pre>`)
@@ -341,18 +360,27 @@ function markdownToHtml(markdown) {
                 closeQuote()
                 inCodeBlock = true
             }
-            return
+            continue
         }
 
         if(inCodeBlock) {
             codeBuffer.push(line)
-            return
+            continue
+        }
+
+        if(isTableStart(lines, i)) {
+            closeList()
+            closeQuote()
+            const table = parseTable(lines, i)
+            html.push(table.html)
+            i = table.endIndex
+            continue
         }
 
         if(!line.trim()) {
             closeList()
             closeQuote()
-            return
+            continue
         }
 
         const quote = line.match(/^>\s?(.*)$/)
@@ -363,7 +391,7 @@ function markdownToHtml(markdown) {
                 inQuote = true
             }
             html.push(`<p>${inlineMarkdown(quote[1])}</p>`)
-            return
+            continue
         }
 
         const heading = line.match(/^(#{1,6})\s+(.+)$/)
@@ -373,33 +401,95 @@ function markdownToHtml(markdown) {
             const level = heading[1].length
             if(level === 1 && !skippedFirstH1) {
                 skippedFirstH1 = true
-                return
+                continue
             }
             const tag = Math.min(level + 1, 6)
             html.push(`<h${tag}>${inlineMarkdown(heading[2])}</h${tag}>`)
-            return
+            continue
         }
 
-        const listItem = line.match(/^-\s+(.*)$/)
-        if(listItem) {
+        const unorderedListItem = line.match(/^-\s+(.*)$/)
+        if(unorderedListItem) {
             closeQuote()
-            if(!inList) {
-                html.push("<ul>")
-                inList = true
-            }
+            openList("ul")
 
-            html.push(`<li>${inlineMarkdown(listItem[1])}</li>`)
-            return
+            html.push(`<li>${inlineMarkdown(unorderedListItem[1])}</li>`)
+            continue
+        }
+
+        const orderedListItem = line.match(/^\d+\.\s+(.*)$/)
+        if(orderedListItem) {
+            closeQuote()
+            openList("ol")
+
+            html.push(`<li>${inlineMarkdown(orderedListItem[1])}</li>`)
+            continue
         }
 
         closeList()
         closeQuote()
         html.push(`<p>${inlineMarkdown(line)}</p>`)
-    })
+    }
 
     closeList()
     closeQuote()
     return html.join("")
+}
+
+function isTableStart(lines, index) {
+    const current = lines[index]?.trim() || ""
+    const next = lines[index + 1]?.trim() || ""
+    return isTableRow(current) && isTableSeparator(next)
+}
+
+function isTableRow(line) {
+    return line.startsWith("|") && line.endsWith("|") && line.includes("|")
+}
+
+function isTableSeparator(line) {
+    if(!isTableRow(line)) return false
+
+    return splitTableCells(line).every(cell => /^:?-{2,}:?$/.test(cell.trim()))
+}
+
+function parseTable(lines, startIndex) {
+    const headers = splitTableCells(lines[startIndex])
+    const rows = []
+    let endIndex = startIndex + 1
+
+    for(let i = startIndex + 2; i < lines.length; i++) {
+        const line = lines[i].trim()
+        if(!isTableRow(line)) break
+
+        rows.push(splitTableCells(line))
+        endIndex = i
+    }
+
+    const colCount = headers.length
+    const renderCell = (cell, tag) => `<${tag}>${inlineMarkdown(cell)}</${tag}>`
+    const renderRow = (cells, tag) => {
+        const normalized = Array.from({length: colCount}, (_, index) => cells[index] || "")
+        return `<tr>${normalized.map(cell => renderCell(cell, tag)).join("")}</tr>`
+    }
+
+    return {
+        endIndex,
+        html: [
+            `<div class="journal-table-wrap"><table>`,
+            `<thead>${renderRow(headers, "th")}</thead>`,
+            `<tbody>${rows.map(row => renderRow(row, "td")).join("")}</tbody>`,
+            `</table></div>`
+        ].join("")
+    }
+}
+
+function splitTableCells(line) {
+    return line
+        .trim()
+        .replace(/^\|/, "")
+        .replace(/\|$/, "")
+        .split("|")
+        .map(cell => cell.trim())
 }
 
 function inlineMarkdown(text) {
@@ -450,4 +540,5 @@ function titleCase(value) {
         .replace(/\b\w/g, char => char.toUpperCase())
 }
 
+export {ArticlePostCollection}
 export default ArticleBlog

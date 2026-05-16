@@ -2,6 +2,7 @@ import "./SectionBody.scss"
 import React, {useEffect, useState} from 'react'
 import {useParser} from "/src/hooks/parser.js"
 import ArticleBlog from "/src/components/articles/ArticleBlog.jsx"
+import ArticleBookNotes from "/src/components/articles/ArticleBookNotes.jsx"
 import ArticleContactForm from "/src/components/articles/ArticleContactForm.jsx"
 import ArticleInfoList from "/src/components/articles/ArticleInfoList.jsx"
 import ArticleInlineList from "/src/components/articles/ArticleInlineList.jsx"
@@ -26,6 +27,7 @@ function SectionBody({ section }) {
 
 SectionBody.ARTICLES = {
     ArticleBlog,
+    ArticleBookNotes,
     ArticleContactForm,
     ArticleInfoList,
     ArticleInlineList,

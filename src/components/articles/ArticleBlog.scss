@@ -280,7 +280,8 @@ div.journal-entry-body {
         }
     }
 
-    ul {
+    ul,
+    ol {
         margin: 0 0 1.2em;
         padding-left: 1.2rem;
     }
@@ -319,6 +320,45 @@ div.journal-entry-body {
             font-size: 0.88em;
             padding: 0;
         }
+    }
+
+    div.journal-table-wrap {
+        border: 1px solid rgba(127, 127, 127, 0.18);
+        border-radius: 8px;
+        margin: 1.4em 0 1.8em;
+        overflow-x: auto;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        min-width: 640px;
+        width: 100%;
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid rgba(127, 127, 127, 0.14);
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        background: rgba(127, 127, 127, 0.08);
+        color: var(--theme-texts-light);
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    td {
+        color: var(--theme-texts-light);
+        opacity: 0.9;
+    }
+
+    tbody tr:last-child td {
+        border-bottom: 0;
     }
 }
 
