@@ -1,5 +1,5 @@
 import "./ArticleBlog.scss"
-import React, {useMemo, useState} from 'react'
+import React, {useEffect, useMemo, useState} from 'react'
 import Article from "/src/components/articles/base/Article.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 
@@ -128,6 +128,44 @@ function ReadingMode({ post, backLabel, onBack }) {
     const {frontmatter} = post
     const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : []
     const created = frontmatter.created || frontmatter.updated
+    const fullTextUrl = frontmatter.fullTextUrl
+    const [fullText, setFullText] = useState("")
+    const [fullTextStatus, setFullTextStatus] = useState(fullTextUrl ? "loading" : "idle")
+    const fullTextHtml = useMemo(
+        () => fullText ? markdownToHtml(fullText) : "",
+        [fullText]
+    )
+
+    useEffect(() => {
+        if(!fullTextUrl) {
+            setFullText("")
+            setFullTextStatus("idle")
+            return
+        }
+
+        const controller = new AbortController()
+
+        setFullText("")
+        setFullTextStatus("loading")
+
+        fetch(fullTextUrl, {signal: controller.signal})
+            .then(response => {
+                if(!response.ok)
+                    throw new Error(`Could not load ${fullTextUrl}`)
+
+                return response.text()
+            })
+            .then(text => {
+                setFullText(text)
+                setFullTextStatus("ready")
+            })
+            .catch(error => {
+                if(error.name === "AbortError") return
+                setFullTextStatus("error")
+            })
+
+        return () => controller.abort()
+    }, [fullTextUrl])
 
     return (
         <article className={`journal-entry`}>
@@ -147,6 +185,21 @@ function ReadingMode({ post, backLabel, onBack }) {
 
             <div className={`journal-entry-body`}
                  dangerouslySetInnerHTML={{__html: markdownToHtml(post.body)}}/>
+
+            {fullTextUrl && (
+                <div className={`journal-entry-body`}>
+                    <h2>Complete Book</h2>
+                    {fullTextStatus === "loading" && (
+                        <p>Loading complete book...</p>
+                    )}
+                    {fullTextStatus === "error" && (
+                        <p>Could not load the complete book from <code>{fullTextUrl}</code>.</p>
+                    )}
+                    {fullTextStatus === "ready" && (
+                        <div dangerouslySetInnerHTML={{__html: fullTextHtml}}/>
+                    )}
+                </div>
+            )}
 
             {(tags.length > 0 || (frontmatter.updated && frontmatter.updated !== frontmatter.created)) && (
                 <footer className={`journal-entry-footer`}>
