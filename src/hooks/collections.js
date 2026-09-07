@@ -44,6 +44,8 @@ export const COLLECTIONS = {
         path: "/journal",
         contentRoot: "/src/content/blog/",
         faIcon: "fa-solid fa-feather",
+        /** Optional banner, e.g. "/images/covers/journal.jpg". Empty = no hero. */
+        cover: "",
         locales: {
             en: {title: "Journal", blurb: "Diary entries, reflection, and slow thoughts."},
             zh: {title: "日志", blurb: "日记、自省，以及缓慢的思考。"}
@@ -54,6 +56,7 @@ export const COLLECTIONS = {
         path: "/notes",
         contentRoot: "/src/content/booknotes/",
         faIcon: "fa-solid fa-book-open",
+        cover: "",
         locales: {
             en: {title: "Notes", blurb: "Reading notes, study material, and things worth keeping."},
             zh: {title: "笔记", blurb: "读书笔记、学习材料，以及值得留存的东西。"}

@@ -17,6 +17,7 @@
     },
     "templateSettings": {
         "backgroundStyle": "static",
+        "homeCoverUrl": "",
         "defaultLanguageId": "en",
         "defaultThemeId": "light",
         "fullscreenEnabled": true,

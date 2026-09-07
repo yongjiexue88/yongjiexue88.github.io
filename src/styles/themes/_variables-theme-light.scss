@@ -1,29 +1,34 @@
 /**
- * @description Light theme.
+ * @description Light theme — technical editorial.
  *
- * A quiet editorial palette for a reflective personal blog: warm paper ground,
- * white surfaces, and definition carried by hairline rules rather than by
- * contrast. Headings stay serif and sentence-case (see $headings-font-family
- * in _constants.scss) — no uppercase, no mechanical display face.
+ * Cool neutrals rather than warm paper: a blue-grey ground, navy-black ink,
+ * and borders that are the text hue held at low opacity rather than an opaque
+ * grey. That tinted-border trick is most of why this register reads as
+ * cohesive instead of boxy.
+ *
+ * Depth comes from tint and hairlines only — see the no-shadow rule in
+ * pages.scss. Emphasis, where needed, is a ring rather than a drop shadow.
  *
  * Emitted on :root as well as [data-theme="light"], so a palette always
- * exists even before ThemeProvider stamps the attribute.
+ * exists even before ThemeProvider stamps the attribute. NOTE: :root and
+ * [data-theme="dark"] have equal specificity, which is why _constants.scss
+ * imports this file *before* the dark one.
  */
 
 @import "theme-variables-builder";
 
-$light-accent:    #6B5E4C; // links, active nav — restrained warm brown
-$light-muted:     #7A756D; // dates, meta, prefixes
-$light-text:      #23211E;
-$light-danger:    #9A3F2B; // warm brick, not a UI red
-$light-neutral:   #E8E4DC; // icon grounds, soft accents
+$light-accent:  #245F94; // links, active nav
+$light-muted:   #5A6B7C; // dates, meta, eyebrows
+$light-text:    #16222E; // navy-black ink
+$light-danger:  #B91C1C;
+$light-neutral: #E2E8F0; // icon grounds
 
-$light-ground:    #FAF9F6; // the page
-$light-surface:   #FFFFFF; // sections, cards, popovers
-$light-boards:    #F6F4EF; // inner containers, tiles
-$light-badges:    #F1EEE7;
-$light-empty:     #FFFFFF;
-$light-rule:      #E8E4DC; // every hairline
+$light-ground:  #F1F4F8; // the page
+$light-surface: #FFFFFF; // cards, sections, popovers
+$light-boards:  #F7F9FC; // inner containers, tiles
+$light-badges:  #EDF1F7;
+$light-empty:   #FFFFFF;
+$light-rule:    rgba(48, 74, 105, 0.14); // the text hue, faded — not a grey
 
 :root,
 [data-theme="light"] {
@@ -37,10 +42,10 @@ $light-rule:      #E8E4DC; // every hairline
         /** MUTED: **/                      $light-muted,
 
         /** BG: **/                         $light-ground,
-        /** BG CONTRAST: **/                lighten($light-ground, 1%),
-        /** BG CONTRAST DARKEN:**/          darken($light-ground, 4%),
+        /** BG CONTRAST: **/                lighten($light-ground, 2%),
+        /** BG CONTRAST DARKEN:**/          darken($light-ground, 5%),
         /** TEXTS: **/                      $light-text,
-        /** TEXTS (INVERTED): **/           $light-ground,
+        /** TEXTS (INVERTED): **/           $light-surface,
 
         /** NAV MOBILE BG: **/              $light-surface,
         /** NAV MOBILE: **/                 $light-text,
@@ -50,7 +55,7 @@ $light-rule:      #E8E4DC; // every hairline
         /** NAV MOBILE HOVER: **/           $light-accent,
 
         /** NAV MOBILE SELECTED BG: **/     $light-accent,
-        /** NAV MOBILE SELECTED: **/        $light-ground,
+        /** NAV MOBILE SELECTED: **/        $light-surface,
         /** NAV MOBILE SELECTED BORDER: **/ $light-accent,
 
         /** SECTION BG: **/                 $light-surface,
@@ -63,6 +68,6 @@ $light-rule:      #E8E4DC; // every hairline
 
         /** DEFAULT BORDERS: **/            $light-rule,
         /** SCROLLBAR TRACK: **/            $light-boards,
-        /** SCROLLBAR THUMB: **/            darken($light-rule, 18%),
+        /** SCROLLBAR THUMB: **/            #94A3B8,
     );
 }

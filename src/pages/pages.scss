@@ -190,3 +190,46 @@ button.page-filter-active {
     color: var(--theme-standard-borders);
     font-size: 0.75rem;
 }
+
+/** ------------------------------------------------------------------
+ *  Optional page banner, used by collection indexes when a collection
+ *  defines a `cover`. Absent by default, so the layout must not depend
+ *  on it — the header below carries the page on its own.
+ *  ------------------------------------------------------------------ */
+figure.page-banner {
+    margin: 24px 0 0;
+
+    img {
+        width: 100%;
+        aspect-ratio: 21 / 9;
+        object-fit: cover;
+        border-radius: $standard-border-radius;
+        border: 1px solid var(--theme-standard-borders);
+        display: block;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-top: 16px;
+        img { aspect-ratio: 16 / 9; }
+    }
+}
+
+/** ------------------------------------------------------------------
+ *  Depth rule for this design register: tint and hairlines only.
+ *  Emphasis is a ring, never a drop shadow — that is the difference
+ *  between "technical editorial" and generic card UI.
+ *  ------------------------------------------------------------------ */
+a.post-card,
+figure.page-banner img,
+figure.post-hero img,
+div.card {
+    box-shadow: none;
+}
+
+a.post-card:focus-visible,
+a.top-nav-link:focus-visible,
+.tag-pill:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(36, 95, 148, 0.28);
+    border-radius: $standard-border-radius;
+}
