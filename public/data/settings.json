@@ -16,10 +16,9 @@
         }
     },
     "templateSettings": {
-        "animatedCursorEnabled": true,
         "backgroundStyle": "static",
         "defaultLanguageId": "en",
-        "defaultThemeId": "paper",
+        "defaultThemeId": "light",
         "fullscreenEnabled": true,
         "showSpinnerOnThemeChange": false
     },
@@ -37,28 +36,15 @@
     ],
     "supportedThemes": [
         {
-            "id": "paper",
+            "id": "light",
             "icon": "fa-solid fa-sun",
             "dark": false,
             "locales": {
                 "en": {
-                    "name": "Paper"
+                    "name": "Light"
                 },
                 "zh": {
-                    "name": "纸墨"
-                }
-            }
-        },
-        {
-            "id": "paper-dark",
-            "icon": "fa-solid fa-moon",
-            "dark": true,
-            "locales": {
-                "en": {
-                    "name": "Paper Dark"
-                },
-                "zh": {
-                    "name": "纸墨深色"
+                    "name": "浅色"
                 }
             }
         },
@@ -68,23 +54,10 @@
             "dark": true,
             "locales": {
                 "en": {
-                    "name": "Dark Mode"
+                    "name": "Dark"
                 },
                 "zh": {
-                    "name": "深色模式"
-                }
-            }
-        },
-        {
-            "id": "light",
-            "icon": "fa-solid fa-sun",
-            "dark": false,
-            "locales": {
-                "en": {
-                    "name": "Light Mode"
-                },
-                "zh": {
-                    "name": "浅色模式"
+                    "name": "深色"
                 }
             }
         }

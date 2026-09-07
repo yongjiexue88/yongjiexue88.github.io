@@ -4,41 +4,24 @@
  * @description This provider is responsible for managing feedbacks, modals and UI interactions.
  */
 
-import React, {createContext, useContext, useEffect, useState} from 'react'
-import {useUtils} from "/src/hooks/utils.js"
+import React, {createContext, useContext, useState} from 'react'
 import {useScheduler} from "/src/hooks/scheduler.js"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
-import {useViewport} from "/src/providers/ViewportProvider.jsx"
 import ActivitySpinner from "/src/components/loaders/ActivitySpinner.jsx"
-import MouseLayer from "/src/components/mouse/MouseLayer.jsx"
 import NotificationsLayer from "/src/components/notifications/NotificationsLayer.jsx"
 import YoutubeVideoModal from "/src/components/modals/YoutubeVideoModal.jsx"
 import ConfirmationWindowModal from "/src/components/modals/ConfirmationWindowModal.jsx"
 import GalleryModal from "/src/components/modals/GalleryModal.jsx"
 
-function FeedbacksProvider({ children, canHaveAnimatedCursor }) {
+function FeedbacksProvider({ children }) {
     const scheduler = useScheduler()
     const language = useLanguage()
-    const viewport = useViewport()
-    const utils = useUtils()
 
     const [spinnerActivities, setSpinnerActivities] = useState([])
-    const [animatedCursorEnabled, setAnimatedCursorEnabled] = useState(false)
-    const [animatedCursorActive, setAnimatedCursorActive] = useState(true)
-    const [animatedCursorLocked, setAnimatedCursorLocked] = useState(false)
     const [displayingNotification, setDisplayingNotification] = useState(null)
     const [displayingYoutubeVideo, setDisplayingYoutubeVideo] = useState(null)
     const [displayingGallery, setDisplayingGallery] = useState(null)
     const [pendingConfirmation, setPendingConfirmation] = useState(null)
-
-    /** @listens canHaveAnimatedCursor|viewport.innerWidth **/
-    useEffect(() => {
-        setAnimatedCursorEnabled(
-            canHaveAnimatedCursor &&
-            !utils.device.isTouchDevice() &&
-            viewport.isBreakpoint("md")
-        )
-    }, [canHaveAnimatedCursor, viewport.innerWidth])
 
     const setActivitySpinnerVisible = (visible, activityId, message) => {
         setSpinnerActivities(prev => {
@@ -62,19 +45,6 @@ function FeedbacksProvider({ children, canHaveAnimatedCursor }) {
 
     const isShowingActivitySpinner = () => {
         return Boolean(spinnerActivities.length)
-    }
-
-    const toggleAnimatedCursorActive = (withNotification) => {
-        const newValue = !animatedCursorActive
-        setAnimatedCursorActive(newValue)
-        if(!withNotification)
-            return
-
-        displayNotification(
-            language.getString("magic_cursor"),
-            language.getString(newValue ? "activate_magic_cursor_message" : "deactivate_magic_cursor_message"),
-            "default"
-        )
     }
 
     const displayNotification = (title, message, type) => {
@@ -140,12 +110,6 @@ function FeedbacksProvider({ children, canHaveAnimatedCursor }) {
             showActivitySpinnerFor,
             isShowingActivitySpinner,
 
-            animatedCursorEnabled,
-            animatedCursorActive,
-            setAnimatedCursorActive,
-            setAnimatedCursorLocked,
-            toggleAnimatedCursorActive,
-
             displayNotification,
             killNotification,
 
@@ -160,10 +124,6 @@ function FeedbacksProvider({ children, canHaveAnimatedCursor }) {
         }}>
             <ActivitySpinner activities={spinnerActivities}
                              defaultMessage={language.getString("loading")}/>
-
-            <MouseLayer active={animatedCursorEnabled && animatedCursorActive}
-                        hidden={animatedCursorLocked}
-                        isBlockedByOverlay={isBlockedByOverlay()}/>
 
             <NotificationsLayer target={displayingNotification}
                                 onNotificationDismissed={killNotification}/>
@@ -189,8 +149,6 @@ const FeedbacksContext = createContext(null)
  *    showActivitySpinnerFor: Function,
  *    isShowingActivitySpinner: Function,
  *
- *    animatedCursorEnabled: Boolean,
- *    animatedCursorActive: Boolean,
  *    setAnimatedCursorActive: Function,
  *    setAnimatedCursorLocked: Function,
  *    toggleAnimatedCursorActive: Function,
