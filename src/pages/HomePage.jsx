@@ -22,11 +22,19 @@ function HomePage() {
     const counts = useCollectionCounts()
 
     const profile = data.getProfile()
+    /** Optional; set templateSettings.homeCoverUrl in settings.json to enable. */
+    const homeCover = data.getSettings()?.templateSettings?.homeCoverUrl
     const isZh = selectedLanguageId === "zh"
     const latest = posts.slice(0, 6)
 
     return (
         <div className={`page home-page`}>
+            {homeCover && (
+                <figure className={`page-banner`}>
+                    <img src={homeCover} alt="" loading="eager"/>
+                </figure>
+            )}
+
             <section className={`home-hero`}>
                 <span className={`page-eyebrow`}>{isZh ? "个人博客" : "Personal blog"}</span>
                 <h1 className={`home-hero-title`}>萦怀</h1>

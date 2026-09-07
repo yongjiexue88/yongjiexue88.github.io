@@ -4,7 +4,7 @@ import React, {useEffect, useMemo, useState} from 'react'
 import {Link, useParams} from "react-router-dom"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 import {useCollection, collectionLocale, loadPostBody} from "/src/hooks/collections.js"
-import {markdownToHtml, formatShortDate, formatLongDate} from "/src/hooks/posts.js"
+import {markdownToHtml, parseFrontmatter, formatShortDate, formatLongDate} from "/src/hooks/posts.js"
 import NotFoundPage from "./NotFoundPage.jsx"
 
 /**
@@ -75,7 +75,11 @@ function PostView({ post, posts, collection, languageId }) {
         loadPostBody(post.collection, post.path)
             .then(text => {
                 if(cancelled) return
-                setBody(String(text || ""))
+                // The loader returns the raw file, frontmatter block included.
+                // parsePosts() used to strip that before rendering; since the
+                // body is now fetched separately, strip it here or the YAML
+                // renders as visible body text.
+                setBody(parseFrontmatter(String(text || "")).body)
                 setBodyStatus("ready")
             })
             .catch(() => { if(!cancelled) setBodyStatus("error") })
@@ -118,6 +122,17 @@ function PostView({ post, posts, collection, languageId }) {
     return (
         <div className={`page post-layout`}>
             <article className={`post-main`}>
+                {frontmatter.cover && (
+                    <figure className={`post-hero`}>
+                        <img src={frontmatter.cover}
+                             alt={frontmatter.coverAlt || ""}
+                             loading="eager"/>
+                        {frontmatter.coverCredit && (
+                            <figcaption>{frontmatter.coverCredit}</figcaption>
+                        )}
+                    </figure>
+                )}
+
                 <nav className={`post-breadcrumb`}>
                     <Link to={collection.path}>{collectionLocale(collection, languageId).title}</Link>
                 </nav>

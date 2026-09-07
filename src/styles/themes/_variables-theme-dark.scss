@@ -1,25 +1,25 @@
 /**
- * @description Dark theme.
+ * @description Dark theme — technical editorial.
  *
- * The same editorial logic inverted: warm near-black ground rather than a
- * neutral grey, so the palette still reads as paper rather than as a console.
- * The accent lightens to stay legible on dark surfaces.
+ * The same cool logic inverted: a deep blue-grey ground rather than neutral
+ * black, so the palette still reads as ink-on-paper rather than as a console.
+ * Borders stay tinted — a light steel held at low opacity.
  */
 
 @import "theme-variables-builder";
 
-$dark-accent:  #C4B49A; // warm light — readable on dark
-$dark-muted:   #8F8880;
-$dark-text:    #EDEAE3;
-$dark-danger:  #D98A72;
-$dark-neutral: #2E2A26;
+$dark-accent:  #7FB3DC; // lightened so it stays legible on dark
+$dark-muted:   #8A9AAB;
+$dark-text:    #E3E9F0;
+$dark-danger:  #E3A4A4;
+$dark-neutral: #22303F;
 
-$dark-ground:  #1A1917;
-$dark-surface: #22201D;
-$dark-boards:  #2A2724;
-$dark-badges:  #302C28;
-$dark-empty:   #1E1C1A;
-$dark-rule:    #332F2A;
+$dark-ground:  #0E1620;
+$dark-surface: #16222E;
+$dark-boards:  #1C2A38;
+$dark-badges:  #22303F;
+$dark-empty:   #121C26;
+$dark-rule:    rgba(148, 180, 210, 0.16);
 
 [data-theme="dark"] {
     @include build-theme(
@@ -32,7 +32,7 @@ $dark-rule:    #332F2A;
         /** MUTED: **/                      $dark-muted,
 
         /** BG: **/                         $dark-ground,
-        /** BG CONTRAST: **/                lighten($dark-ground, 3%),
+        /** BG CONTRAST: **/                lighten($dark-ground, 4%),
         /** BG CONTRAST DARKEN:**/          darken($dark-ground, 2%),
         /** TEXTS: **/                      $dark-text,
         /** TEXTS (INVERTED): **/           $dark-ground,

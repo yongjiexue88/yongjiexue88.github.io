@@ -27,6 +27,12 @@ function CollectionPage({ collectionKey }) {
 
     return (
         <div className={`page`}>
+            {collection?.cover && (
+                <figure className={`page-banner`}>
+                    <img src={collection.cover} alt="" loading="eager"/>
+                </figure>
+            )}
+
             <header className={`page-header`}>
                 <span className={`page-eyebrow`}>{isZh ? "专栏" : "Writing"}</span>
                 <h1 className={`page-title`}>{locale.title}</h1>

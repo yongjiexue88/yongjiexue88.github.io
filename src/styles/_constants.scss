@@ -13,8 +13,13 @@
 $min-contrast-ratio: 1.5 !default;
 
 /** Typography **/
-$font-family-base: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-$headings-font-family: 'Noto Serif', 'Noto Serif SC', Georgia, serif;
+// Chakra Petch is the technical display face: squared, geometric, slightly
+// engineered — it is what makes headings read as technical rather than
+// literary. Inter carries body copy, IBM Plex Mono carries code and hashes.
+// CJK fallbacks are appended because none of the three ship CJK glyphs.
+$font-family-base: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$headings-font-family: 'Chakra Petch', 'Noto Sans SC', 'PingFang SC', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-monospace: 'IBM Plex Mono', SFMono-Regular, Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace;
 
 /** Static Colors **/
 $loader-background: #111111;
