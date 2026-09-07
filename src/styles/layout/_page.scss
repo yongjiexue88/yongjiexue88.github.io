@@ -9,21 +9,14 @@ body {
     width: 100%;
     background-color: $loader-background;
 
-    @include media-breakpoint-up($max-breakpoint-for-tabbed-interface) {
-        position: fixed!important;
-        overflow-y: hidden!important;
-    }
+    // The document used to be locked (position:fixed; overflow-y:hidden) at
+    // >=md so the section slideshow could own scrolling. Routed pages scroll
+    // natively at every width, so the lock — and the body-android escape hatch
+    // that existed only to undo it — are both gone.
 }
 
 body.body-theme {
     background-color: var(--theme-background)!important;
-}
-
-body.body-android {
-    @include media-breakpoint-up($max-breakpoint-for-tabbed-interface) {
-        position: relative!important;
-        overflow-y: auto!important;
-    }
 }
 
 /** ------------ SELECTION STYLES ------------ **/

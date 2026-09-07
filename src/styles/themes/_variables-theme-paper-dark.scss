@@ -1,0 +1,63 @@
+/**
+ * @description Paper — dark theme.
+ *
+ * The same editorial logic inverted: warm near-black ground rather than a
+ * neutral grey, so the palette still reads as paper rather than as a console.
+ * The accent lightens to stay legible on dark surfaces.
+ */
+
+@import "theme-variables-builder";
+
+$paper-dark-accent:  #C4B49A; // warm light — readable on dark
+$paper-dark-muted:   #8F8880;
+$paper-dark-text:    #EDEAE3;
+$paper-dark-danger:  #D98A72;
+$paper-dark-neutral: #2E2A26;
+
+$paper-dark-ground:  #1A1917;
+$paper-dark-surface: #22201D;
+$paper-dark-boards:  #2A2724;
+$paper-dark-badges:  #302C28;
+$paper-dark-empty:   #1E1C1A;
+$paper-dark-rule:    #332F2A;
+
+[data-theme="paper-dark"] {
+    @include build-theme(
+        /** DARK MODE: **/                  true,
+
+        /** PRIMARY: **/                    $paper-dark-accent,
+        /** SECONDARY: **/                  $paper-dark-muted,
+        /** DARK: **/                       $paper-dark-neutral,
+        /** DANGER: **/                     $paper-dark-danger,
+        /** MUTED: **/                      $paper-dark-muted,
+
+        /** BG: **/                         $paper-dark-ground,
+        /** BG CONTRAST: **/                lighten($paper-dark-ground, 3%),
+        /** BG CONTRAST DARKEN:**/          darken($paper-dark-ground, 2%),
+        /** TEXTS: **/                      $paper-dark-text,
+        /** TEXTS (INVERTED): **/           $paper-dark-ground,
+
+        /** NAV MOBILE BG: **/              $paper-dark-surface,
+        /** NAV MOBILE: **/                 $paper-dark-text,
+        /** NAV MOBILE BORDER: **/          $paper-dark-rule,
+
+        /** NAV MOBILE HOVER BG: **/        $paper-dark-boards,
+        /** NAV MOBILE HOVER: **/           $paper-dark-accent,
+
+        /** NAV MOBILE SELECTED BG: **/     $paper-dark-accent,
+        /** NAV MOBILE SELECTED: **/        $paper-dark-ground,
+        /** NAV MOBILE SELECTED BORDER: **/ $paper-dark-accent,
+
+        /** SECTION BG: **/                 $paper-dark-surface,
+        /** CARD BG: **/                    $paper-dark-surface,
+        /** POPUPS BG: **/                  $paper-dark-empty,
+        /** BOARDS: **/                     $paper-dark-boards,
+        /** INFO BADGE BG: **/              $paper-dark-badges,
+        /** INFO BADGE **/                  $paper-dark-text,
+        /** EMPTY **/                       $paper-dark-empty,
+
+        /** DEFAULT BORDERS: **/            $paper-dark-rule,
+        /** SCROLLBAR TRACK: **/            $paper-dark-ground,
+        /** SCROLLBAR THUMB: **/            $paper-dark-muted,
+    );
+}

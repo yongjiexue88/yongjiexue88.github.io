@@ -1,0 +1,67 @@
+/**
+ * @description Paper — light theme.
+ *
+ * A quiet editorial palette for a reflective personal blog: warm paper ground,
+ * white surfaces, and definition carried by hairline rules rather than by
+ * contrast. Headings stay serif and sentence-case (see $headings-font-family
+ * in _constants.scss) — no uppercase, no mechanical display face.
+ *
+ * Locals are namespaced $paper-* so they cannot disturb the bare
+ * $primary/$secondary globals the sibling theme files export to Bootstrap.
+ */
+
+@import "theme-variables-builder";
+
+$paper-accent:    #6B5E4C; // links, active nav — restrained warm brown
+$paper-muted:     #7A756D; // dates, meta, prefixes
+$paper-text:      #23211E;
+$paper-danger:    #9A3F2B; // warm brick, not a UI red
+$paper-neutral:   #E8E4DC; // icon grounds, soft accents
+
+$paper-ground:    #FAF9F6; // the page
+$paper-surface:   #FFFFFF; // sections, cards, popovers
+$paper-boards:    #F6F4EF; // inner containers, tiles
+$paper-badges:    #F1EEE7;
+$paper-empty:     #FFFFFF;
+$paper-rule:      #E8E4DC; // every hairline
+
+[data-theme="paper"] {
+    @include build-theme(
+        /** DARK MODE: **/                  false,
+
+        /** PRIMARY: **/                    $paper-accent,
+        /** SECONDARY: **/                  $paper-muted,
+        /** DARK: **/                       $paper-neutral,
+        /** DANGER: **/                     $paper-danger,
+        /** MUTED: **/                      $paper-muted,
+
+        /** BG: **/                         $paper-ground,
+        /** BG CONTRAST: **/                lighten($paper-ground, 1%),
+        /** BG CONTRAST DARKEN:**/          darken($paper-ground, 4%),
+        /** TEXTS: **/                      $paper-text,
+        /** TEXTS (INVERTED): **/           $paper-ground,
+
+        /** NAV MOBILE BG: **/              $paper-surface,
+        /** NAV MOBILE: **/                 $paper-text,
+        /** NAV MOBILE BORDER: **/          $paper-rule,
+
+        /** NAV MOBILE HOVER BG: **/        $paper-boards,
+        /** NAV MOBILE HOVER: **/           $paper-accent,
+
+        /** NAV MOBILE SELECTED BG: **/     $paper-accent,
+        /** NAV MOBILE SELECTED: **/        $paper-ground,
+        /** NAV MOBILE SELECTED BORDER: **/ $paper-accent,
+
+        /** SECTION BG: **/                 $paper-surface,
+        /** CARD BG: **/                    $paper-surface,
+        /** POPUPS BG: **/                  $paper-surface,
+        /** BOARDS: **/                     $paper-boards,
+        /** INFO BADGE BG: **/              $paper-badges,
+        /** INFO BADGE **/                  $paper-text,
+        /** EMPTY **/                       $paper-empty,
+
+        /** DEFAULT BORDERS: **/            $paper-rule,
+        /** SCROLLBAR TRACK: **/            $paper-boards,
+        /** SCROLLBAR THUMB: **/            darken($paper-rule, 18%),
+    );
+}

@@ -1,6 +1,7 @@
 import "/src/styles/app.scss"
 import {StrictMode, useEffect, useState} from 'react'
 import {createRoot} from 'react-dom/client'
+import {BrowserRouter} from "react-router-dom"
 import {useApi} from "/src/hooks/api.js"
 import {useConstants} from "/src/hooks/constants.js"
 import {useUtils} from "/src/hooks/utils.js"
@@ -9,10 +10,8 @@ import DataProvider, {useData} from "/src/providers/DataProvider.jsx"
 import LanguageProvider from "/src/providers/LanguageProvider.jsx"
 import ViewportProvider from "/src/providers/ViewportProvider.jsx"
 import ThemeProvider from "/src/providers/ThemeProvider.jsx"
-import LocationProvider from "/src/providers/LocationProvider.jsx"
 import FeedbacksProvider from "/src/providers/FeedbacksProvider.jsx"
 import InputProvider from "/src/providers/InputProvider.jsx"
-import NavigationProvider from "/src/providers/NavigationProvider.jsx"
 import Portfolio from "/src/components/Portfolio.jsx"
 
 /** Initialization Script... **/
@@ -33,11 +32,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
  */
 const App = () => {
     return (
-        <AppEssentialsWrapper>
-            <AppCapabilitiesWrapper>
-                <Portfolio/>
-            </AppCapabilitiesWrapper>
-        </AppEssentialsWrapper>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
+            <AppEssentialsWrapper>
+                <AppCapabilitiesWrapper>
+                    <Portfolio/>
+                </AppCapabilitiesWrapper>
+            </AppEssentialsWrapper>
+        </BrowserRouter>
     )
 }
 
@@ -55,9 +56,6 @@ const AppEssentialsWrapper = ({children}) => {
     const [settings, setSettings] = useState()
 
     useEffect(() => {
-        if (window.location.pathname !== utils.file.BASE_URL)
-            window.history.pushState({}, '', utils.file.BASE_URL)
-
         utils.file.loadJSON("/data/settings.json").then(response => {
             _applyDeveloperSettings(response)
             setSettings(response)
@@ -141,13 +139,7 @@ const AppCapabilitiesWrapper = ({ children }) => {
                                        defaultThemeId={defaultThemeId}
                                        showSpinnerOnThemeChange={showSpinnerOnThemeChange}
                                        onThemeChanged={setSelectedThemeId}>
-                            <LocationProvider sections={appSections}
-                                              categories={appCategories}>
-                                <NavigationProvider sections={appSections}
-                                                    categories={appCategories}>
-                                    {children}
-                                </NavigationProvider>
-                            </LocationProvider>
+                            {children}
                         </ThemeProvider>
                     </FeedbacksProvider>
                 </InputProvider>

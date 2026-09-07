@@ -1,10 +1,19 @@
 import "./Layout.scss"
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {useUtils} from "/src/hooks/utils.js"
 import LayoutAnimatedBackground from "/src/components/layout/LayoutAnimatedBackground.jsx"
 import LayoutStaticBackground from "/src/components/layout/LayoutStaticBackground.jsx"
+import TopNav from "/src/components/layout/TopNav.jsx"
+import SiteFooter from "/src/components/layout/SiteFooter.jsx"
 
-function Layout({ id, children, backgroundStyle }) {
+/**
+ * Page shell: sticky masthead, routed content, footer sitemap.
+ *
+ * This replaced the slideshow shell, which stacked every section in one grid
+ * cell and cross-faded between them. With real routes there is nothing to
+ * cross-fade, so the document simply scrolls.
+ */
+function Layout({ id, children, backgroundStyle, profile }) {
     const utils = useUtils()
 
     const isAnimatedBackground = backgroundStyle === "animated"
@@ -25,9 +34,13 @@ function Layout({ id, children, backgroundStyle }) {
             {isAnimatedBackground && <LayoutAnimatedBackground/>}
             {isStaticBackground && <LayoutStaticBackground/>}
 
-            <div className={`layout-content`}>
+            <TopNav profile={profile}/>
+
+            <main className={`layout-main`}>
                 {children}
-            </div>
+            </main>
+
+            <SiteFooter profile={profile}/>
         </div>
     )
 }

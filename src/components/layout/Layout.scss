@@ -2,9 +2,13 @@
 
 div.layout {
     color: var(--theme-texts);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-div.layout-content {
+main.layout-main {
     z-index: $z-index-content;
-    padding: var(--default-card-spacing);
+    flex-grow: 1;
+    width: 100%;
 }

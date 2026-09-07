@@ -22,7 +22,7 @@
         <meta name="googlebot" content="index, follow"/>
         <meta name="google" content="notranslate"/>
         <meta name="author" content="Yongjie Xue"/>
-        <meta name="theme-color" content="#bdc0ba"/>
+        <meta name="theme-color" content="#FAF9F6"/>
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -54,8 +54,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif:wght@600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" type="text/css">
     </head>
-    <body style="background-color: #bdc0ba">
+    <body style="background-color: #FAF9F6">
         <div id="root"></div>
+        <script type="text/javascript">
+            /**
+             * Counterpart to public/404.html. Decodes the /?/path form that the
+             * Pages fallback produces back into a real path, before React mounts,
+             * so react-router sees the URL the visitor actually asked for.
+             */
+            (function (l) {
+                if (l.search[1] === '/') {
+                    var decoded = l.search.slice(1).split('&').map(function (s) {
+                        return s.replace(/~and~/g, '&')
+                    }).join('?');
+                    window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+                }
+            }(window.location))
+        </script>
         <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>

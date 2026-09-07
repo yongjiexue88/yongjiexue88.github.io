@@ -35,16 +35,13 @@ function ArticleInlineList({ dataWrapper, id }) {
 function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
     const viewport = useViewport()
 
-    const maxItems = viewport.getValueFromBreakpointHash({
-        xxl: 5,
-        xl: 4,
-        md: 3,
-        sm: 2,
-        default: 2
-    })
-
+    /**
+     * Previously this sliced to a per-breakpoint cap (5/4/3/2/2), which silently
+     * dropped items rather than wrapping them — on mobile the third cover item
+     * ("Blog / Diary") simply vanished. The list is a centered block of
+     * inline-flex items, so it wraps on its own; nothing needs discarding.
+     */
     const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
-    const slicedItems = filteredItems.slice(0, maxItems)
 
     const displayAsList = viewport.innerWidth < dataWrapper.settings.displayAsListIfWidthIsLowerThan
     const listClass = displayAsList ?
@@ -53,7 +50,7 @@ function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
 
     return (
         <ul className={`article-inline-list-items ${listClass}`}>
-            {slicedItems.map((itemWrapper, key) => (
+            {filteredItems.map((itemWrapper, key) => (
                 <ArticleInlineListItem itemWrapper={itemWrapper}
                                        key={key}/>
             ))}

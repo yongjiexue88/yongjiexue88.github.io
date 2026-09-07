@@ -2,14 +2,15 @@ import "./Link.scss"
 import React, {useEffect, useState} from 'react'
 import {useFeedbacks} from "/src/providers/FeedbacksProvider.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
-import {useLocation} from "/src/providers/LocationProvider.jsx"
+import {useNavigate} from "react-router-dom"
+import {resolveInternalHref} from "/src/hooks/routes.js"
 import {useUtils} from "/src/hooks/utils.js"
 import {useScheduler} from "/src/hooks/scheduler.js"
 
 function Link({ id = null, className = "", href, children, tooltip = null, metadata = null, onClick = null, onClickTimeout = 0, onHoverStatus = null, intercept = false }) {
     const feedbacks = useFeedbacks()
     const language = useLanguage()
-    const location = useLocation()
+    const navigate = useNavigate()
     const scheduler = useScheduler()
     const utils = useUtils()
 
@@ -46,12 +47,10 @@ function Link({ id = null, className = "", href, children, tooltip = null, metad
     }
 
     const _open = () => {
-        if(href.startsWith("#cat:"))
-            location.goToCategoryWithId(href.replaceAll("#cat:", ""))
-        else if(href.startsWith("#gallery:open"))
+        if(href.startsWith("#gallery:open"))
             _openGalleryLink()
-        else if(href.startsWith("#"))
-            location.goToSectionWithId(href.replaceAll("#", ""))
+        else if(resolveInternalHref(href))
+            navigate(resolveInternalHref(href))
         else if(href.includes("youtube.com/embed") || href.includes("youtube.com/watch?v="))
             _openYoutubeLink()
         else

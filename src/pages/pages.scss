@@ -1,0 +1,192 @@
+@import "/src/styles/extend.scss";
+
+/** ------------------------------------------------------------------
+ *  Shared page furniture.
+ *
+ *  Two measures, deliberately: $page-wide for index/portal layouts and
+ *  $page-read (720px, unchanged from the old journal) for running text.
+ *  ------------------------------------------------------------------ */
+$page-wide: 1180px;
+$page-read: 720px;
+
+.page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px 64px;
+    max-width: $page-wide;
+
+    @include media-breakpoint-down(lg) {
+        padding: 0 20px 48px;
+    }
+}
+
+.page-read {
+    max-width: $page-read;
+}
+
+/** Page header — the vonng masthead pattern, without the photographic hero. */
+.page-header {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--theme-standard-borders);
+    margin-bottom: 32px;
+
+    @include media-breakpoint-down(md) {
+        padding: 32px 0 20px;
+        margin-bottom: 24px;
+    }
+}
+
+.page-eyebrow {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--theme-muted);
+    margin-bottom: 10px;
+}
+
+.page-title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.page-blurb {
+    margin: 12px 0 0;
+    color: var(--theme-texts-light-2);
+    max-width: 60ch;
+    font-size: 0.95rem;
+}
+
+/** ------------------------------------------------------------------
+ *  Post cards — type-led, not image-led. No post carries a cover image,
+ *  so the card must look finished without one; a `cover` frontmatter
+ *  field is honoured if one is ever added.
+ *  ------------------------------------------------------------------ */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include media-breakpoint-down(md) {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+a.post-card {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 24px;
+
+    border: 1px solid var(--theme-standard-borders);
+    border-radius: $standard-border-radius;
+    background-color: var(--theme-section-background);
+    color: var(--theme-texts) !important;
+    transition: border-color 0.15s ease-out, transform 0.15s ease-out;
+
+    &:hover {
+        border-color: var(--theme-primary);
+        transform: translateY(-2px);
+        color: var(--theme-texts) !important;
+    }
+}
+
+.post-card-cover {
+    width: calc(100% + 48px);
+    margin: -22px -24px 16px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: $standard-border-radius $standard-border-radius 0 0;
+}
+
+.post-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    color: var(--theme-muted);
+    margin-bottom: 8px;
+}
+
+.post-card-title {
+    font-family: $headings-font-family;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 8px;
+}
+
+.post-card-desc {
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--theme-texts-light-2);
+    margin: 0 0 12px;
+}
+
+.post-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;
+}
+
+/** Tag pills — shared by cards, the tag index, and the post footer. */
+.tag-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 10px;
+    border-radius: 100px;
+    border: 1px solid var(--theme-standard-borders);
+    background-color: var(--theme-boards-background);
+    color: var(--theme-texts-light-2) !important;
+    font-size: 0.72rem;
+    white-space: nowrap;
+
+    &:hover {
+        border-color: var(--theme-primary);
+        color: var(--theme-primary) !important;
+    }
+}
+
+.tag-pill-count {
+    margin-left: 6px;
+    opacity: 0.65;
+    font-variant-numeric: tabular-nums;
+}
+
+.page-empty {
+    padding: 48px 0;
+    color: var(--theme-muted);
+    font-style: italic;
+}
+
+/** Filter chips, carried over from the old journal index. */
+.page-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+button.page-filter {
+    background: none;
+    border: 0;
+    padding: 2px 0;
+    font-size: 0.82rem;
+    color: var(--theme-muted);
+
+    &:hover { color: var(--theme-texts); }
+}
+
+button.page-filter-active {
+    color: var(--theme-texts);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.page-filter-sep {
+    color: var(--theme-standard-borders);
+    font-size: 0.75rem;
+}
