@@ -13,8 +13,7 @@ function AudioButton({ url = "", tooltip = "", size = "", buttonClassName = "", 
     const [status, setStatus] = useState(AudioButton.Status.NONE)
     const [playCount, setPlayCount] = useState(0)
 
-    const isMagicCursorEnabledAndActive = feedbacks.animatedCursorEnabled && feedbacks.animatedCursorActive
-    const shouldShowStaticTooltip = tooltip && !isMagicCursorEnabledAndActive
+    const shouldShowStaticTooltip = Boolean(tooltip)
 
     const statusIconMap = {
         [AudioButton.Status.LOADING]: "fa-solid fa-spinner pi-spin",

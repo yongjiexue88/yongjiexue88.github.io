@@ -124,7 +124,6 @@ const AppCapabilitiesWrapper = ({ children }) => {
     const supportedThemes = appSettings["supportedThemes"]
     const defaultLanguageId = appSettings["templateSettings"].defaultLanguageId
     const defaultThemeId = appSettings["templateSettings"].defaultThemeId
-    const animatedCursorEnabled = appSettings["templateSettings"].animatedCursorEnabled
     const showSpinnerOnThemeChange = appSettings["templateSettings"].showSpinnerOnThemeChange
 
     return (
@@ -134,7 +133,7 @@ const AppCapabilitiesWrapper = ({ children }) => {
                           selectedThemeId={selectedThemeId}>
             <ViewportProvider>
                 <InputProvider>
-                    <FeedbacksProvider canHaveAnimatedCursor={animatedCursorEnabled}>
+                    <FeedbacksProvider>
                         <ThemeProvider supportedThemes={supportedThemes}
                                        defaultThemeId={defaultThemeId}
                                        showSpinnerOnThemeChange={showSpinnerOnThemeChange}
