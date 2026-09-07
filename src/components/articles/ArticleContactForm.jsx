@@ -5,7 +5,6 @@ import {useConstants} from "/src/hooks/constants.js"
 import {useData} from "/src/providers/DataProvider.jsx"
 import {useFeedbacks} from "/src/providers/FeedbacksProvider.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
-import {useNavigation} from "/src/providers/NavigationProvider.jsx"
 import {useUtils} from "/src/hooks/utils.js"
 import Article from "/src/components/articles/base/Article.jsx"
 import {RowForm, RowFormGroup, RowFormGroupAlert, RowFormGroupItem, RowFormGroupSubmit} from "/src/components/forms/containers/RowForm.jsx"
@@ -60,7 +59,6 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
     const data = useData()
     const feedbacks = useFeedbacks()
     const language = useLanguage()
-    const navigation = useNavigation()
     const utils = useUtils()
 
     const id = "contact-form"
@@ -111,7 +109,7 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
 
         e.preventDefault && e.preventDefault()
         e.stopPropagation && e.stopPropagation()
-        navigation.forceScrollToTop()
+        window.scrollTo({top: 0, behavior: "smooth"})
 
         const apiValidation = api.validators.validateEmailRequest(name, email, subject, message)
         if(!apiValidation.success) {

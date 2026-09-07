@@ -2,11 +2,9 @@ import "./TextTyper.scss"
 import React, {useEffect, useState} from 'react'
 import Animable from "/src/components/capabilities/Animable.jsx"
 import {useUtils} from "/src/hooks/utils.js"
-import {useNavigation} from "/src/providers/NavigationProvider.jsx"
 
 function TextTyper({ strings, id, typingSpeed = 0.03, deletingSpeed = 0, displayTime = 2, className = "" }) {
     const utils = useUtils()
-    const navigation = useNavigation()
 
     const [parsedStrings, setParsedStrings] = useState(null)
     const [currentText, setCurrentText] = useState("")
@@ -51,12 +49,9 @@ function TextTyper({ strings, id, typingSpeed = 0.03, deletingSpeed = 0, display
             [TextTyper.Status.DELETING]:            { hook: _onStatusDeleting },
         }
 
-        if(navigation.isTransitioning()) {
-            if(targetWord.length > 0) _toggleCursor(0.2)
-            else setCursorVisible(false)
-            return
-        }
-
+        // This previously short-circuited while a section transition was running.
+        // Transitions were retired with the slideshow shell, so the typer now
+        // always runs its normal status handler.
         const handler = statusHandlers[status]
         const handlerHook = handler?.hook
         if(handlerHook) handlerHook(event.ticks)

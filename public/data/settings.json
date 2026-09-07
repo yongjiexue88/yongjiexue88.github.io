@@ -19,7 +19,7 @@
         "animatedCursorEnabled": true,
         "backgroundStyle": "static",
         "defaultLanguageId": "en",
-        "defaultThemeId": "light",
+        "defaultThemeId": "paper",
         "fullscreenEnabled": true,
         "showSpinnerOnThemeChange": false
     },
@@ -36,6 +36,32 @@
         }
     ],
     "supportedThemes": [
+        {
+            "id": "paper",
+            "icon": "fa-solid fa-sun",
+            "dark": false,
+            "locales": {
+                "en": {
+                    "name": "Paper"
+                },
+                "zh": {
+                    "name": "纸墨"
+                }
+            }
+        },
+        {
+            "id": "paper-dark",
+            "icon": "fa-solid fa-moon",
+            "dark": true,
+            "locales": {
+                "en": {
+                    "name": "Paper Dark"
+                },
+                "zh": {
+                    "name": "纸墨深色"
+                }
+            }
+        },
         {
             "id": "dark",
             "icon": "fa-solid fa-moon",

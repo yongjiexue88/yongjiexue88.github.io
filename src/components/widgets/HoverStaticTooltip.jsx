@@ -4,13 +4,13 @@ import Tooltip from "/src/components/generic/Tooltip.jsx"
 import {useViewport} from "/src/providers/ViewportProvider.jsx"
 import {useUtils} from "/src/hooks/utils.js"
 import {useInput} from "/src/providers/InputProvider.jsx"
-import {useNavigation} from "/src/providers/NavigationProvider.jsx"
+import {useLocation} from "react-router-dom"
 
 function HoverStaticTooltip({ id = "", targetId = "", label = "", className = "", onDesktopClick = null, forceResetFlag = null, forceVisible = false, toggleBehaviorOnTouchScreens = false }) {
     const viewport = useViewport()
     const input = useInput()
     const utils = useUtils()
-    const navigation = useNavigation()
+    const routerLocation = useLocation()
     const isTouchDevice = utils.device.isTouchDevice()
 
     const [visible, setVisible] = useState(false)
@@ -40,12 +40,12 @@ function HoverStaticTooltip({ id = "", targetId = "", label = "", className = ""
         setVisible(false)
     }, [viewport.innerWidth, forceResetFlag])
 
-    /** @listens navigation.targetSection **/
+    /** @listens the active route **/
     useEffect(() => {
         if(!isTouchDevice || !toggleBehaviorOnTouchScreens)
             return
         setVisible(false)
-    }, [navigation.targetSection])
+    }, [routerLocation.pathname])
 
     /** @listens input.mouseUpStatus **/
     useEffect(() => {

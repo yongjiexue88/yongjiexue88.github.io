@@ -1,0 +1,281 @@
+@import "/src/styles/extend.scss";
+
+/**
+ * Post layout: 720px reading measure with a sticky table of contents beside it
+ * at >=lg. The measure is unchanged from the old journal view.
+ */
+div.post-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 720px) 220px;
+    justify-content: center;
+    gap: 48px;
+    align-items: start;
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: minmax(0, 720px);
+        gap: 0;
+    }
+}
+
+article.post-main {
+    min-width: 0;
+    padding-top: 40px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 24px;
+    }
+}
+
+nav.post-breadcrumb {
+    font-size: 0.78rem;
+    margin-bottom: 18px;
+
+    a {
+        color: var(--theme-muted) !important;
+        &:hover { color: var(--theme-primary) !important; }
+    }
+}
+
+header.post-header {
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--theme-standard-borders);
+    margin-bottom: 32px;
+}
+
+h1.post-title {
+    margin: 0 0 14px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+div.post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: var(--theme-muted);
+}
+
+p.post-description {
+    margin: 16px 0 0;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: var(--theme-texts-light-2);
+    font-style: italic;
+}
+
+div.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 18px;
+}
+
+/** ------------------------------------------------------------------
+ *  Running text. Carried over from the old journal body, with the
+ *  hardcoded rgba(127,127,127,...) swapped for border tokens so it
+ *  tracks the theme.
+ *  ------------------------------------------------------------------ */
+div.post-body {
+    color: var(--theme-texts);
+    font-size: 1.02rem;
+    line-height: 1.85;
+
+    > *:first-child { margin-top: 0; }
+
+    h2, h3, h4, h5, h6 {
+        font-family: $headings-font-family;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 1.8em 0 0.6em;
+        scroll-margin-top: 84px;
+    }
+
+    h2 { font-size: 1.35rem !important; }
+    h3 { font-size: 1.15rem !important; }
+
+    p, li {
+        line-height: 1.85;
+        color: var(--theme-texts-light-2);
+    }
+
+    p { margin: 0 0 1.1em; }
+
+    blockquote {
+        border-left: 2px solid var(--theme-standard-borders);
+        margin: 1.6em 0;
+        padding: 2px 0 2px 1.1rem;
+
+        p {
+            font-style: italic;
+            color: var(--theme-muted);
+        }
+    }
+
+    ul, ol {
+        margin: 0 0 1.2em;
+        padding-left: 1.2rem;
+    }
+
+    li + li { margin-top: 0.35rem; }
+
+    a {
+        color: var(--theme-primary) !important;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: $standard-border-radius;
+    }
+
+    code {
+        background: var(--theme-boards-background);
+        border: 1px solid var(--theme-standard-borders);
+        border-radius: 4px;
+        font-size: 0.88em;
+        padding: 0.1em 0.4em;
+    }
+
+    pre {
+        background: var(--theme-boards-background);
+        border: 1px solid var(--theme-standard-borders);
+        border-radius: 6px;
+        overflow-x: auto;
+        padding: 14px 16px;
+
+        code {
+            background: transparent;
+            border: 0;
+            padding: 0;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+
+        th, td {
+            border-bottom: 1px solid var(--theme-standard-borders);
+            padding: 8px 10px;
+            text-align: left;
+        }
+
+        th { font-weight: 600; }
+    }
+}
+
+div.journal-table-wrap {
+    overflow-x: auto;
+    margin: 0 0 1.2em;
+}
+
+/** Complete-book block — opt-in, because two targets are 31MB and 13MB. */
+div.post-fulltext {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--theme-standard-borders);
+
+    h2 {
+        font-family: $headings-font-family;
+        margin: 0 0 10px;
+    }
+
+    p.post-fulltext-note {
+        color: var(--theme-muted);
+        font-size: 0.86rem;
+        margin-bottom: 14px;
+    }
+}
+
+/** ------------------------------------------------------------------ */
+nav.post-pager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--theme-standard-borders);
+
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+    }
+}
+
+a.post-pager-link {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    padding: 14px 16px;
+    border: 1px solid var(--theme-standard-borders);
+    border-radius: $standard-border-radius;
+    color: var(--theme-texts) !important;
+
+    &:hover { border-color: var(--theme-primary); }
+
+    span.post-pager-dir {
+        font-size: 0.72rem;
+        color: var(--theme-muted);
+    }
+
+    span.post-pager-title {
+        font-size: 0.88rem;
+        line-height: 1.4;
+    }
+}
+
+a.post-pager-link-next {
+    text-align: right;
+    @include media-breakpoint-down(sm) { text-align: left; }
+}
+
+/** ------------------------------------------------------------------ */
+aside.post-toc {
+    position: sticky;
+    top: 88px;
+    padding-top: 40px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        border-left: 1px solid var(--theme-standard-borders);
+        padding-left: 14px;
+    }
+}
+
+h2.post-toc-heading {
+    font-size: 0.7rem !important;
+    font-family: $font-family-base !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--theme-muted);
+    margin: 0 0 12px;
+}
+
+a.post-toc-link {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--theme-texts-light-2) !important;
+
+    &:hover { color: var(--theme-primary) !important; }
+}
+
+a.post-toc-link-l3 {
+    padding-left: 12px;
+    font-size: 0.76rem;
+    opacity: 0.85;
+}

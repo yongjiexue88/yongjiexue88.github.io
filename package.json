@@ -19,6 +19,7 @@
         "react-bootstrap": "^2.10.4",
         "react-dom": "^18.3.1",
         "react-next-parallax": "^0.1.0",
+        "react-router-dom": "^7.18.3",
         "smooth-scrollbar": "^8.8.4",
         "swiper": "^12.1.2"
     },
