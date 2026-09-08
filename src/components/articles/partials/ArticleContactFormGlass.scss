@@ -1,16 +1,25 @@
+@import "/src/styles/extend.scss";
+
 .contact-glass-parallax-wrapper {
     width: 100%;
     max-width: 480px;
     transform: translateX(40px);
+
+    // The 40px nudge pushed the card past the viewport on small screens.
+    @include media-breakpoint-down(lg) {
+        transform: none;
+        max-width: 100%;
+    }
 }
 
 .contact-glass-container {
-    background: rgba(255, 255, 255, 0.35);
+    // Glassmorphism over a busy illustration measured 1.4:1 on the heading.
+    // A solid themed surface keeps the layout and fixes legibility; the
+    // artwork still reads around it rather than through it.
+    background: var(--theme-section-background);
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--theme-standard-borders);
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -19,8 +28,8 @@
     z-index: 5;
 
     [data-theme='dark'] & {
-        background: rgba(0, 0, 0, 0.4);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: var(--theme-section-background);
+        border: 1px solid var(--theme-standard-borders);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     }
 }

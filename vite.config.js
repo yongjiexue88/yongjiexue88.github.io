@@ -25,6 +25,28 @@ function postIndexPlugin() {
         {key: "notes", dir: "src/content/booknotes", contentRoot: "/src/content/booknotes/"}
     ]
 
+    const COVER_DIR = "public/images/covers"
+    const COVER_EXTS = [".jpg", ".jpeg", ".png", ".webp", ".avif", ".svg"]
+
+    /**
+     * Covers resolve by convention: public/images/covers/<slug>.<ext>.
+     *
+     * This is deliberate — wiring 16 posts through frontmatter would mean
+     * editing every content file. Dropping a correctly named image in is
+     * enough. An explicit `cover:` in frontmatter still wins, so a post can
+     * always opt out of the convention.
+     */
+    const findCoverBySlug = (slug) => {
+        const dir = path.resolve(process.cwd(), COVER_DIR)
+        if(!fs.existsSync(dir)) return null
+
+        for(const ext of COVER_EXTS) {
+            if(fs.existsSync(path.join(dir, slug + ext)))
+                return `/images/covers/${slug}${ext}`
+        }
+        return null
+    }
+
     const buildIndex = () => {
         const out = {}
 
@@ -40,7 +62,12 @@ function postIndexPlugin() {
             }
 
             out[collection.key] = parsePosts(modules, collection.contentRoot)
-                .map(({body, ...meta}) => meta)
+                .map(({body, ...meta}) => {
+                    const cover = meta.frontmatter.cover || findCoverBySlug(meta.slug)
+                    return cover
+                        ? {...meta, frontmatter: {...meta.frontmatter, cover}}
+                        : meta
+                })
         }
 
         return out
@@ -55,9 +82,11 @@ function postIndexPlugin() {
             if(id === RESOLVED_ID)
                 return `export default ${JSON.stringify(buildIndex())}`
         },
-        /** Rebuild the index when a content file changes in dev. */
+        /** Rebuild the index when a post or a cover image changes in dev. */
         handleHotUpdate({file, server}) {
-            if(!file.endsWith(".mdx")) return
+            const isPost = file.endsWith(".mdx")
+            const isCover = file.replace(/\\/g, "/").includes("/public/images/covers/")
+            if(!isPost && !isCover) return
             const mod = server.moduleGraph.getModuleById(RESOLVED_ID)
             if(mod) server.moduleGraph.invalidateModule(mod)
             server.ws.send({type: "full-reload"})

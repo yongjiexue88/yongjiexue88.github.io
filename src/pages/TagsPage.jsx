@@ -16,7 +16,6 @@ function TagsPage() {
     return (
         <div className={`page`}>
             <header className={`page-header`}>
-                <span className={`page-eyebrow`}>{isZh ? "索引" : "Index"}</span>
                 <h1 className={`page-title`}>{isZh ? "标签" : "Tags"}</h1>
                 <p className={`page-blurb`}>
                     {isZh

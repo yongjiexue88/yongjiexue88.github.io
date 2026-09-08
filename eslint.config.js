@@ -14,7 +14,9 @@ import reactRefresh from "eslint-plugin-react-refresh"
 
 export default [
     {
-        ignores: ["dist/**", "node_modules/**", "docs/**", "prototypes/**", "tmp/**"]
+        // .claude holds installed agent tooling (Impeccable), not project
+        // source; linting vendored scripts reports issues we cannot fix.
+        ignores: ["dist/**", "node_modules/**", "docs/**", "prototypes/**", "tmp/**", ".claude/**"]
     },
     js.configs.recommended,
     {

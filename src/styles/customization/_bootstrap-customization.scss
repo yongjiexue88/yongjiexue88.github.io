@@ -3,6 +3,12 @@
  * @description This file contains the customization of Bootstrap styles.
  */
 
+// Bootstrap ships --bs-code-color #d63384, which lands at 4.3:1 on our board
+// surface — under the 4.5:1 floor. Drive it from the theme instead.
+code {
+    color: var(--theme-primary);
+}
+
 div.accordion {
     div.accordion-item {
         border: none;

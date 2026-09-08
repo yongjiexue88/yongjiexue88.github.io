@@ -36,7 +36,6 @@ function HomePage() {
             )}
 
             <section className={`home-hero`}>
-                <span className={`page-eyebrow`}>{isZh ? "个人博客" : "Personal blog"}</span>
                 <h1 className={`home-hero-title`}>萦怀</h1>
                 <p className={`home-hero-lead`}>
                     {isZh

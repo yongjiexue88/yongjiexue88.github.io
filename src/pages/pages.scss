@@ -36,13 +36,20 @@ $page-read: 720px;
     }
 }
 
-.page-eyebrow {
-    display: block;
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--theme-muted);
-    margin-bottom: 10px;
+/**
+ * The tracked uppercase kicker that used to sit above every h1 is gone — it is
+ * the signature generated-UI tell and the heading carries the page on its own.
+ * What remains is a real breadcrumb, used only where there is somewhere to go
+ * back to.
+ */
+.page-breadcrumb {
+    font-size: 0.78rem;
+    margin-bottom: 12px;
+
+    a {
+        color: var(--theme-muted) !important;
+        &:hover { color: var(--theme-primary) !important; }
+    }
 }
 
 .page-title {

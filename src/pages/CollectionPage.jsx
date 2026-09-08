@@ -34,7 +34,6 @@ function CollectionPage({ collectionKey }) {
             )}
 
             <header className={`page-header`}>
-                <span className={`page-eyebrow`}>{isZh ? "专栏" : "Writing"}</span>
                 <h1 className={`page-title`}>{locale.title}</h1>
                 <p className={`page-blurb`}>{locale.blurb}</p>
             </header>
@@ -62,7 +61,8 @@ function CollectionPage({ collectionKey }) {
                     {visiblePosts.map(post => (
                         <PostCard key={post.slug}
                                   post={post}
-                                  languageId={selectedLanguageId}/>
+                                  languageId={selectedLanguageId}
+                                  headingLevel="h2"/>
                     ))}
                 </div>
             )}

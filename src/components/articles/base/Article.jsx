@@ -61,9 +61,9 @@ function Article({ children, id, type, dataWrapper, className = "", selectedItem
 
 function ArticleTitle({ title }) {
     return (
-        <h4 className={`article-title`}>
+        <h2 className={`article-title`}>
             <span className={`article-title-text mb-0`} dangerouslySetInnerHTML={{__html: title}}/>
-        </h4>
+        </h2>
     )
 }
 

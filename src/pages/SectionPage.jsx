@@ -26,8 +26,14 @@ function SectionPage({ sectionId }) {
     return (
         <div className={`page page-read`}>
             <header className={`page-header`}>
-                {title?.prefix && <span className={`page-eyebrow`}>{title.prefix}</span>}
-                <h1 className={`page-title`}>{title?.title || ""}</h1>
+                {/*
+                  * Section titles carry inline markup: language.parseJsonText
+                  * turns {{x}} into <span class="text-primary">. Rendering it
+                  * as a plain string printed the tags on screen — and only at
+                  * lg and up, where parseSectionTitle switches to title_long.
+                  */}
+                <h1 className={`page-title`}
+                    dangerouslySetInnerHTML={{__html: title?.title || ""}}/>
             </header>
 
             <SectionBody section={section}/>

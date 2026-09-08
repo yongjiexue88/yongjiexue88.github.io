@@ -19,9 +19,9 @@ function TagPage() {
     return (
         <div className={`page`}>
             <header className={`page-header`}>
-                <span className={`page-eyebrow`}>
+                <nav className={`page-breadcrumb`}>
                     <Link to="/tags">{isZh ? "标签" : "Tags"}</Link>
-                </span>
+                </nav>
                 <h1 className={`page-title`}>{decoded}</h1>
                 <p className={`page-blurb`}>
                     {isZh ? `${posts.length} 篇内容。` : `${posts.length} ${posts.length === 1 ? "entry" : "entries"}.`}
@@ -38,7 +38,8 @@ function TagPage() {
                         <PostCard key={`${post.collection}-${post.slug}`}
                                   post={post}
                                   languageId={selectedLanguageId}
-                                  showCollection={true}/>
+                                  showCollection={true}
+                                  headingLevel="h2"/>
                     ))}
                 </div>
             )}
