@@ -4,15 +4,17 @@ article.article {
     width: 100%;
 }
 
-h4.article-title {
+h2.article-title {
     display: flex;
-    align-items: center;
-    font-weight: bold;
-
-    margin-bottom: 24px;
-    @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-        margin-bottom: 24px;
-    }
+    align-items: baseline;
+    margin: 0 0 28px;
+    padding-top: 28px;
+    border-top: 2px solid var(--theme-texts);
+    font-family: var(--font-signal-display);
+    font-size: clamp(2.7rem, 5vw, 5rem) !important;
+    font-weight: 650;
+    line-height: 0.92;
+    letter-spacing: -0.045em;
 
     span.article-title-prefix {
         color: var(--theme-primary);
@@ -24,30 +26,21 @@ h4.article-title {
 div.article-content {
     display: flex;
     flex-direction: column;
-
-    margin: 0 16px 0 16px;
-    @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-        margin: 0 12px 0 12px;
-    }
+    margin: 0;
 }
 
-article.article-spacing-default {
-    margin-top: 40px;
-    @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-        margin-top: 28px;
-    }
-}
+article.article-spacing-default { margin-top: 64px; }
+article.article-spacing-small { margin-top: 32px; }
 
-article.article-spacing-small {
-    margin-top: 20px;
-    @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
-        margin-top: 15px;
-    }
-}
+div.article-category-filter { margin-bottom: 32px !important; }
 
-div.article-category-filter {
-    margin-bottom: 32px!important;
-    @include media-breakpoint-down(lg) {
-        margin-bottom: 28px!important;
+@include media-breakpoint-down(md) {
+    h2.article-title {
+        margin-bottom: 22px;
+        padding-top: 22px;
+        font-size: clamp(2.5rem, 13vw, 4rem) !important;
     }
+
+    article.article-spacing-default { margin-top: 48px; }
+    article.article-spacing-small { margin-top: 24px; }
 }

@@ -2,7 +2,7 @@
     "name": "yongjiexue88.github.io",
     "private": true,
     "version": "2.0.3",
-    "description": "Personal website for Yongjie Xue, deployed with GitHub Pages.",
+    "description": "Professional website and writing archive for Yongjie Xue, deployed with GitHub Pages.",
     "type": "module",
     "scripts": {
         "dev": "vite",

@@ -2,7 +2,6 @@ import "./TopNav.scss"
 import React, {useEffect, useState} from 'react'
 import {NavLink, Link, useLocation} from "react-router-dom"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
-import {COLLECTION_LIST, collectionLocale} from "/src/hooks/collections.js"
 import NavToolList from "/src/components/nav/partials/NavToolList.jsx"
 
 /**
@@ -19,21 +18,22 @@ function TopNav({ profile }) {
     useEffect(() => { setMenuOpen(false) }, [location.pathname])
 
     const links = [
-        ...COLLECTION_LIST.map(collection => ({
-            to: collection.path,
-            label: collectionLocale(collection, selectedLanguageId).title
-        })),
-        {to: "/tags", label: selectedLanguageId === "zh" ? "标签" : "Tags"},
+        {to: "/journal", label: selectedLanguageId === "zh" ? "日志" : "Journal"},
+        {to: "/notes", label: selectedLanguageId === "zh" ? "笔记" : "Notes"},
         {to: "/about", label: selectedLanguageId === "zh" ? "关于" : "About"},
         {to: "/contact", label: selectedLanguageId === "zh" ? "联系" : "Contact"}
     ]
+
+    const menuLabel = selectedLanguageId === "zh"
+        ? (menuOpen ? "关闭导航菜单" : "打开导航菜单")
+        : (menuOpen ? "Close navigation menu" : "Open navigation menu")
 
     return (
         <header className={`top-nav`}>
             <div className={`top-nav-inner`}>
                 <Link to="/" className={`top-nav-brand`}>
-                    <span className={`top-nav-brand-mark`}>萦怀</span>
-                    <span className={`top-nav-brand-sub`}>thoughts that linger</span>
+                    <span className={`top-nav-brand-mark`}>Y</span>
+                    <span className={`top-nav-brand-sub`}>{profile?.role || "Full Stack & AI Engineer"}</span>
                 </Link>
 
                 <nav className={`top-nav-links`}>
@@ -50,7 +50,7 @@ function TopNav({ profile }) {
                     <NavToolList expanded={true}/>
 
                     <button className={`top-nav-toggle`}
-                            aria-label="Menu"
+                            aria-label={menuLabel}
                             aria-expanded={menuOpen}
                             onClick={() => setMenuOpen(open => !open)}>
                         <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"}`}/>

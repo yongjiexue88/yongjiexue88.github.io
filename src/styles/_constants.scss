@@ -20,7 +20,7 @@ $min-contrast-ratio: 1.5 !default;
 // reads well but is the default face of generated UIs and carries no identity.
 // CJK fallbacks are appended because none of the three ship CJK glyphs.
 $font-family-base: 'IBM Plex Sans', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-$headings-font-family: 'Chakra Petch', 'Noto Sans SC', 'PingFang SC', -apple-system, BlinkMacSystemFont, sans-serif;
+$headings-font-family: 'Sofia Sans Semi Condensed', 'Noto Sans SC', 'PingFang SC', -apple-system, BlinkMacSystemFont, sans-serif;
 $font-family-monospace: 'IBM Plex Mono', SFMono-Regular, Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace;
 
 /** Static Colors **/
@@ -46,7 +46,7 @@ $z-index-loader: 1260;
 
 /** Layout Constraints - General **/
 $max-breakpoint-for-tabbed-interface: md;
-$standard-border-radius: 10px;
+$standard-border-radius: 0;
 $default-card-spacing: 0.5rem;
 $default-card-spacing-mobile: 5px;
 $timeline-merge-mode-breakpoint: sm;

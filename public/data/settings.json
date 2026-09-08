@@ -16,7 +16,7 @@
         }
     },
     "templateSettings": {
-        "backgroundStyle": "static",
+        "backgroundStyle": "plain",
         "homeCoverUrl": "",
         "defaultLanguageId": "en",
         "defaultThemeId": "light",

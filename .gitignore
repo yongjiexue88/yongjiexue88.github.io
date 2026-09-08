@@ -28,3 +28,11 @@ dist/
 # `npx impeccable install/update` fetches it on demand, so it should not be
 # committed. The skill definitions alongside it are kept.
 .claude/skills/impeccable/scripts/bin/
+
+# Impeccable design-process artifacts: mockups, visual diffs, heatmaps and
+# review captures (~9MB of PNGs). Regenerable scratch, like dist/. The small
+# design.json sidecar that DESIGN.md references is kept.
+.impeccable/mocks/
+.impeccable/review/
+.impeccable/build/
+

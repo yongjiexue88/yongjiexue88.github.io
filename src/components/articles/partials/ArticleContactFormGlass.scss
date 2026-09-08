@@ -2,134 +2,143 @@
 
 .contact-glass-parallax-wrapper {
     width: 100%;
-    max-width: 480px;
-    transform: translateX(40px);
-
-    // The 40px nudge pushed the card past the viewport on small screens.
-    @include media-breakpoint-down(lg) {
-        transform: none;
-        max-width: 100%;
-    }
+    max-width: none;
+    transform: none;
 }
 
 .contact-glass-container {
-    // Glassmorphism over a busy illustration measured 1.4:1 on the heading.
-    // A solid themed surface keeps the layout and fixes legibility; the
-    // artwork still reads around it rather than through it.
-    background: var(--theme-section-background);
-    border-radius: 16px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--theme-standard-borders);
-    padding: 3rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
     position: relative;
-    z-index: 5;
-
-    [data-theme='dark'] & {
-        background: var(--theme-section-background);
-        border: 1px solid var(--theme-standard-borders);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    }
+    z-index: 1;
+    padding: 0;
+    border-top: 1px solid var(--theme-texts);
+    border-left: 1px solid var(--theme-texts);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
 .contact-glass-title {
-    font-size: 1.5rem;
-    font-weight: 700;
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 22px;
+    border-right: 1px solid var(--theme-texts);
+    border-bottom: 1px solid var(--theme-texts);
+    color: var(--theme-texts);
+    font-family: var(--font-signal-mono);
+    font-size: 0.72rem !important;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: left;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: rgba(47, 34, 53, 0.7);
-
-    [data-theme='dark'] & {
-        color: rgba(255, 255, 255, 0.8);
-    }
 }
 
-.contact-glass-form-group {
-    position: relative;
+.contact-glass-form-group,
+.contact-glass-form-group-textarea {
     display: flex;
+    position: relative;
     align-items: center;
-    background: rgba(240, 240, 240, 0.5);
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-
-    [data-theme='dark'] & {
-        background: rgba(40, 40, 40, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-    }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-right: 1px solid var(--theme-texts);
+    border-bottom: 1px solid var(--theme-texts);
+    border-radius: 0;
+    background: var(--signal-paper);
+    transition: background-color 150ms ease-out;
 
     &:focus-within {
-        border-color: var(--bs-primary);
-        box-shadow: 0 0 0 2px rgba(var(--bs-primary-rgb), 0.25);
+        border-color: var(--theme-texts);
+        background: var(--signal-periwinkle);
+        box-shadow: none;
     }
 }
 
 .contact-glass-form-group-textarea {
-    position: relative;
-    display: flex;
+    grid-column: 1 / -1;
     align-items: flex-start;
-    background: rgba(240, 240, 240, 0.5);
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    padding-top: 0.5rem;
+    padding-top: 0;
+}
 
-    [data-theme='dark'] & {
-        background: rgba(40, 40, 40, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    &:focus-within {
-        border-color: var(--bs-primary);
-        box-shadow: 0 0 0 2px rgba(var(--bs-primary-rgb), 0.25);
-    }
+.contact-glass-form-group-subject {
+    grid-column: 1 / -1;
 }
 
 .contact-glass-icon {
-    padding: 1rem;
-    color: rgba(0, 0, 0, 0.5);
-
-    [data-theme='dark'] & {
-        color: rgba(255, 255, 255, 0.5);
-    }
+    display: flex;
+    width: 58px;
+    min-height: 64px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    padding: 0;
+    border-right: 1px solid var(--theme-texts);
+    color: var(--signal-paper-ink);
 }
 
 .contact-glass-input {
     width: 100%;
-    background: transparent;
-    border: none;
-    padding: 1rem 1rem 1rem 0;
-    color: inherit;
-    font-size: 0.95rem;
+    min-height: 64px;
+    padding: 18px;
+    border: 0;
+    border-radius: 0;
     outline: none;
+    background: transparent;
+    color: var(--signal-paper-ink);
+    font: inherit;
 
     &::placeholder {
-        color: rgba(0, 0, 0, 0.4);
-    }
-
-    [data-theme='dark'] &::placeholder {
-        color: rgba(255, 255, 255, 0.4);
+        color: var(--signal-paper-ink) !important;
+        opacity: 0.64;
     }
 }
 
 .contact-glass-form-group-textarea .contact-glass-input {
-    padding: 0.5rem 1rem;
-    resize: none;
+    min-height: 190px;
+    padding: 18px;
+    resize: vertical;
 }
 
 .contact-glass-submit-wrapper {
+    grid-column: 1 / -1;
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+    justify-content: flex-start;
+    margin: 0;
+    border-right: 1px solid var(--theme-texts);
+    border-bottom: 1px solid var(--theme-texts);
 }
 
-.contact-glass-submit-btn {
-    padding: 0.75rem 2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+button.contact-glass-submit-btn {
+    min-width: 230px;
+    min-height: 62px;
+    padding: 0 24px !important;
+    border: 0 !important;
+    border-right: 1px solid var(--theme-texts) !important;
+    border-radius: 0 !important;
+    background-color: var(--signal-lime) !important;
+    color: var(--signal-deep) !important;
+    font-family: var(--font-signal-body);
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    box-shadow: none;
+
+    &:hover,
+    &:focus-visible {
+        background: var(--signal-deep) !important;
+        color: var(--signal-deep-ink) !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .contact-glass-container { grid-template-columns: 1fr; }
+
+    .contact-glass-title,
+    .contact-glass-form-group-subject,
+    .contact-glass-form-group-textarea,
+    .contact-glass-submit-wrapper { grid-column: 1; }
+
+    .contact-glass-submit-btn { width: 100%; border-right: 0 !important; }
 }

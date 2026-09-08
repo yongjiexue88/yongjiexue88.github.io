@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-08T11:12:52Z",
+  "title": "Design System: Yongjie Xue — Systems Calibration Atlas",
+  "extensions": {
+    "colorMeta": {
+      "deep-ink-field": {
+        "role": "neutral",
+        "displayName": "Deep Ink Field",
+        "tonalRamp": ["#050308", "#0a0611", "#0e0918", "#302c38", "#55515c", "#7d7983", "#aaa7af", "#dedde1"]
+      },
+      "deep-field-ink": {
+        "role": "neutral",
+        "displayName": "Deep Field Ink",
+        "tonalRamp": ["#233b37", "#45615c", "#688781", "#8eaca7", "#b4cfcb", "#d2e6e2", "#e9f7f4", "#f7fcfb"]
+      },
+      "deep-field-muted": {
+        "role": "neutral",
+        "displayName": "Deep Field Muted",
+        "tonalRamp": ["#28272d", "#46454d", "#65646d", "#85848d", "#a5a4ad", "#b9b9c2", "#d5d5da", "#eeeeef"]
+      },
+      "deep-field-rule": {
+        "role": "neutral",
+        "displayName": "Deep Field Hairline",
+        "tonalRamp": ["rgba(233, 247, 244, 0.08)", "rgba(233, 247, 244, 0.12)", "rgba(233, 247, 244, 0.16)", "rgba(233, 247, 244, 0.22)", "rgba(233, 247, 244, 0.34)", "rgba(233, 247, 244, 0.50)", "rgba(233, 247, 244, 0.72)", "rgba(233, 247, 244, 0.92)"]
+      },
+      "icy-paper": {
+        "role": "neutral",
+        "displayName": "Icy Paper",
+        "tonalRamp": ["#233b37", "#45615c", "#688781", "#8eaca7", "#b4cfcb", "#d2e6e2", "#e9f7f4", "#f7fcfb"]
+      },
+      "paper-ink": {
+        "role": "neutral",
+        "displayName": "Paper Ink",
+        "tonalRamp": ["#050308", "#0a0611", "#0e0918", "#302c38", "#55515c", "#7d7983", "#aaa7af", "#dedde1"]
+      },
+      "signal-cobalt": {
+        "role": "primary",
+        "displayName": "Signal Cobalt",
+        "tonalRamp": ["#08123a", "#10216e", "#1933a6", "#2349e8", "#516eee", "#8195f4", "#b3c0f9", "#e5eafe"]
+      },
+      "cobalt-ink": {
+        "role": "neutral",
+        "displayName": "Cobalt Ink",
+        "tonalRamp": ["#263c37", "#4a625d", "#6f8983", "#96afa9", "#bdd3ce", "#d9e9e5", "#f4fbf9", "#fbfdfd"]
+      },
+      "acid-chartreuse": {
+        "role": "primary",
+        "displayName": "Acid Chartreuse",
+        "tonalRamp": ["#303909", "#53630f", "#778e18", "#9ebc25", "#cae838", "#d9ee70", "#e8f5aa", "#f7fce4"]
+      },
+      "signal-coral": {
+        "role": "secondary",
+        "displayName": "Signal Coral",
+        "tonalRamp": ["#3d0c07", "#71170e", "#a62418", "#d83427", "#f84735", "#fa7869", "#fca99f", "#feddd9"]
+      },
+      "pale-periwinkle": {
+        "role": "secondary",
+        "displayName": "Pale Periwinkle",
+        "tonalRamp": ["#292a45", "#4b4d78", "#7072aa", "#989adc", "#b8bbef", "#d8dbff", "#e7e9ff", "#f6f6ff"]
+      },
+      "dark-deep-field": {
+        "role": "neutral",
+        "displayName": "Dark Deep Field",
+        "tonalRamp": ["#030205", "#07050c", "#211e25", "#403d44", "#625f66", "#87848b", "#b4b2b7", "#e3e2e4"]
+      },
+      "dark-deep-ink": {
+        "role": "neutral",
+        "displayName": "Dark Deep Ink",
+        "tonalRamp": ["#243b36", "#49615b", "#708781", "#99ada8", "#c0d1cc", "#dbe7e3", "#f2f8f6", "#fbfdfc"]
+      },
+      "dark-deep-muted": {
+        "role": "neutral",
+        "displayName": "Dark Deep Muted",
+        "tonalRamp": ["#28262e", "#46434e", "#64616e", "#84808f", "#a49fad", "#b9b5c5", "#d5d2dc", "#eeedf1"]
+      },
+      "dark-deep-rule": {
+        "role": "neutral",
+        "displayName": "Dark Deep Hairline",
+        "tonalRamp": ["rgba(242, 248, 246, 0.06)", "rgba(242, 248, 246, 0.10)", "rgba(242, 248, 246, 0.14)", "rgba(242, 248, 246, 0.20)", "rgba(242, 248, 246, 0.32)", "rgba(242, 248, 246, 0.48)", "rgba(242, 248, 246, 0.70)", "rgba(242, 248, 246, 0.92)"]
+      },
+      "dark-paper": {
+        "role": "neutral",
+        "displayName": "Dark Icy Paper",
+        "tonalRamp": ["#07050b", "#0f0c18", "#171325", "#393545", "#5d5968", "#837f8d", "#afacb6", "#dfdde2"]
+      },
+      "dark-paper-ink": {
+        "role": "neutral",
+        "displayName": "Dark Paper Ink",
+        "tonalRamp": ["#243b36", "#49615b", "#708781", "#99ada8", "#c0d1cc", "#dbe7e3", "#f2f8f6", "#fbfdfc"]
+      },
+      "dark-signal-cobalt": {
+        "role": "primary",
+        "displayName": "Dark Signal Cobalt",
+        "tonalRamp": ["#0b1236", "#172266", "#233596", "#304ddb", "#5c71e3", "#8797ec", "#b6c0f4", "#e6eafb"]
+      },
+      "dark-acid-chartreuse": {
+        "role": "primary",
+        "displayName": "Dark Acid Chartreuse",
+        "tonalRamp": ["#323a0a", "#586510", "#7f921a", "#a8c027", "#d2ef3f", "#def477", "#eafaad", "#f8fde5"]
+      },
+      "dark-signal-coral": {
+        "role": "secondary",
+        "displayName": "Dark Signal Coral",
+        "tonalRamp": ["#42100a", "#792017", "#b33326", "#e74737", "#ff5b47", "#ff8576", "#ffb1a8", "#ffe0dc"]
+      },
+      "dark-periwinkle": {
+        "role": "secondary",
+        "displayName": "Dark Periwinkle",
+        "tonalRamp": ["#0c0915", "#19142a", "#2a2444", "#4a4462", "#6c6682", "#918ca5", "#bbb8c7", "#e7e6eb"]
+      }
+    },
+    "typographyMeta": {
+      "hero": {
+        "displayName": "Identity Hero",
+        "purpose": "The name on the career identity surface; optically width-calibrated on wide screens."
+      },
+      "display": {
+        "displayName": "Route Display",
+        "purpose": "Route titles and the largest reusable section headings."
+      },
+      "headline": {
+        "displayName": "Editorial Headline",
+        "purpose": "Lead article titles and prominent section statements."
+      },
+      "title": {
+        "displayName": "Card Title",
+        "purpose": "Article cards and compact editorial links."
+      },
+      "body": {
+        "displayName": "Humanist Body",
+        "purpose": "Readable descriptions, identity facts, actions, and interface copy."
+      },
+      "label": {
+        "displayName": "Mono Metadata",
+        "purpose": "Dates, counts, indices, tags, breadcrumbs, and compact control labels."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "state-fast",
+        "value": "150ms ease-out",
+        "purpose": "Tag, navigation, and signal-cell color changes."
+      },
+      {
+        "name": "state-standard",
+        "value": "180ms ease-out",
+        "purpose": "Primary actions and editorial card color changes."
+      },
+      {
+        "name": "signal-boot",
+        "value": "540ms ease-out with 36ms per-cell stagger",
+        "purpose": "One-time bounded reveal for factual signal cells; disabled by reduced-motion preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "576px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "992px"
+      },
+      {
+        "name": "xl",
+        "value": "1200px"
+      },
+      {
+        "name": "xxl",
+        "value": "1400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Dominant chartreuse action for the primary next step in a local decision area.",
+      "html": "<button class=\"ds-action-primary\"><span>Read the writing</span><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M12 4v15m0 0 6-6m-6 6-6-6\"/></svg></button>",
+      "css": ".ds-action-primary { display:inline-flex; min-height:64px; align-items:center; justify-content:space-between; gap:56px; padding:0 30px; border:0; border-radius:0; background:var(--signal-lime, #cae838); color:var(--signal-deep, #0e0918); font-family:var(--font-signal-body, 'IBM Plex Sans', sans-serif); font-size:1.08rem; font-weight:600; transition:background-color 180ms ease-out, color 180ms ease-out; } .ds-action-primary svg { width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:2; } .ds-action-primary:hover { background:var(--signal-deep, #0e0918); color:var(--signal-deep-ink, #e9f7f4); } .ds-action-primary:focus-visible { outline:3px solid var(--signal-coral, #f84735); outline-offset:4px; } @media (prefers-reduced-motion: reduce) { .ds-action-primary { transition:none; } }"
+    },
+    {
+      "name": "Secondary Text Action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Precise underlined action used beside, not in competition with, a primary action.",
+      "html": "<a class=\"ds-action-secondary\" href=\"#contact\">Get in touch</a>",
+      "css": ".ds-action-secondary { display:inline-flex; align-items:center; padding:8px 0 4px; border-bottom:2px solid currentColor; border-radius:0; color:var(--signal-paper-ink, #0e0918); font-family:var(--font-signal-body, 'IBM Plex Sans', sans-serif); font-size:1.08rem; font-weight:600; text-decoration:none; transition:color 180ms ease-out; } .ds-action-secondary:hover { color:var(--signal-blue, #2349e8); } .ds-action-secondary:focus-visible { outline:3px solid var(--signal-coral, #f84735); outline-offset:4px; } @media (prefers-reduced-motion: reduce) { .ds-action-secondary { transition:none; } }"
+    },
+    {
+      "name": "Top Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Sticky deep-ink masthead with muted links and a chartreuse active rail.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a class=\"ds-nav-mark\" href=\"#home\">Y</a><div class=\"ds-nav-links\"><a class=\"ds-nav-link ds-nav-link-active\" href=\"#journal\">Journal</a><a class=\"ds-nav-link\" href=\"#notes\">Notes</a><a class=\"ds-nav-link\" href=\"#about\">About</a><a class=\"ds-nav-link\" href=\"#contact\">Contact</a></div></nav>",
+      "css": ".ds-nav { display:flex; height:64px; align-items:center; gap:24px; padding:0 3vw; border-bottom:1px solid rgba(233,247,244,.22); background:var(--signal-deep, #0e0918); color:var(--signal-deep-ink, #e9f7f4); font-family:var(--font-signal-body, 'IBM Plex Sans', sans-serif); } .ds-nav-mark { color:inherit; font-family:var(--font-signal-display, 'Sofia Sans Semi Condensed', sans-serif); font-size:2rem; font-weight:700; letter-spacing:-.05em; text-decoration:none; } .ds-nav-links { display:flex; align-items:center; gap:22px; margin-left:auto; } .ds-nav-link { position:relative; padding:4px 0; color:var(--signal-deep-muted, #b9b9c2); font-size:.9rem; text-decoration:none; transition:color 150ms ease-out; } .ds-nav-link:hover, .ds-nav-link:focus-visible { color:var(--signal-deep-ink, #e9f7f4); } .ds-nav-link:focus-visible { outline:3px solid var(--signal-coral, #f84735); outline-offset:4px; } .ds-nav-link-active::after { content:''; position:absolute; right:0; bottom:-2px; left:0; height:1px; background:var(--signal-lime, #cae838); } @media (max-width:767.98px) { .ds-nav { height:56px; padding:0 20px; } .ds-nav-links { gap:12px; } .ds-nav-link:nth-child(2), .ds-nav-link:nth-child(3) { display:none; } } @media (prefers-reduced-motion: reduce) { .ds-nav-link { transition:none; } }"
+    },
+    {
+      "name": "Tag Chip",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Compact square metadata chip with an optional tabular count.",
+      "html": "<a class=\"ds-tag\" href=\"#tag\">english-writing <span class=\"ds-tag-count\">9</span></a>",
+      "css": ".ds-tag { display:inline-flex; min-height:28px; align-items:center; padding:4px 9px; border:1px solid currentColor; border-radius:0; background:transparent; color:var(--signal-paper-ink, #0e0918); font-family:var(--font-signal-mono, 'IBM Plex Mono', monospace); font-size:.7rem; line-height:1; text-decoration:none; white-space:nowrap; transition:background-color 150ms ease-out, color 150ms ease-out; } .ds-tag-count { margin-left:8px; font-variant-numeric:tabular-nums; opacity:.66; } .ds-tag:hover, .ds-tag:focus-visible { background:var(--signal-lime, #cae838); color:var(--signal-deep, #0e0918); } .ds-tag:focus-visible { outline:3px solid var(--signal-coral, #f84735); outline-offset:-4px; } @media (prefers-reduced-motion: reduce) { .ds-tag { transition:none; } }"
+    },
+    {
+      "name": "Editorial Post Card",
+      "kind": "card",
+      "refersTo": "post-card",
+      "description": "Type-led article card joined to neighboring cards by one-pixel borders.",
+      "html": "<a class=\"ds-post-card\" href=\"#article\"><span class=\"ds-post-index\">01</span><span class=\"ds-post-meta\">JUN 08 · NOTES</span><h3 class=\"ds-post-title\">Chaiknows Explains Modern Life</h3><span class=\"ds-post-arrow\" aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-post-card { position:relative; display:flex; min-height:300px; flex-direction:column; padding:28px 30px 26px; border:1px solid var(--signal-paper-ink, #0e0918); border-radius:0; background:var(--signal-paper, #e9f7f4); color:var(--signal-paper-ink, #0e0918); text-decoration:none; transition:background-color 180ms ease-out; } .ds-post-index, .ds-post-meta { font-family:var(--font-signal-mono, 'IBM Plex Mono', monospace); font-size:.72rem; } .ds-post-index { position:absolute; top:28px; right:30px; } .ds-post-meta { opacity:.66; text-transform:uppercase; } .ds-post-title { max-width:12ch; margin:42px 0 16px; font-family:var(--font-signal-display, 'Sofia Sans Semi Condensed', sans-serif); font-size:clamp(2rem, 5vw, 3rem); font-weight:600; line-height:.95; letter-spacing:-.045em; } .ds-post-arrow { margin-top:auto; } .ds-post-card:hover, .ds-post-card:focus-visible { background:var(--signal-periwinkle, #d8dbff); } .ds-post-card:focus-visible { outline:3px solid var(--signal-coral, #f84735); outline-offset:-6px; } @media (prefers-reduced-motion: reduce) { .ds-post-card { transition:none; } }"
+    },
+    {
+      "name": "Contact Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Square input embedded in a one-pixel form matrix with a flat periwinkle focus field.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">EMAIL</span><input class=\"ds-field-input\" type=\"email\" placeholder=\"Email address\" /></label>",
+      "css": ".ds-field { display:grid; grid-template-columns:72px minmax(0, 1fr); min-height:64px; align-items:stretch; border:1px solid var(--signal-paper-ink, #0e0918); border-radius:0; background:var(--signal-paper, #e9f7f4); color:var(--signal-paper-ink, #0e0918); font-family:var(--font-signal-body, 'IBM Plex Sans', sans-serif); transition:background-color 150ms ease-out; } .ds-field:focus-within { background:var(--signal-periwinkle, #d8dbff); } .ds-field-label { display:flex; align-items:center; justify-content:center; border-right:1px solid currentColor; font-family:var(--font-signal-mono, 'IBM Plex Mono', monospace); font-size:.72rem; } .ds-field-input { min-width:0; min-height:64px; padding:18px; border:0; border-radius:0; outline:none; background:transparent; color:inherit; font:inherit; } .ds-field-input::placeholder { color:inherit; opacity:.64; } .ds-field-input:focus-visible { outline:3px solid var(--signal-coral, #f84735); outline-offset:-5px; } @media (prefers-reduced-motion: reduce) { .ds-field { transition:none; } }"
+    },
+    {
+      "name": "Signal Cell — Notes",
+      "kind": "custom",
+      "refersTo": "signal-cell",
+      "description": "Standard factual index cell for a published note.",
+      "html": "<a class=\"ds-signal-cell\" href=\"#note\"><span class=\"ds-signal-index\">03</span><span class=\"ds-signal-label\">English Study Notes: Review Book</span></a>",
+      "css": ".ds-signal-cell { display:flex; width:160px; min-height:96px; flex-direction:column; padding:10px; border:1px solid var(--signal-blue-ink, #f4fbf9); border-radius:0; background:var(--signal-blue, #2349e8); color:var(--signal-blue-ink, #f4fbf9); font-family:var(--font-signal-mono, 'IBM Plex Mono', monospace); text-decoration:none; transition:background-color 150ms ease-out, color 150ms ease-out; } .ds-signal-index { font-size:.72rem; line-height:1; } .ds-signal-label { margin-top:auto; font-size:.78rem; line-height:1.15; } .ds-signal-cell:hover, .ds-signal-cell:focus-visible { background:var(--signal-lime, #cae838); color:var(--signal-deep, #0e0918); } .ds-signal-cell:focus-visible { outline:3px solid var(--signal-deep, #0e0918); outline-offset:3px; } @media (prefers-reduced-motion: reduce) { .ds-signal-cell { transition:none; } }"
+    },
+    {
+      "name": "Signal Cell — Journal",
+      "kind": "custom",
+      "refersTo": "signal-cell-journal",
+      "description": "Coral factual index cell reserved for a real journal entry.",
+      "html": "<a class=\"ds-signal-journal\" href=\"#journal\"><span class=\"ds-signal-journal-index\">11</span><span class=\"ds-signal-journal-label\">The Second Sunday Night Without Tiki</span></a>",
+      "css": ".ds-signal-journal { display:flex; width:160px; min-height:96px; flex-direction:column; padding:10px; border:1px solid var(--signal-blue-ink, #f4fbf9); border-radius:0; background:var(--signal-coral, #f84735); color:var(--signal-deep, #0e0918); font-family:var(--font-signal-mono, 'IBM Plex Mono', monospace); text-decoration:none; transition:background-color 150ms ease-out, color 150ms ease-out; } .ds-signal-journal-index { font-size:.72rem; line-height:1; } .ds-signal-journal-label { margin-top:auto; font-size:.78rem; line-height:1.15; } .ds-signal-journal:hover, .ds-signal-journal:focus-visible { background:var(--signal-lime, #cae838); color:var(--signal-deep, #0e0918); } .ds-signal-journal:focus-visible { outline:3px solid var(--signal-deep, #0e0918); outline-offset:3px; } @media (prefers-reduced-motion: reduce) { .ds-signal-journal { transition:none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Systems Calibration Atlas",
+    "overview": "The system treats professional identity as a calibrated publishing signal: enormous editorial type establishes authorship, factual metadata makes the archive inspectable, and saturated flat fields create a memorable route from identity to writing to contact. It feels like an engineering plate crossed with an independent design magazine—precise, direct, and visibly authored.\n\nThe world is dense but breathable. Square cells and hairline rails organize information without turning the product into a dashboard; bold page-scale color replaces ornamental surface effects. Generic portfolio card stacks and quiet personal-blog mastheads are confirmed anti-references, while the site remains a career presence with writing as evidence.\n\nThe system is bilingual by construction. English and Chinese receive equivalent hierarchy, CJK-aware fallbacks, synchronized document language, and the same action paths. Its visual confidence never licenses invented proof: content surfaces use only real identity facts, routes, tags, and published material.",
+    "keyCharacteristics": [
+      "Flat deep-ink, cobalt, icy-paper, chartreuse, coral, and periwinkle fields.",
+      "Variable-width grotesque display type, humanist body copy, and mono metadata.",
+      "Square cells, zero-radius containers, hairline rails, and no decorative shadows.",
+      "Career identity first; real writing and contact paths provide the evidence.",
+      "Equivalent English and Chinese experiences with factual content only."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Scarcity Rule",
+        "body": "Reserve chartreuse for primary action, selection, or energized interaction; do not spread it across passive decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paired Field Rule",
+        "body": "Use each large field with its designated ink token and keep small text at WCAG AA contrast in both themes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Metadata Integrity Rule",
+        "body": "Use mono only when the text behaves like data, an index, a date, a count, or a compact control label.",
+        "section": "typography"
+      },
+      {
+        "name": "The Language Parity Rule",
+        "body": "Preserve equivalent hierarchy in English and Chinese, use the CJK fallbacks, and synchronize the document `lang` attribute with the selected language.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Signal Rule",
+        "body": "Keep resting surfaces shadowless; use color adjacency, hairlines, and focus rings to establish order and state.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do establish identity, role, and a clear reading or contact path before secondary archive browsing.",
+      "Do use only real profile facts, published content, routes, tags, counts, and available identity assets.",
+      "Do keep English and Chinese equivalent, preserve CJK-capable font fallbacks, and synchronize document language.",
+      "Do maintain at least 11px functional text, WCAG AA contrast for small text, visible focus, and reduced-motion behavior.",
+      "Do build hierarchy with scale, flat color fields, square cells, and hairline rails.",
+      "Do treat empty professional sections as absent until verified material exists."
+    ],
+    "donts": [
+      "Don't invent projects, employers, clients, metrics, credentials, testimonials, biography, or achievement claims.",
+      "Don't promote one homepage's exact article count or composition into a global layout rule.",
+      "Don't add gradients, glow, glass, decorative drop shadows, or rounded card stacks to core editorial surfaces.",
+      "Don't use mono for general prose, fake source code, or decorative pseudo-data.",
+      "Don't hide focus, depend on color alone, or let compact functional text fall below the accessibility floor.",
+      "Don't demote either language to an incomplete or visually secondary experience."
+    ]
+  }
+}

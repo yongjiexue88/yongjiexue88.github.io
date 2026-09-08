@@ -18,6 +18,7 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 
 // Importing styles...
 @import "root-flags";
+@import "identity";
 @import "layout/page";
 @import "layout/typography";
 @import "customization/primitives-customization";

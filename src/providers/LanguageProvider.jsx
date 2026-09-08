@@ -48,6 +48,7 @@ function LanguageProvider({ children, supportedLanguages, defaultLanguageId, app
         if(!selectedLanguageId)
             return
         utils.storage.setPreferredLanguage(selectedLanguageId)
+        document.documentElement.lang = selectedLanguageId
     }, [selectedLanguageId])
 
     const getSelectedLanguage = () => {
