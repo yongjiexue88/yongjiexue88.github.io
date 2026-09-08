@@ -1,3 +1,4 @@
+import {canonicalTag, taxonomyLabel} from "/src/hooks/taxonomy.js"
 import "./pages.scss"
 import React from 'react'
 import {Link, useParams} from "react-router-dom"
@@ -12,7 +13,7 @@ function TagPage() {
     const tags = useTagIndex()
     const isZh = selectedLanguageId === "zh"
 
-    const decoded = decodeURIComponent(tag || "")
+    const decoded = canonicalTag(tag || "")
     const entry = tags.find(item => item.tag === decoded)
     const posts = entry?.posts || []
 
@@ -22,7 +23,7 @@ function TagPage() {
                 <nav className={`page-breadcrumb`}>
                     <Link to="/tags">{isZh ? "标签" : "Tags"}</Link>
                 </nav>
-                <h1 className={`page-title`}>{decoded}</h1>
+                <h1 className={`page-title`}>{taxonomyLabel(decoded, selectedLanguageId)}</h1>
                 <p className={`page-blurb`}>
                     {isZh ? `${posts.length} 篇内容。` : `${posts.length} ${posts.length === 1 ? "entry" : "entries"}.`}
                 </p>

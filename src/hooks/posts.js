@@ -11,6 +11,8 @@
  * markdownToHtml() below is the renderer.
  */
 
+import {taxonomyLabel} from "./taxonomy.js"
+
 export function groupPostsByYear(posts) {
     const groups = new Map()
 
@@ -137,10 +139,10 @@ export function extractMarkdownTitle(body) {
     return titleLine ? titleLine.replace("# ", "").trim() : "Untitled Post"
 }
 
-export function buildCategoryFilters(posts) {
+export function buildCategoryFilters(posts, languageId = "en") {
     const categories = [{
         id: "all",
-        label: "All",
+        label: taxonomyLabel("all", languageId),
         count: posts.length
     }]
 
@@ -149,7 +151,7 @@ export function buildCategoryFilters(posts) {
         .forEach(category => {
             categories.push({
                 id: category,
-                label: titleCase(category),
+                label: taxonomyLabel(category, languageId),
                 count: posts.filter(post => post.frontmatter.category === category).length
             })
         })
@@ -353,25 +355,25 @@ export function escapeHtml(value) {
         .replaceAll("'", "&#039;")
 }
 
-export function formatShortDate(value) {
+export function formatShortDate(value, languageId = "en") {
     if(!value) return ""
 
     const date = new Date(`${value}T00:00:00`)
     if(Number.isNaN(date.getTime())) return value
 
-    return date.toLocaleDateString("en", {
+    return date.toLocaleDateString(languageId, {
         month: "short",
         day: "numeric"
     })
 }
 
-export function formatLongDate(value) {
+export function formatLongDate(value, languageId = "en") {
     if(!value) return ""
 
     const date = new Date(`${value}T00:00:00`)
     if(Number.isNaN(date.getTime())) return value
 
-    return date.toLocaleDateString("en", {
+    return date.toLocaleDateString(languageId, {
         year: "numeric",
         month: "long",
         day: "numeric"

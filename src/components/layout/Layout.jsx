@@ -1,5 +1,6 @@
 import "./Layout.scss"
-import React from 'react'
+import React, {useEffect} from 'react'
+import {useLanguage} from '/src/providers/LanguageProvider.jsx'
 import {useUtils} from "/src/hooks/utils.js"
 import LayoutAnimatedBackground from "/src/components/layout/LayoutAnimatedBackground.jsx"
 import LayoutStaticBackground from "/src/components/layout/LayoutStaticBackground.jsx"
@@ -15,6 +16,16 @@ import SiteFooter from "/src/components/layout/SiteFooter.jsx"
  */
 function Layout({ id, children, backgroundStyle, profile }) {
     const utils = useUtils()
+    const {selectedLanguageId} = useLanguage()
+
+    useEffect(() => {
+        const isZh = selectedLanguageId === "zh"
+        document.title = isZh ? "薛勇杰 | 全栈与 AI 工程师" : "Yongjie Xue | Full Stack & AI Engineer"
+        const description = isZh
+            ? "薛勇杰是一名居住在美国得克萨斯州奥斯汀的全栈与 AI 工程师，记录关于系统、语言、职业和生活的思考。"
+            : "Yongjie Xue is a Full Stack & AI Engineer in Austin, Texas, writing about systems, language, career, and life."
+        document.querySelector('meta[name="description"]')?.setAttribute('content', description)
+    }, [selectedLanguageId])
 
     const isAnimatedBackground = backgroundStyle === "animated"
     const isStaticBackground = backgroundStyle === "static"

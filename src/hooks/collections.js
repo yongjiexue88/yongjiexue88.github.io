@@ -13,6 +13,7 @@
 import {useMemo} from "react"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 import {filterPostsByLanguage} from "/src/hooks/posts.js"
+import {canonicalTag} from "./taxonomy.js"
 import postIndex from "virtual:post-index"
 
 /**
@@ -123,7 +124,7 @@ export function useTagIndex() {
         posts.forEach(post => {
             const tags = Array.isArray(post.frontmatter.tags) ? post.frontmatter.tags : []
             tags.forEach(tag => {
-                const key = String(tag).trim()
+                const key = canonicalTag(String(tag).trim())
                 if(!key) return
                 if(!byTag.has(key)) byTag.set(key, [])
                 byTag.get(key).push(post)

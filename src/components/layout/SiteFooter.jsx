@@ -1,3 +1,4 @@
+import {taxonomyLabel} from "/src/hooks/taxonomy.js"
 import "./SiteFooter.scss"
 import React from 'react'
 import {Link} from "react-router-dom"
@@ -39,7 +40,7 @@ function SiteFooter({ profile }) {
                     <Link to="/tags" className={`site-footer-link`}>{isZh ? "全部标签" : "All tags"}</Link>
                     {topTags.map(entry => (
                         <Link key={entry.tag} to={`/tags/${entry.slug}`} className={`site-footer-link`}>
-                            {entry.tag}
+                            {taxonomyLabel(entry.tag, selectedLanguageId)}
                         </Link>
                     ))}
                 </div>

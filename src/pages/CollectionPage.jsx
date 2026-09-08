@@ -15,7 +15,7 @@ function CollectionPage({ collectionKey }) {
     const {collection, posts} = useCollection(collectionKey)
     const [selectedCategory, setSelectedCategory] = useState("all")
 
-    const categories = useMemo(() => buildCategoryFilters(posts), [posts])
+    const categories = useMemo(() => buildCategoryFilters(posts, selectedLanguageId), [posts, selectedLanguageId])
     const showFilters = categories.length > 1
 
     const visiblePosts = selectedCategory === "all" ?
@@ -45,7 +45,7 @@ function CollectionPage({ collectionKey }) {
                             {index > 0 && <span className={`page-filter-sep`}>·</span>}
                             <button className={`page-filter ${selectedCategory === category.id ? "page-filter-active" : ""}`}
                                     onClick={() => setSelectedCategory(category.id)}>
-                                {category.label.toLowerCase()}
+                                {category.label}
                             </button>
                         </React.Fragment>
                     ))}

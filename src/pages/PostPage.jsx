@@ -1,3 +1,4 @@
+import {canonicalTag, taxonomyLabel, translationNotice} from "/src/hooks/taxonomy.js"
 import "./pages.scss"
 import "./PostPage.scss"
 import React, {useEffect, useMemo, useState} from 'react'
@@ -44,7 +45,7 @@ function PostPage({ collectionKey }) {
     if(!post)
         return <NotFoundPage/>
 
-    return <PostView post={post}
+    return <PostView key={post.path} post={post}
                      posts={posts}
                      collection={collection}
                      languageId={selectedLanguageId}/>
@@ -138,10 +139,11 @@ function PostView({ post, posts, collection, languageId }) {
                 </nav>
 
                 <header className={`post-header`}>
-                    <h1 className={`post-title`}>{frontmatter.title || post.title}</h1>
+                    <p className="post-language-note">{translationNotice(post, languageId)}</p>
+                    <h1 lang={frontmatter.language || "en"} className={`post-title`}>{frontmatter.title || post.title}</h1>
 
                     <div className={`post-meta`}>
-                        {created && <time>{formatLongDate(created)}</time>}
+                        {created && <time>{formatLongDate(created, languageId)}</time>}
                         {bodyStatus === "ready" && (
                             <>
                                 <span>·</span>
@@ -151,22 +153,22 @@ function PostView({ post, posts, collection, languageId }) {
                         {frontmatter.updated && frontmatter.updated !== frontmatter.created && (
                             <>
                                 <span>·</span>
-                                <span>{isZh ? "更新于" : "Updated"} {formatShortDate(frontmatter.updated)}</span>
+                                <span>{isZh ? "更新于" : "Updated"} {formatShortDate(frontmatter.updated, languageId)}</span>
                             </>
                         )}
                     </div>
 
                     {frontmatter.description && (
-                        <p className={`post-description`}>{frontmatter.description}</p>
+                        <p lang={frontmatter.language || "en"} className={`post-description`}>{frontmatter.description}</p>
                     )}
 
                     {tags.length > 0 && (
                         <div className={`post-tags`}>
                             {tags.map(tag => (
                                 <Link key={tag}
-                                      to={`/tags/${encodeURIComponent(tag)}`}
+                                      to={`/tags/${encodeURIComponent(canonicalTag(tag))}`}
                                       className={`tag-pill`}>
-                                    {tag}
+                                    {taxonomyLabel(tag, languageId)}
                                 </Link>
                             ))}
                         </div>
@@ -180,18 +182,18 @@ function PostView({ post, posts, collection, languageId }) {
                     <div className={`post-body`}><p>{isZh ? "无法加载这篇内容。" : "Could not load this entry."}</p></div>
                 )}
                 {bodyStatus === "ready" && (
-                    <div className={`post-body`} dangerouslySetInnerHTML={{__html: html}}/>
+                    <div lang={frontmatter.language || "en"} className={`post-body`} dangerouslySetInnerHTML={{__html: html}}/>
                 )}
 
                 {fullTextUrl && (
                     <div className={`post-fulltext`}>
-                        <h2>{isZh ? "完整全文" : "Complete Book"}</h2>
+                        <h2>{isZh ? "全书正文" : "Complete Book"}</h2>
 
                         {fullTextStatus === "idle" && (
                             <>
                                 <p className={`post-fulltext-note`}>
                                     {isZh
-                                        ? "完整全文是一个很大的文件，按需加载。"
+                                        ? "全书正文文件较大，点击后加载。"
                                         : "The complete text is a large file, loaded on request."}
                                 </p>
                                 <button className={`btn btn-primary`} onClick={loadFullText}>

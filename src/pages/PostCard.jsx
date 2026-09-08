@@ -1,3 +1,4 @@
+import {taxonomyLabel, translationNotice} from "/src/hooks/taxonomy.js"
 import React from 'react'
 import {Link} from "react-router-dom"
 import {formatShortDate} from "/src/hooks/posts.js"
@@ -33,7 +34,7 @@ function PostCard({ post, languageId, showCollection = false, headingLevel = "h3
             )}
 
             <div className={`post-card-meta`}>
-                {date && <span>{formatShortDate(date)}</span>}
+                {date && <span>{formatShortDate(date, languageId)}</span>}
                 {showCollection && collection && (
                     <>
                         <span>·</span>
@@ -42,16 +43,17 @@ function PostCard({ post, languageId, showCollection = false, headingLevel = "h3
                 )}
             </div>
 
-            <Heading className={`post-card-title`}>{frontmatter.title || post.title}</Heading>
+            <p className="post-language-note">{translationNotice(post, languageId)}</p>
+            <Heading lang={frontmatter.language || "en"} className={`post-card-title`}>{frontmatter.title || post.title}</Heading>
 
             {frontmatter.description && (
-                <p className={`post-card-desc`}>{frontmatter.description}</p>
+                <p lang={frontmatter.language || "en"} className={`post-card-desc`}>{frontmatter.description}</p>
             )}
 
             {tags.length > 0 && (
                 <div className={`post-card-tags`}>
                     {tags.map(tag => (
-                        <span key={tag} className={`tag-pill`}>{tag}</span>
+                        <span key={tag} className={`tag-pill`}>{taxonomyLabel(tag, languageId)}</span>
                     ))}
                 </div>
             )}

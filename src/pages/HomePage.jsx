@@ -1,3 +1,4 @@
+import {taxonomyLabel, translationNotice} from "/src/hooks/taxonomy.js"
 import "./pages.scss"
 import "./HomePage.scss"
 import React from 'react'
@@ -39,7 +40,7 @@ function HomePage() {
                 <div className={`home-identity-base`}>
                     <div className={`home-identity-facts`}>
                         <p>{role}</p>
-                        <p>{profile?.location || "Austin, Texas"}</p>
+                        <p>{isZh ? "美国得克萨斯州奥斯汀" : profile?.location || "Austin, Texas"}</p>
                     </div>
 
                     <div className={`home-identity-actions`}>
@@ -109,10 +110,11 @@ function HomePage() {
                                       to={post.href}
                                       className={`home-latest-item ${index === 0 ? "home-latest-item-lead" : ""}`}>
                                     <div className={`home-latest-meta`}>
-                                        {date && <span>{formatShortDate(date)}</span>}
+                                        {date && <span>{formatShortDate(date, selectedLanguageId)}</span>}
                                         {collection && <span>{collectionLocale(collection, selectedLanguageId).title}</span>}
                                     </div>
-                                    <h3>{signalLabel(post)}</h3>
+                                    <h3 lang={post.frontmatter.language || "en"}>{signalLabel(post)}</h3>
+                                    <p className="post-language-note">{translationNotice(post, selectedLanguageId)}</p>
                                     <i className="fa-solid fa-arrow-right" aria-hidden="true"/>
                                 </Link>
                             )
@@ -130,7 +132,7 @@ function HomePage() {
                     <div className={`home-tag-cloud`}>
                         {tags.slice(0, 18).map(entry => (
                             <Link key={entry.tag} to={`/tags/${entry.slug}`} className={`tag-pill`}>
-                                {entry.tag}<span className={`tag-pill-count`}>{entry.count}</span>
+                                {taxonomyLabel(entry.tag, selectedLanguageId)}<span className={`tag-pill-count`}>{entry.count}</span>
                             </Link>
                         ))}
                     </div>
