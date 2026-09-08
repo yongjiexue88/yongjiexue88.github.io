@@ -11,11 +11,11 @@ div.layout-static-background {
     z-index: $z-index-background;
 }
 
+// Flat ground. Three warm radial "spotlight" gradients used to sit here; they
+// were decorative haze with no function, and they fought the cool palette.
+// The grain below and the mountain illustration carry the surface instead.
 div.layout-static-background-paper {
-    background:
-        radial-gradient(ellipse at 18% 22%, rgba(180, 130, 130, 0.06) 0, transparent 55%),
-        radial-gradient(ellipse at 82% 78%, rgba(120, 140, 120, 0.06) 0, transparent 55%),
-        radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(80, 60, 50, 0.05) 100%);
+    background: var(--theme-background);
     inset: 0;
     position: absolute;
 }

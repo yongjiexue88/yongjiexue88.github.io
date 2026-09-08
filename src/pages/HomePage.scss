@@ -47,18 +47,24 @@ div.home-section-bar {
     gap: 16px;
 }
 
+/**
+ * These were 11.5px tracked uppercase muted labels — the same micro-kicker
+ * pattern that was removed from above the page h1. A section heading in the
+ * display face at a readable size gives the page real hierarchy instead of a
+ * decorative label, and matches how headings work everywhere else on the site.
+ */
 h2.home-section-heading {
-    font-size: 0.72rem !important;
-    font-family: $font-family-base !important;
+    font-size: 1.15rem !important;
+    font-family: $headings-font-family;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--theme-muted);
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--theme-texts);
     margin: 0 0 18px;
 }
 
 a.home-section-more {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     color: var(--theme-muted) !important;
 
     &:hover { color: var(--theme-primary) !important; }

@@ -244,7 +244,10 @@ export function markdownToHtml(markdown) {
                 skippedFirstH1 = true
                 continue
             }
-            const tag = Math.min(level + 1, 6)
+            // The document's own H1 is consumed as the page title, so body
+            // headings start at h2. This previously shifted every level by +1,
+            // which turned a `##` into an h3 and skipped h2 in the outline.
+            const tag = Math.min(Math.max(level, 2), 6)
             html.push(`<h${tag}>${inlineMarkdown(heading[2])}</h${tag}>`)
             continue
         }

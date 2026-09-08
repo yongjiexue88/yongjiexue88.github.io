@@ -23,3 +23,8 @@ dist/
 *.sln
 *.sw?
 *.sublime-workspace
+
+# Impeccable ships a platform-specific engine binary (~12MB, darwin-arm64 here).
+# `npx impeccable install/update` fetches it on demand, so it should not be
+# committed. The skill definitions alongside it are kept.
+.claude/skills/impeccable/scripts/bin/

@@ -10,7 +10,6 @@ function NotFoundPage() {
     return (
         <div className={`page page-read`}>
             <header className={`page-header`}>
-                <span className={`page-eyebrow`}>404</span>
                 <h1 className={`page-title`}>{isZh ? "找不到这个页面" : "Page not found"}</h1>
                 <p className={`page-blurb`}>
                     {isZh

@@ -10,7 +10,14 @@ import {COLLECTIONS, collectionLocale} from "/src/hooks/collections.js"
  * has to read as finished without one. `frontmatter.cover` is honoured if a
  * post ever gains one.
  */
-function PostCard({ post, languageId, showCollection = false }) {
+/**
+ * `headingLevel` exists because the correct level depends on context: on an
+ * index page the cards sit directly under the h1, so they are h2; on the home
+ * page a real h2 section heading precedes them, so they are h3. Hard-coding h3
+ * skipped a level on the index pages and broke the screen-reader outline.
+ */
+function PostCard({ post, languageId, showCollection = false, headingLevel = "h3" }) {
+    const Heading = headingLevel
     const {frontmatter} = post
     const date = frontmatter.created || frontmatter.updated
     const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags.slice(0, 3) : []
@@ -35,7 +42,7 @@ function PostCard({ post, languageId, showCollection = false }) {
                 )}
             </div>
 
-            <h3 className={`post-card-title`}>{frontmatter.title || post.title}</h3>
+            <Heading className={`post-card-title`}>{frontmatter.title || post.title}</Heading>
 
             {frontmatter.description && (
                 <p className={`post-card-desc`}>{frontmatter.description}</p>

@@ -110,20 +110,25 @@
 .contact-letter {
     position: relative;
     border-radius: 6px;
-    background-image: url('/images/contact/paper.webp');
+    // Text over a photographic paper texture measured 1.1:1 at its worst
+    // pixels. A flat paper tone keeps the letter's character and makes the
+    // contrast deterministic instead of dependent on where the text lands.
+    background-color: #F4F1EA;
     background-size: cover;
     font-family: 'Alex Brush', cursive;
     font-size: 1.875em;
     line-height: 1.25;
-    color: rgba(47, 34, 53, 0.7);
+    // Was rgba(47,34,53,0.7) over a paper photo, measuring ~1.1:1 pixel
+    // contrast. Text over an image needs full opacity and a solid ink.
+    color: #2F2235;
     padding: 0.75em;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
     transform: translateY(-2em) translateX(3em) rotate(-25deg) skewX(25deg);
     width: 18em;
 
     [data-theme='dark'] & {
-        background-image: url('/images/contact/paper-dark.webp');
-        color: rgba(255, 255, 255, 0.8);
+        background-color: #24201C;
+        color: #F4F1EC;
     }
 }
 

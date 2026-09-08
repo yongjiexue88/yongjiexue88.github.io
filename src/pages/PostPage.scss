@@ -6,13 +6,15 @@
  */
 div.post-layout {
     display: grid;
-    grid-template-columns: minmax(0, 720px) 220px;
+    // Measured in ch, not px: 68ch keeps running text near 66-75 characters
+    // whatever face is rendering. At 720px the body was hitting 86-92.
+    grid-template-columns: minmax(0, 68ch) 220px;
     justify-content: center;
     gap: 48px;
     align-items: start;
 
     @include media-breakpoint-down(lg) {
-        grid-template-columns: minmax(0, 720px);
+        grid-template-columns: minmax(0, 68ch);
         gap: 0;
     }
 }

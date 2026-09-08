@@ -43,7 +43,8 @@ a.top-nav-brand {
     }
 
     span.top-nav-brand-sub {
-        font-size: 0.66rem;
+        // 0.66rem rendered at 10.56px, under the 11px functional-text floor.
+        font-size: 0.75rem;
         font-style: italic;
         color: var(--theme-muted);
         letter-spacing: 0.04em;
