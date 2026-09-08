@@ -44,8 +44,9 @@ export const _validationUtils = {
      * @return {boolean}
      */
     isLongerThan: (string, words) => {
-        const wordCount = string.trim().split(/\s+/).length
-        return wordCount > words
+        const cjkCount = (string.match(/\p{Script=Han}/gu) || []).length
+        const wordCount = string.replace(/\p{Script=Han}/gu, " ").trim().split(/\s+/).filter(Boolean).length
+        return wordCount + cjkCount > words
     },
 
     /**

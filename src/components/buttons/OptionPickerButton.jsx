@@ -1,8 +1,8 @@
 import "./OptionPickerButton.scss"
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {Dropdown} from "react-bootstrap"
 
-function OptionPickerButton({ mode, options, selectedOptionId, onOptionSelected, tooltipLabel, showSelectedOptionOnDropdown = false }) {
+function OptionPickerButton({ mode, options, selectedOptionId, onOptionSelected, tooltipLabel, showSelectedOptionOnDropdown = false, showSelectedLabel = false }) {
     const defaultOption = {
         id: "default",
         faIcon: "fa-solid fa-circle"
@@ -47,7 +47,8 @@ function OptionPickerButton({ mode, options, selectedOptionId, onOptionSelected,
                 <OptionPickerButtonToggle option={selectedOption}
                                           caretIcon={caretIcon}
                                           onClick={_onToggleClicked}
-                                          tooltipLabel={tooltipLabel}/>
+                                          tooltipLabel={tooltipLabel}
+                                          showSelectedLabel={showSelectedLabel}/>
 
                 {!buttonBehaviorEnabled && (
                     <OptionPickerButtonMenu availableOptions={availableOptions}
@@ -59,14 +60,18 @@ function OptionPickerButton({ mode, options, selectedOptionId, onOptionSelected,
     )
 }
 
-function OptionPickerButtonToggle({ option, caretIcon, onClick, tooltipLabel }) {
+function OptionPickerButtonToggle({ option, caretIcon, onClick, tooltipLabel, showSelectedLabel }) {
     return (
         <Dropdown.Toggle variant={`transparent`}
                          className={`btn-option-picker-toggle`}
                          onClickCapture={onClick}
-                         data-tooltip={tooltipLabel}>
-            <OptionPickerButtonPickerIcon   option={option}
-                                            size={2}/>
+                         data-tooltip={tooltipLabel}
+                         aria-label={tooltipLabel}>
+            {showSelectedLabel ? (
+                <span className="btn-option-picker-selected-label">{option.shortLabel || option.label}</span>
+            ) : (
+                <OptionPickerButtonPickerIcon option={option} size={2}/>
+            )}
 
             {caretIcon && (
                 <i className={`fa-caret-icon ${caretIcon}`}/>

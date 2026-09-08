@@ -281,3 +281,10 @@ button.page-filter:focus-visible {
     a.post-card,
     .tag-pill { transition: none; }
 }
+
+.post-language-note {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    &:empty { display: none; }
+}

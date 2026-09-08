@@ -11,7 +11,7 @@
                 "title_short": "联系",
                 "title_short_nav": "联系",
                 "title_long_prefix": "欢迎",
-                "title_long": "{{联系}} 我"
+                "title_long": "{{联系}}我"
             }
         }
     },
@@ -26,13 +26,13 @@
             },
             "locales": {
                 "en": {
-                    "contact_thank_you_title": "{{Thanks}} for the contact!",
+                    "contact_thank_you_title": "{{Thanks}} for getting in touch!",
                     "contact_thank_you_body": "Your message has been received, and I'll be reaching out to you soon. I appreciate your time and look forward to connecting with you!",
                     "contact_thank_you_footer": "The reply will be sent to your email address: {{$email}}",
                     "title": "Send me a {{message}}"
                 },
                 "zh": {
-                    "contact_thank_you_title": "{{谢谢}}你的联系！",
+                    "contact_thank_you_title": "{{谢谢}}你的留言！",
                     "contact_thank_you_body": "你的消息已经收到。我会尽快通过邮件回复，期待与你交流。",
                     "contact_thank_you_footer": "回复将发送至你的邮箱：{{$email}}",
                     "title": "给我发送{{消息}}"

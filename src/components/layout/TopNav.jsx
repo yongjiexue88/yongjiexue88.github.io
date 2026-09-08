@@ -33,7 +33,7 @@ function TopNav({ profile }) {
             <div className={`top-nav-inner`}>
                 <Link to="/" className={`top-nav-brand`}>
                     <span className={`top-nav-brand-mark`}>Y</span>
-                    <span className={`top-nav-brand-sub`}>{profile?.role || "Full Stack & AI Engineer"}</span>
+                    <span className={`top-nav-brand-sub`}>{selectedLanguageId === "zh" ? "全栈与 AI 工程师" : profile?.role || "Full Stack & AI Engineer"}</span>
                 </Link>
 
                 <nav className={`top-nav-links`}>

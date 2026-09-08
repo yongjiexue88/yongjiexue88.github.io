@@ -38,8 +38,10 @@ function LanguageProvider({ children, supportedLanguages, defaultLanguageId, app
             return
         }
 
-        // If no preferred language is found, use the default language.
-        const autoDetectedLanguage = allLanguages.find(language => navigator.language.includes(language['id'])) || defaultLanguage
+        // Match browser preferences in order, then use the configured default.
+        const autoDetectedLanguage = (navigator.languages || [navigator.language])
+            .map(locale => allLanguages.find(language => language.id === locale.toLowerCase().split("-")[0]))
+            .find(Boolean) || defaultLanguage
         setSelectedLanguageId(autoDetectedLanguage?.id || allLanguages[0].id)
     }, [])
 

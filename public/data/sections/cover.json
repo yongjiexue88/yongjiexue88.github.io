@@ -33,7 +33,15 @@
                         "href": "",
                         "tooltipString": ""
                     },
-                    "faIcon": "pi pi-map-marker"
+                    "faIcon": "pi pi-map-marker",
+                    "locales": {
+                        "en": {
+                            "label": "Austin, TX"
+                        },
+                        "zh": {
+                            "label": "美国得克萨斯州奥斯汀"
+                        }
+                    }
                 },
                 {
                     "id": 2,
@@ -51,7 +59,15 @@
                         "href": "/journal",
                         "tooltipString": "open_website"
                     },
-                    "faIcon": "fa-regular fa-pen-to-square"
+                    "faIcon": "fa-regular fa-pen-to-square",
+                    "locales": {
+                        "en": {
+                            "label": "Journal / Notes"
+                        },
+                        "zh": {
+                            "label": "日志 / 笔记"
+                        }
+                    }
                 }
             ]
         },
@@ -84,7 +100,7 @@
                             "text": "<p>I’m a {{Full Stack &amp; AI Engineer}} based in Austin, Texas.</p><p>This site is my professional home and a public record of how I think: through systems, language, career decisions, technology, and the details of ordinary life.</p><p>I do not have polished project case studies ready to publish yet, so I’m showing the work I can stand behind today: [[clear thinking, careful reading, and consistent writing]].</p>"
                         },
                         "zh": {
-                            "text": "<p>我是一名常驻美国奥斯汀的{{全栈与 AI 工程师}}。</p><p>这里既是我的职业主页，也是我公开记录思考方式的地方：系统、语言、职业选择、技术，以及普通生活中的细节。</p><p>我暂时还没有准备好公开的完整项目案例，因此先展示今天可以认真负责的成果：[[清晰的思考、仔细的阅读，以及持续的写作]]。</p>"
+                            "text": "<p>我是一名常驻美国奥斯汀的{{全栈与 AI 工程师}}。</p><p>这里既是我的职业主页，也是我公开记录思考方式的地方：系统、语言、职业选择、技术，以及普通生活中的细节。</p><p>我暂时还没有准备好公开的完整项目案例，因此先展示目前能够踏实呈现的成果：[[清晰的思考、仔细的阅读，以及持续的写作]]。</p>"
                         }
                     }
                 }
@@ -170,7 +186,7 @@
                     "locales": {
                         "en": {
                             "title": "{{Learning in public}}",
-                            "text": "Non-polished thoughts about books, language, career, technology, and life."
+                            "text": "Work-in-progress thoughts about books, language, career, technology, and life."
                         },
                         "zh": {
                             "title": "{{公开学习}}",

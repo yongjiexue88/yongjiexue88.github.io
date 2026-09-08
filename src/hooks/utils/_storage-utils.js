@@ -10,8 +10,13 @@ export const _storageUtils = {
      * @return {Object}
      */
     getPreference: () => {
-        const raw = window.localStorage.getItem(_storageUtils.LOCAL_STORAGE_ID)
-        return JSON.parse(raw) || {}
+        try {
+            const raw = window.localStorage.getItem(_storageUtils.LOCAL_STORAGE_ID)
+            const value = JSON.parse(raw)
+            return value && typeof value === "object" && !Array.isArray(value) ? value : {}
+        } catch {
+            return {}
+        }
     },
 
     /**
@@ -22,10 +27,14 @@ export const _storageUtils = {
         const preferences = _storageUtils.getPreference()
         preferences[id] = value
 
-        window.localStorage.setItem(
-            _storageUtils.LOCAL_STORAGE_ID,
-            JSON.stringify(preferences)
-        )
+        try {
+            window.localStorage.setItem(
+                _storageUtils.LOCAL_STORAGE_ID,
+                JSON.stringify(preferences)
+            )
+        } catch {
+            // Keep in-memory settings usable when browser storage is unavailable.
+        }
     },
 
     /**

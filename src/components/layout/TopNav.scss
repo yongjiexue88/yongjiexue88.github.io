@@ -103,7 +103,8 @@ div.top-nav-tools {
     }
 
     div.nav-tools-item {
-        width: 38px;
+        width: auto;
+        min-width: 44px;
         height: 48px;
     }
 }
@@ -145,4 +146,29 @@ a.top-nav-sheet-link {
 a.top-nav-sheet-link-active {
     color: var(--signal-lime) !important;
     background-color: var(--signal-deep);
+}
+
+// Keep language and theme controls legible against the dark masthead.
+div.top-nav-tools button.btn-option-picker-toggle {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px;
+    color: var(--signal-deep-ink);
+
+    .btn-option-picker-selected-label {
+        color: var(--signal-deep-ink) !important;
+        white-space: nowrap;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    i.fa-icon, i.fa-caret-icon {
+        color: var(--signal-deep-ink);
+        opacity: 1;
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--signal-lime);
+        outline-offset: -2px;
+    }
 }

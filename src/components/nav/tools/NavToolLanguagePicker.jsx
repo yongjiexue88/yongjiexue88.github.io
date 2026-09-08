@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 import OptionPickerButton from "/src/components/buttons/OptionPickerButton.jsx"
 import {useUtils} from "/src/hooks/utils.js"
@@ -15,6 +15,7 @@ function NavToolLanguagePicker() {
         return {
             id: lang.id,
             label: lang.name,
+            shortLabel: lang.id === "en" ? "EN" : "中文",
             img: utils.file.resolvePath(lang.flagUrl)
         }
     })
@@ -31,6 +32,7 @@ function NavToolLanguagePicker() {
             {supportsMultipleLanguages && (
                 <OptionPickerButton mode={OptionPickerButton.Modes.MODE_DROPDOWN}
                                     options={options}
+                                    showSelectedLabel={true}
                                     selectedOptionId={selectedLanguage?.id}
                                     onOptionSelected={_onOptionSelected}
                                     tooltipLabel={language.getString("select_language")}/>

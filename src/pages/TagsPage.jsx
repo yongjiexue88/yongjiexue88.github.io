@@ -1,3 +1,4 @@
+import {taxonomyLabel} from "/src/hooks/taxonomy.js"
 import "./pages.scss"
 import React from 'react'
 import {Link} from "react-router-dom"
@@ -30,7 +31,7 @@ function TagsPage() {
                 <div className={`home-tag-cloud`} style={{display: "flex", flexWrap: "wrap", gap: "8px"}}>
                     {tags.map(entry => (
                         <Link key={entry.tag} to={`/tags/${entry.slug}`} className={`tag-pill`}>
-                            {entry.tag}<span className={`tag-pill-count`}>{entry.count}</span>
+                            {taxonomyLabel(entry.tag, selectedLanguageId)}<span className={`tag-pill-count`}>{entry.count}</span>
                         </Link>
                     ))}
                 </div>
