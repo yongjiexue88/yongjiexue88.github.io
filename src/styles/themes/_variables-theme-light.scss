@@ -17,18 +17,18 @@
 
 @import "theme-variables-builder";
 
-$light-accent:  #245F94; // links, active nav
-$light-muted:   #5A6B7C; // dates, meta, eyebrows
-$light-text:    #16222E; // navy-black ink
-$light-danger:  #B91C1C;
-$light-neutral: #E2E8F0; // icon grounds
+$light-accent:  #2349E8;
+$light-muted:   #4E5864;
+$light-text:    #0E0918;
+$light-danger:  #C82D20;
+$light-neutral: #D8DBFF;
 
-$light-ground:  #F1F4F8; // the page
-$light-surface: #FFFFFF; // cards, sections, popovers
-$light-boards:  #F7F9FC; // inner containers, tiles
-$light-badges:  #EDF1F7;
-$light-empty:   #FFFFFF;
-$light-rule:    rgba(48, 74, 105, 0.14); // the text hue, faded — not a grey
+$light-ground:  #E9F7F4;
+$light-surface: #F4FBF9;
+$light-boards:  #DDEDE9;
+$light-badges:  #D8DBFF;
+$light-empty:   #F4FBF9;
+$light-rule:    rgba(14, 9, 24, 0.24);
 
 :root,
 [data-theme="light"] {
@@ -68,6 +68,6 @@ $light-rule:    rgba(48, 74, 105, 0.14); // the text hue, faded — not a grey
 
         /** DEFAULT BORDERS: **/            $light-rule,
         /** SCROLLBAR TRACK: **/            $light-boards,
-        /** SCROLLBAR THUMB: **/            #94A3B8,
+        /** SCROLLBAR THUMB: **/            #65728A,
     );
 }

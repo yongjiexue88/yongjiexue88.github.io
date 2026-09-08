@@ -4,8 +4,8 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 import {useData} from "/src/providers/DataProvider.jsx"
-import {COLLECTION_LIST, collectionLocale, useAllPosts, useCollection, useTagIndex} from "/src/hooks/collections.js"
-import PostCard from "./PostCard.jsx"
+import {COLLECTIONS, collectionLocale, useAllPosts, useCollection, useTagIndex} from "/src/hooks/collections.js"
+import {formatShortDate} from "/src/hooks/posts.js"
 
 /** Live post count per collection, for the section cards. */
 function useCollectionCounts() {
@@ -22,76 +22,107 @@ function HomePage() {
     const counts = useCollectionCounts()
 
     const profile = data.getProfile()
-    /** Optional; set templateSettings.homeCoverUrl in settings.json to enable. */
-    const homeCover = data.getSettings()?.templateSettings?.homeCoverUrl
     const isZh = selectedLanguageId === "zh"
-    const latest = posts.slice(0, 6)
+    const latest = posts.slice(0, 4)
+    const displayName = isZh ? "薛勇杰" : profile?.name || "Yongjie Xue"
+
+    const role = isZh ? "全栈与 AI 工程师" : "Full Stack & AI Engineer"
+    const signalLabel = (post) => post.frontmatter.title || post.title
 
     return (
-        <div className={`page home-page`}>
-            {homeCover && (
-                <figure className={`page-banner`}>
-                    <img src={homeCover} alt="" loading="eager"/>
-                </figure>
-            )}
+        <div className={`home-page`}>
+            <section className={`home-identity`} aria-labelledby="home-title">
+                <h1 id="home-title" className={`home-hero-title ${isZh ? "home-hero-title-zh" : ""}`}>
+                    {displayName}
+                </h1>
 
-            <section className={`home-hero`}>
-                <h1 className={`home-hero-title`}>萦怀</h1>
-                <p className={`home-hero-lead`}>
-                    {isZh
-                        ? "一个更安静的互联网角落。日记、自省、生活笔记，以及那些只存在于聊天与任务里就容易丢失的小小观察。"
-                        : "A quieter corner of the internet. Diaries, self-introspection, life notes, and the small observations that are easy to lose when everything is only stored in chats, tasks, or code."}
-                </p>
-                <div className={`home-hero-meta`}>
-                    {profile?.location && <span>{profile.location}</span>}
-                    {profile?.email && (
-                        <>
-                            <span>·</span>
-                            <a href={`mailto:${profile.email}`}>{profile.email}</a>
-                        </>
-                    )}
+                <div className={`home-identity-base`}>
+                    <div className={`home-identity-facts`}>
+                        <p>{role}</p>
+                        <p>{profile?.location || "Austin, Texas"}</p>
+                    </div>
+
+                    <div className={`home-identity-actions`}>
+                        <a href="#writing" className={`home-action home-action-primary`}>
+                            {isZh ? "阅读文章" : "Read the writing"}
+                            <i className="fa-solid fa-arrow-down" aria-hidden="true"/>
+                        </a>
+                        <Link to="/contact" className={`home-action home-action-secondary`}>
+                            {isZh ? "联系我" : "Get in touch"}
+                        </Link>
+                    </div>
                 </div>
             </section>
 
-            <section className={`home-section`}>
-                <h2 className={`home-section-heading`}>{isZh ? "专栏" : "Writing"}</h2>
-                <div className={`card-grid`}>
-                    {COLLECTION_LIST.map(collection => {
-                        const locale = collectionLocale(collection, selectedLanguageId)
-                        return (
-                            <Link key={collection.key} to={collection.path} className={`post-card home-collection-card`}>
-                                <div className={`home-collection-head`}>
-                                    <i className={`${collection.faIcon} home-collection-icon`}/>
-                                    <h3 className={`post-card-title`}>{locale.title}</h3>
-                                    <span className={`home-collection-count`}>
-                                        {counts[collection.key]}{isZh ? " 篇" : ""}
-                                    </span>
-                                </div>
-                                <p className={`post-card-desc`}>{locale.blurb}</p>
-                            </Link>
-                        )
-                    })}
+            <section className={`writing-signal`} aria-labelledby="writing-signal-title">
+                <div className={`writing-signal-inner`}>
+                    <div className={`writing-signal-summary`}>
+                        <h2 id="writing-signal-title">{isZh ? "写作" : "Writing"}</h2>
+                        <Link to={COLLECTIONS.notes.path}>
+                            <span>{collectionLocale(COLLECTIONS.notes, selectedLanguageId).title}</span>
+                            <span>{counts.notes}</span>
+                        </Link>
+                        <Link to={COLLECTIONS.journal.path}>
+                            <span>{collectionLocale(COLLECTIONS.journal, selectedLanguageId).title}</span>
+                            <span>{counts.journal}</span>
+                        </Link>
+                    </div>
+
+                    <div className={`writing-signal-map`} aria-label={isZh ? `${Math.min(posts.length, 14)} 篇文章的可视化索引` : `Visual index of ${Math.min(posts.length, 14)} published pieces`}>
+                        {[posts.slice(0, 7), posts.slice(7, 14)].map((row, rowIndex) => (
+                            <div className={`writing-signal-row`} key={rowIndex}>
+                                {row.map((post, index) => {
+                                    const signalIndex = rowIndex * 7 + index + 1
+                                    return (
+                                        <Link key={`${post.collection}-${post.slug}`}
+                                              to={post.href}
+                                              style={{"--signal-order": signalIndex}}
+                                              className={`writing-signal-cell writing-signal-cell-${post.collection}`}
+                                              aria-label={signalLabel(post)}>
+                                            <span className={`writing-signal-index`}>
+                                                {String(signalIndex).padStart(2, "0")}
+                                            </span>
+                                            <span className={`writing-signal-label`}>{signalLabel(post)}</span>
+                                        </Link>
+                                    )
+                                })}
+                            </div>
+                        ))}
+                        <p className={`writing-signal-caption`}>
+                            {isZh ? "两个入口，一个持续更新的思考索引。" : "Two reading paths. One continuously growing index."}
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {latest.length > 0 && (
-                <section className={`home-section`}>
-                    <div className={`home-section-bar`}>
-                        <h2 className={`home-section-heading`}>{isZh ? "最新" : "Latest"}</h2>
-                    </div>
-                    <div className={`card-grid`}>
-                        {latest.map(post => (
-                            <PostCard key={`${post.collection}-${post.slug}`}
-                                      post={post}
-                                      languageId={selectedLanguageId}
-                                      showCollection={true}/>
-                        ))}
+                <section id="writing" className={`home-latest`} aria-labelledby="home-latest-title">
+                    <h2 id="home-latest-title" className={`visually-hidden`}>
+                        {isZh ? "最新文章" : "Latest writing"}
+                    </h2>
+                    <div className={`home-latest-grid`}>
+                        {latest.map((post, index) => {
+                            const collection = COLLECTIONS[post.collection]
+                            const date = post.frontmatter.created || post.frontmatter.updated
+                            return (
+                                <Link key={`${post.collection}-${post.slug}`}
+                                      to={post.href}
+                                      className={`home-latest-item ${index === 0 ? "home-latest-item-lead" : ""}`}>
+                                    <div className={`home-latest-meta`}>
+                                        {date && <span>{formatShortDate(date)}</span>}
+                                        {collection && <span>{collectionLocale(collection, selectedLanguageId).title}</span>}
+                                    </div>
+                                    <h3>{signalLabel(post)}</h3>
+                                    <i className="fa-solid fa-arrow-right" aria-hidden="true"/>
+                                </Link>
+                            )
+                        })}
                     </div>
                 </section>
             )}
 
             {tags.length > 0 && (
-                <section className={`home-section`}>
+                <section className={`home-section home-tags`}>
                     <div className={`home-section-bar`}>
                         <h2 className={`home-section-heading`}>{isZh ? "按标签浏览" : "Browse by tag"}</h2>
                         <Link to="/tags" className={`home-section-more`}>{isZh ? "全部" : "All"}</Link>

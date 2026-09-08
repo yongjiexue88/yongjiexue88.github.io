@@ -1,83 +1,120 @@
 @import "/src/styles/extend.scss";
 
 footer.site-footer {
-    margin-top: 72px;
-    border-top: 1px solid var(--theme-standard-borders);
-    background-color: var(--theme-boards-background);
+    margin-top: 0;
+    border-top: 1px solid var(--signal-blue-ink);
+    background: var(--signal-blue);
+    color: var(--signal-blue-ink);
 }
 
 div.site-footer-inner {
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr;
-    gap: 32px;
-
-    max-width: 1180px;
+    grid-template-columns: 1.65fr repeat(3, 1fr);
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 48px 32px 36px;
+    border-left: 1px solid rgba(244, 251, 249, 0.55);
+}
 
-    @include media-breakpoint-down(lg) {
-        grid-template-columns: 1fr 1fr;
-        padding: 36px 20px 28px;
-    }
-    @include media-breakpoint-down(sm) {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
+div.site-footer-brand,
+div.site-footer-col {
+    min-width: 0;
+    padding: 42px 30px 46px;
+    border-right: 1px solid rgba(244, 251, 249, 0.55);
 }
 
 div.site-footer-brand {
     span.site-footer-mark {
-        font-family: $headings-font-family;
-        font-size: 1.3rem;
+        display: block;
+        font-family: var(--font-signal-display);
+        font-size: clamp(5rem, 9vw, 9rem);
         font-weight: 700;
-        letter-spacing: 0.14em;
+        line-height: 0.72;
+        letter-spacing: -0.05em;
     }
 
     p.site-footer-tagline {
-        margin: 8px 0 0;
-        font-size: 0.8rem;
-        font-style: italic;
-        color: var(--theme-muted);
-        max-width: 30ch;
+        max-width: 32ch;
+        margin: 30px 0 0;
+        font-family: var(--font-signal-mono);
+        font-size: 0.72rem;
+        line-height: 1.45;
+        color: currentColor;
     }
 }
 
 div.site-footer-col {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 h2.site-footer-heading {
+    margin: 0 0 20px;
+    font-family: var(--font-signal-mono) !important;
     font-size: 0.7rem !important;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: currentColor;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--theme-muted);
-    margin: 0 0 4px;
-    font-family: $font-family-base !important;
-    font-weight: 600;
 }
 
 a.site-footer-link {
-    font-size: 0.84rem;
-    color: var(--theme-texts-light-2) !important;
-    word-break: break-word;
+    width: fit-content;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    color: currentColor !important;
+    font-size: 0.88rem;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
 
-    &:hover {
-        color: var(--theme-primary) !important;
+    &:hover,
+    &:focus-visible {
+        border-color: currentColor;
+        color: var(--signal-lime) !important;
     }
 }
 
 div.site-footer-base {
-    border-top: 1px solid var(--theme-standard-borders-8);
-    font-size: 0.75rem;
-    color: var(--theme-muted);
-
-    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 16px 32px 24px;
+    padding: 16px 30px 22px;
+    border-top: 1px solid rgba(244, 251, 249, 0.55);
+    color: currentColor;
+    font-family: var(--font-signal-mono);
+    font-size: 0.7rem;
+}
 
-    @include media-breakpoint-down(lg) {
-        padding: 16px 20px 24px;
+@include media-breakpoint-down(lg) {
+    div.site-footer-inner { grid-template-columns: 1fr 1fr; }
+
+    div.site-footer-brand,
+    div.site-footer-col { border-bottom: 1px solid rgba(244, 251, 249, 0.55); }
+}
+
+@include media-breakpoint-down(sm) {
+    div.site-footer-inner {
+        grid-template-columns: 1fr;
+        border-left: 0;
+    }
+
+    div.site-footer-brand,
+    div.site-footer-col {
+        padding: 32px 20px;
+        border-right: 0;
+    }
+
+    div.site-footer-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        h2 { grid-column: 1 / -1; }
+    }
+
+    div.site-footer-base {
+        flex-direction: column;
+        padding: 16px 20px 22px;
     }
 }

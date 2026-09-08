@@ -8,18 +8,18 @@
 
 @import "theme-variables-builder";
 
-$dark-accent:  #7FB3DC; // lightened so it stays legible on dark
-$dark-muted:   #8A9AAB;
-$dark-text:    #E3E9F0;
-$dark-danger:  #E3A4A4;
-$dark-neutral: #22303F;
+$dark-accent:  #9BAAFF;
+$dark-muted:   #AAA5B7;
+$dark-text:    #F2F8F6;
+$dark-danger:  #FF7B68;
+$dark-neutral: #2A2444;
 
-$dark-ground:  #0E1620;
-$dark-surface: #16222E;
-$dark-boards:  #1C2A38;
-$dark-badges:  #22303F;
-$dark-empty:   #121C26;
-$dark-rule:    rgba(148, 180, 210, 0.16);
+$dark-ground:  #171325;
+$dark-surface: #0E0918;
+$dark-boards:  #211B34;
+$dark-badges:  #2A2444;
+$dark-empty:   #100C1B;
+$dark-rule:    rgba(242, 248, 246, 0.22);
 
 [data-theme="dark"] {
     @include build-theme(

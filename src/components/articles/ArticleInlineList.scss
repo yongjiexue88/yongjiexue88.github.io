@@ -1,71 +1,56 @@
 @import "/src/styles/extend.scss";
 
-$spacing-between-items: 15px;
-$item-padding: 5px;
-
 ul.article-inline-list-items {
-    list-style: none;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin: 0;
-    text-align: center;
+    padding: 0;
+    border-top: 1px solid var(--theme-texts);
+    border-left: 1px solid var(--theme-texts);
+    list-style: none;
+    text-align: left;
 }
 
 li.article-inline-list-item {
-    margin-right: calc($spacing-between-items - 10px);
-    white-space: nowrap;
-    display: inline-flex;
+    display: flex;
+    min-width: 0;
+    min-height: 58px;
+    align-items: center;
+    margin: 0;
+    padding: 0 16px;
+    border-right: 1px solid var(--theme-texts);
+    border-bottom: 1px solid var(--theme-texts);
+    white-space: normal;
 
-    @include media-breakpoint-down(sm) {
-        margin-right: calc($spacing-between-items - 12px);
-    }
-
-    &:not(:last-child)::after {
-        content: "𐄁";
-        color: var(--theme-muted);
-        margin-left: $spacing-between-items;
-        margin-top: 4px;
-        @include media-breakpoint-down(md) {
-            margin-top: 5px;
-        }
-        @include media-breakpoint-down(sm) {
-            margin-left: calc($spacing-between-items - 5px);
-        }
-    }
+    &:not(:last-child)::after { display: none; }
 }
 
 i.article-inline-list-item-icon {
-    padding: $item-padding $item-padding;
-    margin: 0 $item-padding;
-    border-radius: 100%;
-    opacity: 0.75;
-
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
     width: 28px;
     height: 28px;
-    @include media-breakpoint-down(sm) {
-        margin: 0 calc($item-padding - 3px)
-    }
+    align-items: center;
+    justify-content: center;
+    margin: 0 9px 0 0;
+    padding: 0;
+    border-radius: 0;
+    color: var(--theme-primary);
+    opacity: 1;
 }
 
 ul.article-inline-list-items-column-mode {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
 
     li.article-inline-list-item {
-        margin-right: 0;
-        height: 25px;
+        min-height: 52px;
+        margin: 0;
 
-        &:not(:last-child)::after {
-            display: none;
-        }
+        &:not(:last-child)::after { display: none; }
     }
+}
 
-    i.article-inline-list-item-icon {
-        margin-left: 0;
-    }
+@include media-breakpoint-down(md) {
+    ul.article-inline-list-items { grid-template-columns: 1fr; }
 }

@@ -2,17 +2,13 @@ import "./ArticleContactForm.scss"
 import React, {useEffect, useState} from 'react'
 import {useApi} from "/src/hooks/api.js"
 import {useConstants} from "/src/hooks/constants.js"
-import {useData} from "/src/providers/DataProvider.jsx"
 import {useFeedbacks} from "/src/providers/FeedbacksProvider.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 import {useUtils} from "/src/hooks/utils.js"
 import Article from "/src/components/articles/base/Article.jsx"
-import {RowForm, RowFormGroup, RowFormGroupAlert, RowFormGroupItem, RowFormGroupSubmit} from "/src/components/forms/containers/RowForm.jsx"
+import {RowForm, RowFormGroupAlert} from "/src/components/forms/containers/RowForm.jsx"
 import {MessageCard, MessageCardIcon, MessageCardBody, MessageCardFooter} from "/src/components/generic/MessageCard.jsx"
-import Input from "/src/components/forms/fields/Input.jsx"
-import Textarea from "/src/components/forms/fields/Textarea.jsx"
 import StandardButton from "/src/components/buttons/StandardButton.jsx"
-import ArticleContactFormLetter from "/src/components/articles/partials/ArticleContactFormLetter.jsx"
 import ArticleContactFormGlass from "/src/components/articles/partials/ArticleContactFormGlass.jsx"
 
 /**
@@ -21,7 +17,7 @@ import ArticleContactFormGlass from "/src/components/articles/partials/ArticleCo
  * @return {JSX.Element}
  * @constructor
  */
-function ArticleContactForm({ dataWrapper, id }) {
+function ArticleContactForm({ dataWrapper }) {
     const [selectedItemCategoryId, setSelectedItemCategoryId] = useState(null)
     const [shouldHideTitle, setShouldHideTitle] = useState(false)
 
@@ -34,7 +30,6 @@ function ArticleContactForm({ dataWrapper, id }) {
                  selectedItemCategoryId={selectedItemCategoryId}
                  setSelectedItemCategoryId={setSelectedItemCategoryId}>
             <ArticleContactFormContent dataWrapper={dataWrapper}
-                                       selectedItemCategoryId={selectedItemCategoryId}
                                        setShouldHideTitle={setShouldHideTitle}/>
         </Article>
     )
@@ -53,10 +48,9 @@ ArticleContactForm.Status = {
  * @return {JSX.Element}
  * @constructor
  */
-function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setShouldHideTitle }) {
+function ArticleContactFormContent({ dataWrapper, setShouldHideTitle }) {
     const api = useApi()
     const constants = useConstants()
-    const data = useData()
     const feedbacks = useFeedbacks()
     const language = useLanguage()
     const utils = useUtils()
@@ -188,15 +182,10 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
  * @constructor
  */
 function ArticleContactFormContentFields({ onInput, didSubmit }) {
-    const language = useLanguage()
-
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
-
-    const splitColClass = `col-12 col-xl-6`
-    const textClass = `text-4`
 
     useEffect(() => {
         onInput({name, email, subject, message})
@@ -212,17 +201,12 @@ function ArticleContactFormContentFields({ onInput, didSubmit }) {
     }, [didSubmit])
 
     return (
-        <div className="row align-items-center justify-content-center gy-5 w-100 mt-4 mx-0">
-            {/* Left side: Real-time Letter */}
-            <div className="col-12 col-xl-6 d-flex justify-content-center px-0">
-                <ArticleContactFormLetter name={name} email={email} message={message} />
-            </div>
-
-            {/* Right side: Glassmorphism Fields */}
-            <div className="col-12 col-xl-6 d-flex justify-content-center px-0">
+        <div className="article-contact-workbench">
+            <div className="article-contact-fields">
                 <ArticleContactFormGlass 
                     name={name} setName={setName} 
-                    email={email} setEmail={setEmail} 
+                    email={email} setEmail={setEmail}
+                    subject={subject} setSubject={setSubject}
                     message={message} setMessage={setMessage} 
                 />
             </div>

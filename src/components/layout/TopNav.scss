@@ -5,8 +5,8 @@ header.top-nav {
     top: 0;
     z-index: $z-index-sidebar;
 
-    background-color: var(--theme-section-background);
-    border-bottom: 1px solid var(--theme-standard-borders);
+    background-color: var(--signal-deep);
+    border-bottom: 1px solid var(--signal-deep-rule);
 }
 
 div.top-nav-inner {
@@ -14,9 +14,9 @@ div.top-nav-inner {
     align-items: center;
     gap: 24px;
 
-    max-width: 1180px;
+    max-width: none;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 3vw;
     height: 64px;
 
     @include media-breakpoint-down(lg) {
@@ -32,26 +32,19 @@ a.top-nav-brand {
     display: flex;
     flex-direction: column;
     line-height: 1.1;
-    color: var(--theme-texts) !important;
+    color: var(--signal-deep-ink) !important;
     white-space: nowrap;
 
     span.top-nav-brand-mark {
-        font-family: $headings-font-family;
-        font-size: 1.15rem;
+        font-family: var(--font-signal-display);
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 0.12em;
+        letter-spacing: -0.05em;
     }
 
     span.top-nav-brand-sub {
         // 0.66rem rendered at 10.56px, under the 11px functional-text floor.
-        font-size: 0.75rem;
-        font-style: italic;
-        color: var(--theme-muted);
-        letter-spacing: 0.04em;
-
-        @include media-breakpoint-down(md) {
-            display: none;
-        }
+        display: none;
     }
 }
 
@@ -69,17 +62,17 @@ nav.top-nav-links {
 a.top-nav-link {
     position: relative;
     font-size: 0.9rem;
-    color: var(--theme-texts-light-2) !important;
+    color: var(--signal-deep-muted) !important;
     padding: 4px 0;
     transition: color 0.15s ease-out;
 
     &:hover {
-        color: var(--theme-texts) !important;
+        color: var(--signal-deep-ink) !important;
     }
 }
 
 a.top-nav-link-active {
-    color: var(--theme-texts) !important;
+    color: var(--signal-deep-ink) !important;
 
     &:after {
         content: "";
@@ -88,7 +81,7 @@ a.top-nav-link-active {
         right: 0;
         bottom: -2px;
         height: 1px;
-        background-color: var(--theme-primary);
+        background-color: var(--signal-lime);
     }
 }
 
@@ -101,13 +94,25 @@ div.top-nav-tools {
     @include media-breakpoint-down(md) {
         margin-left: auto;
     }
+
+    div.nav-tools {
+        gap: 2px;
+        width: auto;
+        padding: 0;
+        border-top: 0;
+    }
+
+    div.nav-tools-item {
+        width: 38px;
+        height: 48px;
+    }
 }
 
 button.top-nav-toggle {
     display: none;
     background: none;
     border: 0;
-    color: var(--theme-texts);
+    color: var(--signal-deep-ink);
     font-size: 1.1rem;
     padding: 8px 10px;
 
@@ -119,8 +124,8 @@ button.top-nav-toggle {
 nav.top-nav-sheet {
     display: none;
     flex-direction: column;
-    border-top: 1px solid var(--theme-standard-borders);
-    background-color: var(--theme-section-background);
+    border-top: 1px solid var(--signal-deep-rule);
+    background-color: var(--signal-deep);
 
     @include media-breakpoint-down(md) {
         display: flex;
@@ -130,14 +135,14 @@ nav.top-nav-sheet {
 a.top-nav-sheet-link {
     padding: 13px 20px;
     font-size: 0.95rem;
-    color: var(--theme-texts) !important;
+    color: var(--signal-deep-ink) !important;
 
     &:not(:last-child) {
-        border-bottom: 1px solid var(--theme-standard-borders-8);
+        border-bottom: 1px solid var(--signal-deep-rule);
     }
 }
 
 a.top-nav-sheet-link-active {
-    color: var(--theme-primary) !important;
-    background-color: var(--theme-boards-background);
+    color: var(--signal-lime) !important;
+    background-color: var(--signal-deep);
 }

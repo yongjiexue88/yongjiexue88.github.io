@@ -19,9 +19,9 @@ function SiteFooter({ profile }) {
         <footer className={`site-footer`}>
             <div className={`site-footer-inner`}>
                 <div className={`site-footer-brand`}>
-                    <span className={`site-footer-mark`}>萦怀</span>
+                    <span className={`site-footer-mark`}>YX</span>
                     <p className={`site-footer-tagline`}>
-                        {isZh ? "留在心上的话。" : "Words that stay on the mind."}
+                        {isZh ? "全栈与 AI 工程师 · 美国奥斯汀" : "Full Stack & AI Engineer · Austin, Texas"}
                     </p>
                 </div>
 
@@ -56,6 +56,7 @@ function SiteFooter({ profile }) {
 
             <div className={`site-footer-base`}>
                 <span>© {new Date().getFullYear()} Yongjie Xue</span>
+                <span>{isZh ? "职业主页与公开写作" : "Professional home and public writing"}</span>
             </div>
         </footer>
     )
