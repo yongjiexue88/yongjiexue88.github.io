@@ -1,0 +1,8 @@
+{
+  "name": "yongjiexue88.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bash scripts/build-vercel.sh"
+  }
+}
