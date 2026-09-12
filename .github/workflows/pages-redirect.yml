@@ -1,0 +1,50 @@
+name: Publish Pages redirect
+
+# The site is hosted on Vercel. This workflow does not build or deploy it.
+#
+# It exists only because GitHub will not let Pages be disabled on a user site
+# (<user>.github.io): the REST API answers "Deactivating GitHub pages for this
+# repository is not allowed." With the old deploy workflow removed, Pages went
+# on serving a frozen copy of the app that canonicalised to itself — a stale
+# duplicate competing with the live site in search.
+#
+# So Pages is given the smallest harmless thing to serve instead: the
+# path-preserving redirect in pages-redirect/. No build, no dist, no app.
+#
+# If you later point a custom domain at the Vercel project, update the target
+# in pages-redirect/index.html (and its 404.html copy) to match.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Upload redirect as the Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./pages-redirect
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
