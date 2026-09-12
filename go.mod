@@ -2,4 +2,4 @@ module github.com/yongjiexue88/yongjiexue88.github.io
 
 go 1.27.0
 
-require github.com/pgsty/oink v1.0.0 // indirect
+require github.com/pgsty/oink v1.0.0
