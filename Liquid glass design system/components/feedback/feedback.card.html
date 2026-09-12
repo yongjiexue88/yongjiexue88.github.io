@@ -1,0 +1,85 @@
+<!-- @dsCard group="Components" viewport="700x250" name="Feedback" subtitle="Badge, Tag, Tooltip, Toast, Progress, Spinner" -->
+<!DOCTYPE html>
+<html lang="en" data-lg-theme="dark">
+<head>
+<meta charset="utf-8" />
+<title>Feedback</title>
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../../dev-loader.js"></script>
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 700px; min-height: 250px; box-sizing: border-box; padding: 22px;
+    background-color: var(--lg-neutral-950);
+    background-image: radial-gradient(60% 60% at 22% 14%, oklch(0.60 0.20 330 / 0.9) 0%, transparent 72%), radial-gradient(55% 55% at 86% 34%, oklch(0.55 0.18 275 / 0.75) 0%, transparent 72%), radial-gradient(55% 55% at 50% 96%, oklch(0.50 0.16 300 / 0.7) 0%, transparent 72%), linear-gradient(140deg, oklch(0.40 0.15 330) 0%, oklch(0.26 0.11 285) 100%);
+    color: var(--lg-text-primary);
+    font: var(--lg-type-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--lg-text-accent); text-decoration: none; }
+  a:hover { color: var(--lg-fill-accent-hover); }
+  .row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .col { display: flex; flex-direction: column; gap: 14px; }
+  .cap { font: var(--lg-type-mono); letter-spacing: var(--lg-tracking-caps); text-transform: uppercase; color: rgba(255,255,255,0.5); }
+</style>
+<style>@keyframes lg-spin { to { transform: rotate(360deg); } }</style>
+</head>
+<body>
+<div id="root"><div style="display:flex;align-items:center;gap:10px;padding:28px;font:var(--lg-type-mono);color:var(--lg-text-tertiary)"><span style="width:12px;height:12px;border-radius:999px;border:2px solid currentColor;border-top-color:transparent;animation:lg-spin 0.8s linear infinite"></span>Compiling Liquidglass — first load only</div></div>
+<script type="text/lg-jsx" id="demo-src">
+const { Badge, Tag, Tooltip, Toast, Progress, Spinner, Button, IconButton, Icon } = L;
+  function Demo() {
+    const [sel, setSel] = React.useState(['Essays']);
+    const toggle = (t) => setSel((s) => s.includes(t) ? s.filter((x) => x !== t) : [...s, t]);
+    return (
+      <div className="col" style={{ gap: 16 }}>
+        <div className="row" style={{ gap: 10 }}>
+          <Badge>Draft</Badge>
+          <Badge tone="accent">Beta</Badge>
+          <Badge tone="success" dot>Published</Badge>
+          <Badge tone="warning">Needs review</Badge>
+          <Badge tone="danger">Failed</Badge>
+          <span style={{ width: 1, height: 22, background: 'var(--lg-border-subtle)' }} />
+          {['Essays', 'Notes', 'EPUB'].map((t) => (
+            <Tag key={t} selected={sel.includes(t)} onClick={() => toggle(t)}>{t}</Tag>
+          ))}
+          <Tag onRemove={() => {}}>2024</Tag>
+        </div>
+        <div className="row" style={{ gap: 18 }}>
+          <Tooltip content="Add to library" side="bottom">
+            <IconButton variant="ghost" label="Add"><Icon name="plus" size={18} /></IconButton>
+          </Tooltip>
+          <Spinner size={18} />
+          <Button variant="ghost" size="sm" disabled iconLeft={<Spinner size={14} />}>Exporting…</Button>
+          <Progress label="On Refraction" value={62} displayValue="62%" style={{ flex: 1, minWidth: 200 }} />
+        </div>
+        <Toast
+          tone="success"
+          icon={<Icon name="check" size={18} />}
+          title="Saved to library"
+          action={<Button variant="ghost" size="sm">Undo</Button>}
+          onClose={() => {}}
+        >On this device only.</Toast>
+      </div>
+    );
+  }
+</script>
+<script>
+(function () {
+  var root = document.getElementById('root');
+  function fail(e) {
+    root.innerHTML = '<pre style="color:#fff;font:12px/1.5 ui-monospace,monospace;white-space:pre-wrap">' + String((e && e.stack) || e) + '</pre>';
+  }
+  window.LiquidglassDev.ready.then(function (L) {
+    var src = document.getElementById('demo-src').textContent;
+    var out = Babel.transform(src, { presets: [['react', { runtime: 'classic' }]] }).code;
+    new Function('L', 'React', 'ReactDOM', out + '\nReactDOM.createRoot(document.getElementById("root")).render(React.createElement(Demo));')(L, window.React, window.ReactDOM);
+  }).catch(fail);
+}());
+</script>
+</body>
+</html>

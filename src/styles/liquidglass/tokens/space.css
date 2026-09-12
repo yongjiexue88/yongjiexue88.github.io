@@ -1,0 +1,27 @@
+:root {
+  --lg-space-0: 0px;
+  --lg-space-1: 2px;
+  --lg-space-2: 4px;
+  --lg-space-3: 6px;
+  --lg-space-4: 8px;
+  --lg-space-5: 12px;
+  --lg-space-6: 16px;
+  --lg-space-7: 20px;
+  --lg-space-8: 24px;
+  --lg-space-9: 32px;
+  --lg-space-10: 40px;
+  --lg-space-11: 48px;
+  --lg-space-12: 64px;
+  --lg-space-13: 80px;
+  --lg-space-14: 96px;
+  --lg-space-15: 128px;
+
+  /* Inherited verbatim from the source component defaults */
+  --lg-glass-padding: 24px 32px;
+  --lg-glass-gap: 24px;
+  --lg-glass-padding-button: 8px 16px;
+
+  --lg-gutter-page: 32px;
+  --lg-gutter-page-wide: 64px;
+  --lg-measure: 68ch;
+}

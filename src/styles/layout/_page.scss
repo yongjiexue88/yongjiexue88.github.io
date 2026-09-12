@@ -3,11 +3,25 @@
  * @description App general layout styles.
  */
 
+html {
+    -webkit-text-size-adjust: 100%;
+    // The page ground lives here rather than on body: the mesh backdrop is a
+    // fixed layer at z-index -1, which sits behind body's own background. Body
+    // has to stay transparent for the mesh to show through at all.
+    background-color: var(--lg-bg-base);
+}
+
 body {
-    overflow-x: hidden!important;
+    background-color: transparent;
+    color: var(--lg-text-primary);
+    font-family: var(--lg-font-sans);
+    letter-spacing: var(--lg-tracking-normal);
+    overflow-x: hidden !important;
+    text-wrap: pretty;
     touch-action: manipulation;
     width: 100%;
-    background-color: $loader-background;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     // The document used to be locked (position:fixed; overflow-y:hidden) at
     // >=md so the section slideshow could own scrolling. Routed pages scroll
@@ -15,19 +29,22 @@ body {
     // that existed only to undo it — are both gone.
 }
 
+// Kept for the class the shell applies once a theme is resolved; the ground
+// itself is html's, so this only has to stay out of the mesh's way.
 body.body-theme {
-    background-color: var(--theme-background)!important;
+    background-color: transparent !important;
 }
 
 /** ------------ SELECTION STYLES ------------ **/
+// tokens/base.css: ::selection is azure with white text, in both themes.
 ::-moz-selection {
-    color: var(--theme-texts-inv);
-    background: var(--theme-primary);
+    background: var(--lg-azure);
+    color: #ffffff;
 }
 
 ::selection {
-    color: var(--theme-texts-inv);
-    background: var(--theme-primary);
+    background: var(--lg-azure);
+    color: #ffffff;
 }
 
 /** ------------ SCROLLBAR STYLES ------------ **/
@@ -39,22 +56,30 @@ body.body-theme {
 
 /** ------------ PLACEHOLDER STYLES ------------ **/
 ::-webkit-input-placeholder {
-    color: var(--theme-opacity-border-accent);
+    color: var(--lg-text-disabled);
 }
 *:-moz-placeholder {
-    color: var(--theme-opacity-border-accent)!important;
+    color: var(--lg-text-disabled)!important;
     opacity: 1;
 }
 *::-moz-placeholder {
-    color: var(--theme-opacity-border-accent)!important;
+    color: var(--lg-text-disabled)!important;
     opacity: 1;
 }
 *:-ms-input-placeholder {
-    color: var(--theme-opacity-border-accent)!important;
+    color: var(--lg-text-disabled)!important;
 }
 *::-ms-input-placeholder {
-    color: var(--theme-opacity-border-accent)!important;
+    color: var(--lg-text-disabled)!important;
 }
 *::placeholder {
-    color: var(--theme-opacity-border-accent)!important;
+    color: var(--lg-text-disabled)!important;
+}
+
+/** ------------ FOCUS ------------ **/
+// "Never removed, never replaced with a colour change alone." The ring is a
+// dark spacer then an azure ring, so it survives on glass and on solid alike.
+:focus-visible {
+    box-shadow: var(--lg-focus-ring);
+    outline: 0;
 }

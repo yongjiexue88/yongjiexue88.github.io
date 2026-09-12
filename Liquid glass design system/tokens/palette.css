@@ -1,0 +1,48 @@
+:root {
+  /* ---- Neutral ramp — cool-leaning, low chroma ---- */
+  --lg-neutral-1000: #04060a;
+  --lg-neutral-950: #080b11;
+  --lg-neutral-900: #0c1017;
+  --lg-neutral-850: #11161f;
+  --lg-neutral-800: #171d27;
+  --lg-neutral-700: #222935;
+  --lg-neutral-600: #333b49;
+  --lg-neutral-500: #4d5766;
+  --lg-neutral-400: #7b8595;
+  --lg-neutral-300: #a8b1be;
+  --lg-neutral-200: #cfd5dd;
+  --lg-neutral-150: #e2e7ec;
+  --lg-neutral-100: #eef1f5;
+  --lg-neutral-50: #f7f9fb;
+  --lg-neutral-0: #ffffff;
+
+  /* ---- Accents — shared lightness + chroma, hue varies ---- */
+  --lg-azure: oklch(0.72 0.16 250);
+  --lg-azure-bright: oklch(0.82 0.14 250);
+  --lg-azure-deep: oklch(0.58 0.16 250);
+  --lg-orchid: oklch(0.72 0.16 320);
+  --lg-orchid-bright: oklch(0.82 0.14 320);
+  --lg-orchid-deep: oklch(0.58 0.16 320);
+  --lg-mint: oklch(0.72 0.16 170);
+  --lg-mint-bright: oklch(0.82 0.14 170);
+
+  /* ---- Semantic hues ---- */
+  --lg-hue-success: oklch(0.72 0.16 150);
+  --lg-hue-warning: oklch(0.80 0.15 80);
+  --lg-hue-danger: oklch(0.64 0.19 25);
+  --lg-hue-info: var(--lg-azure);
+
+  /* ---- Light values used to build glass edges ---- */
+  --lg-white-04: rgba(255, 255, 255, 0.04);
+  --lg-white-08: rgba(255, 255, 255, 0.08);
+  --lg-white-12: rgba(255, 255, 255, 0.12);
+  --lg-white-20: rgba(255, 255, 255, 0.20);
+  --lg-white-32: rgba(255, 255, 255, 0.32);
+  --lg-white-50: rgba(255, 255, 255, 0.50);
+  --lg-white-60: rgba(255, 255, 255, 0.60);
+  --lg-black-20: rgba(0, 0, 0, 0.20);
+  --lg-black-25: rgba(0, 0, 0, 0.25);
+  --lg-black-35: rgba(0, 0, 0, 0.35);
+  --lg-black-40: rgba(0, 0, 0, 0.40);
+  --lg-black-75: rgba(0, 0, 0, 0.75);
+}
