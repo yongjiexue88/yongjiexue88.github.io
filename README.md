@@ -107,22 +107,38 @@ Two themes, `light` and `dark`, built by the `build-theme()` mixin in
 `src/styles/themes/_theme-variables-builder.scss` and registered in
 `public/data/settings.json`.
 
-The register is *technical editorial*: cool neutrals rather than warm paper,
-and borders that are the text hue held at low opacity rather than an opaque
-grey. Depth comes from tint and hairlines — emphasis is a focus ring, never a
-drop shadow.
+The design system is **Liquidglass** — one material, a transparent pane that
+refracts what is behind it, spent only on surfaces that float. Its token layer
+is vendored verbatim under [src/styles/liquidglass/tokens/](src/styles/liquidglass/tokens/);
+the material itself is ported to SCSS mixins in
+[_glass.scss](src/styles/liquidglass/_glass.scss), and
+[_bridge.scss](src/styles/liquidglass/_bridge.scss) maps the project's older
+variable names onto it. Full contract in [DESIGN.md](DESIGN.md).
+
+The rule that decides most things: **glass floats, solid holds still.** The
+masthead dock, cards, tags, menus and dialogs are glass; article bodies, code
+blocks, tables and form fields are solid, because anything read for more than
+thirty seconds should not sit on a refracting surface.
 
 | Token | Light | Dark |
 | --- | --- | --- |
-| ground | `#F1F4F8` | `#0E1620` |
-| surface | `#FFFFFF` | `#16222E` |
-| ink | `#16222E` | `#E3E9F0` |
-| accent | `#245F94` | `#7FB3DC` |
-| border | `rgba(48,74,105,.14)` | `rgba(148,180,210,.16)` |
+| ground | `#F7F9FB` | `#04060A` |
+| surface (solid) | `#FFFFFF` | `#11161F` |
+| ink | `#04060A` | `#FFFFFF` |
+| accent (azure) | `oklch(.58 .16 250)` | `oklch(.72 .16 250)` |
+| border | `rgba(4,6,10,.17)` | `rgba(255,255,255,.16)` |
 
-Type: Chakra Petch (headings), Inter (body), IBM Plex Mono (code) — all
-open-licensed, loaded from Google Fonts in `index.html`, with CJK fallbacks
-appended since none of the three ship CJK glyphs.
+Every screen sits on a static three-stop radial colour mesh
+([LayoutStaticBackground](src/components/layout/LayoutStaticBackground.jsx)) —
+glass over a flat fill is just a grey box. The mesh never animates; the motion
+budget belongs to the glass.
+
+Type: Geist (sans, including the display role) and Geist Mono (metadata), both
+open-licensed and loaded from Google Fonts in `index.html`, with CJK fallbacks
+appended since neither ships CJK glyphs. Weights stop at 600.
+
+Refraction renders only in Chromium. Elsewhere the material degrades to blur,
+saturation and the edge stack, which is the fallback the system documents.
 
 **Import order is load-bearing.** The light theme also emits on `:root` as a
 base palette, and `:root` has the same specificity as `[data-theme="dark"]`,

@@ -1,51 +1,61 @@
 @import "/src/styles/extend.scss";
 
+/**
+ * The inline fact list — location, email, links.
+ *
+ * It was a shared hairline grid with zero radius. Each entry is now its own
+ * glass pill-radius cell, separated by space, with the icon in the accent
+ * because it marks a link rather than decorating one.
+ */
 ul.article-inline-list-items {
+    border: 0;
     display: grid;
+    gap: var(--lg-space-5);
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 1px solid var(--theme-texts);
-    border-left: 1px solid var(--theme-texts);
-    list-style: none;
     text-align: left;
 }
 
 li.article-inline-list-item {
-    display: flex;
-    min-width: 0;
-    min-height: 58px;
     align-items: center;
+    color: var(--lg-glass-ink);
+    display: flex;
+    font-size: var(--lg-size-sm);
     margin: 0;
-    padding: 0 16px;
-    border-right: 1px solid var(--theme-texts);
-    border-bottom: 1px solid var(--theme-texts);
+    min-height: 52px;
+    min-width: 0;
+    padding: var(--lg-space-4) var(--lg-space-6);
     white-space: normal;
+    @include lg-glass(var(--lg-radius-md));
 
     &:not(:last-child)::after { display: none; }
 }
 
+// 16px inline with text is the system's inline icon size.
 i.article-inline-list-item-icon {
-    display: inline-flex;
-    width: 28px;
-    height: 28px;
     align-items: center;
-    justify-content: center;
-    margin: 0 9px 0 0;
-    padding: 0;
     border-radius: 0;
-    color: var(--theme-primary);
+    color: var(--lg-text-accent);
+    display: inline-flex;
+    font-size: var(--lg-size-base);
+    height: 20px;
+    justify-content: center;
+    margin: 0 var(--lg-space-5) 0 0;
     opacity: 1;
+    padding: 0;
+    width: 20px;
 }
 
 ul.article-inline-list-items-column-mode {
+    align-items: stretch;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: stretch;
 
     li.article-inline-list-item {
-        min-height: 52px;
         margin: 0;
+        min-height: 48px;
 
         &:not(:last-child)::after { display: none; }
     }

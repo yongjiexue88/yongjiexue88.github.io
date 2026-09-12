@@ -1,0 +1,48 @@
+:root {
+  --lg-font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --lg-font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Size ramp — 1.22–1.30 ratio, tightened at display sizes */
+  --lg-size-2xs: 11px;
+  --lg-size-xs: 12px;
+  --lg-size-sm: 13px;
+  --lg-size-base: 15px;
+  --lg-size-md: 17px;
+  --lg-size-lg: 20px;
+  --lg-size-xl: 24px;
+  --lg-size-2xl: 32px;
+  --lg-size-3xl: 40px;
+  --lg-size-4xl: 56px;
+  --lg-size-5xl: 72px;
+  --lg-size-6xl: 96px;
+
+  --lg-weight-light: 300;
+  --lg-weight-regular: 400;
+  --lg-weight-medium: 500;
+  --lg-weight-semibold: 600;
+  --lg-weight-bold: 700;
+
+  --lg-leading-flat: 1;
+  --lg-leading-tight: 1.12;
+  --lg-leading-snug: 1.3;
+  --lg-leading-normal: 1.5;
+  --lg-leading-relaxed: 1.65;
+
+  --lg-tracking-tighter: -0.035em;
+  --lg-tracking-tight: -0.02em;
+  --lg-tracking-normal: -0.006em;
+  --lg-tracking-wide: 0.02em;
+  --lg-tracking-caps: 0.09em;
+
+  /* Composed roles */
+  --lg-type-display: var(--lg-weight-semibold) var(--lg-size-5xl) / var(--lg-leading-tight) var(--lg-font-sans);
+  --lg-type-title: var(--lg-weight-semibold) var(--lg-size-2xl) / var(--lg-leading-tight) var(--lg-font-sans);
+  --lg-type-heading: var(--lg-weight-medium) var(--lg-size-lg) / var(--lg-leading-snug) var(--lg-font-sans);
+  --lg-type-body: var(--lg-weight-regular) var(--lg-size-base) / var(--lg-leading-relaxed) var(--lg-font-sans);
+  --lg-type-label: var(--lg-weight-medium) var(--lg-size-sm) / var(--lg-leading-snug) var(--lg-font-sans);
+  --lg-type-caption: var(--lg-weight-regular) var(--lg-size-xs) / var(--lg-leading-snug) var(--lg-font-sans);
+  --lg-type-mono: var(--lg-weight-regular) var(--lg-size-xs) / var(--lg-leading-snug) var(--lg-font-mono);
+
+  /* The source repo hard-codes this on glass children: 500 20px/1 system-ui */
+  --lg-type-glass-label: var(--lg-weight-medium) var(--lg-size-lg) / var(--lg-leading-flat) var(--lg-font-sans);
+}

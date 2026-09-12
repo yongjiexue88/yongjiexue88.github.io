@@ -1,283 +1,429 @@
 ---
-name: Yongjie Xue — Systems Calibration Atlas
-description: A career-first publishing system built from calibrated signal color, editorial scale, and factual writing evidence.
+name: Yongjie Xue — Liquidglass
+description: A career-first publishing site built on Liquidglass — refracting glass surfaces over a static colour mesh, with solid surfaces wherever text is actually read.
 colors:
-  deep-ink-field: "#0e0918"
-  deep-field-ink: "#e9f7f4"
-  deep-field-muted: "#b9b9c2"
-  deep-field-rule: "rgba(233, 247, 244, 0.22)"
-  icy-paper: "#e9f7f4"
-  paper-ink: "#0e0918"
-  signal-cobalt: "#2349e8"
-  cobalt-ink: "#f4fbf9"
-  acid-chartreuse: "#cae838"
-  signal-coral: "#f84735"
-  pale-periwinkle: "#d8dbff"
-  dark-deep-field: "#07050c"
-  dark-deep-ink: "#f2f8f6"
-  dark-deep-muted: "#b9b5c5"
-  dark-deep-rule: "rgba(242, 248, 246, 0.20)"
-  dark-paper: "#171325"
-  dark-paper-ink: "#f2f8f6"
-  dark-signal-cobalt: "#304ddb"
-  dark-acid-chartreuse: "#d2ef3f"
-  dark-signal-coral: "#ff5b47"
-  dark-periwinkle: "#2a2444"
+  neutral-1000: "#04060a"
+  neutral-950: "#080b11"
+  neutral-850: "#11161f"
+  neutral-800: "#171d27"
+  neutral-700: "#222935"
+  neutral-500: "#4d5766"
+  neutral-300: "#a8b1be"
+  neutral-150: "#e2e7ec"
+  neutral-100: "#eef1f5"
+  neutral-50: "#f7f9fb"
+  neutral-0: "#ffffff"
+  azure: "oklch(0.72 0.16 250)"
+  azure-bright: "oklch(0.82 0.14 250)"
+  azure-deep: "oklch(0.58 0.16 250)"
+  orchid: "oklch(0.72 0.16 320)"
+  mint: "oklch(0.72 0.16 170)"
+  hue-danger: "oklch(0.64 0.19 25)"
+  hue-warning: "oklch(0.80 0.15 80)"
+  hue-success: "oklch(0.72 0.16 150)"
 typography:
-  hero:
-    fontFamily: "Sofia Sans Semi Condensed, Noto Sans SC, PingFang SC, sans-serif"
-    fontSize: "clamp(8rem, 21.6vw, 19.45rem)"
-    fontWeight: 700
-    lineHeight: 0.72
-    letterSpacing: "-0.04em"
   display:
-    fontFamily: "Sofia Sans Semi Condensed, Noto Sans SC, PingFang SC, sans-serif"
-    fontSize: "clamp(4.4rem, 8vw, 8.4rem)"
-    fontWeight: 700
-    lineHeight: 0.8
-    letterSpacing: "-0.055em"
-  headline:
-    fontFamily: "Sofia Sans Semi Condensed, Noto Sans SC, PingFang SC, sans-serif"
-    fontSize: "clamp(2.7rem, 4.05vw, 4.2rem)"
-    fontWeight: 700
-    lineHeight: 0.92
-    letterSpacing: "-0.05em"
-  title:
-    fontFamily: "Sofia Sans Semi Condensed, Noto Sans SC, PingFang SC, sans-serif"
-    fontSize: "clamp(1.8rem, 3vw, 3rem)"
+    fontFamily: "Geist, Noto Sans SC, PingFang SC, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(2.5rem, 9vw, 6rem)"
     fontWeight: 600
-    lineHeight: 0.95
-    letterSpacing: "-0.045em"
+    lineHeight: 1.12
+    letterSpacing: "-0.035em"
+  title:
+    fontFamily: "{typography.display.fontFamily}"
+    fontSize: "32px"
+    fontWeight: 600
+    lineHeight: 1.12
+    letterSpacing: "-0.02em"
+  heading:
+    fontFamily: "{typography.display.fontFamily}"
+    fontSize: "20px"
+    fontWeight: 500
+    lineHeight: 1.3
+    letterSpacing: "-0.02em"
   body:
-    fontFamily: "IBM Plex Sans, Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"
-    fontSize: "1rem"
+    fontFamily: "{typography.display.fontFamily}"
+    fontSize: "15px"
     fontWeight: 400
-    lineHeight: 1.55
-    letterSpacing: "normal"
+    lineHeight: 1.65
+    letterSpacing: "-0.006em"
   label:
-    fontFamily: "IBM Plex Mono, SFMono-Regular, Menlo, Consolas, Noto Sans Mono CJK SC, monospace"
-    fontSize: "0.72rem"
+    fontFamily: "{typography.display.fontFamily}"
+    fontSize: "13px"
+    fontWeight: 500
+    lineHeight: 1.3
+    letterSpacing: "-0.006em"
+  mono:
+    fontFamily: "Geist Mono, ui-monospace, SF Mono, Menlo, Noto Sans Mono CJK SC, monospace"
+    fontSize: "12px"
     fontWeight: 400
-    lineHeight: 1.2
-    letterSpacing: "normal"
+    lineHeight: 1.3
+    letterSpacing: "0.09em"
 rounded:
-  square: "0"
+  xs: "4px"
+  sm: "8px"
+  md: "12px"
+  lg: "16px"
+  xl: "24px"
+  2xl: "32px"
+  pill: "999px"
 spacing:
   xs: "4px"
   sm: "8px"
-  md: "20px"
-  lg: "24px"
-  xl: "30px"
+  md: "12px"
+  lg: "16px"
+  xl: "24px"
+  2xl: "32px"
+  3xl: "48px"
+  4xl: "64px"
+glass:
+  backdrop: "blur(6px) saturate(140%)"
+  backdrop-over-light: "blur(14px) saturate(140%)"
+  backdrop-frosty: "blur(25.2px) saturate(180%)"
+  edge-width: "1.5px"
+  edge-inset: "0 0 0 0.5px rgba(255,255,255,0.5) inset, 0 1px 3px rgba(255,255,255,0.25) inset, 0 1px 4px rgba(0,0,0,0.35)"
+  shadow-glass: "0px 12px 40px rgba(0,0,0,0.25)"
+  shadow-glass-over-light: "0px 10px 34px rgba(4,6,10,0.16)"
+  text-shadow-glass: "0px 2px 12px rgba(0,0,0,0.4)"
+  veil-over-light: "rgba(255,255,255,0.62)"
+motion:
+  duration-fast: "150ms"
+  duration-base: "200ms"
+  duration-slow: "320ms"
+  ease: "ease-in-out"
+  scale-press: "0.96"
 components:
+  dock:
+    material: "glass"
+    rounded: "{rounded.2xl}"
+    height: "64px"
+    padding: "0 32px"
+    shadow: "{glass.shadow-glass}"
   button-primary:
-    backgroundColor: "{colors.acid-chartreuse}"
-    textColor: "{colors.deep-ink-field}"
-    typography: "{typography.body}"
-    rounded: "{rounded.square}"
-    padding: "0 30px"
-    height: "64px"
-  button-primary-hover:
-    backgroundColor: "{colors.deep-ink-field}"
-    textColor: "{colors.deep-field-ink}"
-    rounded: "{rounded.square}"
+    backgroundColor: "{colors.azure}"
+    textColor: "{colors.neutral-1000}"
+    typography: "{typography.label}"
+    rounded: "{rounded.pill}"
+    padding: "8px 20px"
+    height: "48px"
   button-secondary:
-    backgroundColor: "transparent"
-    textColor: "{colors.paper-ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.square}"
-    padding: "8px 0 4px"
-  navigation:
-    backgroundColor: "{colors.deep-ink-field}"
-    textColor: "{colors.deep-field-muted}"
-    typography: "{typography.body}"
-    rounded: "{rounded.square}"
-    padding: "0 3vw"
-    height: "64px"
+    material: "glass"
+    rounded: "{rounded.pill}"
+    padding: "8px 20px"
+    height: "48px"
   tag:
-    backgroundColor: "transparent"
-    textColor: "{colors.paper-ink}"
-    typography: "{typography.label}"
-    rounded: "{rounded.square}"
-    padding: "4px 9px"
-    height: "28px"
+    material: "glass"
+    typography: "{typography.mono}"
+    rounded: "{rounded.pill}"
+    padding: "8px 16px"
+    height: "32px"
+  tag-selected:
+    backgroundColor: "{colors.azure}"
+    textColor: "{colors.neutral-1000}"
+    rounded: "{rounded.pill}"
   post-card:
-    backgroundColor: "{colors.icy-paper}"
-    textColor: "{colors.paper-ink}"
-    rounded: "{rounded.square}"
-    padding: "28px 30px 26px"
-  post-card-hover:
-    backgroundColor: "{colors.pale-periwinkle}"
-    textColor: "{colors.paper-ink}"
-    rounded: "{rounded.square}"
+    material: "glass"
+    rounded: "{rounded.xl}"
+    padding: "24px"
+    shadow: "{glass.shadow-glass}"
+    hover: "translateY(-2px) + top radial sheen"
+  article-surface:
+    material: "solid"
+    rounded: "{rounded.2xl}"
+    padding: "48px 40px"
+    shadow: "none"
+  panel:
+    material: "glass"
+    blur: "{glass.backdrop-frosty}"
+    rounded: "{rounded.2xl}"
+    padding: "32px"
+  panel-cell:
+    material: "solid"
+    rounded: "{rounded.md}"
+    padding: "12px"
+    height: "96px"
   input:
-    backgroundColor: "{colors.icy-paper}"
-    textColor: "{colors.paper-ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.square}"
-    padding: "18px"
-    height: "64px"
+    material: "solid"
+    rounded: "{rounded.md}"
+    padding: "12px 16px"
+    height: "52px"
   input-focus:
-    backgroundColor: "{colors.pale-periwinkle}"
-    textColor: "{colors.paper-ink}"
-    rounded: "{rounded.square}"
-  signal-cell:
-    backgroundColor: "{colors.signal-cobalt}"
-    textColor: "{colors.cobalt-ink}"
-    typography: "{typography.label}"
-    rounded: "{rounded.square}"
-    padding: "10px"
-    height: "96px"
-  signal-cell-journal:
-    backgroundColor: "{colors.signal-coral}"
-    textColor: "{colors.deep-ink-field}"
-    typography: "{typography.label}"
-    rounded: "{rounded.square}"
-    padding: "10px"
-    height: "96px"
+    borderColor: "{colors.azure}"
+    focusRing: "0 0 0 2px scrim, 0 0 0 4px {colors.azure-bright}"
+  dialog:
+    material: "glass"
+    blur: "{glass.backdrop-frosty}"
+    rounded: "{rounded.2xl}"
+    entry: "{motion.duration-slow}"
 ---
 
-# Design System: Yongjie Xue — Systems Calibration Atlas
+# Design System: Yongjie Xue — Liquidglass
 
 ## Overview
 
-**Creative North Star: "Systems Calibration Atlas"**
+**Creative North Star: one material, spent deliberately.**
 
-The system treats professional identity as a calibrated publishing signal: enormous editorial type establishes authorship, factual metadata makes the archive inspectable, and saturated flat fields create a memorable route from identity to writing to contact. It feels like an engineering plate crossed with an independent design magazine—precise, direct, and visibly authored.
+The site is built on Liquidglass: a design system whose entire argument is a single
+material — a transparent pane, 1.5px of specular edge, one soft wide shadow, and a
+displacement field that bends whatever sits behind it. Everything else in the system
+exists to stay out of that material's way.
 
-The world is dense but breathable. Square cells and hairline rails organize information without turning the product into a dashboard; bold page-scale color replaces ornamental surface effects. Generic portfolio card stacks and quiet personal-blog mastheads are confirmed anti-references, while the site remains a career presence with writing as evidence.
+The refraction technique is ported from [`rdev/liquid-glass-react`](https://github.com/rdev/liquid-glass-react)
+(MIT). The design language around it — palette, type ramp, spacing, components — is
+original to the system and vendored here under `src/styles/liquidglass/`.
 
-The system is bilingual by construction. English and Chinese receive equivalent hierarchy, CJK-aware fallbacks, synchronized document language, and the same action paths. Its visual confidence never licenses invented proof: content surfaces use only real identity facts, routes, tags, and published material.
+Glass is expensive, so the system spends it on **things that float**: the masthead
+dock, buttons, tags, menus, dialogs, toasts, the sticky table of contents. It refuses
+to spend it on **things that hold still and get read**: article bodies, tables, code
+blocks, dense forms. Every component therefore has a solid counterpart, and on a
+writing site the solid one is often the right call.
+
+The system is bilingual by construction. English and Chinese receive equivalent
+hierarchy, CJK-aware fallbacks, synchronized document language, and the same action
+paths. Geist ships no CJK glyphs, so Noto Sans SC follows it in every stack.
 
 **Key Characteristics:**
 
-- Flat deep-ink, cobalt, icy-paper, chartreuse, coral, and periwinkle fields.
-- Variable-width grotesque display type, humanist body copy, and mono metadata.
-- Square cells, zero-radius containers, hairline rails, and no decorative shadows.
+- One material — refracting glass — over a static three-stop radial colour mesh.
+- Cool near-neutral ramp at chroma ≈ 0; azure is the only accent, and it means interaction.
+- Geist and Geist Mono, negative tracking by default, weights stopping at 600.
+- Pills on controls, 24–32px on panels; nothing on a refracting surface goes below 12px.
+- Solid surfaces wherever text is read for more than thirty seconds.
 - Career identity first; real writing and contact paths provide the evidence.
-- Equivalent English and Chinese experiences with factual content only.
+
+## The five rules
+
+These govern every decision below, and they come from the system's own `SKILL.md`.
+
+1. **Glass floats, solid holds still.** Docks, toolbars, dialogs, controls, anything
+   overlapping content → glass. Article bodies, tables, dense forms → solid. If it has
+   to be read for more than thirty seconds, it is not glass.
+2. **Never glass on glass.** Inside a glass panel, fields and cells go solid. Stacked
+   panes read as mud, not depth.
+3. **Every screen needs a ground.** Glass over a flat fill is a grey box, so the whole
+   document sits on a mesh backdrop.
+4. **One accent per view.** Accent means interaction — a link, a primary action, a
+   selected state — never decoration. Semantic colour rides on text and border, never
+   on a filled block.
+5. **Never stack elevation on glass.** One shadow, `--lg-shadow-glass`. Depth comes
+   from blur and edge brightness, not from shadow layering.
 
 ## Colors
 
-The palette behaves like signal instrumentation: near-black and icy paper provide the reading field, cobalt carries the publishing system, and chartreuse, coral, and periwinkle mark action, category, and interaction states.
+A cool near-neutral ramp from `#04060a` to `#ffffff`, with chroma close to zero so the
+accent and the backdrop carry all the colour. Accents are defined in oklch at a shared
+lightness/chroma pair with only hue varying.
 
 ### Primary
 
-- **Signal Cobalt** (`colors.signal-cobalt`): Owns large publishing fields, index maps, and the footer; pair it with Cobalt Ink for readable foreground content.
-- **Acid Chartreuse** (`colors.acid-chartreuse`): Marks the highest-priority action and selected or energized states; always pair it with the fixed deep-ink field color so contrast survives theme changes.
+- **Azure** (`colors.azure`): The one accent. It marks interaction — links, the primary
+  action, selected states, the active nav item. `azure-deep` is the light-theme variant
+  so contrast holds on a pale ground; `azure-bright` carries the focus ring.
 
 ### Secondary
 
-- **Signal Coral** (`colors.signal-coral`): Distinguishes journal cells and supplies visible focus outlines on pale surfaces.
-- **Pale Periwinkle** (`colors.pale-periwinkle`): Provides a flat hover and focus-within state for pale cards and fields.
+- **Orchid** and **Mint** (`colors.orchid`, `colors.mint`): Support hues on the same
+  oklch curve. They appear in the backdrop mesh only — never on a component.
 
 ### Neutral
 
-- **Deep Ink Field** (`colors.deep-ink-field`): Anchors sticky navigation, strong inverse actions, and the darkest brand field.
-- **Icy Paper** (`colors.icy-paper`): The primary light reading surface and identity field.
-- **Deep Field Ink** (`colors.deep-field-ink`): Foreground on deep fields; the separate semantic token intentionally shares the light paper value.
-- **Paper Ink** (`colors.paper-ink`): Primary text and structural rule color on icy paper.
-- **Deep Field Muted** (`colors.deep-field-muted`): Secondary navigation text where the full inverse foreground would overstate hierarchy.
-- **Cobalt Ink** (`colors.cobalt-ink`): Foreground on saturated cobalt fields.
-- **Dark Theme Set** (`colors.dark-deep-field`, `colors.dark-paper`, and companion `dark-*` tokens): Inverts the same cool signal logic without becoming neutral-black console styling.
+- **Neutral 1000–850** (`colors.neutral-1000` … `colors.neutral-850`): The dark ground
+  and its raised solid surfaces.
+- **Neutral 50–0** (`colors.neutral-50`, `colors.neutral-0`): The light ground and its
+  raised solid surfaces.
+- **Text roles**: alphas of white or of ink `#04060a`, never sampled greys —
+  primary/secondary/tertiary at 1.0/0.78/0.60 in dark and 1.0/0.76/0.58 in light.
 
-**The Signal Scarcity Rule.** Reserve chartreuse for primary action, selection, or energized interaction; do not spread it across passive decoration.
+**The One Accent Rule.** Exactly one accent is live per view. If a second colour wants
+to mean something, it rides on text or a border, not a fill.
 
-**The Paired Field Rule.** Use each large field with its designated ink token and keep small text at WCAG AA contrast in both themes.
+**The Untinted Glass Rule.** Glass is never tinted with brand colour. It takes its
+colour from the ground behind it.
 
 ## Typography
 
-**Display Font:** Sofia Sans Semi Condensed (with Noto Sans SC and PingFang SC fallbacks)
+**Sans:** Geist (with Noto Sans SC, PingFang SC, Hiragino Sans GB fallbacks)
+**Mono:** Geist Mono (with platform mono and Noto Sans Mono CJK SC fallbacks)
 
-**Body Font:** IBM Plex Sans (with Noto Sans SC, PingFang SC, and Hiragino Sans GB fallbacks)
+⚠️ Geist is a flagged substitution — the source the system ports from ships no
+typeface. It was chosen for optical neutrality, so refraction stays the loudest thing
+on screen. Swapping it is a one-line change in `src/styles/liquidglass/_bridge.scss`.
 
-**Label/Mono Font:** IBM Plex Mono (with platform mono and Noto Sans Mono CJK SC fallbacks)
-
-**Character:** The display face compresses large names and titles into forceful editorial shapes; the humanist body remains familiar and readable. Mono belongs to dates, counts, indices, tags, and other true metadata—not to prose or decorative pseudo-code.
+**Character:** There is no separate display face. The display role is the same sans at
+the top of the ramp with tighter tracking, which is why headings read as quiet rather
+than editorial. Tracking is negative by default (-0.006em body, -0.02em headings,
+-0.035em display); only mono caps opens up, to 0.09em. Weights stop at 600 — the
+system has no bold display type.
 
 ### Hierarchy
 
-- **Hero** (`typography.hero`): The identity name only; it may be optically width-calibrated on wide viewports and returns to natural width on smaller screens.
-- **Display** (`typography.display`): Route-level headings with compact leading and a strong, cropped editorial silhouette.
-- **Headline** (`typography.headline`): Lead article titles and major section headings.
-- **Title** (`typography.title`): Card titles and compact editorial links.
-- **Body** (`typography.body`): Descriptions, role and location, actions, and long-form interface copy.
-- **Label** (`typography.label`): Dates, counts, signal indices, breadcrumbs, tags, and control metadata; functional text must never render below 11px.
+- **Display** (`typography.display`): The identity name and route-level page titles.
+- **Title** (`typography.title`): Section headings and lead card titles.
+- **Heading** (`typography.heading`): Card titles, article `h3`, compact links.
+- **Body** (`typography.body`): Descriptions, prose, actions, interface copy. 15px on
+  1.65 leading with a 68ch measure; reading pages raise it one step to 17px.
+- **Label** (`typography.label`): Buttons, nav links, field labels.
+- **Mono** (`typography.mono`): The micro-label. Dates, counts, indices, breadcrumbs,
+  tag text, metadata keys. Functional text never renders below 11px.
 
-**The Metadata Integrity Rule.** Use mono only when the text behaves like data, an index, a date, a count, or a compact control label.
+**The Sentence Case Rule.** Sentence case everywhere — buttons, headings, nav, menus,
+dialogs. The single exception is the mono micro-label, which is uppercase with
+`--lg-tracking-caps`.
 
-**The Language Parity Rule.** Preserve equivalent hierarchy in English and Chinese, use the CJK fallbacks, and synchronize the document `lang` attribute with the selected language.
+**The Metadata Integrity Rule.** Use mono only when the text behaves like data, an
+index, a date, a count, or a compact control label.
+
+**The Language Parity Rule.** Preserve equivalent hierarchy in English and Chinese, use
+the CJK fallbacks, and synchronize the document `lang` attribute with the selected
+language.
 
 ## Layout
 
-The system uses full-width color bands for signature moments and a centered reading width of 1440px for reusable page and footer content. Wide layouts use editorial grids: two-column route headers, two-column card matrices, and four-column footer or featured-writing structures. Structural spacing is carried by 3vw gutters on wide screens and 20px gutters at tablet and mobile widths.
+A 2px → 128px scale, where steps 12/16/20/24/32 carry nearly all layout. Page gutters
+are 3vw on wide screens and 20px at tablet and mobile widths. Reusable page and footer
+content centres at 1440px; the reading measure is 68ch.
 
-Bootstrap-aligned breakpoints govern the responsive shifts: below 992px density tightens; below 768px route headers, cards, contact fields, signal maps, and navigation collapse to one primary column; below 576px actions and footer columns simplify further. Mobile preserves the same hierarchy and palette rather than shrinking the desktop composition: oversized names wrap, signal cells become a two-column index, and reading cards stack.
+Glass panes are separated by **space**, not by shared rules. Collections are gapped
+grids of individual cards rather than one hairline matrix — the old system's joined
+1px borders are incompatible with a material whose whole illusion lives in its edge.
 
-The homepage's fourteen-cell rail and one-large/three-compact article spread are a truthful expression of that page's current archive, not mandatory templates for every surface. New screens should reuse the field, rail, cell, and editorial-grid grammar while choosing a composition that fits their actual content.
+Bootstrap-aligned breakpoints govern the responsive shifts: below 992px density
+tightens and the table of contents drops; below 768px route headers, cards, contact
+fields, the writing index, and navigation collapse to one primary column; below 576px
+actions and footer columns simplify further. The masthead becomes a 56px dock plus its
+own glass sheet.
+
+The homepage's fourteen-cell index and one-large/three-compact article spread are a
+truthful expression of that page's current archive, not mandatory templates. New
+screens should reuse the material, radius and spacing grammar while choosing a
+composition that fits their actual content.
 
 ## Elevation & Depth
 
-The system is flat by design. It uses no decorative shadows on navigation, cards, page banners, article media, contact fields, or signal cells. Depth and state are conveyed with adjacent color fields, one-pixel structural borders, two-pixel emphasis rails, and inset focus outlines; overlays may use z-index for behavior without acquiring visual lift.
+Glass casts exactly **one** shadow — `0 12px 40px rgba(0,0,0,0.25)` in dark,
+`0 10px 34px rgba(4,6,10,0.16)` over light — and never stacks elevation. Depth on glass
+comes from blur and edge brightness.
 
-**The Flat Signal Rule.** Keep resting surfaces shadowless; use color adjacency, hairlines, and focus rings to establish order and state.
+Glass has no `border`. It has an **edge**: a 1.5px ring built from two masked gradient
+layers — one `mix-blend-mode: screen` at 0.2 opacity, one `overlay` — plus a three-part
+inset (`0 0 0 0.5px rgba(255,255,255,0.5) inset`, `0 1px 3px rgba(255,255,255,0.25)
+inset`, `0 1px 4px rgba(0,0,0,0.35)`). That stack is the entire illusion of thickness.
+
+Solid surfaces use a conventional contact + ambient scale (`--lg-shadow-1` … `-4`), and
+in practice reading surfaces use none of it — a hairline border is enough.
+
+**The Single Shadow Rule.** One shadow on glass, never two. If something needs to read
+as closer, raise its edge or its blur.
 
 ## Shapes
 
-The defining silhouette is square and rail-bound. Buttons, tags, cards, fields, banners, signal cells, and sheets use zero-radius corners; one-pixel borders join neighboring elements into matrices. Thin underlines identify text actions and active navigation, while the signal map may use dashed or continuous rails to connect factual cells.
+**Glass defaults to a pill.** Controls — buttons, tags, filters, icon buttons, tooltips
+— take `rounded.pill`. Panels take 24–32px. Anything below 12px reads as a mistake on a
+refracting surface, because the displacement needs curvature to show.
 
-Circular icon utilities may remain circular when their function is intrinsically compact, but they are supporting controls rather than the page's container language. Do not round editorial containers or turn tag collections into soft pill clouds.
+Covers and media that bleed to a pane's edge inherit that pane's corner radius. Circular
+icon utilities stay circular. Nothing in the system is square-cornered.
 
 ## Components
 
 ### Buttons
 
-- **Shape:** Rectilinear and zero-radius, with a tall, generous action target.
-- **Primary:** Chartreuse field with fixed deep ink; use it for the single dominant action in a local decision area.
-- **Hover / Focus:** Invert to the deep field with inverse ink; show a three-pixel coral focus outline with visible offset on pale surfaces. Keep transitions between 150ms and 180ms and remove nonessential motion under reduced-motion preferences.
-- **Secondary:** A transparent text action with a two-pixel underline; blue may mark hover, but the action stays visually subordinate.
+- **Shape:** Pill (`rounded.pill`), 48px tall, with the source's 8px 16px padding.
+- **Primary:** Azure fill with inverse ink — the one accent-filled element in a local
+  decision area.
+- **Secondary:** The glass material, so the view keeps a single accent.
+- **Interaction:** Hover raises the edge and adds a radial sheen from the top; press
+  intensifies it and scales to 0.96. Transitions are 200ms `ease-in-out`;
+  `prefers-reduced-motion: reduce` zeroes them.
+- **Focus:** The two-part ring (2px dark spacer, then 2px azure), so it survives on
+  glass and on solid alike. Never removed, never replaced with a colour change alone.
 
 ### Chips
 
-- **Style:** Square, transparent, one-pixel outlined tags set in mono with compact horizontal padding.
-- **State:** Chartreuse fill marks hover, focus, or selection. Counts sit inside the same outline with tabular numerals and reduced emphasis.
+- **Style:** Glass pills set in the mono micro-label with compact horizontal padding.
+- **State:** Hover moves the label to azure. A *selected* chip takes the azure fill,
+  because selection is interaction. Counts sit inside the same pill with tabular
+  numerals and reduced emphasis.
 
 ### Cards / Containers
 
-- **Corner Style:** Square (`rounded.square`) and usually joined edge-to-edge.
-- **Background:** Icy paper at rest; periwinkle for hover or keyboard focus.
-- **Shadow Strategy:** None; use shared one-pixel borders to create the matrix.
-- **Internal Padding:** Use the established 20–30px range, reducing it slightly on mobile.
+- **Material:** Glass — cards float over the mesh ground.
+- **Corner Style:** `rounded.xl` (24px).
+- **Shadow Strategy:** Exactly one, `glass.shadow-glass`.
+- **Interaction:** Lift 2px and brighten on hover; nothing bounces, overshoots or loops.
+- **Internal Padding:** 24px, reduced to 20px on mobile.
+
+### Reading surfaces
+
+- **Material:** Solid, `rounded.2xl`, no shadow, hairline border.
+- Article bodies, code blocks, tables, and the prose-with-image block all live here.
+  Code blocks sit on `neutral-950` regardless of theme.
+- Blockquotes carry a 2px azure left border over a ghost fill — semantic colour on the
+  border, never a filled block.
 
 ### Inputs / Fields
 
-- **Style:** Icy-paper fields, zero radius, no inner border, and an outer one-pixel grid with a dedicated icon cell when needed.
-- **Focus:** The entire field group changes to periwinkle on `focus-within`; controls retain a visible keyboard focus treatment and never rely on color alone.
-- **Error / Disabled:** Use clear text and border changes with AA contrast; do not communicate validity only through coral or opacity.
+- **Style:** Solid (`rounded.md`, 52px), with a dedicated icon cell separated by a
+  hairline. Fields are solid even inside a glass panel — especially then (rule 2).
+- **Focus:** Border moves to azure and the field group takes the focus ring on
+  `focus-within`; controls never rely on colour alone.
+- **Error / Disabled:** Text and border changes at AA contrast; validity is never
+  communicated by colour or opacity alone.
 
 ### Navigation
 
-The sticky navigation is a 64px deep-ink rail with muted links, bright inverse hover text, and a one-pixel chartreuse active underline. At the 768px breakpoint it becomes a 56px bar plus a full-width square-edged sheet; the menu toggle exposes its state through an accessible label and `aria-expanded`. Every keyboard-operable navigation element must show a visible focus indicator.
+The masthead is a glass dock: a 64px pane at `rounded.2xl`, inset from the page edge by
+the page gutter so the mesh shows around it, sticky at the top of the document. Links
+sit at 0.62 opacity and come to full opacity on hover; the active item is full opacity
+with a 1.5px azure underline. At the 768px breakpoint it becomes a 56px dock plus its
+own glass sheet, which enters over 320ms. The menu toggle exposes its state through an
+accessible label and `aria-expanded`, and every keyboard-operable element shows a
+visible focus indicator.
 
-### Signal Cells
+### Backdrop
 
-Signal cells are the signature factual-index component: square, one-pixel outlined, mono-labelled, and connected by structural rails when space allows. Cobalt denotes the standard writing stream; coral denotes a distinct real category. A brief staggered boot animation may reveal a bounded set, but `prefers-reduced-motion: reduce` must remove it and the cells must remain understandable without motion.
+Every screen sits on `LayoutStaticBackground` — the system's `Backdrop` mesh, fixed
+behind the document. Dark uses the `azure` mesh (three radial stops at 62%/12%,
+12%/78%, 88%/82%); light uses `pale`, the same construction at high lightness.
+
+**The Static Mesh Rule.** The mesh never animates. No drifting gradients, no moving
+blobs — the motion budget belongs to the glass.
+
+## Browser support
+
+The displacement filter renders correctly only in Chromium. Safari and Firefox ignore
+`feDisplacementMap` on a backdrop and fall back to blur + saturation + the edge stack,
+which still reads as deliberate. This site's SCSS port implements that documented
+fallback path: the full edge, inset, sheen and shadow stack over a blurred, saturated
+backdrop sample.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** establish identity, role, and a clear reading or contact path before secondary archive browsing.
-- **Do** use only real profile facts, published content, routes, tags, counts, and available identity assets.
-- **Do** keep English and Chinese equivalent, preserve CJK-capable font fallbacks, and synchronize document language.
-- **Do** maintain at least 11px functional text, WCAG AA contrast for small text, visible focus, and reduced-motion behavior.
-- **Do** build hierarchy with scale, flat color fields, square cells, and hairline rails.
+- **Do** establish identity, role, and a clear reading or contact path before secondary
+  archive browsing.
+- **Do** use only real profile facts, published content, routes, tags, counts, and
+  available identity assets.
+- **Do** keep English and Chinese equivalent, preserve CJK-capable font fallbacks, and
+  synchronize document language.
+- **Do** maintain at least 11px functional text, WCAG AA contrast for small text,
+  visible focus, and reduced-motion behavior.
+- **Do** send anything read for more than thirty seconds to a solid surface.
 - **Do** treat empty professional sections as absent until verified material exists.
 
 ### Don't:
 
-- **Don't** invent projects, employers, clients, metrics, credentials, testimonials, biography, or achievement claims.
-- **Don't** promote one homepage's exact article count or composition into a global layout rule.
-- **Don't** add gradients, glow, glass, decorative drop shadows, or rounded card stacks to core editorial surfaces.
+- **Don't** invent projects, employers, clients, metrics, credentials, testimonials,
+  biography, or achievement claims.
+- **Don't** promote one homepage's exact article count or composition into a global
+  layout rule.
+- **Don't** nest glass inside glass, stack a second shadow on a pane, or tint glass with
+  brand colour.
+- **Don't** introduce a second accent, or express state with a saturated filled block.
+- **Don't** square off a corner, or take a refracting surface below 12px of radius.
+- **Don't** animate the backdrop, or add motion that bounces, overshoots or loops.
 - **Don't** use mono for general prose, fake source code, or decorative pseudo-data.
-- **Don't** hide focus, depend on color alone, or let compact functional text fall below the accessibility floor.
+- **Don't** use emoji — not in UI, not in copy, not as icons.
+- **Don't** hide focus, depend on color alone, or let compact functional text fall below
+  the accessibility floor.
 - **Don't** demote either language to an incomplete or visually secondary experience.

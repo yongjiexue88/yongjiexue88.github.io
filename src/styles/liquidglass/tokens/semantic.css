@@ -1,0 +1,77 @@
+:root,
+[data-lg-theme="dark"] {
+  color-scheme: dark;
+
+  --lg-bg-base: var(--lg-neutral-1000);
+  --lg-bg-sunken: #000000;
+  --lg-bg-raised: var(--lg-neutral-850);
+
+  --lg-text-primary: #ffffff;
+  --lg-text-secondary: rgba(255, 255, 255, 0.78);
+  --lg-text-tertiary: rgba(255, 255, 255, 0.60);
+  --lg-text-disabled: rgba(255, 255, 255, 0.35);
+  --lg-text-inverse: var(--lg-neutral-1000);
+  --lg-text-accent: var(--lg-azure-bright);
+
+  --lg-border-subtle: rgba(255, 255, 255, 0.09);
+  --lg-border-default: rgba(255, 255, 255, 0.16);
+  --lg-border-strong: rgba(255, 255, 255, 0.28);
+
+  --lg-fill-ghost: rgba(255, 255, 255, 0.06);
+  --lg-fill-ghost-hover: rgba(255, 255, 255, 0.11);
+  --lg-fill-ghost-press: rgba(255, 255, 255, 0.16);
+  --lg-fill-accent: var(--lg-azure);
+  --lg-fill-accent-hover: var(--lg-azure-bright);
+  --lg-fill-inverse: #ffffff;
+
+  --lg-focus-ring: 0 0 0 2px rgba(0, 0, 0, 0.55), 0 0 0 4px var(--lg-azure-bright);
+
+  --lg-over-light: 0;
+  --lg-shadow-ambient: var(--lg-shadow-glass);
+  --lg-backdrop-active: var(--lg-backdrop);
+  --lg-text-shadow-active: var(--lg-text-shadow-glass);
+  --lg-scrim: rgba(4, 6, 10, 0.62);
+}
+
+[data-lg-theme="light"] {
+  color-scheme: light;
+
+  --lg-bg-base: var(--lg-neutral-50);
+  --lg-bg-sunken: var(--lg-neutral-100);
+  --lg-bg-raised: var(--lg-neutral-0);
+
+  --lg-text-primary: var(--lg-neutral-1000);
+  --lg-text-secondary: rgba(4, 6, 10, 0.76);
+  --lg-text-tertiary: rgba(4, 6, 10, 0.58);
+  --lg-text-disabled: rgba(4, 6, 10, 0.34);
+  --lg-text-inverse: #ffffff;
+  --lg-text-accent: var(--lg-azure-deep);
+
+  --lg-border-subtle: rgba(4, 6, 10, 0.10);
+  --lg-border-default: rgba(4, 6, 10, 0.17);
+  --lg-border-strong: rgba(4, 6, 10, 0.30);
+
+  --lg-fill-ghost: rgba(4, 6, 10, 0.05);
+  --lg-fill-ghost-hover: rgba(4, 6, 10, 0.09);
+  --lg-fill-ghost-press: rgba(4, 6, 10, 0.14);
+  --lg-fill-accent: var(--lg-azure-deep);
+  --lg-fill-accent-hover: var(--lg-azure);
+  --lg-fill-inverse: var(--lg-neutral-1000);
+
+  --lg-solid-fill: var(--lg-neutral-0);
+  --lg-solid-fill-raised: var(--lg-neutral-0);
+  --lg-solid-border: rgba(4, 6, 10, 0.10);
+
+  --lg-focus-ring: 0 0 0 2px rgba(255, 255, 255, 0.9), 0 0 0 4px var(--lg-azure-deep);
+
+  --lg-over-light: 1;
+  --lg-shadow-ambient: var(--lg-shadow-glass-over-light);
+  --lg-backdrop-active: var(--lg-backdrop-over-light);
+  --lg-text-shadow-active: var(--lg-text-shadow-over-light);
+  --lg-scrim: rgba(4, 6, 10, 0.35);
+
+  --lg-shadow-1: 0 1px 2px rgba(4, 6, 10, 0.08);
+  --lg-shadow-2: 0 1px 2px rgba(4, 6, 10, 0.07), 0 4px 12px rgba(4, 6, 10, 0.08);
+  --lg-shadow-3: 0 2px 4px rgba(4, 6, 10, 0.08), 0 12px 32px rgba(4, 6, 10, 0.10);
+  --lg-shadow-4: 0 4px 8px rgba(4, 6, 10, 0.10), 0 24px 64px rgba(4, 6, 10, 0.14);
+}

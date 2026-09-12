@@ -16,9 +16,28 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 // Importing PrimeIcons...
 @import "primeicons/primeicons.css";
 
+// Liquidglass token layer, vendored verbatim from the design system's
+// `tokens/` directory — palette, type ramp, space, radius, motion, the glass
+// material, elevation, and the semantic light/dark mapping. These are the
+// source of truth; nothing below should hard-code a value one of them defines.
+// Referenced without the .css extension so Sass inlines them rather than
+// emitting a run-time @import. `base.css` is deliberately not vendored: it
+// resets body and anchor styling, which is Bootstrap's job here, and its
+// relevant parts are folded into layout/page instead.
+@import "liquidglass/tokens/palette";
+@import "liquidglass/tokens/typography";
+@import "liquidglass/tokens/space";
+@import "liquidglass/tokens/radius";
+@import "liquidglass/tokens/motion";
+@import "liquidglass/tokens/glass";
+@import "liquidglass/tokens/elevation";
+@import "liquidglass/tokens/semantic";
+
 // Importing styles...
 @import "root-flags";
-@import "identity";
+// The bridge must follow the token files and the theme files: it derives the
+// over-light glass branch from them and repoints the old palette's names.
+@import "liquidglass/bridge";
 @import "layout/page";
 @import "layout/typography";
 @import "customization/primitives-customization";

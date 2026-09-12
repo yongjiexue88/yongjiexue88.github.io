@@ -8,18 +8,20 @@
     --default-card-spacing: #{$default-card-spacing};
     --nav-pills-height: #{$nav-pills-height};
 
-    --form-background-color: var(--theme-empty);
-    --form-color: var(--theme-texts-light);
-    --form-autofill-color: var(--theme-links-hover);
-    --form-border-color: var(--theme-boards-background-accent-inv);
-    --form-attach-background-color: var(--theme-dark);
-    --form-attach-color: var(--theme-light-1);
+    // Fields are the solid variant everywhere in this system: they are dense,
+    // they get read, and they usually sit inside a glass panel (rule 2).
+    --form-background-color: var(--lg-solid-fill);
+    --form-color: var(--lg-text-primary);
+    --form-autofill-color: var(--lg-text-primary);
+    --form-border-color: var(--lg-solid-border);
+    --form-attach-background-color: var(--lg-fill-ghost);
+    --form-attach-color: var(--lg-text-tertiary);
 
-    --form-focus-background-color: var(--theme-empty);
-    --form-focus-color: var(--theme-links);
-    --form-focus-border-color: var(--theme-primary-1);
-    --form-focus-attach-background-color: var(--theme-primary);
-    --form-focus-attach-color: var(--theme-texts-inv);
+    --form-focus-background-color: var(--lg-solid-fill);
+    --form-focus-color: var(--lg-text-primary);
+    --form-focus-border-color: var(--lg-fill-accent);
+    --form-focus-attach-background-color: var(--lg-fill-ghost-hover);
+    --form-focus-attach-color: var(--lg-text-accent);
 }
 
 @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {

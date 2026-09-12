@@ -42,6 +42,10 @@ function ThemeProvider({ children, supportedThemes, defaultThemeId, showSpinnerO
     const setSelectedTheme = (theme) => {
         const _apply = () => {
             document.documentElement.setAttribute('data-theme', theme.id)
+            // Liquidglass keys its semantic tokens on data-lg-theme (see
+            // liquidglass/tokens/semantic.css, vendored verbatim). Stamping
+            // both attributes keeps those token files unmodified.
+            document.documentElement.setAttribute('data-lg-theme', theme.id)
             onThemeChanged(theme.id)
         }
 

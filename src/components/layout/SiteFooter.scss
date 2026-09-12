@@ -1,109 +1,122 @@
 @import "/src/styles/extend.scss";
 
+/**
+ * The footer, as a glass panel.
+ *
+ * It used to be a saturated blue block with a 9rem wordmark and a hairline
+ * grid ruled through it. Rule 4 rules out the fill — semantic and brand colour
+ * never carry a filled block in this system — so it is now a pane sitting on
+ * the mesh, with space doing the work the rules used to do.
+ */
 footer.site-footer {
-    margin-top: 0;
-    border-top: 1px solid var(--signal-blue-ink);
-    background: var(--signal-blue);
-    color: var(--signal-blue-ink);
+    color: var(--lg-glass-ink);
+    margin: var(--lg-space-13) 3vw var(--lg-space-9);
+    padding: var(--lg-space-9);
+    @include lg-glass(var(--lg-radius-2xl), frosty);
+
+    @include media-breakpoint-down(md) {
+        margin: var(--lg-space-12) 20px var(--lg-space-7);
+        padding: var(--lg-space-7);
+    }
 }
 
 div.site-footer-inner {
+    border: 0;
     display: grid;
+    gap: var(--lg-space-9);
     grid-template-columns: 1.65fr repeat(3, 1fr);
-    max-width: 1440px;
     margin: 0 auto;
-    border-left: 1px solid rgba(244, 251, 249, 0.55);
+    max-width: 1440px;
 }
 
 div.site-footer-brand,
 div.site-footer-col {
+    border: 0;
     min-width: 0;
-    padding: 42px 30px 46px;
-    border-right: 1px solid rgba(244, 251, 249, 0.55);
+    padding: 0;
 }
 
 div.site-footer-brand {
     span.site-footer-mark {
         display: block;
-        font-family: var(--font-signal-display);
-        font-size: clamp(5rem, 9vw, 9rem);
-        font-weight: 700;
-        line-height: 0.72;
-        letter-spacing: -0.05em;
+        font-family: var(--lg-font-sans);
+        // The wordmark is text, not a logo — the system ships no mark and does
+        // not invent one. Display role rather than the old 9rem poster size.
+        font-size: var(--lg-size-3xl);
+        font-weight: var(--lg-weight-semibold);
+        letter-spacing: var(--lg-tracking-tighter);
+        line-height: var(--lg-leading-tight);
     }
 
     p.site-footer-tagline {
+        color: var(--lg-glass-ink);
+        margin: var(--lg-space-6) 0 0;
         max-width: 32ch;
-        margin: 30px 0 0;
-        font-family: var(--font-signal-mono);
-        font-size: 0.72rem;
-        line-height: 1.45;
-        color: currentColor;
+        opacity: 0.68;
+        @include lg-micro-label();
+        letter-spacing: var(--lg-tracking-normal);
+        text-transform: none;
     }
 }
 
 div.site-footer-col {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--lg-space-5);
 }
 
+// The mono micro-label: the one place this system uses uppercase.
 h2.site-footer-heading {
-    margin: 0 0 20px;
-    font-family: var(--font-signal-mono) !important;
-    font-size: 0.7rem !important;
-    font-weight: 500;
-    letter-spacing: 0;
-    color: currentColor;
-    text-transform: uppercase;
+    color: var(--lg-glass-ink);
+    font-weight: var(--lg-weight-regular) !important;
+    margin: 0 0 var(--lg-space-2);
+    opacity: 0.6;
+    @include lg-micro-label();
+    font-family: var(--lg-font-mono) !important;
+    font-size: var(--lg-size-xs) !important;
 }
 
 a.site-footer-link {
-    width: fit-content;
-    padding-bottom: 2px;
-    border-bottom: 1px solid transparent;
-    color: currentColor !important;
-    font-size: 0.88rem;
-    line-height: 1.25;
+    border: 0;
+    color: var(--lg-glass-ink) !important;
+    font-size: var(--lg-size-sm);
+    line-height: var(--lg-leading-snug);
     overflow-wrap: anywhere;
+    transition: var(--lg-transition-content);
+    width: fit-content;
 
     &:hover,
     &:focus-visible {
-        border-color: currentColor;
-        color: var(--signal-lime) !important;
+        color: var(--lg-text-accent) !important;
+    }
+
+    &:focus-visible {
+        box-shadow: var(--lg-focus-ring);
+        border-radius: var(--lg-radius-xs);
+        outline: 0;
     }
 }
 
 div.site-footer-base {
+    border-top: 1px solid var(--lg-border-subtle);
+    color: var(--lg-glass-ink);
     display: flex;
+    gap: var(--lg-space-7);
     justify-content: space-between;
-    gap: 20px;
+    margin: var(--lg-space-9) auto 0;
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 16px 30px 22px;
-    border-top: 1px solid rgba(244, 251, 249, 0.55);
-    color: currentColor;
-    font-family: var(--font-signal-mono);
-    font-size: 0.7rem;
+    opacity: 0.6;
+    padding: var(--lg-space-7) 0 0;
+    @include lg-micro-label();
 }
 
 @include media-breakpoint-down(lg) {
     div.site-footer-inner { grid-template-columns: 1fr 1fr; }
-
-    div.site-footer-brand,
-    div.site-footer-col { border-bottom: 1px solid rgba(244, 251, 249, 0.55); }
 }
 
 @include media-breakpoint-down(sm) {
     div.site-footer-inner {
         grid-template-columns: 1fr;
-        border-left: 0;
-    }
-
-    div.site-footer-brand,
-    div.site-footer-col {
-        padding: 32px 20px;
-        border-right: 0;
     }
 
     div.site-footer-col {
@@ -115,6 +128,6 @@ div.site-footer-base {
 
     div.site-footer-base {
         flex-direction: column;
-        padding: 16px 20px 22px;
+        gap: var(--lg-space-4);
     }
 }
