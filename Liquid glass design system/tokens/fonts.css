@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap");
+
+/* Geist / Geist Mono are served from Google Fonts. The source repository
+   (rdev/liquid-glass-react) ships no typeface of its own — it renders with
+   bare `system-ui`. Geist is the substitution: a quiet neutral grotesque with
+   the same optical neutrality, chosen so glass refraction stays the loudest
+   thing on screen. Swap the @import if you license a different grotesque. */

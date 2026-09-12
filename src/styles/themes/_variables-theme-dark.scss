@@ -1,25 +1,42 @@
 /**
- * @description Dark theme — technical editorial.
+ * @description Dark theme — Liquidglass.
  *
- * The same cool logic inverted: a deep blue-grey ground rather than neutral
- * black, so the palette still reads as ink-on-paper rather than as a console.
- * Borders stay tinted — a light steel held at low opacity.
+ * The system's default theme, and the one the material is designed for: glass
+ * wants a dark, structured ground to refract. Values come straight from
+ * `liquidglass/tokens/palette.css` and `semantic.css` — the cool near-neutral
+ * ramp at chroma ~0, with azure carrying every interactive state.
+ *
+ * Hex rather than the oklch tokens because the build-theme mixin runs Sass
+ * lighten()/darken() over these inputs. The oklch originals are noted inline;
+ * `liquidglass/tokens/palette.css` remains the source of truth, and the glass
+ * layer in `liquidglass/_bridge.scss` reads the tokens directly.
  */
 
 @import "theme-variables-builder";
 
-$dark-accent:  #9BAAFF;
-$dark-muted:   #AAA5B7;
-$dark-text:    #F2F8F6;
-$dark-danger:  #FF7B68;
-$dark-neutral: #2A2444;
+/** --lg-azure oklch(0.72 0.16 250) — the one accent. **/
+$dark-accent:  #49A9FF;
+/** --lg-neutral-300: carries --lg-text-tertiary duty on solid surfaces. **/
+$dark-muted:   #A8B1BE;
+/** --lg-text-primary (dark) **/
+$dark-text:    #FFFFFF;
+/** --lg-hue-danger oklch(0.64 0.19 25) **/
+$dark-danger:  #E9504D;
+/** --lg-neutral-700 **/
+$dark-neutral: #222935;
 
-$dark-ground:  #171325;
-$dark-surface: #0E0918;
-$dark-boards:  #211B34;
-$dark-badges:  #2A2444;
-$dark-empty:   #100C1B;
-$dark-rule:    rgba(242, 248, 246, 0.22);
+/** --lg-bg-base: the ground the mesh backdrop paints over. **/
+$dark-ground:  #04060A;
+/** --lg-bg-raised: solid surfaces — article bodies, tables, nested fields. **/
+$dark-surface: #11161F;
+/** --lg-neutral-800 **/
+$dark-boards:  #171D27;
+/** --lg-neutral-700 **/
+$dark-badges:  #222935;
+/** --lg-neutral-950 **/
+$dark-empty:   #080B11;
+/** --lg-border-default (dark) **/
+$dark-rule:    rgba(255, 255, 255, 0.16);
 
 [data-theme="dark"] {
     @include build-theme(
@@ -58,6 +75,6 @@ $dark-rule:    rgba(242, 248, 246, 0.22);
 
         /** DEFAULT BORDERS: **/            $dark-rule,
         /** SCROLLBAR TRACK: **/            $dark-ground,
-        /** SCROLLBAR THUMB: **/            $dark-muted,
+        /** SCROLLBAR THUMB: **/            #4D5766,
     );
 }

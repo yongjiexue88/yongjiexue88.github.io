@@ -3,35 +3,37 @@
  * @description This file contains the customization of Bootstrap styles.
  */
 
-// Bootstrap ships --bs-code-color #d63384, which lands at 4.3:1 on our board
-// surface — under the 4.5:1 floor. Drive it from the theme instead.
+// Bootstrap ships --bs-code-color #d63384, which is not in this palette at
+// all. Inline code is text, so it takes the accent — the one accent.
 code {
-    color: var(--theme-primary);
+    color: var(--lg-text-accent);
+    font-family: var(--lg-font-mono);
 }
 
+// Accordions hold content that gets read, so they are solid.
 div.accordion {
     div.accordion-item {
-        border: none;
+        color: var(--lg-text-secondary);
         overflow: hidden;
-        background-color: var(--theme-boards-background);
-        color: var(--theme-texts-light-1);
+        @include lg-solid(var(--lg-radius-lg));
     }
 
     button.accordion-button {
-        background-color: var(--theme-dark);
-        color: var(--theme-texts-light-2);
-        font-family: $font-family-base!important;
-        transition: none;
+        background-color: transparent;
+        color: var(--lg-text-primary);
+        font-family: var(--lg-font-sans)!important;
+        font-weight: var(--lg-weight-medium);
+        transition: var(--lg-transition-content);
 
         &:hover {
-            background-color: var(--theme-dark);
-            color: var(--theme-primary);
+            background-color: var(--lg-fill-ghost);
+            color: var(--lg-text-accent);
             opacity: 1;
         }
 
         div, span {
-            user-select: none;
             pointer-events: none;
+            user-select: none;
         }
 
         &:after {
@@ -39,137 +41,150 @@ div.accordion {
         }
     }
 
+    // An open panel is a selected state: accent on text and border, not a fill.
     button.accordion-button:not(.collapsed) {
-        background-color: var(--theme-primary);
-        color: var(--theme-texts-inv);
-        outline: none;
-        box-shadow: none;
+        background-color: var(--lg-fill-ghost);
+        box-shadow: inset 0 -1px 0 var(--lg-border-subtle);
+        color: var(--lg-text-accent);
         opacity: 1;
+        outline: none;
         pointer-events: none;
 
-        i {
-            color: var(--theme-secondary-emphasis);
-        }
-
         &:after {
-            filter: invert(calc(1 - var(--theme-invert-filter)));
+            filter: invert(var(--theme-invert-filter));
         }
     }
 
     div.accordion-body {
-        padding: 25px;
+        padding: var(--lg-space-8);
         @include media-breakpoint-down(lg) {
-            padding: 20px;
+            padding: var(--lg-space-7);
         }
     }
 }
 
+// Semantic colour rides on text and border, never a filled block.
 div.alert {
+    border-radius: var(--lg-radius-md);
+
     &-danger {
-        background-color: var(--theme-danger);
-        border: 0;
-        color: var(--theme-texts-inv);
+        background-color: transparent;
+        border: 1px solid color-mix(in oklch, var(--lg-hue-danger) 50%, transparent);
+        color: var(--lg-hue-danger);
     }
 }
 
+/**
+ * Buttons. Controls default to the pill in this system (cornerRadius 999),
+ * take the source's 8px 16px padding, and scale to 0.96 on press. Focus is
+ * the two-part ring and is never removed — the old `&:focus { box-shadow:
+ * none !important; outline: none !important; }` did exactly that.
+ */
 button.btn {
-    border-radius: $standard-border-radius;
+    border-radius: var(--lg-radius-pill);
+    font-weight: var(--lg-weight-medium);
+    padding: var(--lg-glass-padding-button);
+    transition: var(--lg-transition-glass);
 
-    &:focus {
-        box-shadow: none!important;
-        outline: none!important;
-        transition: none;
+    &:active {
+        transform: scale(var(--lg-scale-press));
+    }
+
+    &:focus-visible {
+        box-shadow: var(--lg-focus-ring)!important;
+        outline: 0!important;
     }
 
     &-primary, &-secondary {
         border: 0;
     }
 
+    // The accent-filled action. Accent means interaction, never decoration.
     &-primary {
-        background-color: var(--theme-primary)!important;
-        color: var(--theme-texts-inv)!important;
+        background-color: var(--lg-fill-accent)!important;
+        color: var(--lg-text-inverse)!important;
+        text-shadow: none;
 
         &:hover {
-            background-color: var(--theme-links-hover)!important;
+            background-color: var(--lg-fill-accent-hover)!important;
         }
     }
 
+    // Everything below the primary is a ghost fill, so the view keeps one accent.
     &-secondary {
-        background-color: var(--theme-secondary)!important;
-        color: var(--theme-texts-inv)!important;
+        background-color: var(--lg-fill-ghost)!important;
+        color: var(--lg-text-primary)!important;
         opacity: 1;
 
         &:hover {
+            background-color: var(--lg-fill-ghost-hover)!important;
             opacity: 1!important;
-            background-color: var(--theme-texts-4)!important;
         }
     }
 
     &-contrast {
-        background-color: var(--theme-texts-4)!important;
-        color: var(--theme-texts-inv)!important;
+        background-color: var(--lg-fill-inverse)!important;
+        color: var(--lg-text-inverse)!important;
         opacity: 1;
 
         &:hover {
-            opacity: 1!important;
-            background-color: var(--theme-texts-8)!important;
+            opacity: 0.9!important;
         }
     }
 
     &-link-default {
         background-color: transparent!important;
-        color: var(--theme-texts)!important;
         border: 0!important;
+        color: var(--lg-text-primary)!important;
         &:hover {
-            color: var(--theme-primary-10)!important;
+            color: var(--lg-text-accent)!important;
         }
     }
 
     &-link-default-inv {
         background-color: transparent!important;
-        color: var(--theme-texts-inv)!important;
         border: 0!important;
+        color: var(--lg-text-inverse)!important;
         &:hover {
-            color: var(--theme-texts-inv-10)!important;
+            opacity: 0.8;
         }
     }
 
     &-disabled {
-        user-select: none;
-        pointer-events: none;
         opacity: 0.5;
+        pointer-events: none;
+        user-select: none;
     }
 
     &-selected {
-        user-select: none;
+        background-color: var(--lg-fill-accent)!important;
+        color: var(--lg-text-inverse)!important;
         pointer-events: none;
-        background-color: var(--theme-texts)!important;
-        color: var(--theme-texts-inv)!important;
+        user-select: none;
         &:hover, &:focus, &:active {
-            background-color: var(--theme-texts)!important;
-            color: var(--theme-texts-inv)!important;
+            background-color: var(--lg-fill-accent)!important;
+            color: var(--lg-text-inverse)!important;
         }
     }
 }
 
+// Bootstrap's generic card is the solid variant: it is a content container,
+// not a floating surface, so it holds still.
 div.card {
-    background-color: var(--theme-card-background);
-    color: var(--theme-texts);
-    border: 0;
-    border-radius: $standard-border-radius;
     padding: 0;
+    @include lg-solid(var(--lg-radius-xl));
 
     &-header, &-footer {
         background-color: transparent;
-        padding: 15px 20px 16px;
+        padding: var(--lg-space-6) var(--lg-space-7);
     }
 
     &-header {
-        border-bottom: 1px solid var(--theme-card-background-accent)
+        border-bottom: 1px solid var(--lg-border-subtle);
     }
 
     &-footer {
-        border-top: 1px solid var(--theme-card-background-accent)
+        border-top: 1px solid var(--lg-border-subtle);
     }
 }
 
@@ -192,33 +207,35 @@ div.dropdown {
         }
     }
 
+    // A menu is a transient floating surface, so it is glass. Frosty blur,
+    // because it carries a list of text over whatever it covers.
     div.dropdown-menu {
-        padding: 0;
-        margin-left: 10px;
+        margin-left: var(--lg-space-4);
         min-width: 200px;
         overflow: hidden;
-
-        border-radius: 20px;
-        border: 2px solid var(--theme-standard-borders);
-        background-color: var(--theme-pop-ups-background);
+        padding: var(--lg-space-2);
+        @include lg-glass(var(--lg-radius-lg), frosty);
     }
 
     a.dropdown-item {
-        color: var(--theme-texts-2);
-        height: 45px;
-        display: flex;
         align-items: center;
-        font-size: 0.9rem;
+        border-radius: var(--lg-radius-sm);
+        color: var(--lg-glass-ink);
+        display: flex;
+        font-size: var(--lg-size-sm);
+        height: 40px;
+        transition: var(--lg-transition-content);
 
+        // Rows are separated by the menu's own padding, not by rules.
         &:not(:last-child) {
-            border-bottom: 1px solid var(--theme-standard-borders-5);
+            border-bottom: 0;
         }
 
         &:hover, &:focus {
-            background-color: var(--theme-primary);
-            color: var(--theme-texts-inv);
+            background-color: var(--lg-fill-ghost-hover);
+            color: var(--lg-text-accent);
             i.fa-icon {
-                opacity: 0.8;
+                opacity: 1;
             }
         }
     }
@@ -228,48 +245,59 @@ div.dropdown {
     }
 }
 
+/**
+ * Dialogs are glass: they float, they overlap content, and they are transient.
+ * The scrim is the system's own `--lg-scrim` rather than 90% black, and the
+ * pane enters at 320ms, which is the dialog/sheet duration.
+ */
 div.modal {
+    background-color: var(--lg-scrim);
     z-index: $z-index-modal;
-    background-color: rgba(black, 0.9);
 
     &-content {
-        background-color: var(--theme-card-background);
-        color: var(--theme-texts);
-        border-radius: $standard-border-radius;
+        animation: lg-sheet-up var(--lg-duration-slow) var(--lg-ease-inout) both;
+        color: var(--lg-glass-ink);
+        @include lg-glass(var(--lg-radius-2xl), frosty);
     }
 
     &-header {
-        border-bottom: 1px solid var(--theme-standard-borders);
+        border-bottom: 1px solid var(--lg-border-subtle);
         justify-content: space-between;
-        padding: 20px 20px;
+        padding: var(--lg-space-7);
         @include media-breakpoint-down(lg) {
-            padding: 10px 15px;
+            padding: var(--lg-space-5) var(--lg-space-6);
         }
     }
 
     &-footer {
+        align-items: start;
+        border-top: 1px solid var(--lg-border-subtle);
+        color: var(--lg-glass-ink);
         display: flex;
         flex-direction: column;
         justify-content: start;
-        align-items: start;
-
-        color: var(--theme-texts-5);
-        border-top: 1px solid var(--theme-standard-borders);
-        padding: 15px 20px 20px;
+        opacity: 0.8;
+        padding: var(--lg-space-6) var(--lg-space-7) var(--lg-space-7);
         @include media-breakpoint-down(lg) {
-            padding: 10px 15px 15px;
+            padding: var(--lg-space-5) var(--lg-space-6) var(--lg-space-6);
         }
     }
 }
 
 div.progress,
 div.progress-bar {
-    border-radius: 0 !important;
+    border-radius: var(--lg-radius-pill) !important;
 }
 
+// Progress fills animate at 320ms, per the motion tokens.
 div.progress {
-    border: 1px solid var(--theme-opacity-border);
+    background-color: var(--lg-fill-ghost);
+    border: 1px solid var(--lg-border-subtle);
+    height: 10px;
     padding: 2px;
-    background-color: var(--theme-empty);
-    height: 12px;
+}
+
+div.progress-bar {
+    background-color: var(--lg-fill-accent);
+    transition: width var(--lg-duration-slow) var(--lg-ease-inout);
 }

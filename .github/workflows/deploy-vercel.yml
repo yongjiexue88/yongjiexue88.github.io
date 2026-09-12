@@ -1,0 +1,93 @@
+name: Deploy site to Vercel
+
+# Production on main, a preview deployment on every pull request.
+#
+# This project has no Vercel Git integration connected, so this workflow is the
+# only thing that ships to Vercel. If you ever connect the repo in the Vercel
+# dashboard, delete this workflow — otherwise every push deploys twice.
+#
+# It runs alongside deploy.yml, which publishes the same build to GitHub Pages.
+# Both targets serve the same `dist`, so the two stay in sync.
+#
+# Requires three repository secrets: VERCEL_TOKEN, VERCEL_ORG_ID and
+# VERCEL_PROJECT_ID. Build settings (output directory, SPA rewrite, cache
+# headers) come from vercel.json rather than the dashboard, so they are
+# reviewable in git.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+# A newer push supersedes an in-flight deploy of the same ref.
+concurrency:
+  group: vercel-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          # Matches deploy.yml, so both targets build on the same runtime.
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@59
+
+      # `vercel pull` fetches the project settings and environment variables
+      # that `vercel build` needs. Production and preview are pulled separately
+      # because they can carry different environment values.
+      - name: Resolve deployment target
+        id: target
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "environment=preview" >> "$GITHUB_OUTPUT"
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          else
+            echo "environment=production" >> "$GITHUB_OUTPUT"
+            echo "flag=--prod" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pull Vercel environment
+        run: vercel pull --yes --environment=${{ steps.target.outputs.environment }} --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build
+        run: vercel build ${{ steps.target.outputs.flag }} --token=${{ secrets.VERCEL_TOKEN }}
+
+      # --prebuilt uploads the artifact built above instead of rebuilding on
+      # Vercel, so what was tested in CI is exactly what gets served.
+      - name: Deploy
+        id: deploy
+        run: |
+          url=$(vercel deploy --prebuilt ${{ steps.target.outputs.flag }} --token=${{ secrets.VERCEL_TOKEN }})
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Summarise
+        run: |
+          {
+            echo "### Vercel ${{ steps.target.outputs.environment }} deployment"
+            echo
+            echo "${{ steps.deploy.outputs.url }}"
+          } >> "$GITHUB_STEP_SUMMARY"

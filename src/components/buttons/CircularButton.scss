@@ -15,45 +15,43 @@ button.circular-button {
     }
 }
 
-/** Variants **/
+/**
+ * Variants.
+ *
+ * An icon button is a control that floats over content, so the default and
+ * transparent variants take the glass material at full round. The 2px borders
+ * these used to carry are gone: glass has no border, it has an edge — a 1.5px
+ * masked ring plus the three-part inset.
+ */
 button.circular-button-variant-default {
-    background-color: var(--theme-boards-background-accent);
-    color: var(--theme-texts);
-    border: 2px solid var(--theme-standard-borders-accent);
-
-    &:hover {
-        background-color: var(--theme-links);
-        color: var(--theme-texts-inv);
-        border-color: var(--theme-links);
-    }
+    color: var(--lg-glass-ink);
+    @include lg-glass(50%, base, true);
 }
 
+// "Blend" sits inside another surface, so rule 2 makes it solid.
 button.circular-button-variant-blend {
-    background-color: var(--theme-card-background);
-    color: var(--theme-texts);
-    border: 2px solid var(--theme-standard-borders);
-
-    i {
-        opacity: 0.3;
-    }
-
-    &:hover {
-        background-color: var(--theme-card-background);
-        color: var(--theme-texts);
-    }
-}
-
-button.circular-button-variant-transparent {
-    background-color: transparent;
-    color: var(--theme-texts);
-    border: 2px solid var(--theme-standard-borders-accent);
+    @include lg-solid(50%);
 
     i {
         opacity: 0.5;
     }
 
     &:hover {
-        border-color: var(--theme-standard-borders-accent);
+        color: var(--lg-text-accent);
+    }
+}
+
+button.circular-button-variant-transparent {
+    background-color: transparent;
+    border: 0;
+    color: var(--lg-text-primary);
+
+    i {
+        opacity: 0.6;
+    }
+
+    &:hover {
+        color: var(--lg-text-accent);
     }
 }
 
@@ -64,8 +62,8 @@ button.circular-button-variant-blend, button.circular-button-variant-transparent
 
     &:hover {
         i {
-            scale: 1.05;
             opacity: 1;
+            scale: 1.05;
         }
     }
 }

@@ -1,0 +1,19 @@
+:root {
+  /* Glass casts one soft, wide, low-opacity shadow. It never stacks. */
+  --lg-shadow-glass: 0px 12px 40px rgba(0, 0, 0, 0.25);
+  --lg-shadow-glass-over-light: 0px 16px 70px rgba(0, 0, 0, 0.75);
+
+  /* Solid surfaces use a two-part shadow: contact + ambient */
+  --lg-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.24);
+  --lg-shadow-2: 0 1px 2px rgba(0, 0, 0, 0.24), 0 4px 12px rgba(0, 0, 0, 0.20);
+  --lg-shadow-3: 0 2px 4px rgba(0, 0, 0, 0.26), 0 12px 32px rgba(0, 0, 0, 0.28);
+  --lg-shadow-4: 0 4px 8px rgba(0, 0, 0, 0.28), 0 24px 64px rgba(0, 0, 0, 0.36);
+
+  /* Layer order inside a glass stack */
+  --lg-z-warp: 0;
+  --lg-z-content: 1;
+  --lg-z-edge: 2;
+  --lg-z-sheen: 3;
+  --lg-z-overlay: 100;
+  --lg-z-toast: 200;
+}

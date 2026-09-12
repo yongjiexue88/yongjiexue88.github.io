@@ -1,7 +1,6 @@
 @import "/src/styles/extend.scss";
 
 div.layout-static-background {
-    background-color: var(--theme-background);
     height: 100%;
     overflow: hidden;
     pointer-events: none;
@@ -11,58 +10,32 @@ div.layout-static-background {
     z-index: $z-index-background;
 }
 
-// Flat ground. Three warm radial "spotlight" gradients used to sit here; they
-// were decorative haze with no function, and they fought the cool palette.
-// The grain below and the mountain illustration carry the surface instead.
-div.layout-static-background-paper {
-    background: var(--theme-background);
+/**
+ * The mesh, stop for stop from the design system's Backdrop component:
+ * three radial gradients at 60% 55%, fading to transparent at 72%, over a
+ * flat base one step off the page ground.
+ *
+ * Dark uses the `azure` mesh — the system's lead hue, and the ground the
+ * material is tuned for. Light uses `pale`, which is the same construction at
+ * high lightness so glass over it still has structure to bend.
+ */
+div.layout-static-background-mesh {
     inset: 0;
     position: absolute;
+
+    /* Backdrop hue="pale" */
+    background-color: var(--lg-neutral-100);
+    background-image:
+        radial-gradient(60% 55% at 70% 14%, oklch(0.92 0.07 250 / 0.95) 0%, transparent 72%),
+        radial-gradient(60% 55% at 14% 74%, oklch(0.90 0.06 320 / 0.90) 0%, transparent 72%),
+        radial-gradient(60% 55% at 90% 90%, oklch(0.94 0.05 170 / 0.85) 0%, transparent 72%);
 }
 
-// Rice-paper grain via inline SVG fractal noise.
-div.layout-static-background-grain {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.28  0 0 0 0 0.22  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>");
-    background-repeat: repeat;
-    inset: 0;
-    mix-blend-mode: multiply;
-    opacity: 0.18;
-    position: absolute;
-}
-
-svg.layout-static-background-mountain {
-    bottom: 0;
-    color: var(--theme-texts-light, #2a2a2a);
-    height: 32vh;
-    left: 0;
-    max-height: 320px;
-    min-height: 180px;
-    opacity: 0.55;
-    position: absolute;
-    width: 100%;
-
-    @include media-breakpoint-down(md) {
-        height: 22vh;
-        min-height: 120px;
-    }
-}
-
-svg.layout-static-background-sakura {
-    color: rgba(180, 95, 110, 0.85);
-    height: auto;
-    opacity: 0.6;
-    position: absolute;
-    right: -60px;
-    top: -20px;
-    transform: scaleX(-1) rotate(-8deg);
-    transform-origin: center;
-    width: 420px;
-
-    @include media-breakpoint-down(md) {
-        width: 260px;
-    }
-
-    @include media-breakpoint-down(sm) {
-        display: none;
-    }
+[data-theme="dark"] div.layout-static-background-mesh {
+    /* Backdrop hue="azure" */
+    background-color: var(--lg-neutral-950);
+    background-image:
+        radial-gradient(60% 55% at 62% 12%, oklch(0.62 0.19 250 / 0.85) 0%, transparent 72%),
+        radial-gradient(60% 55% at 12% 78%, oklch(0.52 0.17 285 / 0.75) 0%, transparent 72%),
+        radial-gradient(60% 55% at 88% 82%, oklch(0.58 0.15 200 / 0.60) 0%, transparent 72%);
 }

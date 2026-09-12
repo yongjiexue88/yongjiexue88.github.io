@@ -1,0 +1,97 @@
+/**
+ * Liquidglass — bridge layer.
+ *
+ * Two jobs, both about not rewriting 100+ component stylesheets:
+ *
+ * 1. Derived glass tokens. `GlassSurface.jsx` decides a few values in JS
+ *    depending on whether the pane sits over a dark or a light ground (veil,
+ *    ink colour, which edge layer carries the gradient). Those branches are
+ *    expressed here as theme-scoped custom properties so `_glass.scss` can
+ *    stay one mixin instead of two.
+ *
+ * 2. The old palette's names, repointed. The previous system exposed a set of
+ *    `--signal-*` variables that component styles reference ~120 times. Rather
+ *    than touch every call site, each name now resolves to its Liquidglass
+ *    equivalent, so an untouched stylesheet still lands inside this palette.
+ *    The large surfaces are restyled properly on top of that.
+ *
+ * Loaded from app.scss after the theme files, so it wins on equal specificity.
+ */
+
+@import "glass";
+
+:root,
+[data-theme="light"] {
+    /* ---- Type. Geist, plus the CJK fallbacks the site's content needs ----
+       The system flags Geist as a substitution and ships no CJK glyphs; this
+       site is bilingual, so Noto Sans SC follows it in every stack. */
+    --lg-font-sans: "Geist", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --lg-font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, "Noto Sans Mono CJK SC", monospace;
+
+    /* The old system's three type roles now resolve to the two Geist stacks.
+       Liquidglass has no separate display face — the display role is the sans
+       at 72px with -0.035em tracking, not a second family. */
+    --font-signal-display: var(--lg-font-sans);
+    --font-signal-body: var(--lg-font-sans);
+    --font-signal-mono: var(--lg-font-mono);
+
+    /* ---- Glass over a light ground ----
+       The pane stays light and flips its content to ink, rather than taking
+       the source library's smoked treatment (which goes near-black on a pale
+       UI). Layer 1 becomes a plain ink ring; layer 2 carries the gradient at
+       0.5 opacity. Both values from the lightGlass branch of GlassSurface. */
+    --lg-glass-veil: rgba(255, 255, 255, 0.62);
+    --lg-glass-ink: var(--lg-text-primary);
+    --lg-edge-inset: inset 0 0 0 1px rgba(4, 6, 10, 0.12);
+    --lg-edge-a: none;
+    --lg-edge-b: #{lg-edge-gradient(0.5, 0.9)};
+    --lg-edge-screen-opacity: 0.5;
+    /* Glass over light casts a shorter, tighter shadow than the smoked pane. */
+    --lg-shadow-ambient: 0px 10px 34px rgba(4, 6, 10, 0.16);
+
+    /* ---- Old palette, repointed ---- */
+    --signal-deep: var(--lg-neutral-950);
+    --signal-deep-ink: #ffffff;
+    --signal-deep-muted: rgba(255, 255, 255, 0.6);
+    --signal-deep-rule: rgba(255, 255, 255, 0.16);
+    --signal-paper: var(--lg-solid-fill);
+    --signal-paper-ink: var(--lg-text-primary);
+    /* Rule 4: semantic colour rides on text and border, never a filled block.
+       What used to be saturated blue and lime slabs is now ghost fill, and
+       the accent appears only where something is interactive or selected. */
+    --signal-blue: var(--lg-fill-ghost);
+    --signal-blue-ink: var(--lg-text-primary);
+    --signal-lime: var(--lg-fill-accent);
+    --signal-coral: var(--lg-azure-bright);
+    --signal-periwinkle: var(--lg-fill-ghost-hover);
+}
+
+[data-theme="dark"] {
+    /* Over a dark ground the pane takes no veil — the refraction is the point
+       and a fill would hide it — and both edge layers carry gradients. */
+    --lg-glass-veil: transparent;
+    --lg-glass-ink: #ffffff;
+    --lg-edge-inset: var(--lg-edge-inset-source);
+    --lg-edge-a: #{lg-edge-gradient(0.32, 0.6)};
+    --lg-edge-b: #{lg-edge-gradient(0.12, 0.4)};
+    --lg-edge-screen-opacity: 0.2;
+    --lg-shadow-ambient: var(--lg-shadow-glass);
+
+    --signal-deep: var(--lg-neutral-1000);
+    --signal-paper: var(--lg-solid-fill);
+    --signal-paper-ink: var(--lg-text-primary);
+    --signal-blue: var(--lg-fill-ghost);
+    --signal-blue-ink: var(--lg-text-primary);
+    --signal-lime: var(--lg-fill-accent);
+    --signal-coral: var(--lg-azure-bright);
+    --signal-periwinkle: var(--lg-fill-ghost-hover);
+}
+
+:root {
+    /* The three-part inset from tokens/glass.css, kept under a second name so
+       the light theme can swap it out and the dark theme can swap it back. */
+    --lg-edge-inset-source:
+        0 0 0 0.5px rgba(255, 255, 255, 0.5) inset,
+        0 1px 3px rgba(255, 255, 255, 0.25) inset,
+        0 1px 4px rgba(0, 0, 0, 0.35);
+}

@@ -1,34 +1,42 @@
 /**
- * @description Light theme — technical editorial.
+ * @description Light theme — Liquidglass.
  *
- * Cool neutrals rather than warm paper: a blue-grey ground, navy-black ink,
- * and borders that are the text hue held at low opacity rather than an opaque
- * grey. That tinted-border trick is most of why this register reads as
- * cohesive instead of boxy.
+ * The same ramp read from the other end: `--lg-neutral-50` ground, ink text,
+ * and azure-deep for the accent so contrast holds on a pale surface. Glass on
+ * a light ground behaves differently — the pane stays light and flips its
+ * content to ink rather than going smoked — and that switch is driven by
+ * `--lg-over-light` in `liquidglass/tokens/semantic.css`.
  *
- * Depth comes from tint and hairlines only — see the no-shadow rule in
- * pages.scss. Emphasis, where needed, is a ring rather than a drop shadow.
- *
- * Emitted on :root as well as [data-theme="light"], so a palette always
- * exists even before ThemeProvider stamps the attribute. NOTE: :root and
+ * Emitted on :root as well as [data-theme="light"], so a palette always exists
+ * before ThemeProvider stamps the attribute. NOTE: :root and
  * [data-theme="dark"] have equal specificity, which is why _constants.scss
  * imports this file *before* the dark one.
  */
 
 @import "theme-variables-builder";
 
-$light-accent:  #2349E8;
-$light-muted:   #4E5864;
-$light-text:    #0E0918;
-$light-danger:  #C82D20;
-$light-neutral: #D8DBFF;
+/** --lg-azure-deep oklch(0.58 0.16 250) — azure held down for light grounds. **/
+$light-accent:  #0D7DD4;
+/** --lg-neutral-500 **/
+$light-muted:   #4D5766;
+/** --lg-text-primary (light) = --lg-neutral-1000 **/
+$light-text:    #04060A;
+/** --lg-hue-danger, taken down to hold contrast on a pale ground. **/
+$light-danger:  #B62F2C;
+/** --lg-neutral-200 **/
+$light-neutral: #CFD5DD;
 
-$light-ground:  #E9F7F4;
-$light-surface: #F4FBF9;
-$light-boards:  #DDEDE9;
-$light-badges:  #D8DBFF;
-$light-empty:   #F4FBF9;
-$light-rule:    rgba(14, 9, 24, 0.24);
+/** --lg-bg-base (light) = --lg-neutral-50 **/
+$light-ground:  #F7F9FB;
+/** --lg-bg-raised (light) = --lg-neutral-0 **/
+$light-surface: #FFFFFF;
+/** --lg-neutral-100 **/
+$light-boards:  #EEF1F5;
+/** --lg-neutral-150 **/
+$light-badges:  #E2E7EC;
+$light-empty:   #FFFFFF;
+/** --lg-border-default (light) **/
+$light-rule:    rgba(4, 6, 10, 0.17);
 
 :root,
 [data-theme="light"] {
@@ -68,6 +76,6 @@ $light-rule:    rgba(14, 9, 24, 0.24);
 
         /** DEFAULT BORDERS: **/            $light-rule,
         /** SCROLLBAR TRACK: **/            $light-boards,
-        /** SCROLLBAR THUMB: **/            #65728A,
+        /** SCROLLBAR THUMB: **/            #7B8595,
     );
 }

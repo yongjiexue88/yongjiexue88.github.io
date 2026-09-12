@@ -1,0 +1,54 @@
+<!-- @dsCard group="Motion" viewport="700x160" name="Elasticity" subtitle="Glass leans toward the cursor inside a 200px zone, stretching along its travel axis" -->
+<!DOCTYPE html>
+<html lang="en" data-lg-theme="dark">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 700px; min-height: 160px; box-sizing: border-box; padding: 20px;
+    background: var(--lg-neutral-950);
+    color: var(--lg-text-primary); font: var(--lg-type-body);
+    -webkit-font-smoothing: antialiased;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  a { color: var(--lg-text-accent); text-decoration: none; }
+  a:hover { color: var(--lg-fill-accent-hover); }
+  .row { display: flex; gap: 10px; }
+  .col { display: flex; flex-direction: column; }
+  .t { font: var(--lg-type-mono); letter-spacing: var(--lg-tracking-caps); text-transform: uppercase; color: var(--lg-text-tertiary); }
+  .v { font: var(--lg-type-mono); color: var(--lg-text-secondary); }
+  
+</style>
+</head>
+<body>
+<div class="col" style="gap:10px">
+  <div style="display:flex;align-items:baseline;gap:14px">
+    <span class="v" style="width:190px;font-size:10px">--lg-elasticity</span>
+    <span style="font:var(--lg-type-label);width:52px">0.15</span>
+    <span class="v" style="font-size:10px">default lean</span>
+  </div><div style="display:flex;align-items:baseline;gap:14px">
+    <span class="v" style="width:190px;font-size:10px">--lg-elasticity-button</span>
+    <span style="font:var(--lg-type-label);width:52px">0.35</span>
+    <span class="v" style="font-size:10px">source button example</span>
+  </div><div style="display:flex;align-items:baseline;gap:14px">
+    <span class="v" style="width:190px;font-size:10px">--lg-activation-zone</span>
+    <span style="font:var(--lg-type-label);width:52px">200px</span>
+    <span class="v" style="font-size:10px">proximity radius</span>
+  </div><div style="display:flex;align-items:baseline;gap:14px">
+    <span class="v" style="width:190px;font-size:10px">--lg-stretch-major</span>
+    <span style="font:var(--lg-type-label);width:52px">0.3</span>
+    <span class="v" style="font-size:10px">along travel axis</span>
+  </div><div style="display:flex;align-items:baseline;gap:14px">
+    <span class="v" style="width:190px;font-size:10px">--lg-stretch-minor</span>
+    <span style="font:var(--lg-type-label);width:52px">0.15</span>
+    <span class="v" style="font-size:10px">cross-axis compression</span>
+  </div><div style="display:flex;align-items:baseline;gap:14px">
+    <span class="v" style="width:190px;font-size:10px">--lg-scale-press</span>
+    <span style="font:var(--lg-type-label);width:52px">0.96</span>
+    <span class="v" style="font-size:10px">active press</span>
+  </div>
+</div>
+</body>
+</html>

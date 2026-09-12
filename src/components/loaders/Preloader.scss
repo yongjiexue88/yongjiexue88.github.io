@@ -3,7 +3,7 @@
 div.preloader-window {
     position: fixed;
     z-index: $z-index-loader;
-    background-color: $loader-background;
+    background-color: $loader-background; // --lg-bg-base (dark)
     color: $loader-contrast;
 
     width: 100vw;

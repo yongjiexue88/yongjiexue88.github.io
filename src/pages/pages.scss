@@ -1,13 +1,23 @@
 @import "/src/styles/extend.scss";
 
+/**
+ * Shared page furniture, in Liquidglass.
+ *
+ * The old system drew collections as a single hairline grid: cards sharing
+ * 1px borders, zero radius, flat paper fills, and an explicit `box-shadow:
+ * none` rule to keep everything resolutely flat. Liquidglass inverts all of
+ * that — cards float over the ground on their own glass panes, separated by
+ * space rather than rules, each carrying exactly one shadow.
+ */
+
 $page-wide: 1440px;
 $page-read: 780px;
 
 .page {
-    width: 100%;
-    max-width: $page-wide;
     margin: 0 auto;
-    padding: 0 3vw 88px;
+    max-width: $page-wide;
+    padding: 0 3vw var(--lg-space-13);
+    width: 100%;
 }
 
 .page-read {
@@ -15,251 +25,230 @@ $page-read: 780px;
 }
 
 .page-header {
-    display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.55fr);
     align-items: end;
-    gap: 40px;
+    display: grid;
+    gap: var(--lg-space-9);
+    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.55fr);
     margin-bottom: 0;
-    padding: 72px 0 34px;
-    border-bottom: 2px solid var(--theme-texts);
+    padding: var(--lg-space-13) 0 var(--lg-space-9);
+    // A hairline, not the old 2px slab rule.
+    border-bottom: 1px solid var(--lg-border-subtle);
 }
 
 .page-breadcrumb,
 .post-breadcrumb {
-    font-family: var(--font-signal-mono);
-    font-size: 0.76rem;
-    text-transform: uppercase;
+    @include lg-micro-label();
 
     a {
-        color: var(--theme-muted) !important;
+        color: var(--lg-text-tertiary) !important;
 
-        &:hover { color: var(--theme-primary) !important; }
+        &:hover { color: var(--lg-text-accent) !important; }
     }
 }
 
 .page-breadcrumb {
     grid-column: 1 / -1;
-    margin-bottom: -20px;
+    margin-bottom: calc(var(--lg-space-7) * -1);
 }
 
+// Display role: --lg-size-4xl at the top of the ramp, weight 600, -0.035em.
+// It ran to 8.4rem in the old system's condensed face.
 .page-title {
+    color: var(--lg-text-primary);
+    font-family: var(--lg-font-sans);
+    font-size: clamp(2.25rem, 6vw, 3.5rem) !important;
+    font-weight: var(--lg-weight-semibold);
+    letter-spacing: var(--lg-tracking-tighter);
+    line-height: var(--lg-leading-tight);
     margin: 0;
-    font-family: var(--font-signal-display);
-    font-size: clamp(4.4rem, 8vw, 8.4rem) !important;
-    font-weight: 700;
-    line-height: 0.8;
-    letter-spacing: -0.055em;
-    color: var(--theme-texts);
 }
 
 .page-blurb {
-    max-width: 42ch;
-    margin: 0 0 2px;
-    font-size: clamp(1rem, 1.3vw, 1.2rem);
-    line-height: 1.45;
-    color: var(--theme-texts-light-2);
+    color: var(--lg-text-secondary);
+    font-size: var(--lg-size-md);
+    line-height: var(--lg-leading-normal);
+    margin: 0 0 var(--lg-space-1);
+    max-width: 46ch;
 }
 
 .card-grid {
+    border: 0;
     display: grid;
+    gap: var(--lg-space-6);
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0;
-    border-top: 1px solid var(--theme-texts);
-    border-left: 1px solid var(--theme-texts);
-    counter-reset: post-index;
+    padding-top: var(--lg-space-9);
 }
 
 a.post-card {
-    position: relative;
+    // The old system stamped a CSS counter ("01", "02"…) into each card's
+    // corner as an editorial index. It is gone for two reasons: the glass
+    // material owns ::before and ::after for its edge layers, and a numeral
+    // that carries no information is decoration, which this system does not do.
+    color: var(--lg-glass-ink) !important;
     display: flex;
-    min-height: 330px;
     flex-direction: column;
-    padding: 28px 30px 26px;
-    border-right: 1px solid var(--theme-texts);
-    border-bottom: 1px solid var(--theme-texts);
-    border-radius: 0;
-    background: var(--signal-paper);
-    color: var(--signal-paper-ink) !important;
-    transition: background-color 180ms ease-out, color 180ms ease-out;
-    counter-increment: post-index;
-
-    &:before {
-        content: counter(post-index, decimal-leading-zero);
-        position: absolute;
-        top: 28px;
-        right: 30px;
-        font-family: var(--font-signal-mono);
-        font-size: 0.72rem;
-        color: currentColor;
-    }
+    min-height: 300px;
+    overflow: hidden;
+    padding: var(--lg-space-8);
+    @include lg-glass(var(--lg-radius-xl), base, true);
+    @include lg-lift();
 
     &:hover,
     &:focus-visible {
-        background: var(--signal-periwinkle);
-        color: var(--signal-paper-ink) !important;
+        color: var(--lg-glass-ink) !important;
     }
 }
 
 .post-card-cover {
-    width: calc(100% + 60px);
-    margin: -28px -30px 24px;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
     border: 0;
-    border-bottom: 1px solid currentColor;
-    border-radius: 0;
+    // The cover bleeds to the pane's edge, so it takes the pane's top corners.
+    border-radius: var(--lg-radius-lg) var(--lg-radius-lg) 0 0;
+    margin: calc(var(--lg-space-8) * -1) calc(var(--lg-space-8) * -1) var(--lg-space-7);
+    object-fit: cover;
+    width: calc(100% + var(--lg-space-8) * 2);
 }
 
 .post-card-meta {
+    align-items: center;
+    color: var(--lg-glass-ink);
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    max-width: calc(100% - 48px);
-    margin-bottom: 42px;
-    font-family: var(--font-signal-mono);
-    font-size: 0.72rem;
-    color: currentColor;
-    opacity: 0.66;
-    text-transform: uppercase;
+    gap: var(--lg-space-4);
+    margin-bottom: var(--lg-space-8);
+    opacity: 0.6;
+    @include lg-micro-label();
 }
 
 .post-card-title {
-    max-width: 18ch;
-    margin: 0 0 16px;
-    font-family: var(--font-signal-display);
-    font-size: clamp(1.8rem, 3vw, 3rem) !important;
-    font-weight: 600;
-    line-height: 0.95;
-    letter-spacing: -0.045em;
+    font-family: var(--lg-font-sans);
+    font-size: var(--lg-size-xl) !important;
+    font-weight: var(--lg-weight-medium);
+    letter-spacing: var(--lg-tracking-tight);
+    line-height: var(--lg-leading-snug);
+    margin: 0 0 var(--lg-space-5);
+    max-width: 24ch;
 }
 
 .post-card-desc {
+    color: var(--lg-glass-ink);
+    font-size: var(--lg-size-sm);
+    line-height: var(--lg-leading-normal);
+    margin: 0 0 var(--lg-space-7);
     max-width: 58ch;
-    margin: 0 0 24px;
-    font-size: 0.9rem;
-    line-height: 1.55;
-    color: currentColor;
     opacity: 0.72;
 }
 
 .post-card-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: var(--lg-space-3);
     margin-top: auto;
 }
 
+/**
+ * Tags are controls, so they are pills at radius 999 — the system's default
+ * for anything interactive. They were square, mono-cased and outlined in
+ * currentColor; the lime hover fill is gone with rule 4.
+ */
 .tag-pill {
-    display: inline-flex;
-    min-height: 28px;
     align-items: center;
-    padding: 4px 9px;
-    border: 1px solid currentColor;
-    border-radius: 0;
-    background: transparent;
-    color: inherit !important;
-    font-family: var(--font-signal-mono);
-    font-size: 0.7rem;
-    line-height: 1;
+    color: var(--lg-glass-ink) !important;
+    display: inline-flex;
+    line-height: var(--lg-leading-flat);
+    min-height: 32px;
+    padding: var(--lg-glass-padding-button);
     white-space: nowrap;
-    transition: background-color 150ms ease-out, color 150ms ease-out;
+    @include lg-glass(var(--lg-radius-pill), base, true);
+    @include lg-micro-label();
 
     &:hover,
     &:focus-visible {
-        background: var(--signal-lime);
-        color: var(--signal-deep) !important;
+        color: var(--lg-text-accent) !important;
     }
 }
 
 .tag-pill-count {
-    margin-left: 8px;
     font-variant-numeric: tabular-nums;
-    opacity: 0.66;
+    margin-left: var(--lg-space-4);
+    opacity: 0.6;
 }
 
 .page-empty {
-    padding: 72px 0;
-    border-bottom: 1px solid var(--theme-standard-borders);
-    color: var(--theme-muted);
-    font-family: var(--font-signal-mono);
+    border-bottom: 1px solid var(--lg-border-subtle);
+    color: var(--lg-text-tertiary);
+    font-family: var(--lg-font-mono);
+    padding: var(--lg-space-13) 0;
 }
 
 .page-filters {
+    align-items: center;
+    border: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 0;
+    gap: var(--lg-space-3);
     margin: 0;
-    border-bottom: 1px solid var(--theme-texts);
+    padding: var(--lg-space-8) 0 0;
 }
 
 button.page-filter {
-    min-height: 44px;
-    padding: 0 16px;
-    border: 0;
-    border-right: 1px solid var(--theme-texts);
-    border-radius: 0;
-    background: transparent;
-    color: var(--theme-muted);
-    font-family: var(--font-signal-mono);
-    font-size: 0.74rem;
-    text-transform: uppercase;
+    align-items: center;
+    color: var(--lg-glass-ink);
+    display: inline-flex;
+    min-height: 36px;
+    padding: var(--lg-glass-padding-button);
+    @include lg-glass(var(--lg-radius-pill), base, true);
+    @include lg-micro-label();
 
-    &:hover { color: var(--theme-texts); }
+    &:hover { color: var(--lg-text-accent); }
 }
 
+// A selected state is interaction, which is what the accent is for.
 button.page-filter-active {
-    background: var(--signal-lime);
-    color: var(--signal-deep);
+    background: var(--lg-fill-accent);
+    color: var(--lg-text-inverse);
     text-decoration: none;
+    text-shadow: none;
+
+    &:hover { color: var(--lg-text-inverse); }
 }
 
 .page-filter-sep { display: none; }
 
 figure.page-banner {
-    margin: 32px 0 0;
+    margin: var(--lg-space-9) 0 0;
 
     img {
-        display: block;
-        width: 100%;
         aspect-ratio: 21 / 9;
+        border: 1px solid var(--lg-border-subtle);
+        border-radius: var(--lg-radius-xl);
+        display: block;
         object-fit: cover;
-        border: 1px solid var(--theme-texts);
-        border-radius: 0;
+        width: 100%;
     }
 }
 
-a.post-card,
-figure.page-banner img,
-figure.post-hero img,
-div.card {
-    box-shadow: none;
-}
-
+/**
+ * Focus: the system's two-part ring, which survives on glass and on solid
+ * alike. It replaces the coral outline the old system used.
+ */
 a.post-card:focus-visible,
 a.top-nav-link:focus-visible,
 .tag-pill:focus-visible,
 button.page-filter:focus-visible {
-    outline: 3px solid var(--signal-coral);
-    outline-offset: -4px;
-    box-shadow: none;
-    border-radius: 0;
+    box-shadow: var(--lg-shadow-ambient), var(--lg-focus-ring);
+    outline: 0;
 }
 
 @include media-breakpoint-down(md) {
     .page {
-        padding: 0 20px 64px;
+        padding: 0 20px var(--lg-space-12);
     }
 
     .page-header {
+        gap: var(--lg-space-7);
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 44px 0 24px;
-    }
-
-    .page-title {
-        font-size: clamp(3.5rem, 18vw, 6rem) !important;
+        padding: var(--lg-space-11) 0 var(--lg-space-8);
     }
 
     .page-blurb { max-width: 52ch; }
@@ -267,24 +256,27 @@ button.page-filter:focus-visible {
     .card-grid { grid-template-columns: 1fr; }
 
     a.post-card {
-        min-height: 280px;
-        padding: 24px 22px;
-
-        &:before { top: 24px; right: 22px; }
+        min-height: 0;
+        padding: var(--lg-space-7);
     }
 
-    .post-card-meta { margin-bottom: 34px; }
-    .post-card-title { font-size: clamp(2rem, 10vw, 3.2rem) !important; }
+    .post-card-cover {
+        margin: calc(var(--lg-space-7) * -1) calc(var(--lg-space-7) * -1) var(--lg-space-6);
+        width: calc(100% + var(--lg-space-7) * 2);
+    }
+
+    .post-card-meta { margin-bottom: var(--lg-space-7); }
 }
 
 @media (prefers-reduced-motion: reduce) {
     a.post-card,
-    .tag-pill { transition: none; }
+    .tag-pill,
+    button.page-filter { transition: none; }
 }
 
 .post-language-note {
-    font-size: 0.8rem;
-    line-height: 1.5;
-    margin: 0.5rem 0;
+    font-size: var(--lg-size-sm);
+    line-height: var(--lg-leading-normal);
+    margin: var(--lg-space-4) 0;
     &:empty { display: none; }
 }

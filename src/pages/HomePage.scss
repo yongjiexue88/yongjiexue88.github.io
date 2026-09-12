@@ -1,135 +1,179 @@
 @import "/src/styles/extend.scss";
 
+/**
+ * Home, in Liquidglass.
+ *
+ * What changed, and why:
+ *
+ * - Nothing here paints an opaque fill any more. The hero used to be a white
+ *   slab and the index a saturated blue one; both now sit on the mesh ground,
+ *   because glass with nothing behind it is a grey box (rule 3).
+ * - Type comes off the system ramp. The old hero ran at 19.45rem with a
+ *   scaleX(0.86) squeeze and white-space:nowrap — a poster treatment from a
+ *   condensed display face that this system does not have. Liquidglass tops
+ *   out at 96px, weight 600, -0.035em, and has no bold display type at all.
+ * - The flat lime and coral blocks are gone. Rule 4: one accent per view,
+ *   accent means interaction, and semantic colour rides on text and border
+ *   rather than on a filled block.
+ * - Radius everywhere. The old system's signature was 0; below 12px a
+ *   refracting surface has no curvature to show, so panels take 24–32 and
+ *   controls take the pill.
+ */
+
 .home-page {
-    width: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
+/** ------------ IDENTITY ------------ **/
+
 section.home-identity {
+    padding: var(--lg-space-14) 3vw var(--lg-space-12);
     position: relative;
-    min-height: 390px;
-    padding: 28px 3vw 24px;
-    background: var(--signal-paper);
-    color: var(--signal-paper-ink);
-    border-bottom: 1px solid var(--signal-paper-ink);
 }
 
 h1.home-hero-title {
+    color: var(--lg-text-primary);
+    font-family: var(--lg-font-sans);
+    // --lg-size-3xl → --lg-size-6xl. The display role's own tracking and
+    // leading, not the old poster's.
+    font-size: clamp(2.5rem, 9vw, 6rem) !important;
+    font-weight: var(--lg-weight-semibold);
+    letter-spacing: var(--lg-tracking-tighter);
+    line-height: var(--lg-leading-tight);
     margin: 0;
-    max-width: none;
-    font-family: var(--font-signal-display);
-    font-size: clamp(8rem, 21.6vw, 19.45rem) !important;
-    font-weight: 700;
-    line-height: 0.72;
-    letter-spacing: -0.04em;
-    white-space: nowrap;
-    color: var(--signal-paper-ink);
-    transform: scaleX(0.86);
-    transform-origin: left center;
-    width: 116.28%;
+    max-width: 22ch;
 }
 
 h1.home-hero-title-zh {
+    // Geist ships no CJK glyphs; Noto Sans SC carries these and sets tighter.
     font-family: 'Noto Sans SC', sans-serif;
-    font-size: clamp(7rem, 17vw, 15rem) !important;
-    letter-spacing: -0.05em;
+    font-size: clamp(2.5rem, 8vw, 5rem) !important;
+    letter-spacing: var(--lg-tracking-tight);
 }
 
 div.home-identity-base {
-    display: grid;
-    grid-template-columns: 1fr auto;
     align-items: end;
-    gap: 32px;
-    margin-top: 34px;
+    display: grid;
+    gap: var(--lg-space-9);
+    grid-template-columns: 1fr auto;
+    margin-top: var(--lg-space-10);
 }
 
 div.home-identity-facts {
     p {
+        color: var(--lg-text-secondary);
+        font-size: var(--lg-size-lg);
+        font-weight: var(--lg-weight-regular);
+        line-height: var(--lg-leading-snug);
         margin: 0;
-        font-size: clamp(1.12rem, 1.6vw, 1.5rem);
-        font-weight: 600;
-        line-height: 1.2;
     }
 }
 
 div.home-identity-actions {
+    align-items: center;
     display: flex;
-    align-items: center;
-    gap: 34px;
+    gap: var(--lg-space-6);
 }
 
+/**
+ * Buttons take the source's glass padding (8px 16px) and the pill radius.
+ * Height is held at 48px rather than the old 64px: at pill radius a 64px
+ * control reads as a lozenge, and the system's controls are compact.
+ */
 a.home-action {
-    display: inline-flex;
-    min-height: 64px;
     align-items: center;
+    border-radius: var(--lg-radius-pill);
+    display: inline-flex;
+    font-size: var(--lg-size-base);
+    font-weight: var(--lg-weight-medium);
+    gap: var(--lg-space-5);
     justify-content: space-between;
-    gap: 56px;
-    padding: 0 30px;
-    font-size: 1.08rem;
-    font-weight: 600;
-    color: var(--signal-paper-ink) !important;
-    border-radius: 0;
-    transition: background-color 180ms ease-out, color 180ms ease-out;
-
-    &:focus-visible {
-        outline: 3px solid var(--signal-coral);
-        outline-offset: 4px;
-    }
+    min-height: 48px;
+    padding: var(--lg-glass-padding-button);
+    padding-left: var(--lg-space-7);
+    padding-right: var(--lg-space-7);
+    transition: var(--lg-transition-glass);
 }
 
+// The one accent-filled element on the page: a primary action.
 a.home-action-primary {
-    background: var(--signal-lime);
-    color: var(--signal-deep) !important;
+    background: var(--lg-fill-accent);
+    box-shadow: var(--lg-shadow-ambient);
+    color: var(--lg-text-inverse) !important;
+    text-shadow: none;
 
     &:hover {
-        background: var(--signal-paper-ink);
-        color: var(--signal-paper) !important;
+        background: var(--lg-fill-accent-hover);
+        color: var(--lg-text-inverse) !important;
+    }
+
+    &:active {
+        transform: scale(var(--lg-scale-press));
+    }
+
+    &:focus-visible {
+        box-shadow: var(--lg-focus-ring);
+        outline: 0;
     }
 }
 
+// The secondary sits on glass instead of accent — one accent per view.
 a.home-action-secondary {
-    min-height: auto;
-    padding: 8px 0 4px;
-    border-bottom: 2px solid currentColor;
+    color: var(--lg-text-primary) !important;
+    @include lg-glass(var(--lg-radius-pill), base, true);
 
-    &:hover { color: var(--signal-blue) !important; }
+    &:hover {
+        color: var(--lg-text-primary) !important;
+    }
 }
 
+/** ------------ WRITING INDEX ------------ **/
+
+/**
+ * The index is a glass panel. Its cells are solid: rule 2 — glass inside glass
+ * reads as mud, so anything nested in a pane takes the solid variant.
+ */
 section.writing-signal {
-    padding: 36px 3vw 28px;
-    background: var(--signal-blue);
-    color: var(--signal-blue-ink);
+    margin: 0 3vw;
+    padding: var(--lg-space-9);
+    @include lg-glass(var(--lg-radius-2xl), frosty);
 }
 
 div.writing-signal-inner {
     display: grid;
+    gap: var(--lg-space-9);
     grid-template-columns: minmax(150px, 13vw) 1fr;
-    gap: 28px;
 }
 
 div.writing-signal-summary {
-    padding-top: 4px;
+    padding-top: var(--lg-space-1);
 
     h2 {
-        margin: 0 0 14px;
-        color: var(--signal-blue-ink);
-        font-family: var(--font-signal-body);
-        font-size: clamp(2rem, 3.2vw, 3.1rem) !important;
-        font-weight: 700;
-        letter-spacing: -0.04em;
+        color: var(--lg-glass-ink);
+        font-family: var(--lg-font-sans);
+        // --lg-type-title, which is where a section heading belongs.
+        font-size: var(--lg-size-2xl) !important;
+        font-weight: var(--lg-weight-semibold);
+        letter-spacing: var(--lg-tracking-tight);
+        line-height: var(--lg-leading-tight);
+        margin: 0 0 var(--lg-space-5);
     }
 
     a {
+        color: var(--lg-glass-ink) !important;
         display: block;
+        margin-top: var(--lg-space-2);
+        opacity: 0.7;
         width: fit-content;
-        margin-top: 4px;
-        font-family: var(--font-signal-mono);
-        font-size: 0.72rem;
-        color: var(--signal-blue-ink) !important;
+        @include lg-micro-label();
 
         span { display: block; }
 
-        &:hover { color: var(--signal-lime) !important; }
+        &:hover {
+            color: var(--lg-text-accent) !important;
+            opacity: 1;
+        }
     }
 }
 
@@ -138,396 +182,286 @@ div.writing-signal-map {
 }
 
 div.writing-signal-row {
-    position: relative;
     display: grid;
+    gap: var(--lg-space-5);
     grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: clamp(10px, 1.8vw, 28px);
+    position: relative;
 
-    & + & { margin-top: 22px; }
+    & + & { margin-top: var(--lg-space-5); }
 
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: 0;
-        top: 50%;
-        left: -12px;
-        right: -12px;
-        border-top: 2px solid var(--signal-blue-ink);
-        opacity: 0.82;
-    }
+    // The dashed rule that used to thread through the cells was decoration,
+    // and the system does not decorate.
 }
 
 a.writing-signal-cell {
-    position: relative;
-    z-index: 1;
     display: flex;
-    min-width: 0;
-    min-height: 96px;
     flex-direction: column;
-    padding: 10px;
-    border: 1px solid var(--signal-blue-ink);
-    background: var(--signal-blue);
-    color: var(--signal-blue-ink) !important;
-    font-family: var(--font-signal-mono);
-    transition: background-color 150ms ease-out, color 150ms ease-out;
+    font-family: var(--lg-font-mono);
+    min-height: 96px;
+    min-width: 0;
+    padding: var(--lg-space-5);
+    transition: var(--lg-transition-glass);
+    // Solid, because it sits inside the glass panel.
+    @include lg-solid(var(--lg-radius-md));
+    @include lg-lift();
 
     &:hover,
     &:focus-visible {
-        background: var(--signal-lime);
-        color: var(--signal-deep) !important;
+        border-color: var(--lg-border-strong);
+        color: var(--lg-text-primary) !important;
     }
 
     &:focus-visible {
-        outline: 3px solid var(--signal-deep);
-        outline-offset: 3px;
+        box-shadow: var(--lg-focus-ring);
+        outline: 0;
     }
 }
 
+/**
+ * Journal entries used to be a coral fill. Semantic difference now rides on
+ * the border and the index number — never a filled block.
+ */
 a.writing-signal-cell-journal {
-    background: var(--signal-coral);
-    color: var(--signal-deep) !important;
+    border-color: color-mix(in oklch, var(--lg-azure) 45%, transparent);
+
+    span.writing-signal-index {
+        color: var(--lg-text-accent);
+    }
 }
 
 span.writing-signal-index {
-    font-size: 0.72rem;
-    line-height: 1;
+    color: var(--lg-text-tertiary);
+    font-size: var(--lg-size-2xs);
+    letter-spacing: var(--lg-tracking-caps);
+    line-height: var(--lg-leading-flat);
 }
 
 span.writing-signal-label {
-    display: -webkit-box;
-    margin-top: auto;
-    overflow: hidden;
-    font-size: clamp(0.7rem, 0.82vw, 0.82rem);
-    // 1.15 is too tight for a two-line clamped label at this size.
-    line-height: 1.35;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    color: var(--lg-text-secondary);
+    display: -webkit-box;
+    font-family: var(--lg-font-sans);
+    font-size: var(--lg-size-xs);
+    line-height: var(--lg-leading-snug);
+    margin-top: auto;
+    overflow: hidden;
 }
 
 p.writing-signal-caption {
-    display: grid;
-    grid-template-columns: minmax(42px, 1fr) auto minmax(42px, 1fr);
-    align-items: center;
-    gap: 14px;
-    margin: 25px 0 0;
-    font-family: var(--font-signal-mono);
-    font-size: 0.76rem;
-    color: var(--signal-blue-ink);
-
-    &:before,
-    &:after {
-        content: "";
-        border-top: 1px dashed currentColor;
-    }
+    color: var(--lg-glass-ink);
+    margin: var(--lg-space-8) 0 0;
+    opacity: 0.6;
+    text-align: center;
+    @include lg-micro-label();
+    // The dashed flanking rules were old-system decoration.
 }
 
+/** ------------ LATEST ------------ **/
+
+// Cards float over the ground, so they are glass — and they get gaps instead
+// of the shared hairline grid the old system drew them in.
 section.home-latest {
-    background: var(--signal-paper);
-    color: var(--signal-paper-ink);
+    padding: var(--lg-space-12) 3vw 0;
 }
 
 div.home-latest-grid {
     display: grid;
+    gap: var(--lg-space-6);
     grid-template-columns: 1.35fr repeat(3, 1fr);
 }
 
 a.home-latest-item {
+    color: var(--lg-glass-ink) !important;
     display: flex;
-    min-height: 240px;
     flex-direction: column;
-    padding: 28px 26px 22px;
-    border-right: 1px solid var(--signal-paper-ink);
-    border-bottom: 1px solid var(--signal-paper-ink);
-    color: var(--signal-paper-ink) !important;
-    transition: background-color 180ms ease-out, color 180ms ease-out;
-
-    &:last-child { border-right: 0; }
-
-    &:hover,
-    &:focus-visible {
-        background: var(--signal-periwinkle);
-    }
-
-    &:focus-visible {
-        outline: 3px solid var(--signal-coral);
-        outline-offset: -6px;
-    }
+    min-height: 240px;
+    padding: var(--lg-space-8);
+    @include lg-glass(var(--lg-radius-xl), base, true);
+    @include lg-lift();
 
     h3 {
-        margin: 47px 0 24px;
-        font-family: var(--font-signal-display);
-        font-size: clamp(1.5rem, 1.95vw, 2rem) !important;
-        font-weight: 400;
-        line-height: 1.05;
-        letter-spacing: -0.05em;
+        font-family: var(--lg-font-sans);
+        font-size: var(--lg-size-lg) !important;
+        font-weight: var(--lg-weight-medium);
+        letter-spacing: var(--lg-tracking-tight);
+        line-height: var(--lg-leading-snug);
+        margin: var(--lg-space-8) 0 var(--lg-space-6);
     }
 
-    > i { margin-top: auto; }
-}
-
-a.home-latest-item:nth-child(2) h3,
-a.home-latest-item:nth-child(3) h3 {
-    max-width: 234px;
-}
-
-a.home-latest-item:nth-child(4) h3 {
-    max-width: 270px;
+    > i {
+        color: var(--lg-text-accent);
+        margin-top: auto;
+    }
 }
 
 a.home-latest-item-lead h3 {
-    max-width: 9ch;
-    margin-top: 10px;
-    font-family: var(--font-signal-display);
-    font-size: clamp(2.7rem, 4.05vw, 4.2rem) !important;
-    font-weight: 700;
-    line-height: 0.92;
+    font-size: var(--lg-size-2xl) !important;
+    font-weight: var(--lg-weight-semibold);
+    letter-spacing: var(--lg-tracking-tight);
+    margin-top: var(--lg-space-4);
+    max-width: 14ch;
 }
 
 div.home-latest-meta {
     display: none;
-    gap: 10px;
-    font-family: var(--font-signal-mono);
-    font-size: 0.72rem;
-    text-transform: uppercase;
+    gap: var(--lg-space-5);
+    @include lg-micro-label();
 }
 
+/** ------------ TAGS ------------ **/
+
 section.home-tags {
-    max-width: 1440px;
     margin: 0 auto;
-    padding: 76px 3vw 16px;
+    max-width: 1440px;
+    padding: var(--lg-space-13) 3vw var(--lg-space-6);
 }
 
 section.home-section {
-    padding-top: 76px;
+    padding-top: var(--lg-space-13);
 }
 
 div.home-section-bar {
-    display: flex;
     align-items: baseline;
+    display: flex;
+    gap: var(--lg-space-6);
     justify-content: space-between;
-    gap: 16px;
 }
 
 h2.home-section-heading {
-    margin: 0 0 24px;
-    font-family: var(--font-signal-display);
-    font-size: clamp(3rem, 6vw, 6rem) !important;
-    font-weight: 700;
-    line-height: 0.85;
-    letter-spacing: -0.05em;
-    color: var(--theme-texts);
+    color: var(--lg-text-primary);
+    font-family: var(--lg-font-sans);
+    font-size: var(--lg-size-2xl) !important;
+    font-weight: var(--lg-weight-semibold);
+    letter-spacing: var(--lg-tracking-tight);
+    line-height: var(--lg-leading-tight);
+    margin: 0 0 var(--lg-space-6);
 }
 
 a.home-section-more {
-    padding: 8px 0 4px;
-    border-bottom: 1px solid currentColor;
-    color: var(--theme-texts) !important;
-    font-family: var(--font-signal-mono);
-    font-size: 0.72rem;
-    text-transform: uppercase;
+    color: var(--lg-text-secondary) !important;
+    padding: var(--lg-space-4) 0;
+    @include lg-micro-label();
 
-    &:hover { color: var(--theme-primary) !important; }
+    &:hover { color: var(--lg-text-accent) !important; }
 }
 
 div.home-tag-cloud {
+    border-top: 1px solid var(--lg-border-subtle);
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
-    padding-top: 24px;
-    border-top: 2px solid var(--theme-texts);
+    gap: var(--lg-space-3);
+    padding-top: var(--lg-space-8);
 }
 
-@keyframes signal-boot {
-    0%, 35% { opacity: 0.66; }
-    70% { opacity: 1; border-color: var(--signal-lime); }
-    100% { opacity: 1; border-color: var(--signal-blue-ink); }
-}
-
-a.writing-signal-cell {
-    animation: signal-boot 540ms ease-out both;
-    animation-delay: calc(var(--signal-order, 1) * 36ms);
-}
+/** ------------ RESPONSIVE ------------ **/
 
 @include media-breakpoint-down(lg) {
-    section.home-identity {
-        min-height: 340px;
-    }
-
-    h1.home-hero-title {
-        font-size: clamp(7rem, 20vw, 13rem) !important;
-    }
-
     div.writing-signal-inner {
+        gap: var(--lg-space-7);
         grid-template-columns: 130px 1fr;
-        gap: 18px;
     }
 
     a.writing-signal-cell {
         min-height: 82px;
-        padding: 8px;
+        padding: var(--lg-space-4);
     }
 
     div.home-latest-grid {
-        grid-template-columns: 1.1fr repeat(3, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     a.home-latest-item {
-        min-height: 220px;
-        padding: 22px 18px 18px;
+        min-height: 210px;
+        padding: var(--lg-space-7);
 
-        h3 {
-            max-width: 100%;
-            margin-top: 28px;
-            font-size: clamp(1.25rem, 2.1vw, 1.7rem) !important;
-        }
-    }
-
-    a.home-latest-item-lead h3 {
-        margin-top: 8px;
-        font-size: clamp(2.3rem, 4.5vw, 3.4rem) !important;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1450px) {
-    h1.home-hero-title {
-        width: 128.2%;
-        font-size: 23.5vw !important;
-        transform: scaleX(0.78);
-    }
-
-    div.home-identity-base {
-        margin-top: 15px;
-    }
-
-    a.home-latest-item:not(.home-latest-item-lead) h3 {
-        margin-top: 43px;
-    }
-
-    a.home-latest-item:nth-child(2) h3,
-    a.home-latest-item:nth-child(3) h3 {
-        max-width: 224px;
-    }
-
-    a.home-latest-item:nth-child(4) h3 {
-        max-width: 258px;
+        h3 { margin-top: var(--lg-space-7); }
     }
 }
 
 @include media-breakpoint-down(md) {
     section.home-identity {
-        min-height: 0;
-        padding: 36px 20px 30px;
-    }
-
-    h1.home-hero-title {
-        width: 100%;
-        font-size: clamp(5rem, 25vw, 9rem) !important;
-        line-height: 0.76;
-        white-space: normal;
-        transform: none;
-    }
-
-    h1.home-hero-title-zh {
-        font-size: clamp(5rem, 24vw, 8rem) !important;
-        line-height: 0.9;
+        padding: var(--lg-space-11) 20px var(--lg-space-10);
     }
 
     div.home-identity-base {
+        gap: var(--lg-space-8);
         grid-template-columns: 1fr;
-        gap: 28px;
-        margin-top: 38px;
+        margin-top: var(--lg-space-9);
     }
 
     div.home-identity-actions {
         align-items: stretch;
-        gap: 18px;
+        gap: var(--lg-space-5);
     }
 
-    a.home-action-primary {
+    a.home-action {
         flex: 1;
-        min-height: 56px;
-        gap: 20px;
-        padding: 0 18px;
+        justify-content: center;
     }
 
     section.writing-signal {
-        padding: 30px 20px 24px;
+        margin: 0 20px;
+        padding: var(--lg-space-7);
     }
 
     div.writing-signal-inner {
+        gap: var(--lg-space-8);
         grid-template-columns: 1fr;
-        gap: 26px;
     }
 
     div.writing-signal-summary {
-        display: grid;
-        grid-template-columns: 1fr auto auto;
         align-items: end;
-        gap: 18px;
+        display: grid;
+        gap: var(--lg-space-6);
+        grid-template-columns: 1fr auto auto;
 
         h2 { margin: 0; }
     }
 
     div.writing-signal-row {
+        gap: var(--lg-space-4);
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
 
-        & + & { margin-top: 10px; }
-        &:before { display: none; }
+        & + & { margin-top: var(--lg-space-4); }
     }
 
     a.writing-signal-cell { min-height: 76px; }
 
     p.writing-signal-caption {
-        grid-template-columns: 1fr;
-        margin-top: 20px;
+        margin-top: var(--lg-space-7);
+    }
 
-        &:before,
-        &:after { display: none; }
+    section.home-latest {
+        padding: var(--lg-space-11) 20px 0;
     }
 
     div.home-latest-grid { grid-template-columns: 1fr; }
 
     a.home-latest-item {
-        min-height: 190px;
-        padding: 24px 20px 20px;
-        border-right: 0;
+        min-height: 0;
+        padding: var(--lg-space-7);
 
         h3 {
-            max-width: 18ch !important;
-            margin-top: 24px;
-            font-size: clamp(1.8rem, 9vw, 2.8rem) !important;
+            margin-top: var(--lg-space-6);
+            max-width: 24ch;
         }
     }
 
-    a.home-latest-item-lead {
-        min-height: 230px;
-
-        h3 {
-            max-width: 10ch !important;
-            margin-top: 4px;
-            font-size: clamp(3rem, 14vw, 4.6rem) !important;
-        }
+    a.home-latest-item-lead h3 {
+        max-width: 18ch;
     }
 
     section.home-tags {
-        padding: 56px 20px 8px;
+        padding: var(--lg-space-12) 20px var(--lg-space-4);
     }
 
-    section.home-section { padding-top: 56px; }
+    section.home-section { padding-top: var(--lg-space-12); }
 }
 
 @include media-breakpoint-down(sm) {
     div.home-identity-actions {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    a.home-action-primary { width: 100%; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    a.writing-signal-cell {
-        animation: none;
+        align-items: stretch;
     }
 }

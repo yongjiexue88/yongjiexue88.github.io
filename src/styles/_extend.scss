@@ -8,6 +8,11 @@
 @import 'bootstrap/scss/_variables.scss';
 @import 'bootstrap/scss/mixins/_breakpoints.scss';
 
+// Liquidglass material mixins — lg-glass, lg-solid, lg-lift, lg-micro-label.
+// Mixins and functions only, so importing this emits no CSS. The token custom
+// properties they read are emitted once, from app.scss.
+@import "liquidglass/glass";
+
 @import "customization/primitives-customization";
 @import "customization/bootstrap-customization";
 @import "customization/plugin-customization";
