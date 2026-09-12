@@ -25,7 +25,7 @@ Visitors usually arrive from a shared link, search result, LinkedIn, or GitHub a
 ## Capabilities and Constraints
 
 - Preserve the existing React/Vite site, its real routes, bilingual language control, light and dark themes, long-form post rendering, tag browsing, and contact capability.
-- Continue to deploy as a free static site on GitHub Pages.
+- Continue to deploy as a free static site on Vercel.
 - Keep all existing journal and notes content intact, but place writing behind the professional introduction in the information hierarchy.
 - Do not create a projects or work-history surface until real material exists.
 - Do not fabricate employers, projects, credentials, client claims, testimonials, metrics, or a biography.

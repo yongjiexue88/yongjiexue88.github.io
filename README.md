@@ -2,7 +2,7 @@
 
 Personal blog for Yongjie Xue — 萦怀, *thoughts that linger*.
 
-Live at **https://yongjiexue88.github.io/**
+Live at **https://yongjiexue88-github-io.vercel.app/**
 
 ## Development
 
@@ -17,8 +17,13 @@ npm run dev
 npm run build
 ```
 
-Deployed to GitHub Pages by [.github/workflows/deploy.yml](.github/workflows/deploy.yml),
-which builds the Vite `dist/` output on every push to `main`.
+Deployed to Vercel. The project has this repository connected, so Vercel
+builds and deploys the Vite output on every push to `main`, and publishes a
+preview for every pull request. There is no deploy workflow and no deploy
+credential in CI — the Vercel GitHub App does the authentication.
+
+Build and routing config lives in [vercel.json](vercel.json) rather than the
+dashboard, so it is reviewable in git.
 
 ## Structure
 
@@ -37,9 +42,14 @@ in exactly one **collection** (the physical taxonomy), and carry any number of
 Legacy `#blog` / `#booknotes` / `#about` / `#contact` hashes redirect to their
 routes once on load.
 
-Because GitHub Pages has no rewrite rules, [public/404.html](public/404.html)
-implements the standard SPA redirect so deep links survive a hard refresh; its
-decode counterpart is inline in `index.html`. Both must stay in sync.
+Deep links survive a hard refresh because of the catch-all rewrite to
+`/index.html` in [vercel.json](vercel.json). Vercel applies it only after
+checking the filesystem, so real files such as `/assets/*` still win.
+
+This replaced a GitHub Pages arrangement, which had no rewrite rules and so
+needed a `public/404.html` shim that redirected through a `/?/path` form,
+decoded by an inline script in `index.html`. Both are gone; deep links now
+return a straight 200 instead of a 404 followed by a redirect.
 
 ## Content
 
