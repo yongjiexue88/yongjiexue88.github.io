@@ -1,0 +1,66 @@
+sections:
+  - hero
+  - type: markdown
+    key: bio
+  - type: cards
+    key: columns
+    partial: landing/sections/column-cards.html
+  - cta
+
+hero:
+  eyebrow: 关于 · Yongjie Xue
+  title_lines:
+    - words:
+        - { text: 薛勇杰 }
+    - words:
+        - { text: '@yongjiexue88' }
+  lead: >-
+    常驻美国得克萨斯州奥斯汀的全栈与 AI 工程师。<br>
+    这里既是我的职业主页，也是我公开记录思考方式的地方：系统、语言、职业选择、技术，以及普通生活中的细节。
+  note: 以写作者的眼光做工程 · 清晰的思考、仔细的阅读，以及持续的写作
+  note_icon: fa-solid fa-pen-nib
+  image:
+    light: images/avatar.jpg
+    dark: images/avatar.jpg
+    alt: 薛勇杰
+  media:
+    ratio: '1fr 320px'
+    max_width: 320px
+    hide_below: md
+  actions:
+    - { label: GitHub, url: 'https://github.com/yongjiexue88', icon: fa-brands fa-github, external: true, style: primary }
+    - { label: 发送邮件, url: 'mailto:yongjiexue88@gmail.com', icon: fa-solid fa-envelope, style: ghost }
+
+bio:
+  eyebrow: 个人简介
+  title: 以写作者的眼光做工程
+  content: >-
+    ### 关于我
+
+    我是一名常驻美国奥斯汀的全栈与 AI 工程师。
+
+    这个网站是我的职业主页，也是我公开记录个人思考的地方：涵盖系统工程、语言学习、职业发展、科技趋势，以及普通日常生活中的体悟。
+
+    ### 写作与探索的主题
+
+    - **自我反思**：记录选择、思维模式、挑战与成长，思考自己正在成为怎样的人。
+    - **日常记录**：记录普通日子里的小记忆、生活节奏、家庭、健康与重要片刻。
+    - **公开学习**：关于书籍、英语学习、技术架构与系统的深度阅读与探索。
+
+columns:
+  eyebrow: 专栏与篇目
+  columns: 2
+  items:
+    - page: /journal
+      title: 日志随笔
+      desc: 生活琐思、健康、家庭与人生观察。
+    - page: /notes
+      title: 读书笔记
+      desc: 深度研读、语言进阶、法律与系统思考。
+
+cta:
+  title: 交流与联系
+  description: 欢迎通过 GitHub 或邮件与我交流工程实践、阅读或想法。
+  actions:
+    - { label: GitHub, url: 'https://github.com/yongjiexue88', icon: fa-brands fa-github, external: true }
+    - { label: 发送邮件, url: 'mailto:yongjiexue88@gmail.com', icon: fa-solid fa-envelope }
