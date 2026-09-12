@@ -2,6 +2,7 @@ import "/src/styles/app.scss"
 import {StrictMode, useEffect, useState} from 'react'
 import {createRoot} from 'react-dom/client'
 import {BrowserRouter} from "react-router-dom"
+import {Analytics} from '@vercel/analytics/react'
 import {useApi} from "/src/hooks/api.js"
 import {useConstants} from "/src/hooks/constants.js"
 import {useUtils} from "/src/hooks/utils.js"
@@ -38,6 +39,7 @@ const App = () => {
                     <Portfolio/>
                 </AppCapabilitiesWrapper>
             </AppEssentialsWrapper>
+            <Analytics />
         </BrowserRouter>
     )
 }
