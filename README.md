@@ -24,7 +24,7 @@ Built with **[Hugo Extended](https://gohugo.io/)** (0.160.1+) and the **[OINK](h
 ### Prerequisites
 
 - **Hugo Extended** (0.160.1+): `brew install hugo`
-- **Go** (1.24+): `brew install go`
+- **Go** (1.27+, required by `go.mod` for Hugo Modules): `brew install go`
 
 ### Commands
 
