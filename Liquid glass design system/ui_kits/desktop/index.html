@@ -1,0 +1,82 @@
+<!-- @dsCard group="UI kits" viewport="1280x860" name="Desktop app" subtitle="Studio: library, audiobook player, settings — glass rail over a solid form column" -->
+<!DOCTYPE html>
+<html lang="en" data-lg-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="ext-resource-dependency" content="../../components/glass/glass-engine.js" data-resource-id="components/glass/glass-engine.js" />
+<meta name="ext-resource-dependency" content="../../components/glass/GlassSurface.jsx" data-resource-id="components/glass/GlassSurface.jsx" />
+<meta name="ext-resource-dependency" content="../../components/glass/LiquidGlass.jsx" data-resource-id="components/glass/LiquidGlass.jsx" />
+<meta name="ext-resource-dependency" content="../../components/media/Icon.jsx" data-resource-id="components/media/Icon.jsx" />
+<meta name="ext-resource-dependency" content="../../components/media/Backdrop.jsx" data-resource-id="components/media/Backdrop.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Button.jsx" data-resource-id="components/forms/Button.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/IconButton.jsx" data-resource-id="components/forms/IconButton.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Input.jsx" data-resource-id="components/forms/Input.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Textarea.jsx" data-resource-id="components/forms/Textarea.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Select.jsx" data-resource-id="components/forms/Select.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Checkbox.jsx" data-resource-id="components/forms/Checkbox.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Radio.jsx" data-resource-id="components/forms/Radio.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Switch.jsx" data-resource-id="components/forms/Switch.jsx" />
+<meta name="ext-resource-dependency" content="../../components/forms/Slider.jsx" data-resource-id="components/forms/Slider.jsx" />
+<meta name="ext-resource-dependency" content="../../components/navigation/Tabs.jsx" data-resource-id="components/navigation/Tabs.jsx" />
+<meta name="ext-resource-dependency" content="../../components/navigation/SegmentedControl.jsx" data-resource-id="components/navigation/SegmentedControl.jsx" />
+<meta name="ext-resource-dependency" content="../../components/navigation/Dock.jsx" data-resource-id="components/navigation/Dock.jsx" />
+<meta name="ext-resource-dependency" content="../../components/navigation/Menu.jsx" data-resource-id="components/navigation/Menu.jsx" />
+<meta name="ext-resource-dependency" content="../../components/navigation/Breadcrumbs.jsx" data-resource-id="components/navigation/Breadcrumbs.jsx" />
+<meta name="ext-resource-dependency" content="../../components/surfaces/Card.jsx" data-resource-id="components/surfaces/Card.jsx" />
+<meta name="ext-resource-dependency" content="../../components/surfaces/Panel.jsx" data-resource-id="components/surfaces/Panel.jsx" />
+<meta name="ext-resource-dependency" content="../../components/surfaces/Sheet.jsx" data-resource-id="components/surfaces/Sheet.jsx" />
+<meta name="ext-resource-dependency" content="../../components/surfaces/Dialog.jsx" data-resource-id="components/surfaces/Dialog.jsx" />
+<meta name="ext-resource-dependency" content="../../components/surfaces/Avatar.jsx" data-resource-id="components/surfaces/Avatar.jsx" />
+<meta name="ext-resource-dependency" content="../../components/surfaces/Divider.jsx" data-resource-id="components/surfaces/Divider.jsx" />
+<meta name="ext-resource-dependency" content="../../components/surfaces/ImagePlaceholder.jsx" data-resource-id="components/surfaces/ImagePlaceholder.jsx" />
+<meta name="ext-resource-dependency" content="../../components/feedback/Badge.jsx" data-resource-id="components/feedback/Badge.jsx" />
+<meta name="ext-resource-dependency" content="../../components/feedback/Tag.jsx" data-resource-id="components/feedback/Tag.jsx" />
+<meta name="ext-resource-dependency" content="../../components/feedback/Tooltip.jsx" data-resource-id="components/feedback/Tooltip.jsx" />
+<meta name="ext-resource-dependency" content="../../components/feedback/Toast.jsx" data-resource-id="components/feedback/Toast.jsx" />
+<meta name="ext-resource-dependency" content="../../components/feedback/Progress.jsx" data-resource-id="components/feedback/Progress.jsx" />
+<meta name="ext-resource-dependency" content="../../components/feedback/Spinner.jsx" data-resource-id="components/feedback/Spinner.jsx" />
+<meta name="ext-resource-dependency" content="../../ui_kits/desktop/App.jsx" data-resource-id="ui_kits/desktop/App.jsx" />
+<title>Liquidglass — desktop kit</title>
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="../../dev-loader.js"></script>
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1280px; box-sizing: border-box;
+    background: var(--lg-bg-base);
+    color: var(--lg-text-primary);
+    font: var(--lg-type-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--lg-text-accent); text-decoration: none; }
+  a:hover { color: var(--lg-fill-accent-hover); }
+</style>
+<style>@keyframes lg-spin { to { transform: rotate(360deg); } }</style>
+</head>
+<body>
+<div id="root"><div style="display:flex;align-items:center;gap:10px;padding:28px;font:var(--lg-type-mono);color:var(--lg-text-tertiary)"><span style="width:12px;height:12px;border-radius:999px;border:2px solid currentColor;border-top-color:transparent;animation:lg-spin 0.8s linear infinite"></span>Compiling Liquidglass — first load only</div></div>
+<script>
+(function () {
+  var root = document.getElementById('root');
+  function fail(e) {
+    root.innerHTML = '<pre style="color:#fff;font:12px/1.5 ui-monospace,monospace;white-space:pre-wrap;padding:24px">' + String((e && e.stack) || e) + '</pre>';
+  }
+  window.LiquidglassDev.ready
+    .then(function () { return window.LiquidglassDev.load(['ui_kits/desktop/App.jsx']); })
+    .then(function (L) { ReactDOM.createRoot(root).render(React.createElement(L.App)); })
+    .catch(fail);
+}());
+</script>
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" data-bg-color="#04060a">
+  <rect width="400" height="400" fill="#04060a"/>
+  <rect x="120" y="120" width="160" height="160" rx="80" fill="none" stroke="#7aa2f7" stroke-width="3"/>
+  <text x="200" y="214" text-anchor="middle" font-family="ui-monospace, monospace" font-size="52" fill="#ffffff">D</text>
+</svg>
+</template>
+</body>
+</html>

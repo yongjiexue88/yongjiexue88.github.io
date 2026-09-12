@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--lg-bg-base);
+  color: var(--lg-text-primary);
+  font: var(--lg-type-body);
+  letter-spacing: var(--lg-tracking-normal);
+  text-wrap: pretty;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--lg-text-accent); text-decoration-color: color-mix(in oklch, currentColor 40%, transparent); text-underline-offset: 2px; }
+a:hover { color: var(--lg-text-primary); text-decoration-color: currentColor; }
+
+:where(button, input, select, textarea) { font: inherit; letter-spacing: inherit; }
+
+::selection { background: var(--lg-azure); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

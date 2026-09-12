@@ -1,0 +1,55 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Accents" subtitle="One lightness/chroma pair, three hues — azure leads, orchid and mint support" -->
+<!DOCTYPE html>
+<html lang="en" data-lg-theme="dark">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 700px; min-height: 150px; box-sizing: border-box; padding: 20px;
+    background: var(--lg-neutral-950);
+    color: var(--lg-text-primary); font: var(--lg-type-body);
+    -webkit-font-smoothing: antialiased;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  a { color: var(--lg-text-accent); text-decoration: none; }
+  a:hover { color: var(--lg-fill-accent-hover); }
+  .row { display: flex; gap: 10px; }
+  .col { display: flex; flex-direction: column; }
+  .t { font: var(--lg-type-mono); letter-spacing: var(--lg-tracking-caps); text-transform: uppercase; color: var(--lg-text-tertiary); }
+  .v { font: var(--lg-type-mono); color: var(--lg-text-secondary); }
+  
+</style>
+</head>
+<body>
+<div class="row" style="gap:8px">
+  <div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-azure)"></div>
+    <span class="v" style="font-size:10px">azure</span>
+  </div><div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-azure-bright)"></div>
+    <span class="v" style="font-size:10px">azure-bright</span>
+  </div><div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-azure-deep)"></div>
+    <span class="v" style="font-size:10px">azure-deep</span>
+  </div><div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-orchid)"></div>
+    <span class="v" style="font-size:10px">orchid</span>
+  </div><div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-orchid-bright)"></div>
+    <span class="v" style="font-size:10px">orchid-bright</span>
+  </div><div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-orchid-deep)"></div>
+    <span class="v" style="font-size:10px">orchid-deep</span>
+  </div><div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-mint)"></div>
+    <span class="v" style="font-size:10px">mint</span>
+  </div><div class="col" style="flex:1;gap:8px">
+    <div style="height:56px;border-radius:var(--lg-radius-sm);background:var(--lg-mint-bright)"></div>
+    <span class="v" style="font-size:10px">mint-bright</span>
+  </div>
+</div>
+<div class="t" style="margin-top:14px">accent = interaction, never decoration. one per view.</div>
+</body>
+</html>

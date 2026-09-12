@@ -1,0 +1,47 @@
+:root {
+  /* ---- Refraction ---- */
+  --lg-displacement-scale: 70;        /* halved automatically over light */
+  --lg-displacement-scale-subtle: 25;
+  --lg-aberration: 2;
+  --lg-blur-amount: 0.0625;           /* multiplied by 32 in the engine */
+  --lg-blur-amount-frosty: 0.35;
+  --lg-saturation: 140%;
+  --lg-saturation-vivid: 180%;
+
+  /* Resolved backdrop filters (dark ground / light ground) */
+  --lg-backdrop: blur(6px) saturate(140%);
+  --lg-backdrop-over-light: blur(14px) saturate(140%);
+  --lg-backdrop-frosty: blur(25.2px) saturate(180%);
+
+  /* ---- Edge system ---- */
+  --lg-edge-width: 1.5px;
+  --lg-edge-inset:
+    0 0 0 0.5px rgba(255, 255, 255, 0.5) inset,
+    0 1px 3px rgba(255, 255, 255, 0.25) inset,
+    0 1px 4px rgba(0, 0, 0, 0.35);
+  --lg-edge-screen-opacity: 0.2;
+  --lg-edge-gradient-screen: linear-gradient(135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.12) 33%,
+    rgba(255, 255, 255, 0.40) 66%,
+    rgba(255, 255, 255, 0) 100%);
+  --lg-edge-gradient-overlay: linear-gradient(135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.32) 33%,
+    rgba(255, 255, 255, 0.60) 66%,
+    rgba(255, 255, 255, 0) 100%);
+
+  /* ---- Sheen (interactive only) ---- */
+  --lg-sheen-hover: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 50%);
+  --lg-sheen-press: radial-gradient(circle at 50% 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+  --lg-sheen-rim: radial-gradient(circle at 50% 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+
+  /* ---- Text protection on glass ---- */
+  --lg-text-shadow-glass: 0px 2px 12px rgba(0, 0, 0, 0.4);
+  --lg-text-shadow-over-light: 0px 2px 12px rgba(0, 0, 0, 0);
+
+  /* ---- Solid (non-refracting) counterparts ---- */
+  --lg-solid-fill: var(--lg-neutral-800);
+  --lg-solid-fill-raised: var(--lg-neutral-700);
+  --lg-solid-border: rgba(255, 255, 255, 0.09);
+}
