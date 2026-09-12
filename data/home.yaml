@@ -1,0 +1,85 @@
+zh-cn:
+  sections:
+    - type: hero
+      partial: landing/sections/hero-featured.html
+    - type: cards
+      key: columns
+      partial: landing/sections/column-cards.html
+    - type: cards
+      key: recent
+      partial: landing/sections/recent-posts.html
+    - cta
+
+  hero:
+    eyebrow: 薛勇杰 · 全栈与 AI 工程师 · 美国奥斯汀
+    title: 萦怀
+    lead: >-
+      以写作者的眼光做工程。<br>
+      常驻美国奥斯汀，公开记录关于系统、语言、职业选择、技术，以及日常生活中的思考与沉淀。
+    portrait: images/avatar.jpg
+    portrait_alt: 薛勇杰
+
+  columns:
+    eyebrow: 分类与专栏
+    columns: 3
+    unit: 篇
+    items:
+      - page: /journal
+        title: 日志随笔
+        desc: 普通日子里的记录、健康、家庭、金钱观与自我反思。
+      - page: /notes
+        title: 读书笔记
+        desc: 英语研读、商业法律故事、技术与系统的深度学习笔记。
+      - page: /about
+        title: 关于作者
+        desc: 职业经历、工程理念、写作主题与联系方式。
+
+  recent:
+    eyebrow: 最新篇目
+    limit: 9
+    columns: 3
+    more:
+      - { label: 按标签浏览, url: tags/, icon: fa-solid fa-tags }
+
+en:
+  sections:
+    - type: hero
+      partial: landing/sections/hero-featured.html
+    - type: cards
+      key: columns
+      partial: landing/sections/column-cards.html
+    - type: cards
+      key: recent
+      partial: landing/sections/recent-posts.html
+    - cta
+
+  hero:
+    eyebrow: Yongjie Xue · Full Stack & AI Engineer · Austin, TX
+    title: Lingering Thoughts
+    lead: >-
+      Engineering with a writer’s eye.<br>
+      Based in Austin, Texas. A public record of thinking through systems, language, career, technology, and ordinary life.
+    portrait: images/avatar.jpg
+    portrait_alt: Yongjie Xue
+
+  columns:
+    eyebrow: Sections
+    columns: 3
+    unit: posts
+    items:
+      - page: /journal
+        title: Journal
+        desc: Personal reflections on everyday life, family, finance, and health.
+      - page: /notes
+        title: Booknotes
+        desc: Comprehensive studies in language, legal cases, and technology books.
+      - page: /about
+        title: About Me
+        desc: Background, engineering philosophy, writing themes, and contact.
+
+  recent:
+    eyebrow: Recent Posts
+    limit: 9
+    columns: 3
+    more:
+      - { label: Browse by Tags, url: tags/, icon: fa-solid fa-tags }

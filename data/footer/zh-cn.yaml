@@ -1,0 +1,19 @@
+brand:
+  name: 萦怀 · 薛勇杰
+  tagline: '**薛勇杰** · Full Stack & AI Engineer'
+  slogan: 以写作者的眼光做工程
+columns:
+  - title: 导航
+    links:
+      - { label: 主页, url: / }
+      - { label: 日志随笔, url: journal/ }
+      - { label: 读书笔记, url: notes/ }
+      - { label: 关于我, url: about/ }
+  - title: 索引
+    links:
+      - { label: 标签浏览, url: tags/ }
+      - { label: 分类汇总, url: categories/ }
+  - title: 连接
+    links:
+      - { label: GitHub, url: 'https://github.com/yongjiexue88', external: true }
+      - { label: Email, url: 'mailto:yongjiexue88@gmail.com', external: true }

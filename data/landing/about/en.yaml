@@ -1,0 +1,66 @@
+sections:
+  - hero
+  - type: markdown
+    key: bio
+  - type: cards
+    key: columns
+    partial: landing/sections/column-cards.html
+  - cta
+
+hero:
+  eyebrow: About · Yongjie Xue
+  title_lines:
+    - words:
+        - { text: Yongjie Xue }
+    - words:
+        - { text: '@yongjiexue88' }
+  lead: >-
+    Full Stack & AI Engineer based in Austin, Texas.<br>
+    This site is my professional home and a public record of how I think: through systems, language, career decisions, technology, and the details of ordinary life.
+  note: Engineering with a writer’s eye · Clear thinking, careful reading, and consistent writing
+  note_icon: fa-solid fa-pen-nib
+  image:
+    light: images/avatar.jpg
+    dark: images/avatar.jpg
+    alt: Yongjie Xue
+  media:
+    ratio: '1fr 320px'
+    max_width: 320px
+    hide_below: md
+  actions:
+    - { label: GitHub, url: 'https://github.com/yongjiexue88', icon: fa-brands fa-github, external: true, style: primary }
+    - { label: Send Email, url: 'mailto:yongjiexue88@gmail.com', icon: fa-solid fa-envelope, style: ghost }
+
+bio:
+  eyebrow: Biography
+  title: Engineering with a Writer’s Eye
+  content: >-
+    ### About Me
+
+    I’m a Full Stack & AI Engineer based in Austin, Texas.
+
+    This site is my professional home and a public record of how I think: through systems, language, career decisions, technology, and the details of ordinary life.
+
+    ### Writing & Research Themes
+
+    - **Self-reflection**: Thinking through choices, patterns, fears, and the kind of person I am becoming.
+    - **Daily notes**: Small memories, routines, and moments from ordinary days.
+    - **Learning in public**: Work-in-progress thoughts about books, language, career, technology, and life.
+
+columns:
+  eyebrow: Sections
+  columns: 2
+  items:
+    - page: /journal
+      title: Journal
+      desc: Personal reflections on everyday life, family, and health.
+    - page: /notes
+      title: Booknotes
+      desc: In-depth studies in language, legal case studies, and systems.
+
+cta:
+  title: Connect
+  description: Feel free to reach out via GitHub or email to discuss engineering, books, or ideas.
+  actions:
+    - { label: GitHub, url: 'https://github.com/yongjiexue88', icon: fa-brands fa-github, external: true }
+    - { label: Send Email, url: 'mailto:yongjiexue88@gmail.com', icon: fa-solid fa-envelope }
