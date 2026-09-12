@@ -1,0 +1,205 @@
+/**
+ * Liquidglass — the glass material, as SCSS.
+ *
+ * The design system ships this material as a React component
+ * (`components/glass/GlassSurface.jsx`) that stacks five absolutely positioned
+ * layers inside every pane. This site is styled in SCSS over existing markup,
+ * so the same stack is expressed here with two pseudo-elements:
+ *
+ *   element   — backdrop sample (blur + saturate), one wide shadow, radius
+ *   ::before  — the edge: 1.5px masked ring, overlay-blend gradient, three-part inset
+ *   ::after   — the screen-blend edge gradient at 0.2, plus the hover/press sheen
+ *
+ * Every value below is the source value from `tokens/glass.css`,
+ * `tokens/elevation.css` and the component's inline styles.
+ *
+ * What is NOT here is the refraction itself. The SVG displacement map and the
+ * per-channel chromatic aberration need a map generated in canvas at each
+ * element's exact size, applied to a dedicated third layer inside the pane —
+ * that needs a DOM node per surface, which this port deliberately does not add.
+ * So what this renders is precisely the degradation path the system documents
+ * for Safari and Firefox: blur, saturation, and the full edge stack. Per the
+ * source README, that "still looks deliberate", and it is what every browser
+ * gets here. Restoring true refraction means porting `GlassSurface.jsx` and
+ * wrapping each glass surface in it.
+ *
+ * The five rules (SKILL.md) that govern where these mixins may be used:
+ *   1. Glass floats, solid holds still. Read for >30s → solid.
+ *   2. Never glass on glass.
+ *   3. Every screen needs a ground (see LayoutStaticBackground).
+ *   4. One accent per view. Accent means interaction, never decoration.
+ *   5. Never stack elevation on glass. One shadow, --lg-shadow-glass.
+ */
+
+/** The masked-ring trick from EDGE_MASK in glass-engine.js: paint a 1.5px
+ *  padding box, then xor the content box out of it, leaving only the ring. */
+@mixin lg-edge-mask() {
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+/** edgeGradient() from glass-engine.js, at rest (mouseOffset 0,0).
+ *  The pointer-reactive version needs JS; the static angle is 135deg. */
+@function lg-edge-gradient($a, $b) {
+    @return linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, $a) 33%,
+        rgba(255, 255, 255, $b) 66%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+/**
+ * The glass pane.
+ *
+ * @param $radius     999px on controls, 24–32px on panels. Below 12px the
+ *                    displacement has no curvature to show (SKILL.md).
+ * @param $blur       `base` (nearly clear, the default — refraction is the
+ *                    point) or `frosty` (25px, for text-heavy panels).
+ * @param $interactive whether to arm the hover/press sheen.
+ * @param $position   the edge and sheen layers are absolutely positioned, so
+ *                    the pane has to establish a containing block. `relative`
+ *                    suits almost everything; pass `sticky` or `absolute` when
+ *                    the pane positions itself. It is a parameter rather than a
+ *                    plain declaration so a caller's own `position` can never
+ *                    be silently overwritten by the include.
+ */
+@mixin lg-glass($radius: var(--lg-radius-pill), $blur: base, $interactive: false, $position: relative) {
+    position: $position;
+    border: 0;
+    border-radius: $radius;
+    // Rule 5: exactly one shadow, and it never stacks.
+    box-shadow: var(--lg-shadow-ambient);
+    transition: var(--lg-transition-glass);
+
+    // The backdrop sample. Light grounds raise the base blur and the pane
+    // carries a white veil instead of reading as a grey slab.
+    @if $blur == frosty {
+        -webkit-backdrop-filter: var(--lg-backdrop-frosty);
+        backdrop-filter: var(--lg-backdrop-frosty);
+    } @else {
+        -webkit-backdrop-filter: var(--lg-backdrop-active);
+        backdrop-filter: var(--lg-backdrop-active);
+    }
+
+    background-color: var(--lg-glass-veil);
+    color: var(--lg-glass-ink);
+    text-shadow: var(--lg-text-shadow-active);
+
+    &:before,
+    &:after {
+        border-radius: inherit;
+        content: "";
+        inset: 0;
+        padding: var(--lg-edge-width);
+        pointer-events: none;
+        position: absolute;
+        transition: var(--lg-transition-elastic);
+        @include lg-edge-mask();
+    }
+
+    // Edge layer 1 — overlay blend, plus the three-part inset that is the
+    // entire illusion of thickness.
+    &:before {
+        background: var(--lg-edge-a);
+        box-shadow: var(--lg-edge-inset);
+        mix-blend-mode: overlay;
+        z-index: var(--lg-z-edge);
+    }
+
+    // Edge layer 2 — screen blend at 0.2. On hover and press the sheen rides
+    // here too: both are additive white, so they composite with screen.
+    &:after {
+        background: var(--lg-edge-b);
+        background-blend-mode: screen;
+        mix-blend-mode: screen;
+        opacity: var(--lg-edge-screen-opacity);
+        z-index: var(--lg-z-sheen);
+    }
+
+    @if $interactive {
+        cursor: pointer;
+
+        &:hover {
+            // Hover raises the edge and adds a radial sheen from the top.
+            &:after {
+                background: var(--lg-sheen-hover), var(--lg-edge-b);
+                opacity: 0.5;
+                padding: var(--lg-edge-width);
+                // Sheen fills the pane; the edge mask would clip it to the ring.
+                -webkit-mask: none;
+                mask: none;
+            }
+        }
+
+        &:active {
+            // Press intensifies to full white at 80% radius, and scales to 0.96.
+            transform: scale(var(--lg-scale-press));
+
+            &:after {
+                background: var(--lg-sheen-press), var(--lg-edge-b);
+                opacity: 0.8;
+                -webkit-mask: none;
+                mask: none;
+            }
+        }
+
+        &:focus-visible {
+            // Never removed, never replaced with a colour change alone.
+            box-shadow: var(--lg-shadow-ambient), var(--lg-focus-ring);
+            outline: 0;
+        }
+    }
+}
+
+/**
+ * The solid counterpart. Rule 1 and rule 2 both route here: article bodies,
+ * tables, dense forms, and anything nested inside a glass pane.
+ */
+@mixin lg-solid($radius: var(--lg-radius-xl), $raised: false) {
+    background: if($raised, var(--lg-solid-fill-raised), var(--lg-solid-fill));
+    border: 1px solid var(--lg-solid-border);
+    border-radius: $radius;
+    box-shadow: none;
+    color: var(--lg-text-primary);
+    text-shadow: none;
+}
+
+/**
+ * A card that lifts 2px on hover — the system's card motion.
+ *
+ * `:active` is restated here because a pressed element also matches `:hover`,
+ * and this mixin is included after lg-glass at every call site. Without it the
+ * lift would win the cascade and swallow the 0.96 press scale.
+ */
+@mixin lg-lift() {
+    &:hover,
+    &:focus-visible {
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(-2px) scale(var(--lg-scale-press));
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        &:hover,
+        &:focus-visible,
+        &:active {
+            transform: none;
+        }
+    }
+}
+
+/** The mono micro-label: the one place the system uses uppercase. */
+@mixin lg-micro-label() {
+    font-family: var(--lg-font-mono);
+    font-size: var(--lg-size-xs);
+    font-weight: var(--lg-weight-regular);
+    letter-spacing: var(--lg-tracking-caps);
+    line-height: var(--lg-leading-snug);
+    text-transform: uppercase;
+}

@@ -1,12 +1,17 @@
 @import "/src/styles/extend.scss";
 
+/**
+ * A rule is structure, not accent. This was a 70px accent-coloured bar three
+ * borders thick; rule 4 keeps the accent for interaction, so it is a hairline
+ * in the border token now.
+ */
 hr.separator {
-    opacity: 1;
-    width: 70px;
+    background-color: var(--lg-border-default);
+    border: 0;
+    color: var(--lg-border-default);
+    height: 1px;
     margin-left: auto;
     margin-right: auto;
-
-    border: 1px solid var(--theme-primary);
-    color: var(--theme-primary);
-    background-color: var(--theme-primary);
+    opacity: 1;
+    width: 70px;
 }

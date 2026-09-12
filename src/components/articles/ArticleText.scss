@@ -1,51 +1,65 @@
 @import "/src/styles/extend.scss";
 
+/**
+ * The prose-with-image block.
+ *
+ * The excerpt is running text that gets read, so rule 1 makes the pane solid.
+ * The image slot beside it keeps its own tint — the system ships no imagery
+ * and marks the slot rather than inventing any, so where a real asset is
+ * supplied it simply fills the frame.
+ */
+
 div.article-text-items {
     display: flex;
     flex-direction: column;
+    gap: var(--lg-space-6);
 }
 
 div.article-text-item {
+    align-items: stretch;
     display: grid;
     grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
-    align-items: stretch;
-    border: 1px solid var(--theme-texts);
+    overflow: hidden;
+    @include lg-solid(var(--lg-radius-2xl));
 }
 
 div.article-text-avatar-view-wrapper {
+    border: 0;
+    border-right: 1px solid var(--lg-border-subtle);
     display: flex;
-    width: 100%;
-    min-width: 0;
-    min-height: 320px;
     height: auto;
     margin: 0;
-    border-right: 1px solid var(--theme-texts);
+    min-height: 300px;
+    min-width: 0;
+    width: 100%;
 }
 
 div.article-text-avatar-view {
-    width: 100%;
+    background: var(--lg-fill-ghost);
+    border-radius: 0;
+    font-size: var(--lg-size-5xl);
     height: 100%;
     margin: 0;
-    border-radius: 0;
-    background: var(--signal-periwinkle);
-    font-size: 5rem;
+    width: 100%;
 
     img { object-fit: cover; }
 }
 
 div.article-text-excerpt {
+    color: var(--lg-text-secondary);
+    direction: ltr;
     display: flex;
     flex-direction: column;
+    font-size: var(--lg-size-base);
     justify-content: center;
-    width: 100%;
+    // The system's body measure and leading.
+    line-height: var(--lg-leading-relaxed);
     margin: 0;
-    padding: clamp(28px, 5vw, 58px);
-    color: var(--theme-texts-light-2);
-    direction: ltr;
-    font-size: 1rem;
-    line-height: 1.72;
+    max-width: var(--lg-measure);
+    padding: clamp(24px, 4vw, 48px);
+    width: 100%;
 
-    p { margin-bottom: 1.1em; }
+    p { margin-bottom: 1.15em; }
 }
 
 div.article-text-item-reverse {
@@ -59,10 +73,10 @@ div.article-text-item-reverse {
     div.article-text-item { grid-template-columns: 1fr; }
 
     div.article-text-avatar-view-wrapper {
-        min-height: 240px;
+        border-bottom: 1px solid var(--lg-border-subtle);
         border-right: 0;
-        border-bottom: 1px solid var(--theme-texts);
+        min-height: 220px;
     }
 
-    div.article-text-excerpt { padding: 28px 22px; }
+    div.article-text-excerpt { padding: var(--lg-space-8) var(--lg-space-7); }
 }

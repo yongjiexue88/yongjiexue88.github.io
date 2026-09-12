@@ -77,7 +77,6 @@ function HomePage() {
                                     return (
                                         <Link key={`${post.collection}-${post.slug}`}
                                               to={post.href}
-                                              style={{"--signal-order": signalIndex}}
                                               className={`writing-signal-cell writing-signal-cell-${post.collection}`}
                                               aria-label={signalLabel(post)}>
                                             <span className={`writing-signal-index`}>
