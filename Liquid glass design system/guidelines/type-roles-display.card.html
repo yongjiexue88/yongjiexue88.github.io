@@ -1,0 +1,32 @@
+<!-- @dsCard group="Type" viewport="700x180" name="Display roles" subtitle="display / title / heading — semibold, tight tracking, never all-caps" -->
+<!DOCTYPE html>
+<html lang="en" data-lg-theme="dark">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 700px; min-height: 180px; box-sizing: border-box; padding: 20px;
+    background: var(--lg-neutral-950);
+    color: var(--lg-text-primary); font: var(--lg-type-body);
+    -webkit-font-smoothing: antialiased;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  a { color: var(--lg-text-accent); text-decoration: none; }
+  a:hover { color: var(--lg-fill-accent-hover); }
+  .row { display: flex; gap: 10px; }
+  .col { display: flex; flex-direction: column; }
+  .t { font: var(--lg-type-mono); letter-spacing: var(--lg-tracking-caps); text-transform: uppercase; color: var(--lg-text-tertiary); }
+  .v { font: var(--lg-type-mono); color: var(--lg-text-secondary); }
+  
+</style>
+</head>
+<body>
+<div class="col" style="gap:14px">
+  <div class="col" style="gap:2px"><span style="font:var(--lg-type-display);font-size:44px;letter-spacing:var(--lg-tracking-tighter)">Light bends</span><span class="v" style="font-size:10px">--lg-type-display · 600 72/1.12</span></div>
+  <div class="col" style="gap:2px"><span style="font:var(--lg-type-title)">Everything after it follows</span><span class="v" style="font-size:10px">--lg-type-title · 600 32/1.12</span></div>
+  <div class="col" style="gap:2px"><span style="font:var(--lg-type-heading)">A section starts here</span><span class="v" style="font-size:10px">--lg-type-heading · 500 20/1.3</span></div>
+</div>
+</body>
+</html>
