@@ -43,7 +43,7 @@ SOA 在亚马逊的规模下很有意义，没有任何一个团队能够知道�
 >
 > —— 约翰・加尔，Systemantics（1975）
 
-本文作者 DHH， Ruby on Rails 作者，37signals CTO，译者 Vonng。
+本文作者 DHH， Ruby on Rails 作者，37signals CTO，译者 薛永杰。
 
 原题为  Even Amazon can't make sense of serverless or microservices[1] 。即《亚马逊自个都觉得微服务和Serverless扯淡了》
 

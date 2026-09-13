@@ -19,7 +19,7 @@ aliases: ["/ai/openai-pg/"]
 
 ![1.jpg](1.jpg)
 
-Bohan Zhang 是 OpenAI Infra 组成员，师从 CMU 网红教授 Andy Pavlo ，并与其共同创办了 OtterTune 。本文为 Bohan 在大会上的演讲。 中文翻译/点评 by [冯若航](https://vonng.com/)：[Pigsty](https://pigsty.cc/) 作者，PostgreSQL 老司机
+Bohan Zhang 是 OpenAI Infra 组成员，师从 CMU 网红教授 Andy Pavlo ，并与其共同创办了 OtterTune 。本文为 Bohan 在大会上的演讲。 中文翻译/点评 by [薛永杰](https://vonng.com/)：[Pigsty](https://pigsty.cc/) 作者，PostgreSQL 老司机
 
 > Hacker News Discussion: [OpenAI: Scaling Postgres to the Next Level](https://news.ycombinator.com/item?id=44071418#44072781)
 

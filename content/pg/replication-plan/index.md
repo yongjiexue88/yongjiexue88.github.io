@@ -53,6 +53,6 @@ tags: [PostgreSQL, PG管理, 架构]
 
 ## 实施方式
 
-[PostgreSQL Testing Environment](https://github.com/Vonng/pg/blob/master/test/README.md) 这里给出了一个3节点的样例集群，包含了M，S，O三个节点。R节点是S的一种，因此在此略过。
+[PostgreSQL Testing Environment](https://github.com/vonng/pg/blob/master/test/README.md) 这里给出了一个3节点的样例集群，包含了M，S，O三个节点。R节点是S的一种，因此在此略过。
 
 这里，主库直接挂载了两个“从库”，一个是S节点，一个是O节点上的WAL日志归档器。在丢数据容忍度很低的情况下，可以将两者配置为同步从库。

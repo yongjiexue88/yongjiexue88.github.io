@@ -13,7 +13,7 @@ tags: [下云]
 
 > 作者：**David Heinemeier Hansson**，网名DHH，37 Signal 联创与CTO，Ruby on Rails 作者，下云倡导者、实践者、领跑者。反击科技巨头垄断的先锋。[Hey博客](https://world.hey.com/dhh)
 >
-> 译者：**Vonng**，PIGSTY 创始人与CEO。[Pigsty](https://mp.weixin.qq.com/s/-E_-HZ7LvOze5lmzy3QbQA) 作者，PostgreSQL 专家/布道师。公众号《[非法加冯](https://mp.weixin.qq.com/s/p4Ys10ZdEDAuqNAiRmcnIQ)》主理人，云计算泥石流，数据库老司机。
+> 译者：**薛永杰**，PIGSTY 创始人与CEO。[Pigsty](https://mp.weixin.qq.com/s/-E_-HZ7LvOze5lmzy3QbQA) 作者，PostgreSQL 专家/布道师。公众号《[非法加冯](https://mp.weixin.qq.com/s/p4Ys10ZdEDAuqNAiRmcnIQ)》主理人，云计算泥石流，数据库老司机。
 >
 > 本文翻译自 DHH [博客](https://world.hey.com/dhh/keeping-the-lights-on-while-leaving-the-cloud-be7c2d67)，
 

@@ -89,7 +89,7 @@ PostgreSQL 的 PGDG 官方仓库中，提供了大约 **100** 个左右的扩展
 
 <details><summary>使用Pigsty一次性配置好并拉起用于自建Supabase的PostgreSQL集群，只要简单地声明要安装哪些扩展插件即可！</summary><br>
 
-一键自建 Supabase 所需的 PostgreSQL 集群，请参考样例配置文件： [`conf/dbms/supabase.yml`](https://github.com/Vonng/pigsty/blob/main/conf/supa.yml)。
+一键自建 Supabase 所需的 PostgreSQL 集群，请参考样例配置文件： [`conf/dbms/supabase.yml`](https://github.com/vonng/pigsty/blob/main/conf/supa.yml)。
 
 ```yaml
 # pg-meta, the underlying postgres database for supabase
@@ -177,7 +177,7 @@ pg-meta:
 
 PG 每个大版本都会引入一些变动，因此维护一百多个扩展插件并不是一件轻松的事情。特别是一些扩展的作者都好几年没动静了，那还真就只能自己上。我自己修复了十几个扩展插件，提供了最新的 PG 大版本支持。能联系上作者的，我也提交了一堆 PR 或者 Issue，推动解决。
 
-<a href="https://github.com/Vonng"><img src="github-contrib.webp" style="max-width: 800px; width: 100%; height: auto;"></a>
+<a href="https://github.com/vonng"><img src="github-contrib.webp" style="max-width: 800px; width: 100%; height: auto;"></a>
 
 在这个过程中，我和许多扩展作者都建立了联系。例如，我手把手帮助 ParadeDB 的老板与作者 [解决了](https://github.com/paradedb/paradedb/issues/1116) RPM / DEB 包打包与分发的问题。我说动了 duckdb_fdw 的作者使用一个单独的 libduckdb，并发布了 v1.0.0 ，我给一些PG扩展的作者发邮件/Issue，国产机器学习框架 PG4ML 的作者也找到了我希望能够通过这个渠道进行分发。
 

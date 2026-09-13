@@ -72,7 +72,7 @@ Per-issue flow, roughly:
 5. **Tests.** Codex proposes cases, Claude Code adds more, Codex runs them, Claude Code reviews the results.
 6. **I decide.** Read the diff, run the tests, merge or send it back with comments.
 
-I didn't write any of the code in this round. My job was to define the problem, set constraints, pick between approaches, read diffs, run tests, and merge. The GitHub log shows `Vonng`, `Codex`, and `Claude Code` as co-authors — that's just who did the work.
+I didn't write any of the code in this round. My job was to define the problem, set constraints, pick between approaches, read diffs, run tests, and merge. The GitHub log shows `Yongjie Xue`, `Codex`, and `Claude Code` as co-authors — that's just who did the work.
 
 ![fix.webp](fix.webp)
 

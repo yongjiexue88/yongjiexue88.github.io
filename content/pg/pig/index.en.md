@@ -16,9 +16,9 @@ Enter **Pig**, a Go-based package manager built to tame Postgres and its ecosyst
 
 Instead of reinventing the wheel, Pig piggyback your system’s native package manager (APT, YUM, DNF) and follow official PGDG packaging conventions to ensure a glitch-free fit. That means you don’t have to choose between “the right way” and “the quick way”; Pig respects your existing repos, aligns with standard OS best practices, and fits neatly alongside other packages you already use.
 
-Ready to give your Postgres superpowers without the usual hassle? Check out **[GitHub](https://github.com/pgsty/pig)** for documentation, installation steps, and a peek at its massive [extension list](https://pgext.cloud/list). Then, watch your local Postgres instance transform into a powerhouse of specialized modules—no black magic is required. If [the future of Postgres is unstoppable extensibility](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4), Pig is the genie that helps you unlock it. Honestly, nobody ever complained that they had *too many* extensions.
+Ready to give your Postgres superpowers without the usual hassle? Check out **[GitHub](https://github.com/pgsty/pig)** for documentation, installation steps, and a peek at its massive [extension list](https://pgext.cloud/list). Then, watch your local Postgres instance transform into a powerhouse of specialized modules—no black magic is required. If [the future of Postgres is unstoppable extensibility](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4), Pig is the genie that helps you unlock it. Honestly, nobody ever complained that they had *too many* extensions.
 
-[PIG v0.1 Release](https://github.com/pgsty/pig) | [GitHub Repo](https://github.com/pgsty/pig) | Blog: [The Idea Way to deliver PG Extensions](https://medium.com/@fengruohang/the-idea-way-to-deliver-postgresql-extensions-35646464bb71)
+[PIG v0.1 Release](https://github.com/pgsty/pig) | [GitHub Repo](https://github.com/pgsty/pig) | Blog: [The Idea Way to deliver PG Extensions](https://medium.com/@yongjiexue88/the-idea-way-to-deliver-postgresql-extensions-35646464bb71)
 
 -------
 

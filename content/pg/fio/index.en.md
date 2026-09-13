@@ -7,7 +7,7 @@ summary: >
 tags: [PostgreSQL, PG Admin, Performance]
 ---
 
-> Author: [Vonng](https://vonng.com/en/)
+> Author: [Yongjie Xue](https://vonng.com/en/)
 
 FIO is an excellent disk performance testing tool. You can test disk read/write performance using the following commands.
 

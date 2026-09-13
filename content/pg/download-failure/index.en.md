@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, PG Admin, Incident]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 Recently there was a perplexing incident where a database had half its data volume and load migrated away.
 

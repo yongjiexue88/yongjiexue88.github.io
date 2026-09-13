@@ -6,7 +6,7 @@ authors: ["laurenz-albe"]
 tags: [PostgreSQL, Oracle, Database, Transactions]
 ---
 
-> Original by [Laurenz Albe](https://www.cybertec-postgresql.com/en/comparison-of-the-transaction-systems-of-oracle-and-postgresql/). Translation and commentary by Feng Ruohang.
+> Original by [Laurenz Albe](https://www.cybertec-postgresql.com/en/comparison-of-the-transaction-systems-of-oracle-and-postgresql/). Translation and commentary by Yongjie Xue.
 
 Transactions sit at the heart of relational databases. They guarantee **data integrity** for applications. SQL defines some transactional behavior but leaves plenty unspecified, so implementations differ wildly.
 

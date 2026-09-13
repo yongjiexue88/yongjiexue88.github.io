@@ -11,7 +11,7 @@ type: blog
 page_width: wide
 comments: false
 profile:
-  headline: 冯若航 @Vonng / 人生旅途
+  headline: 薛永杰 @yongjiexue88 / 人生旅途
 cascade:
   type: blog
   page_width: normal

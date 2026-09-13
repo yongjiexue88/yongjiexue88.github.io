@@ -136,7 +136,7 @@ Perfect for engineers wanting to offload computation in Postgres while preservin
 
 ### 9. The Missing Postgres Extension Repo and Package Manager
 
-**1:30 pm → 25 min**, Ruohang Feng
+**1:30 pm → 25 min**, Yongjie Xue
 
 **The Missing Postgres Extension Repo and Package Manager**
 

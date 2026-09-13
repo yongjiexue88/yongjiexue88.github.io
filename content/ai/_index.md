@@ -11,7 +11,7 @@ type: blog
 page_width: wide
 comments: false
 profile:
-  headline: 冯若航 @Vonng / Agent, LLM, Database
+  headline: 薛永杰 @yongjiexue88 / Agent, LLM, Database
 cascade:
   type: blog
   page_width: normal

@@ -14,7 +14,7 @@ ai: true
 
 ### 1. Cover
 
-Hello, everyone. I'm Ruohang Feng, the organizer of this tools track. This is a PostgreSQL tools session, but today I don't want to talk about how many new features some command-line utility has gained. I want to ask a more fundamental question:
+Hello, everyone. I'm Yongjie Xue, the organizer of this tools track. This is a PostgreSQL tools session, but today I don't want to talk about how many new features some command-line utility has gained. I want to ask a more fundamental question:
 **Why are agents that can actually manage production databases still so rare?** My answer is simple: today's models are already smart enough. What they lack is not a brain, but a body.
 They need to see system state, take action, judge risk, leave evidence, and back out after something goes wrong. Today I want to discuss how we can build that body for a DBA Agent.
 

@@ -156,7 +156,7 @@ v4.5 有很多新东西。我们有个客户想要在 Pigsty 里使用 Kafka。�
 
 [![CapsLock Enhancement 的由来与用户反馈](capslock-history.webp)](https://capslock.vonng.com/zh/)
 
-当然，这个十年前的形态是基于 Karabiner 这个开源软件的一份[配置文档](https://github.com/Vonng/Capslock)。后来也有不少人借鉴参考，还有做成商业软件去卖的，我也懒得去折腾。不过现在既然有富余 Token 了，我也不介意自己做一个 macOS 原生 App 玩一玩。这个还没有正式发布，这两天还在烧。
+当然，这个十年前的形态是基于 Karabiner 这个开源软件的一份[配置文档](https://github.com/vonng/Capslock)。后来也有不少人借鉴参考，还有做成商业软件去卖的，我也懒得去折腾。不过现在既然有富余 Token 了，我也不介意自己做一个 macOS 原生 App 玩一玩。这个还没有正式发布，这两天还在烧。
 
 大体上你可以把它理解为 Karabiner 改键，加上防休眠、窗口管理、剪贴板、应用启动器、切换器之类的小功能，完整整合成的一个东西。这也正好解决了我自己不想装一些鸡零狗碎小软件的痛点。
 

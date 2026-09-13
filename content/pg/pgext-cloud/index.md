@@ -74,7 +74,7 @@ PGDG 官方仓库维护了 144 个 EL 扩展和 105 个 Debian 扩展，而老�
 某个发行版和 PG 的组合可能漏掉了，不同 PG 大版本的扩展版本不一致，老冯在这里可没有少给 PGDG 仓库擦屁股。
 
 更大的问题在于部分扩展缺乏及时维护。当 PostgreSQL 推出 16、17、18 等新版本时，一些扩展因为无人更新而无法兼容新版本，甚至直接导致崩溃。
-这两年来，[老冯](https://github.com/Vonng) 修复了近百个“趴窝”的扩展。例如，最近几乎所有重要的 [Rust PG 扩展](https://pgext.cloud/list/lang#rust)，在老冯的推动下都已升级到最新的 pgrx 0.16.1 框架，并支持 PG 18。
+这两年来，[薛永杰](https://github.com/yongjiexue88) 修复了近百个“趴窝”的扩展。例如，最近几乎所有重要的 [Rust PG 扩展](https://pgext.cloud/list/lang#rust)，在老冯的推动下都已升级到最新的 pgrx 0.16.1 框架，并支持 PG 18。
 
 ![contrib.jpg](contrib.jpg)
 

@@ -7,7 +7,7 @@ summary: >
 tags: [PostgreSQL, PG Admin, Backup]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 Backup is the foundation of a DBA's livelihood. With backups, there's no need to panic.
 

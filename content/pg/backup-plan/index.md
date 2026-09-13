@@ -53,13 +53,13 @@ pg_receivewal \
   -d'postgres://replicator@master.csq.tsa.md/postgres'
 ```
 
-当然在实际生产环境中，为了更为鲁棒地归档，通常我们会将其注册为服务，并保存一些命令状态。这里给出了生产环境中使用的一个 `pg_receivewal` 命令包装：[`walarchiver`](https://github.com/Vonng/pg/blob/master/test/pkg/walarchiver)
+当然在实际生产环境中，为了更为鲁棒地归档，通常我们会将其注册为服务，并保存一些命令状态。这里给出了生产环境中使用的一个 `pg_receivewal` 命令包装：[`walarchiver`](https://github.com/vonng/pg/blob/master/test/pkg/walarchiver)
 
 ### 相关脚本
 
 这里提供了一个初始化PostgreSQL Offline Instance的脚本，可以作为参考：
 
-[`pg/test/bin/offline.sh`](https://github.com/Vonng/pg/blob/master/test/bin/offline.sh)
+[`pg/test/bin/offline.sh`](https://github.com/vonng/pg/blob/master/test/bin/offline.sh)
 
 ## 备份测试
 

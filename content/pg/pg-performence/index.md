@@ -31,7 +31,7 @@ tags: [PostgreSQL, PG生态, 性能]
 - 云数据库 / 云服务器 的成本到底有没有优势？
   c5d.metal 用1年的价格，可以把服务器买下来托管用5年。对应规格云数据库用1年的价格，可以供你买同样的EC2用20年
 
-详细测试过程与原始数据放置于：[github.com/Vonng/pgtpc](https://github.com/Vonng/pgtpc)
+详细测试过程与原始数据放置于：[github.com/vonng/pgtpc](https://github.com/vonng/pgtpc)
 
 ------
 
@@ -161,7 +161,7 @@ MySQL 并没有提供一个官方的 sysbench 测试结果，只是在官网上�
 | Spec                  | 96C 192G     | 108C 510G                                | 96C 384G                                | 64C 256G   | 108C 216G      | 48C 96G       |
 | Table                 | 16 x 10M     | 16 x 10M                                 | 30 x 10M                                | 1 x 160M   | N/A            | 10 x 0.1M     |
 | CPU                   | 96           | 108                                      | 96                                      | 64         | 108            | 48            |
-| Source                | Vonng        | TiDB 6.1                                 | OceanBase                               | PolarDB    | Cockroach      | YugaByte      |
+| Source                | Yongjie Xue  | TiDB 6.1                                 | OceanBase                               | PolarDB    | Cockroach      | YugaByte      |
 
 ![pg-performence-10.png](pg-performence-10.png)
 
@@ -196,12 +196,12 @@ TPC-H 是一个模拟数仓，包含8张数据表，与22条复杂分析类SQL�
 
 | Database   | Time   | S    | CPU | QPH  | Environment          | Source    |
 |------------|--------|------|-----|------|----------------------|-----------|
-| PostgreSQL | 8      | 1    | 10  | 45.0 | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 56     | 10   | 10  | 64.3 | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 1327   | 50   | 10  | 13.6 | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 4835   | 100  | 10  | 7.4  | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 13.51  | 1    | 8   | 33.3 | 8C / 64G z1d.2xlarge | Vonng     |
-| PostgreSQL | 133.35 | 10   | 8   | 33.7 | 8C / 64G z1d.2xlarge | Vonng     |
+| PostgreSQL | 8      | 1    | 10  | 45.0 | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 56     | 10   | 10  | 64.3 | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 1327   | 50   | 10  | 13.6 | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 4835   | 100  | 10  | 7.4  | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 13.51  | 1    | 8   | 33.3 | 8C / 64G z1d.2xlarge | Yongjie Xue |
+| PostgreSQL | 133.35 | 10   | 8   | 33.7 | 8C / 64G z1d.2xlarge | Yongjie Xue |
 | TiDB       | 190    | 100  | 120 | 15.8 | 120C / 570G          | TiDB      |
 | Spark      | 388    | 100  | 120 | 7.7  | 120C / 570G          | TiDB      |
 | Greenplum  | 436    | 100  | 288 | 2.9  | 120C / 570G          | TiDB      |
@@ -242,7 +242,7 @@ TPC-H 是一个模拟数仓，包含8张数据表，与22条复杂分析类SQL�
 
 ## 参考
 
-[1]  [Vonng: PGTPC](https://github.com/Vonng/pgtpc)
+[1]  [Yongjie Xue: PGTPC](https://github.com/vonng/pgtpc)
 
 [2]  [WHY MYSQL](https://www.mysql.com/cn/why-mysql/benchmarks/mysql/)
 

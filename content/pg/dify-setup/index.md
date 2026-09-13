@@ -22,15 +22,15 @@ aliases: ["/ai/dify-setup/"]
 这里我不得不吐槽一下 Dify 模板的设计，元数据都已经用 PostgreSQL 存储了，你直接加个 `pgvector` 不就能拿来当向量数据库了？更让人想吐槽的是 `pgvector` 竟然还是一个单独的镜像与容器，你直接用一个带 pgvector 的 PG 镜像不就行了？
 Dify “支持” 了一堆花里胡哨的向量数据库，但你既然已经选定了 PostgreSQL 了，向量数据库默认也用 `pgvector` 就是自然而然地选择了。同理，我觉得 Dify 官方应该考虑一下把 Redis 去掉，Celery 任务队列又不是不能用 PostgreSQL 作为后端存储，弄那么多数据库纯属吃饱了撑着。如无必要，勿增实体。
 
-所以 Pigsty 提供的 [Dify Docker Compose 模板](https://github.com/Vonng/pigsty/tree/master/app/dify) 也对官方的样例做了一些修改，把 `db` 和 `redis` 两个数据库镜像给去掉了，使用由 Pigsty 管理的实例，向量数据库固定使用 `pgvector`，复用同一个 PostgreSQL 实例。
+所以 Pigsty 提供的 [Dify Docker Compose 模板](https://github.com/vonng/pigsty/tree/master/app/dify) 也对官方的样例做了一些修改，把 `db` 和 `redis` 两个数据库镜像给去掉了，使用由 Pigsty 管理的实例，向量数据库固定使用 `pgvector`，复用同一个 PostgreSQL 实例。
 
 最后上面那个架构就被简化为无状态的：`dify-api`，`dify-web`，`dify-worker` 三个无状态容器，可以随意创建销毁。当然还有两个可选的 `ssrf_proxy` 与 `nginx`，用于提供代理与些许安全特性。
-还有一点状态尾巴是 [文件系统卷](https://github.com/Vonng/pigsty/blob/master/app/dify/docker-compose.yml#L128)，存放私钥之类的东西，定期备份一下就好了，也可以使用 MinIO 替代。
+还有一点状态尾巴是 [文件系统卷](https://github.com/vonng/pigsty/blob/master/app/dify/docker-compose.yml#L128)，存放私钥之类的东西，定期备份一下就好了，也可以使用 MinIO 替代。
 
 参考资料：
 
 - [GitHub: langgenius/Dify](https://github.com/langgenius/dify/)
-- [Pigsty: Dify Docker Compose Template](https://github.com/Vonng/pigsty/tree/master/app/dify)
+- [Pigsty: Dify Docker Compose Template](https://github.com/vonng/pigsty/tree/master/app/dify)
 
 ------
 
@@ -160,7 +160,7 @@ $ docker compose pull
 
 ## Dify的配置工作
 
-Dify 的配置参数一如往常地放在 [`.env`](https://github.com/Vonng/pigsty/blob/master/app/dify/.env) 文件中，内容如下所示：
+Dify 的配置参数一如往常地放在 [`.env`](https://github.com/vonng/pigsty/blob/master/app/dify/.env) 文件中，内容如下所示：
 
 所有参数都顾名思义，已经填入了在 [Pigsty默认沙箱环境](https://pigsty.cc/docs/deploy/sandbox/) 中可以直接工作的默认值，数据库连接信息请根据您的真实配置，与上面 PG / Redis 集群配置保持一致即可。
 我们建议你随便改一下这个 `SECRET_KEY` 字段，可以使用 `openssl rand -base64 42` 生成一个强密钥。

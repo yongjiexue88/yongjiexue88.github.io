@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, PG Admin]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 PostgreSQL uses MVCC as its primary concurrency control technology. While it has many benefits, it also brings other effects, such as relation bloat. Relation bloat (table and index) negatively impacts database performance and wastes disk space. To keep PostgreSQL always at optimal performance, it's necessary to perform timely garbage collection on bloated relations and regularly rebuild excessively bloated relations.
 

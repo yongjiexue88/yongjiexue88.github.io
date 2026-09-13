@@ -177,7 +177,7 @@ languages:
     params:
       description: 薛勇杰的个人博客与主页：以写作者的眼光做工程，记录系统、语言、职业、技术与生活。
       copyright:
-        authors: '[薛勇杰](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88)) · 技术专栏转载自 [vonng.com](https://vonng.com)，依 [CC BY 4.0](https://github.com/Vonng/vonng.com/blob/main/LICENSE) 使用，署名见各文章'
+        authors: '[薛勇杰](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88)) · 技术专栏转载自 [vonng.com](https://vonng.com)，依 [CC BY 4.0](https://github.com/vonng/vonng.com/blob/main/LICENSE) 使用，署名见各文章'
         from_year: 2026
         to_year: present
       footer_center_info: 'Powered by [Hugo](https://gohugo.io) & [OINK](https://oink.pgsty.com)'
@@ -217,7 +217,7 @@ languages:
     params:
       description: Personal blog and notes of Yongjie Xue — Engineering with a writer’s eye.
       copyright:
-        authors: '[Yongjie Xue](https://www.yongjiexue.io/en/) ([@yongjiexue88](https://github.com/yongjiexue88)) · Technical columns reproduced from [vonng.com](https://vonng.com) under [CC BY 4.0](https://github.com/Vonng/vonng.com/blob/main/LICENSE); each article credits its own author'
+        authors: '[Yongjie Xue](https://www.yongjiexue.io/en/) ([@yongjiexue88](https://github.com/yongjiexue88)) · Technical columns reproduced from [vonng.com](https://vonng.com) under [CC BY 4.0](https://github.com/vonng/vonng.com/blob/main/LICENSE); each article credits its own author'
         from_year: 2026
         to_year: present
       footer_center_info: 'Powered by [Hugo](https://gohugo.io) & [OINK](https://oink.pgsty.com)'

@@ -17,7 +17,7 @@ Honestly, the kind of "MCP" that directly opens up entire databases to the world
 
 > https://googleapis.github.io/genai-toolbox/
 
-Unlike the previous crude approach of directly exposing entire databases to Agents, this toolbox significantly improves the practicality and security of database MCP by encapsulating parameterized template SQL, making it ready for production pilots — Vonng has also packaged RPM/DEB packages for everyone to try.
+Unlike the previous crude approach of directly exposing entire databases to Agents, this toolbox significantly improves the practicality and security of database MCP by encapsulating parameterized template SQL, making it ready for production pilots — Yongjie Xue has also packaged RPM/DEB packages for everyone to try.
 
 > https://googleapis.github.io/genai-toolbox/getting-started/introduction/
 
@@ -25,11 +25,11 @@ Unlike the previous crude approach of directly exposing entire databases to Agen
 
 ## Quick Start
 
-For example, Vonng maintains a PostgreSQL repository containing 423 extensions with some data tables. Now I want to expose extension/software package query capabilities. I just need to write a declarative `tools.yaml` configuration file. Here I connect Claude Desktop to MCP via STDIO and directly ask questions.
+For example, Yongjie Xue maintains a PostgreSQL repository containing 423 extensions with some data tables. Now I want to expose extension/software package query capabilities. I just need to write a declarative `tools.yaml` configuration file. Here I connect Claude Desktop to MCP via STDIO and directly ask questions.
 
 ![extension.webp](extension.webp)
 
-When maintaining extensions, Vonng usually needs to scrape various metadata from GitHub and fill it into database tables. With this toolbox, I can also define a template SQL for inserting into the extension table, clearly describe various parameter fields, and then directly let Claude do "deep research" to generate metadata and fill it into the data table, saving Vonng a lot of manual work.
+When maintaining extensions, Yongjie Xue usually needs to scrape various metadata from GitHub and fill it into database tables. With this toolbox, I can also define a template SQL for inserting into the extension table, clearly describe various parameter fields, and then directly let Claude do "deep research" to generate metadata and fill it into the data table, saving Yongjie Xue a lot of manual work.
 
 ![example1.webp](example1.webp)
 
@@ -130,11 +130,11 @@ Of course, this toolbox isn't just for MCP clients — it can also directly prov
 
 ------
 
-## Vonng's Assessment
+## Yongjie Xue's Assessment
 
 Google's database MCP toolbox solves a core problem for MCP production deployment — **permission management**. Of course, this comes with a cost: developers need to define database capabilities one by one — writing SQL templates is similar to writing CRUD before, but much simpler — you can write business logic in natural language. I believe this is an important step toward the future vision of Agent + Database in the software industry.
 
-Vonng believes that the Agent + Database combination will inevitably lead to a "renaissance" of database stored procedures. Because if you just put simple SQL statements into MCP, it creates a huge contextual cognitive burden for Agents — Agents need to understand business logic and organize complex business logic into SQL calls. Once service calls correspond to multiple complex SQL statements, reliability drops rapidly.
+Yongjie Xue believes that the Agent + Database combination will inevitably lead to a "renaissance" of database stored procedures. Because if you just put simple SQL statements into MCP, it creates a huge contextual cognitive burden for Agents — Agents need to understand business logic and organize complex business logic into SQL calls. Once service calls correspond to multiple complex SQL statements, reliability drops rapidly.
 
 But if developers sink the entire business logic into the database, implementing Service-layer API interfaces originally at the application level as stored procedures in databases like Oracle/PostgreSQL, then the intelligence/context requirements for Agents are greatly reduced — abstracting from DAO level to Service level.
 
@@ -142,11 +142,11 @@ Additionally, the two major drawbacks of stored procedures — **high requiremen
 
 ![pl.webp](pl.webp)
 
-Therefore, I believe the AI era greatly favors [multi-modal, full-featured, extensible databases like PostgreSQL](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247487513&idx=2&sn=ffb27fc934b6dce3d8571af0e228d21f&scene=21#wechat_redirect). PG supports stored procedure development in over 20 programming languages, something even Oracle can hardly match (six languages). Of course, Oracle's programmability is also excellent, but because it's not open source, it will receive much less AI dividend. Vonng predicts these two will respectively capture the largest AI dividends in open source/commercial database ecosystems.
+Therefore, I believe the AI era greatly favors [multi-modal, full-featured, extensible databases like PostgreSQL](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247487513&idx=2&sn=ffb27fc934b6dce3d8571af0e228d21f&scene=21#wechat_redirect). PG supports stored procedure development in over 20 programming languages, something even Oracle can hardly match (six languages). Of course, Oracle's programmability is also excellent, but because it's not open source, it will receive much less AI dividend. Yongjie Xue predicts these two will respectively capture the largest AI dividends in open source/commercial database ecosystems.
 
 ## Download and Installation Guide
 
-Currently, MCP Toolbox for Database provides packages for macOS and Linux/Windows x86. Vonng has packaged RPM/DEB packages for Linux x86/ARM platforms, usable on mainstream Linux systems (repository tutorial: https://pigsty.io/docs/repo/infra/).
+Currently, MCP Toolbox for Database provides packages for macOS and Linux/Windows x86. Yongjie Xue has packaged RPM/DEB packages for Linux x86/ARM platforms, usable on mainstream Linux systems (repository tutorial: https://pigsty.io/docs/repo/infra/).
 
 ```
 curl https://repo.pigsty.cc/pig | bash  # pig package manager

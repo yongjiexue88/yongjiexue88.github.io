@@ -156,7 +156,7 @@ It now works and will probably land in Pigsty 5.0.
 
 [![The origins of CapsLock Enhancement and user feedback](capslock-history.webp)](https://capslock.vonng.com/)
 
-The decade-old version was simply a [Karabiner configuration](https://github.com/Vonng/Capslock). Plenty of people later borrowed the idea, and some even turned it into commercial software. I never cared enough to chase it. But now that I have tokens to spare, I do not mind building a native macOS app of my own. It is not formally released yet; I am still burning quota on it.
+The decade-old version was simply a [Karabiner configuration](https://github.com/vonng/Capslock). Plenty of people later borrowed the idea, and some even turned it into commercial software. I never cared enough to chase it. But now that I have tokens to spare, I do not mind building a native macOS app of my own. It is not formally released yet; I am still burning quota on it.
 
 Think of it as Karabiner-style key remapping bundled with little conveniences such as keep-awake controls, window management, a clipboard, an app launcher, and an app switcher. It also solves my own annoyance with installing a grab bag of tiny utilities.
 

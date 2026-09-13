@@ -116,13 +116,13 @@ The following commands will be used repeatedly:
 DROP TABLE IF EXISTS users;
 CREATE TABLE users(id SERIAL PRIMARY KEY, name TEXT);
 
-INSERT INTO users VALUES (100, 'Vonng');
+INSERT INTO users VALUES (100, 'Yongjie');
 INSERT INTO users VALUES (101, 'Xiao Wang');
 DELETE FROM users WHERE id = 100;
 UPDATE users SET name = 'Lao Wang' WHERE id = 101;
 ```
 
-The final database state is: only one record `(101, 'Lao Wang')`. Whether there was once a user named `Vonng` or the fact that Old Wang was once young, all disappeared with database deletions and modifications. We hope these facts should not vanish with the wind and need to be recorded.
+The final database state is: only one record `(101, 'Lao Wang')`. Whether there was once a user named `Yongjie` or the fact that Old Wang was once young, all disappeared with database deletions and modifications. We hope these facts should not vanish with the wind and need to be recorded.
 
 ### Operation Flow
 
@@ -167,7 +167,7 @@ SELECT * FROM  pg_logical_slot_get_changes('test_slot', NULL, NULL);
  0/167C7E8 | 569 | BEGIN 569
  0/169F6F8 | 569 | COMMIT 569
  0/169F6F8 | 570 | BEGIN 570
- 0/169F6F8 | 570 | table public.users: INSERT: id[integer]:100 name[text]:'Vonng'
+ 0/169F6F8 | 570 | table public.users: INSERT: id[integer]:100 name[text]:'Yongjie'
  0/169F810 | 570 | COMMIT 570
  0/169F810 | 571 | BEGIN 571
  0/169F810 | 571 | table public.users: INSERT: id[integer]:101 name[text]:'Xiao Wang'
@@ -206,7 +206,7 @@ pg_recvlogical \
 BEGIN 585
 COMMIT 585
 BEGIN 586
-table public.users: INSERT: id[integer]:100 name[text]:'Vonng'
+table public.users: INSERT: id[integer]:100 name[text]:'Yongjie'
 COMMIT 586
 BEGIN 587
 table public.users: INSERT: id[integer]:101 name[text]:'Xiao Wang'
@@ -270,7 +270,7 @@ Results:
 
 ```json
 {"change":[]}
-{"change":[{"kind":"insert","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[100,"Vonng"]}]}
+{"change":[{"kind":"insert","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[100,"Yongjie"]}]}
 {"change":[{"kind":"insert","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[101,"Xiao Wang"]}]}
 {"change":[{"kind":"delete","schema":"public","table":"users","oldkeys":{"keynames":["id"],"keytypes":["integer"],"keyvalues":[100]}}]}
 {"change":[{"kind":"update","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[101,"Lao Wang"],"oldkeys":{"keynames":["id"],"keytypes":["integer"],"keyvalues":[101]}}]}
@@ -287,7 +287,7 @@ pg_recvlogical -d postgres --create-slot --if-not-exists --slot=test_slot \
 Results:
 
 ```sql
-INSERT INTO public.users (id, name) VALUES (100, 'Vonng');
+INSERT INTO public.users (id, name) VALUES (100, 'Yongjie');
 INSERT INTO public.users (id, name) VALUES (101, 'Xiao Wang');
 DELETE FROM public.users WHERE id = 100;
 UPDATE public.users SET id = 101, name = 'Lao Wang' WHERE id = 101;

@@ -7,7 +7,7 @@ summary: >
 tags: [PostgreSQL, PG Admin]
 ---
 
-> Author: [Vonng](https://vonng.com/en/)
+> Author: [Yongjie Xue](https://vonng.com/en/)
 
 Indexes are useful, but they're not free. Unused indexes are a waste. Use the following SQL to identify unused indexes:
 

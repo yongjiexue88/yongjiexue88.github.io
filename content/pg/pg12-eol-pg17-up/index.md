@@ -88,24 +88,24 @@ PostgreSQL 12 是五年前发布的版本，我认为是继 PG 10 之后的一�
 | 版本     |    发布时间    | 摘要                                                      | 地址                                                            |
 |:-------|:----------:|---------------------------------------------------------|---------------------------------------------------------------|
 | v3.1.0 | 2024-11-20 | PG 17 作为默认大版本，配置简化，Ubuntu 24 与 ARM 支持                   | WIP                                                           |
-| v3.0.4 | 2024-10-30 | PG 17 扩展，OLAP 全家桶，pg_duckdb                             | [v3.0.4](https://github.com/Vonng/pigsty/releases/tag/v3.0.4) |
-| v3.0.3 | 2024-09-27 | PostgreSQL 17，Etcd 运维优化，IvorySQL 3.4，PostGIS 3.5        | [v3.0.3](https://github.com/Vonng/pigsty/releases/tag/v3.0.3) |
-| v3.0.2 | 2024-09-07 | 精简安装模式，PolarDB 15支持，监控视图更新                              | [v3.0.2](https://github.com/Vonng/pigsty/releases/tag/v3.0.2) |
-| v3.0.1 | 2024-08-31 | 例行问题修复，Patroni 4支持，Oracle兼容性改进                          | [v3.0.1](https://github.com/Vonng/pigsty/releases/tag/v3.0.1) |
-| v3.0.0 | 2024-08-25 | 333个扩展插件，可插拔内核，MSSQL，Oracle，PolarDB 兼容性                 | [v3.0.0](https://github.com/Vonng/pigsty/releases/tag/v3.0.0) |
-| v2.7.0 | 2024-05-20 | 扩展大爆炸，新增20+强力扩展插件，与多款Docker应用                           | [v2.7.0](https://github.com/Vonng/pigsty/releases/tag/v2.7.0) |
-| v2.6.0 | 2024-02-28 | PG 16 作为默认大版本，引入 ParadeDB 与 DuckDB 等扩展                  | [v2.6.0](https://github.com/Vonng/pigsty/releases/tag/v2.6.0) |
-| v2.5.1 | 2023-12-01 | 例行小版本更新，PG16重要扩展支持                                      | [v2.5.1](https://github.com/Vonng/pigsty/releases/tag/v2.5.1) |
-| v2.5.0 | 2023-09-24 | Ubuntu/Debian支持：bullseye, bookworm, jammy, focal        | [v2.5.0](https://github.com/Vonng/pigsty/releases/tag/v2.5.0) |
-| v2.4.1 | 2023-09-24 | Supabase/PostgresML支持与各种新扩展：graphql, jwt, pg_net, vault | [v2.4.1](https://github.com/Vonng/pigsty/releases/tag/v2.4.1) |
-| v2.4.0 | 2023-09-14 | PG16，监控RDS，服务咨询支持，新扩展：中文分词全文检索/图/HTTP/嵌入等               | [v2.4.0](https://github.com/Vonng/pigsty/releases/tag/v2.4.0) |
-| v2.3.1 | 2023-09-01 | 带HNSW的PGVector，PG 16 RC1, 文档翻新，中文文档，例行问题修复              | [v2.3.1](https://github.com/Vonng/pigsty/releases/tag/v2.3.1) |
-| v2.3.0 | 2023-08-20 | 主机VIP, ferretdb, nocodb, MySQL存根, CVE修复                 | [v2.3.0](https://github.com/Vonng/pigsty/releases/tag/v2.3.0) |
-| v2.2.0 | 2023-08-04 | 仪表盘 & 置备重做，UOS 兼容性                                      | [v2.2.0](https://github.com/Vonng/pigsty/releases/tag/v2.2.0) |
-| v2.1.0 | 2023-06-10 | 支持 PostgreSQL 12 ~ 16beta                               | [v2.1.0](https://github.com/Vonng/pigsty/releases/tag/v2.1.0) |
-| v2.0.2 | 2023-03-31 | 新增 pgvector 支持，修复 MinIO CVE                             | [v2.0.2](https://github.com/Vonng/pigsty/releases/tag/v2.0.2) |
-| v2.0.1 | 2023-03-21 | v2 错误修复，安全增强，升级 Grafana 版本                              | [v2.0.1](https://github.com/Vonng/pigsty/releases/tag/v2.0.1) |
-| v2.0.0 | 2023-02-28 | 架构大升级，兼容性、安全性、可维护性显著增强                                  | [v2.0.0](https://github.com/Vonng/pigsty/releases/tag/v2.0.0) |
+| v3.0.4 | 2024-10-30 | PG 17 扩展，OLAP 全家桶，pg_duckdb                             | [v3.0.4](https://github.com/vonng/pigsty/releases/tag/v3.0.4) |
+| v3.0.3 | 2024-09-27 | PostgreSQL 17，Etcd 运维优化，IvorySQL 3.4，PostGIS 3.5        | [v3.0.3](https://github.com/vonng/pigsty/releases/tag/v3.0.3) |
+| v3.0.2 | 2024-09-07 | 精简安装模式，PolarDB 15支持，监控视图更新                              | [v3.0.2](https://github.com/vonng/pigsty/releases/tag/v3.0.2) |
+| v3.0.1 | 2024-08-31 | 例行问题修复，Patroni 4支持，Oracle兼容性改进                          | [v3.0.1](https://github.com/vonng/pigsty/releases/tag/v3.0.1) |
+| v3.0.0 | 2024-08-25 | 333个扩展插件，可插拔内核，MSSQL，Oracle，PolarDB 兼容性                 | [v3.0.0](https://github.com/vonng/pigsty/releases/tag/v3.0.0) |
+| v2.7.0 | 2024-05-20 | 扩展大爆炸，新增20+强力扩展插件，与多款Docker应用                           | [v2.7.0](https://github.com/vonng/pigsty/releases/tag/v2.7.0) |
+| v2.6.0 | 2024-02-28 | PG 16 作为默认大版本，引入 ParadeDB 与 DuckDB 等扩展                  | [v2.6.0](https://github.com/vonng/pigsty/releases/tag/v2.6.0) |
+| v2.5.1 | 2023-12-01 | 例行小版本更新，PG16重要扩展支持                                      | [v2.5.1](https://github.com/vonng/pigsty/releases/tag/v2.5.1) |
+| v2.5.0 | 2023-09-24 | Ubuntu/Debian支持：bullseye, bookworm, jammy, focal        | [v2.5.0](https://github.com/vonng/pigsty/releases/tag/v2.5.0) |
+| v2.4.1 | 2023-09-24 | Supabase/PostgresML支持与各种新扩展：graphql, jwt, pg_net, vault | [v2.4.1](https://github.com/vonng/pigsty/releases/tag/v2.4.1) |
+| v2.4.0 | 2023-09-14 | PG16，监控RDS，服务咨询支持，新扩展：中文分词全文检索/图/HTTP/嵌入等               | [v2.4.0](https://github.com/vonng/pigsty/releases/tag/v2.4.0) |
+| v2.3.1 | 2023-09-01 | 带HNSW的PGVector，PG 16 RC1, 文档翻新，中文文档，例行问题修复              | [v2.3.1](https://github.com/vonng/pigsty/releases/tag/v2.3.1) |
+| v2.3.0 | 2023-08-20 | 主机VIP, ferretdb, nocodb, MySQL存根, CVE修复                 | [v2.3.0](https://github.com/vonng/pigsty/releases/tag/v2.3.0) |
+| v2.2.0 | 2023-08-04 | 仪表盘 & 置备重做，UOS 兼容性                                      | [v2.2.0](https://github.com/vonng/pigsty/releases/tag/v2.2.0) |
+| v2.1.0 | 2023-06-10 | 支持 PostgreSQL 12 ~ 16beta                               | [v2.1.0](https://github.com/vonng/pigsty/releases/tag/v2.1.0) |
+| v2.0.2 | 2023-03-31 | 新增 pgvector 支持，修复 MinIO CVE                             | [v2.0.2](https://github.com/vonng/pigsty/releases/tag/v2.0.2) |
+| v2.0.1 | 2023-03-21 | v2 错误修复，安全增强，升级 Grafana 版本                              | [v2.0.1](https://github.com/vonng/pigsty/releases/tag/v2.0.1) |
+| v2.0.0 | 2023-02-28 | 架构大升级，兼容性、安全性、可维护性显著增强                                  | [v2.0.0](https://github.com/vonng/pigsty/releases/tag/v2.0.0) |
 
 > [Pigsty Release Note](https://pigsty.cc/docs/releasenote)
 

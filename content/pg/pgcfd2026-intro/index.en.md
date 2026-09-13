@@ -40,7 +40,7 @@ The current official program includes two full-length talks by Chinese speakers,
 
 ### Extensions for Everyone
 
-**Ruohang Feng**<br>
+**Yongjie Xue**<br>
 **Wednesday, May 20, 4:00–4:25 p.m. Vancouver time, Canfor room (1600)**
 
 I will share a Chinese developer's firsthand perspective on PostgreSQL extension distribution and ecosystem building. More specifically, I will discuss how an extension goes from source code to a production-grade package that can be installed, upgraded, and operated—and what that process means for the PostgreSQL ecosystem.

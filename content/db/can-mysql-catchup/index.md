@@ -10,7 +10,7 @@ series: ["MySQL走好"]
 tags: [MySQL, PostgreSQL, 数据库, 技术评论]
 ---
 
-> 作者：[Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[冯若航](https://vonng.com)（[@Vonng](https://vonng.com/en/)）| [微信公众号](https://mp.weixin.qq.com/s/xveP91NMYF4NFlIX_JcpYA)
+> 作者：[Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[薛永杰](https://vonng.com)（[@yongjiexue88](https://vonng.com/en/)）| [微信公众号](https://mp.weixin.qq.com/s/xveP91NMYF4NFlIX_JcpYA)
 
 Percona 的老板 Peter Zaitsev最近发表一篇博客，讨论了MySQL是否还能跟上PostgreSQL的脚步。
 
@@ -18,7 +18,7 @@ Percona 作为MySQL 生态扛旗者，Percona 开发了知名的PT系列工具�
 
 > 作者：[Peter Zaitsev](https://www.percona.com/blog/author/pz)，Percona 老板，原文：[How Can MySQL Catch Up with PostgreSQL’s Momentum?](https://www.percona.com/blog/how-can-mysql-catch-up-with-postgresqls-momentum/)
 >
-> 译者：[Vonng](https://vonng.com/en)，[Pigsty](https://pigsty.io) 作者，PostgreSQL 大法师，数据库老司机，云计算泥石流。
+> 译者：[薛永杰](https://vonng.com/en)，[Pigsty](https://pigsty.io) 作者，PostgreSQL 大法师，数据库老司机，云计算泥石流。
 
 ## MySQL还能跟上PostgreSQL的步伐吗？
 

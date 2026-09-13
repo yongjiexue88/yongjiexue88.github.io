@@ -25,7 +25,7 @@ images: [apes.webp]
 
 据我所知，蒋老板本人应该并不熟悉 Rust，但这并不妨碍他让 Codex 照着 [Neo4j](https://github.com/neo4j/neo4j) 的方向写出 Go 版的 [`graphdb`](https://github.com/SamuelSupe/graphdb)，照着 [DuckDB](https://github.com/duckdb/duckdb) 写出 Rust 版的 [`RustDB`](https://github.com/SamuelSupe/RustDB)，再照着 [Kafka](https://github.com/apache/kafka) 写出 Rust 版的 [`rutomq`](https://github.com/SamuelSupe/rutomq) 等项目。
 
-[![老冯评价蒋老板用 AI 重写数据库项目](project-tweet.webp)](https://x.com/RonVonng)
+[![老冯评价蒋老板用 AI 重写数据库项目](project-tweet.webp)](https://x.com/ronvonng)
 
 所谓“烧”，就是把 Token 当燃料，让 Agent 把项目糊出来。老实说，我原本对这几个项目没什么兴趣。后来顺手让 Fable 把仓库扒了一遍，鉴定结果居然还不错：虽然距离真正的生产级产品差得很远，但也并非只有一个 README 和几张架构图。代码确实有模有样，基本功能也能跑起来，不完全是花架子。
 

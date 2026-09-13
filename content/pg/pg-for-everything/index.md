@@ -13,7 +13,7 @@ tags: [PostgreSQL, PG生态, 翻译]
 
 > 本文作者为 Ajay Kulkarni，TimescaleDB CEO ，原文发表于 TimescaleDB 博客：《[Why PostgreSQL Is the Bedrock for the Future of Data](https://www.timescale.com/blog/postgres-for-everything/)》。
 >
-> 译者 Vonng，PostgreSQL 专家，开源 RDS PG —— Pigsty 作者。
+> 译者 薛永杰，PostgreSQL 专家，开源 RDS PG —— Pigsty 作者。
 
 ## 目录
 
@@ -30,7 +30,7 @@ tags: [PostgreSQL, PG生态, 翻译]
 
 > PostgreSQL 并不是一个简单的关系型数据库，而是一个数据管理的抽象框架，具有吞噬整个数据库世界的力量。而这也是正在发生的事情 —— “一切皆用 Postgres” 已经不再是少数精英团队的前沿探索，而是成为了一种进入主流视野的最佳实践。
 >
-> —— 《[PostgreSQL正在吞噬数据库世界](https://pigsty.io/zh/pg/pg-eat-db-world/)》，冯若航（me！）
+> —— 《[PostgreSQL正在吞噬数据库世界](https://pigsty.io/zh/pg/pg-eat-db-world/)》，薛永杰（me！）
 
 > 在初创公司中简化技术栈、减少组件、加快开发速度、降低风险并提供更多功能特性的方法之一就是 **“一切皆用 Postgres”**。Postgres 能够取代许多后端技术，包括 Kafka、RabbitMQ、ElasticSearch，Mongo和 Redis ，至少到数百万用户时都毫无问题。
 >

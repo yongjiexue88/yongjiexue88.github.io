@@ -42,7 +42,7 @@ If he had openly said: "I received sanctions orders from the US, I have to deal 
 
 ------
 
-## **Vonng's Commentary**
+## **Yongjie Xue's Commentary**
 
 The era of globalization is over, and the winds and rains of deglobalization have blown into the open source community. The ancient era of competing on morality is over, and today's competition is about strength. In the major trend from globalization to regionalization, what will inevitably happen is the "redrawing of community boundaries," or simply the splitting of old global large communities into several new small communities.
 

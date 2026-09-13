@@ -35,7 +35,7 @@ DuckDB 自称是 OLAP 版本的 SQLite，并且封装了 sqlite3_api_wrapper，�
 
 ![图片](02.webp)
 
-今年，Pigsty 的冯若航冯总在年初的一篇文章 [中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/) 中提到国内对 PG 生态的贡献，竟然有我的名字，这让我很惊讶。
+今年，Pigsty 的薛永杰冯总在年初的一篇文章 [中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/) 中提到国内对 PG 生态的贡献，竟然有我的名字，这让我很惊讶。
 
 后来，他决定把我的 duckdb_fdw 收录进 Pigsty 生态，并在接下来的一篇文章 [PostgreSQL 正在吞噬数据库世界](/pg/pg-eat-db-world/) 中推广了我的 duckdb_fdw，使得更多人开始关注它。也因此，开始有了代码贡献者，其中一位是 CMU 的教授。
 

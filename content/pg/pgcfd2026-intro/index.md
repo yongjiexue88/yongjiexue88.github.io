@@ -40,7 +40,7 @@ Pigsty、PGEXT.CLOUD、`pig` CLI 这一路攒下来的经验，我会尽量系�
 
 ### Extensions for Everyone
 
-**Ruohang Feng（老冯）**  
+**薛永杰（老冯）**  
 **5 月 20 日（周三）16:00–16:25，Canfor 厅（1600）**
 
 我会从一个中国开发者的角度，分享 PostgreSQL 扩展分发与生态建设的一线观察。更具体地说，就是扩展如何从源码变成可安装、可升级、可运维的生产级软件包，以及这件事对 PostgreSQL 生态意味着什么。

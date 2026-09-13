@@ -139,9 +139,9 @@ tags: [数据库, 技术评论]
 
 ### 司机本人篇
 
-- 2024-08-22 [GOTC 2024 BTW 采访冯若航：Pigsty 作者，简化 PG 管理，推动 PG 开源社区的中国参与](https://mp.weixin.qq.com/s/bGoILFWfF7ZiIf3EPNxSqw)
+- 2024-08-22 [GOTC 2024 BTW 采访薛永杰：Pigsty 作者，简化 PG 管理，推动 PG 开源社区的中国参与](https://mp.weixin.qq.com/s/bGoILFWfF7ZiIf3EPNxSqw)
 - 2023-12-31 [2023 总结：三十而立](/misc/2023/)
-- 2023-09-08 [冯若航：不想当段子手的技术狂，不是一位好的开源创始人](/misc/modb-interview-vonng/)
+- 2023-09-08 [薛永杰：不想当段子手的技术狂，不是一位好的开源创始人](/misc/modb-interview-vonng/)
 - 2022-07-07 [90 后，辞职创业，说要卷死云数据库](/misc/entrepreneur-vs-rds/)
 
 ---
@@ -235,7 +235,7 @@ tags: [数据库, 技术评论]
 - 2024-09-03 [《黑历史：Mongo》：现由 PostgreSQL 驱动](/db/mongo-powered-by-pg/)
 - 2024-09-02 [PostgreSQL 可以替换微软 SQL Server 吗？](/pg/pg-replace-mssql/)
 - 2024-08-30 [ElasticSearch 又重新开源了？？？](/db/elasticsearch-reopen/)
-- 2024-08-22 [GOTC 2024 BTW 采访冯若航：Pigsty 作者，简化 PG 管理，推动 PG 开源社区的中国参与](https://mp.weixin.qq.com/s/bGoILFWfF7ZiIf3EPNxSqw)
+- 2024-08-22 [GOTC 2024 BTW 采访薛永杰：Pigsty 作者，简化 PG 管理，推动 PG 开源社区的中国参与](https://mp.weixin.qq.com/s/bGoILFWfF7ZiIf3EPNxSqw)
 - 2024-08-13 [谁整合好 DuckDB，谁赢得 OLAP 数据库世界](/pg/pg-duckdb/)
 - 2024-08-09 [PostgreSQL 小版本更新，17beta3，12 将 EOL](/pg/pg-17beta3/)
 - 2024-08-03 [最近在憋大招，数据库全能王真的要来了](https://mp.weixin.qq.com/s/bwiVnU9UUkMP5ai1NUyM4g)
@@ -280,7 +280,7 @@ tags: [数据库, 技术评论]
 - 2023-10-08 [FerretDB：假扮成 MongoDB 的 PostgreSQL？](/pg/ferretdb/)
 - 2023-09-27 [如何用 pg_filedump 抢救数据？](/pg/pg-filedump/)
 - 2023-09-10 [PG 先写脏页还是先写 WAL？](/pg/wal-before-page/)
-- 2023-09-08 [冯若航：不想当段子手的技术狂，不是一位好的开源创始人](/misc/modb-interview-vonng/)
+- 2023-09-08 [薛永杰：不想当段子手的技术狂，不是一位好的开源创始人](/misc/modb-interview-vonng/)
 - 2023-08-31 [基础软件到底需要什么样的自主可控？](/db/sovereign-dbos/)
 - 2023-08-11 [如何看待 MySQL vs PGSQL 直播闹剧](/pg/mysql-pg-live-drama/)
 - 2023-08-09 [驳《MySQL：这个星球最成功的数据库》](/pg/rebut-mysql-best/)

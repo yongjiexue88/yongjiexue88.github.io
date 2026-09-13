@@ -447,12 +447,12 @@ MySQL 跟其他数据库比较的时候，也许可以提一提这个事，唯�
 - `[6]` PostgreSQL 生态项目： <https://web.archive.org/web/2/https://ossrank.com/cat/368-postgresql-extension?page=2>
 - `[7]` PostgreSQL 数据库发行版
 - `[8]` 设计数据密集型应用： <http://ddia.vonng.com/>
-- `[9]` Github Star Ranking: <https://gitstar-ranking.com/Vonng>
+- `[9]` Github Star Ranking: <https://gitstar-ranking.com/yongjiexue88>
 - `[10]` 分布式数据库是伪需求吗？: <https://zhuanlan.zhihu.com/p/622866832>
 - `[11]` [为什么说 PostgreSQL 前途无量？](/pg/pg-is-great/)
 - `[12]` 并发异常那些事： <https://zhuanlan.zhihu.com/p/38217080>
 - `[13]` Public Demo: <http://demo.pigsty.cc/ui/d/sf-survey/stackoverflow-survey?orgId=1>
-- `[14]` Github Repo: dbrank: <https://github.com/Vonng/dbrank>
+- `[14]` Github Repo: dbrank: <https://github.com/vonng/dbrank>
 - `[15]` [PostgreSQL：世界上最成功的数据库](/pg/pg-is-no1/)
 - `[16]` 百度热搜： <https://index.baidu.com/v2/main/index.html#/trend/postgresql?words=postgresql,MySQL>
 - `[17]` Developer Profile: <https://survey.stackoverflow.co/2023/?utm_source=so-owned&utm_medium=blog&utm_campaign=dev-survey-results-2023&utm_content=survey-results#years-coding>

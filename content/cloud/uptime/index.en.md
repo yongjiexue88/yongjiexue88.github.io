@@ -11,7 +11,7 @@ We don't need Kubernetes masters or fancy new databases — programmers are draw
 
 > Author: **David Heinemeier Hansson**, known as DHH, Co-founder & CTO of 37signals, Creator of Ruby on Rails, cloud exit advocate, practitioner, and pioneer. Frontrunner in fighting tech giant monopolies. [Hey Blog](https://world.hey.com/dhh)
 >
-> Translator: **Vonng (Feng Ruohang)**, Founder & CEO of PIGSTY. Author of [Pigsty](https://pigsty.io), PostgreSQL expert/evangelist. Host of WeChat public account "Illegal Plus Feng", cloud computing mudslide, database veteran.
+> Translator: **Yongjie Xue**, Founder & CEO of PIGSTY. Author of [Pigsty](https://pigsty.io), PostgreSQL expert/evangelist. Host of WeChat public account "Illegal Plus Feng", cloud computing mudslide, database veteran.
 >
 > This article is translated from DHH's [blog post](https://world.hey.com/dhh/keeping-the-lights-on-while-leaving-the-cloud-be7c2d67)
 

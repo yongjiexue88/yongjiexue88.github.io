@@ -30,7 +30,7 @@ Pay attention to permissions: SSH files should have permissions set to `0600`, a
 Replace `User` with your own name. Put in `.ssh/config`. Here's how to configure direct passwordless connection to production database in a jumphost environment:
 
 ```bash
-# Vonng's ssh config
+# Yongjie Xue's ssh config
 
 # SpringBoard IP
 Host <BastionIP>

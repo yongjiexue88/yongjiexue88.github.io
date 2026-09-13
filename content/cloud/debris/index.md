@@ -53,7 +53,7 @@ tags: [下云]
 
 作者：**David Heinemeier Hansson**，网名DHH，37 Signal 联创与CTO，Ruby on Rails 作者，下云倡导者、实践者、领跑者。反击科技巨头垄断的先锋。博客：https://world.hey.com/dhh
 
-译者：**Vonng**，磐吉云数 创始人与CEO。Pigsty 作者，PostgreSQL 专家与布道师。云计算泥石流，数据库老司机，下云倡导者与实践者。
+译者：**薛永杰**，磐吉云数 创始人与CEO。Pigsty 作者，PostgreSQL 专家与布道师。云计算泥石流，数据库老司机，下云倡导者与实践者。
 
 --------------
 

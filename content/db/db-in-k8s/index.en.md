@@ -7,7 +7,7 @@ summary: >
 tags: [Database, Containers, Architecture]
 ---
 
-> [Medium](https://medium.com/@fengruohang/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f) ｜[Wechat](https://mp.weixin.qq.com/s/4a8Qy4O80xqsnytC4l9lRg)
+> [Medium](https://medium.com/@yongjiexue88/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f) ｜[Wechat](https://mp.weixin.qq.com/s/4a8Qy4O80xqsnytC4l9lRg)
 
 Whether databases should be housed in Kubernetes/Docker remains highly controversial. While Kubernetes (k8s) excels in managing stateless applications, it has fundamental drawbacks with stateful services, especially databases like PostgreSQL and MySQL.
 

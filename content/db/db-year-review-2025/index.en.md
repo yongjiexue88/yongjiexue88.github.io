@@ -410,7 +410,7 @@ Want to wish you guys and everybody online a great holiday season and happy new 
 
 # Summary & Translator's Commentary
 
-> *The following section contains the translator's (Vonng's) summary and commentary on the key points discussed in this conversation.*
+> *The following section contains the translator's (Yongjie Xue's) summary and commentary on the key points discussed in this conversation.*
 
 ## Mike Stonebraker's Core Views
 

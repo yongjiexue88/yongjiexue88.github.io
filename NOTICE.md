@@ -6,10 +6,10 @@ The `db`, `cloud`, `pg`, `ai`, `pigsty`, `trip` and `misc` columns under `conten
 together with the author profiles under `content/authors/` and the tag descriptions
 under `content/tags/`, are **not original to this site**. They are reproduced from:
 
-- **Source**: [vonng.com](https://vonng.com) — *Vonng's Blog*
-- **Author**: 冯若航 / Ruohang Feng ([@Vonng](https://github.com/Vonng))
-- **Upstream repository**: <https://github.com/Vonng/vonng.com>
-- **License**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://github.com/Vonng/vonng.com/blob/main/LICENSE)
+- **Source**: [vonng.com](https://vonng.com) — *Yongjie Xue's Blog*
+- **Author**: 薛永杰 / Yongjie Xue ([@yongjiexue88](https://github.com/yongjiexue88))
+- **Upstream repository**: <https://github.com/vonng/vonng.com>
+- **License**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://github.com/vonng/vonng.com/blob/main/LICENSE)
 
 CC BY 4.0 permits sharing and adaptation, including commercially, provided credit is
 given, the license is linked, and changes are indicated. This file, together with the

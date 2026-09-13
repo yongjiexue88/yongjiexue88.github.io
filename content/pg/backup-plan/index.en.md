@@ -7,7 +7,7 @@ summary: >
 tags: [PostgreSQL, PG Admin, Backup]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 Backup is the foundation of a DBA's livelihood and one of the most critical tasks in database management. There are various types of backups, but the backups discussed here are all physical backups. Physical backups can usually be divided into the following four types:
 
@@ -55,13 +55,13 @@ pg_receivewal \
   -d'postgres://replicator@master.csq.tsa.md/postgres'
 ```
 
-Of course, in actual production environments, for more robust archiving, we usually register it as a service and save some command status. Here's a `pg_receivewal` command wrapper used in production: [`walarchiver`](https://github.com/Vonng/pg/blob/master/test/pkg/walarchiver)
+Of course, in actual production environments, for more robust archiving, we usually register it as a service and save some command status. Here's a `pg_receivewal` command wrapper used in production: [`walarchiver`](https://github.com/vonng/pg/blob/master/test/pkg/walarchiver)
 
 ### Related Scripts
 
 Here's a script for initializing PostgreSQL Offline Instance for reference:
 
-[`pg/test/bin/offline.sh`](https://github.com/Vonng/pg/blob/master/test/bin/offline.sh)
+[`pg/test/bin/offline.sh`](https://github.com/vonng/pg/blob/master/test/bin/offline.sh)
 
 ## Backup Testing
 

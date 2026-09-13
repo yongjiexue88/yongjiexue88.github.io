@@ -11,7 +11,7 @@ tags: [PostgreSQL, 数据库]
 
 > 原文地址：https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html
 >
-> 作者：Andy Pavlo，翻译与评论：冯若航
+> 作者：Andy Pavlo，翻译与评论：薛永杰
 
 # 2025 数据库世界年度回顾
 

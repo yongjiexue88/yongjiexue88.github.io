@@ -2,7 +2,7 @@
 title: On Trusting Open-Source Supply Chains
 date: 2025-11-22
 author: |
-  Feng Ruohang
+  Yongjie Xue
 summary: >
   In serious production you can’t rely on an upstream that explicitly says “no guarantees.” When someone says “don’t count on me,” the right answer is “then I’ll run it myself.”
 tags: [Repository, PG Admin, Open Source]
@@ -20,7 +20,7 @@ I replied:
 >
 > When I first spotted the issue I was using Alibaba-Cloud’s PG mirror. Later I noticed TUNA was in the same state, so out of community duty I [reported it on the mailing list](https://groups.google.com/g/tuna-general/c/BU8P7X3y4sI) and got “this list isn’t for Alibaba” followed by silence. That context colors my tone.
 >
-> In hindsight, words like “lying flat” were too emotional—especially when applied to **your team**—and read like moral judgments on volunteers. That wasn’t my intent. If the wording hurt maintainers, I apologize. I already [changed the language](https://github.com/Vonng/blog/commit/916697a88f143679d658dc52338827ce603444fd) to neutral phrasing like “stale” or “no longer maintained.”
+> In hindsight, words like “lying flat” were too emotional—especially when applied to **your team**—and read like moral judgments on volunteers. That wasn’t my intent. If the wording hurt maintainers, I apologize. I already [changed the language](https://github.com/vonng/blog/commit/916697a88f143679d658dc52338827ce603444fd) to neutral phrasing like “stale” or “no longer maintained.”
 >
 > You’re right: university mirrors are volunteer efforts with no contractual SLA. There’s nothing to “demand.” But from a downstream perspective, when PGDG cuts rsync and major domestic mirrors stall for months, users depending on “recommended mirrors” experience a supply-chain outage. Trust erodes.
 >
@@ -72,7 +72,7 @@ Below is the current snapshot of what Pigsty mirrors (PostgreSQL ecosystem, obse
 | [mc](https://github.com/minio/mc) 20250813083541 | | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) 0.27.0 | | [vector](https://github.com/vectordotdev/vector/releases) 0.51.1 | |
 | [Kafka](https://kafka.apache.org/downloads) 4.0.0 | | [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) 1.129.1 | | [grafana-infinity-ds](https://github.com/grafana/grafana-infinity-datasource/) 3.6.0 | |
 | [DuckDB](https://github.com/duckdb/duckdb) 1.4.2 | | [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaMetrics/releases) 1.37.2 | | [grafana-vmlogs](https://github.com/VictoriaMetrics/victorialogs-datasource/releases/) 0.21.4 | |
-| [FerretDB](https://github.com/FerretDB/FerretDB) 2.7.0 | | [pg_exporter](https://github.com/Vonng/pg_exporter) 1.0.3 | | [grafana-vmetrics](https://github.com/VictoriaMetrics/victoriametrics-datasource/releases/) 0.19.6 | |
+| [FerretDB](https://github.com/FerretDB/FerretDB) 2.7.0 | | [pg_exporter](https://github.com/vonng/pg_exporter) 1.0.3 | | [grafana-vmetrics](https://github.com/VictoriaMetrics/victoriametrics-datasource/releases/) 0.19.6 | |
 | [TigerBeetle](https://github.com/tigerbeetle/tigerbeetle) 0.16.60 | | [pgbackrest_exporter](https://github.com/woblerr/pgbackrest_exporter) 0.21.0 | | [grafana-plugins](https://github.com/pgsty/infra-pkg/tree/main/noarch/grafana-plugins) 12.0.0 | |
 | [JuiceFS](https://github.com/juicedata/juicefs) 1.3.0 | | [node_exporter](https://github.com/prometheus/node_exporter) 1.10.2 | | **Utils** | |
 | [dblab](https://github.com/danvergara/dblab) 0.34.2 | | [keepalived_exporter](https://github.com/mehdy/keepalived-exporter) 1.7.0 | | [Sealos](https://github.com/labring/sealos) 5.1.1 | |

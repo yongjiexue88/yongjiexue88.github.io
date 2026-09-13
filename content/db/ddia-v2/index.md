@@ -57,4 +57,4 @@ DDIA 的第一版中文翻译，老冯是在 2017 年完成的，回首一看都
 
 当然，这是一个开源项目，所以如果你发现了任何错误，或者有任何改进建议，直接在 GitHub 上提交 Issue 和 PR 就可以！非常欢迎任何形式的贡献。
 
-https://github.com/Vonng/ddia
+https://github.com/vonng/ddia

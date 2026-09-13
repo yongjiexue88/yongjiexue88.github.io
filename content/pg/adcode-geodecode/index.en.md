@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, PG Development, GIS]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 >
 > [Original WeChat article](https://mp.weixin.qq.com/s/5d681qolNZpqj5ZuHUGBow)
 
@@ -68,7 +68,7 @@ Both the Ministry of Civil Affairs information query platform and Amap provide g
 
 In addition to geofence data, another important piece of data is administrative division code data. The 12-digit urban-rural statistical administrative division coding system used by the National Bureau of Statistics is quite scientific, with hierarchical containment relationships, especially suitable as unique identifiers for administrative divisions. But the problem is it's somewhat outdated - the latest version was released in August 2016, and an updated version might be released after July 2018.
 
-> The author has compiled a dataset connecting National Bureau of Statistics administrative divisions with Amap boundary data: https://github.com/Vonng/adcode
+> The author has compiled a dataset connecting National Bureau of Statistics administrative divisions with Amap boundary data: https://github.com/vonng/adcode
 >
 > Ministry of Civil Affairs data can be obtained directly by opening browser developer tools on that website and extracting from interface response data.
 

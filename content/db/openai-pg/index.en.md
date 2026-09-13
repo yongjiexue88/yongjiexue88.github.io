@@ -19,7 +19,7 @@ At [**PGConf.Dev 2025**](https://2025.pgconf.dev/schedule.html), [Bohan Zhang](h
 
 Bohan Zhang is a member of the OpenAI Infra team, student of [Andy Pavlo](https://www.cs.cmu.edu/~pavlo/), and co-found [OtterTune](https://github.com/OuterTune/OuterTune) with him.
 
-> This article is based on Bohan’s presentation at the conference. with chinese translation/commentary by **Ruohang Feng** ([Vonng](https://github.com/Vonng/)): Author of [Pigsty](https://pigsty.io/). The original chinese version is available on [WeChat Column](https://mp.weixin.qq.com/s/ykrasJ2UeKZAMtHCmtG93Q) and [Pigsty CN Blog](https://pigsty.cc/db/openai-pg/).
+> This article is based on Bohan’s presentation at the conference. with chinese translation/commentary by **Yongjie Xue** ([@yongjiexue88](https://github.com/yongjiexue88/)): Author of [Pigsty](https://pigsty.io/). The original chinese version is available on [WeChat Column](https://mp.weixin.qq.com/s/ykrasJ2UeKZAMtHCmtG93Q) and [Pigsty CN Blog](https://pigsty.cc/db/openai-pg/).
 
 > Hacker News Discussion: [OpenAI: Scaling Postgres to the Next Level](https://news.ycombinator.com/item?id=44071418#44072781)
 
@@ -140,7 +140,7 @@ Finally, a suggestion for optimizing PostgreSQL’s **default parameters**. The 
 
 ------
 
-## Vonng’s Commentary
+## Yongjie Xue’s Commentary
 
 Although PGConf.Dev 2025 is primarily focused on development, you often see use case presentations from users, like this one from OpenAI on their PostgreSQL scaling practices. These topics are actually quite interesting for core developers, as many of them don’t have a clear picture of how PostgreSQL is used in extreme scenarios, and these talks are very helpful.
 
@@ -160,7 +160,7 @@ During the social event after the conference, I had a great chat with Bohan and 
 
 ------
 
-## Vonng’s Q&A
+## Yongjie Xue’s Q&A
 
 Regarding the questions and feature requests Bohan raised, I can offer some answers here.
 
@@ -262,7 +262,7 @@ If OpenAI is interested, I’d certainly be happy to provide some help. But I th
 
 [7] Bohan Zhang: https://www.linkedin.com/in/bohan-zhang-52b17714b
 
-[8] Ruohang Feng / Vonng: https://github.com/Vonng/
+[8] Yongjie Xue / yongjiexue88: https://github.com/vonng/
 
 [9] Pigsty: [https://pigsty.io](https://pigsty.io/)
 

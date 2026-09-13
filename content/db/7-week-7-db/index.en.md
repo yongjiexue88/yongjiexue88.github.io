@@ -10,7 +10,7 @@ tags: [PostgreSQL, OLAP, Database, Translation]
 
 > Author: Matt Blewitt, Original: 7 Databases in 7 Weeks (2025)
 >
-> Translator: Feng Ruohang, database veteran, cloud computing mudslide
+> Translator: Yongjie Xue, database veteran, cloud computing mudslide
 
 https://matt.blwt.io/post/7-databases-in-7-weeks-for-2025/
 

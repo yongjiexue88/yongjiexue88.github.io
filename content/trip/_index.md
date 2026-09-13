@@ -11,7 +11,7 @@ type: blog
 page_width: wide
 comments: false
 profile:
-  headline: 冯若航 @Vonng / 读万卷书，行万里路
+  headline: 薛永杰 @yongjiexue88 / 读万卷书，行万里路
 cascade:
   type: blog
   page_width: normal

@@ -19,7 +19,7 @@ This article is an excerpt from the roundtable meeting minutes and Q&A interview
 
 **How did you come to know Cloudflare?**
 
-I'm Vonng, currently working on **PostgreSQL** database distribution [**Pigsty**](https://pigsty.io/zh/), operating an open-source community, and as a KOL in the database & cloud computing field, promoting Cloud-Exit philosophy in China. Talking about Cloud-Exit at a Cloudflare event is quite interesting, but I'm not here to cause trouble.
+I'm Yongjie Xue, currently working on **PostgreSQL** database distribution [**Pigsty**](https://pigsty.io/zh/), operating an open-source community, and as a KOL in the database & cloud computing field, promoting Cloud-Exit philosophy in China. Talking about Cloud-Exit at a Cloudflare event is quite interesting, but I'm not here to cause trouble.
 
 Actually, I have several connections to Cloudflare, so I'm happy to share my **triple perspective** today: as an independent developer end-user, as an open-source community member and operator, and as a public cloud rebel, how I view Cloudflare.
 

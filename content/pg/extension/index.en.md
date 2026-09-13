@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, PG Admin, Extension, Incident]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 Today encountered an interesting case where a customer reported database connection issues. The error was:
 

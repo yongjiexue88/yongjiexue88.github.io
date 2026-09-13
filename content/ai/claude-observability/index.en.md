@@ -7,7 +7,7 @@ ai: true
 aliases: ["/db/claude-observability/"]
 ---
 
-Yesterday I [tweeted](https://x.com/RonVonng/status/2014972720489091514): "Built a Claude Code Grafana dashboard to see how it makes decisions, uses tools, and burns through API credits." Didn't expect so much interest.
+Yesterday I [tweeted](https://x.com/ronvonng/status/2014972720489091514): "Built a Claude Code Grafana dashboard to see how it makes decisions, uses tools, and burns through API credits." Didn't expect so much interest.
 
 ![Tweet screenshot](tweet-dashboard.webp)
 

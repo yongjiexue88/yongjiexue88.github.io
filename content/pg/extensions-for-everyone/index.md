@@ -28,7 +28,7 @@ tags: [PostgreSQL, PG生态, 扩展]
 
 > [01. 我是谁](https://vonng.com/work/extensions-for-everyone/01-who-am-i.html)
 
-我是冯若航，Pigsty 的作者和维护者。Pigsty 是一个开源 PostgreSQL 发行版。
+我是薛永杰，Pigsty 的作者和维护者。Pigsty 是一个开源 PostgreSQL 发行版。
 
 我也是 pgext.cloud 的建设者。pgext.cloud 是一个面向 PostgreSQL 扩展的开源交付层。
 

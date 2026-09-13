@@ -1,19 +1,19 @@
 ---
-title: "Modb Interviews Industry Leaders - Feng Ruohang"
+title: "Modb Interviews Industry Leaders - Yongjie Xue"
 date: 2023-09-08
 authors: [vonng]
-summary: Recently, a historic debate in the database industry has sparked heated discussion. The post-90s entrepreneur Feng Ruohang, known as the "ace debater" in the database community, has come into public view. Why did he participate in such technical debates that could potentially "start flame wars"? What are his views on the future development of databases? In this exclusive interview, we invite him to discuss his technical journey and hot topics in the database field!
+summary: Recently, a historic debate in the database industry has sparked heated discussion. The post-90s entrepreneur Yongjie Xue, known as the "ace debater" in the database community, has come into public view. Why did he participate in such technical debates that could potentially "start flame wars"? What are his views on the future development of databases? In this exclusive interview, we invite him to discuss his technical journey and hot topics in the database field!
 tags: [Essay]
 ---
 
 
-> [Original WeChat Article](https://mp.weixin.qq.com/s/93QZBS694UQJRTLwHnStPQ) | 【[Modb Interviews Industry Leaders: Feng Ruohang](https://www.modb.pro/topic/569382)】
+> [Original WeChat Article](https://mp.weixin.qq.com/s/93QZBS694UQJRTLwHnStPQ) | 【[Modb Interviews Industry Leaders: Yongjie Xue](https://www.modb.pro/topic/569382)】
 
-> **Introduction:** Recently, a historic debate in the database industry has sparked heated discussion. The post-90s entrepreneur Feng Ruohang, known as the "ace debater" in the database community, has come into public view. Why did he participate in such technical debates that could potentially "start flame wars"? What are his views on the future development of databases? In this exclusive interview, we invite him to discuss his technical journey and hot topics in the database field!
+> **Introduction:** Recently, a historic debate in the database industry has sparked heated discussion. The post-90s entrepreneur Yongjie Xue, known as the "ace debater" in the database community, has come into public view. Why did he participate in such technical debates that could potentially "start flame wars"? What are his views on the future development of databases? In this exclusive interview, we invite him to discuss his technical journey and hot topics in the database field!
 
 ![](vonng.png)
 
-**Founder of Pigsty Cloud Data - Feng Ruohang**
+**Founder of Pigsty Cloud Data - Yongjie Xue**
 
 > **Bio:** Founder of Pigsty Cloud Data, author of the open-source RDS PG alternative - Pigsty. PostgreSQL expert and full-stack developer, open-source contributor, member of the PostgreSQL Chinese Community Technical Committee, Modb MVP; PostgreSQL ACE; formerly worked at Alibaba, Tantan, Apple. Translated works include "PostgreSQL Guide: Internal Exploration" and "Designing Data-Intensive Applications."
 
@@ -23,7 +23,7 @@ tags: [Essay]
 
 **1. How did you get involved with the database industry? What suddenly inspired your entrepreneurial idea?**
 
-**Feng Ruohang**: My interest was actually in AI during my studies - working on neural networks/cellular automata and such interesting projects. When I entered the industry, I was also an algorithm engineer. However, I quickly discovered that the core of AI is actually **data**, or rather - the entire information system revolves around and serves the database at its core. So, I started tinkering with databases.
+**Yongjie Xue**: My interest was actually in AI during my studies - working on neural networks/cellular automata and such interesting projects. When I entered the industry, I was also an algorithm engineer. However, I quickly discovered that the core of AI is actually **data**, or rather - the entire information system revolves around and serves the database at its core. So, I started tinkering with databases.
 
 When I first graduated, I worked at Alibaba/Umeng doing data development/data analysis, then worked my way through frontend and backend development. Later, when I became an architect leading projects and could make technology choices, I used this opportunity to try many different databases. Eventually, I discovered that **PostgreSQL** was an incredibly powerful database with unlimited potential, so I decided to go ALL IN on this direction.
 
@@ -39,7 +39,7 @@ A sufficiently useful open-source software can immediately improve the productiv
 
 **2. In 2022, Pigsty completed seed funding. As free open-source software, what is the business model?**
 
-**Feng Ruohang**: What made me decide to start full-time entrepreneurship was the support from Miracle Plus: I casually applied and ended up being selected from over five thousand projects, securing seed funding. Such opportunities are extremely rare, allowing me to do what I truly want to do - something truly meaningful. Since angels are funding me, I have no reason not to go for it, right?
+**Yongjie Xue**: What made me decide to start full-time entrepreneurship was the support from Miracle Plus: I casually applied and ended up being selected from over five thousand projects, securing seed funding. Such opportunities are extremely rare, allowing me to do what I truly want to do - something truly meaningful. Since angels are funding me, I have no reason not to go for it, right?
 
 Starting a business certainly requires a business model, but Pigsty itself is completely free open-source software, so we don't make money by selling software products. Actually, I believe open source is anti-business model: how can putting software intellectual property into the public domain be considered a business model? **Open source is not a business model, but a global collaborative software development model**. However, software value is realized in its **usage** process, not in the **development** process.
 
@@ -53,7 +53,7 @@ Pigsty is to PostgreSQL what RedHat is to Linux. **Software is open-source and f
 
 **3. As a senior PG practitioner, if you were to describe PostgreSQL's competitive advantages with three keywords, what would they be?**
 
-**Feng Ruohang: Open-source, Advanced, Extensible.**
+**Yongjie Xue: Open-source, Advanced, Extensible.**
 
 "**Open-source**" distinguishes PostgreSQL from all commercial databases; "**Advanced**" distinguishes PostgreSQL from MySQL/NoSQL; "**Extensible**" is PostgreSQL's unique flavor, its one-of-a-kind characteristic. Open-source and advanced are PostgreSQL's fundamentals, directly reflected in its slogan: "**The World's Most Advanced Open-Source Relational Database**." In the database field's three-kingdom scenario: Oracle is advanced, MySQL is open-source, while PostgreSQL is both advanced and open-source.
 
@@ -69,7 +69,7 @@ Within a considerable scale, PostgreSQL can independently play the role of a mul
 
 **4. Some time ago, the MySQL vs PG themed debate activity was truly a historic battle in the database industry. Some say "the quality of technology is not determined by debate." Why did you participate in such technical debate activities that could potentially "start flame wars"? What's the story behind this? What was your biggest takeaway after participating?**
 
-**Feng Ruohang**: The quality of technology itself is indeed not determined by debate, but debate reveals the superiority of technology: public debate transforms "shared knowledge" into "public knowledge," building consensus - which is extremely important for the **ecological** development of open-source software.
+**Yongjie Xue**: The quality of technology itself is indeed not determined by debate, but debate reveals the superiority of technology: public debate transforms "shared knowledge" into "public knowledge," building consensus - which is extremely important for the **ecological** development of open-source software.
 
 In this debate, I believe several consensuses were established: In terms of momentum, PostgreSQL has surpassed MySQL in MySQL's fundamental strength of "popularity," becoming the world's most popular database; In terms of kinetic energy, PostgreSQL's functionality/product capabilities comprehensively overwhelm MySQL; even MySQL experts cannot deny these facts, so the conclusion is quite obvious - **PostgreSQL is the standard answer**.
 
@@ -85,7 +85,7 @@ My takeaway is: to have an exciting debate, you need opponents with comparable s
 
 **5. Your public account has multiple articles about "cloud exit." Why do you advocate for "cloud exit"?**
 
-**Feng Ruohang**: With economic downturn, cost reduction and efficiency improvement have become the main theme. [Cloud exit](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485760&idx=1&sn=97096da1077a4fbb4c43452a3c4983c7&chksm=fe4b3c9bc93cb58d5724454f0210c13362393a4abb05f9b9fbc0146a9b188b4520f6211bc891&scene=21#wechat_redirect) to reduce expensive cloud expenses is also being put on the agenda by more and more companies.
+**Yongjie Xue**: With economic downturn, cost reduction and efficiency improvement have become the main theme. [Cloud exit](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485760&idx=1&sn=97096da1077a4fbb4c43452a3c4983c7&chksm=fe4b3c9bc93cb58d5724454f0210c13362393a4abb05f9b9fbc0146a9b188b4520f6211bc891&scene=21#wechat_redirect) to reduce expensive cloud expenses is also being put on the agenda by more and more companies.
 
 I believe public clouds have their place - for very early-stage companies, or those that won't exist in two years; for companies that don't care about wasting money at all, or truly have extremely irregular loads with massive fluctuations; for companies needing overseas compliance, CDN and other services, public clouds are still very worthwhile service options.
 
@@ -103,7 +103,7 @@ In the past decade, hardware has continued to evolve at **Moore's Law** speed, I
 
 **6. From a technical perspective, what stage of international databases are domestic databases currently at? Please envision what the competitive landscape of domestic databases will be like in 20-30 years? Which domestic databases do you currently favor?**
 
-**Feng Ruohang**: **For OLTP database kernels led by Chinese companies, my personal judgment is that there's about a 10-year gap with world-leading levels**. For example, in global search engine trend charts, you can significantly observe that the wave trends of MySQL/PostgreSQL, the world's two most popular databases, have about a ten-year lag in China. For instance, globally MySQL's popularity decline trend started peaking and declining from 2004, but in China it suddenly became popular in 2014, then peaked and entered decline.
+**Yongjie Xue**: **For OLTP database kernels led by Chinese companies, my personal judgment is that there's about a 10-year gap with world-leading levels**. For example, in global search engine trend charts, you can significantly observe that the wave trends of MySQL/PostgreSQL, the world's two most popular databases, have about a ten-year lag in China. For instance, globally MySQL's popularity decline trend started peaking and declining from 2004, but in China it suddenly became popular in 2014, then peaked and entered decline.
 
 Many mainstream domestic database kernels are based on modified open-source database kernels. For example, OpenGauss forked from PostgreSQL 9.2 released in 2012, PolarDB referenced Aurora from 2014 and modified PG 11/14. There are also many domestic re-skinned and shell-modified versions based on PG 9.x, PG XC, PG XL. Considering PostgreSQL's own distance from Oracle, and various NewSQL's distance from Google Spanner, I think lagging world-leading levels by 5-15 years is a fair assessment.
 
@@ -121,7 +121,7 @@ Low-quality software forks not only have no use value but also waste scarce soft
 
 **7. The constant emergence of new technologies has given databases new vitality. What directions do you think databases will develop in the future?**
 
-**Feng Ruohang**: **Better and faster, trouble-free and cost-effective. Or: quality, security, efficiency, cost.**
+**Yongjie Xue**: **Better and faster, trouble-free and cost-effective. Or: quality, security, efficiency, cost.**
 
 "Better" refers to quality/functionality, "faster" refers to performance/efficiency, "trouble-free" refers to usability/security, and "cost-effective" refers to price/complexity. For the "better" aspect, I favor **multi-modal** databases. For efficiency, I favor **software-hardware integration** and am pessimistic about **distributed NewSQL**. For trouble-free operation, I favor **declarative IaC and DBA large models** and am cautious about OLTP databases entering K8S. For cost-effectiveness, I favor **local-first/cloud-native** movements and am pessimistic about **public cloud PaaS/FinOPS**.
 
@@ -139,7 +139,7 @@ Additionally, the definition of databases will also evolve: what we now call "da
 
 **8. As a database practitioner, whether in database kernel development or as a DBA, what do you think is most important for achieving success in your field?**
 
-**Feng Ruohang: I think the most important thing is going with the flow.**
+**Yongjie Xue: I think the most important thing is going with the flow.**
 
 When fortune comes, heaven and earth all lend their force; when luck runs out, heroes lose their freedom - this speaks to going with the flow. What is the current trend in the database field? PostgreSQL is about to welcome its Linux moment, but there hasn't yet emerged dominant distributions like Ubuntu, RedHat, SUSE. The main contradiction in today's database field is no longer the lack of better, more powerful new kernels, but the **extreme shortage of capability to use and manage existing database kernels well** - PostgreSQL is already a sufficiently perfect and useful engine, but users need ready-to-drive complete cars. This is a historic opportunity for DBAs.
 
@@ -153,7 +153,7 @@ Going with the flow, the key is "**taking action**." Wisdom helps you recognize 
 
 **9. Some say you are "the tech world's comedian, a tech fanatic among comedians." How do you view this assessment?**
 
-**Feng Ruohang**: I think this assessment is quite good. I greatly admire Linus and Jobs - the former is a top tech fanatic (Hacker), the latter is a top comedian (Story Teller), and I'm naturally influenced by my idols, developing skills in both directions.
+**Yongjie Xue**: I think this assessment is quite good. I greatly admire Linus and Jobs - the former is a top tech fanatic (Hacker), the latter is a top comedian (Story Teller), and I'm naturally influenced by my idols, developing skills in both directions.
 
 Designing software systems and transforming open-source ecosystems is **interest and entertainment** for me, not work for making a living. As Linus's autobiography "Just for Fun" says: "survival, order, entertainment." Although I was born relatively late and unlikely to create projects like Linux and PostgreSQL, making a Debian/RedHat-style PostgreSQL distribution is still possible. This work, aside from practical and economic value, is itself a form of ultimate entertainment like "creation."
 
@@ -167,7 +167,7 @@ Confucius said: "If substance exceeds refinement, one becomes crude; if refineme
 
 **10. Regarding PostgreSQL database, how do you recommend learning it?**
 
-**Feng Ruohang**: I recommend Learn by Doing.
+**Yongjie Xue**: I recommend Learn by Doing.
 
 The principle of learning databases is learning for practical use. Only **practice** can bring deep understanding of problems; only by first knowing the what can you have conditions to know the why. Textbooks and books can be skimmed through once, then go directly to database documentation and get hands-on to build something. Having real requirement scenarios is naturally best; without conditions, the best approach is **creating scenarios yourself and discovering requirements yourself**.
 

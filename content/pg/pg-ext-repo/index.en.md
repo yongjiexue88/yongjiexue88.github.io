@@ -238,7 +238,7 @@ Each major PostgreSQL version introduces changes, making the maintenance of **14
 Especially when some extension authors haven’t updated their work in years. In these cases, you often have no choice but to take matters into your own hands.
 I’ve personally fixed several extensions and ensured they support the latest PostgreSQL major versions. For those authors I could reach, I’ve submitted numerous PRs and issues to keep things moving forward.
 
-<a href="https://github.com/Vonng"><img src="/pg/pg-ext-repo/github-contrib.webp" alt="GitHub contribution activity" style="max-width: 800px; width: 100%; height: auto;"></a>
+<a href="https://github.com/vonng"><img src="/pg/pg-ext-repo/github-contrib.webp" alt="GitHub contribution activity" style="max-width: 800px; width: 100%; height: auto;"></a>
 
 Back to the point: **my goal with this repo is to establish a standard for PostgreSQL extension installation and distribution, solving the distribution challenges that have long troubled users**.
 
