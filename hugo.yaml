@@ -30,7 +30,7 @@ outputs:
   section: [HTML, RSS, markdown]
 
 pagination:
-  pagerSize: 20
+  pagerSize: 24
 
 imaging:
   anchor: Center
@@ -40,6 +40,12 @@ sitemap:
   changefreq: weekly
   filename: sitemap.xml
   priority: 0.5
+
+# No googleAnalytics here on purpose: the upstream site's config carries its own
+# GA property, and inheriting it would report this site's traffic to someone else.
+services:
+  rss:
+    limit: 50
 
 markup:
   goldmark:
@@ -103,16 +109,62 @@ params:
   offline_search_summary_length: 80
   offline_search_max_results: 12
 
-  # -- Context & feedback ----------------------------------------------------
+  # -- Comments --------------------------------------------------------------
+  # Left off deliberately. The upstream site wires giscus to its own repository,
+  # so inheriting that block would file this site's comments as issues over there.
   comments:
     enable: false
 
-  page_context_menu:
-    enable: true
-    assistant_links: false
+  print:
+    toc: true
 
-  feedback:
-    enable: false
+  # -- Presentation ----------------------------------------------------------
+  # The column recipe, from the upstream site: a full-bleed hero drawn from each
+  # post's own featured image, a card grid for every index, an in-flow outline
+  # rail and no sidebar. Every top-level section here is a blog column, so this
+  # is the site default rather than nine identical cascades.
+  ui:
+    typography: technical
+    dark_mode: true
+    navbar_autohide: false
+    footer_style: fat
+    landing_search: true
+
+    featured_image: hero
+    blog_index: cards
+    blog_index_columns: 3
+    blog_index_toggle: true
+    blog_index_size: 24
+    toc_style: flow
+    toc_taxonomies: false
+    sidebar_enabled: false
+    section_index: cards
+    section_index_columns: 3
+
+    reading_time: true
+    image_zoom: true
+    annotation: true
+    lastmod_commit: none
+    keyboard_nav: true
+    scroll_spy: true
+    code_copy: true
+
+    share: [x, telegram, linkedin, reddit, weibo, email, copy]
+
+    taxonomy_icons:
+      categories: fa-solid fa-folder
+      tags: fa-solid fa-tags
+      authors: fa-solid fa-user-pen
+      series: fa-solid fa-layer-group
+
+    quick_links: [db, pg]
+
+    page_context_menu:
+      enable: true
+      assistant_links: true
+
+    feedback:
+      enable: false
 
 languages:
   zh-cn:
@@ -124,17 +176,38 @@ languages:
     params:
       description: 薛勇杰的个人博客与主页：以写作者的眼光做工程，记录系统、语言、职业、技术与生活。
       copyright:
-        authors: '[薛勇杰](https://yongjiexue88.github.io/) ([@yongjiexue88](https://github.com/yongjiexue88))'
+        authors: '[薛勇杰](https://yongjiexue88.github.io/) ([@yongjiexue88](https://github.com/yongjiexue88)) · 技术专栏转载自 [vonng.com](https://vonng.com)，依 [CC BY 4.0](https://github.com/Vonng/vonng.com/blob/main/LICENSE) 使用，署名见各文章'
         from_year: 2026
         to_year: present
       footer_center_info: 'Powered by [Hugo](https://gohugo.io) & [OINK](https://oink.pgsty.com)'
       time_format_blog: 2006-01-02
     menus:
       main:
+        # Two own columns and the two largest imported ones stand on their own;
+        # the rest live under 专栏.
         - { identifier: journal, name: 日志, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather' } }
         - { identifier: notes, name: 笔记, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open' } }
-        - { identifier: tags, name: 标签, pageRef: /tags, weight: 30, params: { icon: 'fa-solid fa-tags' } }
-        - { identifier: about, name: 关于, pageRef: /about, weight: 40, params: { icon: 'fa-solid fa-circle-user' } }
+        - { identifier: db, name: 数据库, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database' } }
+        - { identifier: ai, name: AI, pageRef: /ai, weight: 40, params: { icon: 'fa-solid fa-robot' } }
+
+        - identifier: column
+          name: 专栏
+          pageRef: /
+          weight: 50
+          params: { icon: 'fa-solid fa-layer-group' }
+        - { identifier: column-journal, parent: column, name: 日志随笔, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather', description: 普通日子里的记录、健康、家庭、金钱观与自我反思 } }
+        - { identifier: column-notes, parent: column, name: 读书笔记, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open', description: 英语研读、商业法律故事、技术与系统的深度学习笔记 } }
+        - { identifier: column-db, parent: column, name: 数据库老司机, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database', description: 数据库行业的动态、新闻、调查、理念与最佳实践 } }
+        - { identifier: column-cloud, parent: column, name: 云计算泥石流, pageRef: /cloud, weight: 40, params: { icon: 'fa-solid fa-cloud-bolt', description: 云计算、下云与基础设施自建的深度思考 } }
+        - { identifier: column-pg, parent: column, name: PostgreSQL 大法师, pageRef: /pg, weight: 50, params: { icon: 'fa-solid fa-hat-wizard', description: PostgreSQL 开发、使用、运维、管理、诊断、调优 } }
+        - { identifier: column-ai, parent: column, name: AI 探路者, pageRef: /ai, weight: 60, params: { icon: 'fa-solid fa-robot', description: AI、Agent、LLM，以及 AI 与数据库 } }
+        - { identifier: column-pigsty, parent: column, name: Pigsty 发行版, pageRef: /pigsty, weight: 70, params: { icon: 'fa-solid fa-rocket', description: 开源 PostgreSQL RDS 发行版的版本发布记录 } }
+        - { identifier: column-trip, parent: column, name: 行万里路, pageRef: /trip, weight: 80, params: { icon: 'fa-solid fa-person-hiking', description: 旅行、徒步与见闻 } }
+        - { identifier: column-misc, parent: column, name: 人生旅途, pageRef: /misc, weight: 90, params: { icon: 'fa-solid fa-feather', description: 随笔、杂谈与个人写作 } }
+        - { identifier: column-tags, parent: column, name: 标签, pageRef: /tags, weight: 100, params: { icon: 'fa-solid fa-tags', description: 按标签浏览全站文章 } }
+        - { identifier: column-authors, parent: column, name: 作者, pageRef: /authors, weight: 110, params: { icon: 'fa-solid fa-user-pen', description: 本站原创与转载文章的作者们 } }
+
+        - { identifier: about, name: 关于, pageRef: /about, weight: 60, params: { icon: 'fa-solid fa-circle-user' } }
 
   en:
     label: English
@@ -144,14 +217,35 @@ languages:
     params:
       description: Personal blog and notes of Yongjie Xue — Engineering with a writer’s eye.
       copyright:
-        authors: '[Yongjie Xue](https://yongjiexue88.github.io/en/) ([@yongjiexue88](https://github.com/yongjiexue88))'
+        authors: '[Yongjie Xue](https://yongjiexue88.github.io/en/) ([@yongjiexue88](https://github.com/yongjiexue88)) · Technical columns reproduced from [vonng.com](https://vonng.com) under [CC BY 4.0](https://github.com/Vonng/vonng.com/blob/main/LICENSE); each article credits its own author'
         from_year: 2026
         to_year: present
       footer_center_info: 'Powered by [Hugo](https://gohugo.io) & [OINK](https://oink.pgsty.com)'
       time_format_blog: 2006-01-02
     menus:
       main:
+        # Two own columns and the two largest imported ones stand on their own;
+        # the rest live under Columns.
         - { identifier: journal, name: Journal, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather' } }
         - { identifier: notes, name: Notes, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open' } }
-        - { identifier: tags, name: Tags, pageRef: /tags, weight: 30, params: { icon: 'fa-solid fa-tags' } }
-        - { identifier: about, name: About, pageRef: /about, weight: 40, params: { icon: 'fa-solid fa-circle-user' } }
+        - { identifier: db, name: DB, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database' } }
+        - { identifier: ai, name: AI, pageRef: /ai, weight: 40, params: { icon: 'fa-solid fa-robot' } }
+
+        - identifier: column
+          name: Columns
+          pageRef: /
+          weight: 50
+          params: { icon: 'fa-solid fa-layer-group' }
+        - { identifier: column-journal, parent: column, name: Journal, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather', description: 'Notes on ordinary days — health, family, money and self-reflection' } }
+        - { identifier: column-notes, parent: column, name: Notes, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open', description: 'English study, legal stories, and deep notes on technology and systems' } }
+        - { identifier: column-db, parent: column, name: Database Guru, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database', description: 'News, reports and best practices from the database industry' } }
+        - { identifier: column-cloud, parent: column, name: Cloud-Exiter, pageRef: /cloud, weight: 40, params: { icon: 'fa-solid fa-cloud-bolt', description: 'Cloud economics, cloud-exit and self-hosting like a pro' } }
+        - { identifier: column-pg, parent: column, name: PostgreSQL Mage, pageRef: /pg, weight: 50, params: { icon: 'fa-solid fa-hat-wizard', description: 'PostgreSQL development, operations, internals and tuning' } }
+        - { identifier: column-ai, parent: column, name: AI Explorer, pageRef: /ai, weight: 60, params: { icon: 'fa-solid fa-robot', description: 'Agents, LLMs, AI coding, AI4DB and DB4AI' } }
+        - { identifier: column-pigsty, parent: column, name: Pigsty Releases, pageRef: /pigsty, weight: 70, params: { icon: 'fa-solid fa-rocket', description: 'Release notes for the open-source PostgreSQL RDS distribution' } }
+        - { identifier: column-trip, parent: column, name: Travel Notes, pageRef: /trip, weight: 80, params: { icon: 'fa-solid fa-person-hiking', description: 'Trips, hikes and things seen along the way' } }
+        - { identifier: column-misc, parent: column, name: Miscellaneous, pageRef: /misc, weight: 90, params: { icon: 'fa-solid fa-feather', description: 'Essays, notes and miscellaneous writing' } }
+        - { identifier: column-tags, parent: column, name: Tags, pageRef: /tags, weight: 100, params: { icon: 'fa-solid fa-tags', description: 'Browse every article by tag' } }
+        - { identifier: column-authors, parent: column, name: Authors, pageRef: /authors, weight: 110, params: { icon: 'fa-solid fa-user-pen', description: 'The writers behind the originals and the reproductions' } }
+
+        - { identifier: about, name: About, pageRef: /about, weight: 60, params: { icon: 'fa-solid fa-circle-user' } }
