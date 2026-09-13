@@ -41,9 +41,9 @@ sitemap:
   filename: sitemap.xml
   priority: 0.5
 
-# No googleAnalytics here on purpose: the upstream site's config carries its own
-# GA property, and inheriting it would report this site's traffic to someone else.
 services:
+  googleAnalytics:
+    id: G-YZ4GG39KNF
   rss:
     limit: 50
 
@@ -87,6 +87,7 @@ module:
 
 params:
   # -- Identity --------------------------------------------------------------
+  google_analytics_id: 'G-YZ4GG39KNF'
   logo: images/avatar.jpg
   author: Yongjie Xue
   role: Full Stack & AI Engineer
