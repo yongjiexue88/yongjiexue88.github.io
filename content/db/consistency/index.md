@@ -64,4 +64,4 @@ Raft算法解决了全序广播问题。**维护多副本日志间的一致性�
 
 ## 参考阅读
 
-[1] [一致性与共识](https://github.com/Vonng/ddia/blob/master/ch9.md)
+[1] [一致性与共识](https://github.com/vonng/ddia/blob/master/ch9.md)

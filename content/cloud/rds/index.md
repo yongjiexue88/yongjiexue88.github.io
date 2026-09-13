@@ -309,7 +309,7 @@ Pigsty 允许您践行最终极的 FinOps 理念 —— 用几乎接近于纯资
 
 【5】 [AWS Pricing Calculator](https://calculator.amazonaws.cn/#/?trk=pricing-ban) （中国宁夏）
 
-【6】[FIO 测试 AWS EBS性能](https://github.com/Vonng/pgtpc/blob/master/fio/aws-ebs-bench.md)
+【6】[FIO 测试 AWS EBS性能](https://github.com/vonng/pgtpc/blob/master/fio/aws-ebs-bench.md)
 
 【7】[阿里云RDS PG 增强监控](https://help.aliyun.com/document_detail/299200.html)
 

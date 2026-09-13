@@ -225,8 +225,8 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 - [**Apache AGE**](https://age.apache.org/)：图数据库扩展，为 PostgreSQL 添加类 Neo4J 的 OpenCypher 查询支持，
 - [**PG GraphQL**](https://github.com/supabase/pg_graphql)：为 PostgreSQL 添加原生内建的 GraphQL 查询语言支持。
 - [**DuckDB FDW**](https://github.com/alitrack/duckdb_fdw)：允许您通过 PostgreSQL 直接读写强力的嵌入式分析数据库 [**DuckDB**](https://duckdb.org/) 文件 （& DuckDB CLI 本体）。
-- [**Supabase**](https://github.com/Vonng/pigsty/tree/master/app/supabase)：基于 PostgreSQL 的开源的 Firebase 替代，提供完整的应用开发存储解决方案。
-- [**FerretDB**](https://github.com/Vonng/pigsty/tree/master/app/ferretdb)：基于 PostgreSQL 的开源 MongoDB 替代，兼容 MongoDB API / 驱动协议。
+- [**Supabase**](https://github.com/vonng/pigsty/tree/master/app/supabase)：基于 PostgreSQL 的开源的 Firebase 替代，提供完整的应用开发存储解决方案。
+- [**FerretDB**](https://github.com/vonng/pigsty/tree/master/app/ferretdb)：基于 PostgreSQL 的开源 MongoDB 替代，兼容 MongoDB API / 驱动协议。
 - [**PostgresML**](https://github.com/postgresml/postgresml)：使用 SQL 完成经典机器学习算法，调用、部署、训练 AI 模型。
 
 > Pigsty 支持的 180+ [**扩展列表**](https://pigsty.cc/docs/reference/extension/)
@@ -235,7 +235,7 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 开发者朋友们，你们的选择会塑造数据库世界的未来。希望我的这些工作，可以帮助你们更好的用好这世界上最先进的开源数据库内核 —— PostgreSQL。
 
-> [Medium 英文版](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4) | [GitHub 仓库：Pigsty](https://github.com/Vonng/pigsty)
+> [Medium 英文版](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4) | [GitHub 仓库：Pigsty](https://github.com/vonng/pigsty)
 
 ---
 

@@ -12,7 +12,7 @@ page_width: wide
 comments: false
 profile:
   avatar: img/hero-pg.jpg
-  headline: Ruohang Feng @Vonng / Pigsty
+  headline: Yongjie Xue @yongjiexue88 / Pigsty
 cascade:
   type: blog
   page_width: normal

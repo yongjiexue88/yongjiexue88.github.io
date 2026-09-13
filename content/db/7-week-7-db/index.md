@@ -10,7 +10,7 @@ tags: [PostgreSQL, OLAP, 数据库, 翻译]
 
 > 作者：Matt Blewitt，原文：七周七数据库（2025年）
 >
-> 译者：Vonng，数据库老司机，云计算泥石流
+> 译者：薛永杰，数据库老司机，云计算泥石流
 
 https://matt.blwt.io/post/7-databases-in-7-weeks-for-2025/
 

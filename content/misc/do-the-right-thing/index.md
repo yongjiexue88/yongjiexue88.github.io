@@ -173,7 +173,7 @@ tags: [软件工程, 社会观察]
 
 1. Martin Kleppmann: *Designing Data-Intensive Application*, ch12, page 533 ~ 544, 2017,
 
-2. Ruohang Feng 译： 《设计数据密集型应用》, <https://github.com/Vonng/ddia>
+2. 薛永杰 译： 《设计数据密集型应用》, <https://github.com/vonng/ddia>
 
 ---
 

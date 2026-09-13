@@ -34,7 +34,7 @@ tags: [软件工程, 性能, 数据库, 翻译]
 
 > 作者：David Heinemeier Hansson，DHH，37 Signal CTO，Ruby on Rails 作者
 >
-> 译者：Vonng，PostgreSQL Hacker，开源 RDS PG —— Pigsty 作者，数据库老司机，云计算泥石流。
+> 译者：薛永杰，PostgreSQL Hacker，开源 RDS PG —— Pigsty 作者，数据库老司机，云计算泥石流。
 >
 > [优先优化生物内核，其次是硅内核](https://world.hey.com/dhh/optimize-for-bio-cores-first-silicon-cores-second-112a6c3f) @ 2024-09-06
 

@@ -23,7 +23,7 @@ tags: [PostgreSQL, 数据库, PG生态]
 >
 > 原文地址：[Data 2025:  The year in review with Mike Stonebraker](https://www.dbos.dev/webcast-2025-in-review-with-mike-stonebraker-and-andy-pavlo)
 >
-> 中文译评：冯若航
+> 中文译评：薛永杰
 
 ## 开场介绍
 

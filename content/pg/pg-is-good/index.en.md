@@ -146,7 +146,7 @@ In my first job, I deeply tasted the benefits of using PostgreSQL - one person's
 
 - Need to do analysis? Window functions, complex JOINs, CUBE, GROUPING, custom aggregates, custom languages - amazing to use. If you think the scale is large and want to scale out, you can use [citus](https://www.citusdata.com/) extension (or switch to Greenplum); compared to data warehouses, missing column storage might be regrettable, but everything else that should be there is there.
 
-- Using geographic-related functionality? PostGIS is a divine tool - complex geographic requirements that would take thousands of lines of code [can be solved with one line of SQL efficiently](https://github.com/Vonng/pg/blob/master/app/knn-optimize.md).
+- Using geographic-related functionality? PostGIS is a divine tool - complex geographic requirements that would take thousands of lines of code [can be solved with one line of SQL efficiently](https://github.com/vonng/pg/blob/master/app/knn-optimize.md).
 
 - Storing time series data? [TimescaleDB](https://www.timescale.com/) extension, while not matching specialized time series databases, still has million records per second insertion rates. I've used it to solve hardware sensor log storage and monitoring system metrics storage requirements.
 
@@ -154,9 +154,9 @@ In my first job, I deeply tasted the benefits of using PostgreSQL - one person's
 
 - PostgreSQL's [FDW](https://wiki.postgresql.org/wiki/Foreign_data_wrappers) is a powerful mechanism allowing access to various data sources with a unified SQL interface. It has wonderful uses:
 
-- - Built-in extensions like `file_fdw` can interface any program's output into data tables. The simplest application is [monitoring system information](https://github.com/Vonng/pg/blob/master/fdw/file_fdw-intro.md).
+- - Built-in extensions like `file_fdw` can interface any program's output into data tables. The simplest application is [monitoring system information](https://github.com/vonng/pg/blob/master/fdw/file_fdw-intro.md).
   - When managing multiple PostgreSQL instances, you can use the built-in `postgres_fdw` in a metadata database to import data dictionaries from all remote databases. Unified access to metadata from all database instances, one line of SQL to pull real-time metrics from all databases - monitoring systems become incredibly convenient.
-  - Something I've done before is using [hbase_fdw](https://github.com/Vonng/hbase_fdw) and MongoFDW to wrap historical batch data from HBase and current real-time data from MongoDB as PostgreSQL data tables, implementing a Lambda architecture that fuses batch and stream processing with a simple view.
+  - Something I've done before is using [hbase_fdw](https://github.com/vonng/hbase_fdw) and MongoFDW to wrap historical batch data from HBase and current real-time data from MongoDB as PostgreSQL data tables, implementing a Lambda architecture that fuses batch and stream processing with a simple view.
   - Using `redis_fdw` for cache update pushing; using `mongo_fdw` to complete data migration from MongoDB to PostgreSQL; using `mysql_fdw` to read MySQL data and store in data warehouse; implementing cross-database, even cross-data-component JOINs; using one line of SQL to complete complex ETL that would otherwise require many lines of code - what a beautiful thing.
 
 - Rich type and method support: for example [JSON](http://www.postgres.cn/docs/9.6/datatype-json.html), generating JSON responses needed by frontend directly from database, easy and pleasant. Range types elegantly solve many edge cases that would otherwise need program handling. Others like arrays, multi-dimensional arrays, custom types, enums, network addresses, UUIDs, ISBNs. Many out-of-the-box data structures save programmers from how much wheel-reinventing work.
@@ -169,6 +169,6 @@ In my first job, I deeply tasted the benefits of using PostgreSQL - one person's
 
 - Operations-friendly: DDL can be executed in transactions (rollbackable), creating indexes doesn't lock tables, adding new columns (without default values) doesn't lock tables, cleanup/backup doesn't lock tables. Various system views and monitoring functions are complete.
 
-- Many extensions, rich functionality, extremely high customizability. In PostgreSQL you can write functions in any language: Python, Go, Javascript, Java, Shell, etc. Rather than saying PostgreSQL is a database, it's better to say it's a development platform. I've tried many useless but fun things: **in-database** crawlers/ [recommendation systems](https://github.com/Vonng/pg/blob/master/app/recsys-itemcf.md) / neural networks / web servers, etc. There are various powerful or creatively strange third-party plugins: [https://pgxn.org/).
+- Many extensions, rich functionality, extremely high customizability. In PostgreSQL you can write functions in any language: Python, Go, Javascript, Java, Shell, etc. Rather than saying PostgreSQL is a database, it's better to say it's a development platform. I've tried many useless but fun things: **in-database** crawlers/ [recommendation systems](https://github.com/vonng/pg/blob/master/app/recsys-itemcf.md) / neural networks / web servers, etc. There are various powerful or creatively strange third-party plugins: [https://pgxn.org/).
 
 - PostgreSQL's license is friendly, BSD - do whatever you want. Look how many databases are PostgreSQL rebrands. MySQL has GPL contagion and is controlled by Oracle.

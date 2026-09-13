@@ -50,6 +50,6 @@ When O and R fail, since they have neither significant direct impact nor direct 
 
 ## Implementation
 
-[PostgreSQL Testing Environment](https://github.com/Vonng/pg/blob/master/test/README.md) provides a sample 3-node cluster containing M, S, O nodes. R node is a type of S, so it's omitted here.
+[PostgreSQL Testing Environment](https://github.com/vonng/pg/blob/master/test/README.md) provides a sample 3-node cluster containing M, S, O nodes. R node is a type of S, so it's omitted here.
 
 Here, the primary directly attaches two "replicas": one is the S node, and the other is the WAL log archiver on the O node. In cases with very low data loss tolerance, both can be configured as synchronous replicas.

@@ -46,4 +46,4 @@ I’m now proofreading the second edition in full. Claude’s output is remarkab
 
 The project is open source. Found a typo? Have a better phrase? File an issue or PR on GitHub. Contributions welcome:
 
-https://github.com/Vonng/ddia
+https://github.com/vonng/ddia

@@ -32,7 +32,7 @@ ssh-keygen -t rsa
 把 `User` 换成自己的名字。放入 `.ssh/config`，这里给出了有跳板机环境下配置生产网数据库免密直连的方式：
 
 ```bash
-# Vonng's ssh config
+# Yongjie Xue's ssh config
 
 # SpringBoard IP
 Host <BastionIP>

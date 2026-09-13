@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, PG Admin, Architecture]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 > "Once named, it can be spoken; once spoken, it can be acted upon."
 

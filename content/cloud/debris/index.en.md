@@ -53,7 +53,7 @@ The contemporary cloud exit epic, cloud repatriation odyssey. The legendary clou
 
 Author: **David Heinemeier Hansson**, aka DHH, 37 Signal co-founder & CTO, Ruby on Rails creator, cloud exit advocate, practitioner, and leader. Pioneer fighting tech giant monopolies. Blog: https://world.hey.com/dhh
 
-Translator: **Feng Ruohang**, aka Vonng. Founder & CEO of PieCloudDB. Pigsty author, PostgreSQL expert and evangelist. Cloud computing mudslide, database veteran, cloud exit advocate and practitioner.
+Translator: **Yongjie Xue**, aka Yongjie Xue. Founder & CEO of PieCloudDB. Pigsty author, PostgreSQL expert and evangelist. Cloud computing mudslide, database veteran, cloud exit advocate and practitioner.
 
 --------------
 

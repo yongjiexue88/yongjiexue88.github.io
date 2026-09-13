@@ -33,7 +33,7 @@ So, whenever you hear a discussion about computing efficiency, you should always
 
 > Author: David Heinemeier Hansson, DHH, 37signals CTO, Ruby on Rails creator
 >
-> Translator: Feng Ruohang, PostgreSQL Hacker, author of open-source RDS PG — Pigsty, database veteran, cloud computing mudslide.
+> Translator: Yongjie Xue, PostgreSQL Hacker, author of open-source RDS PG — Pigsty, database veteran, cloud computing mudslide.
 >
 > [Optimize for bio cores first, silicon cores second](https://world.hey.com/dhh/optimize-for-bio-cores-first-silicon-cores-second-112a6c3f) @ 2024-09-06
 

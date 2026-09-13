@@ -68,7 +68,7 @@ tags: [PostgreSQL, PG生态, 翻译]
 
 ### 译者评论
 
-译者：**Vonng**，创业者与 PostgreSQL 专家，下云倡导者，开源 PG RDS 替代，开箱即用的 PostgreSQL 发行版 —— Pigsty 作者。
+译者：**薛永杰**，创业者与 PostgreSQL 专家，下云倡导者，开源 PG RDS 替代，开箱即用的 PostgreSQL 发行版 —— Pigsty 作者。
 
 使用 Postgres 完成一切工作并不是一种空想，而是一种正在流行起来的最佳实践。对此我感到非常欣慰：早在 2016 年时我便看到了这里的潜力[12]并选择躬身入局，而事情的发展正如所愿。
 

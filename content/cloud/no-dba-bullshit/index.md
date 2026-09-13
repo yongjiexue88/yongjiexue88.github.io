@@ -61,7 +61,7 @@ tags: [下云, RDS, PG管理]
 
 马工假想了一个数据库上线的案例：PG新版本，两地三中心，同城HA，异地灾备，数据加密，自动备份，自带监控，App与DB独立网段，DBA也无法删库。然后得意洋洋的宣称：”使用 Terraform，我只要28分钟就可以完成满足需要的配置！比拉DBA搭建数据库快几个数量级！“
 
-实际上只要你的机器就绪，网络打通，规划完毕：使用 Pigsty 部署一套满足这些需求的数据库系统，执行耗时也就是十几分钟。自建机房且不提，Pigsty 完全可以使用同样的逻辑：基于Terraform 一键拉起EC2、存储、网络，然后在这个基础上额外执行一条命令[部署数据库](https://github.com/Vonng/pigsty/blob/master/terraform/spec/aws-cn.tf)，耗费的时间说不定比 Terraform 还短一点，更重要的是，**还能省掉百分之八九十的天价 RDS [智商税](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485292&idx=1&sn=4f650c3f5c3fb5207c55ff67e44d7d8a&chksm=fe4b32b7c93cbba190e60d477061d19a165e1f9b074beb00b132ae1369a9fd2c7d10ed77a013&scene=21#wechat_redirect)**。
+实际上只要你的机器就绪，网络打通，规划完毕：使用 Pigsty 部署一套满足这些需求的数据库系统，执行耗时也就是十几分钟。自建机房且不提，Pigsty 完全可以使用同样的逻辑：基于Terraform 一键拉起EC2、存储、网络，然后在这个基础上额外执行一条命令[部署数据库](https://github.com/vonng/pigsty/blob/master/terraform/spec/aws-cn.tf)，耗费的时间说不定比 Terraform 还短一点，更重要的是，**还能省掉百分之八九十的天价 RDS [智商税](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485292&idx=1&sn=4f650c3f5c3fb5207c55ff67e44d7d8a&chksm=fe4b32b7c93cbba190e60d477061d19a165e1f9b074beb00b132ae1369a9fd2c7d10ed77a013&scene=21#wechat_redirect)**。
 
 ![price.jpeg](no-dba-bullshit-price.jpeg)
 

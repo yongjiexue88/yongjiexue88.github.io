@@ -11,7 +11,7 @@ type: blog
 page_width: wide
 comments: false
 profile:
-  headline: Ruohang Feng @Vonng / Agent, LLM, Database
+  headline: Yongjie Xue @yongjiexue88 / Agent, LLM, Database
 cascade:
   type: blog
   page_width: normal

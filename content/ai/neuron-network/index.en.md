@@ -446,7 +446,7 @@ As proof of concept, here's a Python implementation of an MNIST handwritten digi
 
 ```python
 # coding: utf-8
-# author: vonng(fengruohang@outlook.com)
+# author: Yongjie Xue(yongjiexue88@gmail.com)
 # ctime: 2017-05-10
 
 import random
@@ -671,7 +671,7 @@ Note that $n$ here is the total number of training samples, not the number of sa
 
 ```python
 # coding: utf-8
-# author: vonng(fengruohang@outlook.com)
+# author: Yongjie Xue(yongjiexue88@gmail.com)
 # ctime: 2017-05-10
 
 import random

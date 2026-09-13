@@ -28,7 +28,7 @@ It is about delivering PostgreSQL extensions, and about how a shared delivery la
 
 > [01. Who am I](https://vonng.com/work/extensions-for-everyone/01-who-am-i.html)
 
-I am Ruohang Feng, author and maintainer of Pigsty, an open-source PostgreSQL distribution.
+I am Yongjie Xue, author and maintainer of Pigsty, an open-source PostgreSQL distribution.
 
 I also build pgext.cloud, an open-source delivery layer for PostgreSQL extensions.
 
@@ -470,6 +470,6 @@ Thank you.
 
 If you have any questions, please contact me.
 
-Vonng rh@vonng.com
+Yongjie Xue yongjiexue88@gmail.com
 
 [![32. Thank You](32.webp)](https://vonng.com/work/extensions-for-everyone/32-thank-you.html)

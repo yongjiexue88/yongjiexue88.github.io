@@ -33,7 +33,7 @@ Pure Storage 原生支持 S3 兼容 API，这就意味着我们不用再折腾 C
 
 ![图片](02.webp)
 
-> 作者：DHH，原文：It's five grand a day to miss our S3 exit<sup>[2]</sup> 译者：冯若航，Pigsty 作者，云计算泥石流，数据库老司机
+> 作者：DHH，原文：It's five grand a day to miss our S3 exit<sup>[2]</sup> 译者：薛永杰，Pigsty 作者，云计算泥石流，数据库老司机
 
 ---
 

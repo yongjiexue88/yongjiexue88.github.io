@@ -112,7 +112,7 @@ package main
 import "sync"
 import "strings"
 import "github.com/go-pg/pg"
-import . "github.com/Vonng/gopher/db/pg"
+import . "github.com/vonng/gopher/db/pg"
 import log "github.com/Sirupsen/logrus"
 
 type User struct {

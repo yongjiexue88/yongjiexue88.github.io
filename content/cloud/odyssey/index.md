@@ -28,7 +28,7 @@ DHH一直以来都是下云先锋，本文摘取了DHH博客关于下云相关�
 
 作者：**David Heinemeier Hansson**，网名DHH。 37 Signal 联创与CTO，Ruby on Rails 作者，下云倡导者、实践者、领跑者。反击科技巨头垄断的先锋。[Hey博客](https://world.hey.com/dhh)
 
-译者：**Vonng**，磐吉云数创始人与CEO。Pigsty 作者，PostgreSQL 专家与布道师。云计算泥石流，数据库老司机，下云倡导者，数据库下云实践者。[Vonng博客](/)
+译者：**薛永杰**，磐吉云数创始人与CEO。Pigsty 作者，PostgreSQL 专家与布道师。云计算泥石流，数据库老司机，下云倡导者，数据库下云实践者。[薛永杰博客](/)
 
 [![](featured.webp)](https://mp.weixin.qq.com/s/H2S3TV-AsqS43A5Hh-XMhQ)
 

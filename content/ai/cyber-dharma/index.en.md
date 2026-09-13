@@ -147,4 +147,4 @@ Official site: [dharma.vonng.com](https://dharma.vonng.com/)
 
 *Cyber Dharma*  
 *All paths lead back to computation*  
-*Original by Vonng*
+*Original by Yongjie Xue*

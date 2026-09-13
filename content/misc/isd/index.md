@@ -17,7 +17,7 @@ ISD 是 Integrated Surface Dataset 的缩写，是 NOAA 美国国家海洋和大
 
 ![isd-overview.png](isd-overview.png)
 
-项目的地址是：https://github.com/Vonng/isd
+项目的地址是：https://github.com/vonng/isd
 
 ---------------
 

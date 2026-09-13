@@ -87,24 +87,24 @@ This time, the replacement from PG 16 to PG 17 saw significantly accelerated eco
 | Version | Release Date | Summary                                                    | Link                                                            |
 |:-------|:----------:|------------------------------------------------------------|-----------------------------------------------------------------|
 | v3.1.0 | 2024-11-20 | PG 17 as default major version, simplified config, Ubuntu 24 & ARM support | WIP                                                           |
-| v3.0.4 | 2024-10-30 | PG 17 extensions, OLAP full suite, pg_duckdb                | [v3.0.4](https://github.com/Vonng/pigsty/releases/tag/v3.0.4) |
-| v3.0.3 | 2024-09-27 | PostgreSQL 17, Etcd ops optimization, IvorySQL 3.4, PostGIS 3.5 | [v3.0.3](https://github.com/Vonng/pigsty/releases/tag/v3.0.3) |
-| v3.0.2 | 2024-09-07 | Minimal installation mode, PolarDB 15 support, monitoring view updates | [v3.0.2](https://github.com/Vonng/pigsty/releases/tag/v3.0.2) |
-| v3.0.1 | 2024-08-31 | Routine fixes, Patroni 4 support, Oracle compatibility improvements | [v3.0.1](https://github.com/Vonng/pigsty/releases/tag/v3.0.1) |
-| v3.0.0 | 2024-08-25 | 333 extension plugins, pluggable kernels, MSSQL, Oracle, PolarDB compatibility | [v3.0.0](https://github.com/Vonng/pigsty/releases/tag/v3.0.0) |
-| v2.7.0 | 2024-05-20 | Extension explosion, 20+ powerful new extensions, multiple Docker apps | [v2.7.0](https://github.com/Vonng/pigsty/releases/tag/v2.7.0) |
-| v2.6.0 | 2024-02-28 | PG 16 as default major version, introducing ParadeDB and DuckDB extensions | [v2.6.0](https://github.com/Vonng/pigsty/releases/tag/v2.6.0) |
-| v2.5.1 | 2023-12-01 | Routine minor update, PG16 important extension support        | [v2.5.1](https://github.com/Vonng/pigsty/releases/tag/v2.5.1) |
-| v2.5.0 | 2023-09-24 | Ubuntu/Debian support: bullseye, bookworm, jammy, focal      | [v2.5.0](https://github.com/Vonng/pigsty/releases/tag/v2.5.0) |
-| v2.4.1 | 2023-09-24 | Supabase/PostgresML support and various new extensions: graphql, jwt, pg_net, vault | [v2.4.1](https://github.com/Vonng/pigsty/releases/tag/v2.4.1) |
-| v2.4.0 | 2023-09-14 | PG16, RDS monitoring, service consulting support, new extensions: Chinese word segmentation full-text search/graph/HTTP/embedding | [v2.4.0](https://github.com/Vonng/pigsty/releases/tag/v2.4.0) |
-| v2.3.1 | 2023-09-01 | PGVector with HNSW, PG 16 RC1, documentation refresh, Chinese docs, routine fixes | [v2.3.1](https://github.com/Vonng/pigsty/releases/tag/v2.3.1) |
-| v2.3.0 | 2023-08-20 | Host VIP, ferretdb, nocodb, MySQL stub, CVE fixes           | [v2.3.0](https://github.com/Vonng/pigsty/releases/tag/v2.3.0) |
-| v2.2.0 | 2023-08-04 | Dashboard & provisioning redo, UOS compatibility            | [v2.2.0](https://github.com/Vonng/pigsty/releases/tag/v2.2.0) |
-| v2.1.0 | 2023-06-10 | Support PostgreSQL 12 ~ 16beta                              | [v2.1.0](https://github.com/Vonng/pigsty/releases/tag/v2.1.0) |
-| v2.0.2 | 2023-03-31 | Added pgvector support, fixed MinIO CVE                     | [v2.0.2](https://github.com/Vonng/pigsty/releases/tag/v2.0.2) |
-| v2.0.1 | 2023-03-21 | v2 bug fixes, security enhancements, Grafana version upgrade | [v2.0.1](https://github.com/Vonng/pigsty/releases/tag/v2.0.1) |
-| v2.0.0 | 2023-02-28 | Major architecture upgrade, significantly enhanced compatibility, security, maintainability | [v2.0.0](https://github.com/Vonng/pigsty/releases/tag/v2.0.0) |
+| v3.0.4 | 2024-10-30 | PG 17 extensions, OLAP full suite, pg_duckdb                | [v3.0.4](https://github.com/vonng/pigsty/releases/tag/v3.0.4) |
+| v3.0.3 | 2024-09-27 | PostgreSQL 17, Etcd ops optimization, IvorySQL 3.4, PostGIS 3.5 | [v3.0.3](https://github.com/vonng/pigsty/releases/tag/v3.0.3) |
+| v3.0.2 | 2024-09-07 | Minimal installation mode, PolarDB 15 support, monitoring view updates | [v3.0.2](https://github.com/vonng/pigsty/releases/tag/v3.0.2) |
+| v3.0.1 | 2024-08-31 | Routine fixes, Patroni 4 support, Oracle compatibility improvements | [v3.0.1](https://github.com/vonng/pigsty/releases/tag/v3.0.1) |
+| v3.0.0 | 2024-08-25 | 333 extension plugins, pluggable kernels, MSSQL, Oracle, PolarDB compatibility | [v3.0.0](https://github.com/vonng/pigsty/releases/tag/v3.0.0) |
+| v2.7.0 | 2024-05-20 | Extension explosion, 20+ powerful new extensions, multiple Docker apps | [v2.7.0](https://github.com/vonng/pigsty/releases/tag/v2.7.0) |
+| v2.6.0 | 2024-02-28 | PG 16 as default major version, introducing ParadeDB and DuckDB extensions | [v2.6.0](https://github.com/vonng/pigsty/releases/tag/v2.6.0) |
+| v2.5.1 | 2023-12-01 | Routine minor update, PG16 important extension support        | [v2.5.1](https://github.com/vonng/pigsty/releases/tag/v2.5.1) |
+| v2.5.0 | 2023-09-24 | Ubuntu/Debian support: bullseye, bookworm, jammy, focal      | [v2.5.0](https://github.com/vonng/pigsty/releases/tag/v2.5.0) |
+| v2.4.1 | 2023-09-24 | Supabase/PostgresML support and various new extensions: graphql, jwt, pg_net, vault | [v2.4.1](https://github.com/vonng/pigsty/releases/tag/v2.4.1) |
+| v2.4.0 | 2023-09-14 | PG16, RDS monitoring, service consulting support, new extensions: Chinese word segmentation full-text search/graph/HTTP/embedding | [v2.4.0](https://github.com/vonng/pigsty/releases/tag/v2.4.0) |
+| v2.3.1 | 2023-09-01 | PGVector with HNSW, PG 16 RC1, documentation refresh, Chinese docs, routine fixes | [v2.3.1](https://github.com/vonng/pigsty/releases/tag/v2.3.1) |
+| v2.3.0 | 2023-08-20 | Host VIP, ferretdb, nocodb, MySQL stub, CVE fixes           | [v2.3.0](https://github.com/vonng/pigsty/releases/tag/v2.3.0) |
+| v2.2.0 | 2023-08-04 | Dashboard & provisioning redo, UOS compatibility            | [v2.2.0](https://github.com/vonng/pigsty/releases/tag/v2.2.0) |
+| v2.1.0 | 2023-06-10 | Support PostgreSQL 12 ~ 16beta                              | [v2.1.0](https://github.com/vonng/pigsty/releases/tag/v2.1.0) |
+| v2.0.2 | 2023-03-31 | Added pgvector support, fixed MinIO CVE                     | [v2.0.2](https://github.com/vonng/pigsty/releases/tag/v2.0.2) |
+| v2.0.1 | 2023-03-21 | v2 bug fixes, security enhancements, Grafana version upgrade | [v2.0.1](https://github.com/vonng/pigsty/releases/tag/v2.0.1) |
+| v2.0.0 | 2023-02-28 | Major architecture upgrade, significantly enhanced compatibility, security, maintainability | [v2.0.0](https://github.com/vonng/pigsty/releases/tag/v2.0.0) |
 
 > [Pigsty Release Note](https://pigsty.cc/docs/releasenote)
 

@@ -121,7 +121,7 @@ tags: [随笔]
 - 2024-09-03 [《黑历史：Mongo》：现由 PostgreSQL 驱动](/db/mongo-powered-by-pg/)
 - 2024-09-02 [PostgreSQL 可以替换微软 SQL Server 吗？](/pg/pg-replace-mssql/)
 - 2024-08-30 [ElasticSearch 又重新开源了？？？](/db/elasticsearch-reopen/)
-- 2024-08-22 [GOTC 2024 BTW 采访冯若航](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247488229&idx=1&sn=613dcc5db276442755f77b1a16b92000&scene=21#wechat_redirect "GOTC 2024 BTW采访冯若航：Pigsty作者，简化PG管理，推动PG开源社区的中国参与")
+- 2024-08-22 [GOTC 2024 BTW 采访薛永杰](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247488229&idx=1&sn=613dcc5db276442755f77b1a16b92000&scene=21#wechat_redirect "GOTC 2024 BTW采访薛永杰：Pigsty作者，简化PG管理，推动PG开源社区的中国参与")
 - 2024-08-13 [谁整合好 DuckDB，谁赢得 OLAP 数据库世界](/pg/pg-duckdb/)
 - 2024-08-09 [PostgreSQL 小版本更新，17beta3，12 将 EOL](/pg/pg-17beta3/)
 - 2024-08-03 [最近在憋大招，数据库全能王真的要来了](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247488097&idx=1&sn=b94c9e2464cf416103d164e3b70b45fd&scene=21#wechat_redirect "最近在憋大招，数据库全能王真的要来了")

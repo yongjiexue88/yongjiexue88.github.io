@@ -25,7 +25,7 @@ As the head of a midsize startup, he should have plenty of serious work to do, n
 
 As far as I know, Jiang is not particularly familiar with Rust. That did not stop him from having Codex build a Go take on [Neo4j](https://github.com/neo4j/neo4j) called [`graphdb`](https://github.com/SamuelSupe/graphdb), a Rust take on [DuckDB](https://github.com/duckdb/duckdb) called [`RustDB`](https://github.com/SamuelSupe/RustDB), and a Rust take on [Kafka](https://github.com/apache/kafka) called [`rutomq`](https://github.com/SamuelSupe/rutomq), among other projects.
 
-[![X post assessing Jiang's AI-built database projects](project-tweet.webp)](https://x.com/RonVonng)
+[![X post assessing Jiang's AI-built database projects](project-tweet.webp)](https://x.com/ronvonng)
 
 Here, to "burn" something means using tokens as fuel and having agents cobble the project together. I was not particularly interested in these projects at first. Then I let Fable inspect the repositories. Its verdict was surprisingly positive: they are nowhere near true production-grade products, but neither are they just a README and a few architecture diagrams. The code is surprisingly substantial, the basic functionality runs, and the projects are not mere stage props.
 

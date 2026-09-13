@@ -43,7 +43,7 @@ Then Mullenweg's two blog responses:
 
 --------
 
-## Vonng's Commentary
+## Yongjie Xue's Commentary
 
 I have no financial relationship with WordPress, but as an open source community founder, participant, and maintainer, I emotionally sympathize with Automattic and its boss — WP project founder Matt Mullenweg. I can understand his anger and frustration, but I really can't endorse his impulsive actions after receiving the cease and desist letter.
 

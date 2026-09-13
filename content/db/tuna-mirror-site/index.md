@@ -21,7 +21,7 @@ tags: [软件仓库, PG管理, 开源]
 >
 > 最初发现问题时，我用的是阿里云的 PostgreSQL 镜像。后来注意到 TUNA 上也存在同样的情况，就纯粹出于开源道义在 [向 TUNA 邮件列表反馈问题](https://groups.google.com/g/tuna-general/c/BU8P7X3y4sI)，得到的是一句（本邮件列表是 TUNA 的邮件列表，与阿里云无关）与长期的沉默，这样的感受会体现在文章的情绪中。
 >
-> 回头看原文，用“躺平”“没有担当”这样带有明显的情绪色彩的字眼，放在 **贵站身上** 已经不准确，也容易被误解为在给志愿者贴道德标签，这并非我本意。如果这段措辞让一线维护同学感到不舒服，我在这里先说声抱歉。我已经 [修改措辞](https://github.com/Vonng/blog/commit/916697a88f143679d658dc52338827ce603444fd) 为更中性的说法，比如“长期未更新” / “不再维护”，避免伤到真正干活的人。
+> 回头看原文，用“躺平”“没有担当”这样带有明显的情绪色彩的字眼，放在 **贵站身上** 已经不准确，也容易被误解为在给志愿者贴道德标签，这并非我本意。如果这段措辞让一线维护同学感到不舒服，我在这里先说声抱歉。我已经 [修改措辞](https://github.com/vonng/blog/commit/916697a88f143679d658dc52338827ce603444fd) 为更中性的说法，比如“长期未更新” / “不再维护”，避免伤到真正干活的人。
 >
 > 对于你提到的一点我是认同的：高校镜像站本质上是志愿者项目，没有法律或合同意义上的承诺。不再维护这件事无法在法律和道德上苛责什么，这一点在文章里也多次强调过。但从下游用户的角度看，PGDG 切断 rsync 之后，国内主流镜像在相当长一段时间里停留在几个月前的版本，对很多只会照着“推荐镜像源”配置的用户来说，客观效果就是供应链中断，这是实实在在的风险，缺乏维护损耗的是用户对镜像站的信任。
 >
@@ -165,7 +165,7 @@ PIGSTY PGSQL 仓库：提供 [几款不同风味的 PG 内核分支](https://pig
 |                [mcli](https://github.com/minio/mc)                | 20250813083541 |    [blackbox_exporter](https://github.com/prometheus/blackbox_exporter)     | 0.27.0  |                   [vector](https://github.com/vectordotdev/vector/releases)                    | 0.51.1 |
 |            [kafka](https://kafka.apache.org/downloads)            |     4.0.0      |    [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)    | 1.129.1 |         [grafana-infinity-ds](https://github.com/grafana/grafana-infinity-datasource/)         | 3.6.0  |
 |            [duckdb](https://github.com/duckdb/duckdb)             |     1.4.2      | [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaMetrics/releases) | 1.37.2  |   [grafana-vmlogs-ds](https://github.com/VictoriaMetrics/victorialogs-datasource/releases/)    | 0.21.4 |
-|         [ferretdb](https://github.com/FerretDB/FerretDB)          |     2.7.0      |             [pg_exporter](https://github.com/Vonng/pg_exporter)             |  1.0.3  | [grafana-vmetrics-ds](https://github.com/VictoriaMetrics/victoriametrics-datasource/releases/) | 0.19.6 |
+|         [ferretdb](https://github.com/FerretDB/FerretDB)          |     2.7.0      |             [pg_exporter](https://github.com/vonng/pg_exporter)             |  1.0.3  | [grafana-vmetrics-ds](https://github.com/VictoriaMetrics/victoriametrics-datasource/releases/) | 0.19.6 |
 |     [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle)     |    0.16.60     |     [pgbackrest_ex...](https://github.com/woblerr/pgbackrest_exporter)      | 0.21.0  |     [grafana-plugins](https://github.com/pgsty/infra-pkg/tree/main/noarch/grafana-plugins)     | 12.0.0 |
 |          [juicefs](https://github.com/juicedata/juicefs)          |     1.3.0      |        [node_exporter](https://github.com/prometheus/node_exporter)         | 1.10.2  |                                                                                                |        |
 |           [dblab](https://github.com/danvergara/dblab)            |     0.34.2     |      [keepalived_exp...](https://github.com/mehdy/keepalived-exporter)      |  1.7.0  |                                              **UTILS**                                         |        |

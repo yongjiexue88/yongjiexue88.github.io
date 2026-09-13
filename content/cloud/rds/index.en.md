@@ -309,7 +309,7 @@ Pigsty lets you practice ultimate FinOps philosophy — using prices almost appr
 
 【5】 [AWS Pricing Calculator](https://calculator.amazonaws.cn/#/?trk=pricing-ban) (China Ningxia)
 
-【6】[FIO Testing AWS EBS Performance](https://github.com/Vonng/pgtpc/blob/master/fio/aws-ebs-bench.md)
+【6】[FIO Testing AWS EBS Performance](https://github.com/vonng/pgtpc/blob/master/fio/aws-ebs-bench.md)
 
 【7】[Alibaba-Cloud RDS PG Enhanced Monitoring](https://help.aliyun.com/document_detail/299200.html)
 

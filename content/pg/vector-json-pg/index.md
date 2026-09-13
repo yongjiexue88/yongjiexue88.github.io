@@ -126,7 +126,7 @@ pgvector 已经可以处理许多常见的 AI/ML 数据用例 —— 我已经�
 
 > 本文译自《VECTORS ARE THE NEW JSON IN POSTGRESQL[2]》一文。
 >
-> 作者 JONATHAN KATZ ，译者 Vonng
+> 作者 JONATHAN KATZ ，译者 薛永杰
 
 ---------------
 

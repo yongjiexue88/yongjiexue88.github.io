@@ -7,7 +7,7 @@ summary: >
 tags: [PostgreSQL, PG Development]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 Sometimes we want to record important metadata changes for audit purposes.
 

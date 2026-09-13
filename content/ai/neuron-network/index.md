@@ -445,7 +445,7 @@ QED
 
 ```python
 # coding: utf-8
-# author: vonng(fengruohang@outlook.com)
+# author: 薛永杰(yongjiexue88@gmail.com)
 # ctime: 2017-05-10
 
 import random
@@ -670,7 +670,7 @@ $$
 
 ```python
 # coding: utf-8
-# author: vonng(fengruohang@outlook.com)
+# author: 薛永杰(yongjiexue88@gmail.com)
 # ctime: 2017-05-10
 
 import random

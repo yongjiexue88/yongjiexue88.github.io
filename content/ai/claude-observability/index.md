@@ -10,7 +10,7 @@ aliases: ["/db/claude-observability/"]
 
 # Claude Code 可观测性怎么做？
 
-昨天老冯 [发了条推特](https://x.com/RonVonng/status/2014972720489091514)：「做了个 Claude Code Grafana Dashboard，研究下它是怎么做决策、用工具、
+昨天老冯 [发了条推特](https://x.com/ronvonng/status/2014972720489091514)：「做了个 Claude Code Grafana Dashboard，研究下它是怎么做决策、用工具、
 调 API 花钱的。」结果发现非常多的用户都对这个主题感兴趣。
 
 ![推文截图](tweet-dashboard.webp)

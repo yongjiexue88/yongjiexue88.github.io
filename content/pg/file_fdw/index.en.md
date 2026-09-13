@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, PG Admin, Extension]
 ---
 
-> Author: [Vonng](https://vonng.com/en/)
+> Author: [Yongjie Xue](https://vonng.com/en/)
 
 PostgreSQL is the most advanced open-source database, and one of its killer features is FDW: Foreign Data Wrapper. Through FDW, users can access various external data sources from Postgres in a unified manner. `file_fdw` is one of the two FDWs that come bundled with the database. With the update to PostgreSQL 10, `file_fdw` has gained an awesome new capability: reading from program output.
 

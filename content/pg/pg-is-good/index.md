@@ -147,7 +147,7 @@ PG的代码质量相当之高，注释写的非常清晰。C的代码读起来�
 
 - 需要做分析，窗口函数，复杂JOIN，CUBE，GROUPING，自定义聚合，自定义语言，爽到飞起。如果觉得规模大了想scale out可以上[citus](https://www.citusdata.com/)扩展（或者换greenplum）；比起数仓可能少个列存比较遗憾，但其他该有的都有了。
 
-- 用到地理相关的功能，PostGIS堪称神器，千行代码才能实现的复杂地理需求，[一行SQL轻松高效解决](https://github.com/Vonng/pg/blob/master/app/knn-optimize.md)。
+- 用到地理相关的功能，PostGIS堪称神器，千行代码才能实现的复杂地理需求，[一行SQL轻松高效解决](https://github.com/vonng/pg/blob/master/app/knn-optimize.md)。
 
 - 存储时序数据，[timescaledb](https://www.timescale.com/)扩展虽然比不上专用时序数据库，但百万记录每秒的入库速率还是有的。用它解决过硬件传感器日志存储，监控系统Metrics存储的需求。
 
@@ -155,9 +155,9 @@ PG的代码质量相当之高，注释写的非常清晰。C的代码读起来�
 
 - PostgreSQL的[FDW](https://wiki.postgresql.org/wiki/Foreign_data_wrappers)是一种强大的机制，允许接入各种各样的数据源，以统一的SQL接口访问。它妙用无穷：
 
-- - `file_fdw` 这种自带的扩展，可以将任意程序的输出接入数据表。最简单的应用就是[监控系统信息](https://github.com/Vonng/pg/blob/master/fdw/file_fdw-intro.md)。
+- - `file_fdw` 这种自带的扩展，可以将任意程序的输出接入数据表。最简单的应用就是[监控系统信息](https://github.com/vonng/pg/blob/master/fdw/file_fdw-intro.md)。
   - 管理多个PostgreSQL实例时，可以在一个元数据库中用自带的 `postgres_fdw` 导入所有远程数据库的数据字典。统一访问所有数据库实例的元数据，一行SQL拉取所有数据库的实时指标，监控系统做起来不要太爽。
-  - 之前做过的一件事就是用[hbase_fdw](https://github.com/Vonng/hbase_fdw)和MongoFDW，将HBase中的历史批量数据，MongoDB中的当日实时数据包装为PostgreSQL数据表，一个视图就简简单单地实现了融合批处理与流处理的Lambda架构。
+  - 之前做过的一件事就是用[hbase_fdw](https://github.com/vonng/hbase_fdw)和MongoFDW，将HBase中的历史批量数据，MongoDB中的当日实时数据包装为PostgreSQL数据表，一个视图就简简单单地实现了融合批处理与流处理的Lambda架构。
   - 使用 `redis_fdw` 进行缓存更新推送；使用 `mongo_fdw` 完成从mongo到pg的数据迁移；使用 `mysql_fdw` 读取MySQL数据并存入数仓；实现跨数据库，甚至跨数据组件的JOIN；使用一行SQL就能完成原本多少行代码才能实现的复杂ETL，这是一件多么美妙的事情。
 
 - 各种丰富的类型与方法支持：例如[JSON](http://www.postgres.cn/docs/9.6/datatype-json.html)，从数据库直接生成前端所需的JSON响应，轻松而惬意。范围类型，优雅地解决很多原本需要程序处理的边角情况。其他的例如数组，多维数组，自定义类型，枚举，网络地址，UUID，ISBN。很多开箱即用的数据结构让程序员省去了多少造轮子的功夫。
@@ -170,6 +170,6 @@ PG的代码质量相当之高，注释写的非常清晰。C的代码读起来�
 
 - 运维友好：可以将DDL放在事务中执行（可回滚），创建索引不锁表，添加新列（不带默认值）不锁表，清理/备份不锁表。各种系统视图，监控功能都很完善。
 
-- 扩展众多、功能丰富、可定制程度极强。在PostgreSQL中可以使用任意的语言编写函数：Python，Go，Javascript，Java，Shell等等。与其说Pg是数据库，不如说它是一个开发平台。我就试过很多没什么卵用但很好玩的东西：**数据库里（in-db）** 的爬虫/ [推荐系统](https://github.com/Vonng/pg/blob/master/app/recsys-itemcf.md) / 神经网络 / Web服务器等等。有着各种功能强悍或脑洞清奇的第三方插件：[https://pgxn.org/)。
+- 扩展众多、功能丰富、可定制程度极强。在PostgreSQL中可以使用任意的语言编写函数：Python，Go，Javascript，Java，Shell等等。与其说Pg是数据库，不如说它是一个开发平台。我就试过很多没什么卵用但很好玩的东西：**数据库里（in-db）** 的爬虫/ [推荐系统](https://github.com/vonng/pg/blob/master/app/recsys-itemcf.md) / 神经网络 / Web服务器等等。有着各种功能强悍或脑洞清奇的第三方插件：[https://pgxn.org/)。
 
 - PostgreSQL的License友好，BSD随便玩，君不见多少数据库都是PG的换皮产品。MySQL有GPL传染，还要被Oracle捏着蛋蛋。

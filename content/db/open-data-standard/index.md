@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, OLAP, 数据库, 监控]
 ---
 
-> 作者：Paul Copplestone，Supabase CEO 译者：Vonng，Pigsty Founder，数据库老司机
+> 作者：Paul Copplestone，Supabase CEO 译者：薛永杰，Pigsty Founder，数据库老司机
 > 原文地址: https://supabase.com/blog/open-data-standards-postgres-otel-iceberg
 
 ![featured.png](featured.png)

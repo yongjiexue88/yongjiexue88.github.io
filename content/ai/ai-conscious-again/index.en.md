@@ -9,7 +9,7 @@ ai: true
 aliases: ["/misc/ai-conscious-again/"]
 ---
 
-> Adapted from a real conversation between Vonng and Claude.
+> Adapted from a real conversation between Yongjie Xue and Claude.
 
 ## Prologue: a fruit fly starts a philosophy problem
 

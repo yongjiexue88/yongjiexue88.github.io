@@ -9,7 +9,7 @@ series: ["MySQL走好"]
 tags: [MySQL, Oracle, 数据库, 技术评论]
 ---
 
-> 作者：[Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[冯若航](https://vonng.com)（[@Vonng](https://vonng.com/en/)）| [微信原文](https://mp.weixin.qq.com/s/0OgcduKvmprBcECgtn73Cg) | [Percona's Blog](https://www.percona.com/blog/can-oracle-save-mysql/)
+> 作者：[Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[薛永杰](https://vonng.com)（[@yongjiexue88](https://vonng.com/en/)）| [微信原文](https://mp.weixin.qq.com/s/0OgcduKvmprBcECgtn73Cg) | [Percona's Blog](https://www.percona.com/blog/can-oracle-save-mysql/)
 
 Percona 作为 MySQL 生态的主要扛旗者，开发了一系列用户耳熟能详的工具：PMM 监控，XtraBackup 备份，PT 系列工具，以及 MySQL 发行版。
 然而近日，Percona 创始人 Peter Zaitsev 在官方博客上公开表达了对 MySQL，及其知识产权属主 Oracle 的失望，以及对版本越高性能越差的不满，这确实是一个值得关注的信号。
@@ -19,7 +19,7 @@ Percona 作为 MySQL 生态的主要扛旗者，开发了一系列用户耳熟�
 
 > 作者：Percona Blog，Marco Tusa，MySQL 生态的重要贡献者，开发了知名的PT系列工具，MySQL备份工具，监控工具与发行版。
 >
-> 译者：Vonng，Pigsty 作者，PostgreSQL 专家与布道师。下云倡导者，数据库下云实践者。
+> 译者：薛永杰，Pigsty 作者，PostgreSQL 专家与布道师。下云倡导者，数据库下云实践者。
 
 我之前写了篇文章 [Oracle最终还是杀死了MySQL](/db/oracle-kill-mysql/) ，引发了不少回应 —— 包括 The Register 上的几篇精彩文章（[1](https://www.theregister.com/2024/06/11/early_mysql_engineer_questions_whether/), [2](https://www.theregister.com/2024/06/14/oracles_love_and_hate_relationship/)）。这确实引出了几个值得讨论的问题：
 

@@ -28,16 +28,16 @@ BTW, I have to criticize the design of the Dify template. Since the metadata is 
 
 Dify "supports" a bunch of flashy vector databases, but since PostgreSQL is already chosen, using `pgvector` as the default vector database is the natural choice. Similarly, I think the Dify team should consider removing Redis. Celery task queues can use PostgreSQL as backend storage, so having multiple databases is unnecessary. Entities should not be multiplied without necessity.
 
-Therefore, the Pigsty-provided [Dify Docker Compose template](https://github.com/Vonng/pigsty/tree/master/app/dify) has made some adjustments to the official example. It removes the `db` and `redis` database images, using instances managed by Pigsty. The vector database is fixed to use `pgvector`, reusing the same PostgreSQL instance.
+Therefore, the Pigsty-provided [Dify Docker Compose template](https://github.com/vonng/pigsty/tree/master/app/dify) has made some adjustments to the official example. It removes the `db` and `redis` database images, using instances managed by Pigsty. The vector database is fixed to use `pgvector`, reusing the same PostgreSQL instance.
 
 In the end, the architecture is simplified to three stateless containers: `dify-api`, `dify-web`, and `dify-worker`, which can be created and destroyed at will. There are also two optional containers, `ssrf_proxy` and `nginx`, for providing proxy and some security features.
 
-There’s a bit of state management left with [file system volumes](https://github.com/Vonng/pigsty/blob/main/app/dify/docker-compose.yml#L128), storing things like private keys. Regular backups are sufficient.
+There’s a bit of state management left with [file system volumes](https://github.com/vonng/pigsty/blob/main/app/dify/docker-compose.yml#L128), storing things like private keys. Regular backups are sufficient.
 
 Reference:
 
 - [GitHub: langgenius/Dify](https://github.com/langgenius/dify/)
-- [Pigsty: Dify Docker Compose Template](https://github.com/Vonng/pigsty/tree/master/app/dify)
+- [Pigsty: Dify Docker Compose Template](https://github.com/vonng/pigsty/tree/master/app/dify)
 
 ------
 
@@ -140,7 +140,7 @@ Pigsty will not deploy Docker by default, so you need to install Docker with the
 
 ## Dify Configuration
 
-You can configure dify in the [`.env`](https://github.com/Vonng/pigsty/blob/main/app/dify/.env) file:
+You can configure dify in the [`.env`](https://github.com/vonng/pigsty/blob/main/app/dify/.env) file:
 
 All parameters are self-explanatory and filled in with default values that work directly in the [Pigsty sandbox env](https://pigsty.io/docs/setup/provision/).
 Fill in the database connection information according to your actual conf, consistent with the PG/Redis cluster configuration above.

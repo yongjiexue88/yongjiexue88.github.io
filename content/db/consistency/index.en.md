@@ -64,4 +64,4 @@ The Raft algorithm solves the total order broadcast problem. **Maintaining consi
 
 ## Reference Reading
 
-[1] [Consistency and Consensus](https://github.com/Vonng/ddia/blob/master/ch9.md)
+[1] [Consistency and Consensus](https://github.com/vonng/ddia/blob/master/ch9.md)

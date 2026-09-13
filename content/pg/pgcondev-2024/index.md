@@ -32,9 +32,9 @@ PGCon.Dev 2024 已经于5月31日晚正式结束，理论上本文章本应在�
 大会的第零天是领导层会议，我注册了下午的 Extension Ecosystem Summit 扩展生态峰会。
 
 说起来，这个扩展生态峰会也许跟我还有点关系。两个月前我写了一篇文章《[PostgreSQL正在吞噬数据库世界](/pg/pg-eat-db-world)》，主题是 PostgreSQL 的繁荣扩展生态是其独一无二的特点与成功的关键要素。
-写完后将其翻译成了英文《[Postgres is eating the database world](/pg/pg-eat-db-world)》发到了 [Medium](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4) 与 [HackNews](https://news.ycombinator.com/item?id=39759539) 上，总共有几十万的阅览量，基本应该覆盖了整个 PG 社区。
+写完后将其翻译成了英文《[Postgres is eating the database world](/pg/pg-eat-db-world)》发到了 [Medium](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4) 与 [HackNews](https://news.ycombinator.com/item?id=39759539) 上，总共有几十万的阅览量，基本应该覆盖了整个 PG 社区。
 
-[![ecosystem.jpg](ecosystem.jpg)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
+[![ecosystem.jpg](ecosystem.jpg)](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4)
 
 此前，扩展机制的重要性并没有达成共识，即使在 PG 社区与一些资深成员的眼中，关于扩展他们只是觉得 PostGIS 和 PGVector 好像很不错 —— 前者是地理空间数据库的事实标准，后者是AI领域当红炸子鸡 —— 向量数据库的砸盘掀桌者。
 但 PG 生态中强大的扩展绝不仅仅只有这两个，在抛出了这个极为繁荣的 PG 扩展生态 Landscape 后，立即引起了社区成员的极大兴趣与关注，很快关于PG扩展的讨论发酵了起来。
@@ -172,7 +172,7 @@ Heikki 提出了目标与相当详细周密的计划供在座的 Hacker 们评�
 
 ![hallway-track.jpg](hallway-track.jpg)
 
-作为第一次现场参加 PGCon.Dev 的人，我很惊讶地发现自己有着于与新人不匹配的知名度与关注度。有近半的参会者看到我的胸牌 Vonng / Pigsty 就认识我了 —— 主要还是归功于我之前写的那篇 PG 大爽文《[PostgreSQL is eating the Database world](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)》，Jonathan 跟我吐槽到说最近这篇文章天天出现在他的时间线上，整个 PG 社区的人基本上都看过了。
+作为第一次现场参加 PGCon.Dev 的人，我很惊讶地发现自己有着于与新人不匹配的知名度与关注度。有近半的参会者看到我的胸牌 Yongjie Xue / Pigsty 就认识我了 —— 主要还是归功于我之前写的那篇 PG 大爽文《[PostgreSQL is eating the Database world](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4)》，Jonathan 跟我吐槽到说最近这篇文章天天出现在他的时间线上，整个 PG 社区的人基本上都看过了。
 
 ![collect.jpg](collect.jpg)
 

@@ -12,7 +12,7 @@ tags: [PostgreSQL, PG生态, 翻译]
 
 > **作者**：Jonathan Kats，Amazon RDS 首席产品经理兼技术主管， PostgreSQL 全球开发组核心成员与主要贡献者。博客：https://jkatz05.com/。
 >
-> **译者**：Vonng，磐吉云数创始人 / CEO，[**PostgreSQL**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485685&idx=1&sn=688f6d6d0f4128d7f77d710f04ff9024&chksm=fe4b3d2ec93cb438665b7e0d554511674091b2e486a70b8a3eb7e2c7a53681fb9834a08cb3c3&scene=21#wechat_redirect) 专家与布道师，开源 RDS PG —— [**Pigsty**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485518&idx=1&sn=3d5f3c753facc829b2300a15df50d237&chksm=fe4b3d95c93cb4833b8e80433cff46a893f939154be60a2a24ee96598f96b32271301abfda1f&scene=21#wechat_redirect) 作者。博客：https://vonng.com
+> **译者**：薛永杰，磐吉云数创始人 / CEO，[**PostgreSQL**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485685&idx=1&sn=688f6d6d0f4128d7f77d710f04ff9024&chksm=fe4b3d2ec93cb438665b7e0d554511674091b2e486a70b8a3eb7e2c7a53681fb9834a08cb3c3&scene=21#wechat_redirect) 专家与布道师，开源 RDS PG —— [**Pigsty**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485518&idx=1&sn=3d5f3c753facc829b2300a15df50d237&chksm=fe4b3d95c93cb4833b8e80433cff46a893f939154be60a2a24ee96598f96b32271301abfda1f&scene=21#wechat_redirect) 作者。博客：https://vonng.com
 >
 > 点击“查看原文”查看英文原文：https://jkatz05.com/post/postgres/postgresql-2024/
 

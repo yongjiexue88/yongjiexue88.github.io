@@ -11,7 +11,7 @@ tags: [随笔]
 
 ## 开源
 
-GitHub 是全球一亿开发者的精神家园，全球最大的♂同性交友网站。在 Github 上，我算是一个相当活跃的开源贡献者，在2023年末活跃度排名 [中国区第81](https://committers.top/china)，关注者数排名 [中国区第410](https://wangchujiang.com/github-rank/users.china.html)，Star数排名 [全球排名483](https://gitstar-ranking.com/Vonng)。
+GitHub 是全球一亿开发者的精神家园，全球最大的♂同性交友网站。在 Github 上，我算是一个相当活跃的开源贡献者，在2023年末活跃度排名 [中国区第81](https://committers.top/china)，关注者数排名 [中国区第410](https://wangchujiang.com/github-rank/users.china.html)，Star数排名 [全球排名483](https://gitstar-ranking.com/yongjiexue88)。
 
 ![github.png](github.png)
 

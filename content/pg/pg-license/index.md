@@ -10,7 +10,7 @@ tags: [PostgreSQL, PG生态, 开源, 翻译]
 
 > 作者：[Jonathan Katz](https://jkatz05.com/post/postgres/)，PostgreSQL 核心组成员（1 of 7），AWS RDS 首席产品经理
 >
-> 译者：[Vonng](https://vonng.com)，PostgreSQL 专家，Free RDS PG Alternative —— Pigsty 作者
+> 译者：[薛永杰](https://vonng.com)，PostgreSQL 专家，Free RDS PG Alternative —— Pigsty 作者
 
 -----------
 
@@ -36,7 +36,7 @@ PostgreSQL 的网站上其实 [有答案](https://www.postgresql.org/about/licen
 - PostgreSQL项目发起时，以开源社区协作为主旨，**意在防止任何单一实体控制本项目**。这一点作为项目的精神主旨已经延续了近三十年时间了，并且在项目 [项目政策](https://www.postgresql.org/about/policies/)中有着明确体现。
 - [Dave Page 在这封邮件中明确表示过](https://www.postgresql.org/message-id/937d27e10910260840s1d28aab2o799f2c58d14dfb1e@mail.gmail.com) 😊
 
-那么真正的问题就变成了，**如果 PostgreSQL 要改变许可证，会出于什么理由呢**？通常变更许可证的原因是出于商业决策 —— 但看起来围绕 PostgreSQL 的商业业务与 PostgreSQL 的功能集合一样强壮。冯若航（Vonng）最近[写了一篇博客文章](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)，突出展现了围绕 PostgreSQL 打造的软件与商业生态，这还仅仅是一部分。
+那么真正的问题就变成了，**如果 PostgreSQL 要改变许可证，会出于什么理由呢**？通常变更许可证的原因是出于商业决策 —— 但看起来围绕 PostgreSQL 的商业业务与 PostgreSQL 的功能集合一样强壮。薛永杰（yongjiexue88）最近[写了一篇博客文章](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4)，突出展现了围绕 PostgreSQL 打造的软件与商业生态，这还仅仅是一部分。
 
 我说 “仅仅是一部分” 的意思是，在历史上和现在还有更多的项目和商业，是围绕着 PostgreSQL 代码库的某些部分构建的。这些项目中许多都使用了不同的许可证发布，或者干脆就是闭源的。但它们也直接或间接地推动了PostgreSQL 的采用，并使 PostgreSQL 协议变得无处不在。
 
@@ -48,7 +48,7 @@ PostgreSQL 的网站上其实 [有答案](https://www.postgresql.org/about/licen
 
 ## 译者评论
 
-能被 PostgreSQL 全球社区核心组成员提名推荐，我感到非常荣幸。上文中 Jonathan 提到我的文章是《[PostgreSQL正在吞噬数据库世界](https://mp.weixin.qq.com/s/8_uhRH93oAoHZqoC90DA6g)》，英文版为《[PostgreSQL is Eating The Database World](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)》。发布于 Medium：https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4 ，并在 HackerNews ，X，LinkedIn 上引起相当热烈的讨论。
+能被 PostgreSQL 全球社区核心组成员提名推荐，我感到非常荣幸。上文中 Jonathan 提到我的文章是《[PostgreSQL正在吞噬数据库世界](https://mp.weixin.qq.com/s/8_uhRH93oAoHZqoC90DA6g)》，英文版为《[PostgreSQL is Eating The Database World](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4)》。发布于 Medium：https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4 ，并在 HackerNews ，X，LinkedIn 上引起相当热烈的讨论。
 
 Redis 变更其许可证协议，是开源软件领域又一里程碑式的事件 —— 至此，所有头部的 NoSQL 数据库 ，包括 MongoDB， ElasticSearch，加上 Redis ，都已经切换到了 SSPL —— 一种不被 OSI 承认的许可证协议。
 
@@ -96,7 +96,7 @@ That said, there are a few reasons why PostgreSQL won’t change it’s license:
 - The PostgreSQL Project began as a collaborative open source effort and is set up to prevent a single entity to take control. This carries through in the project’s ethos almost 30 years later, and is even codified throughout the [project policies](https://www.postgresql.org/about/policies/).
 - [Dave Page explicitly said so in this email](https://www.postgresql.org/message-id/937d27e10910260840s1d28aab2o799f2c58d14dfb1e@mail.gmail.com) :)
 
-The question then becomes - is there a reason that PostgreSQL would change its license? Typically these changes happen as part of a business decision - but it seems that business around PostgreSQL is as robust as its feature set. Ruohang Feng (Vonng) recently [wrote a blog post](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4) that highlighted just a slice of the PostgreSQL software and business ecosystem that’s been built around it, which is only possible through the PostgreSQL Licence. I say “just a slice” because there’s even more, both historically and current, projects and business that are built up around some portion of the PostgreSQL codebase. While many of these projects may be released under different licenses or be closed source, they have helped drive, both directly and indirectly, PostgreSQL adoption, and have helped make the PostgreSQL protocol ubiquitous.
+The question then becomes - is there a reason that PostgreSQL would change its license? Typically these changes happen as part of a business decision - but it seems that business around PostgreSQL is as robust as its feature set. Yongjie Xue (@yongjiexue88) recently [wrote a blog post](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4) that highlighted just a slice of the PostgreSQL software and business ecosystem that’s been built around it, which is only possible through the PostgreSQL Licence. I say “just a slice” because there’s even more, both historically and current, projects and business that are built up around some portion of the PostgreSQL codebase. While many of these projects may be released under different licenses or be closed source, they have helped drive, both directly and indirectly, PostgreSQL adoption, and have helped make the PostgreSQL protocol ubiquitous.
 
 But the biggest reason why PostgreSQL would not change its license is the disservice it would do to all PostgreSQL users. It takes a long time to build trust in a technology that is often used for the most critical part of an application: storage and retrieval of data. [PostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to consistently deliver performant and innovative solutions](https://www.postgresql.org/about/). Changing the license of PostgreSQL would shatter all of the goodwill the project has built up through the past (nearly) 30 years.
 

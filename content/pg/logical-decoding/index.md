@@ -116,13 +116,13 @@ INSERT INTO public.test (id, data) VALUES (14, 'hoho');
 DROP TABLE IF EXISTS users;
 CREATE TABLE users(id SERIAL PRIMARY KEY, name TEXT);
 
-INSERT INTO users VALUES (100, 'Vonng');
+INSERT INTO users VALUES (100, 'Yongjie');
 INSERT INTO users VALUES (101, 'Xiao Wang');
 DELETE FROM users WHERE id = 100;
 UPDATE users SET name = 'Lao Wang' WHERE id = 101;
 ```
 
-最终数据库的状态是：只有一条 `(101, 'Lao Wang')` 的记录。无论是曾经有一个名为 `Vonng` 的用户存在过的痕迹，抑或是隔壁老王也曾年轻过的事实，都随着对数据库的删改而烟消云散。我们希望这些事实不应随风而逝，需要被记录下来。
+最终数据库的状态是：只有一条 `(101, 'Lao Wang')` 的记录。无论是曾经有一个名为 `Yongjie` 的用户存在过的痕迹，抑或是隔壁老王也曾年轻过的事实，都随着对数据库的删改而烟消云散。我们希望这些事实不应随风而逝，需要被记录下来。
 
 ### 操作流程
 
@@ -167,7 +167,7 @@ SELECT * FROM  pg_logical_slot_get_changes('test_slot', NULL, NULL);
  0/167C7E8 | 569 | BEGIN 569
  0/169F6F8 | 569 | COMMIT 569
  0/169F6F8 | 570 | BEGIN 570
- 0/169F6F8 | 570 | table public.users: INSERT: id[integer]:100 name[text]:'Vonng'
+ 0/169F6F8 | 570 | table public.users: INSERT: id[integer]:100 name[text]:'Yongjie'
  0/169F810 | 570 | COMMIT 570
  0/169F810 | 571 | BEGIN 571
  0/169F810 | 571 | table public.users: INSERT: id[integer]:101 name[text]:'Xiao Wang'
@@ -206,7 +206,7 @@ pg_recvlogical \
 BEGIN 585
 COMMIT 585
 BEGIN 586
-table public.users: INSERT: id[integer]:100 name[text]:'Vonng'
+table public.users: INSERT: id[integer]:100 name[text]:'Yongjie'
 COMMIT 586
 BEGIN 587
 table public.users: INSERT: id[integer]:101 name[text]:'Xiao Wang'
@@ -268,7 +268,7 @@ pg_recvlogical -d postgres --create-slot --if-not-exists --slot=test_slot \
 
 ```json
 {"change":[]}
-{"change":[{"kind":"insert","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[100,"Vonng"]}]}
+{"change":[{"kind":"insert","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[100,"Yongjie"]}]}
 {"change":[{"kind":"insert","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[101,"Xiao Wang"]}]}
 {"change":[{"kind":"delete","schema":"public","table":"users","oldkeys":{"keynames":["id"],"keytypes":["integer"],"keyvalues":[100]}}]}
 {"change":[{"kind":"update","schema":"public","table":"users","columnnames":["id","name"],"columntypes":["integer","text"],"columnvalues":[101,"Lao Wang"],"oldkeys":{"keynames":["id"],"keytypes":["integer"],"keyvalues":[101]}}]}
@@ -285,7 +285,7 @@ pg_recvlogical -d postgres --create-slot --if-not-exists --slot=test_slot \
 结果为：
 
 ```sql
-INSERT INTO public.users (id, name) VALUES (100, 'Vonng');
+INSERT INTO public.users (id, name) VALUES (100, 'Yongjie');
 INSERT INTO public.users (id, name) VALUES (101, 'Xiao Wang');
 DELETE FROM public.users WHERE id = 100;
 UPDATE public.users SET id = 101, name = 'Lao Wang' WHERE id = 101;

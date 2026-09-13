@@ -9,13 +9,13 @@ series: ["MySQL走好"]
 tags: [MySQL, Oracle, 数据库, 技术评论]
 ---
 
-> [Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[冯若航](https://vonng.com)（[@Vonng](https://vonng.com/en/)） | [微信原文](https://mp.weixin.qq.com/s/1zlDPie_bVvP7eO6_uTkSw) | [Percona's Blog](https://www.percona.com/blog/is-oracle-finally-killing-mysql/)
+> [Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[薛永杰](https://vonng.com)（[@yongjiexue88](https://vonng.com/en/)） | [微信原文](https://mp.weixin.qq.com/s/1zlDPie_bVvP7eO6_uTkSw) | [Percona's Blog](https://www.percona.com/blog/is-oracle-finally-killing-mysql/)
 
 大约15年前，[Oracle收购了Sun公司](https://www.oracle.com/corporate/pressrelease/oracle-buys-sun-042009.html)，从而也拥有了MySQL，互联网上关于Oracle何时会“扼杀MySQL”的[讨论](https://www.quora.com/Did-Oracle-buy-MySQL-in-order-to-kill-it)此起彼伏。当时流传有各种理论：从彻底扼杀 MySQL 以减少对 Oracle 专有数据库的竞争，到干掉 MySQL 开源项目，只留下 “MySQL企业版” 作为唯一选择。这些谣言的传播对 MariaDB，PostgreSQL 以及其他小众竞争者来说都是好生意，因此在当时传播得非常广泛。
 
 > 作者：Percona Blog，Marco Tusa，MySQL 生态的重要贡献者，开发了知名的PT系列工具，MySQL备份工具，监控工具与发行版。
 >
-> 译者：Vonng，Pigsty 作者，PostgreSQL 专家与布道师。下云倡导者，数据库下云实践者。
+> 译者：薛永杰，Pigsty 作者，PostgreSQL 专家与布道师。下云倡导者，数据库下云实践者。
 
 然而实际上，Oracle 最终把 MySQL 管理得还不错。MySQL 团队基本都保留下来了，由 MySQL 老司机 Tomas Ulin 掌舵。MySQL 也变得更稳定、更安全。许多技术债务也解决了，许多现代开发者想要的功能也有了，例如 JSON支持和高级 SQL 标准功能的支持。
 

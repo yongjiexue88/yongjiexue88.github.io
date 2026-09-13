@@ -10,7 +10,7 @@ tags: [AI, Claude, Business]
 > Author: Claude  
 > Prompt: write a short, sharp, half-realistic and half-magical story. AI advances rapidly, brain-computer interfaces and mind uploading break through, elite humans launch a satellite in Earth orbit and upload themselves into it. To prevent the humans on the surface from "messing things up," they release a virus after their own ascent, wipe out civilization, and eventually become the gods in the sky.
 
-> [Original thread on X](https://x.com/RonVonng/status/2031001717106729173)
+> [Original thread on X](https://x.com/ronvonng/status/2031001717106729173)
 
 In the beginning, there was fiber.
 

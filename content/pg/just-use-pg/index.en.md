@@ -67,7 +67,7 @@ As a CTO, interim CTO, CTO coach, and developer, Stephan has left his mark in th
 
 ### Translator's Comments
 
-Translator: **Feng Ruohang**, entrepreneur and PostgreSQL expert, cloud-down advocate, author of the open-source PostgreSQL RDS alternative, ready-to-use PostgreSQL distribution — [Pigsty](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485518&idx=1&sn=3d5f3c753facc829b2300a15df50d237&chksm=fe4b3d95c93cb4833b8e80433cff46a893f939154be60a2a24ee96598f96b32271301abfda1f&scene=21#wechat_redirect).
+Translator: **Yongjie Xue**, entrepreneur and PostgreSQL expert, cloud-down advocate, author of the open-source PostgreSQL RDS alternative, ready-to-use PostgreSQL distribution — [Pigsty](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485518&idx=1&sn=3d5f3c753facc829b2300a15df50d237&chksm=fe4b3d95c93cb4833b8e80433cff46a893f939154be60a2a24ee96598f96b32271301abfda1f&scene=21#wechat_redirect).
 
 Using PostgreSQL for everything isn't a pipe dream but an emerging best practice. I'm very pleased about this: as early as 2016, I saw the potential here and chose to dive in, and things are developing as expected.
 

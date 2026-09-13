@@ -8,7 +8,7 @@ summary: >
 tags: [PostgreSQL, PG Admin]
 ---
 
-> Author: [Vonng](https://vonng.com) ([@Vonng](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
 
 How to change primary key column types online, such as upgrading from `INT` to `BIGINT`, without affecting business operations?
 

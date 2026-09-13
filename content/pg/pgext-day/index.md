@@ -138,7 +138,7 @@ PGEXT DAY 的举办日期是 2025.05.12 日，和 PG 开发者大会在相同的
 
 ### 9. 缺失的 Postgres 扩展仓库与包管理器
 
-**1:30 pm → 25 min**，Ruohang Feng
+**1:30 pm → 25 min**，薛永杰
 
 **The Missing Postgres Extension Repo and Package Manager**
 

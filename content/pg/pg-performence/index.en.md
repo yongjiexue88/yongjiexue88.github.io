@@ -31,7 +31,7 @@ If you're interested in these questions, this article will be helpful:
 - Do cloud databases/servers really have cost advantages?
   The price of c5d.metal for 1 year could buy you the server and host it for 5 years. The corresponding cloud database's 1-year cost could buy you the same EC2 for 20 years.
 
-Detailed test procedures and raw data are available at: [github.com/Vonng/pgtpc](https://github.com/Vonng/pgtpc)
+Detailed test procedures and raw data are available at: [github.com/vonng/pgtpc](https://github.com/vonng/pgtpc)
 
 ------
 
@@ -161,7 +161,7 @@ We collected official sysbench evaluation reports from several representative Ne
 | Spec                  | 96C 192G     | 108C 510G                                | 96C 384G                                | 64C 256G   | 108C 216G      | 48C 96G       |
 | Table                 | 16 x 10M     | 16 x 10M                                 | 30 x 10M                                | 1 x 160M   | N/A            | 10 x 0.1M     |
 | CPU                   | 96           | 108                                      | 96                                      | 64         | 108            | 48            |
-| Source                | Vonng        | TiDB 6.1                                 | OceanBase                               | PolarDB    | Cockroach      | YugaByte      |
+| Source                | Yongjie Xue  | TiDB 6.1                                 | OceanBase                               | PolarDB    | Cockroach      | YugaByte      |
 
 ![pg-performence-10.png](pg-performence-10.png)
 
@@ -196,12 +196,12 @@ For horizontal comparison, we selected some other database official results or d
 
 | Database   | Time   | S    | CPU | QPH  | Environment          | Source    |
 |------------|--------|------|-----|------|----------------------|-----------|
-| PostgreSQL | 8      | 1    | 10  | 45.0 | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 56     | 10   | 10  | 64.3 | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 1327   | 50   | 10  | 13.6 | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 4835   | 100  | 10  | 7.4  | 10C / 64G M1 Max     | Vonng     |
-| PostgreSQL | 13.51  | 1    | 8   | 33.3 | 8C / 64G z1d.2xlarge | Vonng     |
-| PostgreSQL | 133.35 | 10   | 8   | 33.7 | 8C / 64G z1d.2xlarge | Vonng     |
+| PostgreSQL | 8      | 1    | 10  | 45.0 | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 56     | 10   | 10  | 64.3 | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 1327   | 50   | 10  | 13.6 | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 4835   | 100  | 10  | 7.4  | 10C / 64G M1 Max     | Yongjie Xue |
+| PostgreSQL | 13.51  | 1    | 8   | 33.3 | 8C / 64G z1d.2xlarge | Yongjie Xue |
+| PostgreSQL | 133.35 | 10   | 8   | 33.7 | 8C / 64G z1d.2xlarge | Yongjie Xue |
 | TiDB       | 190    | 100  | 120 | 15.8 | 120C / 570G          | TiDB      |
 | Spark      | 388    | 100  | 120 | 7.7  | 120C / 570G          | TiDB      |
 | Greenplum  | 436    | 100  | 288 | 2.9  | 120C / 570G          | TiDB      |
@@ -240,7 +240,7 @@ In conclusion, **PostgreSQL performs brilliantly in the TP domain and respectabl
 
 ## References
 
-[1] [Vonng: PGTPC](https://github.com/Vonng/pgtpc)
+[1] [Yongjie Xue: PGTPC](https://github.com/vonng/pgtpc)
 
 [2] [WHY MYSQL](https://www.mysql.com/cn/why-mysql/benchmarks/mysql/)
 

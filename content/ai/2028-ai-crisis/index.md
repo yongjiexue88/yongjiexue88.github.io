@@ -10,7 +10,7 @@ aliases: ["/misc/2028-ai-crisis/"]
 ---
 
 > 作者：Citrini 与 Alap Shah
-> 译者：冯若航
+> 译者：薛永杰
 > 原文：[The Global Intelligence Crisis](https://open.substack.com/pub/alapshah1/p/the-global-intelligence-crisis?r=1g6uar&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 
 昨天这篇文章在 X 上有两千万浏览，并且可能带动了昨晚软件股的大震荡。一场站在“两年后”回望当下的思想实验，有助于理解我们正在面对一个怎样的未来。
