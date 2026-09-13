@@ -14,7 +14,7 @@ Category: science-notes
 ## Source Book
 
 Source file: `chaiknows_master.md`  
-Full text: [Read the complete Chaiknows book](https://yongjiexue88.github.io/transcripts/chaiknows-explains-modern-life.md)  
+Full text: [Read the complete Chaiknows book](https://www.yongjiexue.io/transcripts/chaiknows-explains-modern-life.md)  
 Channel: `@chaiknows`  
 Chapter count: 123 explainers
 

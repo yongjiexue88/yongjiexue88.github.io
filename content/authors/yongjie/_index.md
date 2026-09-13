@@ -12,4 +12,4 @@ images: [images/avatar.jpg]
 
 - [GitHub](https://github.com/yongjiexue88)
 - [邮箱](mailto:yongjiexue88@gmail.com)
-- [个人网站](https://yongjiexue88.github.io/)
+- [个人网站](https://www.yongjiexue.io/)
