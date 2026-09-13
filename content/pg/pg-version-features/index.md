@@ -37,7 +37,7 @@ PostgreSQL 内核主干每年发布一个新的大版本，每个大版本都会
 
 要跟进并掌握所有这些新特性并不是一件容易的事——能有这样一本书，按照编年史的方式介绍 PostgreSQL 的功能特性，对于学习 PG 来说无疑是很有帮助的。即使是 PostgreSQL 老司机，也很难完全记住一些特性到底是在哪个版本引入的，本书就可以当作一本不错的案前参考手册备用。
 
-尽管新特性很有用，但也要实操才能真正掌握。在这一点上，有兴趣学习 PostgreSQL 的人，不妨**[弄台虚拟机](/cloud/cheap-ecs/)**搭建一套 [**Pigsty**](/pigsty/better-rds-alternative/)  —— 一键拉起 1:1 复刻生产环境的本地 PostgreSQL 集群，150+ [**生态扩展**](/pigsty/db-allrounder/)开箱即用，并带有最强监控系统可供观察系统状态；如果您主要对开发者特性感兴趣，也可以试试德哥制作的《[最强 PostgreSQL 学习 Docker 镜像](http://mp.weixin.qq.com/s?__biz=MzA5MTM4MzY1Mw==&mid=2247484237&idx=1&sn=9ea4b4f91d5ce1962ffa53daf5c2c33a&chksm=907c7147a70bf8514254f261cf94ed2ce9db4a76e870fb5a34affa3716bca6d3974f214d6507&scene=21#wechat_redirect)》。纸上得来终觉浅，绝知此事要躬行。
+尽管新特性很有用，但也要实操才能真正掌握。在这一点上，有兴趣学习 PostgreSQL 的人，不妨**[弄台虚拟机](/cloud/cheap-ecs/)**搭建一套 **Pigsty**  —— 一键拉起 1:1 复刻生产环境的本地 PostgreSQL 集群，150+ **生态扩展**开箱即用，并带有最强监控系统可供观察系统状态；如果您主要对开发者特性感兴趣，也可以试试德哥制作的《[最强 PostgreSQL 学习 Docker 镜像](http://mp.weixin.qq.com/s?__biz=MzA5MTM4MzY1Mw==&mid=2247484237&idx=1&sn=9ea4b4f91d5ce1962ffa53daf5c2c33a&chksm=907c7147a70bf8514254f261cf94ed2ce9db4a76e870fb5a34affa3716bca6d3974f214d6507&scene=21#wechat_redirect)》。纸上得来终觉浅，绝知此事要躬行。
 
 ---
 

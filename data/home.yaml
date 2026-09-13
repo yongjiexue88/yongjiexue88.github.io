@@ -42,9 +42,6 @@ zh-cn:
       - page: /ai
         title: AI 探路者
         desc: 关于 AI、Agent、LLM，以及 AI 与数据库之间的一切。
-      - page: /pigsty
-        title: Pigsty 发行版
-        desc: 开源 PostgreSQL RDS 发行版的版本发布记录。
       - page: /trip
         title: 行万里路
         desc: 旅行、徒步与游记见闻。山川湖海，风物人情。
@@ -103,9 +100,6 @@ en:
       - page: /ai
         title: AI Explorer
         desc: Agents, LLMs, AI coding, AI4DB and DB4AI.
-      - page: /pigsty
-        title: Pigsty Releases
-        desc: Release notes for the open-source PostgreSQL RDS distribution.
       - page: /trip
         title: Travel Notes
         desc: Trips, hikes and things seen along the way.

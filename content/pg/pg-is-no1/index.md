@@ -291,7 +291,7 @@ PostgreSQL 数据库内核在数据库领域的生态位，类似于 Linux 操�
 
 2018 《[PostgreSQL 好处都有啥？](/pg/pg-is-good/)》
 
-2023 《[更好的开源 RDS 替代：Pigsty](/pigsty/better-rds-alternative/)》
+2023 《更好的开源 RDS 替代：Pigsty》
 
 2023 《[StackOverflow 7 年调研数据跟踪](http://demo.pigsty.cc/ui/d/sf-survey/stackoverflow-survey)》
 

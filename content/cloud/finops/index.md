@@ -200,7 +200,7 @@ Pigsty 是一个公益性质的自由软件，软件本身完全开源免费用�
 
 [6] [杀猪盘真的降价了吗？](/cloud/ebs/)
 
-[7] [炮打 RDS，Pigsty v2.0 发布](/pigsty/v2.0-launch/)
+[7] 炮打 RDS，Pigsty v2.0 发布
 
 [8] [垃圾腾讯云 CDN：从入门到放弃](/cloud/cdn/)
 
@@ -210,7 +210,7 @@ Pigsty 是一个公益性质的自由软件，软件本身完全开源免费用�
 
 [11] [微服务是不是个蠢主意？](/db/microservice-bad-idea/)
 
-[12] [更好的开源 RDS 替代：Pigsty](/pigsty/better-rds-alternative/)
+[12] 更好的开源 RDS 替代：Pigsty
 
 ---
 

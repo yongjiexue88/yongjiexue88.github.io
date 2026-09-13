@@ -68,7 +68,7 @@ tags: [PostgreSQL, PG生态, 翻译]
 
 ### 译者评论
 
-译者：**Vonng**，创业者与 PostgreSQL 专家，下云倡导者，开源 PG RDS 替代，开箱即用的 PostgreSQL 发行版 —— [Pigsty](/pigsty/better-rds-alternative/) 作者。
+译者：**Vonng**，创业者与 PostgreSQL 专家，下云倡导者，开源 PG RDS 替代，开箱即用的 PostgreSQL 发行版 —— Pigsty 作者。
 
 使用 Postgres 完成一切工作并不是一种空想，而是一种正在流行起来的最佳实践。对此我感到非常欣慰：早在 2016 年时我便看到了这里的潜力[12]并选择躬身入局，而事情的发展正如所愿。
 
@@ -86,13 +86,11 @@ tags: [PostgreSQL, PG生态, 翻译]
 
 PostgreSQL 并不是一个简单的关系型数据库，而是一个数据管理的抽象框架，具有囊括一切，吞噬整个数据库世界的潜力。在十年前，这仅仅是一种潜力与可能性，在十年后，它已经兑现成为真正的影响力。而我很高兴能见证这个过程，并推动这一进程。
 
-> [**PostgreSQL is for Everything!**](/pigsty/db-allrounder/)
+> **PostgreSQL is for Everything!**
 
 ---
 
 ## 参考阅读
-
-[PGSQL x Pigsty：数据库全能王来了](/pigsty/db-allrounder/)
 
 [PG 生态新玩家 ParadeDB](/pg/paradedb/)
 
@@ -107,8 +105,6 @@ PostgreSQL 并不是一个简单的关系型数据库，而是一个数据管理
 [为什么 PostgreSQL 是最成功的数据库？](/pg/pg-is-best/)
 
 [为什么说 PostgreSQL 前途无量？](/pg/pg-is-great/)
-
-[更好的开源 RDS 替代：Pigsty](/pigsty/better-rds-alternative/)
 
 ### References
 

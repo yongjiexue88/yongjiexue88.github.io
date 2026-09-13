@@ -89,7 +89,7 @@ Forbes 最近引述的 Cursor 内部分析透露过一个数据：Anthropic 的 
 
 ![AI Agent 产出概览](output.webp)
 
-最近一个月，老冯用 AI Agent 的产出不可谓不丰富：[Pigsty 发了两个主要版本更新](/pigsty/v4.2/)，[接盘下来了跑路的 MinIO 项目](/db/minio-resurrect/)；[上了一次 Hacker News 头条两小时](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247491383&idx=2&sn=aef67d9c4b2f95799cf474059ac9214c&scene=21#wechat_redirect)；GitHub Star 数涨了 1000；[翻译了 DDIA v2](/db/ddia-v2-done/) 和 TPME 两本书，质量达到了 85 分水平；基本把 [PostgreSQL 核心组件文档](/pg/pg-translate/)及[几十个扩展](/pg/pgext-pedia/)，还有 MinIO 的文档都翻译成中文；[整个 Pigsty 网站与文档整体翻新](/pg/pgext-pedia/)；公众号确保了稳定日更，一个垂类公众号一个月从 50000 涨粉 6000。
+最近一个月，老冯用 AI Agent 的产出不可谓不丰富：Pigsty 发了两个主要版本更新，[接盘下来了跑路的 MinIO 项目](/db/minio-resurrect/)；[上了一次 Hacker News 头条两小时](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247491383&idx=2&sn=aef67d9c4b2f95799cf474059ac9214c&scene=21#wechat_redirect)；GitHub Star 数涨了 1000；[翻译了 DDIA v2](/db/ddia-v2-done/) 和 TPME 两本书，质量达到了 85 分水平；基本把 [PostgreSQL 核心组件文档](/pg/pg-translate/)及[几十个扩展](/pg/pgext-pedia/)，还有 MinIO 的文档都翻译成中文；[整个 Pigsty 网站与文档整体翻新](/pg/pgext-pedia/)；公众号确保了稳定日更，一个垂类公众号一个月从 50000 涨粉 6000。
 
 [一个人春节，能用 AI 干多少事？](/misc/how-much-ai-can-do/)
 

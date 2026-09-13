@@ -431,7 +431,7 @@ MySQL 跟其他数据库比较的时候，也许可以提一提这个事，唯�
 
 《[PostgreSQL 好处都有啥？](/pg/pg-is-good/)》
 
-《[更好的开源 RDS 替代：Pigsty](/pigsty/better-rds-alternative/)》
+《更好的开源 RDS 替代：Pigsty》
 
 《StackOverflow 7 年调研数据跟踪》
 
@@ -445,7 +445,7 @@ MySQL 跟其他数据库比较的时候，也许可以提一提这个事，唯�
 - `[4]` 拿绿卡： <https://www.zhihu.com/question/339863115/answer/1278663114>
 - `[5]` Pigsty: <https://pigsty.cc/>
 - `[6]` PostgreSQL 生态项目： <https://web.archive.org/web/2/https://ossrank.com/cat/368-postgresql-extension?page=2>
-- `[7]` [PostgreSQL 数据库发行版](/pigsty/better-rds-alternative/)
+- `[7]` PostgreSQL 数据库发行版
 - `[8]` 设计数据密集型应用： <http://ddia.vonng.com/>
 - `[9]` Github Star Ranking: <https://gitstar-ranking.com/Vonng>
 - `[10]` 分布式数据库是伪需求吗？: <https://zhuanlan.zhihu.com/p/622866832>
@@ -475,7 +475,7 @@ MySQL 跟其他数据库比较的时候，也许可以提一提这个事，唯�
 - `[34]` [Why PostgreSQL Rocks!](/pg/pg-is-great/)
 - `[35]` [为什么说 PostgreSQL 前途无量？](/pg/pg-is-great/)
 - `[36]` [PostgreSQL 好处都有啥？](/pg/pg-is-good/)
-- `[37]` [更好的开源 RDS 替代：Pigsty](/pigsty/better-rds-alternative/)
+- `[37]` 更好的开源 RDS 替代：Pigsty
 - `[38]` StackOverflow 7 年调研数据跟踪： <http://demo.pigsty.cc/ui/d/sf-survey/stackoverflow-survey>
 - `[39]` PostgreSQL 社区状态调查报告 2022: <https://www.timescale.com/state-of-postgres/2022>
 

@@ -69,7 +69,7 @@ Gartner 每年发布的数据库魔力象限报告，是全球数据库领域最
 
 ![图片](11.webp)
 
-除此之外，也有一些其他来自中国的数据库内核/管控/产品/工具开始进入国际视野中。比如做 PG 数据库发行版的 [**Pigsty**](/pigsty/better-rds-alternative/)，做数据库模式变更的 [**Bytebase**](https://mp.weixin.qq.com/s?__biz=MzkzMjI2MDY5OQ==&mid=2247506909&idx=1&sn=4eca65423029a38f35cac557f7d91fbe&scene=21#wechat_redirect)，用 K8S 跑数据库的 [**Kubeblocks**](https://mp.weixin.qq.com/s?__biz=Mzg3MDk3ODA0Mg==&mid=2247490772&idx=1&sn=01dd35c2ce5b1628746cb6a3fb247309&scene=21#wechat_redirect)，做时序细分领域的 IoTDB / TDEngine，做分析/数仓的更是有好几个不错的产品已经走出国门了。
+除此之外，也有一些其他来自中国的数据库内核/管控/产品/工具开始进入国际视野中。比如做 PG 数据库发行版的 **Pigsty**，做数据库模式变更的 [**Bytebase**](https://mp.weixin.qq.com/s?__biz=MzkzMjI2MDY5OQ==&mid=2247506909&idx=1&sn=4eca65423029a38f35cac557f7d91fbe&scene=21#wechat_redirect)，用 K8S 跑数据库的 [**Kubeblocks**](https://mp.weixin.qq.com/s?__biz=Mzg3MDk3ODA0Mg==&mid=2247490772&idx=1&sn=01dd35c2ce5b1628746cb6a3fb247309&scene=21#wechat_redirect)，做时序细分领域的 IoTDB / TDEngine，做分析/数仓的更是有好几个不错的产品已经走出国门了。
 
 越是中国的，越是世界的。靠硬实力吃饭的软件不会仅囿于一国：能在全球市场杀出血路，具有全球竞争力和国际影响力，赚到实打实的外汇，卡住全球软件供应链关键生态位的产品，才是最有价值的。
 

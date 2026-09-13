@@ -112,7 +112,7 @@ Pigsty 在全球 PG 生态中的影响力，[超过所有大厂重金投入的 P
 ![commits-top.png](commits-top.png)
 
 除了 Pigsty，我还维护了中国区的 PGDG 镜像，修复了几十个 PG 扩展，并因此在中国 PG 生态大会上拿了个“万磁王”的奖。
-还有 [上海开源创新菁英奖](/pigsty/shanghai-oss-award/) 还有其他几个奖。
+还有 上海开源创新菁英奖 还有其他几个奖。
 
 ![magneto-cert.jpg](magneto-cert.jpg)
 

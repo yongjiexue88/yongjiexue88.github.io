@@ -11,7 +11,7 @@ tags: [PostgreSQL, PG管理]
 
 如果你在过去一周中通过互联网上游直接从官方仓库或镜像安装或升级过 PostgreSQL，那么你可能有概率会遇到一些扩展兼容性的问题，我们强烈建议你立即升级到最新的 PostgreSQL 小版本以解决此问题。
 
-截止至发稿，PGDG YUM/APT 仓库中的二进制成品包均已可用。开箱即用的 PG 发行版 —— [**Pigsty**](/pigsty/v3.0/) 已经第一时间跟进了 PostgreSQL 最新小版本，并制作好了离线软件包。在确保 340 个扩展与 17.2 和其他版本的 ABI 兼容性后，将于本周正式发布 v3.1。
+截止至发稿，PGDG YUM/APT 仓库中的二进制成品包均已可用。开箱即用的 PG 发行版 —— **Pigsty** 已经第一时间跟进了 PostgreSQL 最新小版本，并制作好了离线软件包。在确保 340 个扩展与 17.2 和其他版本的 ABI 兼容性后，将于本周正式发布 v3.1。
 
 以下是 PostgreSQL 全球开发组的发布注记：<https://www.postgresql.org/about/news/postgresql-172-166-1510-1415-1318-and-1222-released-2965/>
 

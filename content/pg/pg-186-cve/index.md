@@ -12,7 +12,7 @@ PostgreSQL 发布了最新一轮小版本更新。这次更新修复了 28 个�
 
 [![PostgreSQL 18.6 修复的 28 个安全漏洞](cve-list.webp)](https://www.postgresql.org/about/news/postgresql-186-1711-1615-1519-1424-and-19-beta-3-released-3365/)
 
-老冯建议所有用户尽快安排 PostgreSQL 小版本升级。[Pigsty 将于次日发布 v4.5](/pigsty/v4.5/)，提供包含最新 PostgreSQL 18.6 的离线安装包。这将是 Pigsty v5.0 与 PostgreSQL 19 发布之前的最后一次小版本发布。
+老冯建议所有用户尽快安排 PostgreSQL 小版本升级。Pigsty 将于次日发布 v4.5，提供包含最新 PostgreSQL 18.6 的离线安装包。这将是 Pigsty v5.0 与 PostgreSQL 19 发布之前的最后一次小版本发布。
 
 以下为官方发布公告的中文翻译。
 

@@ -103,7 +103,7 @@ For a deeper dive, I highly recommend reading that material or watching the [PGC
 > 23. Postgres isn’t likely to get a new builtin collation solving these problems
 
 Fortunately, PostgreSQL 17 introduced built-in collation, solving these problems.
-My PG distribution Pigsty accordingly adopted this feature in [v3.4.0](https://github.com/pgsty/pigsty/releases/tag/v3.4.0).
+My PG distribution Pigsty accordingly adopted this feature in v3.4.0.
 
 — All PG 17+ clusters uniformly use the built-in locale-provider with fixed C.UTF-8 collation.
 For pre-17 versions, we use the OS's C.UTF-8 collation, falling back to C if the OS is too ancient to support C.UTF-8 (yes, they exist!).

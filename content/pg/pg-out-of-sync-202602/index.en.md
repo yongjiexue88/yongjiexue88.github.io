@@ -10,7 +10,7 @@ tags: [PostgreSQL, PG Admin]
 
 > The 18.2 minor-release train introduced two bugs. Hold off on fresh deployments and upgrades, then update promptly after 18.3 ships next week.
 
-One week ago, the PostgreSQL community shipped its routine February minor releases, and [Pigsty v4.1 followed the same day](/en/pigsty/v4.1/).
+One week ago, the PostgreSQL community shipped its routine February minor releases, and Pigsty v4.1 followed the same day.
 However, I need to warn everyone: **avoid new PostgreSQL deployments and upgrades during this two-week window**, because the routine minor releases introduced two bugs.
 Both bugs will be fixed in the **out-of-cycle minor releases** scheduled for 2026-02-26.
 

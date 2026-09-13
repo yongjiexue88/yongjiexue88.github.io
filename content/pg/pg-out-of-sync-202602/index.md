@@ -9,7 +9,7 @@ tags: [PostgreSQL, PG管理]
 
 > 18.2 系列小版本引入两个 BUG，请暂缓新建与升级，并及时在下周 18.3 发布后更新。
 
-一周前 PostgreSQL 社区发布了二月度例行小版本更新，[Pigsty v4.1 也于当天跟进](/pigsty/v4.1)。
+一周前 PostgreSQL 社区发布了二月度例行小版本更新，Pigsty v4.1 也于当天跟进。
 不过老冯必须提醒各位，**最好不要在最近两周进行 PostgreSQL 新增部署与更新**，因为这个例行小版本引入了两个 BUG。
 这两个 BUG 将在 2026-02-26 的 **号外小版本**（out-of-cycle release）中修复。
 

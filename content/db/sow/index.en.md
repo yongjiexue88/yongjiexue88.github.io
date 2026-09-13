@@ -54,7 +54,7 @@ That is cumbersome enough on Linux and even uglier on macOS. You have to start d
 
 ![Pigsty replacing the RPM and DEB repository toolchains with SOW](pigsty-offline-diff.webp)
 
-In [Pigsty 4.5](/pigsty/v4.5/), I removed that clutter. SOW is a self-contained binary only a few megabytes in size. It runs directly on Linux and macOS, understands both RPM and DEB package formats, and implements the APT and DNF repository specifications. It has no daemon and requires no separate language runtime.
+In Pigsty 4.5, I removed that clutter. SOW is a self-contained binary only a few megabytes in size. It runs directly on Linux and macOS, understands both RPM and DEB package formats, and implements the APT and DNF repository specifications. It has no daemon and requires no separate language runtime.
 
 But installing fewer tools was only the surface problem. Four deeper problems convinced me to keep building SOW as the repository grew.
 
