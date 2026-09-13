@@ -170,7 +170,7 @@ It is never too late to build the ability to self-host, even if you never buy a 
 
 Full disclosure: Pigsty, the project I have spent the past several years building, is a free armory for would-be cyber knights.
 
-The ready-to-run PostgreSQL distribution handles the database. [Silo](/en/db/long-live-silo/), the maintained MinIO-compatible fork, handles object storage. A complete VictoriaMetrics observability stack rounds it out. Together they bring up production-grade data infrastructure on bare Linux with no external dependencies. Everything is open source and free. Run it on your own hardware or rented cloud servers—the choice and the sovereignty remain yours. [Pigsty v4.5 shipped today](https://github.com/pgsty/pigsty/releases/tag/v4.5.0) with PostgreSQL 18.6, 575 extensions, and Silo replacing MinIO as the object store.
+The ready-to-run PostgreSQL distribution handles the database. [Silo](/en/db/long-live-silo/), the maintained MinIO-compatible fork, handles object storage. A complete VictoriaMetrics observability stack rounds it out. Together they bring up production-grade data infrastructure on bare Linux with no external dependencies. Everything is open source and free. Run it on your own hardware or rented cloud servers—the choice and the sovereignty remain yours. Pigsty v4.5 shipped today with PostgreSQL 18.6, 575 extensions, and Silo replacing MinIO as the object store.
 
 ![Pigsty’s website and PostgreSQL infrastructure stack](pigsty-home.webp)
 

@@ -170,7 +170,7 @@ DHH 那份 S3 合同的价格，为什么能压得那么低？签四年长约是
 
 最后，利益相关：老冯这几年做的 Pigsty，干的就是免费“铠甲马具铺”的营生。
 
-开箱即用的 PostgreSQL 发行版，解决数据库的问题；接盘 MinIO 之后的 [Silo](/db/long-live-silo/)，解决对象存储的问题；配上完整的 VictoriaMetrics 可观测性全家桶——在裸 Linux 上零外部依赖，拉起一整套生产级的数据基础设施。开源，免费。跑在自己的物理机上，还是租来的云服务器上，随你——**主权在你。** 就在今天，[Pigsty v4.5 发布](/pigsty/v4.5/)：PostgreSQL 18.6、575 个扩展，对象存储正式换装 Silo。
+开箱即用的 PostgreSQL 发行版，解决数据库的问题；接盘 MinIO 之后的 [Silo](/db/long-live-silo/)，解决对象存储的问题；配上完整的 VictoriaMetrics 可观测性全家桶——在裸 Linux 上零外部依赖，拉起一整套生产级的数据基础设施。开源，免费。跑在自己的物理机上，还是租来的云服务器上，随你——**主权在你。** 就在今天，Pigsty v4.5 发布：PostgreSQL 18.6、575 个扩展，对象存储正式换装 Silo。
 
 ![Pigsty 官网与 PostgreSQL 基础设施能力](pigsty-home.webp)
 

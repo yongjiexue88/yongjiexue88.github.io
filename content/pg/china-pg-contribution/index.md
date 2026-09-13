@@ -39,7 +39,7 @@ OSSRank 是一个收录开源项目的网站，其中收录了 188 个 PostgreSQ
 
 118 名 **pg_roaringbitmap**：陈华军 @苏宁
 
-这几个项目我都很熟悉，[**Pigsty**](/pigsty/better-rds-alternative/) 就是我自己写的，提供开源 PG 发行版与本地 RDS。`duckdb_fdw` 提供对 duckdb 的外部数据源包装器。`zhparser` 提供中文分词能力，`pg_roaringbitmap` 提供 RoaringBitmap 压缩位图数据类型，这俩扩展还是我自己编译打包发行，[**收录在 Pigsty 扩展包**](/pigsty/db-allrounder/)里的。
+这几个项目我都很熟悉，**Pigsty** 就是我自己写的，提供开源 PG 发行版与本地 RDS。`duckdb_fdw` 提供对 duckdb 的外部数据源包装器。`zhparser` 提供中文分词能力，`pg_roaringbitmap` 提供 RoaringBitmap 压缩位图数据类型，这俩扩展还是我自己编译打包发行，**收录在 Pigsty 扩展包**里的。
 
 当然，你还是可以把台北的 PG 主要贡献者 Julien Rouhaud 算进来。那么又多了五个项目：Powa，HypoPG，pg_qualstats，pg_stat_kcache，pg_track_settings，只不过还是那句话：自欺欺人罢了。
 

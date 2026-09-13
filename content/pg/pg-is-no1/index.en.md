@@ -232,7 +232,7 @@ This is why we created **[Pigsty](https://pigsty.io/)** — to develop an batter
 
 2018 《[PostgreSQL 好处都有啥？](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247483706&idx=1&sn=b842684b41ac6dde8310448ae0a81a76&chksm=fe4b34e1c93cbdf7dcfcdae5f3ddc38bc422989421266dcda957fa2b596e361815624c92b3ec&scene=21#wechat_redirect)》
 
-2023 《[更好的开源RDS替代：Pigsty](/pigsty/better-rds-alternative/)》
+2023 《更好的开源RDS替代：Pigsty》
 
 2023 《[StackOverflow 7年调研数据跟踪](http://demo.pigsty.cc/d/sf-db-survey)》
 

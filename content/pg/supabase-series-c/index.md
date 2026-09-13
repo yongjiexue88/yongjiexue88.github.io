@@ -89,8 +89,6 @@ Supabase 实际上分为两个部分，有状态的部分使用外部的 Postgre
 
 [**PostgreSQL 正在吞噬数据库世界**](/pg/pg-eat-db-world/)
 
-[PG 隆中对，一个 PG 三个核，一个好汉三百个帮](/pigsty/v3.0/)
-
 [憋大招，数据库全能王真的要来了。](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247488097&idx=1&sn=b94c9e2464cf416103d164e3b70b45fd&chksm=fe4b27bac93caeac6edfa75ffe409611efba7d54235ed8ae69058f6bfa5838743c37b52a69bb&scene=21#wechat_redirect)
 
 [StackOverflow 2024 调研：PostgreSQL 已经超神了](/pg/pg-is-no1-again/)
@@ -118,8 +116,6 @@ Supabase 实际上分为两个部分，有状态的部分使用外部的 Postgre
 [PostgreSQL 可以替换微软 SQL Server 吗？](/pg/pg-replace-mssql/)\
 
 [ElasticSearch 又重新开源了？？？](/db/elasticsearch-reopen/)
-
-[Pigsty v3：助力 PostgreSQL 进入全盛时代！](/pigsty/v3.0/)\
 
 [谁整合好 DuckDB，谁赢得 OLAP 数据库世界](/pg/pg-duckdb/)
 

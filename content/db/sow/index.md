@@ -54,7 +54,7 @@ sow create /www/pigsty
 
 ![Pigsty 使用 SOW 替换 RPM 与 DEB 仓库工具链](pigsty-offline-diff.webp)
 
-到了 [Pigsty 4.5](/pigsty/v4.5/)，我把这套冗余清掉了。SOW 是一个几 MB 级的自包含二进制，在 Linux 和 macOS 上都能直接运行，同时理解 RPM / DEB 包格式与 APT / DNF 仓库规范。它没有守护进程，也不需要额外的语言运行时。
+到了 Pigsty 4.5，我把这套冗余清掉了。SOW 是一个几 MB 级的自包含二进制，在 Linux 和 macOS 上都能直接运行，同时理解 RPM / DEB 包格式与 APT / DNF 仓库规范。它没有守护进程，也不需要额外的语言运行时。
 
 但“少装几个工具”只是表面问题。真正让我决定把 SOW 做下去的，是仓库规模扩大后暴露出的四个痛点。
 

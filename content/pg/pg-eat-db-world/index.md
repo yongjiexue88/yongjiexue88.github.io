@@ -208,7 +208,7 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 ![homepage](https://pigsty.io/img/pigsty/homepage.png)
 
-**可扩展的 PostgreSQL** 是这个发行版中最重要的价值主张。在刚刚发布的 [**Pigsty v2.6**](/pigsty/v2.6/) 中，我们整合了上面提到的 DuckdbFDW 与 ParadeDB 扩展，这两个插件让 PostgreSQL 的分析能力得到史诗级增强，而我们确保每个用户都能轻松用得上这样的能力。
+**可扩展的 PostgreSQL** 是这个发行版中最重要的价值主张。在刚刚发布的 **Pigsty v2.6** 中，我们整合了上面提到的 DuckdbFDW 与 ParadeDB 扩展，这两个插件让 PostgreSQL 的分析能力得到史诗级增强，而我们确保每个用户都能轻松用得上这样的能力。
 
 ![regards.png](regards.png)
 
@@ -241,8 +241,6 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 ## 参考阅读
 
-[Pigsty v2.6：PostgreSQL 踢馆 OLAP](/pigsty/v2.6/)
-
 [技术极简主义：一切皆用 Postgres](/pg/just-use-pg/)
 
 [PG 生态新玩家 ParadeDB](/pg/paradedb/)
@@ -271,10 +269,6 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 [如何用 pg_filedump 抢救数据？](/pg/pg-filedump/)
 
-[PGSQL x Pigsty：数据库全能王来了](/pigsty/db-allrounder/)
-
-[Pigsty 特性与快速上手](/pigsty/v2.0/)
-
 [PG 先写脏页还是先写 WAL？](/pg/wal-before-page/)
 
 [PostgreSQL：世界上最成功的数据库](/pg/pg-is-no1/)
@@ -283,13 +277,9 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 [AI 大模型与向量数据库 PGVECTOR](/pg/llm-and-pgvector/)
 
-[更好的开源 RDS 替代：Pigsty](/pigsty/better-rds-alternative/)
-
 [PostgreSQL 到底有多强？](/pg/pg-performence/)
 
 [为什么 PostgreSQL 是最成功的数据库？](/pg/pg-is-best/)
-
-[PG 与 Pigsty 用户需求问卷调研结果](/pigsty/user-survey-2022/)
 
 [高可用 PgSQL 集群架构设计与落地](/pg/pg-ha-design/)
 
@@ -304,8 +294,6 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 [数据库集群管理概念与实体命名规范](/pg/entity-and-naming/)
 
 [PostgreSQL 的 KPI](/pg/pg-load/)
-
-[PostgreSQL 监控系统 Pigsty 概述](/pigsty/monitoring-intro/)
 
 [故障档案：PG 安装扩展导致无法连接](/pg/extension/)
 

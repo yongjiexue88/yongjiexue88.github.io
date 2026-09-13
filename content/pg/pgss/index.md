@@ -38,7 +38,7 @@ tags: [PostgreSQL, PG管理, 性能]
 
 PGSS 出自 PostgreSQL 全球开发组官方之手，以第一方扩展插件的形式，随数据库内核本体一并发行，提供了跟踪 SQL 查询语句级别指标的方法。
 
-PostgreSQL 生态中有许许多多的扩展，但如果说有哪一个是“**必选**”的，我必定会毫不犹豫的回答：**PGSS**。这也是在 [**Pigsty**](/pigsty/v2.0/) 中，我们宁愿“自作主张”，也要默认启用并主动加载的两个扩展之一。（另一个是用于微观优化的 auto_explain）
+PostgreSQL 生态中有许许多多的扩展，但如果说有哪一个是“**必选**”的，我必定会毫不犹豫的回答：**PGSS**。这也是在 **Pigsty** 中，我们宁愿“自作主张”，也要默认启用并主动加载的两个扩展之一。（另一个是用于微观优化的 auto_explain）
 
 PGSS 需要在 **shared_preload_library** 中显式指定加载，并在数据库中通过 **CREATE EXTENSION** 显式创建。创建扩展后即可通过视图 **pg_stat_statements** 访问查询的统计信息。
 
@@ -414,11 +414,11 @@ PGSS 提供了丰富的指标，其中最重要的累积指标可以使用三种
 
 `[3]` [利用监控系统诊断 PG 慢查询](/pg/slow-query/)
 
-`[4]` [如何用 Pigsty 监控现有 PostgreSQL (RDS/PolarDB/自建)？](/pigsty/monitor-existing-pg/)
+`[4]` 如何用 Pigsty 监控现有 PostgreSQL (RDS/PolarDB/自建)？
 
-`[5]` [Pigsty v2.5 发布：Ubuntu/Debian 支持与监控改版/新扩展](/pigsty/v2.5/)
+`[5]` Pigsty v2.5 发布：Ubuntu/Debian 支持与监控改版/新扩展
 
-`[6]` [PostgreSQL 监控系统 Pigsty 概述](/pigsty/monitoring-intro/)
+`[6]` PostgreSQL 监控系统 Pigsty 概述
 
 ---
 

@@ -217,7 +217,7 @@ Aliyun ESSD PL3 和我们 IDC 自建采购 PCI-E NVMe SSD 【1】是同一家供
 
 【4】[腾讯云 CDN：从入门到放弃](/cloud/cdn/)
 
-【5】[炮打 RDS，Pigsty v2.0 发布](/pigsty/v2.0-launch/)
+【5】炮打 RDS，Pigsty v2.0 发布
 
 【6】[Shannon NVMe Gen4 Series](https://web.archive.org/web/2/https://en.shannon-sys.com/product.html?name=gen_4)
 

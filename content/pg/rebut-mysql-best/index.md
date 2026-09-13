@@ -223,7 +223,7 @@ MySQL 的用户都流失到哪儿去了？
 
 《[PostgreSQL 好处都有啥？](/pg/pg-is-good/)》
 
-《[更好的开源 RDS 替代：Pigsty](/pigsty/better-rds-alternative/)》
+《更好的开源 RDS 替代：Pigsty》
 
 《StackOverflow 7 年调研数据跟踪》
 

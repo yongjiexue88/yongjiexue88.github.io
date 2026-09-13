@@ -118,8 +118,6 @@ DuckDB 的便携和轻量，让它在 Postgres 社区倍受欢迎。虽说 Click
 > PG 生态的 DuckDB 缝合大赛，算是一件干脆就是我放火点燃的赛事。年初的一篇《[**PostgreSQL 正在吞噬数据库世界**](/pg/pg-eat-db-world/)》 传遍整个 PG 社区，成功的将 OLAP DuckDB 缝合推动成为了一场如火如荼的竞争。关于 DuckDB 缝合大赛的评论，请看拙作：《[谁整合好 DuckDB，谁赢得 OLAP 数据库世界](/pg/pg-duckdb/)》。
 >
 > 我认为 PG OLAP 扩展生态很快会出现类似 PGVECTOR 的爆款扩展，就在以上几个选手中诞生。（目前我比较看好 pg_duckdb 与 pg_analytics）不管怎么样，这些扩展目前 **全部** 都在我的 [**Pigsty 扩展仓库**](/pg/pig/) 中收录。
->
-> 小广告：我制作了所有主流 Linux 发行版下的 RPM/DEB，开箱即用！即使你不用 Pigsty，也可以使用 [**pig —— PG 扩展管理器**](/pigsty/v3.2/)
 
 ## 零零散散的大小事件
 

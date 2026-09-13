@@ -205,7 +205,7 @@ The initials of these value propositions offer another acronym for Pigsty:
 >
 > Your graphical Postgres infrastructure service toolbox.
 
-**Extensible PostgreSQL** is the linchpin of this distribution. In the recently launched [**Pigsty v2.6**](https://github.com/Vonng/pigsty/releases/tag/v2.6.0), we integrated DuckDB FDW and ParadeDB extensions, massively boosting PostgreSQL’s analytical capabilities and ensuring every user can easily harness this power.
+**Extensible PostgreSQL** is the linchpin of this distribution. In the recently launched **Pigsty v2.6**, we integrated DuckDB FDW and ParadeDB extensions, massively boosting PostgreSQL’s analytical capabilities and ensuring every user can easily harness this power.
 
 Our aim is to integrate the strengths within the PostgreSQL ecosystem, creating a synergistic force akin to the **Ubuntu** of the database world. I believe the kernel debate is settled, and the real competitive frontier lies here.
 

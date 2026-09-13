@@ -45,7 +45,7 @@ tags: [数据库, 开源]
 
 作为例证，使用 Apache 2.0 的 Grafana（Kibana 分支替代）在 8.0 的时候切换到了 AGPLv3 协议，基本上占领了 Kibana 空缺的生态位。而 ES 修改开源协议后，AWS 也分支了 Apache 协议的 OpenSearch 来抢占生态位（同理还有 Redis 和 Mongo，请看《[**Redis 不开源，是“公有云”的耻辱**](/db/redis-oss/)》）
 
-而 ElasticSearch 的本体，正在面临下一代搜索引擎内核 **Tantivy** 的冲击。正如我在《[**谁缝好 DuckDB，谁赢得 OLAP 未来**](/pg/pg-duckdb/)》中讲到的 OLAP 领域 DuckDB 缝合大赛正如火如荼一样，在 全文检索领域，谁包好 Tantivy，谁赢得 FTS 领域的未来。目前来看，ParadeDB 的 pg_search / pg_bm25 插件已经抢占了有利地形。借力 PostgreSQL，对 ElasticSearch 形成了威胁。（广告时间：PG 生态的 DuckDB / Tantivy 缝合插件全部在 [**Pigsty**](/pigsty/v3.0/) 中开箱即用！）
+而 ElasticSearch 的本体，正在面临下一代搜索引擎内核 **Tantivy** 的冲击。正如我在《[**谁缝好 DuckDB，谁赢得 OLAP 未来**](/pg/pg-duckdb/)》中讲到的 OLAP 领域 DuckDB 缝合大赛正如火如荼一样，在 全文检索领域，谁包好 Tantivy，谁赢得 FTS 领域的未来。目前来看，ParadeDB 的 pg_search / pg_bm25 插件已经抢占了有利地形。借力 PostgreSQL，对 ElasticSearch 形成了威胁。
 
 例如，旨在基于 PostgreSQL 提供 ElasticSearch 功能替代扩展的 ParadeDB 经过仔细的思考，最终决定使用 AGPLv3 协议。他们把自己的考量公开了出来（<https://www.paradedb.com/blog/agpl）并发到了> HackerNews 上，收获了大量的响应与共鸣：<https://news.ycombinator.com/item?id=41227172>。
 
