@@ -14,7 +14,7 @@ Category: english-writing
 ## Source Book
 
 Source file: `interactive_english_master.md`  
-Full text: [Read the complete Interactive English book](https://yongjiexue88.github.io/transcripts/interactive-english-fluency-builder.md)  
+Full text: [Read the complete Interactive English book](https://www.yongjiexue.io/transcripts/interactive-english-fluency-builder.md)  
 Channel: `@interactive_english`  
 Chapter count: 749 lessons
 

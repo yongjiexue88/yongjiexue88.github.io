@@ -2,8 +2,8 @@
 
 Personal blog and digital garden for **Yongjie Xue (薛勇杰)** — *縈懷, thoughts that linger*.
 
-- **Website**: [https://yongjiexue88.github.io/](https://yongjiexue88.github.io/)
-- **English**: [https://yongjiexue88.github.io/en/](https://yongjiexue88.github.io/en/)
+- **Website**: [https://www.yongjiexue.io/](https://www.yongjiexue.io/)
+- **English**: [https://www.yongjiexue.io/en/](https://www.yongjiexue.io/en/)
 
 ---
 
