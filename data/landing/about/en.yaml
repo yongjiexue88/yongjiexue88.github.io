@@ -49,14 +49,11 @@ bio:
 
 columns:
   eyebrow: Sections
-  columns: 2
+  columns: 1
   items:
-    - page: /journal
-      title: Journal
-      desc: Personal reflections on everyday life, family, and health.
-    - page: /notes
-      title: Booknotes
-      desc: In-depth studies in language, legal case studies, and systems.
+    - page: /misc
+      title: Miscellaneous
+      desc: Personal reflections, everyday life, booknotes, language studies, and systems thinking.
 
 cta:
   title: Connect

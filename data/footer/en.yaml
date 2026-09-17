@@ -6,8 +6,7 @@ columns:
   - title: Navigation
     links:
       - { label: Home, url: /en/ }
-      - { label: Journal, url: journal/ }
-      - { label: Notes, url: notes/ }
+      - { label: Miscellaneous, url: misc/ }
       - { label: About, url: about/ }
   - title: Indexes
     links:

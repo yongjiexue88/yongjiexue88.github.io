@@ -10,6 +10,9 @@ icon: fa-solid fa-feather
 type: blog
 page_width: wide
 comments: false
+aliases:
+  - /en/journal/
+  - /en/notes/
 profile:
   headline: Yongjie Xue @yongjiexue88
 cascade:

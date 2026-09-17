@@ -10,6 +10,9 @@ icon: fa-solid fa-feather
 type: blog
 page_width: wide
 comments: false
+aliases:
+  - /journal/
+  - /notes/
 profile:
   headline: 薛永杰 @yongjiexue88 / 人生旅途
 cascade:

@@ -49,14 +49,11 @@ bio:
 
 columns:
   eyebrow: 专栏与篇目
-  columns: 2
+  columns: 1
   items:
-    - page: /journal
-      title: 日志随笔
-      desc: 生活琐思、健康、家庭与人生观察。
-    - page: /notes
-      title: 读书笔记
-      desc: 深度研读、语言进阶、法律与系统思考。
+    - page: /misc
+      title: 人生旅途
+      desc: 生活琐思、健康家庭、深度研读、语言进阶、技术与系统思考。
 
 cta:
   title: 交流与联系

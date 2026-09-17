@@ -6,8 +6,7 @@ columns:
   - title: 导航
     links:
       - { label: 主页, url: / }
-      - { label: 日志随笔, url: journal/ }
-      - { label: 读书笔记, url: notes/ }
+      - { label: 人生旅途, url: misc/ }
       - { label: 关于我, url: about/ }
   - title: 索引
     links:
