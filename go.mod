@@ -1,5 +1,5 @@
 module github.com/yongjiexue88/yongjiexue88.github.io
 
-go 1.27.0
+go 1.23.0
 
 require github.com/pgsty/oink v1.0.0
