@@ -14,7 +14,7 @@ Category: finance-notes
 ## Source Book
 
 Source file: `ramsey_show_master.md`  
-Full text: [Read the complete Ramsey book](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons.md)  
+Full text: [Read the complete Ramsey book (Part 1: Episodes 1-144)](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-1.md) / [(Part 2: Episodes 145-289)](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-2.md)  
 Channel: `@ramsey_show`  
 Chapter count: 289 episodes
 

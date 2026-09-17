@@ -14,7 +14,7 @@ Category: finance-notes
 ## 原书信息
 
 Source file: `ramsey_show_master.md`  
-Full text: [阅读完整 Ramsey 研读书](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons.md)  
+Full text: [阅读完整 Ramsey 研读书（上册：第 1-144 期）](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-1.md) / [（下册：第 145-289 期）](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-2.md)  
 Channel: `@ramsey_show`  
 Chapter count: 289 episodes
 
