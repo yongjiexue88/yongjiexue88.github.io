@@ -12,10 +12,10 @@ zh-cn:
 
   hero:
     eyebrow: 薛勇杰 · 全栈与 AI 工程师 · 美国奥斯汀
-    title: 萦怀
+    title: 薛勇杰
     lead: >-
-      以写作者的眼光做工程。<br>
-      常驻美国奥斯汀，公开记录关于系统、语言、职业选择、技术，以及日常生活中的思考与沉淀。
+      软件工程、AI 系统与生活。<br>
+      常驻美国奥斯汀，公开记录关于分布式系统、数据库、AI Agent 与技术架构的思考与沉淀。
     portrait: images/avatar.jpg
     portrait_alt: 薛勇杰
 
@@ -64,10 +64,10 @@ en:
 
   hero:
     eyebrow: Yongjie Xue · Full Stack & AI Engineer · Austin, TX
-    title: Lingering Thoughts
+    title: Yongjie Xue
     lead: >-
-      Engineering with a writer’s eye.<br>
-      Based in Austin, Texas. A public record of thinking through systems, language, career, technology, and ordinary life.
+      Software Engineering, AI Systems & Life.<br>
+      Based in Austin, Texas. Writing about distributed systems, databases, AI agents, and architecture.
     portrait: images/avatar.jpg
     portrait_alt: Yongjie Xue
 
