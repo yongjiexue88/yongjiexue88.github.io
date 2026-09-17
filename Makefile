@@ -6,7 +6,7 @@ dev:
 
 b:build
 build:
-	hugo --gc --minify --cleanDestinationDir --baseURL "https://yongjiexue88.github.io/"
+	hugo --gc --minify --cleanDestinationDir --baseURL "https://www.yongjiexue.io/"
 
 c: check
 check:
