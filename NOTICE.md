@@ -21,11 +21,11 @@ is how that obligation is met.
 - Only the seven blog columns, the author profiles and the tag descriptions were taken.
   The upstream home page, About page and personal dossier were **not** reproduced; this
   site's own identity, home page and About page are by Yongjie Xue.
-- The columns were merged into this site alongside its own `journal` and `notes`
-  columns, and the navigation was rebuilt to hold all nine.
+- The columns were merged into this site, with original writing by Yongjie Xue
+  co-located in `content/misc/` with explicit attribution `authors: [yongjie]`.
 - Article text and images are reproduced unmodified. Each article keeps the
   `authors:` front matter it arrived with, so per-article attribution is unchanged.
-  Columns whose posts carried no explicit author now cascade `authors: [vonng]`
+  Columns whose posts carried no explicit author cascade `authors: [vonng]`
   rather than inheriting this site's owner.
 - Upstream configuration specific to the original site was deliberately dropped:
   its Google Analytics property, its giscus comment repository, and its Chinese
@@ -33,9 +33,9 @@ is how that obligation is met.
 
 ### Original writing on this site
 
-Everything under `content/journal/` and `content/notes/`, the home page, and the
-About page are written by **Yongjie Xue** ([@yongjiexue88](https://github.com/yongjiexue88))
-and are not covered by the notice above.
+Original essays, study books, legal and technical notes authored by **Yongjie Xue**
+([@yongjiexue88](https://github.com/yongjiexue88)) are explicitly attributed (`authors: [yongjie]`)
+under `content/misc/`, the home page, and the About page, and are not covered by the notice above.
 
 ## Software
 

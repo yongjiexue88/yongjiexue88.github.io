@@ -48,8 +48,12 @@ hugo.yaml            # Site configuration: taxonomies, outputs, menus, params, l
 go.mod               # Hugo Module dependencies (github.com/pgsty/oink pinned)
 Makefile             # Developer convenience targets (make dev, make build)
 content/
-  ├── journal/       # Life reflections, personal essays, thoughts
-  ├── notes/         # Booknotes, language study books, legal & technical case studies
+  ├── misc/          # Personal essays, reflections, study books, notes & miscellaneous writing
+  ├── db/            # Database industry reports, trends, and architecture
+  ├── cloud/         # Cloud economics, cloud-exit, and infrastructure
+  ├── pg/            # PostgreSQL development, internals, and operations
+  ├── ai/            # AI, Agents, LLM architecture, and AI4DB
+  ├── trip/          # Travel notes and hiking journals
   ├── about/         # Profile, engineering philosophy, writing themes
   └── authors/       # Author profiles and taxonomy
 data/

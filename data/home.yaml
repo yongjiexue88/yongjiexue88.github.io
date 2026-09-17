@@ -24,12 +24,9 @@ zh-cn:
     columns: 3
     unit: 篇
     items:
-      - page: /journal
-        title: 日志随笔
-        desc: 普通日子里的记录、健康、家庭、金钱观与自我反思。
-      - page: /notes
-        title: 读书笔记
-        desc: 英语研读、商业法律故事、技术与系统的深度学习笔记。
+      - page: /misc
+        title: 人生旅途
+        desc: 随笔杂谈、日志记录、读书研读与个人思考。
       - page: /db
         title: 数据库老司机
         desc: 数据库行业的动态、新闻、调查、理念与最佳实践。
@@ -45,9 +42,6 @@ zh-cn:
       - page: /trip
         title: 行万里路
         desc: 旅行、徒步与游记见闻。山川湖海，风物人情。
-      - page: /misc
-        title: 人生旅途
-        desc: 随笔、杂谈与个人写作。
 
   recent:
     eyebrow: 最新篇目
@@ -82,12 +76,9 @@ en:
     columns: 3
     unit: posts
     items:
-      - page: /journal
-        title: Journal
-        desc: Personal reflections on everyday life, family, finance, and health.
-      - page: /notes
-        title: Booknotes
-        desc: Comprehensive studies in language, legal cases, and technology books.
+      - page: /misc
+        title: Miscellaneous
+        desc: Essays, journal reflections, booknotes, and personal writing.
       - page: /db
         title: Database Guru
         desc: News, reports and best practices from the database industry.
@@ -103,9 +94,6 @@ en:
       - page: /trip
         title: Travel Notes
         desc: Trips, hikes and things seen along the way.
-      - page: /misc
-        title: Miscellaneous
-        desc: Essays, notes and miscellaneous writing.
 
   recent:
     eyebrow: Recent Posts

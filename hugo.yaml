@@ -184,28 +184,24 @@ languages:
       time_format_blog: 2006-01-02
     menus:
       main:
-        # Two own columns and the two largest imported ones stand on their own;
-        # the rest live under 专栏.
-        - { identifier: journal, name: 日志, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather' } }
-        - { identifier: notes, name: 笔记, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open' } }
-        - { identifier: db, name: 数据库, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database' } }
-        - { identifier: ai, name: AI, pageRef: /ai, weight: 40, params: { icon: 'fa-solid fa-robot' } }
+        - { identifier: misc, name: 人生旅途, pageRef: /misc, weight: 10, params: { icon: 'fa-solid fa-feather' } }
+        - { identifier: db, name: 数据库, pageRef: /db, weight: 20, params: { icon: 'fa-solid fa-database' } }
+        - { identifier: ai, name: AI, pageRef: /ai, weight: 30, params: { icon: 'fa-solid fa-robot' } }
+        - { identifier: pg, name: PostgreSQL, pageRef: /pg, weight: 40, params: { icon: 'fa-solid fa-hat-wizard' } }
 
         - identifier: column
           name: 专栏
           pageRef: /
           weight: 50
           params: { icon: 'fa-solid fa-layer-group' }
-        - { identifier: column-journal, parent: column, name: 日志随笔, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather', description: 普通日子里的记录、健康、家庭、金钱观与自我反思 } }
-        - { identifier: column-notes, parent: column, name: 读书笔记, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open', description: 英语研读、商业法律故事、技术与系统的深度学习笔记 } }
-        - { identifier: column-db, parent: column, name: 数据库老司机, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database', description: 数据库行业的动态、新闻、调查、理念与最佳实践 } }
-        - { identifier: column-cloud, parent: column, name: 云计算泥石流, pageRef: /cloud, weight: 40, params: { icon: 'fa-solid fa-cloud-bolt', description: 云计算、下云与基础设施自建的深度思考 } }
-        - { identifier: column-pg, parent: column, name: PostgreSQL 大法师, pageRef: /pg, weight: 50, params: { icon: 'fa-solid fa-hat-wizard', description: PostgreSQL 开发、使用、运维、管理、诊断、调优 } }
-        - { identifier: column-ai, parent: column, name: AI 探路者, pageRef: /ai, weight: 60, params: { icon: 'fa-solid fa-robot', description: AI、Agent、LLM，以及 AI 与数据库 } }
-        - { identifier: column-trip, parent: column, name: 行万里路, pageRef: /trip, weight: 80, params: { icon: 'fa-solid fa-person-hiking', description: 旅行、徒步与见闻 } }
-        - { identifier: column-misc, parent: column, name: 人生旅途, pageRef: /misc, weight: 90, params: { icon: 'fa-solid fa-feather', description: 随笔、杂谈与个人写作 } }
-        - { identifier: column-tags, parent: column, name: 标签, pageRef: /tags, weight: 100, params: { icon: 'fa-solid fa-tags', description: 按标签浏览全站文章 } }
-        - { identifier: column-authors, parent: column, name: 作者, pageRef: /authors, weight: 110, params: { icon: 'fa-solid fa-user-pen', description: 本站原创与转载文章的作者们 } }
+        - { identifier: column-misc, parent: column, name: 人生旅途, pageRef: /misc, weight: 10, params: { icon: 'fa-solid fa-feather', description: 随笔杂谈、日志、读书研读与个人写作 } }
+        - { identifier: column-db, parent: column, name: 数据库老司机, pageRef: /db, weight: 20, params: { icon: 'fa-solid fa-database', description: 数据库行业的动态、新闻、调查、理念与最佳实践 } }
+        - { identifier: column-cloud, parent: column, name: 云计算泥石流, pageRef: /cloud, weight: 30, params: { icon: 'fa-solid fa-cloud-bolt', description: 云计算、下云与基础设施自建的深度思考 } }
+        - { identifier: column-pg, parent: column, name: PostgreSQL 大法师, pageRef: /pg, weight: 40, params: { icon: 'fa-solid fa-hat-wizard', description: PostgreSQL 开发、使用、运维、管理、诊断、调优 } }
+        - { identifier: column-ai, parent: column, name: AI 探路者, pageRef: /ai, weight: 50, params: { icon: 'fa-solid fa-robot', description: AI、Agent、LLM，以及 AI 与数据库 } }
+        - { identifier: column-trip, parent: column, name: 行万里路, pageRef: /trip, weight: 60, params: { icon: 'fa-solid fa-person-hiking', description: 旅行、徒步与见闻 } }
+        - { identifier: column-tags, parent: column, name: 标签, pageRef: /tags, weight: 70, params: { icon: 'fa-solid fa-tags', description: 按标签浏览全站文章 } }
+        - { identifier: column-authors, parent: column, name: 作者, pageRef: /authors, weight: 80, params: { icon: 'fa-solid fa-user-pen', description: 本站原创与转载文章的作者们 } }
 
         - { identifier: about, name: 关于, pageRef: /about, weight: 60, params: { icon: 'fa-solid fa-circle-user' } }
 
@@ -224,27 +220,23 @@ languages:
       time_format_blog: 2006-01-02
     menus:
       main:
-        # Two own columns and the two largest imported ones stand on their own;
-        # the rest live under Columns.
-        - { identifier: journal, name: Journal, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather' } }
-        - { identifier: notes, name: Notes, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open' } }
-        - { identifier: db, name: DB, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database' } }
-        - { identifier: ai, name: AI, pageRef: /ai, weight: 40, params: { icon: 'fa-solid fa-robot' } }
+        - { identifier: misc, name: Miscellaneous, pageRef: /misc, weight: 10, params: { icon: 'fa-solid fa-feather' } }
+        - { identifier: db, name: DB, pageRef: /db, weight: 20, params: { icon: 'fa-solid fa-database' } }
+        - { identifier: ai, name: AI, pageRef: /ai, weight: 30, params: { icon: 'fa-solid fa-robot' } }
+        - { identifier: pg, name: PostgreSQL, pageRef: /pg, weight: 40, params: { icon: 'fa-solid fa-hat-wizard' } }
 
         - identifier: column
           name: Columns
           pageRef: /
           weight: 50
           params: { icon: 'fa-solid fa-layer-group' }
-        - { identifier: column-journal, parent: column, name: Journal, pageRef: /journal, weight: 10, params: { icon: 'fa-solid fa-feather', description: 'Notes on ordinary days — health, family, money and self-reflection' } }
-        - { identifier: column-notes, parent: column, name: Notes, pageRef: /notes, weight: 20, params: { icon: 'fa-solid fa-book-open', description: 'English study, legal stories, and deep notes on technology and systems' } }
-        - { identifier: column-db, parent: column, name: Database Guru, pageRef: /db, weight: 30, params: { icon: 'fa-solid fa-database', description: 'News, reports and best practices from the database industry' } }
-        - { identifier: column-cloud, parent: column, name: Cloud-Exiter, pageRef: /cloud, weight: 40, params: { icon: 'fa-solid fa-cloud-bolt', description: 'Cloud economics, cloud-exit and self-hosting like a pro' } }
-        - { identifier: column-pg, parent: column, name: PostgreSQL Mage, pageRef: /pg, weight: 50, params: { icon: 'fa-solid fa-hat-wizard', description: 'PostgreSQL development, operations, internals and tuning' } }
-        - { identifier: column-ai, parent: column, name: AI Explorer, pageRef: /ai, weight: 60, params: { icon: 'fa-solid fa-robot', description: 'Agents, LLMs, AI coding, AI4DB and DB4AI' } }
-        - { identifier: column-trip, parent: column, name: Travel Notes, pageRef: /trip, weight: 80, params: { icon: 'fa-solid fa-person-hiking', description: 'Trips, hikes and things seen along the way' } }
-        - { identifier: column-misc, parent: column, name: Miscellaneous, pageRef: /misc, weight: 90, params: { icon: 'fa-solid fa-feather', description: 'Essays, notes and miscellaneous writing' } }
-        - { identifier: column-tags, parent: column, name: Tags, pageRef: /tags, weight: 100, params: { icon: 'fa-solid fa-tags', description: 'Browse every article by tag' } }
-        - { identifier: column-authors, parent: column, name: Authors, pageRef: /authors, weight: 110, params: { icon: 'fa-solid fa-user-pen', description: 'The writers behind the originals and the reproductions' } }
+        - { identifier: column-misc, parent: column, name: Miscellaneous, pageRef: /misc, weight: 10, params: { icon: 'fa-solid fa-feather', description: 'Essays, reflections, booknotes, and personal writing' } }
+        - { identifier: column-db, parent: column, name: Database Guru, pageRef: /db, weight: 20, params: { icon: 'fa-solid fa-database', description: 'News, reports and best practices from the database industry' } }
+        - { identifier: column-cloud, parent: column, name: Cloud-Exiter, pageRef: /cloud, weight: 30, params: { icon: 'fa-solid fa-cloud-bolt', description: 'Cloud economics, cloud-exit and self-hosting like a pro' } }
+        - { identifier: column-pg, parent: column, name: PostgreSQL Mage, pageRef: /pg, weight: 40, params: { icon: 'fa-solid fa-hat-wizard', description: 'PostgreSQL development, operations, internals and tuning' } }
+        - { identifier: column-ai, parent: column, name: AI Explorer, pageRef: /ai, weight: 50, params: { icon: 'fa-solid fa-robot', description: 'Agents, LLMs, AI coding, AI4DB and DB4AI' } }
+        - { identifier: column-trip, parent: column, name: Travel Notes, pageRef: /trip, weight: 60, params: { icon: 'fa-solid fa-person-hiking', description: 'Trips, hikes and things seen along the way' } }
+        - { identifier: column-tags, parent: column, name: Tags, pageRef: /tags, weight: 70, params: { icon: 'fa-solid fa-tags', description: 'Browse every article by tag' } }
+        - { identifier: column-authors, parent: column, name: Authors, pageRef: /authors, weight: 80, params: { icon: 'fa-solid fa-user-pen', description: 'The writers behind the originals and the reproductions' } }
 
         - { identifier: about, name: About, pageRef: /about, weight: 60, params: { icon: 'fa-solid fa-circle-user' } }
