@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">薛勇杰 · Yongjie Xue</title>
+  <style>
+    .yx-y { stroke: #0f172a; }
+    .yx-x { stroke: #0284c7; }
+    @media (prefers-color-scheme: dark) {
+      .yx-y { stroke: #f8fafc; }
+      .yx-x { stroke: #38bdf8; }
+    }
+  </style>
+  <path class="yx-y" d="M4 5.5L9.5 15L15 5.5M9.5 15V26.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="yx-x" d="M18 5.5L28 26.5M28 5.5L18 26.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

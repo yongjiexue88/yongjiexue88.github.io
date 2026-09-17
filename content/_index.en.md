@@ -1,6 +1,6 @@
 ---
-title: Lingering Thoughts · Yongjie Xue
-summary: "Personal blog and notes of Yongjie Xue — Engineering with a writer's eye"
+title: Yongjie Xue
+summary: "Personal website and writings of Yongjie Xue — Software Engineering, AI Systems & Life"
 images: [images/avatar.jpg]
 body_class: td-shell-chrome--hero
 ---

@@ -1,6 +1,6 @@
-# 萦怀 · Yongjie Xue
+# Yongjie Xue (薛勇杰)
 
-Personal blog and digital garden for **Yongjie Xue (薛勇杰)** — *縈懷, thoughts that linger*.
+Personal website and writings of **Yongjie Xue (薛勇杰)** — Software Engineering, AI Systems & Life.
 
 - **Website**: [https://www.yongjiexue.io/](https://www.yongjiexue.io/)
 - **English**: [https://www.yongjiexue.io/en/](https://www.yongjiexue.io/en/)
