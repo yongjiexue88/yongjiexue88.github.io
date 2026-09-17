@@ -15,7 +15,7 @@ Built with **[Hugo Extended](https://gohugo.io/)** (0.160.1+) and the **[OINK](h
 - **Bilingual (中/英)**: Automatic translation pairing and language switcher.
 - **Modern UI & Dark Mode**: Semantic color system, smooth theme toggling, clean typography.
 - **Full-Text Offline Search**: Client-side instant fuzzy search (`Cmd+K` palette).
-- **GitHub Pages CI/CD**: Automatic build and deployment on push to `main`.
+- **Cloudflare Pages CI/CD**: Automatic build and edge deployment on push to `main`.
 
 ---
 
