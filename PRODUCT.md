@@ -32,7 +32,7 @@ Visitors usually arrive from a shared link, search result, LinkedIn, or GitHub a
 
 ## Brand Commitments
 
-- Use the name Yongjie Xue, with 薛勇杰 available in the Chinese experience.
+- Use the name Yongjie Xue, with 薛永杰 available in the Chinese experience.
 - Present the confirmed role verbatim: **Full Stack & AI Engineer**.
 - Preserve the bilingual English/Chinese experience.
 - Preserve the profile photo, pronunciation audio, Austin location, email, and LinkedIn as available identity assets.

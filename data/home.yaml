@@ -11,13 +11,13 @@ zh-cn:
     - cta
 
   hero:
-    eyebrow: 薛勇杰 · 全栈与 AI 工程师 · 美国奥斯汀
-    title: 薛勇杰
+    eyebrow: 薛永杰 · 全栈与 AI 工程师 · 美国奥斯汀
+    title: 薛永杰
     lead: >-
       软件工程、AI 系统与生活。<br>
       常驻美国奥斯汀，公开记录关于分布式系统、数据库、AI Agent 与技术架构的思考与沉淀。
     portrait: images/avatar.jpg
-    portrait_alt: 薛勇杰
+    portrait_alt: 薛永杰
 
   columns:
     eyebrow: 分类与专栏

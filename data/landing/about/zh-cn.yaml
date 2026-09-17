@@ -11,7 +11,7 @@ hero:
   eyebrow: 关于 · Yongjie Xue
   title_lines:
     - words:
-        - { text: 薛勇杰 }
+        - { text: 薛永杰 }
     - words:
         - { text: '@yongjiexue88' }
   lead: >-
@@ -22,7 +22,7 @@ hero:
   image:
     light: images/avatar.jpg
     dark: images/avatar.jpg
-    alt: 薛勇杰
+    alt: 薛永杰
   media:
     ratio: '1fr 320px'
     max_width: 320px
