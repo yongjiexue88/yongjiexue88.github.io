@@ -15,21 +15,13 @@ Category: english-writing
 
 ## Overview
 
-This note turns the Word study book into a cleaner review entry for the GitHub notes site. It keeps the workbook structure while tightening the wording, normalizing the examples, and converting Word tables into site-friendly Markdown.
+A structured English review guide compiled from 219 lessons covering American pronunciation, advanced vocabulary, idioms, grammar accuracy, and executive communication. Each entry focuses on core takeaways, structured reference tables, and critical usage notes.
 
-## How To Use This Review Book
+## Study Method
 
-1. Pick one lesson instead of trying to review the whole book at once.
-2. Read the summary and key points first so the lesson has a clear purpose.
-3. Say the examples aloud, especially in pronunciation and speaking lessons.
-4. Use the practice prompts for active recall.
-5. Check the mini quiz and answer key, then revisit difficult items later.
-
-## Preface
-
-This book compiles the study notes into a structured review guide. Each lesson keeps the original learning flow: summary, key points, review method, vocabulary or pronunciation notes, example sentences, practice prompts, mini quizzes, and answer keys when available.
-
-Use it as a workbook: read one lesson, say the example sentences aloud, complete the prompts, then return to the vocabulary review list later for spaced repetition.
+1. **Target one lesson**: Review the concept summary and key distinctions.
+2. **Internalize through audio**: Read expressions and example sentences aloud to absorb natural American stress and rhythm.
+3. **Active reuse**: Apply target collocations and sentence patterns directly in writing and speech.
 
 ## Lesson Index
 
@@ -255,22 +247,9 @@ Use it as a workbook: read one lesson, say the example sentences aloud, complete
 
 ## Avoid This Pronunciation to Sound Educated
 
-Date: 2026-06-04  
-Category: english-writing
-
 ### Summary
 
-This lesson focuses on challenging English vocabulary and common pronunciation mistakes. It highlights words with difficult consonant clusters or confusingly similar sounds, helping you master precise American pronunciation to sound more educated and professional.
-
-### Key Points
-
-- Pay attention to every consonant in difficult clusters (like "SK" in asterisk or "XTH" in sixth).
-- Do not add or drop letters (e.g., pronouncing "height" with an "HT" sound, not "TH").
-- Understand the subtle differences between similar words (e.g., moot vs. mute, prostate vs. prostrate).
-
-### How to Review
-
-Read the target vocabulary aloud, focusing specifically on the consonant sounds at the ends of words. Practice linking the target words within full sentences, and record yourself to check if you are clearly enunciating every syllable and consonant cluster.
+Articulate complete consonant clusters without omitting sounds, such as the /sk/ in *asterisk* or /ksθ/ in *sixth*, and avoid adding non-existent letters like pronouncing *height* with a final /θ/ instead of /t/. Distinguish subtle phonetic and semantic differences in confusable pairs like *moot* versus *mute* and *prostate* versus *prostrate*.
 
 ### Pronunciation Guide
 
@@ -298,71 +277,11 @@ Read the target vocabulary aloud, focusing specifically on the consonant sounds 
 | Please put an asterisk next to... | Highlighting important items in a document. | Please put an asterisk next to the budget figures. |
 | It's a moot point. | Ending a debate when the outcome no longer matters. | I disagree with your plan, but it's a moot point now since the deadline passed. |
 
-### Good Sentences To Imitate
-
-- Please put an asterisk next to an item that you consider urgent.
-- That test is used to diagnose prostate cancer.
-- His grandfather was an arctic explorer.
-- I need to adjust the height of this chair.
-- I sat in the sixth row.
-- The realtor showed us some houses last weekend.
-- He supposedly graduated from college.
-- I think you made the wrong decision, but it's a moot point; nothing can be done now.
-- I can't find the mute button on this remote.
-
-### Vocabulary Review List
-
-- Asterisk
-- Prostate
-- Prostrate
-- Arctic
-- Height
-- Sixth
-- Realtor
-- Supposedly
-- February
-- Moot point
-- Mute
-
-### Practice Prompts
-
-- Read aloud: "The sixth asterisk indicates the height of the arctic glacier."
-- Write a sentence about a past argument, explaining why the topic is now a "moot point."
-- Record yourself saying "February" and "sixth" three times fast.
-- Create a sentence describing a house hunt using the word "realtor."
-
-### Mini Quiz
-
-- Does the word "height" end with a "T" sound or a "TH" sound?
-- If an issue is no longer relevant, is it a "mute point" or a "moot point"?
-- What is the difference between "prostate" and "prostrate"?
-- Which letter is commonly (and incorrectly) dropped when pronouncing "Arctic"?
-
-#### Answer Key
-
-- A "T" sound.
-- A moot point.
-- Prostate is a medical term (gland); prostrate means lying flat on the ground.
-- The first "c" (k sound).
-
 ## 10 English Proverbs about LOVE
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson covers ten classic English proverbs concerning love and relationships. Understanding these proverbs will improve your listening comprehension, as native speakers frequently use them to offer relationship advice or express common truths about romance.
-
-### Key Points
-
-- Proverbs contain cultural wisdom and are used as shorthand for complex advice.
-- Some proverbs contradict each other depending on the situation (e.g., "absence makes the heart grow fonder" vs. "out of sight, out of mind").
-- Learning these phrases as complete units will make your conversational English sound very natural.
-
-### How to Review
-
-Memorize the proverbs as fixed phrases. Practice active recall by thinking of a real-life relationship scenario (like a breakup or a long-distance relationship) and identifying which proverb best applies to the situation.
+English love proverbs serve as cultural shorthand for complex relationship advice and function as fixed, holistic units. Situational context dictates the choice between contradictory truths, such as 'absence makes the heart grow fonder' versus 'out of sight, out of mind.'
 
 ### Vocabulary And Expressions
 
@@ -379,73 +298,16 @@ Memorize the proverbs as fixed phrases. Practice active recall by thinking of a 
 | Heartbreak is worth it | It's better to have loved and lost than never to have loved at all | Experiencing love is valuable, even if it ends in sadness. | Even though it ended badly, I don't regret it. It's better to have loved and lost than never to have loved at all. |
 | Dating takes time | You have to kiss a lot of frogs to find your prince | You must date many wrong people before finding the right partner. | Online dating is frustrating, but you have to kiss a lot of frogs to find your prince. |
 
-### Good Sentences To Imitate
-
-- Can't he see what a bad person his girlfriend is? You know what they say, love is blind.
-- I'm so sad that my boyfriend and I broke up.
-- You'll meet a great guy soon; there are other fish in the sea.
-- She's very attractive, but when you get to know her better you'll realize that beauty is only skin deep.
-- Jenny is the most beautiful woman I've ever seen. You must be kidding, I think she's quite plain.
-- She loves to go out and socialize, but her husband prefers to stay home.
-- I know the breakup is painful for you now, but remember time heals all wounds.
-
 ### Usage Notes And Common Mistakes
 
 - Fixed Expressions: Proverbs are fixed idioms. Do not change the vocabulary inside them (e.g., do not say "there are more fish in the ocean"). Say them exactly as written.
 - Context: "There are other fish in the sea" and "Time heals all wounds" are specifically used to comfort someone who is grieving a relationship.
 
-### Vocabulary Review List
-
-- Love is blind
-- There are other (plenty more) fish in the sea
-- Beauty is only skin deep
-- Beauty is in the eye of the beholder
-- Opposites attract
-- Absence makes the heart grow fonder
-- Out of sight, out of mind
-- Time heals all wounds
-- It's better to have loved and lost than never to have loved at all
-- You have to kiss a lot of frogs to find your prince
-
-### Practice Prompts
-
-- A friend is crying over a recent breakup. Write two sentences comforting them using a proverb.
-- Describe a couple you know who are completely different from one another. End your description with a proverb.
-- Write a short paragraph arguing whether you believe "absence makes the heart grow fonder" or "out of sight, out of mind."
-- Use "beauty is in the eye of the beholder" to explain why you like an unusual piece of art or clothing.
-
-### Mini Quiz
-
-- Which proverb means you shouldn't judge a person's character by their appearance?
-- Which proverb advises you to expect some bad dates before finding a good relationship?
-- What is the opposite of "Out of sight, out of mind"?
-- If your friend thinks a painting is ugly but you think it's beautiful, which proverb applies?
-
-#### Answer Key
-
-- Beauty is only skin deep.
-- You have to kiss a lot of frogs to find your prince.
-- Absence makes the heart grow fonder.
-- Beauty is in the eye of the beholder.
-
 ## 10 Ways to Apologize in English with a Perfect American Accent
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson teaches polite, professional, and sincere ways to apologize in American English. It covers crucial grammatical structures (using "that" + past tense versus "for" + gerund) and pronunciation tips to sound genuinely remorseful and natural.
-
-### Key Points
-
-- Use an open "ah" sound for the "o" in "sorry" (SAH-ree) to sound authentically American.
-- You can apologize using "sorry that I [past tense verb]" or "sorry for [verb+ing]".
-- Admitting fault is a key component of a good apology. Use phrases like "I was wrong to..." or "I shouldn't have...".
-
-### How to Review
-
-Practice apologizing out loud. Pick a scenario (e.g., forgetting a meeting, saying something rude) and formulate a complete apology combining an expression of regret ("I sincerely apologize"), a grammatical reason ("for forgetting..."), and taking responsibility ("It completely slipped my mind").
+Authentic American apologies use an open /ɑː/ vowel in *sorry* ('SAH-ree') paired with structures like 'sorry that I [past tense]' or 'sorry for [gerund]'. Convey accountability by explicitly admitting fault with phrases such as 'I was wrong to...' or 'I shouldn't have...'
 
 ### Grammar and Structure Rules
 
@@ -476,75 +338,16 @@ When giving a reason for your apology, use one of two structures:
 | Hurting | HER-ding | The 't' between 'r' and a vowel often becomes a fast flap 'd'. |
 | Shouldn't have | SHUD-ent-uv | Often casually pronounced as "shouldn't of". |
 
-### Good Sentences To Imitate
-
-- I'm truly sorry.
-- I'm sorry that I forgot your birthday.
-- I apologize for forgetting your birthday.
-- Please accept my sincerest apologies.
-- Please forgive me, it won't happen again.
-- I'm sorry, it completely slipped my mind.
-- I was wrong to speak to you that way.
-- It was wrong of me to blame you.
-- I shouldn't have said that.
-- I should have known better.
-
 ### Usage Notes And Common Mistakes
 
 - Sorry vs. Apologize Formality: "I'm sorry" is used universally. "I apologize" or "my apologies" is slightly more formal, making it excellent for business or written contexts.
 - Slipped my mind: This is a very natural idiom to use when you forget an appointment, a birthday, or a small task. It implies the forgetting was an honest accident.
 
-### Vocabulary Review List
-
-- I'm so / truly / very sorry
-- I apologize / I sincerely apologize
-- My apologies / My sincerest apologies
-- Please forgive me
-- It completely slipped my mind
-- I was wrong to...
-- It was wrong of me to...
-- I shouldn't have...
-- I should have known better
-
-### Practice Prompts
-
-- You forgot to send an important email to your boss. Write a formal apology using "I sincerely apologize for...".
-- You accidentally broke your friend's favorite mug. Apologize and offer a reason using "I'm sorry that I...".
-- Write a sentence expressing regret about going to bed too late last night using "I shouldn't have...".
-- Say out loud: "I'm sorry, it completely slipped my mind" making sure to use the open American 'O' in sorry.
-
-### Mini Quiz
-
-- What is the correct grammatical form to follow "I'm sorry for..."?
-- Which idiom means "I completely forgot"?
-- Is it better to say "I apologize that I forgetting" or "I apologize for forgetting"?
-- In American English, what sound does the "t" in "hurting" often change to?
-
-#### Answer Key
-
-- A gerund (verb + ing).
-- It completely slipped my mind.
-- I apologize for forgetting.
-- A fast "d" flap sound.
-
 ## Breath or Breathe? 3 Rules
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson clarifies the confusing difference between the noun "breath" and the verb "breathe." You'll learn three essential rules covering spelling, vowel sounds, and voiced/voiceless "th" sounds, along with natural idiomatic expressions native speakers use daily.
-
-### Key Points
-
-- Rule 1 (Spelling): "Breath" is a noun. "Breathe" (with an "e" at the end) is a verb.
-- Rule 2 (Vowels): "Breath" uses a short "e" sound (like bed). "Breathe" uses a long "e" sound (like please).
-- Rule 3 (Consonants): "Breath" ends with a voiceless "th". "Breathe" ends with a voiced "th" (vocal cords vibrate).
-
-### How to Review
-
-Read the idioms aloud. Put your hand on your throat when practicing "breathe" to ensure your vocal cords are vibrating for the voiced "th" sound.
+The noun *breath* uses a short /ɛ/ vowel (as in *bed*) and ends with an unvoiced /θ/. In contrast, the verb *breathe* adds a final 'e', uses a long /iː/ vowel (as in *please*), and ends with a voiced /ð/.
 
 ### Vocabulary And Expressions
 
@@ -570,49 +373,11 @@ Read the idioms aloud. Put your hand on your throat when practicing "breathe" to
 | Take a deep breathe. | Take a deep breath. | "Breath" is the noun object here. |
 | I can't breath. | I can't breathe. | "Breathe" is the verb needed after "can't". |
 
-### Good Sentences To Imitate
-
-- The doctor used a stethoscope and said, "Take a deep breath."
-- I need a few minutes to catch my breath.
-- The sunset tonight was breathtaking.
-- Don't tell me what to do, save your breath.
-- Your positive attitude is a breath of fresh air in this negative environment.
-
-### Practice Prompts
-
-- Write a sentence explaining why a friend should "save their breath" in an argument.
-- Record yourself saying: "I need to take a deep breath before I breathe out." Ensure the vowel and "th" sounds are distinct.
-
-### Mini Quiz
-
-- Is "breath" a noun or a verb?
-- Which word has a vibrating (voiced) "th" sound: breath or breathe?
-- What idiom means a refreshing, positive change?
-
-#### Answer Key
-
-- Noun.
-- Breathe.
-- A breath of fresh air.
-
 ## Advanced English Expressions with a Psychologist
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson features an interview with a Los Angeles psychologist who works with actors and writers. It focuses on high-level expressions related to performance, criticism, nuance, and professional pressure.
-
-### Key Points
-
-- Differentiate between noun and adjective forms of "complex" through syllable stress.
-- Learn the difference between "critique" (evaluate) and "criticize" (judge negatively).
-- Master expressions related to pressure, such as "hit the mark," "be on," and "difficult to take."
-
-### How to Review
-
-Create a personal story about a stressful professional experience, purposefully incorporating 5-7 expressions from this lesson (e.g., "hit a deadline," "putting out fires," "critiqued my work").
+Differentiate the noun form of *complex* (first-syllable stress) from its adjective form (second-syllable stress), and distinguish neutral evaluation (*critique*) from negative judgment (*criticize*). Common expressions for high-pressure performance include *hit the mark*, *be on*, and *difficult to take*.
 
 ### Vocabulary And Expressions
 
@@ -643,53 +408,11 @@ Create a personal story about a stressful professional experience, purposefully 
 | Complex (adjective) | com-PLEX | Stress second syllable (e.g., a complex industry). |
 | Critique | cri-TEEK | Stress second syllable. |
 
-### Good Sentences To Imitate
-
-- The situation is complex, and it impacted me in a multitude of ways.
-- I can't believe you bought the very same dress that I did.
-- You are constantly being critiqued for your work.
-- That cold drink really hit the spot.
-- The lawyer scrutinized every detail of the contract.
-- Even successful people find it difficult to take time and again.
-- I have to watch every word I say around her.
-- This is an altogether different situation.
-
-### Practice Prompts
-
-- Describe a time you had to "hit a deadline."
-- Write a sentence about a "low-key" weekend.
-- Explain the difference between someone critiquing your work and criticizing it.
-
-### Mini Quiz
-
-- If you are examining a document very closely, what verb should you use?
-- Does "altogether" (one word) mean "everyone together" or "completely"?
-- If an actor feels pressure to perform constantly, they feel they always have to be what?
-
-#### Answer Key
-
-- Scrutinize.
-- Completely / entirely.
-- On ("to be on").
-
 ## Advanced Vocabulary for Buying a House in the US
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this interview with an LA real estate agent, you learn the specific terminology required to navigate buying or selling a house in the US, alongside versatile professional expressions like "putting out fires" and "on top of it."
-
-### Key Points
-
-- Master real estate jargon: escrow, fund, closing costs, condo, and fixer.
-- Use "key" as an adjective to mean crucial or most important.
-- Understand how to use "x amount" as a placeholder for an unknown variable in speech.
-
-### How to Review
-
-Pretend you are explaining the process of buying a home to a friend in English. Try to use words like escrow, first-time buyers, and move-in ready in your explanation.
+US real estate transactions rely on industry terminology including *escrow*, *fund*, *closing costs*, *condo*, and *fixer*. In professional communication, use *key* as an adjective meaning crucial, *x amount* as a placeholder for unknown numerical quantities, and workplace idioms like *putting out fires* and *on top of it*.
 
 ### Vocabulary And Expressions
 
@@ -708,57 +431,16 @@ Pretend you are explaining the process of buying a home to a friend in English. 
 | Perfect condition | Move-in ready | A house requiring no repairs. | Buyers nowadays are looking for move-in ready homes. |
 | Needs repairs | A fixer (-upper) | A house that requires a lot of work. | We can only afford a fixer-upper. |
 
-### Good Sentences To Imitate
-
-- People from all walks of life attended the conference.
-- If you want to improve your English, consistent practice is key.
-- We are closing escrow tomorrow and getting our keys.
-- I didn't get my work done because I was busy putting out fires.
-- The situation keeps changing, so we need to stay on top of it.
-- Swapping mortgage companies during escrow is a major no-no.
-- We don't want to remodel; we prefer a move-in ready house.
-
 ### Usage Notes And Common Mistakes
 
 - X amount: Say the literal letter "X". You can also say "X, Y, and Z" to refer to a list of unspecified tasks or things.
 - Key: When used as an adjective, it does not take an article. Say "Communication is key" (NOT "Communication is a key").
 
-### Practice Prompts
-
-- Write a sentence explaining why a "fixer-upper" is cheaper than a "move-in ready" home.
-- Use "putting out fires" to describe a busy day at work.
-- State one rule at your workplace and call it a "no-no."
-
-### Mini Quiz
-
-- What term describes a house that needs a lot of repairs?
-- What phrase means you are in control of a situation and handling it?
-- What does it mean if a salesperson is a "good closer"?
-
-#### Answer Key
-
-- A fixer (or fixer-upper).
-- On top of it.
-- They are skilled at finalizing sales and convincing clients.
-
 ## English Fluency Practice - Buying a House
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Continuing the real estate theme, this lesson delves into market conditions and financial terminology. You will learn how to discuss housing inventory, price stability, and the strict financial checks (underwriting and credit scores) required for mortgages in the US.
-
-### Key Points
-
-- Differentiate between "square footage" (indoor living space) and "lot size" (outdoor land size).
-- Learn market terms: inventory, lagging, holding, and listings.
-- Understand financial terms: HOA, pre-approval, underwritten, and credit score.
-
-### How to Review
-
-Review the financial terms specifically. Try to define HOA, credit score, and underwriting out loud as if explaining the US banking system to a foreigner.
+Real estate property metrics distinguish *square footage* (interior living area) from *lot size* (total parcel land). Market conditions and mortgage financing are described using terms such as *inventory*, *lagging*, *holding*, *listings*, *HOA*, *pre-approval*, *underwritten*, and *credit score*.
 
 ### Vocabulary And Expressions
 
@@ -786,57 +468,16 @@ Review the financial terms specifically. Try to define HOA, credit score, and un
 | --- | --- | --- |
 | Gentleman / Gentlemen | JEN-tul-min | Singular and plural sound identical because the final syllable is unstressed. |
 
-### Good Sentences To Imitate
-
-- Engineers are highly sought after in Silicon Valley.
-- The weather forecast predicts the weather will be holding for the weekend.
-- Your proposal is technically feasible, but we must consider the risks.
-- I'm sorry, I didn't get your name.
-- I put in an order for pizza.
-- The bank did a deeper dive into his credit history.
-- I can't get a loan because my credit score is low.
-
 ### Usage Notes And Common Mistakes
 
 - Get vs. Catch: If someone never told you their name, say "I didn't get your name." If they said it but you didn't hear it, say "I didn't catch your name."
 - Pre-approved vs. Underwritten: Pre-approval is a light check; underwriting is a "deeper dive" into a buyer's financials.
 
-### Practice Prompts
-
-- Use "lagging" to describe a slow runner or a struggling student.
-- Write a sentence putting in an offer on a house that is "sought after."
-- Explain why a high "credit score" is important in your own words.
-
-### Mini Quiz
-
-- What word refers to the land a house is built on?
-- If prices are not dropping, what verb is used?
-- What does "HOA" stand for?
-
-#### Answer Key
-
-- A lot.
-- Holding.
-- Homeowners Association.
-
 ## 10 English Expressions for Business
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson teaches ten crucial business expressions that use the word "turn." Mastering these phrasal verbs and nouns will make you sound much more natural and fluent in an office or corporate environment.
-
-### Key Points
-
-- Learn business nouns like turnover rate, downturn, and turnout.
-- Master phrasal verbs for office actions: turn down (reject) and turn in (submit).
-- Practice the difficult American "tur-" pronunciation, blending the T and R sounds.
-
-### How to Review
-
-Write a short paragraph about a hypothetical failing business that recently improved. Use the expressions downturn, turnover rate, turn a corner, and turn a profit.
+Corporate communication utilizes compound nouns like *turnover rate*, *downturn*, and *turnout*, alongside phrasal verbs like *turn down* (reject) and *turn in* (submit). Pronouncing the American 'tur-' prefix requires smoothly blending the /t/ and /r/ without inserting extraneous vowel sounds.
 
 ### Pronunciation Guide
 
@@ -861,59 +502,16 @@ Write a short paragraph about a hypothetical failing business that recently impr
 | Ask for advice | Turn to (someone) | To go to someone for help or support. | When I need help, I turn to my co-worker. |
 | Alternate | Take turns | To alternate doing a task. | My colleague and I take turns working on Saturdays. |
 
-### Good Sentences To Imitate
-
-- Due to the stressful work environment, that company has a very high turnover rate.
-- There is an increase in unemployment during an economic downturn.
-- Because we sent an email announcement, we had a great turnout at the conference.
-- I turned down the job offer because I wanted a higher salary.
-- Please turn in your paperwork to HR by next Friday.
-- We hesitated about hiring him, but it turned out to be a great decision.
-- The company turned a corner when they launched their new product.
-- When I need help, I turn to my more experienced co-worker.
-- My colleague and I take turns working on Saturdays.
-
 ### Usage Notes And Common Mistakes
 
 - Turnout vs. Turn out: Turnout (noun) is attendance. Turn out (verb) is the result. (e.g., "The turnout was low, but it turned out to be a good meeting.")
 - Colleague pronunciation: A very common mistake is stressing the second syllable or using an "o" sound. It is CAH-leeg.
 
-### Practice Prompts
-
-- Write a sentence explaining why a restaurant might have a high "turnover rate."
-- Create a sentence describing a situation where you had to "turn down" an invitation.
-- Say aloud: "My colleague and I take turns turning in the paperwork." Pay attention to the "tur" sounds.
-
-### Mini Quiz
-
-- If attendance at a meeting was very high, what noun describes this?
-- What phrase means a business is finally starting to improve after a bad period?
-- Which phrase means to submit an assignment or document?
-
-#### Answer Key
-
-- A high turnout.
-- Turned a corner.
-- Turn in.
-
 ## 10 Common English Proverbs
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson explores ten traditional English proverbs that convey cultural wisdom and life advice. You'll learn not only their meanings but also how to naturally pronounce difficult English words like "word," "worm," and "iron."
-
-### Key Points
-
-- A proverb is a short, traditional saying that offers advice or states a general truth.
-- Learn to differentiate similar sounding words like "early," "bird," "word," and "worm."
-- Master the pronunciation of complex words like "leopard" and "iron."
-
-### How to Review
-
-Test yourself by reading the first half of a proverb and trying to complete it from memory (e.g., "Don't count your chickens..."). Then, try to use one proverb in a conversation this week.
+Traditional English proverbs encapsulate cultural truths and moral advice while presenting phonetic challenges. Distinguish the /ɜːr/ vowel across phonetically similar words like *early*, *bird*, *word*, and *worm*, alongside irregular pronunciations such as *leopard* (/ˈlɛp.ərd/) and *iron* (/ˈaɪ.ərn/).
 
 ### Vocabulary And Expressions
 
@@ -938,49 +536,11 @@ Test yourself by reading the first half of a proverb and trying to complete it f
 | Leopard | LEP-urd | LEO-pard / LAIR-pard | The "eo" is just an "eh" sound. "A leopard doesn't change its spots." |
 | Iron | I-ern | I-ron / I-own | The "r" is pronounced before the "o". "Strike while the iron is hot." |
 
-### Good Sentences To Imitate
-
-- The grass is always greener on the other side of the fence.
-- Don't put all your eggs in one basket.
-- You can't judge a book by its cover.
-- The apple doesn't fall far from the tree.
-- Strike while the iron is hot!
-
-### Practice Prompts
-
-- Describe a time when you realized "actions speak louder than words."
-- Practice pronouncing "word," "worm," "early," and "bird" in a single sentence aloud.
-
-### Mini Quiz
-
-- Which proverb means you shouldn't judge something by its outward appearance?
-- If you act quickly to take advantage of an opportunity, you are striking while the what is hot?
-- What animal "doesn't change its spots"?
-
-#### Answer Key
-
-- You can't judge a book by its cover.
-- The iron.
-- A leopard.
-
 ## 10 Useful Idioms From LA Natives
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-By analyzing a real conversation with John, a man living on a boat in Marina del Rey, this lesson breaks down natural, native-level idioms and expressions related to living situations, choices, and money.
-
-### Key Points
-
-- Learn real-world conversational phrases like "24/7", "going on [number]", and "what's not to love".
-- Understand how native speakers casually discuss large amounts of money ("seven figures," "drop $5 million").
-- Notice the relaxed American pronunciation, such as dropping the 'T' in '24' (twenty-four).
-
-### How to Review
-
-Imagine a perfect living situation. Write a few sentences describing it using "what's not to love," "24/7," and "ended up."
+Casual American discourse uses lifestyle idioms like *24/7*, *going on [number]*, and *what's not to love*, with financial figures framed informally as *seven figures* or *drop  million*. In relaxed connected speech, the medial /t/ is frequently elided in numbers like *twenty-four* ('twenny-four').
 
 ### Vocabulary And Expressions
 
@@ -998,52 +558,11 @@ Imagine a perfect living situation. Write a few sentences describing it using "w
 | Spend a lot of money | To drop (money) | Slang for spending a large amount of cash. | He dropped five million dollars to buy a boat. |
 | Good income | Fair source of income | A good salary; a lot of money. | You've got to have a fair source of income for that. |
 
-### Good Sentences To Imitate
-
-- That pharmacy is open 24/7.
-- I've worked there going on two years.
-- If he doesn't stop his criminal behavior, he'll end up in jail.
-- I moved from a small town and I've never looked back.
-- She's beautiful, intelligent, kind, and funny-what's not to love?
-- He makes in the high five figures.
-- We went to the same university, but we didn't run in the same circles.
-
-### Practice Prompts
-
-- How did you "end up" in your current city or job?
-- Write a sentence describing a time you "dropped" a lot of money on something.
-- Pronounce 24/7 the American way (twen-ee-four seven).
-
-### Mini Quiz
-
-- If someone makes "six figures," roughly how much money is that?
-- What idiom describes the specific group of friends you socialize with?
-- What phrase means "almost" when referring to time or age?
-
-#### Answer Key
-
-- $100,000 or more.
-- The circle I run in.
-- Going on.
-
 ## 12 Advanced Words Instead of "Very"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Stop relying on the word "very" for everything. This lesson provides 12 sophisticated adverbs that will instantly make your English sound more fluent, elegant, and professional, which is crucial for occupational success.
-
-### Key Points
-
-- Expanding vocabulary is the best single predictor of occupational success.
-- Learn precise adverbs like woefully, exceedingly, and utterly.
-- Master pronunciation tips, such as the flap "T" in utterly and reducing the "a" in particularly.
-
-### How to Review
-
-Take a piece of writing or an email you've written recently. Find the word "very" and replace it with one of the advanced words from this lesson.
+Replace the overused intensifier *very* with precise, high-register adverbs like *woefully*, *exceedingly*, and *utterly*. Pronunciation requires employing a flap /ɾ/ for the medial double 't' in *utterly* and reducing unstressed vowels, such as the 'a' in *particularly* (/pərˈtɪk.jə.lər.li/).
 
 ### Vocabulary And Expressions
 
@@ -1071,52 +590,11 @@ Take a piece of writing or an email you've written recently. Find the word "very
 | Particularly | par-TIC-yu-ler-ly | Saying "par-tic-u-LAR-ly". Reduce the "a" to "er". |
 | Vastly | VAST-ly | Use a big open American "A" (like apple). |
 
-### Good Sentences To Imitate
-
-- The school's textbooks are woefully out-of-date.
-- The storage space in the cabins is exceedingly generous.
-- I find their writing utterly repulsive.
-- Knowing your goals will dramatically increase your productivity.
-- I wasn't particularly happy with that decision.
-- Foreign laws can be vastly different than our own.
-- He was a tremendously thoughtful leader.
-
-### Practice Prompts
-
-- Describe a time you were "utterly confused."
-- Write a sentence about two things that are "vastly different."
-- Think of a movie that was "inconceivably expensive" to make.
-
-### Mini Quiz
-
-- Which word means "impossible to deny"?
-- Which word is used for something very negative or sad, like being unprepared?
-- Which word means "completely" and uses a flap 'D' sound in American English?
-
-#### Answer Key
-
-- Undeniably.
-- Woefully.
-- Utterly.
-
 ## 13 Expressions with "TALK"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson teaches 13 common phrasal verbs and idioms containing the word "talk". You will learn how to persuade people, handle interruptions, and identify manipulators, all while perfecting your American "ah" vowel sound.
-
-### Key Points
-
-- Master separable and inseparable phrasal verbs with "talk."
-- Learn to distinguish between "sweet talker" and "smooth talker."
-- Perfect the open American "ah" sound used in words like talk, walk, and call.
-
-### How to Review
-
-Create a short dialogue between a boss who "talks down to" employees and an employee who refuses to be "talked into" doing extra work.
+Distinguish between manipulative personas such as a flattery-driven *sweet talker* and a persuasive, polished *smooth talker*, utilizing both separable and inseparable phrasal verbs with *talk*. Phonetically, words like *talk*, *walk*, and *call* require an open American /ɔː/ or /ɑː/ vowel sound rather than a rounded diphthong.
 
 ### Vocabulary And Expressions
 
@@ -1143,52 +621,11 @@ Create a short dialogue between a boss who "talks down to" employees and an empl
 | Talk | TAHK | The 'L' is silent. Open mouth wide for an American 'AH' sound. |
 | Sentences | SEN-ten-sez or SEN-en-sez | Dropping the 'T' to say 'sen-en-sez' is common in fast natural speech. |
 
-### Good Sentences To Imitate
-
-- The real estate agent talked us into buying the more expensive house.
-- She's in love with him, so no one can talk her out of marrying him.
-- The employees don't like their boss because he talks down to them.
-- Before I give you my answer, I'd like to talk it over with my wife.
-- They engaged in small talk before starting the job interview.
-- The sweet talker talked her into going out with him.
-- We've been on the phone for two hours; I'm all talked out.
-
-### Practice Prompts
-
-- Write a sentence about a time someone "talked you into" buying something.
-- Describe someone who is "all talk."
-- Say aloud: "I walked and talked and called." Make sure all vowels sound like "ah".
-
-### Mini Quiz
-
-- Which expression means to discuss a problem with someone to get their advice?
-- If someone is speaking while you are trying to finish your sentence, what are they doing?
-- Which idiom means that making promises is easy, but actually doing the work is hard?
-
-#### Answer Key
-
-- Talk it over.
-- Talking over you.
-- Talk is cheap.
-
 ## 15 Idioms with "Hit"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson focuses on 15 everyday English idioms built around the verb "hit." You will also refine your American accent by mastering the short "ih" vowel sound and learning how native speakers connect words with the letter "T".
-
-### Key Points
-
-- Learn various uses of "hit," from hit the books to hit the jackpot.
-- Distinguish between the relaxed, short "ih" sound (hit, bit, fit) and the tense, long "ee" sound (heat, beat, feed).
-- Practice "holding" the final T when the next word starts with a consonant (e.g., hit the).
-
-### How to Review
-
-Create a short story about a difficult day at school or work using hit the books, hit the ceiling, and hit the sack.
+Common idioms built on *hit* span academic diligence (*hit the books*) to sudden success (*hit the jackpot*). Differentiate the relaxed short /ɪ/ in *hit*, *bit*, and *fit* from the tense /iː/ in *heat*, *beat*, and *feed*, and hold the final unreleased /t/ before consonant-initial words (e.g., *hit the*).
 
 ### Vocabulary And Expressions
 
@@ -1218,52 +655,11 @@ Create a short story about a difficult day at school or work using hit the books
 | Hit the | HI-(stop)-the | If 'T' is followed by a consonant, hold the 'T' (don't release it). |
 | Hit it | HID-it | If 'T' is followed by a vowel, it becomes a fast flap 'D'. |
 
-### Good Sentences To Imitate
-
-- When you said my car needed a new battery, you hit the nail on the head.
-- If I don't hit the books this week, I won't pass next week's exam.
-- Your boss is going to hit the ceiling when he finds out about your mistake.
-- I have to get up early tomorrow, so I'd better hit the sack.
-- The singer was popular in his hometown, but he really hit it big when he moved to New York.
-- Was my presentation good? You hit it out of the park!
-- They went on a blind date, but unfortunately, they didn't hit it off.
-
-### Practice Prompts
-
-- Say "hit the road" out loud. Did you hold the 'T'?
-- Say "hit it big" out loud. Did you use a fast 'D' for the 'T' in "hit"?
-- Write a sentence about a time you had to "hit the brakes" on a bad idea.
-
-### Mini Quiz
-
-- Which expression means to go to bed?
-- If you do an exceptionally good job on a task, you hit it out of the what?
-- Which expression means to say something deeply personal and unfair in an argument?
-
-#### Answer Key
-
-- Hit the sack.
-- Park (or ballpark).
-- Hit below the belt.
-
 ## Describing a Beautiful Place
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson teaches 15 advanced adjectives for describing beautiful places, architecture, and scenery. Using the Getty Museum in Los Angeles as an example, you will learn how native speakers naturally describe locations that impress them.
-
-### Key Points
-
-- Move beyond the word "beautiful" by using precise adjectives like stunning, captivating, and picturesque.
-- Learn the difference between feeling exhilarated (excited and alive) and feeling calm/invited.
-- Master pronunciation challenges like the silent 'a' in extraordinary and the 'ch' sound in ancient.
-
-### How to Review
-
-Think of your favorite place in your city. Write a short paragraph describing it using at least 5 adjectives from this lesson (e.g., bustling, striking, warm and inviting).
+Nuanced aesthetic descriptions employ precise adjectives like *stunning*, *captivating*, and *picturesque*, contrasting feelings of high-energy excitement (*exhilarated*) with calm invitation. Watch irregular pronunciations: *extraordinary* drops the 'a' (/ɪkˈstrɔːr.dən.er.i/), while *ancient* pronounces 'ci' as an /ʃ/ sound.
 
 ### Vocabulary And Expressions
 
@@ -1292,52 +688,11 @@ Think of your favorite place in your city. Write a short paragraph describing it
 | Extraordinary | ex-TROR-di-ner-ee | Do not say "extra-ordinary". The first 'a' is completely silent. |
 | Ancient | AYN-shent | The 'c' sounds like an 'sh', and the 'a' is a long 'ay'. |
 
-### Good Sentences To Imitate
-
-- The museum is stunningly beautiful.
-- The architecture in that neighborhood is eclectic.
-- That was an extraordinarily difficult test.
-- I had an exhilarating run in the forest today.
-- I was struck by the beauty of the museum.
-- We have a picturesque view from our hotel.
-- That museum holds a lot of ancient art.
-
-### Practice Prompts
-
-- Write a sentence describing a "bustling" place you have visited.
-- What is something you own that is "intricate"?
-- Record yourself saying "extraordinary" making sure the 'a' is silent.
-
-### Mini Quiz
-
-- Which word means "a combination of many different styles"?
-- Which word means "noisy, crowded, and full of energy"?
-- If a roller coaster makes you feel incredibly excited and alive, it is what?
-
-#### Answer Key
-
-- Eclectic.
-- Bustling.
-- Exhilarating.
-
 ## 17 Expressions with "Pick"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson explores the highly versatile verb "pick." You'll learn the crucial differences between pick on, pick at, and pick over, as well as 12 entirely distinct meanings for the phrasal verb pick up.
-
-### Key Points
-
-- Master the short, relaxed "ih" vowel in pick versus the tense "ee" in peak.
-- Understand specific prepositional changes: pick at (eat without interest), pick on (bully), pick over (examine carefully).
-- Pick up can mean to pay a bill, learn a skill naturally, catch an illness, improve your mood, or resume an activity.
-
-### How to Review
-
-Think of a time you "picked up" a new skill (like a language or hobby) just by being exposed to it. Write three sentences describing how you "picked it up."
+Prepositional shifts alter the meaning of *pick*, differentiating *pick at* (eat listlessly), *pick on* (harass), and *pick over* (scrutinize), while *pick up* spans paying a bill, acquiring a skill, contracting an illness, improving mood, or resuming an activity. Phonetically, preserve the short, relaxed /ɪ/ in *pick* to prevent confusion with the tense /iː/ in *peak*.
 
 ### Vocabulary And Expressions
 
@@ -1368,53 +723,11 @@ Think of a time you "picked up" a new skill (like a language or hobby) just by b
 | Pick vs. Peak | PIHK vs. PEEK | "Pick" requires a relaxed tongue (short 'ih'). "Peak" requires a tense tongue (long 'ee'). |
 | Picked up | PIKT-up | The 'ed' sounds like a 'T', which connects directly to the 'u' in 'up'. |
 
-### Good Sentences To Imitate
-
-- He was constantly picked on because of his glasses.
-- Stop picking at your food and eat.
-- Don't pick apart every little mistake; focus on the big picture.
-- Let's pick back up where we left off in our discussion.
-- The company decided to pick up the expenses for our business trip.
-- This place looks messy; you need to pick up around here.
-- Your encouraging words really picked me up during a difficult time.
-- I picked up on his disappointment from the tone of his voice.
-
-### Practice Prompts
-
-- Use "pick up on" to describe a time you noticed a friend was secretly sad.
-- Write a sentence explaining why you decided to "pick up the tab" at dinner.
-- What is a song or drink that acts as a good "pick-me-up" for you?
-
-### Mini Quiz
-
-- If you are examining a basket of fruit to find the best ones, you are doing what to the fruit?
-- If you resume a conversation exactly where you stopped, what phrasal verb do you use?
-- What does it mean if you "pick up" Spanish while traveling?
-
-#### Answer Key
-
-- Picking it over.
-- Pick back up.
-- You learned it naturally through exposure, not formal study.
-
 ## 17 Expressions During a Crisis
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this socially-distanced interview, Drake shares his experience losing work during the pandemic. Through his natural speech, you will learn essential phrases regarding notice periods, workplace arrangements, unemployment, and emotional coping strategies.
-
-### Key Points
-
-- Master work-related terms: give notice, file for unemployment, accrue PTO, and cash in.
-- Learn time-sequence phrases: every other, in a row, and going on.
-- Understand phrases describing emotional states: panic mode, spare time on my hands, and see the light at the end of the tunnel.
-
-### How to Review
-
-Write a brief email to a fictional employer giving your "two-week notice" and requesting to "cash in" your "accrued PTO."
+Navigating workplace disruption requires precise employment terminology like *give notice*, *file for unemployment*, *accrue PTO*, and *cash in*. Describe sequential timelines using *every other*, *in a row*, or *going on*, and frame psychological responses with idioms such as *panic mode*, *spare time on my hands*, and *see the light at the end of the tunnel*.
 
 ### Vocabulary And Expressions
 
@@ -1442,52 +755,11 @@ Write a brief email to a fictional employer giving your "two-week notice" and re
 - Two-week notice: Do not say "two weeks notice." "Notice" is the noun, so "two-week" acts as an adjective and is singular.
 - Every other: Do not say "every second day." Say "every other day."
 
-### Good Sentences To Imitate
-
-- I gave my two-week notice to my employer.
-- They had us seating people every other table.
-- Last week, I exercised six days in a row.
-- A lot of companies are urging employees to file for unemployment.
-- If you don't pay your credit card bill on time, late fees will accrue.
-- He needed money, so he cashed in his gold coins.
-- I want to try to see the light at the end of the tunnel.
-
-### Practice Prompts
-
-- Explain the difference between working "six days in a row" and "every other day."
-- Write a sentence explaining why someone might "file for unemployment."
-- Use "bucks" and "roughly" in a single sentence describing a purchase.
-
-### Mini Quiz
-
-- What phrase describes exchanging saved vacation time (PTO) for money?
-- If a website gets a lot of visitors, it gets a lot of what?
-- What is the grammatically correct way to tell your boss you are leaving in 14 days?
-
-#### Answer Key
-
-- Cashing it in.
-- Traffic.
-- "I am giving my two-week notice."
-
 ## Advanced Words From News Headlines
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Reading English news headlines can be confusing because journalists use advanced, punchy vocabulary. This lesson decodes 20 high-level verbs and adjectives commonly used in journalism, allowing you to discuss current events with true fluency.
-
-### Key Points
-
-- Differentiate easily confused words like seize (take by force) vs. cease (stop).
-- Learn metaphorical verbs used in news: derail, overshadow, echo, and cloud.
-- Master advanced adjectives to describe tone and situations: fragile, somber, and scarce.
-
-### How to Review
-
-Read a headline from an English news website today. Try to summarize the article aloud, purposefully incorporating words like weighing options, looming, or overshadowed.
+Journalistic headlines use punchy metaphorical verbs like *derail*, *overshadow*, *echo*, and *cloud*, alongside evaluative adjectives such as *fragile*, *somber*, and *scarce*. Distinguish phonetically similar verb pairs like *seize* (take by force) and *cease* (stop).
 
 ### Vocabulary And Expressions
 
@@ -1521,55 +793,11 @@ Read a headline from an English news website today. Try to summarize the article
 | Reign | RAYN | The 'g' is completely silent. |
 | Uncertainty | un-SER-ten-tee | Hold the 'T's; do not drop them. |
 
-### Good Sentences To Imitate
-
-- His reaction was muted compared to hers.
-- I am weighing my options for a new job.
-- The project was derailed by funding issues.
-- Trump's talks about tariffs overshadowed the other topics.
-- His beliefs echoed my own.
-- Uncertainty clouded the team's decision.
-- Her performance topped everyone's expectations.
-- The teacher wore a somber expression.
-- Her success didn't happen overnight; it was years in the making.
-- The deadline is looming, and we still have a lot of work.
-
-### Practice Prompts
-
-- Write a sentence about a bad event that "derailed" your plans.
-- Use "weighing my options" to describe a difficult decision you have to make.
-- Describe a situation where "confusion reigned."
-
-### Mini Quiz
-
-- If you are comparing two choices carefully, you are doing what to your options?
-- What verb means to block or prevent progress?
-- If an event is threatening to happen very soon, it is doing what?
-
-#### Answer Key
-
-- Weighing.
-- Stymie.
-- Looming.
-
 ## 20 Business English Expressions
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson serves as a review and test of 20 high-level Business English expressions. Using these phrases instead of literal translations will make you sound highly professional and native-level in corporate environments.
-
-### Key Points
-
-- Replace basic descriptors with professional ones (e.g., bad quality -> subpar; makes a lot of money -> high grossing).
-- Master project-management idioms like sign off on, up in the air, and get going.
-- Understand specific prepositional choices in business, such as paying up front and moving up in the company.
-
-### How to Review
-
-Draft an imaginary email to a project manager using the phrases time sensitive, cut costs, sign off on, and up in the air.
+Elevate corporate speech by replacing colloquial phrases with formal business descriptors like *subpar* (poor quality) and *high grossing* (lucrative). Project management and operational milestones rely on idioms and prepositions such as *sign off on*, *up in the air*, *get going*, *pay up front*, and *move up in the company*.
 
 ### Vocabulary And Expressions
 
@@ -1605,53 +833,11 @@ Draft an imaginary email to a project manager using the phrases time sensitive, 
 | You'd cut costs | YOOD cut costs | "You would" contracts to "You'd". |
 | Two-week notice | TWO-week notice | Do not say "two weeks". It acts as an adjective here. |
 
-### Good Sentences To Imitate
-
-- I've worked in the field since my first job in college.
-- When we hire, we look at someone's resume and skill set.
-- Did I get my point across?
-- She needs her boss's approval to sign off on something.
-- Things really took off for me after the election.
-- The plan to start construction is still up in the air.
-- I hope they don't back out of the project.
-- We finally got going on the project yesterday.
-
-### Practice Prompts
-
-- What is a "skill set" you possess that is valuable in your field?
-- Describe a time you had a plan, but a friend "backed out."
-- Why is it important to have good "people skills"?
-
-### Mini Quiz
-
-- If a document must be signed immediately because it cannot wait, it is what?
-- What phrase means a project is currently uncertain and undecided?
-- If a business starts making a lot of money very quickly, you can say the business is what?
-
-#### Answer Key
-
-- Time sensitive.
-- Up in the air.
-- Taking off.
-
 ## 20 Executive Business Expressions
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, you will learn high-level professional vocabulary from an interview with an executive business coach. These expressions focus on emotional intelligence, soft skills, and workplace dynamics, helping you sound more confident and articulate in professional environments.
-
-### Key Points
-
-- Master phrases for expressing your role: go by, job title, and make a shift.
-- Learn terms related to emotional intelligence: get triggered, get in the way of, and innately.
-- Understand key workplace dynamics: get on the same page, going through the motions, and moving up through the company.
-
-### How to Review
-
-Think of a time at work when you and a colleague had a misunderstanding. Write a brief paragraph explaining how you were able to "get on the same page" and avoid getting "emotionally triggered."
+Executive communication emphasizes soft skills and emotional intelligence through expressions like *get triggered*, *get in the way of*, and *innately*. Professional trajectory and workplace alignment are articulated using terms like *go by*, *make a shift*, *get on the same page*, and *going through the motions*.
 
 ### Vocabulary And Expressions
 
@@ -1685,55 +871,11 @@ Think of a time at work when you and a colleague had a misunderstanding. Write a
 | Conflict (noun) | CON-flict | Stress the first syllable for the noun. |
 | Conflict (verb) | con-FLICT | Stress the second syllable for the verb. |
 
-### Good Sentences To Imitate
-
-- Sometimes I just go by the term 'business coach'.
-- What kinds of things get in the way of them being effective leaders?
-- We don't innately know how to do that.
-- How do you phrase something so the other person can hear it?
-- They're going to get emotionally triggered.
-- All our good common sense goes away when we're too emotional.
-- It's really important to get on the same page.
-- He doesn't care about his job; he's just going through the motions.
-- They're happy about the promotion, but they don't know what they're getting into.
-- You'll learn them because you're sharp.
-
-### Practice Prompts
-
-- What is a "soft skill" that is highly valued in your industry?
-- Write a sentence describing a time you had to "make a shift" in your career.
-- Have you ever started a project and realized you didn't know what you were "getting into"? Describe it.
-
-### Mini Quiz
-
-- If you agree with your coworkers and understand the goal, you are all on what?
-- If someone does their job with zero enthusiasm or care, they are just going through the what?
-- If an event makes you suddenly very angry or fearful based on past experiences, you got what?
-
-#### Answer Key
-
-- On the same page.
-- Going through the motions.
-- Triggered.
-
 ## 20 Conversational Expressions
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In an interview with a boat captain in Lake Tahoe, you will learn natural, casual expressions used to describe hobbies, careers, and social interactions. These phrases will make your everyday conversation sound much more authentic.
-
-### Key Points
-
-- Learn social expressions: people person, hit it off, and make conversation.
-- Master hobby phrases: big snowboarder, got into, and ended up.
-- Understand descriptive phrasing: absolutely massive, choppy, year-round, and insane.
-
-### How to Review
-
-Write a short paragraph about how you met your best friend. Use the expressions hit it off, ended up, and make conversation.
+Natural conversational English describes interpersonal rapport using phrases like *people person*, *hit it off*, and *make conversation*. Personal pursuits and transitions use constructions like *big [enthusiast]*, *got into*, and *ended up*, supported by vivid adjectives like *absolutely massive*, *choppy*, and *year-round*.
 
 ### Vocabulary And Expressions
 
@@ -1765,54 +907,11 @@ Write a short paragraph about how you met your best friend. Use the expressions 
 | --- | --- | --- |
 | Get to | GET-too | Make sure to link the words smoothly without pausing. |
 
-### Good Sentences To Imitate
-
-- I get to travel a lot for my job.
-- She's a people person who likes to make conversation with customers.
-- We hit it off right away and ended up getting married six months later.
-- I tried watching that movie, but I just couldn't get into it.
-- This house is absolutely massive.
-- The sea is choppy today because of the wind.
-- Santa Barbara is a perfect weekend getaway.
-- That is an insane amount of money!
-- Are there any downsides to buying this house?
-
-### Practice Prompts
-
-- What is a hobby that you are "really into"?
-- What is the one "downside to" living in your current city?
-- Think of a time your plans changed. What did you "end up doing" instead?
-
-### Mini Quiz
-
-- If you start a new hobby and really enjoy it, you are really what?
-- If two people meet and immediately become great friends, they did what?
-- What is a more casual way to say "in conclusion" when giving a list of points?
-
-#### Answer Key
-
-- Getting into it.
-- Hit it off.
-- Lastly.
-
 ## 20 Modern American Slang Words
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Slang changes with every generation. In this lesson, you will learn modern internet and youth slang to help you understand American pop culture, YouTube videos, and casual conversations with younger generations. (Remember: avoid these in professional settings!)
-
-### Key Points
-
-- Learn social/vibe slang: chillin', lit, and woke.
-- Understand slang for negative feelings: salty, shook, and done with it.
-- Master internet/texting slang: ghosting, I'm dead, and canceled.
-
-### How to Review
-
-Watch a casual YouTube vlog or read comments on social media. Try to spot at least three of these modern slang words being used in the wild.
+Modern American informal slang characterizes atmosphere and awareness with terms like *chillin'*, *lit*, and *woke*, while negative emotions are described using *salty*, *shook*, and *done with it*. Digital communication relies on internet slang like *ghosting*, *canceled*, and hyperbole such as *I'm dead*.
 
 ### Vocabulary And Expressions
 
@@ -1839,54 +938,11 @@ Watch a casual YouTube vlog or read comments on social media. Try to spot at lea
 - Shook: This is grammatically incorrect (the proper word is "shaken"), but "shook" is the accepted slang term.
 - Ghost: Usually a noun, but in modern slang, it is used as a verb ("I ghosted him" / "I was ghosted").
 
-### Good Sentences To Imitate
-
-- We're just chillin' at the house.
-- He's a really chill guy.
-- Don't be salty just because I won.
-- She was throwing shade at me all night.
-- That concert last night was so lit!
-- He's always flexing his expensive watches on Instagram.
-- I couldn't believe what happened; I was so shook.
-- That joke was hilarious, I'm dead.
-- You completely slayed that dance routine.
-
-### Practice Prompts
-
-- Write a sentence describing an event that was "lit."
-- What does it mean if you are texting someone and suddenly they "ghost" you?
-- If someone tells a hilarious joke, what are two slang phrases you can say to show you are laughing hard?
-
-### Mini Quiz
-
-- If you are showing off your new expensive shoes, what are you doing?
-- If someone is bitter because they lost a game, they are being what?
-- What acronym is used to describe the absolute best athlete in a sport?
-
-#### Answer Key
-
-- Flexing.
-- Salty.
-- GOAT (Greatest Of All Time).
-
 ## 20 Ways to Use "Deal"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-The word "deal" is incredibly versatile in English. It can mean a bargain, a negotiation, a problem, or an agreement. This lesson covers 20 different expressions using the word "deal," categorized for both business and daily life.
-
-### Key Points
-
-- Use "deal" for agreements: it's a deal, close the deal, and done deal.
-- Use "deal" for bargains: a good deal and sweeten the deal.
-- Use "deal" for situations/problems: deal with it, deal breaker, and no big deal.
-
-### How to Review
-
-Write a short dialogue where two people negotiate the price of a used car. Try to use let's make a deal, sweeten the deal, and it's a deal.
+The word *deal* spans commercial agreements (*close the deal*, *done deal*), financial bargains (*a good deal*, *sweeten the deal*), and situational complications (*deal with it*, *deal breaker*, *no big deal*). Context determines whether it functions as a transaction, an incentive, or an emotional coping mechanism.
 
 ### Vocabulary And Expressions
 
@@ -1917,53 +973,11 @@ Write a short dialogue where two people negotiate the price of a used car. Try t
 | Deal | DEE-ul | Do not abruptly stop the tongue. Use a dark 'L' and a prolonged vowel. |
 | Salesman | SAYLZ-mun | Reduce the "man" sound to "mun." |
 
-### Good Sentences To Imitate
-
-- I got a lot of good deals at the shopping mall last weekend.
-- After you sign the contract, it's a done deal.
-- Stay away from that salesman; he's a wheeler dealer.
-- The seller of the house sweetened the deal by offering to leave some furniture.
-- After many months of negotiation, we finally closed the deal.
-- Thank you for driving me; it's no big deal, it's on my way.
-- I can't deal with this traffic anymore.
-- That politician is honest and speaks from his heart; he's the real deal.
-
-### Practice Prompts
-
-- Describe a time you got a "great deal" on a purchase.
-- What is a strict "deal breaker" for you when dating someone?
-- Write a sentence telling a friend that their minor mistake is "no big deal."
-
-### Mini Quiz
-
-- If you add free floor mats to the sale of a car to make the buyer happy, you are doing what to the deal?
-- If someone is overreacting to a tiny scratch on their car, what should you tell them not to do?
-- What do you call a highly authentic, talented, and genuine person?
-
-#### Answer Key
-
-- Sweetening the deal.
-- Don't make a big deal out of it.
-- The real deal.
-
 ## 20 Advanced Pronunciation Fixes
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Even advanced English learners often carry over pronunciation mistakes from their early studies. This lesson identifies 20 commonly mispronounced words, highlighting silent letters, unexpected vowel sounds, and shifting syllable stress.
-
-### Key Points
-
-- Beware of silent letters: salmon (silent L), bomb (silent B), extraordinary (silent A).
-- Note unexpected sounds: chaos / choir ('ch' sounds like 'k'), and pizza ('zz' sounds like 'ts').
-- Differentiate American vs. British: aluminum (4 syllables) vs. aluminium (5 syllables).
-
-### How to Review
-
-Read the list of words in the vocabulary section aloud. Record yourself speaking them, then play the recording back to see if you accidentally pronounced the silent letters.
+Advanced phonetic accuracy requires suppressing silent letters in *salmon* (silent 'l'), *bomb* (silent 'b'), and *extraordinary* (silent 'a'). Recognize irregular consonant values like the /k/ sound for 'ch' in *chaos* and *choir*, the /ts/ sound in *pizza*, and note the four-syllable American *aluminum* versus the five-syllable British *aluminium*.
 
 ### Vocabulary And Expressions
 
@@ -1996,58 +1010,11 @@ Read the list of words in the vocabulary section aloud. Record yourself speaking
 - Series vs Serious: Series (SEE-reez) is a noun for a TV show. Serious (SEER-ee-us) is an adjective for a grave situation.
 - Of vs Off: Of uses a soft 'v' sound (UV). Off uses a hard 'f' sound (AWF).
 
-### Good Sentences To Imitate
-
-- I had broccoli with salmon.
-- I covered the salmon and broccoli with aluminum foil.
-- After the party, the house was in complete chaos.
-- She sings in a choir.
-- Please close the door; the supermarket is close to my house.
-- Prince Charles is the heir to the throne.
-- We signed a six-month lease for our new apartment.
-- Let's order a large pepperoni pizza.
-- Fish is a good source of protein.
-- That show is my favorite TV series.
-- He lives in the South, so he has a Southern accent.
-- I can't find my receipt.
-- Can you give me the recipe?
-
-### Practice Prompts
-
-- Record yourself saying: "The heir to the throne eats salmon and broccoli for protein."
-- Explain the pronunciation difference between the noun "South" and the adjective "Southern."
-- Explain the pronunciation difference between "receipt" and "recipe."
-
-### Mini Quiz
-
-- Which letter is silent in the word "salmon"?
-- Does the word "chaos" start with a "CH" sound or a "K" sound?
-- Which syllable is stressed in the word "thermometer"?
-
-#### Answer Key
-
-- The L.
-- A "K" sound.
-- The second syllable (ther-MAH-mi-ter).
-
 ## 21 Professional Expressions
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, you will learn 21 professional English expressions from an interview with Grant, a medical device sales representative. You will learn useful expressions for the workplace, networking, setting goals, and adapting to changes.
-
-### Key Points
-
-- Expressions for communication: reach out blind, reiterate, and have a word with you.
-- Expressions for situations: go with the flow, pan out, and take your breath away.
-- Expressions for careers/goals: recession-proof, people skills, nest egg, and bright future ahead of you.
-
-### How to Review
-
-Write a paragraph describing your long-term career goals. In your paragraph, use the expressions nest egg, people skills, and bright future ahead of you.
+Professional business communication utilizes networking and discourse idioms such as *reach out blind*, *reiterate*, and *have a word with you*. Long-term career resilience and outcomes are framed with terms like *recession-proof*, *people skills*, *nest egg*, *pan out*, and *go with the flow*.
 
 ### Vocabulary And Expressions
 
@@ -2078,58 +1045,11 @@ Write a paragraph describing your long-term career goals. In your paragraph, use
 - -ish suffix: The suffix -ish can be added to numbers, times, and adjectives to mean "approximately" or "kind of." Examples: four-ish (around 4 o'clock), forty-ish (around 40 years old), brownish (kind of brown).
 - Stoplight: Interchangeable with traffic light and red light.
 
-### Good Sentences To Imitate
-
-- He had to reach out blind to potential clients.
-- We don't have plans tonight; we're just going to go with the flow.
-- This industry is generally considered recession-proof.
-- It's a great job, but you really need good people skills.
-- She always has her guard up when meeting new people.
-- My attempt to start a new business didn't pan out.
-- We paid a million dollars for that house, and then some.
-- Let me reiterate: you must submit the report by Friday.
-- She was so tired, so much so that she fell asleep at her desk.
-- The sunset over the ocean took my breath away.
-- What do you see yourself doing five years from now?
-- With your talent, you definitely have a bright future ahead of you.
-- I've been saving a nest egg for my retirement.
-
-### Practice Prompts
-
-- Describe an industry that you believe is "recession-proof" and explain why.
-- What time do you usually wake up? Use the "-ish" suffix to estimate the time.
-- Talk about a plan or an idea you had that "didn't pan out."
-
-### Mini Quiz
-
-- If you just relax and accept the situation without planning, what are you doing?
-- If you want someone to repeat their main point, you might ask them to do what?
-- What is the expression used when two people have the exact same idea at the same time?
-
-#### Answer Key
-
-- Going with the flow.
-- Reiterate it.
-- Great minds think alike.
-
 ## 22 Conversational Expressions in Context
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, you will listen to an interview with Michael, a musician and entrepreneur who moved to Los Angeles. You will learn useful, advanced expressions related to making big decisions, starting over, and getting around a city.
-
-### Key Points
-
-- Expressions for starting over: start from scratch, fend for myself, and trial and error.
-- Expressions for reactions: freak out, wholeheartedly, and like none other.
-- Expressions for driving: get out of your way, split lanes, and road rage.
-
-### How to Review
-
-Write a short paragraph about a big decision you made recently. Use the expressions power move, put my mind to it, and wholeheartedly.
+Major life transitions and independent initiatives are expressed through idioms like *start from scratch*, *fend for myself*, and *trial and error*. Conversational narratives describe emotional reactions using *freak out* and *wholeheartedly*, while urban driving introduces terms like *split lanes*, *road rage*, and *get out of your way*.
 
 ### Vocabulary And Expressions
 
@@ -2161,61 +1081,11 @@ Write a short paragraph about a big decision you made recently. Use the expressi
 | Wholeheartedly | hole-HAR-tid-lee | Don't forget the 'ed' sound in the middle. |
 | Cost (past tense) | COST | Do NOT say "costed." |
 
-### Good Sentences To Imitate
-
-- He made a power move and asked for a promotion.
-- I drove a beat up old car in high school.
-- Our plan didn't work, so we had to start from scratch.
-- When he moved out, he finally had to fend for himself.
-- When she saw the spider, she totally freaked out.
-- I learned how to cook by trial and error.
-- The two proposals are pretty much the same.
-- She can achieve anything she puts her mind to.
-- I wholeheartedly support your decision.
-- What led you to study medicine?
-- How do you get around the city?
-- The performance tonight was like none other.
-- Please get out of my way; I'm in a hurry.
-- Make sure you use your blinker before you change lanes.
-- He bumped into my car, but there was no damage.
-- The traffic is terrible, and the drivers have terrible road rage.
-
-### Practice Prompts
-
-- What is something you had to learn through "trial and error"?
-- What is the easiest way to "get around" in your city?
-- Describe a time when you or someone else completely "freaked out."
-
-### Mini Quiz
-
-- If you start a brand new project from the very beginning with no resources, what are you doing?
-- If you completely and totally agree with someone without any doubt, how do you agree?
-- What is the phrase for the aggressive anger some drivers display on the highway?
-
-#### Answer Key
-
-- Starting from scratch.
-- Wholeheartedly.
-- Road rage.
-
 ## 25 Essential Business Idioms
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-The business world is full of idioms. This lesson covers 25 highly common business idioms that native speakers use in meetings, emails, and professional conversations. Learning these will help you sound more natural and understand your colleagues better.
-
-### Key Points
-
-- Idioms for starting: get the ball rolling, green light, and pull the trigger.
-- Idioms for problems: elephant in the room, put out fires, and drop the ball.
-- Idioms for details: bottom line, cross the t's and dot the i's, and big picture.
-
-### How to Review
-
-Write an email to a fake colleague explaining a delay on a project. Use the idioms playing catch up, put out fires, and the bottom line.
+Corporate discourse relies on conventional idioms for project lifecycles: initiating actions (*get the ball rolling*, *green light*, *pull the trigger*), addressing complications (*elephant in the room*, *put out fires*, *drop the ball*), and balancing financial and strategic priorities (*bottom line*, *big picture*, *cross the t's and dot the i's*).
 
 ### Vocabulary And Expressions
 
@@ -2248,65 +1118,11 @@ Write an email to a fake colleague explaining a delay on a project. Use the idio
 | In the future | Going forward | From this point onward in the future. | Going forward, we will require weekly reports. |
 | Make the final decision | Pull the trigger | To commit to a course of action; make a final decision. | It's time to pull the trigger on this investment. |
 
-### Good Sentences To Imitate
-
-- The manager asked us to think outside the box for the new marketing campaign.
-- I don't need a specific quote, just a ballpark figure.
-- Let's schedule a meeting to get the ball rolling.
-- It's a great idea, but the bottom line is that we can't afford it.
-- Are we all on the same page regarding the new policy?
-- It's time to talk about the elephant in the room: the CEO's resignation.
-- You really hit the nail on the head with that comment.
-- We don't have a schedule yet; we'll just play it by ear.
-- After missing a week of work, I'm playing catch up.
-- I haven't done my actual job all day; I've just been putting out fires.
-- We are waiting for the boss to give us the green light.
-- The release date for the product is still up in the air.
-- Let's not go down a rabbit hole talking about minor details.
-- Target the existing customers first-they are low-hanging fruit.
-- He dropped the ball and forgot to email the client.
-- I can't take on another project; I have too much on my plate.
-- If you cut corners, the final product will be terrible.
-- You're focusing too much on details; look at the big picture.
-- Going forward, we will implement these new rules.
-- After months of debate, they finally pulled the trigger on the purchase.
-
-### Practice Prompts
-
-- Have you ever "dropped the ball" at work or school? What happened?
-- Write a sentence telling a friend that you have "a lot on your plate."
-- Think of a time when someone "went the extra mile" to help you. Describe it.
-
-### Mini Quiz
-
-- If you are handling constant, urgent problems all day instead of your normal work, what are you doing?
-- If an issue is obvious but everyone is uncomfortable talking about it, what is it called?
-- If you decide not to make a strict plan and just handle the situation as it happens, you are doing what?
-
-#### Answer Key
-
-- Putting out fires.
-- The elephant in the room.
-- Playing it by ear.
-
 ## 25 "Out Of" Idioms
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this fast-paced lesson, you will learn 25 highly useful idioms that all begin with the phrase "out of." You will learn how to pronounce "out of" correctly in fast speech, and how to use these phrases to describe situations, people, and emotions.
-
-### Key Points
-
-- Learn pronunciation: The 'f' in "out of" sounds like a 'v' (out ov). In slang, it sounds like "outta".
-- Understand common negative states: out of order, out of breath, out of shape.
-- Master abstract phrases: out of the blue, out of the loop, out of the picture.
-
-### How to Review
-
-Group these idioms by category to help remember them. For example, group physical states (out of shape, out of breath) together, and abstract concepts (out of the loop, out of my hands) together.
+In fast connected speech, *out of* reduces to /aʊt əv/ or informal 'outta' (/aʊtə/). The phrase anchors diverse idiomatic expressions describing functional or physical deficiency (*out of order*, *out of breath*, *out of shape*) as well as informational and situational states (*out of the blue*, *out of the loop*, *out of the picture*).
 
 ### Vocabulary And Expressions
 
@@ -2344,55 +1160,11 @@ Group these idioms by category to help remember them. For example, group physica
 | --- | --- | --- |
 | Out of | OUT-uv (Fast 'D' sound for the T, 'V' sound for the F) | OW-duh (Outta) |
 
-### Good Sentences To Imitate
-
-- Asking for a raise right now is out of the question.
-- The promotion came completely out of the blue.
-- Don't speak to me like that; you are out of line.
-- The car broke down, and it's completely out of my hands.
-- She hasn't played piano in years, so she's really out of practice.
-- The cake you baked is absolutely out of this world!
-- Let me know what happened; I feel so out of the loop.
-- Sorry I'm late, the trains were completely out of order.
-- I felt very out of place at the fancy dinner party.
-- The teacher couldn't manage the students, and the class got out of control.
-
-### Practice Prompts
-
-- Describe a time when something happened completely "out of the blue."
-- Write a sentence explaining why you can't buy an expensive watch (use "out of the question" or "out of my budget").
-- Think of a skill you used to have but don't anymore. Write a sentence using "out of practice."
-
-### Mini Quiz
-
-- If you go from a bad job to a job that is much, much worse, what idiom describes that situation?
-- If you don't know the office gossip because no one told you, you are what?
-- If someone is acting crazy, you can tell them they are what?
-
-#### Answer Key
-
-- Out of the frying pan into the fire.
-- Out of the loop.
-- Out of your mind.
-
 ## 27 Expressions with the Word "Word"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa and her friend Drake teach you common, everyday expressions that all contain the word "word." You will also learn advanced vocabulary words that naturally arise in their conversation, such as outlandish, rowdy, and legit.
-
-### Key Points
-
-- Master phrases of trust: give you my word, man of his word, and take it to the bank.
-- Learn negative phrases: break your word, have a word with you, and put words in my mouth.
-- Understand advanced vocabulary: connotation, outlandish, rowdy, and in awe.
-
-### How to Review
-
-Write a paragraph about a coworker who is very charismatic and reliable. Use the expressions has a way with words, man of his word, and put in a good word.
+The noun *word* anchors idioms of commitment and trust (*give you my word*, *man of his word*, *take it to the bank*) alongside confrontation and distortion (*break your word*, *have a word with you*, *put words in my mouth*). Complementary advanced descriptors include *connotation*, *outlandish*, *rowdy*, and *in awe*.
 
 ### Vocabulary And Expressions
 
@@ -2432,58 +1204,11 @@ When Drake explained the meaning of "break your word", he used three excellent a
 | --- | --- | --- |
 | Word | WERD | Eliminating the 'o' entirely. Do not say "w-OH-rd" with rounded lips. |
 
-### Good Sentences To Imitate
-
-- I give you my word that I won't tell anyone your secret.
-- He said he would help us move, and he is a man of his word.
-- Please don't put words in my mouth; I never said I wanted to quit.
-- She made some very outlandish demands during the meeting.
-- In every argument, my husband always has to have the last word.
-- The principal would like to have a word with you.
-- I'll put in a good word for you regarding the open job position.
-- You can't use four-letter words in the classroom!
-- Take my word for it; you don't want to live in that neighborhood.
-- The plan will work, you can take it to the bank.
-- We don't spend money on advertising; all our business is word of mouth.
-- I haven't heard a word from her since she moved to Europe.
-- Mark my words, this will be the best decision you've ever made.
-
-### Practice Prompts
-
-- Have you ever known someone who always needed to "have the last word"? Describe them.
-- What is a business or product you discovered strictly through "word of mouth"?
-- Think of a time you were completely "in awe" of something. What was it?
-
-### Mini Quiz
-
-- If you recommend your friend for a job to your boss, what did you do for your friend?
-- If your friend wears a massive, crazy, feathery purple hat to work, what word describes her outfit?
-- If someone incorrectly assumes what you said, you tell them not to put what in your mouth?
-
-#### Answer Key
-
-- Put in a good word.
-- Outlandish.
-- Words.
-
 ## 30 Idioms with a Native Speaker
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, you will learn practical expressions and idioms from an interview with Craig, an actor and former football player. He discusses the challenges of his career, how he deals with rejection, and the differences between acting and modeling.
-
-### Key Points
-
-- Career and work idioms: nine-to-five job, downtime, and pros and cons.
-- Expressions of disappointment: let down, cut down at the knees, and throw under the bus.
-- Lifestyle phrases: day-to-day life, live it up, and lay low.
-
-### How to Review
-
-Write a paragraph about the "pros and cons" of your current "nine-to-five job" (or daily routine). Include a time when you experienced "downtime."
+Professional routines and career evaluations utilize idioms like *nine-to-five job*, *downtime*, and *pros and cons*. Experiences of betrayal, rejection, and setback are captured by *cut down at the knees*, *let down*, and *throw under the bus*, balanced by lifestyle idioms like *live it up* and *lay low*.
 
 ### Vocabulary And Expressions
 
@@ -2525,58 +1250,11 @@ Write a paragraph about the "pros and cons" of your current "nine-to-five job" (
 | Doubt | DOUT | The 'b' is completely silent. Do not say "dow-bt". |
 | Pros and cons | PROZ and CAHNS | "Pros" uses a round 'O', but "cons" uses a wide 'ah' sound. |
 
-### Good Sentences To Imitate
-
-- First and foremost, I'd like to thank my family.
-- She was tired of her boring nine-to-five job.
-- His height gives him an edge in basketball.
-- It was a huge letdown when the concert was canceled.
-- I'm proud of the hours I put into this project.
-- The manager threw me under the bus to save his own job.
-- He comes across as very confident during interviews.
-- I don't like to live it up; I'd rather just lay low on the weekends.
-- If you break the rules, there will be serious repercussions.
-- The plan for next week is still up in the air.
-- Let's make a decision and stick to it.
-- I use my downtime at work to study English.
-- The pros of this car definitely outweigh the cons.
-
-### Practice Prompts
-
-- Have you ever been "thrown under the bus" by a colleague or friend? What happened?
-- Write a sentence describing your "day-to-day life."
-- Think of a hobby you enjoy. What is one of the "pros" and one of the "cons"?
-
-### Mini Quiz
-
-- If you are betrayed by a coworker to save themselves, what did they do to you?
-- If the advantages of a decision are stronger than the disadvantages, the pros do what to the cons?
-- If you want to stay home, relax, and avoid attention this weekend, you are doing what?
-
-#### Answer Key
-
-- Threw you under the bus.
-- Outweigh the cons.
-- Laying low.
-
 ## 3 Grammar Mistakes Native Speakers Make
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Should you correct native speakers when they make grammar mistakes? Probably not. In this lesson, Lisa explains three grammar rules that native English speakers frequently get wrong in spoken English. However, she warns that for professional writing, you must still follow the strict grammar rules!
-
-### Key Points
-
-- Lay vs. Lie: "Lie" is correct for resting, but native speakers almost always say "lay down."
-- Less vs. Fewer: "Fewer" is for countable nouns, but native speakers often use "less" for everything.
-- There is vs. There are: Native speakers frequently use "there's" for plural nouns because it's easier to say quickly.
-
-### How to Review
-
-Write three sentences using the grammatically correct forms of these rules. Then write the casual, incorrect versions that a native speaker might say in a relaxed setting.
+Spoken colloquial English frequently violates prescriptive grammar: *lay* is colloquially substituted for the intransitive resting verb *lie*, *less* replaces *fewer* for countable nouns, and contracted *there's* precedes plural subjects. Professional and academic writing strictly demands adhering to the formal standards.
 
 ### Grammar Rules And Exceptions
 
@@ -2603,51 +1281,11 @@ The Native Speaker Mistake: - In fast spoken English, native speakers use "There
 - Professional Environment: Do not use these native-speaker mistakes in formal writing or job interviews. Companies want to hire people who write properly.
 - The Grammar Police: "The grammar police" are people who aggressively correct other people's grammar mistakes. Do not be the grammar police; people find it very annoying.
 
-### Good Sentences To Imitate (Correct Grammar)
-
-- I am tired; I want to lie down on the bed.
-- I will lay the blanket on the floor.
-- There are fewer cars on the road today.
-- I have less time than I did yesterday.
-- There are a lot of people waiting in line.
-
-### Practice Prompts
-
-- Write a sentence correctly using "fewer."
-- Write a sentence correctly using "lay" (transitive).
-- Why do native speakers often incorrectly say "there's a lot of people" instead of "there are a lot of people"?
-
-### Mini Quiz
-
-- Which verb requires a direct object: lay or lie?
-- Which word should you strictly use for countable nouns: less or fewer?
-- If you constantly correct your friends' English mistakes, you are acting like the what?
-
-#### Answer Key
-
-- Lay.
-- Fewer.
-- Grammar police.
-
 ## 4 Accent Tips for Professionals
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa provides four essential tips for non-native professionals to improve their spoken English. The goal is not to eliminate your accent completely, but to ensure you are clearly understood the first time you speak, especially when using important career-related vocabulary.
-
-### Key Points
-
-- Master your career vocabulary: Ensure you pronounce the words you use every day perfectly.
-- Consonant clusters: Pronounce all consonants clearly (e.g., the 'ct' in expectations).
-- Syllable stress: English relies heavily on stressed syllables for comprehension (e.g., career vs. carrier).
-- International words: Do not assume words that look similar in your native language sound the same in English.
-
-### How to Review
-
-Make a list of 5-10 technical words you use every day at work. Look them up in an online dictionary or on YouGlish, and practice pronouncing them out loud, focusing on syllable stress.
+Professional phonetic clarity prioritizes mastering core occupational terms over accent eradication. Articulate every consonant in difficult clusters (such as /kt/ in *expectations*), apply correct syllable stress to distinguish minimal pairs like *career* versus *carrier*, and avoid false-cognate pronunciations of international vocabulary.
 
 ### Four Rules For Clear Professional Speech
 
@@ -2680,52 +1318,11 @@ Many academic, medical, and scientific words are spelled similarly across multip
 | Record (Verb) | re-CORD | Second syllable stress |
 | Tourism | TOUR-iz-um | Don't forget the hidden vowel sound before the 'm' |
 
-### Good Sentences To Imitate
-
-- The doctor gave orders for you to be discharged.
-- I am a tourism ambassador for the city.
-- Please be direct about your exact expectations.
-- The student was expelled for plagiarism.
-- Don't reject the practical advice from your doctor.
-- My goal is to develop new treatments for pancreatic cancer.
-- I love my career in real estate.
-- His handwriting on the medical record was illegible.
-
-### Practice Prompts
-
-- Record yourself saying: "Please be direct about your exact expectations." Did you pronounce the 'c' before the 't'?
-- Write a sentence using the noun "record" and another using the verb "record".
-- Write down 5 words you use every day in your profession. Go to YouGlish and listen to native speakers pronounce them.
-
-### Mini Quiz
-
-- If you stress the first syllable of the word "career," what word does it sound like?
-- In English, what hidden sound exists between the 's' and 'm' in words ending in "-ism"?
-- True or False: You must eliminate your accent completely to be a successful professional in the US.
-
-#### Answer Key
-
-- Carrier.
-- A vowel sound (an "uh" sound).
-- False. Clear speech and comprehension is the goal, not perfection.
-
 ## 4 Rules for "OF" vs "OFF"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Many non-native English speakers mispronounce the simple prepositions "of" and "off." This quick lesson clarifies the exact phonetic differences between the two words, ensuring you don't confuse native listeners.
-
-### Key Points
-
-- OF: The 'f' is pronounced as a soft 'V' sound (uv).
-- OFF: The 'f' is a strong, hard 'F' sound, and the vowel is an open 'aw' sound (awf).
-
-### How to Review
-
-Read aloud phrases like "A cup of coffee" and "Turn off the light" to physically feel the difference in your teeth and lips.
+The preposition *of* is pronounced with a reduced schwa and a voiced /v/ sound (/əv/ or /ʌv/). In contrast, *off* features an open /ɔː/ vowel and ends in a voiceless, aspirated /f/ sound (/ɔːf/).
 
 ### Vocabulary And Expressions
 
@@ -2752,51 +1349,11 @@ Unlike "of", the word "off" is an important stress word (often part of a phrasal
 | Of | UV / AHV / UH | Pronouncing it with a hard 'F' sound. |
 | Off | AWF | Pronouncing the vowel too short. |
 
-### Good Sentences To Imitate
-
-- Can I get a cup of coffee?
-- I have a lot of work to do.
-- Please turn off the television.
-- We need to get off the bus at the next stop.
-- He took a piece of the pie right off the table.
-
-### Practice Prompts
-
-- Record yourself saying: "Take your shoes off and have a cup of tea."
-- Write down three phrasal verbs that use the word "off" (e.g., turn off).
-- Explain the physical difference in your mouth when making a 'V' sound versus an 'F' sound.
-
-### Mini Quiz
-
-- In which word does your voice box vibrate during the final consonant: "of" or "off"?
-- Which word can be reduced to just an "uh" sound in fast speech?
-- What is the only word in English where the letter 'F' is pronounced as a 'V'?
-
-#### Answer Key
-
-- Of.
-- Of.
-- Of.
-
 ## 4 Tips for Clear Communication
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa coaches Jacobo, a Spanish author and screenwriter. She provides four essential tips for non-native speakers to speak clearly. She emphasizes that clear communication and proper pronunciation of core vocabulary is far more important than completely hiding your foreign accent.
-
-### Key Points
-
-- Master your specific vocabulary.
-- Beware of words that look similar in your native language; the pronunciation is likely different in English.
-- Practice words in full thought-groups, not just individually.
-- Do not obsess over your accent. Confidence and clarity are the true goals.
-
-### How to Review
-
-Pick five English words that are spelled exactly the same in your native language. Look up their English pronunciation on YouGlish, and practice the specific vowel and stress differences.
+Effective communication centers on clarity and confidence rather than accent suppression. Master domain-specific vocabulary, guard against native-language cognate pronunciation interference, and practice delivering speech in rhythmic, cohesive thought-groups rather than isolated words.
 
 ### Four Tips For Clear Speech
 
@@ -2827,53 +1384,11 @@ Unless you are an actor trying to play an American character, you do not need a 
 | Culture | CUL-chur | Pronouncing a hard 'T' instead of 'CH' |
 | Situation | sit-yoo-A-shun | Pronouncing a hard 'T' instead of 'CH' |
 
-### Good Sentences To Imitate
-
-- My novel is about Romans.
-- I wrote a pilot based on a novel.
-- I am a multi-award-winning screenwriter.
-- I love discovering new cultures.
-- We have a difficult situation at work.
-- The meetings will be completely virtual.
-- There are many statues in that ancient city.
-
-### Practice Prompts
-
-- Write a sentence linking two words together naturally, like "based on a."
-- Say the word "Situation" out loud. Did you use a "CH" sound or a hard "T" sound?
-- Why is it dangerous to assume that a word spelled the same in your language sounds the same in English?
-
-### Mini Quiz
-
-- In English, the "TU" in words like "virtual" and "culture" makes what sound?
-- What happens to your speech if you obsess too much over having a perfect American accent?
-- True or False: You should practice new words in isolation before trying them in sentences.
-
-#### Answer Key
-
-- A "CH" sound.
-- You become nervous and your speech becomes stiff/unnatural.
-- False. You should practice them in full sentences and thought groups to learn the natural linking.
-
 ## 4 Tips for Understanding Fast Speech
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Do you struggle to understand native speakers when they talk fast? It often feels like they are swallowing words. In this lesson, Lisa explains the concept of "linking"-connecting multiple words together so they sound like one long word. You will learn four rules for identifying these patterns to improve your listening comprehension.
-
-### Key Points
-
-- Master linking final consonants to initial vowels (e.g., first of all).
-- Understand how identical consonant sounds merge (e.g., good dog becomes goo-dog).
-- Learn how pronouns are reduced (e.g., his, he, and her often lose the 'H' sound).
-- Use captions strategically to train your ear to catch these missing sounds.
-
-### How to Review
-
-Watch a short YouTube video without captions. When you fail to understand a phrase, rewind it, turn the captions on, and see how the native speaker linked the words together.
+Comprehending rapid speech requires recognizing phonetic linking and reductions: terminal consonants link to initial vowels (e.g., *first of all*), identical adjacent consonants merge into a single prolonged sound (e.g., *good dog* -> 'goo-dog'), and unstressed pronouns routinely drop initial /h/ (e.g., *he*, *his*, *her*). Training the ear with targeted captioning reinforces these auditory patterns.
 
 ### Four Rules For Understanding Fast Speech
 
@@ -2898,51 +1413,11 @@ In fast, connected speech, native speakers often completely drop the 'H' sound i
 - Listening practice: Listen to podcasts at a slightly slower speed (0.75x) to train your ear to hear the reduced sounds and merged consonants. Once you recognize the pattern, speed it back up to 1.0x.
 - Phrasal verb stress: When using phrasal verbs, the second word (the preposition) is usually stressed more than the verb. (e.g., I worked OUT yesterday).
 
-### Good Sentences To Imitate
-
-- First of all, we need to get a plate.
-- I would read the books that I had just picked out.
-- You should have told me; we could have figured it out.
-- You should have warned me; I would have turned it off.
-- It's a special occasion. (Link the 's': It-special).
-- What did he find out? (Wuddy find out?)
-
-### Practice Prompts
-
-- Record yourself saying "I picked out a new dress" using the consonant-to-vowel linking rule.
-- What happens to the 'H' sound in the word "her" when a native speaker says "I love her" quickly?
-- Write a sentence containing two identical consonant sounds back-to-back (like "good dog").
-
-### Mini Quiz
-
-- If someone speaks quickly, "get up late" sounds exactly like what other phrase?
-- In the sentence "You should have told me", which word carries the most stress?
-- True or False: You should pause between every single word to ensure you are understood.
-
-#### Answer Key
-
-- Get a plate.
-- Told.
-- False. Native speakers connect words in "thought groups."
-
 ## 5 Commonly Mispronounced Words
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Advanced English students often make pronunciation mistakes on very common words due to the confusing and irregular rules of English spelling. This lesson highlights five specific words where the spelling tricks non-native speakers into pronouncing the wrong vowel sounds.
-
-### Key Points
-
-- Do not pronounce the 'A' in says or said. They rhyme with bed.
-- The word foreign sounds like the number four plus the letter N (for-N).
-- The 'AI' spelling in mountain and plaid is highly irregular.
-
-### How to Review
-
-Read the five target words aloud in front of a mirror or record yourself on your phone. Ensure you are completely dropping the "A" sound in says and said.
+Irregular orthography leads to frequent vowel errors: *says* and *said* take a short /ɛ/ rhyming with *bed*, while *foreign* is pronounced /fɔːr.ɪn/ or /fɔːr.ən/ ('for-in'). Additionally, the 'ai' spelling represents an unstressed schwa /ən/ in *mountain* and a short /æ/ in *plaid*.
 
 ### Vocabulary And Expressions
 
@@ -2977,51 +1452,11 @@ Read the five target words aloud in front of a mirror or record yourself on your
 - Definition: A clothing pattern consisting of crisscrossed horizontal and vertical bands in multiple colors (often seen on flannel shirts).
 - Example: He is wearing a plaid shirt.
 
-### Good Sentences To Imitate
-
-- Listen to what your teacher says. (Sez)
-- He said that he would climb the mountain. (Sed / Moun-tin)
-- I studied two foreign languages in high school. (For-in)
-- A lot of foreigners visit my city. (For-in-erz)
-- I'm shopping for a new plaid shirt. (Plad)
-
-### Practice Prompts
-
-- Record yourself saying: "She says she bought a plaid shirt in a foreign country."
-- Explain the difference in vowel sounds between the present tense verb "say" and the third-person verb "says".
-- Write a sentence describing an outfit that contains the word "plaid".
-
-### Mini Quiz
-
-- Which color rhymes with the past tense verb "said"?
-- What number helps you remember how to pronounce the first syllable of the word "foreign"?
-- True or False: The word "plaid" rhymes with the word "played."
-
-#### Answer Key
-
-- Red.
-- Four (4).
-- False. It rhymes with "sad."
-
 ## 6 Tips for Job Interviews with an Accent
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Many highly qualified professionals fail to apply for their dream jobs because they are terrified that their strong foreign accent will hold them back during the interview. In this lesson, Lisa provides six practical tips to help you prepare, build confidence, and ensure you are clearly understood by your interviewers.
-
-### Key Points
-
-- Master the exact pronunciation of your interviewers' names.
-- Perfectly pronounce the technical vocabulary of your industry and job title.
-- Practice answering questions out loud to hear your own pacing.
-- Confidently acknowledge your accent and your dedication to improving it.
-
-### How to Review
-
-Write down your exact job title and three technical words related to your industry. Look them up online and practice pronouncing them until they are absolutely perfect.
+Interview success with a foreign accent depends on flawless pronunciation of interviewer names, job titles, and industry-specific terminology. Rehearse responses aloud to regulate cadence and pacing, and address an accent directly and confidently as evidence of bilingual dedication.
 
 ### Six Interview Preparation Tips
 
@@ -3049,49 +1484,11 @@ Behave as if you are the absolute right person for the job. Do not let insecurit
 
 If you feel your accent is an issue, confidently bring it up. Tell them that you are actively working on your English and pronunciation. This shows the interviewers that you are ambitious, driven, and committed to self-improvement. It makes a fantastic impression.
 
-### Good Sentences To Imitate
-
-- "I am applying for the position of General Manager."
-- "I am very passionate about this industry and have ten years of experience."
-- "I am continually working to improve my English and professional communication skills."
-
-### Practice Prompts
-
-- Record yourself answering the common interview question: "Why do you want to work for this company?" Pay attention to your speed.
-- What are two English names that you find difficult to pronounce?
-- Write a short script of how you would confidently tell an interviewer that you are working on your English pronunciation.
-
-### Mini Quiz
-
-- When people get nervous in an interview, what do they usually do with their speaking speed?
-- Why is it important to practice your answers out loud instead of just in your head?
-- True or False: You should hide the fact that you are taking English lessons from your interviewer.
-
-#### Answer Key
-
-- They speak too fast.
-- To hear yourself, check your pacing, and ensure your pronunciation is clear.
-- False. Telling them shows ambition and dedication to self-improvement.
-
 ## 7 Advanced Grammar Mistakes
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Even advanced English learners who score perfectly on written tests often make grammatical errors when speaking naturally. In this lesson, Lisa highlights seven common mistakes involving the verb "suggest," compound adjectives, non-countable nouns, and conditionals.
-
-### Key Points
-
-- Master the verb suggest: It does not take a direct object pronoun (e.g., "suggest him").
-- Understand compound adjectives: Hyphenated adjectives are singular (e.g., two-bedroom apartment).
-- Never pluralize non-countable nouns: Advice, homework, and information never take an 'S'.
-- Learn conditional rules: Do not use will or would twice in an "if/when" sentence.
-
-### How to Review
-
-Review the "Mini Quiz" section and try to correct the mistakes in your head before checking the answer key. Repeat this exercise until the correct grammar sounds more natural to you than the incorrect grammar.
+Common spoken grammatical errors include using a direct personal object with *suggest* (which requires *suggest that* or *suggest to someone*), pluralizing hyphenated compound adjectives (e.g., write *two-bedroom apartment*, not *two-bedrooms*), and adding plural 's' to non-countable nouns like *advice*, *homework*, and *information*. Additionally, avoid duplicating modal auxiliaries (*will* or *would*) in conditional 'if' clauses.
 
 ### Grammar Rules And Corrections
 
@@ -3145,53 +1542,11 @@ Review the "Mini Quiz" section and try to correct the mistakes in your head befo
 - Rule: Do not use "will" or "would" twice in conditional sentences. The "if/when" clause takes the present or past perfect tense.
 - Correct: I will give it to you when we see each other. / If you go, I will go too. / If you had tried it, you would have liked it.
 
-### Good Sentences To Imitate
-
-- I suggested that he fix it soon.
-- I suggest not driving so fast.
-- My car has four doors; it's a four-door car.
-- I have a seven-year-old and a nine-year-old.
-- Thank you for your advice.
-- I am looking forward to hearing from you.
-- If I had studied, I would have passed the test.
-- She would have come to your party if you'd invited her.
-
-### Practice Prompts
-
-- Correct this sentence: "I suggest you to take the job."
-- Write a sentence describing the age of a family member using a compound adjective (e.g., 50-year-old).
-- Correct this sentence: "I am used to wake up early."
-
-### Mini Quiz (Find the Mistake)
-
-- I need to finish my homeworks before I can go out.
-- If you will help me, I will pay you.
-- I am looking forward to see you tomorrow.
-
-#### Answer Key
-
-- Homeworks -> homework. (Non-countable noun).
-- If you will help me -> If you help me. (Don't use will in the if-clause).
-- to see -> to seeing. (Must use an -ing verb).
-
 ## 8 Business Phrasal Verbs & Linking
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Speaking quickly does not make you sound fluent; linking words smoothly does. In this lesson, you will learn a critical rule for sounding like a native American speaker: linking final consonants to initial vowels. You will then practice this rule using 8 highly common phrasal verbs used in business.
-
-### Key Points
-
-- The Linking Rule: When a word ends with a consonant (especially T or D) and the next word starts with a vowel, connect them.
-- When you link words, it forces you to think about word stress, giving your speech a natural rhythm.
-- In phrasal verbs, the second word (the preposition) carries the stress.
-
-### How to Review
-
-Read the eight phrasal verbs below out loud. Exaggerate the connection between the final consonant of the verb and the "O" or "U" of the preposition. (e.g., pai-doff, burn-dout).
+American speech rhythm is created through smooth consonantal linking, connecting terminal consonants (particularly /t/ and /d/) to following initial vowels. In two-word phrasal verbs, stress consistently falls on the second word (the preposition or particle), driving natural sentence cadence.
 
 ### Pronunciation and Linking Rules
 
@@ -3219,50 +1574,11 @@ Note on Phrasal Verbs: Always stress the preposition (the second word) more than
 | Price out | Priced out (price-tout) | To be unable to buy something because the price has increased too much. | If we don't buy a house now, we will be priced out of the market. |
 | Call in | Called in (call-din) | To call your workplace to tell them you cannot come in (usually "call in sick"). | Several employees called in sick today. |
 
-### Good Sentences To Imitate
-
-- How much does it cost?
-- Our investment really paid off.
-- Is your house paid off yet?
-- After the meeting wrapped up, everybody went home.
-- Our department is short-staffed today because three people called in sick.
-
-### Practice Prompts
-
-- Record yourself saying "wrapped up". Ensure the 'ed' sounds like a 'T', and link it to the 'U' (wrap-tup).
-- Write a sentence describing a time you "missed out" on a fun event or opportunity.
-- What is the difference between getting fired and getting "laid off"?
-
-### Mini Quiz
-
-- If you work 80 hours a week for a year, you are in danger of doing what?
-- If you finish paying the bank for your car, the car is officially what?
-- In a phrasal verb, which word usually receives the vocal stress?
-
-#### Answer Key
-
-- Burning out.
-- Paid off.
-- The second word (the preposition).
-
 ## 8 Tips for Understanding Native Speakers
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Many advanced English learners get frustrated when they cannot understand fast native speakers. In this lesson, Lisa explains why native speakers are harder to understand than English teachers, and she shares 8 practical tips to improve your listening comprehension.
-
-### Key Points
-
-- Teachers speak slowly and avoid slang; regular native speakers link words and use heavy idiomatic expressions.
-- Native speakers speak in "thought groups" rather than individual words.
-- You do not need to understand every single word. Focus on the stressed "content words" (nouns and verbs).
-
-### How to Review
-
-Find a YouTube video of a native speaker discussing a topic you love. Turn off the captions. Try to identify the "content words" they are stressing in each sentence.
+Native conversational comprehension requires tuning into full 'thought groups' rather than parsing isolated words. Because native speech relies heavily on reductions, linking, and idioms, listeners should focus on stressed content words (nouns and main verbs) while letting unstressed function words pass without over-analysis.
 
 ### Eight Listening Tips
 
@@ -3298,65 +1614,17 @@ If you are passionate about a topic (like cooking, sports, or tech), your brain 
 
 Listen to a podcast or audiobook while reading the text. Then, try listening without the text to see how much your ear has trained itself to hear the linked words.
 
-### Good Sentences To Imitate
-
-- What are you talking about?
-- I don't know what he's talking about.
-- If you hadn't told me, I wouldn't have known about it.
-- I decided to quit smoking and just go cold turkey.
-- Whoa, hold your horses! Let's think about this for a minute.
-
-### Practice Prompts
-
-- Record yourself saying "If you hadn't told me." Stress the word "told" and say the rest very quickly.
-- What does it mean to quit a bad habit "cold turkey"?
-- Why is an English teacher usually easier to understand than a regular native speaker?
-
-### Mini Quiz
-
-- What do we call the important words (nouns and verbs) that receive the most stress in a sentence?
-- True or False: If you can't understand every native speaker you meet, your English is bad.
-- If someone tells you to "hold your horses," what do they want you to do?
-
-#### Answer Key
-
-- Content words.
-- False. Even native speakers struggle to understand different dialects or heavy slang from other regions.
-- Wait a moment and think before acting.
-
 ## About Lisa Mojsin
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Lisa Mojsin introduces herself and her channel, Accurate English. She has over 25 years of experience teaching pronunciation and accent reduction in Los Angeles, working with Hollywood actors and corporate professionals.
-
-### Key Points
-
-- Lisa's goal is to help advanced non-native speakers take the final step to absolute fluency.
-- Her training focuses on ensuring professionals and actors are clearly understood every time they speak.
-- She emphasizes that standard English classes rarely teach the actual rules of the American accent (linking, reduction, and word stress).
+American accent training focuses on the phonetic mechanics routinely omitted from standard ESL curricula: linking, vowel reduction, and word stress. Implementing these systematic rules ensures that non-native professionals and performers achieve immediate phonetic clarity and natural speech cadence.
 
 ## Leadership Idioms with an Executive Coach
 
-Date: 2026-06-04  
-Category: english-writing
-
 ### Summary
 
-In this interview with executive coach Gene Sullivan, you will learn advanced expressions related to leadership, career development, and business dynamics.
-
-### Key Points
-
-- Career and leadership vocabulary: peers, dictatorial, and prodigy.
-- Idioms of difficulty: run into a wall, at stake.
-- Conversational verbs: lend itself to, subscribe to, and pick up.
-
-### How to Review
-
-Write a paragraph describing your career goals. Try to use at least three expressions from this lesson, such as "make a name for myself," "put in the work," or "run into a wall."
+Executive leadership discourse uses managerial terms like *peers*, *dictatorial*, and *prodigy* to assess organizational hierarchies and talent. High-stakes challenges and intellectual stances are framed using idioms and phrasal verbs such as *run into a wall*, *at stake*, *lend itself to*, *subscribe to*, and *pick up*.
 
 ### Vocabulary And Expressions
 
@@ -3385,54 +1653,11 @@ Write a paragraph describing your career goals. Try to use at least three expres
 | Buddies | BUH-deez | Pronouncing it with an 'ah' sound like "bodies" |
 | Peer | PEER | Pronouncing it with an 'a' sound like "pear" or "bear" |
 
-### Good Sentences To Imitate
-
-- The manager was too dictatorial, so the employees quit.
-- She is an amazing scientist, and she is respected by all of her peers.
-- I want to impress upon you how important this project is.
-- He needs to set his biases aside and listen to the team.
-- I do not subscribe to that pessimistic philosophy.
-- We ran into a brick wall when the client cut our budget.
-- She became famous in her own right.
-- I'm putting in ten hours a day at the office.
-- There is a lot at stake with this new contract.
-
-### Practice Prompts
-
-- Have you ever "run into a wall" while working on a project? What happened?
-- What is something you "do not subscribe to" (e.g., a common belief or habit)?
-- Why do people work harder when they have something important "at stake"?
-
-### Mini Quiz
-
-- If someone is an equal to you at work, they are your what?
-- If a child is exceptionally talented at playing the piano, they are a musical what?
-- If you learn a new skill quickly, you _________ it up.
-
-#### Answer Key
-
-- Peer.
-- Prodigy.
-- Picked.
-
 ## Acting and Enthusiasm Idioms
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this interview with Megan, an actress living in Los Angeles, you will learn expressions related to the entertainment industry, enthusiasm, and diving into new projects. Lisa also explains how native speakers use the word "slash" in conversation and how they pronounce the word "school."
-
-### Key Points
-
-- Expressions of enthusiasm: caught the bug, dive head first, and jump right in.
-- LA-specific phrases: The industry means the film industry; out here refers to the West Coast.
-- Pronunciation rules: The dark 'L' in words like "school" and "cool."
-
-### How to Review
-
-Write a sentence about a new hobby you started using the expression "I caught the bug," and explain how you "jumped right in."
+Entertainment industry narratives employ enthusiasm idioms like *caught the bug*, *dive head first*, and *jump right in*, alongside regional shorthands such as *the industry* (film/television) and *out here* (the West Coast). Phonetically, words like *school* and *cool* require a velarized 'dark L' [ɫ] rather than a light alveolar tap.
 
 ### Vocabulary And Expressions
 
@@ -3458,53 +1683,11 @@ Write a sentence about a new hobby you started using the expression "I caught th
 | School | SKOO-ul | Pronouncing a hard, flat 'L'. Native speakers use a "dark L" that creates an extra syllable sound. |
 | Theater | THEE-uh-ter | Pronouncing the 'a' strongly. |
 
-### Good Sentences To Imitate
-
-- She took one ballet lesson and immediately caught the bug.
-- I wanted to dive head first into starting my own business.
-- The real estate market is booming out here in California.
-- I grew up back east, but I moved out here for college.
-- If you have any questions during the presentation, feel free to jump right in.
-- The restaurant is located right in the heart of the city.
-- I want to say it cost about fifty dollars, but I'm not sure.
-- This room is my office slash guest bedroom.
-
-### Practice Prompts
-
-- What is something you "grew to like" as you got older?
-- If you live in Los Angeles and someone asks if you work in "the industry," what do they mean?
-- Write a sentence using "slash" to describe a person with two jobs.
-
-### Mini Quiz
-
-- If a business is making a ton of money and expanding rapidly, it is ____________.
-- If you start a new project immediately with massive enthusiasm, you dived ____________.
-- If someone says "I want to say it was Tuesday," are they absolutely certain it was Tuesday?
-
-#### Answer Key
-
-- Booming.
-- Head first (or dived in).
-- No, they are guessing or trying to remember.
-
 ## Idioms using the word "Name"
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, native speaker Drake teaches a variety of highly common English idioms and expressions that all revolve around the word "name."
-
-### Key Points
-
-- Expressions for remembering (or forgetting) people: what's-his-name, I didn't catch your name, bad with names.
-- Expressions for reputation: make a name for yourself, name dropper.
-- Expressions for reality and accusations: the name of the game, name names.
-
-### How to Review
-
-Write a short paragraph about someone you met "the other day." Use the phrases "what's-his-name" and "I'm bad with names."
+The noun *name* forms idioms denoting recall (*bad with names*, *what's-his-name*, *didn't catch your name*), professional reputation (*make a name for yourself*, *name dropper*), and fundamental realities or direct accusations (*the name of the game*, *name names*).
 
 ### Vocabulary And Expressions
 
@@ -3534,56 +1717,11 @@ Write a short paragraph about someone you met "the other day." Use the phrases "
 | What's his name | WHATS-iz-name (drop the 'H' sound on his) |
 | The other day | THEE-uther-day (link the 'E' of 'the' to the 'O' of 'other') |
 
-### Good Sentences To Imitate
-
-- He can sing, dance, act-you name it, he can do it.
-- I was talking to what's-her-name the other day about the project.
-- I figured you wouldn't want to come since you were sick.
-- I'm sorry, I didn't catch your name; I am really bad with names.
-- In sales, rejection is just the name of the game.
-- The scammer duped the old lady into giving him her credit card.
-- Stop calling your brother names!
-- I don't like him; he's always name-dropping to sound important.
-- I'm on a first-name basis with the CEO.
-- The detective demanded that the suspect start naming names.
-- He worked hard and made a name for himself in the restaurant industry.
-
-### Practice Prompts
-
-- Have you ever been "duped" or "scammed" into buying something? What happened?
-- Write a sentence describing a career where rejection is "the name of the game."
-- Think of a friend. What kind of gift would have "their name written all over it"?
-
-### Mini Quiz
-
-- If you forget someone's name right after meeting them, what polite phrase can you use?
-- If you have absolutely zero money in your bank account, you don't have a _________ to your name.
-- If someone constantly brags about meeting celebrities, they are a ____________.
-
-#### Answer Key
-
-- "I'm sorry, I didn't catch your name."
-- Penny.
-- Name dropper.
-
 ## Emergency Services Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this interview with Tom, a former firefighter and paramedic, you will learn the advanced vocabulary and expressions used in emergency services, as well as general conversational phrases used to discuss career changes, teasing, and teamwork.
-
-### Key Points
-
-- Career vocabulary: Firefighter/paramedic, shift, chain of command.
-- Expressions of camaraderie: Tease, camaraderie, for lack of a better term.
-- Extreme situations: Line of duty, at all hours, inebriated, onslaught.
-
-### How to Review
-
-Write a paragraph describing the difficult parts of a challenging job using the phrases "chain of command," "at all hours," and "camaraderie."
+Emergency services and crisis operations utilize organizational terms like *shift*, *chain of command*, and *line of duty*. High-stress workplace dynamics and camaraderie are described using phrases like *tease*, *onslaught*, *at all hours*, *inebriated*, and conversational hedges like *for lack of a better term*.
 
 ### Vocabulary And Expressions
 
@@ -3609,54 +1747,11 @@ Write a paragraph describing the difficult parts of a challenging job using the 
 | Inebriated | in-EE-bree-ay-ted | Ensure you link it correctly when speaking fast: "in an inebriated state" (in-an-in-ee-bree-ay-ted). |
 | Criticism | CRI-ti-si-zm | All three 'i's are short 'i' sounds, not 'ee'. |
 
-### Good Sentences To Imitate
-
-- The toddlers were playing in the park.
-- I was a small-town boy who shifted into a large international city.
-- Good friends often tease each other playfully.
-- It is good to have a source of camaraderie with your team.
-- In the summer, we would sit outside and talk.
-- It was a perfect storm, for lack of a better term.
-- You cannot skip the boss; you must follow the chain of command.
-- The baby cries at all hours of the night.
-- You can tell he is inebriated by the way he is walking.
-
-### Practice Prompts
-
-- Write a sentence about something you "would" do every day when you were a child.
-- What does it mean if someone makes noise "at all hours"?
-- Use the phrase "for lack of a better term" in a sentence describing a confusing situation.
-
-### Mini Quiz
-
-- What is a more polite, formal word for "drunk"?
-- What is the word for the mutual trust and friendship that develops among teammates?
-- True or False: "I would go to the beach" can mean "I used to go to the beach regularly."
-
-#### Answer Key
-
-- Inebriated.
-- Camaraderie.
-- True.
-
 ## Real Estate and Business Idioms
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this interview with Lauren, a professional home stager in Los Angeles, you will learn the vocabulary and expressions used in the real estate industry. A home stager prepares a house for sale by filling it with beautiful furniture, and Lauren's business vocabulary is excellent for anyone working in a fast-paced corporate environment.
-
-### Key Points
-
-- Sales terminology: Appeal to a broader audience, multiple offers, over asking, high volume.
-- Business flow: Fast-paced, move forward, seamlessly.
-- Description words: Luxurious, high-rise condo, blown away.
-
-### How to Review
-
-Describe a time when you were "blown away" by a product or a service, and explain how the business handled everything "seamlessly."
+Real estate staging and transactions rely on market phrases such as *appeal to a broader audience*, *multiple offers*, *over asking*, and *high volume*. Operational momentum and property presentations are characterized as *fast-paced*, *moving forward seamlessly*, and leaving clients *blown away*.
 
 ### Vocabulary And Expressions
 
@@ -3684,58 +1779,11 @@ Describe a time when you were "blown away" by a product or a service, and explai
 | Luxury | LUG-zhur-ee | Pronouncing the 'x' as a sharp 'ks'. It is a soft 'g' sound. |
 | Luxurious | lug-ZHUR-ee-us |  |
 
-### Good Sentences To Imitate
-
-- The new design appeals to a broader audience.
-- The house is beautiful, and we expect to receive multiple offers.
-- This is a very fast-paced industry.
-- They decided to move forward with the project.
-- That restaurant has been around for 50 years.
-- She lives in a high-rise condo downtown.
-- I agree with his theory to an extent.
-- We need to hire someone to cater the wedding.
-- I was totally blown away by his performance.
-- Your support really meant a lot to me.
-- We process a high volume of orders every day.
-- The transition to the new software went seamlessly.
-- They offered twenty thousand dollars over asking.
-
-### Practice Prompts
-
-- Have you ever been "blown away" by someone's talent? Describe it.
-- What is a polite way to say you only agree with a colleague's idea up to a certain point?
-- Write a sentence describing a business that does a "high volume" of sales.
-
-### Mini Quiz
-
-- If you own an apartment in a very tall building, what do you own?
-- If an event went perfectly with zero mistakes, it went ____________.
-- What is the difference between an apartment and a condo?
-
-#### Answer Key
-
-- A high-rise condo.
-- Seamlessly.
-- You rent an apartment, but you own a condo.
-
 ## Fine Dining and Restaurant Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this interview with Kendra, a server at a top-tier restaurant, you will learn the specific terminology used in the American restaurant industry. You will also learn advanced adjectives for describing people and buildings, such as flashy and unassuming.
-
-### Key Points
-
-- Restaurant terminology: Fine dining, pairings, server (vs. waiter/waitress), diner, dish.
-- Descriptive adjectives: Flashy, unassuming, sub-par, outlandish, disheartening.
-- Expressions of effort: Bring your A-game, push and pull, abide by.
-
-### How to Review
-
-Pretend you are reviewing an expensive restaurant. Use the words "fine dining," "sub-par," and "disheartening" to describe a negative experience.
+American hospitality terminology prefers the gender-neutral term *server* over *waiter/waitress* and uses industry terms like *fine dining*, *pairings*, and *dish*. Professional standards require workers to *bring your A-game*, *abide by* protocols, and navigate stylistic contrasts ranging from *unassuming* to *flashy* or *outlandish*.
 
 ### Vocabulary And Expressions
 
@@ -3760,58 +1808,11 @@ Pretend you are reviewing an expensive restaurant. Use the words "fine dining," 
 | Struggle/balance | Push and pull | A constant struggle to find the right balance between two things. | Life is a constant push and pull between work and family. |
 | Below average | Sub-par | Not high quality; worse than expected. | The food at that restaurant was sub-par. |
 
-### Good Sentences To Imitate
-
-- The wine pairings for this dinner are excellent.
-- She bought a flashy new sports car.
-- They like to flaunt their wealth by buying expensive clothes.
-- The entrance was concealed behind an unassuming door.
-- I prefer to be called a server rather than a waitress.
-- We are going to the diner to get some food.
-- It was very disheartening to fail the test again.
-- You must abide by the terms of the contract.
-- She wore an outlandish outfit to the office.
-- When he gets angry, he is difficult to reason with.
-- You have made remarkable progress in your English!
-- I don't think the people back home know about this law.
-- If you want the job, you need to bring your A-game to the interview.
-
-### Practice Prompts
-
-- What does it mean if someone's work is "sub-par"?
-- What is the difference between a "dinner" and a "diner"?
-- Write a sentence about a rule you must "abide by" at your school or workplace.
-
-### Mini Quiz
-
-- If a famous actor dresses very modestly and drives a cheap car, he is being ____________.
-- If you do your absolute best on a test, you brought your ____________.
-- True or False: "Server" is the gender-neutral, professional term for a waiter or waitress.
-
-#### Answer Key
-
-- Unassuming.
-- A-game.
-- True.
-
 ## VIP and Hospitality Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-Megan works at Spago, one of the most famous fine-dining restaurants in Beverly Hills. In this interview, she discusses serving celebrities and the VIP treatment they receive. Lisa explains several advanced expressions related to elite clientele, influence, and casual storytelling.
-
-### Key Points
-
-- Celebrity vocabulary: Spot, A-lister, VIP, top-tier clientele.
-- Casual storytelling: Using "and I go" or "and they're like" instead of "and I said."
-- Expressions of influence and service: Pull strings, accommodate, set aside.
-
-### How to Review
-
-Write a short story about trying to get a table at a famous restaurant. Use the phrases "VIP," "accommodate," and "pull strings."
+High-end hospitality discourse describes prominent patrons as *A-listers*, *VIPs*, or *top-tier clientele*, and leverages idioms of influence like *pull strings* and *set aside*. In informal narrative speech, quotative expressions such as *and I go* or *they're like* frequently replace formal reporting verbs like *I said*.
 
 ### Vocabulary And Expressions
 
@@ -3837,53 +1838,11 @@ Write a short story about trying to get a table at a famous restaurant. Use the 
 | If Tom Cruise called | Used for hypothetical situations (If he did this...). |
 | If Tom Cruise were to call | Also used for hypothetical situations; slightly more formal but means the exact same thing. |
 
-### Good Sentences To Imitate
-
-- I spotted two mistakes in my essay.
-- Tom Cruise is a Hollywood A-lister.
-- This firm attracts top-tier clientele.
-- I don't know the owner, so I can't pull any strings to get you a reservation.
-- Is there a table set aside for the VIPs?
-- Why do you always do your homework at the last minute?
-- I am genuinely happy for your success.
-- The hotel staff was very accommodating to our requests.
-
-### Practice Prompts
-
-- Have you ever done something "last minute"? What was it?
-- What does it mean if an actor is on the "B-list"?
-- Rewrite this casual sentence into formal English: "And he goes, 'I can't believe it!' and I'm like, 'Me neither!'"
-
-### Mini Quiz
-
-- If a restaurant is the absolute best in the city, it is a _________ restaurant.
-- If you use secret connections to get a favor, you are pulling ___________.
-- If someone tells you the truth and is very sincere, they are being ____________.
-
-#### Answer Key
-
-- Top-tier.
-- Strings.
-- Genuine.
-
 ## Advanced Vocabulary Quiz
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson features a 12-word multiple-choice quiz designed to test your knowledge of highly advanced English vocabulary verbs. Lisa explains the definition of each word, provides sample sentences, and gives crucial pronunciation tips for tricky consonants and vowels.
-
-### Key Points
-
-- Verbs of impact: Mitigate, undermine, underpin, withstand.
-- Verbs of communication: Gush, disparage, admonish, equivocate.
-- Verbs of control: Harness, inculcate, rally, wield.
-
-### How to Review
-
-Take the 12 words listed below and try to write one cohesive paragraph that uses at least five of them correctly (e.g., a story about a leader rallying a team to withstand an onslaught).
+High-register verbs provide precise conceptual nuance across domains: impact (*mitigate*, *undermine*, *underpin*, *withstand*), rhetoric and communication (*gush*, *disparage*, *admonish*, *equivocate*), and authority or motivation (*harness*, *inculcate*, *rally*, *wield*).
 
 ### Vocabulary Words
 
@@ -3912,58 +1871,11 @@ Take the 12 words listed below and try to write one cohesive paragraph that uses
 | Wield | WEE-uld | When a long vowel is followed by an 'L', add a tiny schwa (uh) sound before the L. (e.g., feel -> fee-ul). |
 | Withstand | with-STAND | The tongue must move quickly from the 'th' to the 's' without dropping either sound. |
 
-### Good Sentences To Imitate
-
-- What can be done to mitigate the risks?
-- She began to gush about her favorite movie.
-- He learned to harness his inner strength during the competition.
-- The teacher worked hard to inculcate a love of reading in her students.
-- Critics disparaged the movie for its lack of originality.
-- The team rallied and won the game.
-- The librarian admonished the children for making too much noise.
-- Instead of giving a clear answer, the lawyer equivocated.
-- The knight wielded his sword. (Silent W in sword: SORD).
-- The ancient architecture has withstood the test of time.
-- Corruption can undermine the stability of a government.
-- Trust and communication underpin every healthy relationship.
-
-### Practice Prompts
-
-- Write a sentence about a building that was built to "withstand" a natural disaster.
-- What does a politician do when they "equivocate" during a debate?
-- Describe a time you had to "rally" together with your friends or coworkers to solve a problem.
-
-### Mini Quiz
-
-- If you gently tell a child to stop running, you _________ them.
-- If you slowly damage someone's confidence, you _________ it.
-- If you speak with intense, overwhelming excitement about a celebrity, you are _________ over them.
-
-#### Answer Key
-
-- Admonish.
-- Undermine.
-- Gushing.
-
 ## Business and News Vocabulary: Meta Layoffs
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa uses an article from The New York Times about Meta's recent layoffs to teach advanced business vocabulary. The lesson also covers the pronunciation of popular social media platforms and tricky words like "accumulate."
-
-### Key Points
-
-- Business changes: Workforce, hiring freeze, slash, reversal of fortune.
-- Describing success and excess: High-flying, lavish, perk, soar.
-- Difficulties: Scrutiny, dent, grapple with, play out.
-- Pronunciation rules: Facebook (uh sound, not ooh), Instagram/WhatsApp (schwa and short 'a' sounds).
-
-### How to Review
-
-Write a paragraph describing a struggling business using the words "grapple with," "slash," "workforce," and "reversal of fortune."
+Corporate retrenchment is chronicled through terms like *hiring freeze*, *slash*, *scrutiny*, and *reversal of fortune*, contrasting with previous *high-flying*, *lavish perks*. Phonetically, pronounce *Facebook* with a short /ʊ/ vowel (as in *book*, not /uː/) and apply reduced schwa and short /æ/ vowels across *Instagram* and *WhatsApp*.
 
 ### Vocabulary And Expressions
 
@@ -3993,59 +1905,11 @@ Write a paragraph describing a struggling business using the words "grapple with
 | WhatsApp | WUTS-app | The first 'a' is an 'uh' sound. The second 'a' is short 'a' (like apple). |
 | Accumulate | uh-KYOO-myoo-layt | The two 'u's are pronounced as 'yoo', not 'ooh'. |
 
-### Good Sentences To Imitate
-
-- The parent company reduced its workforce by 13 percent.
-- We had to implement a hiring freeze for the rest of the year.
-- The store slashed its prices by 50%.
-- You look absolutely stunning in that dress.
-- The once high-flying company is now in ruins.
-- The room was lavishly decorated.
-- My friends showered me with gifts on my birthday.
-- One of the perks of the job is free travel.
-- Celebrities constantly deal with intense media scrutiny.
-- The bad news didn't dent his optimism.
-- Housing prices have soared in the last few years.
-- The government is grappling with a severe economic slowdown.
-- I wonder how this situation is going to play out.
-
-### Practice Prompts
-
-- Have you ever received a "perk" at a job? What was it?
-- What does it mean if an actor experiences a "reversal of fortune"?
-- Use the phrasal verb "play out" in a sentence about an unpredictable sports game.
-
-### Mini Quiz
-
-- If you cut jobs or prices drastically, you _________ them.
-- If your confidence is slightly damaged, it has been _________.
-- If an issue is very complicated and you are struggling to fix it, you are _________ with it.
-
-#### Answer Key
-
-- Slash.
-- Dented.
-- Grappling.
-
 ## Economic and Political Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa uses an article from Time Magazine about high gas prices to teach vocabulary related to economic difficulty and government action. The lesson also highlights the critical difference between "little" (negative) and "a little" (positive).
-
-### Key Points
-
-- Grammar focus: Little (not enough/lack of) vs. A little (some/positive).
-- Extreme adjectives and verbs: Whopping, rage on, scramble, slam, triple.
-- Economic problems: Crunch, curb, pain at the pumps.
-- Solutions: Ramp up, near-term, address.
-
-### How to Review
-
-Write a paragraph about an economic "crunch" using the words "ramp up," "curb," "scramble," and "whopping."
+Grammatically, *little* denotes scarcity or negative insufficiency ('almost none'), whereas *a little* expresses positive quantity ('some'). Economic volatility and policy interventions are described using vivid action language like *whopping*, *crunch*, *curb*, *scramble*, *ramp up*, and *pain at the pumps*.
 
 ### Vocabulary And Expressions
 
@@ -4073,57 +1937,11 @@ Write a paragraph about an economic "crunch" using the words "ramp up," "curb," 
 | Address | Noun: ADD-ress (First syllable stressed: I need your address). Verb: uh-DRESS (Second syllable stressed: We must address the crisis). |
 | Ramp up | Make sure to pronounce the 'p' clearly before the 'u': ramp-pup. |
 
-### Good Sentences To Imitate
-
-- There is little sign that relief is coming soon.
-- I have a little money saved, so I can buy lunch.
-- They charged a whopping $50 for parking.
-- The storm raged all night long.
-- I had to scramble to finish my essay before the deadline.
-- The factory ramped up production to meet the high demand.
-- The movie was slammed by critics for being too boring.
-- The population of the city has tripled over the last 20 years.
-- Small businesses are feeling the credit crunch.
-- We expect prices to drop in the near-term.
-- Thank you for addressing this important issue.
-- You need to learn how to curb your anger.
-
-### Practice Prompts
-
-- Explain the difference in meaning between "I have little time" and "I have a little time."
-- Write a sentence about a company trying to "ramp up" sales.
-- What is a "whopping" amount of money to pay for a cup of coffee?
-
-### Mini Quiz
-
-- If you criticize someone extremely harshly in public, you _________ them.
-- To control or limit a harmful behavior is to _________ it.
-- A severe shortage of money or time is called a _________.
-
-#### Answer Key
-
-- Slam.
-- Curb.
-- Crunch.
-
 ## Career and Education Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa uses an article from the Los Angeles Times to discuss why some students from community colleges end up making more money than students from elite universities. The vocabulary focuses on careers, wages, and professional comparisons.
-
-### Key Points
-
-- Career success: Lucrative, out earn, propel, wage earner.
-- Education terminology: Community college, elite university, grad, yearlong.
-- Professional standing: Peers, poised to, stand to, let go of.
-
-### How to Review
-
-Write a paragraph about someone changing careers. Use the phrases "let go of," "lucrative," "peers," and "out earn."
+Comparative career and earnings outcomes utilize terms like *lucrative*, *out-earn*, *propel*, and *wage earner* alongside institutional distinctions between *community colleges* and *elite universities*. Idiomatic constructions of potential and status include *poised to*, *stand to*, and measuring success relative to *peers*.
 
 ### Vocabulary And Expressions
 
@@ -4149,56 +1967,11 @@ Write a paragraph about someone changing careers. Use the phrases "let go of," "
 | Graduate | Noun: GRAD-joo-it | The 'a' at the end of the noun form is reduced to an 'ih' or 'uh' sound. |
 | Graduate | Verb: GRAD-joo-ayt | The 'a' at the end of the verb form is a full long 'a' sound. |
 
-### Good Sentences To Imitate
-
-- Real estate can be a very lucrative major.
-- I can't believe he out earns me!
-- That ten-year-old is much taller than his peers.
-- We are planning a yearlong trip around the world.
-- The company is poised to launch its new product.
-- If the deal fails, we stand to lose a lot of money.
-- My boss asked me to work overtime this weekend.
-- He had to let go of his high school dream.
-- Her new degree propelled her to the top 5% of wage earners.
-- The community college grads are out earning many who attended prestigious universities.
-
-### Practice Prompts
-
-- What does it mean if someone "stands to" make a lot of money?
-- Write a sentence about a job that requires you to work "overtime."
-- Name a career path that is generally considered "lucrative."
-
-### Mini Quiz
-
-- People who are your exact age or professional level are your _________.
-- If you push someone quickly toward success, you _________ them.
-- If an action takes an entire year, it is a _________ effort.
-
-#### Answer Key
-
-- Peers.
-- Propel.
-- Yearlong.
-
 ## Real Estate and Housing Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa reads an article from The New York Times discussing the disappearance of the affordable "starter home" in America. You will learn specific vocabulary related to housing, real estate, and government regulations.
-
-### Key Points
-
-- Housing types: Starter home, entry-level, no-frills, detached house, mcmansion.
-- Real estate terms: Build equity, go for, in demand, booming.
-- Grammar: Few (negative/not enough) vs. A few (positive/some).
-- Action verbs: Squeeze out, ban, give a foothold.
-
-### How to Review
-
-Explain why a young person might struggle to buy a "starter home" today. Use the phrases "squeezed out," "mcmansion," "go for," and "build equity."
+Housing classifications distinguish modest *starter homes* and *no-frills entry-level houses* from expansive *McMansions*, while financial growth centers on *building equity*. Grammatically, *few* indicates an acute shortage ('hardly any'), whereas *a few* denotes a modest positive quantity ('some').
 
 ### Vocabulary And Expressions
 
@@ -4226,56 +1999,11 @@ Explain why a young person might struggle to buy a "starter home" today. Use the
 | What do they go for? | Spoken naturally, it sounds like: Whut-do-they GO-fer? |
 | Steep / Steeply | Meaning a sharp angle (a steep hill) OR very expensive (a steep price). |
 
-### Good Sentences To Imitate
-
-- Whatever happened to Elegance?
-- Entry-level homes have been squeezed out of the market.
-- They started off in a small starter home.
-- That specific model of phone is in high demand.
-- Those shoes go for about two hundred dollars.
-- The scholarship gave him a foothold to start his career.
-- Land costs have risen steeply in booming parts of the country.
-- The new government rules are far more prescriptive.
-- They banned smoking inside the restaurant.
-- The small detached house has all but vanished.
-
-### Practice Prompts
-
-- What is the difference between "I have a few ideas" and "I have few ideas"?
-- What does it mean if a house is described as "no-frills"?
-- Why does the word "mcmansion" have a negative connotation?
-
-### Mini Quiz
-
-- If you buy a house to increase your overall wealth, you are trying to build _________.
-- If an area's economy is growing very rapidly, the area is _________.
-- A large house built quickly with low-quality materials is pejoratively called a _________.
-
-#### Answer Key
-
-- Equity.
-- Booming.
-- Mcmansion.
-
 ## Political and Debate Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa uses an article from The New York Times about a presidential debate to teach highly advanced political and argumentative vocabulary. The language covered is excellent for discussing conflicts, debates, and intense situations.
-
-### Key Points
-
-- Debate and insult: Hurl, invective, striking.
-- Political actions: Retribution, give rise to, take on, step aside.
-- Characterization: Figure, cast as, enmity.
-- Pronunciation: Dropping the T after an N (e.g., Atlanta -> "Atlanna").
-
-### How to Review
-
-Write a short paragraph about two rival companies. Use the words "enmity," "hurl," "invective," and "take on."
+Political conflict and formal debates are characterized by combative rhetoric like *hurl invective*, *retribution*, and deep-seated *enmity*, with figures *cast as* specific archetypes. Phonetically in American English, post-nasal /t/ is frequently elided after /n/ in rapid speech (e.g., *Atlanta* pronounced 'Atlanna').
 
 ### Vocabulary And Expressions
 
@@ -4300,55 +2028,11 @@ Write a short paragraph about two rival companies. Use the words "enmity," "hurl
 | Atlanta | at-LAN-nuh | When a 't' is between an 'n' and a vowel, Americans often drop the 't' (e.g., in-ner-net for internet). |
 | I want to / I want it | I wahn-nuh / I wahn-nit | Dropping the 't' after the 'n' in casual speech. |
 
-### Good Sentences To Imitate
-
-- They hurled insults and invective in strikingly personal terms.
-- The coach's invective demoralized the entire team.
-- He feared retribution from his political opponents.
-- The heavy rains gave rise to severe flooding.
-- She decided to take on the reigning champion.
-- Shakespeare is an iconic figure in literature.
-- She felt unfairly cast as the troublemaker.
-- The deep enmity on display damaged both of their reputations.
-- They called for the leader to step aside and let someone new take charge.
-
-### Practice Prompts
-
-- Have you ever known someone to "hurl" insults when they were angry?
-- What does it mean if a politician is asked to "step aside"?
-- Use the phrase "gave rise to" to describe how a mistake caused a big problem.
-
-### Mini Quiz
-
-- Highly abusive or critical language is called _________.
-- Deep hatred or hostility toward someone is known as _________.
-- If you want to challenge someone in a debate, you are preparing to _________ them _________.
-
-#### Answer Key
-
-- Invective.
-- Enmity.
-- Take (them) on.
-
 ## AI and the Job Market Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa uses an article from the Los Angeles Times about Artificial Intelligence replacing jobs. You will learn excellent professional vocabulary to describe work tasks, business decisions, and emotional reactions to the changing economy.
-
-### Key Points
-
-- Describing tasks: Mundane, tedious.
-- Action verbs: Lean on, chime in, wipe out, roll out.
-- Reactions and impact: Ripple, frenzy, fuel, heightened.
-- Expressions: Rewrite the rule book, in the long run, roughly.
-
-### How to Review
-
-Write a paragraph about a new technology replacing an old one. Use the phrases "wipe out," "roll out," "mundane," and "rewrite the rule book."
+Technological disruption frames automation as replacing *mundane* and *tedious* tasks while threatening to *wipe out* roles as new systems *roll out*. Economic and social reverberations are described through words like *ripple*, *frenzy*, and *rewrite the rule book*, assessing long-term effects *in the long run*.
 
 ### Vocabulary And Expressions
 
@@ -4375,57 +2059,11 @@ Write a paragraph about a new technology replacing an old one. Use the phrases "
 | Heightened | HY-tend |
 | Few vs. A few | "I have few problems" = Good (almost zero). "I have a few problems" = Bad (some problems). |
 
-### Good Sentences To Imitate
-
-- AI can easily automate mundane and tedious tasks.
-- The company is leaning heavily on artificial intelligence.
-- If you have an opinion, please feel free to chime in.
-- The storm completely wiped out the small village.
-- The impact of the new law is rippling across multiple sectors.
-- The new video game caused a buying frenzy.
-- High prices are fueling anxiety among workers.
-- The trip will cost roughly five hundred dollars.
-- This decision will benefit us in the long run.
-- The company will roll out the new service next week.
-- AI is really rewriting the rule book on what work looks like.
-
-### Practice Prompts
-
-- Describe a task you consider "tedious."
-- What does it mean if someone tells you to "chime in"?
-- Name a company that completely "rewrote the rule book" for its industry.
-
-### Mini Quiz
-
-- To completely destroy or eliminate something is to _________ it _________.
-- If an emotion or rumor spreads slowly through a group, it is _________ through the group.
-- If you make a fire or an emotion stronger, you _________ it.
-
-#### Answer Key
-
-- Wipe (it) out.
-- Rippling.
-- Fuel.
-
 ## Job Seeking and Professional Idioms
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa reads an LA Times article about candidates using AI to help them get jobs. Native speakers use specific expressions to talk about careers, trust, and interviews. Learning these will make your business English sound incredibly natural.
-
-### Key Points
-
-- Seeking jobs: Land a job, secure, competitive edge.
-- Deception and mistakes: Fishy, embellish, misrepresent, breach of trust, no-no.
-- Outcomes: Backfire, yield, rub the wrong way.
-- Dealing with difficulty: Navigate.
-
-### How to Review
-
-Write a paragraph about a disastrous job interview. Use the words "embellish," "misrepresent," "backfire," and "rub the wrong way."
+Securing employment relies on establishing a *competitive edge* to *land a job*, while caution is warranted against deceptive practices like *embellishing* resumes or actions considered an interview *no-no*. Dishonest or suspicious tactics (*fishy*) risk a *breach of trust*, causing efforts to *backfire* or *rub interviewers the wrong way*.
 
 ### Vocabulary And Expressions
 
@@ -4452,59 +2090,11 @@ Write a paragraph about a disastrous job interview. Use the words "embellish," "
 | Big no-no | Used very commonly in both casual and professional settings for something you absolutely should not do. |
 | Rub the wrong way | The full idiom is "to rub someone the wrong way." (e.g., He rubbed me the wrong way). |
 
-### Good Sentences To Imitate
-
-- Learning advanced Excel will give you a competitive edge.
-- Lying on your resume might backfire during the interview.
-- The recruiter noticed something fishy about the applicants.
-- Try not to embellish your work experience.
-- His comment rubbed me the wrong way.
-- Many young professionals are struggling to navigate office politics.
-- Reading answers off a screen is a total breach of trust.
-- Using slang in a formal interview is a big no-no.
-- After applying to 50 places, he finally landed an interview.
-- The new marketing strategy didn't yield the expected growth.
-- She secured an internship at a major law firm.
-- He misrepresented his education on his application.
-- That is a very bold claim to make without any proof.
-
-### Practice Prompts
-
-- Have you ever had a plan that "backfired"? What happened?
-- What is an example of a "big no-no" at your workplace or school?
-- What is the difference between "lying" and "embellishing"?
-
-### Mini Quiz
-
-- If a situation seems suspicious and not quite right, it feels _________.
-- To successfully get a job or a deal is to _________ it.
-- If you accidentally annoy someone, you _________ them the _________ _________.
-
-#### Answer Key
-
-- Fishy.
-- Land / Secure.
-- Rub (them the) wrong way.
-
 ## Corporate Leadership Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa reads an article about Susan Wojcicki, the former CEO of YouTube, stepping down from her position. The article is packed with high-level vocabulary used to describe corporate transitions, struggles, and massive success.
-
-### Key Points
-
-- Career moves: Step down, tenure, wear many hats.
-- Describing companies/situations: Powerhouse, amateur, moment of truth, tough landscape.
-- Difficulties: Flounder, wave of layoffs, cost-cutting measures, brewing.
-- Communication and strategy: Elaborate, prompt, court.
-
-### How to Review
-
-Write a short paragraph about a company facing difficulty. Use the words "flounder," "step down," "cost-cutting measures," and "wave of layoffs."
+Corporate leadership transitions and crises center on key executive vocabulary: career shifts like step down, tenure, and wear many hats; market standing such as powerhouse versus amateur facing a moment of truth in a tough landscape; and organizational friction including flounder, brewing tensions, cost-cutting measures, and a wave of layoffs. Strategic engagement further relies on terms such as elaborate, prompt, and court.
 
 ### Vocabulary And Expressions
 
@@ -4531,59 +2121,11 @@ Write a short paragraph about a company facing difficulty. Use the words "flound
 | --- | --- | --- |
 | Amateur | AM-uh-cher | Do not pronounce the "teur" as "toor". It is a "cher" sound. |
 
-### Good Sentences To Imitate
-
-- The president is stepping down after 16 years.
-- During her tenure, she held multiple positions.
-- The representatives declined to elaborate on the issue.
-- What prompted her sudden departure?
-- There is a storm brewing between the two companies.
-- We can't take him seriously; he's just an amateur.
-- That company is a massive advertising powerhouse.
-- This is the moment of truth for the struggling business.
-- His marriage was floundering despite his financial success.
-- The company announced a new wave of layoffs.
-- While I understand what you're saying, I disagree.
-- The politician was skilled at courting the media.
-- Over the years, she has worn many hats at the company.
-
-### Practice Prompts
-
-- What does it mean if an employee is asked to "wear many hats"?
-- Use the word "amateur" in a sentence about sports or art.
-- What is the difference between a company that is a "powerhouse" and one that is "floundering"?
-
-### Mini Quiz
-
-- If you resign from your position as CEO, you _________ _________.
-- A critical time when a major test or decision occurs is the _________ of _________.
-- If trouble is slowly developing in secret, we say trouble is _________.
-
-#### Answer Key
-
-- Step down.
-- Moment (of) truth.
-- Brewing.
-
 ## Hybrid Work and Office Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-This lesson uses a New York Times article about the struggle companies face when asking employees to return to the office (RTO) after the pandemic. Lisa explains excellent vocabulary related to business logic, confusing situations, and office culture.
-
-### Key Points
-
-- Business concepts: Bottom line, hybrid work, bulk, scale back.
-- Confusion and difficulty: Conundrum, gibberish, daunting, lurch.
-- Social interaction: RSVP, banter, pants that don't button.
-- Beliefs and truths: Gospel, outweigh, set in.
-
-### How to Review
-
-Write a paragraph about a difficult business problem. Use the words "conundrum," "bottom line," "scale back," and "outweigh."
+Navigating return-to-office and hybrid work entails core operational terms like bottom line, hybrid work, bulk, and scale back. Workplace friction and communication hurdles involve handling a conundrum, deciphering gibberish, facing daunting tasks, or being left in the lurch. Office culture also hinges on casual banter, prompt RSVP etiquette, weighing trade-offs (outweigh), and accepting institutional norms (gospel) as realities set in.
 
 ### Vocabulary And Expressions
 
@@ -4612,59 +2154,11 @@ Write a paragraph about a difficult business problem. Use the words "conundrum,"
 | Complex | Noun: COM-plex (I live in an apartment complex). Adjective: com-PLEX (This is a complex problem). |
 | Banter | Can be used as a noun (cafeteria banter) or a verb (we bantered). |
 
-### Good Sentences To Imitate
-
-- The executives are facing a difficult conundrum.
-- It's hard to plan a party if everyone RSVPs "maybe."
-- The new software will definitely improve our bottom line.
-- COVID cases surged in the winter.
-- The company is scaling its office requirements back to two days.
-- The bulk of the population lives in cities.
-- I miss the cafeteria banter with my friends.
-- Two days working from home means wearing pants that don't button.
-- You shouldn't treat his opinions like gospel.
-- After a while, I stopped listening to his gibberish.
-- Starting a whole new career can feel very daunting.
-- A sense of comfort has set in for employees working from home.
-- We believe the benefits far outweigh the negatives.
-
-### Practice Prompts
-
-- Have you ever had to "scale back" your budget? What did you cut?
-- Use the word "gibberish" to describe someone speaking a language you don't know.
-- What is an example of a "daunting" task?
-
-### Mini Quiz
-
-- The total profit a company makes is known as its _________ _________.
-- If you joke around in a friendly way with your coworkers, you are _________.
-- A difficult, confusing problem is called a _________.
-
-#### Answer Key
-
-- Bottom line.
-- Bantering.
-- Conundrum.
-
 ## Corporate Struggles and Economics Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa covers a Los Angeles Times article about Netflix losing subscribers and cutting jobs. The vocabulary focuses on financial losses, employee anxiety, and sudden negative changes in a corporate environment.
-
-### Key Points
-
-- Loss and dropping: Shed, plummet, cut, steep slide.
-- Anxiety and negativity: Bleak, stir, angst, uncertainty.
-- Corporate terms: Rank and file, heavyweight, severance, undisclosed.
-- Surprises and trends: Curveball, skyrocket, grow complacent.
-
-### How to Review
-
-Write a paragraph describing a company losing money. Use the words "plummet," "shed," "bleak," and "severance."
+Corporate contraction and economic downturns are characterized by sharp declines—such as plummet, steep slide, and shedding jobs or subscribers—alongside widespread workplace angst, bleak forecasts, and uncertainty. These dynamics heavily impact the rank and file through severance packages while industry heavyweights navigate unexpected curveballs after growing complacent.
 
 ### Vocabulary And Expressions
 
@@ -4695,60 +2189,11 @@ Write a paragraph describing a company losing money. Use the words "plummet," "s
 | Stir vs. Steer | STUR vs. STEER | Stir (mix) has an 'er' sound. Steer (drive) has an 'ee' sound. |
 | Certainty | SER-tin-tee | The 't' in the middle is often held, and the 'a' is reduced to an 'ih'. |
 
-### Good Sentences To Imitate
-
-- The dog is shedding hair all over the couch.
-- His reputation plummeted after he was accused of the crime.
-- The future looks bleak for that specific industry.
-- The bad numbers stirred a mix of angst and uncertainty.
-- The rank and file workers deserve better pay.
-- He is a political heavyweight in the local government.
-- We must not grow complacent about the quality of our product.
-- The unemployment rate has skyrocketed.
-- It is of overriding importance to finish the project today.
-- They met at an undisclosed location.
-- When life throws you a curveball, you can't give up.
-- The steep drop in sales fueled anxiety among the staff.
-- They were told it was their last day and they would receive severance.
-
-### Practice Prompts
-
-- Have you ever been "thrown a curveball" in life? What happened?
-- What does it mean if a company pays an employee "severance"?
-- Use the word "plummet" in a sentence about the temperature in winter.
-
-### Mini Quiz
-
-- To decrease sharply and rapidly is to _________.
-- The ordinary workers at a company (not the managers) are called the _________ and _________.
-- An unexpected, disruptive surprise is called a _________.
-
-#### Answer Key
-
-- Plummet.
-- Rank and file.
-- Curveball.
-
 ## Emotional Resilience Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa talks to Joanne, a psychotherapist in Los Angeles, about dealing with rejection, criticism, and emotional struggles. You will learn excellent expressions to talk about emotional strength, personal identity, and handling difficult times.
-
-### Key Points
-
-- Expressions of similarity: Along the same lines.
-- Popular phrases: Catchphrase.
-- Emotional strength: Grounded, rooted, sense of oneself.
-- Dealing with difficulty: Face storms, knock down, thrive, emotional landscape.
-- Interactions/Roles: Look the part, caregivers, look the other way, matter.
-
-### How to Review
-
-Write a short paragraph about how you stay emotionally strong during difficult times. Try to use the words "grounded," "rooted," "face storms," and "thrive."
+Navigating psychological adversity requires maintaining a strong sense of oneself by remaining grounded and rooted amid an evolving emotional landscape. Key expressions for confronting setbacks include being able to face storms, refusing to let challenges knock you down, and continuing to thrive. Discourse on personal growth also employs conversational transitions like along the same lines, observing whether someone can look the part, and addressing whether to intervene or look the other way.
 
 ### Vocabulary And Expressions
 
@@ -4777,61 +2222,11 @@ Write a short paragraph about how you stay emotionally strong during difficult t
 | At once | Can mean "immediately" (Do it at once!) or "simultaneously" (Two things at once). |
 | Grounded | GROWN-did (Used to describe someone who is mentally and emotionally stable). |
 
-### Good Sentences To Imitate
-
-- Let's ask another question along the same lines.
-- She takes unique emotional skills to thrive in this industry.
-- "You have to know yourself" is a popular catchphrase.
-- Despite his huge success, he remains surprisingly grounded.
-- If you want to work at the law firm, you have to dress the part.
-- This was a hard day, but I am rooted.
-- It doesn't matter how fast the wind blows; it will not knock me down.
-- Changing our energy sources is absolutely critical.
-- Everyone will face storms at some point in their life.
-- He has a very good sense of himself.
-- The computer can do many things at once.
-- When he was a child, his grandmother was his caregiver.
-- When the crime was committed, the authorities looked the other way.
-- What you say and what you do in the world matters.
-
-### Practice Prompts
-
-- Who is someone in your life who keeps you "grounded"?
-- What is a common "catchphrase" in your native language or in English?
-- Describe a time you had to "face a storm." What helped you get through it?
-
-### Mini Quiz
-
-- If you are emotionally stable and practical, you are a _________ person.
-- To ignore a bad situation instead of helping is to _________ the _________ _________.
-- If you want to change the topic to something similar, you can say, "_________ the _________ _________..."
-
-#### Answer Key
-
-- Grounded.
-- Look (the) other way.
-- Along (the) same lines.
-
 ## Wall Street Journal Vocabulary
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa reviews recent headlines from the Wall Street Journal. She explains advanced verbs, nouns, and expressions related to politics, international business, loyalty, and economics.
-
-### Key Points
-
-- Suggesting ideas: Float an idea.
-- Utilizing connections: Work your ties, leverage a bond, go back decades.
-- Protecting: Spare, fend off.
-- Loyalty and support: Check in on someone, stick with someone through thick and thin.
-- Urgent actions: Scramble, loom.
-
-### How to Review
-
-Write a paragraph describing a business partnership. Try to use the expressions "go back decades," "through thick and thin," and "leverage that bond."
+High-stakes business diplomacy relies on networking strategies such as floating an idea, working one's ties, and leveraging bonds that go back decades. Organizations frequently scramble to fend off threats or spare critical assets as market crises loom. Long-term partnerships depend on checking in on allies and sticking together through thick and thin.
 
 ### Vocabulary And Expressions
 
@@ -4858,45 +2253,11 @@ Write a paragraph describing a business partnership. Try to use the expressions 
 | Pharmaceuticals | far-muh-SOO-ti-kuhls (Stress the "SOO"). |
 | Aluminum (US) | uh-LOO-mi-num (British: al-yoo-MIN-ee-um). |
 
-### Good Sentences To Imitate
-
-- The scientists floated a theory about the origins of the virus.
-- She worked her ties in the media to get good publicity.
-- She wore sunscreen to spare her skin from the sun.
-- Fried chicken and dill pickles are a match made in heaven.
-- The family goes back generations in this town.
-- He tried to fend off the uncomfortable questions.
-- I wanted to check in on you after your big presentation.
-- My friends and I support each other through thick and thin.
-- Fans scrambled to buy tickets as soon as they went on sale.
-- The threat of a recession continues to loom.
-
-### Practice Prompts
-
-- Who is someone you have "stuck with through thick and thin"?
-- What is an idea you recently "floated" at work or to a friend?
-- Describe a time you had to "scramble" to finish something quickly.
-
-### Mini Quiz
-
-- If you suggest a new plan or idea for consideration, you _________ an idea.
-- To remain loyal to someone during good times and bad times is to stay with them _________ _________ and _________.
-- If an uncomfortable deadline is getting very close, the deadline is _________.
-
-#### Answer Key
-
-- Float.
-- Through thick (and) thin.
-- Looming.
-
 ## Tense vs. Neutral Vowels (EE vs. IH)
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In this lesson, Lisa teaches the difference between two critical English vowel sounds: the tense "ee" (as in feel, seat, eat) and the neutral "ih" (as in fill, sit, it). Mixing these up can lead to embarrassing mistakes. The difference is not just length; it's about tension in the lips and tongue.
+The tense "EE" (/iː/, as in feel, seat, eat) requires wide, tense lips and a high, tense tongue, typically indicated by digraphs like ee, ea, or ie. In contrast, the neutral "IH" (/ɪ/, as in fill, sit, it) requires completely relaxed articulators and typically corresponds to a single letter "i". A notable American exception is been, which is spelled with ee but pronounced with the neutral /ɪ/ (bin).
 
 ### Key Rules
 
@@ -4921,27 +2282,11 @@ In this lesson, Lisa teaches the difference between two critical English vowel s
 | Seat | Sit |
 | Leave | Live |
 
-### Good Sentences To Imitate
-
-- Can you feel it?
-- Did you hit it?
-- He doesn't want to leave.
-- He doesn't want to live.
-- How have you been? (Pronounced "bin" in American English).
-
-### Practice Prompts
-
-- Practice saying these pairs back to back: Heel/Hill, Sheep/Ship, Sleep/Slip. Focus on relaxing your tongue and lips completely for the second word.
-- Notice how your fingers under your jaw move slightly when you say the tense "EE" sound, but stay still when you say the relaxed "IH" sound.
-
 ## The T + N Sound in American English
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-This is an advanced American pronunciation lesson. Lisa teaches how Americans pronounce words that end with a T followed immediately by an N sound (like written, cotton, button). The vowel between them disappears, and the 'T' is held without releasing the tongue.
+When an unstressed vowel elides between /t/ and /n/ in words like written, cotton, button, and curtain, American English uses a nasal plosion rather than a standard /t/ release. The tongue forms the /t/ closure at the roof of the mouth and remains sealed, releasing air abruptly through the nose to articulate the /n/. This creates an abrupt stop without oral aspiration or an intervening vowel sound.
 
 ### Key Rules
 
@@ -4959,37 +2304,11 @@ When a word has a T and an N (with an unstressed vowel between them that disappe
 | Curtain | cur- (stop) -n |
 | Clinton | clin- (stop) -n |
 
-### Good Sentences To Imitate
-
-- My cotton shirt has buttons.
-- I have forgotten when the book was written.
-- I am certain that's the tallest mountain.
-
-### Practice Prompts
-
-- Practice holding your tongue against the roof of your mouth for the 'T' and simply shifting the airflow to your nose for the 'N'.
-- Be careful not to say "moun-TIN" or "cot-TON" (which sounds more British or overly enunciated). The transition should be an abrupt stop in the throat/mouth.
-
 ## American Politics and Pronunciation
-
-Date: 2026-06-04  
-Category: english-writing
 
 ### Summary
 
-In this lesson, Lisa uses vocabulary related to US Presidential elections to teach both American political concepts and advanced pronunciation rules. You will learn about political parties, how to pronounce politicians' names, and the different vowel sounds for the letter 'O'.
-
-### Key Points
-
-- Political Parties: Democrats (donkey symbol), Republicans (elephant symbol).
-- Election Geography: Blue states (Democrat), Red states (Republican), Swing states / battleground states (Undecided).
-- Taking office: Hold office, sworn into office, oath of office.
-- Acronyms: POTUS, FLOTUS, SCOTUS, GOP.
-- The letter O: Can be pronounced as "oh" (hold), "ah" (office, Donald), or "uh" (done).
-
-### How to Review
-
-Write a paragraph about an election process. Try to use the terms "hold office," "sworn in," "voter turnout," and "swing states."
+American electoral discourse spans foundational political classifications—including blue states, red states, and swing states (or battleground states)—alongside constitutional milestones such as taking the oath of office, being sworn into office, and acronyms like POTUS, FLOTUS, SCOTUS, and GOP. Phonetically, the letter 'O' shifts among three distinct values: the diphthong /oʊ/ (hold), the open vowel /ɑː/ (office, Donald), and the neutral /ʌ/ (done).
 
 ### Vocabulary And Expressions
 
@@ -5015,56 +2334,11 @@ Write a paragraph about an election process. Try to use the terms "hold office,"
 | Hold / Office | H-OH-ld (round lips). AH-ffice (open mouth, 'ah' sound). |
 | The Oval | Thee-Oval (Use "thee" because the next word starts with a vowel. Reduce the 'a' in oval). |
 
-### Good Sentences To Imitate
-
-- The red states are likely to vote for the Republican candidate.
-- He held public office for eight years.
-- When will the new prime minister be sworn into office?
-- Every 1 percent increase in voter turnout matters.
-- Democrats oppose the GOP stimulus plan.
-- The next occupant of the Oval Office will deal with that issue.
-- Have you ever ridden a horse?
-- The document is hidden from view.
-
-### Practice Prompts
-
-- Explain the difference between a "red state," a "blue state," and a "swing state."
-- Practice pronouncing "Donald" and "Ronald" using the "AH" sound for the O, and reducing the A at the end.
-- What does "POTUS" stand for?
-
-### Mini Quiz
-
-- The percentage of eligible people who actually vote is called the _________ _________.
-- When a president formally takes their position, they are _________ _________ office.
-- "GOP" stands for _________ _________ _________.
-
-#### Answer Key
-
-- Voter turnout.
-- Sworn into.
-- Grand Old Party.
-
 ## Real-Life Idioms and the Fast 'D' Sound
-
-Date: 2026-06-04  
-Category: english-speaking
 
 ### Summary
 
-In this lesson, Lisa talks to a man at a car wash in Los Angeles who owns an 18-year-old parrot named Buster. Through their natural conversation, you will learn several common idiomatic expressions and practice the American "fast D" (or flap T) sound that connects words together smoothly.
-
-### Key Points
-
-- Making choices: Pick and choose your battles, take it from there.
-- Replacements: Trade in.
-- Exceptions: Everything but, other than that.
-- Existence/Time: Be around, go way past.
-- Price ranges: Start at about, go all the way up to.
-- Pronunciation: The "fast D" sound (e.g., a lot easier sounds like a lod easier).
-
-### How to Review
-
-Write a short paragraph about buying a new phone. Try to use the expressions "trade in," "start at about," and "go all the way up to."
+Everyday conversation leverages pragmatic idioms such as pick your battles, trade in, take it from there, and restrictive qualifiers like everything but or other than that. In connected speech, American English converts an intervocalic /t/ across word boundaries into a voiced alveolar flap ("fast D" [ɾ]), smoothly linking phrases such as a lot easier (pronounced a lod easier). Numerical ranges are naturally framed using starts at about and goes all the way up to.
 
 ### Vocabulary And Expressions
 
@@ -5094,54 +2368,11 @@ When an American 'T' is between two vowel sounds, it often sounds like a fast 'D
 | Eating | ea-ding |
 | Started about | star-did-about |
 
-### Good Sentences To Imitate
-
-- He doesn't say "shut up" immediately; he picks and chooses his battles.
-- The advantage of a parrot is that there is no trading in.
-- His diet is everything but avocado, chocolate, alcohol, and onions.
-- He can't eat chocolate. Other than that, he eats whatever he feels like.
-- Will you be around tomorrow?
-- I won't be around; he'll live way past me.
-- You should find a good breeder and take it from there.
-- The prices start at about $4,000 and go all the way up to $15,000.
-
-### Practice Prompts
-
-- Have you ever "traded in" an electronic device or a car?
-- Practice saying the following phrase smoothly using the fast D sound: "A lot of people get another cat or dog."
-- Describe a restaurant's prices using "start at about" and "go all the way up to."
-
-### Mini Quiz
-
-- If you give the store your old car to buy a new one, you _________ it _________.
-- If you decide the next steps after finishing the first step, you say, "We'll _________ it _________ _________."
-- If you want to say someone is much older than someone else, you can say they are _________ older.
-
-#### Answer Key
-
-- Trade (it) in.
-- Take it from there.
-- Way.
-
 ## The Professional "What Factor"
-
-Date: 2026-06-04  
-Category: english-speaking
 
 ### Summary
 
-In this interview, Lisa speaks with Frank, an Adobe employee from Spain working in "Silicon Beach" (Los Angeles). They discuss how improving pronunciation and word stress is critical for career advancement, specifically for reaching management or director-level positions.
-
-### Key Points
-
-- The "What Factor": The frequency with which native speakers say "What?" or ask you to repeat yourself because they didn't understand your pronunciation.
-- Word Stress vs. Syllable Timing: Many languages (like Spanish) pronounce words syllable by syllable with equal weight. English requires stressing important words and reducing unimportant words.
-- Career Growth: Being a manager or director is entirely about communication. If you cannot smoothly express complex ideas, your career options will be limited.
-- Practice Tip: Don't just read; listen to the melody of English. Connect words rather than speaking "word by word."
-
-### How to Review
-
-Reflect on your own "What Factor." How often do people ask you to repeat yourself? Practice recording yourself reading a paragraph, focusing specifically on linking words together rather than reading word-by-word.
+The professional "What Factor" measures how frequently listeners ask a speaker to repeat themselves due to rhythm or pronunciation breakdowns. Overcoming it requires transitioning from syllable-timed delivery—where every syllable receives equal weight—to English stress-timing, which lengthens emphasized content words and reduces function words. Career progression to leadership hinges on mastering this natural sentence melody and connected speech rather than speaking word by word.
 
 ### Vocabulary And Expressions
 
@@ -5159,26 +2390,11 @@ Incorrect (Word by Word / Robotic): "I... love... work-ing... for... A-do-be."
 
 Correct (Linked and Stressed): "I love working for Adobe." (The words flow together smoothly, with emphasis on "love" and the middle syllable of "Adobe").
 
-### Good Sentences To Imitate
-
-- One of my goals is to reduce the "what factor."
-- As soon as you want to explain something complicated, it becomes much harder.
-- Being a manager is all about communication.
-- I love working there.
-
-### Practice Prompts
-
-- Record yourself saying: "I love working for this company." Listen to see if you pause between every word, or if it flows like a single song.
-- Why does Frank say pronunciation is essential for becoming a manager?
-
 ## 10 Commonly Mispronounced Words
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In this lesson, Lisa teaches the correct American English pronunciation of 10 words that even native speakers sometimes mispronounce. Using the correct pronunciation ensures you sound educated and professional in business settings.
+High-frequency pronunciation errors include confusing silicon (/ˈsɪlɪkən/, chips) with silicone (/ˈsɪlɪkoʊn/, sealant) and inserting spurious syllables into mischievous (/ˈmɪstʃɪvəs/, three syllables) or jewelry (/ˈdʒuːlri/, two syllables). Precise speech retains the root vowel change in pronunciation (/prəˌnʌnsiˈeɪʃən/, avoiding -noun-), avoids substituting /k/ into et cetera (/ɛt ˈsɛtərə/), and preserves the velar nasal in strengths. Morphological distinctions require singular parenthesis (/-sɪs/) versus plural parentheses (/-siːz/), and rejecting the nonstandard addition of 's' in anyway.
 
 ### Key Pronunciation Corrections
 
@@ -5211,30 +2427,11 @@ In this lesson, Lisa teaches the correct American English pronunciation of 10 wo
 - Correct: Anyway. (Never add an "s" to the end).
 - Incorrect: Anyways. "I didn't want to go, but I went anyway."
 
-### Good Sentences To Imitate
-
-- He got a job with a tech company in Silicon Valley.
-- The mischievous boys were disciplined by their parents.
-- I need to buy paper, a pen, a pencil, etc.
-- Many people watched the royal nuptials on television.
-- I would like to improve my English pronunciation.
-- Tell me about your three greatest strengths.
-- She is wearing beautiful jewelry.
-- I didn't want to go, but I went anyway.
-
-### Practice Prompts
-
-- Practice saying: "Etc." Make sure you start with an "E-T" sound, not an "E-X" sound.
-- Practice the word "Strengths." Make sure you feel the back of your tongue hit the roof of your mouth for the 'G' sound before saying the 'TH' and 'S'.
-
 ## Recommended Grammar Books for Advanced Learners
-
-Date: 2026-06-04  
-Category: english-grammar
 
 ### Summary
 
-Even advanced, fluent speakers often struggle with specific grammar rules like prepositions, articles (a, an, the), and gerunds vs. infinitives. In this video, Lisa recommends four books she uses with her private students to fix these final, persistent mistakes.
+Advanced grammar mastery targets persistent fossilized errors in prepositions (in April vs. on April 10th), article nuances (a few vs. few), and gerund-infinitive selections (afford to buy vs. resist eating). Specialized reference texts designed to eliminate these blind spots include The Ins and Outs of Prepositions, Three Little Words, The Article Book, and Betty Azar's Understanding and Using English Grammar.
 
 ### Key Grammar Challenges
 
@@ -5258,18 +2455,11 @@ Even advanced, fluent speakers often struggle with specific grammar rules like p
 - Understanding and Using English Grammar (by Betty Azar)
 - Best for: General advanced grammar, specifically verb tenses, gerunds, and infinitives. Highly recommended to buy with the accompanying workbook.
 
-### How to Review
-
-If you struggle with "in/on/at" or "a/the", consider looking up the books Lisa recommended. As a practice exercise right now, write down the difference between "I have a few friends" and "I have few friends."
-
 ## British vs. American Accent: 5 Common Words
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In this lesson, Lisa explains the pronunciation differences between American and British English for five very common words. You can choose which pronunciation to use depending on the accent you want to develop.
+Systematic pronunciation divergences between American and British English appear in again (US /əˈɡɛn/ vs. UK /əˈɡeɪn/), against (US /əˈɡɛnst/ vs. UK /əˈɡeɪnst/), herb (US silent-h /ɜːrb/ vs. UK aspirated /hɜːb/), and schedule (US /sk-/ vs. UK /ʃ-/). Additionally, unstressed -ile suffixes reduce to a schwa /əl/ in American English (mobile, missile, versatile, fertile) but retain the diphthong /-aɪl/ in British English.
 
 ### The 5 Words
 
@@ -5285,28 +2475,11 @@ In this lesson, Lisa explains the pronunciation differences between American and
 
 The American pronunciation of mobile (-bul instead of -bile) applies to other words as well: - Missile: American (MISS-ul) vs. British (MISS-ile) - Versatile: American (VER-suh-tul) vs. British (VER-suh-tile) - Fertile: American (FER-tul) vs. British (FER-tile)
 
-### Good Sentences To Imitate (American Accent)
-
-- He said it again and again. (a-gen)
-- The teacher is against us using cell phones in the classroom. (a-genst)
-- Are you for it or are you against it?
-- He lives in a small mobile home. (mo-bul)
-- She grows herbs in her garden. (erbs)
-- I scheduled it for next week. (ske-jooled)
-
-### Practice Prompts
-
-- Record yourself saying the 6 sentences above using the American pronunciation. Pay special attention to the silent 'H' in herb, and the 'SK' sound in schedule.
-- In your country, do schools generally teach American or British pronunciation?
-
 ## Common Workplace Vocabulary Mistakes
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-In this lesson, Lisa addresses three common vocabulary and pronunciation mistakes that foreign-born professionals often make in the American workplace. Making these mistakes can cause confusion or make you sound less professional.
+Workplace precision demands distinguishing uncountable noun advice (ending in /s/; never advices) from the verb advise (ending in /z/). Syllable stress dictates meaning in moral (initial stress /ˈmɔːrəl/, ethics) versus morale (final stress /məˈræl/, workplace spirit), as well as career (second-syllable stress /kəˈrɪər/, profession) versus carrier (initial stress /ˈkæriər/, transport provider).
 
 ### Key Distinctions
 
@@ -5332,28 +2505,11 @@ In this lesson, Lisa addresses three common vocabulary and pronunciation mistake
 - Carrier (Noun): Stresses the first syllable (CARE-ee-er). Someone or something that transports things (like an airline or delivery service).
 - Example: "Which carrier has the least expensive flights to New York?"
 
-### Good Sentences To Imitate
-
-- My colleague gave me some great career advice. (Stress "career" and "advice").
-- I strongly advise you not to argue with your boss.
-- Morale at that company is very high.
-- He is a very moral and honest person.
-- The mail carrier delivered the package.
-
-### Practice Prompts
-
-- Write a sentence asking someone for advice on a difficult situation. Make sure you don't add an "s" to advice!
-- Explain the difference between "moral" and "morale."
-- Practice saying "Career" and "Carrier" back to back, paying attention to which syllable receives the stress.
-
 ## Advanced Pronunciation Mistakes
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In this lesson, Lisa works with Anna, a foreign-born actress in Hollywood, to correct common pronunciation mistakes made by advanced speakers. The spelling of many English words does not match their pronunciation, leading to frequent errors.
+Discrepancies between English spelling and phonetics frequently cause errors in words like bury (homophonous with berry /ˈbɛri/), choir (/ˈkwaɪər/), cupboard (/ˈkʌbərd/, silent 'p'), drawer (/drɔːr/, silent 'w'), and clothes (pronounced /kloʊz/ with silent 'th'). Stress and silent consonants require special care in entrepreneur (final-syllable stress /ˌɑːntrəprəˈnɜːr/), adjective (silent 'd'), iron (/ˈaɪərn/), and gauge (/ɡeɪdʒ/). Ordinal decades (20th, 30th) also require inserting a short /ɪ/ or schwa before the final fricative (/ˈtwɛntiɪθ/).
 
 ### Vocabulary And Expressions
 
@@ -5388,35 +2544,11 @@ In this lesson, Lisa works with Anna, a foreign-born actress in Hollywood, to co
 | Iron | I-ern | The 'O' is silent. Do not say "i-ron". |
 | Law / Lawyer | LAH / LOY-yer | Law has a big "ah" sound. Lawyer has a "y" sound in the middle. |
 
-### Good Sentences To Imitate
-
-- He is a successful entrepreneur.
-- It's their 30th anniversary.
-- An adjective describes a noun.
-- That is an infuriating situation!
-- Our car was buried under a thick layer of snow.
-- The choir sounds beautiful.
-- I iron my clothes.
-- I keep the glasses in the cupboard.
-- I'd like to withdraw money from the bank.
-- The gas gauge is on full.
-- She's a Hollywood actress staying at a beautiful hotel.
-- The lawyer practices law.
-
-### Practice Prompts
-
-- Practice the difference between "Draw" (making a picture) and "Drawer" (furniture).
-- Record yourself saying "Entrepreneur" and "Extraordinary" smoothly.
-- Why do we pronounce "clothes" like "close"?
-
 ## Expanding Basic Vocabulary for Confidence
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Advanced learners often lack confidence because they rely on basic words (like happy or tired) instead of the rich, varied expressions native speakers use. In this video, Lisa teaches advanced synonyms and provides four tips for naturally expanding your vocabulary.
+Elevating professional expression involves replacing overused adjectives like happy with nuanced alternatives (delighted, thrilled, ecstatic, elated) and tired with precise states (drained, wiped out, worn out, beat). Sustainable vocabulary expansion relies on reading outside one's immediate technical domain, recording idioms from native media, actively questioning native interlocutors, and prioritizing communicative experimentation over perfectionism.
 
 ### Vocabulary Expansion
 
@@ -5435,20 +2567,11 @@ Native speakers rarely just say "I'm very happy." Try these instead: - Delighted
 - Ask Native Speakers: Be bold. If someone uses an idiom you don't know, just ask them what it means. They are usually happy to explain.
 - Don't Be a Perfectionist: Experiment with new expressions. You will make mistakes, and that is a necessary part of the learning process.
 
-### Practice Prompts
-
-- Replace "happy" in this sentence: "I was very happy when I got the promotion."
-- Replace "tired" in this sentence: "After a 12-hour shift, I was extremely tired."
-- Think of one topic completely outside of your normal job or studies. Find a short article in English about that topic and read it today.
-
 ## Highly Confusing English Word Pairs
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-English has many words that look and sound very similar but have totally different meanings. In this lesson, Lisa clears up the confusion between 10 sets of difficult English words, ensuring your English is highly accurate.
+Disambiguating lookalike and homophonous English pairs hinges on meaning and intent: weary (fatigued) differs from wary (suspicious), while misinformation (unintentional error) contrasts with disinformation (deliberate deception). Evaluative adjectives split between negative childish and positive childlike, alongside classic grammatical splits like affect (verb) versus effect (noun). Homophones require rigorous orthographic precision: complement (complete) vs. compliment (praise), principal (leader) vs. principle (rule), counsel (advice) vs. council (committee), canvas (fabric) vs. canvass (campaign), and stationary (unmoving) vs. stationery (paper goods).
 
 ### Confusing Word Pairs
 
@@ -5495,29 +2618,11 @@ English has many words that look and sound very similar but have totally differe
 
 (Note: Pronounced exactly the same) - Stationary (with an A): Not moving. "I ride a stationary bike." - Stationery (with an E): Office supplies like paper and envelopes. "The logo was printed on the company stationery."
 
-### Practice Prompts
-
-- The new medicine will (affect / effect) your sleep.
-- The rumor was a total mistake; it was just (misinformation / disinformation).
-- The artist painted on a large (canvas / canvass).
-- The shoes (complement / compliment) your outfit perfectly.
-- Provide the answers to the above blanks to test your understanding.
-
-#### Answer Key
-
-- Affect (verb)
-- Misinformation (mistake)
-- Canvas (noun)
-- Complement (verb meaning "to match")
-
 ## More Confusing English Words
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa continues to clear up confusing English words that advanced learners struggle with. These pairs sound similar but function very differently in sentences.
+Syntactic and semantic boundaries separate adverbial every day from adjective everyday, temporal distinctions (sometimes, sometime, some time), and spatial versus figurative expansion (farther vs. further). Critical qualitative distinctions divide historic (momentous) from historical (past-related), economic (monetary) from economical (thrifty), and temporal patterns like continual (intermittent recurrence) versus continuous (unbroken flow). Phonetic contrasts distinguish clothes (/kloʊz/) from cloths (/klɔːθs/) and noun bath (/bæθ/) from voiced verb bathe (/beɪð/).
 
 ### Confusing Word Pairs
 
@@ -5582,33 +2687,11 @@ Lisa continues to clear up confusing English words that advanced learners strugg
 - US/Canada: The Ground Floor and the First Floor are the exact same thing (street level).
 - UK/Europe: The Ground Floor is street level. The First Floor is one level above the street (which Americans call the Second Floor).
 
-### Good Sentences To Imitate
-
-- She likes to paint everyday objects.
-- He moved to New York sometime in 2019.
-- We need to discuss this issue further.
-- We are witnessing a historic moment.
-- This car is very economical; you save a lot on gas.
-- She sat beside me.
-- I use a cloth to wipe the table.
-- The rain was continuous for 3 days.
-- Please move out of the way.
-- She is sunbathing in her bathing suit.
-
-### Practice Prompts
-
-- I need (sometime / some time) to finish my homework, but maybe we can meet up (sometime / some time) next week?
-- My house is (farther / further) down the road.
-- The dog was standing right (in a way / in the way) of the door.
-
 ## Farther vs. Further and the American R
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-In this lesson, Lisa explains the difference between the confusing words farther and further. She also covers an advanced American pronunciation rule: how to pronounce the 'R' sound when it comes immediately before a 'TH'.
+In American rhotic pronunciation, the 'R' is fully sounded before consonants without over-pressing into the dental fricative /θ/ in transitions like farther and brother. Usage differentiates physical distance (farther) from figurative extent, additional degrees, or verbal actions (further one's career). Common fixed expressions with the figurative form include look no further, furthermore, and nothing could be further from the truth.
 
 ### Pronunciation Rules
 
@@ -5631,27 +2714,11 @@ In this lesson, Lisa explains the difference between the confusing words farther
 | Nothing could be further from the truth | The truth is the exact opposite of what was just said. | They say he's a bad guy, but nothing could be further from the truth. |
 | Furthermore | In addition; and (formal). | The car looks great; furthermore, it's cheap. |
 
-### Good Sentences To Imitate
-
-- Neptune is the farthest planet from the sun.
-- If you'd like further information, please email us.
-- If you want to visit an exciting city, look no further than New York.
-- They say he's a bad guy, but nothing could be further from the truth.
-
-### Practice Prompts
-
-- Make a sentence comparing the physical distance of two places using "farther."
-- Practice the transition between 'R' and 'TH' in these words: further, farther, northern, mother, brother.
-- When writing a formal essay, what is a good alternative word for "and" or "in addition"?
-
 ## Deep Nuances in Confusing English Words
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa breaks down the differences between highly confusing word pairs that even native speakers sometimes mix up. Understanding these differences takes your English to the final level of accuracy and fluency.
+Discerning subtle lexical boundaries clarifies agency and directionality, such as imply (speaker hinting) versus infer (listener deducing), and emigrate (exiting a country) versus immigrate (entering). Homophones divide functional domains: peak (zenith), peek (quick glance), and pique (stimulate curiosity), alongside evaluative appraise versus communicative apprise. Punctuality contrasts rigid schedules (on time) with adequate margins (in time), while grammatical number governs singular criterion versus plural criteria, and relational scope divides between (two items) from among (groups).
 
 ### Confusing Word Pairs
 
@@ -5701,20 +2768,11 @@ Lisa breaks down the differences between highly confusing word pairs that even n
 - Between: Used for exactly two items/people. "The secret is between John and Maria."
 - Among: Used for more than two items/people. "The prize was shared among the winners."
 
-### Practice Prompts
-
-- I arrived at the airport just (on time / in time) to catch my flight.
-- The speaker (implied / inferred) that the project would be delayed, and I (implied / inferred) that meant we wouldn't get our bonuses.
-- The strange noise (peaked / peeked / piqued) my interest.
-
 ## English Homographs: Same Spelling, Different Pronunciation
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Homographs are words that are spelled exactly the same but have different meanings and different pronunciations. In many cases, changing the syllable stress changes the word from a noun to a verb.
+English homographs share orthography but diverge in pronunciation, stress, and meaning across syntactic classes. Noun-verb pairs exhibit consonant voicing and vowel shifts, as seen in refuse (noun /ˈrɛfjuːs/ vs. verb /rɪˈfjuːz/) and close (adjective /kloʊs/ vs. verb /kloʊz/). Additional radical vowel alternations determine meaning in wind (/wɪnd/ vs. /waɪnd/), bass (/bæs/ vs. /beɪs/), tear (/tɪər/ vs. /tɛər/), lead (/liːd/ vs. /lɛd/), and minute (/ˈmɪnɪt/ vs. /maɪˈnjuːt/).
 
 ### Homograph Test
 
@@ -5768,19 +2826,11 @@ Homographs are words that are spelled exactly the same but have different meanin
 - PRO-doos (Noun): Fresh fruits and vegetables. "I bought fresh produce."
 - pro-DOOS (Verb): To make or create. "He produces music."
 
-### Practice Prompts
-
-- Practice saying the noun and verb forms of produce, object, console, and conduct. Notice how the stress shifts to the first syllable for nouns, and the second syllable for verbs.
-- Write a sentence using the word "minute" to mean "very small."
-
 ## Swell, Swollen, and Swallow
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa explains the difference between the confusing English words "swell," "swollen," and "swallow." She then covers native idiomatic expressions that use these words.
+The verb swell describes expansion from injury, though native speakers favor the adjective swollen or noun swelling over the uncommon past form swelled, while colloquial usage employs swell to mean great. In contrast, swallow denotes the physical ingestion of food or fluid and anchors idioms like swallow your pride and a hard pill to swallow. Both terms also produce idioms regarding arrogance, notably having a swelled head.
 
 ### Vocabulary Definitions
 
@@ -5808,26 +2858,11 @@ Lisa explains the difference between the confusing English words "swell," "swoll
 | Swallow your pride | To humbly accept a lower position, admit a mistake, or ask for forgiveness when you feel too proud to do so. | You need to swallow your pride and admit that you made a mistake. |
 | A hard pill to swallow | A difficult situation or sad fact that you are forced to accept. | Not getting accepted to the university was a hard pill to swallow. |
 
-### Good Sentences To Imitate
-
-- He put ice on a swollen ankle.
-- Her wedding ring didn't fit her swollen fingers.
-- The insect bite caused pain and swelling.
-- When I had a sore throat, it hurt to swallow.
-
-### Practice Prompts
-
-- Have you ever had to "swallow your pride"? What happened?
-- What is an example of a "hard pill to swallow" in life or business?
-
 ## The "AH" vs. "UH" Vowel Sounds
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Many advanced learners confuse two very different American vowel sounds: the open, wide "AH" sound (like in lock, cop, fond) and the neutral, relaxed "UH" sound (like in luck, cup, fund).
+The open "AH" sound (/ɑː/, as in lock, cop, fond, body) requires dropping the jaw and opening the mouth wide, commonly orthographically represented by 'o'. Conversely, the central neutral "UH" sound (/ʌ/, as in luck, cup, fund, buddy) keeps the jaw relaxed with minimal mouth movement and air resonating from the throat. Deceptive spellings occur where 'o' represents /ʌ/, as in money, love, come, and glove.
 
 ### Pronunciation Rules
 
@@ -5864,12 +2899,9 @@ To master this, practice phrases that contain both sounds back-to-back: 1. A lot
 
 ## Linking with the word "and"
 
-Date: 2026-06-04  
-Category: english-pronunciation
-
 ### Summary
 
-In English, certain word pairs go together so commonly that native speakers treat them as a single unit. When they do this, they completely drop the "a" and "d" in the word "and," reducing it to just an "n" sound.
+In fixed binomial expressions and natural word pairings, the conjunction and systematically reduces by dropping both its vowel and final dental stop. The resulting articulation contracts entirely into a smooth syllabic [n] sound. Common examples include salt-n-pepper, bacon-n-eggs, mom-n-dad, and rock-n-roll.
 
 ### The Rule
 
@@ -5887,29 +2919,11 @@ When "and" connects two words that naturally belong together, don't say the full
 | Rock and roll | rock-n-roll |
 | In and out | in-n-out |
 
-### Good Sentences To Imitate
-
-- May I have some salt 'n' pepper?
-- I went with my mom 'n' dad.
-- I prefer black 'n' white photography.
-- I had bacon 'n' eggs for breakfast.
-- We're brother 'n' sister.
-- I love rock 'n' roll music.
-- Let's go to In 'N' Out Burger.
-
-### Practice Prompts
-
-- Record yourself reading the sentences above. Did you pronounce the 'D' in "and"? If so, try again and eliminate it completely.
-- Can you think of any other common pairs of words connected by "and"? (e.g. up and down, left and right). Practice linking those.
-
 ## A Dangerous Vowel Mistake (And Hollywood Pronunciation)
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-While visiting the Dolby Theatre in Hollywood, Lisa explains the pronunciation of "Brad Pitt" and "Hollywood" to help students fix dangerous vowel mistakes. Confusing the tense "EE" sound with the neutral "IH" sound can result in accidentally saying a bad word.
+Confusing the lax, neutral vowel /ɪ/ (it, sit, fit, Pitt) with the tense /iː/ (eat, seat, feet, sheet) risks severe miscommunication and accidental vulgarities in minimal pairs like sheet versus shit and beach versus bitch. Producing /ɪ/ requires a relaxed, neutral tongue in the mouth rather than the high, tense posture of /iː/. Additionally, proper articulation of Hollywood /ˈhɑːliwʊd/ requires an open /ɑː/ in the initial syllable and a lax /ʊ/ in -wood.
 
 ### The Dangerous Vowel Mistake (IH vs. EE)
 
@@ -5928,26 +2942,11 @@ Why it's dangerous: If you use the tense "EE" sound when trying to say the word 
 - The 'W' (-w-): You must round your lips to create the W, but you must immediately pull them back.
 - The Double O (-wood): Do not push your lips forward and say "ooh" (like food or moon). It is the neutral, relaxed sound (like book, foot, understood).
 
-### Good Sentences To Imitate
-
-- Brad Pitt is in the film Once Upon a Time in Hollywood.
-- Please take a seat, don't just sit there.
-- These shoes fit my feet perfectly.
-- I need a clean sheet for the bed.
-
-### Practice Prompts
-
-- Practice alternating between these pairs: Sit/Seat, Fit/Feet, Bit/Beat, Hit/Heat. Notice the tension in your tongue on the second word.
-- Say the word "Hollywood" slowly. Make sure your lips only round for the 'W' and then relax for the 'ood'.
-
 ## Regional Accents vs. The Standard American Accent
-
-Date: 2026-06-04  
-Category: english-culture
 
 ### Summary
 
-Lisa interviews Susan Bennett, a professional voiceover artist famous for being the original voice of Siri. They discuss what it means to speak with "no accent" (the standard American accent) and look at examples of strong regional dialects from New York, Boston, and California.
+General American (or "broadcaster speech") represents a neutral accent devoid of prominent regional markers, characterized by consistent rhoticity and standardized vowels. Distinct American regional dialects deviate through identifiable phonological shifts, such as Boston's non-rhotic r-dropping (pahk the cah), New York's raised diphthongal vowels (caw-fee), and California's open vowel drift and vocal fry. Identifying these linguistic giveaways clarifies the contrast between standardized spoken English and localized accents.
 
 ### The "Standard American" Accent
 
@@ -5972,18 +2971,11 @@ When a native speaker tells another native speaker, "You don't have an accent," 
 - California (Surfer/Valley) Accent:
 - Generally, California has a neutral accent. However, a specific coastal subculture exaggerates and elongates vowels (e.g., saying "broooo" or "whaaat").
 
-### How to Review
-
-Listen to American news broadcasters (like CNN or local news). You will hear the "Standard American Accent" that Susan uses. Notice how clear the vowels are and how firmly the 'R' sounds are pronounced, completely lacking any strong regional flavor.
-
 ## Dropped Syllables in English
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In many languages, you pronounce every vowel that is written in a word. English is different. In several very common English words, a vowel sound completely disappears, reducing the total number of syllables in the word.
+In standard American English, syncopic reduction completely eliminates unstressed interior vowels, collapsing the written syllable count. Frequently compressed words include chocolate (two syllables: /ˈtʃɔːklɪt/), vegetable (three syllables: /ˈvɛdʒtəbəl/), and restaurant (two syllables: /ˈrɛstrɑːnt/). Similar syncopes govern average (/ˈævrɪdʒ/), camera (/ˈkæmrə/), family (/ˈfæmli/), and interesting (/ˈɪntrəstɪŋ/).
 
 ### The Disappearing Vowels
 
@@ -6002,27 +2994,11 @@ You must memorize these common words, as their spelling is misleading. Do not pr
 
 (Note: "Opera" is also often pronounced as 2 syllables: OP-ruh).
 
-### Good Sentences To Imitate
-
-- I'd like to order some vegetables, please.
-- What's the average temperature here?
-- Broccoli is a green vegetable.
-- I had several pieces of chocolate.
-- That's an interesting beverage.
-- He owns a successful business.
-
-### Practice Prompts
-
-- Record yourself saying: "I basically ate average vegetables and chocolate." Ensure you drop the necessary syllables!
-
 ## Pronouncing "World" and "Work"
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-The word "world" is notoriously difficult for non-native speakers because of two tricky consonant clusters: 'WOR' and 'RL'. In this lesson, Lisa breaks down the mechanics of the mouth to make these words easy.
+In initial "WOR-" words like work, word, worry, and world, the 'o' does not produce an /ɔː/ sound; it vocalizes identically to were (/wɜːr/). The difficult consonant cluster in world and girl requires executing a throat-based rhotic /r/ immediately followed by raising the tongue tip to the alveolar ridge for the dark 'l'. Smoothly transitioning between these two postures avoids inserting an unnatural vowel between the /r/ and /l/.
 
 ### Rule 1: The "WOR" combination
 
@@ -6043,27 +3019,11 @@ When moving from an American 'R' (tongue pulled back) to an 'L' (tongue touching
 
 Say it slowly: Were... uld. Now, blend them together smoothly: World.
 
-### Good Sentences To Imitate
-
-- I go to work every day.
-- That's a new word.
-- Don't worry about it.
-- He traveled around the whole world.
-- It's a worldwide business.
-
-### Practice Prompts
-
-- Practice saying "War" and "Were". Notice how your lips push forward for "War" but stay relaxed for "Were".
-- Now practice saying: "I went to work, learned a new word, and didn't worry about the world." Use the "were" sound for all of them!
-
 ## Popular American Slang Words
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-In this lesson, Lisa and native speaker Drake introduce popular American slang words. Learning slang helps you understand TV shows, movies, social media, and casual conversations much better, making your English well-rounded.
+Modern American colloquial speech frequently employs informal markers such as FOMO (fear of missing out), legit (authentically impressive or genuine), and hyperbolic reactions like I can't even. Social interactions utilize verbs such as crash (to sleep abruptly or arrive uninvited), ditch (to abandon plans or someone), and chill (to relax or describe an easygoing demeanor). Character appraisals and information exchanges further rely on terms like shady for deceitful behavior and spill the beans for disclosing secrets.
 
 ### Slang Vocabulary
 
@@ -6090,20 +3050,11 @@ In this lesson, Lisa and native speaker Drake introduce popular American slang w
 - The finer things in life: Luxurious, high-quality, expensive things. "They enjoy traveling and the finer things in life."
 - Top dollar: The highest possible price. "People pay top dollar for those concert tickets."
 
-### Practice Prompts
-
-- Describe a time you experienced "FOMO."
-- Have you ever known someone who was a little bit "bougie"? What did they do?
-- What is an activity that you are totally "down" to do this weekend?
-
 ## Rules for Using "The"
-
-Date: 2026-06-04  
-Category: english-grammar
 
 ### Summary
 
-The English articles "a", "an", and "the" are notoriously difficult. In this lesson, Lisa explains the specific rules for when you must use the definite article "the," and when you must leave it out.
+The definite article the is omitted when institutions designate an activity or primary purpose (go to school, in church, in prison), but required when denoting the physical structure (the school, the church). Geographically, the is omitted with individual mountains, single islands, and singular countries (Mount Everest, France, Lake Michigan). Conversely, the is mandatory for mountain ranges (the Rockies), island archipelagos (the Bahamas), political unions or plural nations (the United States, the Netherlands), and bodies of flowing water (the Pacific, the Mississippi).
 
 ### Rule 1: Everyday Places and Activities
 
@@ -6145,20 +3096,11 @@ Rule: Use "the" for ordinal numbers (1st, 2nd, 3rd), but not for cardinal number
 
 Rule for Dates: - Use "the" if the date comes before the month: "It is the 4th of July." - No "the" if the month comes first: "It is July 4th."
 
-### Practice Prompts
-
-- Which is correct: "I visited Lake Michigan" or "I visited the Lake Michigan"?
-- Which is correct: "She plays guitar" or "She plays the guitar"?
-- Why do we say "The United States" but just "Canada"?
-
 ## Common Homophone Pronunciation Mistakes
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Many common English words look completely different but are pronounced exactly the same (homophones). Students often mispronounce them because they try to follow the spelling. In this lesson, Lisa clears up these pronunciation traps.
+Homophones share identical acoustic profiles in American English despite radical spelling divergences, requiring listeners to decode meaning entirely from context. Triads like there, their, and they're (/ðɛər/) or do, due, and dew (/duː/) collapse into single phonetic forms. Other common absolute homophones include brake and break (/breɪk/), flour and flower (/ˈflaʊər/), weather and whether (/ˈwɛðər/), and knight and night (/naɪt/).
 
 ### Pronunciation Groups
 
@@ -6186,20 +3128,11 @@ All three words are pronounced exactly the same: "SOH". - So: "I think so." - Se
 
 "You reap what you sow." - Meaning: You eventually have to face the consequences of your actions. If you do good things, good things will happen to you. If you plant bad seeds, you will harvest bad results.
 
-### Practice Prompts
-
-- Read this sentence aloud: "They're over there getting their bags."
-- Read this sentence aloud: "I won one dollar."
-- Read this sentence aloud: "She used a sewing machine so she could sew."
-
 ## A Pronunciation Test: Same or Different?
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Lisa tests your English pronunciation by asking whether pairs of words are pronounced the same or differently. This exercise highlights subtle vowel differences, consonant voicing, and completely identical homophones.
+Phonological discrimination tests contrast identical homophones like piece and peace (/piːs/) against subtly distinct lexical pairs. Vowel differences differentiate beer (/bɪər/) from bear (/bɛər/) and soup (/suːp/) from soap (/soʊp/), while consonant voicing separates adjective loose (/luːs/) from verb lose (/luːz/). Morphological alternation governs noun breath (/brɛθ/) versus voiced verb breathe (/briːð/), alongside the complete shift in suit (/suːt/) versus hotel suite (/swiːt/).
 
 ### The Test: Are they pronounced the same or differently?
 
@@ -6232,11 +3165,6 @@ Lisa tests your English pronunciation by asking whether pairs of words are prono
 - British English: They are pronounced the same (Both are "bean").
 - American English: They are different. "Bean" is tense. "Been" is pronounced exactly like the word "bin" (relaxed IH sound).
 
-### Practice Prompts
-
-- Practice the difference between Loose and Lose. Make sure your vocal cords vibrate on the 'Z' sound for lose.
-- Practice the difference between Sale and Sell. "I want to sell my car. It is on sale."
-
 ## Note on Invalid Transcript
 
 Date: 2026-06-04
@@ -6245,12 +3173,9 @@ Note to reviewer: The transcript provided for this video consisted entirely of a
 
 ## Advanced Rules for "A" and "An"
 
-Date: 2026-06-04  
-Category: english-grammar
-
 ### Summary
 
-You know the basic rules: use "a/an" with singular countable nouns (a car, an apple), and don't use them with uncountable nouns (milk, beef, equipment). But what happens when native speakers break these rules? In this lesson, Lisa explains how adding "a" can completely change the meaning of a word.
+Indefinite articles (a/an) can transform uncountable mass nouns into countable units signifying single instances, containers, or discrete objects. In beverage orders, water or coffee becomes a discrete serving (a water, a coffee), while mass materials become specific items such as paper to a paper (newspaper/document) or iron to an iron (appliance). Similar categorical shifts divide living animals from culinary meats (a chicken vs. chicken) and spatial volume from architectural chambers (room vs. a room).
 
 ### Nouns that Change Meaning with "A"
 
@@ -6275,20 +3200,11 @@ This is a very common grammar trap. One article changes the meaning and the requ
 - Example: "The number of people we need to hire is ten."
 - Example: "The number of students has increased."
 
-### Practice Prompts
-
-- Is this correct? "I bought an equipment for my gym." (Answer: No, equipment is always uncountable).
-- What is the difference between "I have company" and "I have a company"?
-- Fill in the blank (is/are): "A number of customers ______ complaining."
-
 ## 20 "Hand" Idioms for Fluent English
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Native speakers use idioms constantly. In this video, Lisa and Drake teach 20 common American English expressions that all use the word "hand."
+Anatomical idioms centered on hand describe operational control, familiarity, and personal capability. Core expressions include know like the back of one's hand (intimate mastery), hands are tied (institutional constraint), get out of hand (loss of control), and gain the upper hand (competitive advantage). Interpersonal responsibilities appear in lend a hand (aid), wash one's hands of (relinquish accountability), and bite the hand that feeds you (turn against a benefactor).
 
 ### Expressions with "Hand"
 
@@ -6316,19 +3232,11 @@ Native speakers use idioms constantly. In this video, Lisa and Drake teach 20 co
 - To win by a landslide: To win by a huge, overwhelming margin. "Our team won by a landslide."
 - To be "over it": To no longer care about a situation or person. "I'm so over it."
 
-### Practice Prompts
-
-- What is a topic or place that you "know like the back of your hand"?
-- Have you ever had to "throw your hands up" and quit something?
-
 ## 20 "Mind" Idioms for Fluent English
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Continuing their series on idioms, Lisa and Drake teach a collection of essential English expressions that all revolve around the word "mind."
+Idiomatic uses of mind conceptualize cognition, emotional state, and decision-making. Key cognitive phrases include make up one's mind (decide), slip one's mind (be forgotten), cross one's mind (transient thought), and maintaining thoughts in the back of one's mind (latent awareness). Other established idioms span communicative candor (speak your mind), intellectual openness (keep an open mind), emotional serenity (peace of mind), and cognitive astonishment (blow someone's mind).
 
 ### Expressions with "Mind"
 
@@ -6358,19 +3266,11 @@ Continuing their series on idioms, Lisa and Drake teach a collection of essentia
 - To blow off steam: To do a physical activity to get rid of stress or anger.
 - A go-getter: A highly motivated, ambitious person who gets things done.
 
-### Practice Prompts
-
-- What is an activity you do to "take your mind off" work?
-- Has a movie or book ever "blown your mind"? Which one?
-
 ## Real Estate Vocabulary and Daily Expressions
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa visits a $2.3 million open house in Los Angeles and interviews the real estate agent, Raquel. They use very natural, native-level vocabulary related to homes, cooking, and renting.
+Residential real estate terminology features architectural and interior specifications like Jack and Jill bathroom (a dual-access en-suite), stackable washer and dryer, recessed lighting, and curb appeal. Marketing and sales transactions center on properties being staged with rented furniture, arriving as turnkey (or move-in ready), entering escrow, and budgeting for HOA fees. Everyday property descriptions balance positive terms like cozy or natural light against standard assets characterized as run-of-the-mill.
 
 ### House & Real Estate Vocabulary
 
@@ -6405,19 +3305,11 @@ Lisa visits a $2.3 million open house in Los Angeles and interviews the real est
 - Specific Millions: Do NOT add an 's' to "million" if you give a specific number. "It costs 2.3 million" (Not "millions").
 - Hundreds shortcut: Native speakers rarely say "Four thousand five hundred." They say "Forty-five hundred" (4500).
 
-### Practice Prompts
-
-- Describe your kitchen. Does it have an island? How many burners are on your stove?
-- What is a project or goal that you recently "put on the back burner"?
-
 ## Advanced News Vocabulary (Protests & Conflict)
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa uses a Wall Street Journal article about protests in Los Angeles to teach advanced vocabulary related to conflict, politics, and law enforcement. She also highlights tricky pronunciation rules for these words.
+Reporting on civil unrest, protests, and law enforcement utilizes specific terminology such as escalate, march, chant, and violent clashes between demonstrators and security forces. State interventions are defined by issuing a curfew, using tear gas or riot gear, attempting to disperse crowds, and detaining individuals in custody. Associated institutional terms include civil unrest, agency acronyms like ICE, and the dynamic of tensions being launched or diffused.
 
 ### News Vocabulary
 
@@ -6449,19 +3341,11 @@ Lisa uses a Wall Street Journal article about protests in Los Angeles to teach a
 - Personnel: Stress the 3rd syllable. (per-son-NEL).
 - Tear Gas: Tear rhymes with ear (the water that comes from your eye when crying).
 
-### Practice Prompts
-
-- Write a sentence using the verb "to break out" (e.g., about a fire or a fight).
-- Practice the pronunciation difference between the noun "address" and the verb "address".
-
 ## Advanced Idioms from Real Conversation
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa and her friend Drake have a natural conversation about Drake moving to Las Vegas and picking up boxing. This lesson breaks down the advanced phrasal verbs, idioms, and natural expressions Drake uses.
+Natural idiomatic conversation employs dynamic phrasal constructions like make a move for major life relocations, pick up for acquiring new skills, and hit the ground running for beginning endeavors at full momentum. Tackling difficult challenges is characterized by confronting a steep learning curve, deciding to go all in rather than throw in the towel, and practicing until actions become second nature. Decisions can be reasoned through analytical contrast (as opposed to) or executed spontaneously (on a whim).
 
 ### Natural American Expressions
 
@@ -6497,20 +3381,11 @@ Native speakers often show strong agreement by repeating the auxiliary verb of t
 - Statement: "They've been gone a long time."
 - Response: "They sure have."
 
-### Practice Prompts
-
-- What is a hobby that you like to "dabble in"?
-- Describe a time in your life when "a lot was on the line." What happened?
-- Practice agreeing with emphasis: "That's a beautiful sunset." (Response: "It sure ______.")
-
 ## Top 10 Common Grammar Mistakes to Fix
-
-Date: 2026-06-04  
-Category: english-grammar
 
 ### Summary
 
-Even advanced learners make fossilized grammar mistakes. Lisa provides a test of 10 common sentences that sound correct to many learners but contain critical errors. This note breaks down the corrections and the rules behind them.
+Correcting frequent fossilized grammar mistakes requires removing indefinite articles before uncountable nouns (such nice weather, not such a), selecting objective pronouns as direct objects (invited my wife and me), and pairing look forward to with a gerund (hearing, not hear). Temporal precision dictates since for starting points and for for durations, while prepositional structures mandate explain to me (never explain me) and despite without of. Additionally, avoid future modals in standard conditional clauses (if it rains, not if it will rain) and enforce singular agreement with every.
 
 ### The Corrections
 
@@ -6577,20 +3452,11 @@ Even advanced learners make fossilized grammar mistakes. Lisa provides a test of
 - Correct: I forgot his name, please remind me of his name.
 - Rule: Remember is the opposite of forget (an internal mental action). Remind is when someone else helps you to remember something.
 
-### Practice Prompts
-
-- Correct this sentence: "He bought three new furnitures for his house."
-- Correct this sentence: "I didn't watch the movie." -> "Neither was I."
-- Correct this sentence: "My boss made me to stay late."
-
 ## Professional Intonation: Stop Using "Up Talk"
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Intonation (the rise and fall of your pitch) dramatically affects how people perceive you. If you use the wrong intonation at work, you may sound insecure, immature, or unprofessional. In this lesson, Lisa explains the danger of "up talk" and how to sound like a confident leader.
+Declarative English statements require falling intonation to project authority, conviction, and executive presence, reserving rising intonation exclusively for questions. The vocal habit of "up talk"—elevating pitch at the end of affirmative sentences—inadvertently signals insecurity, self-doubt, or a need for external validation. Cultivating confident workplace communication relies on grounding sentences with a definitive, downward pitch trajectory.
 
 ### The Basic Rule of Intonation
 
@@ -6626,19 +3492,11 @@ Practice saying these sentences with a strong, confident, falling pitch down at 
 - "We need to finish it by Friday. down"
 - "I believe this is our best option. down"
 
-### Practice Prompts
-
-- Record yourself saying: "My name is [Name], and I am a [Profession]." Did your voice go up at the end, or down?
-- Practice giving a confident command: "Please send me the report by 5 PM." Ensure your pitch drops on "5 PM."
-
 ## Vowel Reduction in Unstressed Syllables (The Schwa)
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-One of the biggest differences between English and many other languages is how vowels are pronounced. In English, you do not pronounce every vowel clearly. You must stress one syllable and reduce the other vowels. If a syllable is unstressed, the vowel (a, e, i, o, u) almost always changes to an "uh" sound (the schwa).
+As a stress-timed language, English demands articulating stressed vowels with full clarity while systematically reducing unstressed vowels (a, e, i, o, u) into the weak neutral schwa /ə/ ("uh"). Attempting to pronounce every vowel according to its spelling destroys natural cadence and clarity. High-frequency reductions appear in banana (/bəˈnænə/), problem (/ˈprɑːbləm/), police (/pəˈliːs/), and support (/səˈpɔːrt/).
 
 ### The Rule of Stress and Reduction
 
@@ -6685,19 +3543,11 @@ Exaggerate the stress on the capitalized syllables, and make the reduced vowels 
 - "The DAWK-tuhr said it was a CAH-muhn PRAH-bluhm." (Doctor / common / problem)
 - "LIN-kuhn and EH-di-suhn are FAY-muhs uh-MEHR-i-kuhns." (Lincoln / Edison / famous Americans)
 
-### Practice Prompts
-
-- Look at the word "President". Which syllable is stressed? How do the other 'e's sound?
-- Practice saying "Japan" and "Banana" ensuring the unstressed 'A's sound like "uh".
-
 ## The 3 Sounds of "CH" in English
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-The letters "CH" in English are incredibly tricky because they can be pronounced three completely different ways depending on the origin of the word. Furthermore, in some words, the letters are completely silent! This note tests and categorizes the most difficult "CH" words.
+The English digraph "CH" yields three distinct phonemes determined by linguistic etymology: standard /tʃ/ in words of Old English origin (child, champion, archery); French-derived soft /ʃ/ (chef, chic, Chicago, machine); and Greek-derived velar stop /k/ (character, chemistry, echo, stomach, orchestra). Additionally, the digraph remains completely silent in loanwords such as yacht (/jɑːt/).
 
 ### 1. The Standard "CH" Sound (ch)
 
@@ -6760,12 +3610,9 @@ Read these out loud, paying close attention to the CH sounds:
 
 ## Voiced vs. Voiceless Consonants
 
-Date: 2026-06-04  
-Category: english-pronunciation
-
 ### Summary
 
-Russian and German speakers often naturally un-voice consonants at the end of words (turning a 'v' into an 'f' or a 'd' into a 't'). This lesson teaches how to keep consonants voiced and how it affects the pronunciation of plurals.
+Voiced consonants require vocal cord vibration (/v/, /d/, /z/, /b/, /ɡ/), whereas voiceless counterparts utilize only expired airflow (/f/, /t/, /s/, /p/, /k/). Preventing terminal consonant devoicing—such as erroneously shifting /v/ to [f] in five or /d/ to [t] in bed—is vital to maintaining word distinctions. Crucially, the phonological voicing of the preceding stem consonant dictates plural 's' pronunciation, producing voiced /z/ after voiced segments (dogs, beds) and voiceless /s/ after unvoiced ones (cats, caps).
 
 ### The Mistake: Dropping the Voice
 
@@ -6795,19 +3642,11 @@ The voicing of the final consonant determines how you pronounce a plural 's'.
 - Cat ends in voiceless 't'. -> Cats (cat-S).
 - Let ends in voiceless 't'. -> Lets (let-S).
 
-### Practice Prompts
-
-- Put your hand on your throat. Say "FFFF" (no vibration) and then "VVVV" (vibration). Now say: "I have five dollars."
-- Read these words and pronounce the final "s": cats, dogs, friends, beds. Which ones sound like 'Z'?
-
 ## Fixing the "Es-pecial" Mistake
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-A very common fossilized mistake for native Spanish speakers is adding an "E" sound in front of English words that begin with an 'S' followed by a consonant (like sp, st, sl). Lisa works with Frank from Spain to fix this habit using linking.
+Native Spanish phonotactic interference often causes epenthetic vowel insertion (/ɛ/) before initial s-consonant clusters, erroneously transforming Spain, student, and special into Es-pain, Es-tudent, and Es-pecial. Eliminating this fossilized habit is achieved through connected speech linking, binding the terminal consonant of the preceding word directly to the initial /s/ (e.g., this-school, good-student). When speaking in isolation, speakers must consciously start with a pure alveolar hiss without pre-vocalizing.
 
 ### The Problem
 
@@ -6839,19 +3678,11 @@ Try reading these sentences out loud. Focus on immediately starting the 'S' soun
 - She's scared and she doesn't want to stay here.
 - Don't stop smiling.
 
-### Practice Prompts
-
-- Practice the hardest phrase from the video: "Spanish is spoken in Spain."
-- What are 3 other English words that start with "St"? Practice saying them without an 'E' in front.
-
 ## 15 English Proverbs about Money
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Proverbs are short, well-known phrases that express a common truth. Lisa teaches 15 American proverbs about money. Before beginning, she corrects a very common pronunciation error: Money is pronounced with an "uh" sound (Muh-nee), not an "o" or "a" sound.
+Money-related discourse begins with the proper pronunciation of money using the neutral vowel /ʌ/ (pronounced muh-nee /ˈmʌni/). Classic English economic proverbs warn against fiscal recklessness and overconfidence, including a penny saved is a penny earned, don't put all your eggs in one basket, put your money where your mouth is, and a fool and his money are soon parted. Philosophical perspectives balance wealth against human values through adages like money talks, money can't buy happiness, and the best things in life are free.
 
 ### The Proverbs
 
@@ -6873,19 +3704,11 @@ Proverbs are short, well-known phrases that express a common truth. Lisa teaches
 | The love of money is the root of all evil. | Greed causes people to do terrible, criminal, and immoral things. (Biblical). |
 | It takes money to make money. | You need initial capital or an investment if you want to start a business and generate wealth. |
 
-### Practice Prompts
-
-- Do you agree that "money can't buy happiness"? Why or why not?
-- Tell a story about a time when you learned that "you get what you pay for."
-
 ## The 10 Negative Prefixes (Vocabulary Test)
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-English has 10 different prefixes that mean "not" or express a negative opposite (un-, in-, im-, il-, ir-, a-, ab-, dis-, mis-, non-). Native speakers rarely say "not regular," they say "irregular." This note tests your knowledge of the correct prefixes for 20 advanced words.
+English derives negation and opposition using ten distinct prefixes governed largely by etymology and phonological assimilation: un- (unreliable), in- (incompetent), dis- (disobedient), mis- (misinformed), non- (non-verbal), a- (atypical), and ab- (abnormal). The prefix in- assimilates phonetically to im- before labials (impatient), il- before liquids (illogical), and ir- before rhotics (irresponsible). Crucially, semantic differences arise in pairs like unsatisfied (unfulfilled in quantity or appetite) versus dissatisfied (discontented with quality or conduct).
 
 ### The Prefix Test Answers
 
@@ -6934,19 +3757,11 @@ English has 10 different prefixes that mean "not" or express a negative opposite
 
 - Plug -> Unplug: To disconnect from electricity. ("Try unplugging the router.")
 
-### Practice Prompts
-
-- What is the difference between being "dissatisfied" and being "unsatisfied"?
-- Write a sentence using the word "irreparable" (e.g., irreparable damage).
-
 ## 5 Reasons Word Stress is Critical
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-If you pronounce every English sound perfectly but use the wrong rhythm and stress, native speakers will not understand you. In English, word stress holds meaning, intent, and emotion.
+English is an intensely stress-timed language where placing stress on the correct syllable determines intelligibility, grammatical category, and speaker intent. Stress shifts convert identical lexical forms from nouns to verbs (RE-cord vs. re-CORD; CON-tract vs. con-TRACT) and dictate the comprehension of initialisms, which require stressing the final letter (F.B.I., M&A). At the sentence level, modulating tonic stress radically recalibrates pragmatic emphasis and emotional undertones.
 
 ### Reason 1: You will be misunderstood.
 
@@ -6968,19 +3783,11 @@ Many learners speak too fast. When you properly stress a word, you must open you
 
 In English, the same words can have entirely different definitions based on stress. - Compound Nouns: The stress goes on the first word. - "I live in the White House." (I am the President of the United States). - "I live in a white house." (My house is painted white). - Nouns vs. Verbs: - "RE-cord" (Noun - a vinyl disc). - "re-CORD" (Verb - to capture audio). - "DE-sert" (Noun - the Sahara). - "de-SSERT" (Noun - cake after dinner).
 
-### Practice Prompts
-
-- Read this sentence three times, stressing the bold word to change the meaning: "She didn't steal the money." / "She didn't steal the money." / "She didn't steal the money."
-- Practice the abbreviation rule: Say "U.S.A", "C.E.O", and "A.T.M" while stressing the final letter loudly.
-
 ## Fixing the "L" Sound (For Portuguese Speakers)
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Portuguese (especially Brazilian Portuguese) speakers naturally round their lips and make a "W" or "U" sound when they see an "L" at the end of a word. In this lesson, Lisa and her student Roberto demonstrate how to keep the lips relaxed and move the tongue to correctly pronounce the dark "L".
+Brazilian Portuguese speakers frequently substitute a rounded labiovelar [w] or [u] for terminal dark 'L', turning words like Brazil, feel, and call into Brazi-w, feew, and caw. Correct American pronunciation requires keeping the lips completely relaxed and neutral rather than rounded. The articulation is perfected by raising the tongue tip firmly against the alveolar ridge behind the upper front teeth, maintaining contact through the vocalization.
 
 ### The Mistake: Rounding the Lips
 
@@ -6996,23 +3803,11 @@ This happens because you are pushing your lips forward and making them into a sm
 
 To make a proper American "L" sound at the end of a word: 1. Do NOT round your lips. Keep them completely relaxed and neutral. Some teachers recommend slightly smiling to prevent the lips from pushing forward. 2. Move the tip of your tongue UP. Place it right behind your top front teeth.
 
-### Practice Prompts
-
-Try reading these sentences out loud. Focus intensely on keeping your lips flat and relaxed, while tapping your tongue behind your top teeth for every 'L'.
-
-- I will call Paul.
-- How do you feel? (Response: I feel good).
-- I will mail it.
-- Just a little.
-
 ## The "N" vs "NG" Sounds (For Chinese Speakers)
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Many Chinese speakers drop the "N" sound entirely when it appears at the end of an English word. Furthermore, distinguishing between "N" and "NG" at the end of a word (like thin vs. thing) is extremely difficult. Lisa breaks down exactly what your tongue should be doing.
+Distinguishing final alveolar /n/ from velar /ŋ/ in minimal pairs like thin versus thing and sin versus sing depends on tongue placement. For terminal /n/ (can, man), the tongue tip must press firmly against the alveolar ridge behind the upper teeth to direct airflow through the nasal cavity. Conversely, for terminal /ŋ/ (ring, rang), the tongue tip remains flat while the back of the tongue seals upward against the soft palate.
 
 ### The Problem with "N"
 
@@ -7037,20 +3832,11 @@ The difference between these two sounds is entirely based on which part of the t
 | N | The FRONT of the tongue goes up. | Thin, sin, run |
 | NG | The BACK of the tongue goes up (like you are about to make a 'G' sound). The front is relaxed. | Thing, sing, rung |
 
-### Practice Prompts
-
-- Practice linking the 'N': Say "When are you going?" as "Whe-nare you going?"
-- Exaggerate the tongue movements: Say "young son". (For young, the back of the tongue goes up. For son, the front of the tongue goes up).
-- Say these pairs and focus on the tongue position: Thin / Thing. Sin / Sing.
-
 ## 8 Classic English Proverbs
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Proverbs are short, traditional sayings that offer wisdom or advice. Native speakers use them constantly in daily life. This note covers 8 essential proverbs that you need to know to achieve full fluency.
+Essential English proverbs offer timeless social guidance: look before you leap cautions deliberation before decisive action, while strike while the iron is hot urges immediate seizure of fleeting opportunities. Perspective and interpersonal judgment are anchored by don't judge a book by its cover, the grass is always greener on the other side, and actions speak louder than words. Operational and cultural adaptations are captured by warning that too many cooks spoil the broth and advising travelers that when in Rome, do as the Romans do.
 
 ### The Proverbs
 
@@ -7095,19 +3881,11 @@ Proverbs are short, traditional sayings that offer wisdom or advice. Native spea
 - Meaning: Do not worry about a potential future problem until it actually happens. Deal with it later.
 - Usage: "What if it rains on the day of the wedding?" "We'll cross that bridge when we come to it."
 
-### Practice Prompts
-
-- Think of a proverb in your native language that means the exact same thing as "Look before you leap."
-- Have you ever "bitten off more than you could chew"? What happened?
-
 ## Advanced Vocabulary: Real Conversation (Pets & Business)
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa interviews Janetta, the owner of a dog-walking business in Los Angeles called "Spoiled Pooch." They discuss pets, business, and Los Angeles culture using very natural expressions.
+Contemporary pet care culture and service entrepreneurship utilize specialized colloquialisms such as pooch, fur child (or fur baby), and managing animal temperament within a canine pack. Small business operations rely on identifying their financial bread and butter (primary income source) and driving growth via organic word of mouth. Operational terms also highlight autonomy, accommodating flexible hours while catering to an upscale clientele.
 
 ### Animal Vocabulary
 
@@ -7136,19 +3914,11 @@ Lisa interviews Janetta, the owner of a dog-walking business in Los Angeles call
 - Words to live by: Great life advice to follow forever. "Find something you love, and you'll never work a day in your life. Those are words to live by."
 - Instagram worthy: A photograph or location that looks beautiful enough to be posted on social media. "The lighting makes this photo Instagram worthy."
 
-### Practice Prompts
-
-- Are dogs in your country treated like "fur babies," or is that just an "L.A. thing"?
-- What is a piece of advice you received that you consider "words to live by"?
-
 ## Word Stress: The "Adjective + Noun" Rule
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Many English learners do not feel confident because they lack natural rhythm. A huge secret to natural rhythm is knowing whether to stress the adjective or the noun. This note covers the primary rule and applies it to four essential idioms.
+Standard English prosody mandates placing primary stress on the noun rather than the preceding adjective in descriptive noun phrases (e.g., a new HOUSE, a big ROOM). Stress shifts to the adjective exclusively for contrastive emphasis or explicit correction (e.g., the BLUE shirt, not the green one). This rhythmic pattern extends directly to idiomatic constructions such as a silver LINING, a bitter PILL, and a piece of CAKE.
 
 ### The Rule: Stress the Noun!
 
@@ -7188,19 +3958,11 @@ Practice saying these common idioms, making sure to hit the noun hard and reduce
 - Meaning: To have made a lot of good progress compared to the past.
 - Practice: "You've come a long way in only 3 months."
 
-### Practice Prompts
-
-- Complete this sentence out loud, remembering to stress the noun: "I love the food at that new _______."
-- Write a sentence using the idiom "on the same page."
-
 ## 16 Commonly Mispronounced Words
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Even advanced English speakers struggle with the pronunciation of these 16 words. This guide highlights the silent letters, difficult clusters, and tricky vowel shifts you need to know.
+Silent consonants feature prominently in advanced pronunciation pitfalls, including silent 'b' in subtle (/ˈsʌtəl/), debt (/dɛt/), and the vowel-shifting triad comb (/koʊm/), bomb (/bɑːm/), and tomb (/tuːm/). Silent 'l' defines salmon (/ˈsæmən/) and almond (/ˈɑːmənd/), while silent 'p' marks receipt (/rɪˈsiːt/), and silent 'g' marks phlegm (/flɛm/). Additionally, syllable reduction syncopates comfortable into three syllables (/ˈkʌmftərbəl/), elides the 'th' in plural months (/mʌns/), and initial stress silences the 'h' in vehicle (/ˈviːɪkəl/).
 
 ### Tricky Consonants and Silent Letters
 
@@ -7228,19 +3990,11 @@ Even advanced English speakers struggle with the pronunciation of these 16 words
 | One vs. Won | They are pronounced exactly the same. ("Wun"). |
 | Woman vs. Women | Woman = Wuh-man (like book). Women = Wih-min (like big). |
 
-### Practice Prompts
-
-- Read this sentence out loud: "The photographer took a photograph of the salmon."
-- Read this sentence out loud: "Where were the women going?"
-
 ## Stop Adding "S" to Uncountable Nouns
-
-Date: 2026-06-04  
-Category: english-grammar
 
 ### Summary
 
-One of the most common mistakes advanced English learners make is adding an "S" to pluralize nouns that are uncountable or irregular. You cannot say "informations" or "advices".
+Uncountable mass nouns in English never take a plural "-s" suffix and must agree with singular verbs. High-frequency non-count nouns include luggage, advice, information, furniture, equipment, vocabulary, slang, and software. To express numerical quantity, speakers must pair them with countable counters such as pieces of (e.g., two pieces of luggage or a piece of advice) or substitute discrete countable equivalents like suggestions, words, or programs.
 
 ### The "Never Add S" List (Uncountable Nouns)
 
@@ -7263,19 +4017,11 @@ The following words are uncountable. You cannot add an "S", and you must use a s
 
 Some animal words are both singular and plural. Never add an "S". - Fish: One fish, ten fish. (Fishes is only used when talking about multiple scientific species of fish). - Deer: One deer, five deer. (Not: deers). - Sheep: One sheep, a hundred sheep. (Not: sheeps). - Moose: One moose, two moose. (Not: mooses). - Mice: One mouse, three mice. (Not: mouses).
 
-### Practice Prompts
-
-- Fix the error: "Thank you for all of your good advices and informations."
-- Translate this idea into correct English: "I have too many luggages to carry."
-
 ## The Ultimate Prepositions Guide
-
-Date: 2026-06-04  
-Category: english-grammar
 
 ### Summary
 
-Prepositions are often considered the hardest part of learning English because they rarely translate directly from your native language. This guide covers the rules for places, dates, and the specific prepositions that must follow certain adjectives and verbs.
+Use 'in' for cities, enclosed spaces, and months; 'at' for specific locations, activities, and numbered addresses; and 'on' for streets without numbers and specific dates. Fixed adjective collocations require 'good/bad at', 'known for', 'married/engaged to', 'disappointed in' (a person) versus 'with' (a thing), and 'dressed in'. Distinguish material transformations using 'made of' when the original substance remains visible, 'made from' when it is transformed, and 'made out of' for creative repurposing.
 
 ### Places, Addresses, and Dates
 
@@ -7309,19 +4055,11 @@ You must memorize which prepositions follow these common adjectives: - Good / Ba
 - Made FROM: The original material is transformed and no longer visible. ("Wine is made from grapes").
 - Made OUT OF: Emphasizes creativity or unusual use. ("She made a heart out of paper").
 
-### Practice Prompts
-
-- Fill in the blanks: "He is married ____ Sarah, and they live ____ 123 Elm Street."
-- Fill in the blanks: "I am terrible ____ tennis, so I decided ____ playing in the tournament."
-
 ## The Short "I" vs. Long "E"
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In many languages (like Russian), there is only one "E" sound. In English, there are two distinct sounds: the long, tense "E" (beat) and the short, relaxed "I" (bit). Mixing these up can completely change the meaning of what you are trying to say.
+The long 'E' (/iː/) is tense with a raised tongue and stretched lips ('beat', 'feel'), whereas the short 'I' (/ɪ/) is relaxed, rapid, and produced with a slightly dropped jaw ('bit', 'fill'). Confusing these phonemes alters meaning across pairs such as live/leave, fill/feel, and ship/sheep. English words ending in an 'e' or 'y' vowel sound always terminate in the tense long 'E' ('busy', 'happy'), never the relaxed short 'I'.
 
 ### The Long "E" (Tense)
 
@@ -7343,19 +4081,11 @@ When an English word ends in an "E" or "Y" sound, it is always the long, tense "
 
 - Examples: He, we, busy, happy, cazzy.
 
-### Practice Prompts
-
-- Say this pair out loud, feeling the tension in your lips change: Heat / Hit.
-- Say this sentence out loud, distinguishing the words: "Where do you live, and when do you leave?"
-
 ## The 3 Essential Comma Rules
-
-Date: 2026-06-04  
-Category: english-grammar
 
 ### Summary
 
-Good writing requires good punctuation, but comma rules in English are often different from other languages. This guide covers the three primary rules that confuse non-native speakers: relative clauses, subordinating conjunctions, and coordinating conjunctions.
+Relative clauses require commas only when non-restrictive (supplying non-essential, parenthetical information), but omit commas when restrictive (essential to specifying the noun). With subordinating conjunctions ('because', 'although'), insert a comma only when the dependent clause introduces the sentence, omitting it when placed medially. For coordinating conjunctions (FANBOYS), insert a comma before the conjunction only when joining two complete independent clauses with separate subjects.
 
 ### Rule 1: Relative Clauses (Who, Which, That)
 
@@ -7388,19 +4118,11 @@ Coordinating conjunctions (For, And, Nor, But, Or, Yet, So) connect things toget
 - Example: "He likes to watch movies and play video games."
 - Why: "play video games" does not have a subject, so it cannot stand alone as a sentence. Do not use a comma before 'and'.
 
-### Practice Prompts
-
-- Does this sentence need a comma? "Los Angeles which is a big city has a lot of traffic."
-- Does this sentence need a comma? "I was hungry so I ate an apple."
-
 ## Tricky Food Pronunciations & Silent Letters
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-The word "salmon" is famous for being mispronounced by English learners. In this lesson, Lisa explains the three reasons why "salmon" is so difficult to say, and relates these rules to other common food words.
+'Salmon' is pronounced 'sam-un' (/ˈsæmən/) featuring a completely silent 'L', an open short 'A' (/æ/), and an unstressed second syllable reduced to a schwa (/ə/). Silent consonants similarly occur in 'half', 'almond', 'buffet' and 'filet' (silent 'T'), 'lamb' (silent 'B'), and American 'herb' (silent 'H'). Unstressed vowel reductions to schwa likewise govern food terms like 'lemon', 'carrot', and 'onion'.
 
 ### Rule 1: The Silent "L"
 
@@ -7414,19 +4136,11 @@ The second syllable in "salmon" is not stressed. Therefore, the "O" does not sou
 
 The first letter of "salmon" uses the wide, short "A" sound (/a/). You must open your mouth wide and bring your tongue down. - Other foods with the short A: Half, sandwich, hamburger, cabbage, salad, eggplant.
 
-### Practice Prompts
-
-- Read this sentence out loud, ensuring the L is silent: "I would like half a pound of salmon."
-- Read this sentence out loud, reducing the O in every word: "I put lemon and onion on my carrot."
-
 ## Advanced Business Idioms & Phrasal Verbs
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-To achieve true fluency in a professional environment, you must use phrasal verbs and idioms. Knowing the literal definition of words is not enough. This guide covers essential business expressions.
+Workplace phrasal verbs include 'come across as' (project an impression), 'bring around' (persuade), 'wrap up' (conclude), and 'step down' (resign leadership). Common business idioms include 'run a tight ship' (manage with strict discipline), 'ballpark figure' (rough estimate), 'sweeten the deal' (add incentives), 'wear many hats' (juggle multiple roles), and 'bring to the table' (contribute valuable skills).
 
 ### Phrasal Verbs in Business
 
@@ -7452,19 +4166,11 @@ To achieve true fluency in a professional environment, you must use phrasal verb
 - Bring (something) to the table: To contribute a valuable skill or asset to a team. "He brings strong leadership skills to the table."
 - Deep pockets: Having abundant financial resources (usually referring to an investor or company). "We need an investor with deep pockets."
 
-### Practice Prompts
-
-- Write a sentence using the expression "wear many hats" to describe a job you have had.
-- What is a "ballpark figure" for the cost of a new laptop?
-
 ## Corporate Communication & Negotiation
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa interviews Deva Bridge, a career advancement specialist, to discuss how to successfully negotiate a salary and communicate with a boss in corporate America. Deva uses high-level corporate jargon that native speakers use naturally.
+Corporate evaluation discussions leverage expressions like 'going above and beyond', 'taking on' new responsibilities, and positioning oneself as an 'asset' relative to industry 'peers'. Negotiation strategy requires leading conversations with data, framing proposals as reasonable 'asks', and avoiding blindsiding managers or reaching negotiation dead ends.
 
 ### Performance and Evaluation
 
@@ -7493,19 +4199,11 @@ Lisa interviews Deva Bridge, a career advancement specialist, to discuss how to 
 - Feel defeated / Undervalued: Feeling like a failure, or feeling unappreciated. "When he ignored my email, I felt defeated and undervalued."
 - Dead end: A situation where no more progress is possible. "If the negotiation fails, it becomes a dead end."
 
-### Practice Prompts
-
-- Have you ever been "blindsided" by something at work or school?
-- Write a sentence describing how you "went above and beyond" on a recent project.
-
 ## Los Angeles Slang & Casual Conversation
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa interviews Brandon, a native Californian, while waiting in line at a Trader Joe's grocery store. Brandon's speech is packed with casual slang, idioms, and natural shortcuts that native speakers use when chatting.
+Casual descriptive phrases include 'born and raised' to designate origin, 'hands down' for indisputable certainty, 'the way to go' for optimal choices, and the suffix '-wise' to denote 'in terms of' (e.g., 'price-wise'). Action and contemporary slang include 'sleep in' (intentionally wake up late), 'hit' a place (visit casually), 'overplayed' (overused or stale), and 'fire' (exceptionally good).
 
 ### Descriptive Expressions
 
@@ -7530,19 +4228,11 @@ Lisa interviews Brandon, a native Californian, while waiting in line at a Trader
 - Fire: Extremely good, impressive, or exciting. "That breakfast sandwich is absolutely fire."
 - Hype: Excitement or buzz around a product or event (often due to limited availability). "I don't understand the hype around these bags."
 
-### Practice Prompts
-
-- What is a food in your city that is "hands down" the best?
-- Do you like to "sleep in" on weekends, or do you prefer to wake up early and "hit the gym"?
-
 ## 15 Expressions About Money & Accuracy
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Lisa and her frequent guest, Drake, discuss 15 highly common American idioms. Most of these idioms relate to wealth, spending money, or being perfectly accurate about a statement.
+Financial capacity is expressed through idioms such as 'rolling in dough' (extremely wealthy), 'money to burn' (excess disposable cash), and 'not made of money', while value is gauged by 'getting your money's worth'. Certainty and precision are conveyed by 'bet your bottom dollar' (absolute conviction), 'right on the money' (exact), 'hit the nail on the head', and 'down to a T'.
 
 ### Money & Wealth Idioms
 
@@ -7572,19 +4262,11 @@ Lisa and her frequent guest, Drake, discuss 15 highly common American idioms. Mo
 - Run on: What a machine uses for power. "My car doesn't run on water; I need gas money!"
 - Run: To work or function (for a machine/engine). "My car is old, but it still runs great."
 
-### Practice Prompts
-
-- Have you ever bought something expensive but felt you "got your money's worth"?
-- Write a sentence using the expression "hit the nail on the head."
-
 ## 35 Expressions with the Word "Heart"
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Native speakers use the word "heart" to describe a wide variety of emotions, from determination and bravery to extreme sadness and sincerity. Lisa and Drake explore the most common heart-related idioms.
+Idioms containing 'heart' signify courage and character ('have heart', 'have a big heart'), transparent emotion ('wear your heart on your sleeve'), and lacking enthusiasm ('my heart isn't in it', 'half-hearted'). Sincerity, grief, and conviction are articulated through 'a heart-to-heart', 'from the bottom of my heart', 'with a heavy heart', and knowing something 'by heart' (entirely memorized).
 
 ### Emotion and Character
 
@@ -7617,19 +4299,11 @@ Native speakers use the word "heart" to describe a wide variety of emotions, fro
 - The heart wants what it wants: An expression meaning you cannot control who you fall in love with, even if there are red flags (warning signs).
 - Know something by heart: To have something perfectly memorized. "I know that song by heart." (Similar to: I know it like the back of my hand).
 
-### Practice Prompts
-
-- Have you ever tried an activity where you realized your "heart wasn't in it"?
-- Write a sentence using the expression "have a heart-to-heart talk."
-
 ## Advanced Expressions for Money and Wealth
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-In part two of their financial idioms lesson, Lisa and Drake cover more advanced expressions related to being incredibly wealthy, wasting money, and criminal payoffs.
+Substantial wealth is denoted by 'deep pockets', 'high net worth', 'money is no object', and contrasting generational 'old money' with ostentatious 'new money'. Squandering wealth is described as 'money to blow' or 'money down the drain', whereas illicit transactions involve 'hush money' (silencing payoffs) and 'paying someone off' (bribery).
 
 ### Having Lots of Money
 
@@ -7658,19 +4332,11 @@ In part two of their financial idioms lesson, Lisa and Drake cover more advanced
 - Pay someone off: To bribe someone. "The cartel paid off the guards."
 - Rat someone out: To betray someone by telling the authorities about their bad actions. "He ratted out his best friend to the police."
 
-### Practice Prompts
-
-- If "money were no object", where would you choose to live?
-- Have you ever bought something that turned out to be "money down the drain"?
-
 ## Reading the News: Advanced Journalistic Vocabulary
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-Reading English newspapers is an excellent way to expand your vocabulary, but the words are often formal and complex. This guide breaks down the vocabulary used in a Time Magazine article about artificial intelligence.
+Journalistic prose employs formal terminology such as 'household name' (widely recognized figure), 'candidly' (forthrightly), 'ousting' (removal from office), 'reinstatement', and deliberate 'disinformation' versus accidental misinformation. Pronunciation conventions require stressing the final letter of acronyms smoothly (A-I, C-E-O) and dropping the 'T' into a glottal transition in words like 'threaten' ('threa-uhn').
 
 ### Advanced Vocabulary
 
@@ -7694,19 +4360,11 @@ Reading English newspapers is an excellent way to expand your vocabulary, but th
 - Acronyms: When pronouncing acronyms (like AI, CEO, FBI, ASAP), say them smoothly as one word and place the stress on the final letter. (A-I, C-E-O, F-B-I).
 - Threaten: Do not say "threat-tens". Hold the T and drop straight to the N. "Threa-uhn". (Similar to cotton, button, curtain).
 
-### Practice Prompts
-
-- What is the difference between disinformation and misinformation?
-- What is a "household name" in your country?
-
 ## A Blueprint for English Fluency
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-After 30 years of teaching, Lisa has identified exactly what separates successful English learners from those who fail. This guide provides a strategic blueprint for achieving true fluency.
+Durable language mastery requires anchoring daily practice to an emotionally resonant 'big goal' and mentally translating routine native-language conversations into English immediately. Learners should utilize AI as an on-demand tutor to audit and explain written errors, deliberately targeting intimidating weak areas rather than settling into passive consumption.
 
 ### 1. Connect With a Big Goal
 
@@ -7726,19 +4384,11 @@ If you only do what is easy (like passively watching YouTube videos), you will n
 
 [!IMPORTANT] "Successful people do what unsuccessful people are not willing to do."
 
-### Practice Prompts
-
-- Write down your "Big Goal" for learning English. What does success look like to you?
-- Think of a conversation you had today in your native language. Write down the 3 most important sentences from that conversation translated into English.
-
 ## Essential Expressions with "Go"
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-The word "go" is one of the most flexible words in the English language. By adding prepositions or using it in specific phrases, it transforms into a variety of different idioms relating to effort, permission, and action.
+Idiomatic constructions with 'go' convey initiative and intensity, including 'give it a go' (attempt), 'go all out' (exert maximum effort), and being a 'go-getter' (driven achiever). Boundary and status expressions include 'go overboard' (act excessively), 'don't go there' (avoid a sensitive topic), 'it's a go' (officially approved), and 'it's a no-go' (canceled).
 
 ### Trying and Effort
 
@@ -7766,19 +4416,11 @@ The word "go" is one of the most flexible words in the English language. By addi
 - I can attest to it: I can confirm that this is true based on my personal experience. "This restaurant is amazing, I can attest to it."
 - The task at hand: The current job or problem that requires your immediate attention. "Let's stop chatting and focus on the task at hand."
 
-### Practice Prompts
-
-- Have you ever "gone overboard" when buying something?
-- Are you a "go-getter"? Write a sentence explaining why.
-
 ## Upgrading Your Professional Vocabulary
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-In professional environments like job interviews or meetings, speaking too casually can send the wrong message. This guide teaches you the subtle differences between greetings and provides 15 professional alternatives to the overused words "cool" and "awesome."
+Professional greetings distinguish informal 'hey' (restricted to peers and friends), warm but polite 'hi' (standard workplace interactions), and formal 'hello' (interviews and senior clients). Generic praise words like 'cool' and 'awesome' should be replaced with high-register adjectives such as 'exceptional', 'commendable', 'remarkable', 'noteworthy', 'superb', or 'top-notch'.
 
 ### Hey vs. Hi vs. Hello
 
@@ -7811,19 +4453,11 @@ Choosing the right greeting depends on the situation and your relationship with 
 - Phenomenal: "The product launch generated phenomenal results."
 - Superb: "The service is superb."
 
-### Practice Prompts
-
-- Rewrite this sentence using a professional alternative: "He has an awesome resume."
-- Which greeting would you use if you were writing an email to a CEO you have never met before?
-
 ## The Problem with "Awesome"
-
-Date: 2026-06-04  
-Category: english-vocabulary
 
 ### Summary
 
-The word "awesome" is arguably the most overused word in the English language today. By relying on it constantly, speakers miss the opportunity to use precise, intelligent vocabulary.
+Originating from 'awe', 'awesome' historically described terrifying grandeur but has suffered semantic bleaching through casual overextension to trivial contexts. In professional communications, replace 'awesome' with context-specific alternatives such as 'impressive', 'outstanding', 'brilliant', 'exceptional', or 'striking'.
 
 ### The History of "Awesome"
 
@@ -7850,19 +4484,11 @@ When you replace "awesome" with a specific adjective, you sound more intelligent
 - Remarkable
 - Striking
 
-### Practice Prompts
-
-- Replace the word awesome in this sentence: "The new software update is awesome."
-- What did the word "awesome" historically mean?
-
 ## Hollywood Accent Secrets: Word Stress
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Lisa works with foreign-born actors in Hollywood to perfect their American accents. In this video, she analyzes a script with actress Yasmine Al Massri to demonstrate how stressing the wrong word can completely change the story.
+Sentence-level pitch and tonic stress determine emotional intent, as shifting emphasis between different words fundamentally alters implied subtext and factual narrative. Polished vocal delivery requires analyzing texts beforehand to identify core informative content words rather than emphasizing secondary function words.
 
 ### The Power of Word Stress
 
@@ -7882,18 +4508,11 @@ Example 2: - Scenario A: "They ordered another drink." (Meaning: They were alrea
 
 [!TIP] "Master the rules like a pro, so that you can break them like an artist." - Pablo Picasso
 
-### Practice Prompts
-
-- Read this sentence out loud twice. The first time, stress "I". The second time, stress "you". Notice how the meaning changes: "I tried to call you."
-
 ## 8 Daily Habits for a Perfect Accent
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-Anita, an actress who moved to the US just four years ago, has developed an incredibly natural American accent. She shares her exact daily routine and the 8 techniques she used to achieve her goal.
+Developing an authentic American accent requires consistent oral repetition, shadowing native audio recordings, reviewing voice memos to audit pacing and errors, and learning International Phonetic Alphabet (IPA) symbols. Progress is reinforced by reviewing a personal vocabulary notebook daily, watching subtitled native media, and actively eliminating speech-diluting filler words.
 
 ### Anita's 8 Practice Techniques
 
@@ -7911,19 +4530,11 @@ Anita, an actress who moved to the US just four years ago, has developed an incr
 - Talent vs. Hard Work: "Hard work beats talent when talent doesn't work hard." You do not need a "good ear for languages" if you are willing to practice.
 - The Plateau: Language progress is not a straight line. You will practice for weeks with no visible progress, and then suddenly "jump" to the next level of fluency. Don't quit during the plateau.
 
-### Practice Prompts
-
-- Which of Anita's 8 techniques do you think would be most helpful for your own study routine?
-- Record yourself reading this summary out loud. Do you notice any filler words or slow pacing?
-
 ## 5 Steps to Perfect Pronunciation
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Many students know the mechanical rules of pronunciation (how to move their tongue and lips), but they still make mistakes when speaking naturally. Lisa provides a 5-step process to transition from textbook exercises to real-life fluency. You must do these in order!
+Pronunciation training advances sequentially from isolated phoneme drills to identifying and reading target sounds within authentic non-textbook articles. Learners then reinforce motor patterns through spoken self-talk, recorded spoken self-assessments, and finally interactive conversations monitored with periodic 30-second focus checks.
 
 ### Step 1: Practice with a Book or Video
 
@@ -7945,18 +4556,11 @@ Speak freely into your phone's voice memo app for 2 to 3 minutes about any topic
 
 Now you are ready for real conversations. The goal here is to relax and communicate. You don't need to overthink every word. Just occasionally, for 30 seconds at a time, remind yourself to focus on your target sound.
 
-### Practice Prompts
-
-- Find an English news article. Print it out or copy it into a document, and underline every "TH" sound. Read the paragraph out loud 5 times.
-
 ## American Brands: Pronunciation and Origins
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In this lesson, Lisa corrects common pronunciation mistakes for famous American companies and explains the history and meaning behind the names.
+American brand pronunciations feature specific vowel patterns: 'YouTube' uses an /uː/ ('oo') sound rather than British /juː/, 'Instagram' reduces its medial vowel to a schwa, and 'WhatsApp' pairs initial stress with short /æ/. Brand names reflect distinct histories: 'tube' referenced cathode-ray television tubes, 'Netflix' derives from movie slang 'flicks', and 'Nike' retains a voiced final /iː/.
 
 ### The Brands
 
@@ -7973,19 +4577,11 @@ In this lesson, Lisa corrects common pronunciation mistakes for famous American 
 - McDonald's: Reduce the "A" in Mc to a schwa (uh). The "O" is pronounced as an "ah" sound (like "hot"). Muck-Dah-nalds.
 - Nike: Unlike "bike" or "mike", the "e" at the end of Nike is pronounced. Nai-kee.
 
-### Practice Prompts
-
-- What is the meaning behind the name "Netflix"?
-- Write a sentence using the slang word "flick."
-
 ## Pronouncing Tricky States and Cities
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Names of places in the United States are often difficult to pronounce because they originate from Native American, French, or Spanish languages. English kept the original spellings, but the pronunciations often changed over time.
+U.S. place names derived from French feature silent consonants, seen in 'Illinois' (silent 's', ending in /ɔɪ/), 'Arkansas' (/ˈɑːrkənsɔː/), and 'Des Moines' (silent 's' in both words). Two-word toponyms place primary stress on the second word ('New York'), intervocalic 't' before 'l' flaps to a soft tap ('Seattle'), and '-land' endings reduce to schwa ('Maryland').
 
 ### Silent Letters and French Origins
 
@@ -8013,19 +4609,11 @@ Many places in the US were named by French explorers, which results in silent le
 - Iowa: Reduce the "o". Eye-uh-wuh.
 - Nevada: Neh-vah-duh.
 
-### Practice Prompts
-
-- Why are the final letters silent in Illinois and Arkansas?
-- Read out loud: "I got a little bottle of water in Seattle." Ensure you are using the Flap T.
-
 ## 10 Mispronounced Business Words
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Even advanced English speakers make pronunciation mistakes with common workplace vocabulary. This lesson covers 10 tricky business words, focusing on word stress and vowel reductions.
+Workplace vocabulary pairs distinguish word class via stress: 'AN-a-lyze' (verb) versus 'uh-NAL-y-sis' (noun), and 'EX-e-cute' (/ks/) versus 'ex-EC-u-tive' (/ɡz/). 'De-VEL-op' places stress on the second syllable with a reduced 'o', 'suite' is pronounced identically to 'sweet', 'quote' begins with /kw/, and 'figure' is articulated as 'fig-yer' (/ˈfɪɡjər/).
 
 ### The Top 10 Words
 
@@ -8048,19 +4636,11 @@ Even advanced English speakers make pronunciation mistakes with common workplace
 - Employee: Words ending in "ee" generally stress the final syllable. Em-ploy-ee.
 - Figure: The "U" makes an "er" sound, not a "yoor" sound. Fig-yer. In the past tense, the "D" connects to the next word. "I figured it out."
 
-### Practice Prompts
-
-- Read this sentence out loud, ensuring the noun and verb stress rules are applied correctly: "The executive decided to decrease the budget after reviewing the analysis."
-- Write a sentence using the word "quote" in a business context.
-
 ## Mastering the American "ER" Sound
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-The American "ER" sound (as in bird) is difficult because it is spelled in many different ways (ER, UR, IR, EAR, OR). In this lesson, Lisa explains how to pronounce this sound consistently, regardless of spelling.
+American English produces an identical retroflex /ɜːr/ phoneme across the spelling patterns EAR ('learn'), UR ('hurt'), OR ('work', 'world'), IR ('girl'), and ER ('her', 'were'). 'Were' must be pronounced with this vowel rather than rhyming with 'where', and 'work' must be articulated distinctly from 'walk' by sustaining the tight /ɜːr/ posture.
 
 ### The Rule
 
@@ -8088,19 +4668,11 @@ Read these sentences out loud, ensuring that the target words all have the exact
 - "Is the first one worse than the third one?"
 - "Don't worry about learning all the words."
 
-### Practice Prompts
-
-- Identify the spelling variation: Write down three words from the lesson that contain the "ER" sound but are spelled differently.
-- Record yourself saying: "We were working early on Thursday."
-
 ## Pronouncing Numbers and Dates
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Mixing up numbers like 13 and 30 or 15 and 50 is a common source of miscommunication. This lesson covers the three rules of American number pronunciation to ensure you are always understood when giving prices, dates, or phone numbers.
+Numbers ending in '-teen' stress the second syllable (four-TEEN), whereas '-ty' multiples stress the initial syllable (FOR-ty). Medial 't' in 20, 30, 40, 70, 80, and 90 softens into a flap 'd' ('thir-dy'), while 50 and 60 preserve crisp aspirated 't' sounds. Multi-unit expressions (prices, years, phone number groupings) stress the terminal digit, and decade ordinals insert an extra /iː/ syllable ('twen-tee-eth').
 
 ### 1. Word Stress for -Teen vs. -Ty
 
@@ -8123,19 +4695,11 @@ When giving a phone number, group the numbers and stress the last number of each
 
 When a number ends with a zero (20, 30, 40), we insert an extra syllable (an "e" sound) before the "TH". - We don't say "twen-tyth". We say "twen-tee-eth". - "Her birthday is July 20th." - "It is his 40th birthday."
 
-### Practice Prompts
-
-- Read these two prices out loud, focusing on the stress: $14.00 vs $40.00.
-- Write down your phone number in groups. Practice saying it out loud, stressing the final number in each group.
-
 ## The Rhythm and Melody of American English
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-English rhythm is created by stressing the most important words (content words) and reducing the less important words (function words). If you follow this pattern, you will sound much more natural and native speakers will understand you more easily.
+American spoken cadence relies on stressing meaning-bearing content words while reducing grammatical function words (pronouns, prepositions, auxiliaries). In phrase structures, nouns take precedence over preceding verbs and adjectives, establishing the rhythmic peaks that govern natural sentence comprehension.
 
 ### General Rules of Word Stress
 
@@ -8160,19 +4724,11 @@ Look at how the stress shifts as we build a sentence:
 - "I watched a good video with my friend."
 - Friend is a noun. Now, the sentence ends with a strong noun, so friend receives stress as well.
 
-### Practice Prompts
-
-- Read this sentence out loud and identify the word that should receive the most stress: "I bought a new car."
-- Read out loud, making sure to reduce the preposition and pronoun: "I gave the book to her."
-
 ## Eliminating Filler Words
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-"Stop using like and you will immediately sound more intelligent." This lesson focuses on why filler words destroy your professional image and how you can eliminate them from your speech.
+Filler words such as 'like', 'actually', 'kind of', and 'um' undermine professional credibility, obscure meaning, and signal hesitation. Speakers should replace vague conversational crutches with exact terminology, track personal usage via recorded speech, and embrace silent pauses rather than vocalizing hesitation.
 
 ### The Problem with Filler Words
 
@@ -8193,19 +4749,11 @@ Using these words makes you sound: - Less intelligent - Less educated - Less con
 - Embrace silence: If you are not sure what you are going to say, don't say anything. Don't fill the silence with an "um." Just pause.
 - Improve your vocabulary: The more words you know, the easier it is to express yourself accurately without relying on "stuff like that."
 
-### Practice Prompts
-
-- Rewrite this sentence without filler words: "I was like, really tired, so I kind of just wanted to, um, go to bed."
-- Record yourself speaking for 60 seconds about your plans for the weekend. Did you use the word "like"?
-
 ## 8 Steps to English Fluency
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-Lisa shares 8 essential tips for taking your English to the final level of fluency. For every tip, she provides a famous English proverb to inspire you.
+Achieving advanced fluency demands concrete operational goals, embracing errors as learning mechanisms, and mastering grammatical rules incrementally. Active verbal and written production must take priority over passive listening, guided by the realization that fluency advances through plateaus followed by sudden developmental leaps.
 
 ### The 8 Tips and Proverbs
 
@@ -8234,19 +4782,11 @@ Lisa shares 8 essential tips for taking your English to the final level of fluen
 - Proverb: "Hard work beats talent when talent doesn't work hard."
 - Action: Stop telling yourself you are "too old" or "not talented." Your attitude determines your success.
 
-### Practice Prompts
-
-- Write a short paragraph explaining what "Fortune favors the bold" means in your own words.
-- Which of these 8 tips do you struggle with the most, and what is your plan to fix it?
-
 ## The Secret to True Fluency
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-To achieve true fluency, you must identify your weaknesses and attack them head-on. Lisa explains the two types of English learners and the secret strategy required to succeed.
+Language learners typically split between 'grammarians', who have strong structural knowledge but lack casual fluency, and 'conversationalists', who speak confidently with idioms but exhibit fossilized structural flaws. Breaking fluency plateaus requires attacking personal weaknesses: analytical students must practice spontaneous colloquial speech, while conversationalists must methodically study foundational grammar.
 
 ### The Two Types of Students
 
@@ -8262,19 +4802,11 @@ Stop avoiding your weaknesses. - If you are in Category 1, you must force yourse
 
 [!IMPORTANT] "Life is easy when you live it the hard way, and hard when you live it the easy way." Do the hard work now, and the rest of your English journey will be easy.
 
-### Practice Prompts
-
-- Are you a Category 1 learner or a Category 2 learner?
-- What is the one English skill you have been avoiding the most?
-
 ## Linking: Connecting Words for Fluency
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Native speakers do not pronounce sentences word by word; they link words together so that the sentence flows smoothly. This lesson explains the primary rule of linking and why it is critical for your accent.
+Consonant-to-vowel linking connects words into smooth acoustic streams by shifting terminal consonants onto subsequent initial vowels (e.g., 'hold on' becomes 'hol-don', 'speak English' becomes 'spea-Kenglish'). This phonetic blending enforces natural sentence stress, creates melodic fluidity, and eases articulation by moving difficult final consonant stops into initial positions.
 
 ### The Rule: Consonant to Vowel
 
@@ -8298,19 +4830,11 @@ When a word ends in a consonant and the next word begins with a vowel, you push 
 
 Read these out loud, pushing the bolded consonant to the start of the next word: 1. I love dit. 2. I live i na napartment. 3. It's five o'clock. (Fi Vo'clock) 4. Did you nee dit?
 
-### Practice Prompts
-
-- Rewrite this sentence phonetically to show how the words link together: "I need an umbrella."
-- Why is it physically easier to link the phrase "I liked it" rather than saying the words separately?
-
 ## Fixing Fossilized Grammar Mistakes
-
-Date: 2026-06-04  
-Category: english-grammar
 
 ### Summary
 
-Many advanced students are fluent but still make basic or fossilized grammar mistakes when speaking. Lisa provides four strategies to identify your blind spots and retrain your brain to use the correct grammar automatically.
+Fossilized grammatical errors cannot be resolved by theoretical awareness alone; they require targeted one-on-one professional feedback and intensive oral repetition to reprogram speech motor habits. Informal language exchange partners should be utilized for conversational immersion rather than rule explanations, which require formal grammar resources.
 
 ### 1. Get Professional Feedback
 
@@ -8328,19 +4852,11 @@ A language exchange partner is a free way to get speaking practice. You speak En
 
 Sometimes we make mistakes simply because we forgot the rules or never learned them properly. - Action: Buy a high-quality grammar book (like Understanding and Using English Grammar or Grammar in Use). Do the boring exercises. After learning a rule, create your own sentences applying the rule to your real life.
 
-### Practice Prompts
-
-- Think of one grammar mistake you know you make frequently. Write down the correct version of the sentence and read it out loud 10 times.
-- Why is it a bad idea to rely on native-speaker friends to explain English grammar rules?
-
 ## 10 Fluency Tips from a Hollywood Performer
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-Marina Mazeppa is a Ukrainian actress, model, and contortionist who competed on America's Got Talent. When she moved to Los Angeles, she had to learn English extremely fast for her career. Here are her top 10 techniques.
+Accelerating oral fluency requires actively soliciting real-time corrections, self-correcting mid-sentence, and undertaking challenging public tasks in English. Learners should audit personal voice recordings, convert commuting time into focused podcast listening, and maintain a rigorous vocabulary notebook.
 
 ### Marina's Intense Routine
 
@@ -8355,19 +4871,11 @@ Marina Mazeppa is a Ukrainian actress, model, and contortionist who competed on 
 - Keep a vocabulary notebook: Watch movies with English subtitles. Pause constantly, look up words in Google Translate, write them in a notebook, and read the notebook repeatedly.
 - Be patient: Just like learning to do a physical split in gymnastics, fluency takes daily stretching. You can't achieve it in two days.
 
-### Practice Prompts
-
-- What is one "difficult" or "scary" thing you could do in English this week to push yourself outside of your comfort zone?
-- Which of Marina's 10 tips requires the most discipline?
-
 ## Man vs. Men: The /ae/ and /e/ Sounds
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Confusing the /ae/ sound (man, pan, bad) with the /e/ sound (men, pen, bed) is one of the most common mistakes in English pronunciation. Lisa explains the physical mechanics of making these sounds distinctly different.
+The /æ/ vowel in 'man' requires an open jaw, a tense vocal tract, and the tongue tip positioned behind the lower teeth, whereas /e/ in 'men' utilizes a relaxed, slightly opened mouth. British English frequently shifts /æ/ to /ɑː/ before 's' ('cl-ah-ss'), while American English maintains a broad /æ/ across pairs like 'man'/'men', 'pan'/'pen', and 'bad'/'bed'.
 
 ### 1. Mouth Position
 
@@ -8389,19 +4897,11 @@ In British English, the /ae/ sound is often pronounced as a deep "ah" sound, esp
 
 Read these pairs out loud, ensuring your mouth opens much wider for the first word than the second word: - Man / Men - Pan / Pen - Bad / Bed - And / End - Gas / Yes (Notice the vowel difference)
 
-### Practice Prompts
-
-- Record yourself saying this sentence: "The man gave the men a pen and a pan." Listen back to ensure the vowels sound completely different.
-- What are two American brand names that use the big, tense /ae/ sound?
-
 ## Desert vs. Dessert
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-The words "desert" and "dessert" are often confused due to their similar spellings. The difference in pronunciation relies entirely on word stress. All three variations use the "Z" sound for the "S".
+The noun 'desert' (arid terrain) places primary stress on the first syllable (DE-sert), whereas the verb 'desert' (to abandon) and the confectionery noun 'dessert' both place primary stress on the second syllable (de-SSERT). All three lexical items pronounce their medial sibilant as a voiced /z/.
 
 ### The Three Meanings
 
@@ -8417,18 +4917,11 @@ The words "desert" and "dessert" are often confused due to their similar spellin
 
 [!TIP] Notice that the verb "to desert" and the noun "dessert" (sweet food) are pronounced exactly the same way!
 
-### Practice Prompts
-
-- Read this sentence out loud, applying the correct word stress: "After he deserted everyone, he went to the desert to eat dessert."
-
 ## Pronouncing "Water" (American Accent)
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-The word "water" is difficult for non-native speakers, but it relies on three very specific American pronunciation rules.
+Pronouncing American 'water' involves tightly rounding the lips for /w/, opening the mouth into a broad 'ah' (/ɑː/) vowel, and articulating the intervocalic 't' as a voiced flap tap (/ɾ/). The word finishes with a retracted tongue producing a strong retroflex American /ər/ ('wah-der').
 
 ### Step-by-Step Breakdown
 
@@ -8437,18 +4930,11 @@ The word "water" is difficult for non-native speakers, but it relies on three ve
 - The Flap T: Because the "t" is surrounded by two vowels (a and e), Americans do not pronounce a sharp "T". Instead, it becomes a "Flap T", which sounds like a very quick "D" or a rolled "R" in other languages. (Wah-der).
 - The R: At the end of the word, pull your tongue back to create a strong American "R". (Wah-derrr).
 
-### Practice Prompts
-
-- Read this out loud using the Flap T: "I'd like a glass of water."
-
 ## Review: Pronouncing Numbers in American English
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-This lesson serves as a review of the primary rules for pronouncing American numbers, specifically addressing the common confusion between numbers ending in "-teen" (like 15) and "-ty" (like 50).
+Number pronunciation differentiates '-teen' suffixes (second-syllable stress) from '-ty' multiples (first-syllable stress). Medial 't' in 20, 30, 40, 70, 80, and 90 converts to a flap /ɾ/ ('for-dy'), while 50 and 60 retain sharp /t/ articulations. Numerical sequences (years, prices, times) place tonic prominence on the final digit, and round ordinals insert an /iː/ before the suffix ('twen-tee-eth').
 
 ### Rule 1: Word Stress (-Teen vs. -Ty)
 
@@ -8467,19 +4953,11 @@ When saying a group of numbers (like a price, a year, or a time), always stress 
 
 For numbers ending in zero (20, 30, 40), we must add an extra vowel sound (an "ee") before the "TH" ending. - 20th is pronounced twen-tee-eth (not twen-tyth). - 40th is pronounced for-tee-eth.
 
-### Practice Prompts
-
-- Read these two prices out loud, focusing on the difference in word stress: $15.00 vs $50.00.
-- Read this sentence out loud: "It is his 30th birthday, and the party starts at 6:30."
-
 ## Weather and Temperature Vocabulary
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Talking about the weather is the most common form of "small talk" in the United States. This lesson covers the correct pronunciation of difficult temperature and weather-related words.
+Meteorological vocabulary requires stressing the second syllable in 'ther-MOM-eh-ter', compressing 'temperature' into three syllables ('TEM-pruh-chur'), and stressing the initial noun in compound terms ('weather forecast'). Cooling systems distinguish individual units ('air conditioner') from integrated structures ('air conditioning').
 
 ### Measuring Temperature
 
@@ -8501,19 +4979,11 @@ Talking about the weather is the most common form of "small talk" in the United 
 
 When a noun is made of two words, stress the first word: - Weather forecast - Outdoor thermometer
 
-### Practice Prompts
-
-- Record yourself saying this sentence: "What is the temperature today? It's 95 degrees Fahrenheit."
-- Explain the difference between an "air conditioner" and "air conditioning".
-
 ## Pronouncing "THE" Correctly
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-"The" is one of the most common words in the English language, but many non-native speakers mispronounce it. There are specific rules regarding tongue placement and how the vowel sound changes based on the next word.
+The definite article 'the' reduces to a schwa ('thuh', /ðə/) before words beginning with consonant sounds ('the dog'), but shifts to a long 'E' ('thee', /ðiː/) before words beginning with vowel sounds ('the apple'). When 'thee' precedes a vowel, link the adjacent sounds smoothly using an unwritten transitional /j/ glide ('thee-y-end').
 
 ### Rule 1: The "TH" Sound
 
@@ -8536,19 +5006,11 @@ When you say "Thee" before a vowel, you must connect the two words using a very 
 
 Read these out loud, using "Thee" and a connecting "Y" sound: 1. "This is the end of the film." 2. "The traffic is heavy in the afternoon." 3. "He is the only person who knows the truth." 4. "I can't find the answer to the question."
 
-### Practice Prompts
-
-- How should you pronounce "The" in the phrase "The umbrella"? Why?
-- Practice the "TH" sound by saying: "The thirty thoughts."
-
 ## Money and Finance Vocabulary
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Financial vocabulary is full of silent letters and tricky consonant clusters. This lesson breaks down the pronunciation of common banking and money-related terms.
+Financial vocabulary contains silent consonants in 'debt' (silent 'b', /dɛt/), 'mortgage' (silent 't', /ˈmɔːrɡɪdʒ/), and 'budget' (silent 'd', /ˈbʌdʒɪt/). 'Interest' drops its medial 'e' and articulates 'tr' as /tʃr/ ('in-chrest'), while 'owe' (debt obligation) must be grammatically distinguished from 'own' (legal possession).
 
 ### Silent Letters
 
@@ -8571,19 +5033,11 @@ Do not confuse these two! - Owe: You borrowed money and must pay it back. ("I ow
 
 This is a funny expression used to describe someone who loves very expensive, luxury items (champagne) but does not have the money to afford them (beer budget).
 
-### Practice Prompts
-
-- Write a sentence using the word "indebted" (meaning: owing someone a massive favor).
-- Read out loud: "I need to withdraw money from the ATM to pay off my mortgage."
-
 ## Fixing a Monotone Voice
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-Speaking in a "monotone" (flat, boring) voice can make you sound unenthusiastic, unconfident, and disconnected, which can harm your professional life. This lesson provides practical tips for injecting energy and passion into your English speech.
+Monotone vocal delivery stems from cultural conditioning, introversion, or cognitive fatigue from grammatical monitoring. Correcting it requires physical gesturing, exaggerating lip and jaw mobility on vowels, and lengthening the duration and pitch of stressed keywords to create energetic acoustic contour.
 
 ### Why Do People Sound Monotone?
 
@@ -8611,19 +5065,11 @@ When you stress a word, you make it louder, longer, and higher in pitch. By stre
 
 [!TIP] Enjoy speaking. Remember that you have something important to say, and you deserve to be heard. Use a strong, powerful voice.
 
-### Practice Prompts
-
-- Stand up, use your hands, and read this out loud with exaggerated energy: "I am so excited to announce our new product!"
-- Why should you avoid imitating action heroes when practicing your English?
-
 ## The Suffix "-Esque"
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-A suffix is placed at the end of a word to change its meaning. The suffix -esque means "like," "similar to," "resembling," or "in the style of."
+The suffix '-esque' attaches to nouns to signify 'resembling', 'in the style of', or 'like'. Standard applications include 'picturesque' (visually charming like a picture), 'statuesque' (tall, poised, and dignified like a statue), and 'modelesque' (resembling the physique of a fashion model).
 
 ### Common Examples
 
@@ -8631,19 +5077,11 @@ A suffix is placed at the end of a word to change its meaning. The suffix -esque
 - Statuesque: Tall, beautiful, and dignified like a statue.
 - Modelesque: Resembling the physique or style of a fashion model. ("Those exercises will help you achieve a modelesque physique.")
 
-### Practice Prompts
-
-- If a movie has a style similar to the director Quentin Tarantino, how could you describe the movie using the "-esque" suffix?
-- Write a sentence describing your ideal vacation destination using the word "picturesque."
-
 ## Idioms and Advanced Grammar in Context
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-This lesson extracts common idioms and an advanced grammar structure from an interview with Samantha Grant, a celebrity nutritionist in Los Angeles.
+Conversational idioms include 'bring up' (introduce a subject), 'beat yourself up' (engage in excessive self-blame), 'set the tone for' (establish an ongoing mood), and 'get over the hump' (pass the hardest phase). Formal dramatic emphasis employs negative inversion, fronting negative adverbials ('never', 'seldom', 'at no time') followed by inverted auxiliary-subject order ('At no time do I think...').
 
 ### Key Idioms and Phrasal Verbs
 
@@ -8666,19 +5104,11 @@ Native speakers sometimes invert the subject and the verb for special, dramatic 
 
 Standard vs. Inverted: - Standard: I think you would sit down and eat eight oranges at no time. - Inverted: At no time do I think you would sit down and eat eight oranges. - Standard: I have never seen such a beautiful thing. - Inverted: Never have I seen such a beautiful thing. - Standard: She not only speaks Spanish, but also Italian. - Inverted: Not only does she speak Spanish, but also Italian.
 
-### Practice Prompts
-
-- Rewrite this sentence using inverted word order for emphasis: "We seldom have strong earthquakes here."
-- Write a sentence using the expression "to beat yourself up."
-
 ## Vocabulary and Idioms for Age
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Talking about age involves specific grammar rules and dozens of cultural idioms. This lesson covers everything from infancy to old age.
+Age-related idioms include 'wet behind the ears' (immature or inexperienced), 'over the hill' (past one's prime), and 'May-December romance' (partnership between people with a significant age difference). When using age as a hyphenated prenominal adjective, 'year' remains singular (e.g., 'a six-year-old child'), while decade descriptions use possessive phrasing ('in her late 40s').
 
 ### Age Idioms
 
@@ -8711,19 +5141,11 @@ Adjectives: When describing someone's age using a hyphenated adjective before a 
 - Middle-aged: Roughly 35 to 60.
 - Senior / Elderly: 60+. (Also called a senior citizen).
 
-### Practice Prompts
-
-- Translate this sentence: "He is 28 years old." using the in his ___ 20s format.
-- Correct the grammatical mistake in this sentence: "The teacher has a class full of five-years-olds."
-
 ## 12 Advanced English Verbs
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Having a rich vocabulary helps you express yourself precisely and command respect in the workplace. Here are 12 advanced verbs that will elevate your English fluency.
+Sophisticated English verbs include 'abate' (diminish in intensity), 'belie' (give a false impression of), 'beseech' (urgently entreat), 'coax' (patiently persuade), and 'cower' (recoil in fear). Public and competitive actions utilize 'decry' (publicly condemn), 'galvanize' (provoke into action), 'garner' (gather praise or support), 'mar' (impair quality), and 'vie' (compete fiercely).
 
 ### The Vocabulary List
 
@@ -8752,19 +5174,11 @@ Having a rich vocabulary helps you express yourself precisely and command respec
 - Vie: To compete fiercely with someone to achieve something. (Present participle: vying).
 - Example: "Several highly qualified candidates are vying for the manager position."
 
-### Practice Prompts
-
-- Write a sentence using the verb "muster" about completing a difficult task.
-- What is the difference between "coaxing" someone and forcing someone?
-
 ## 12 Advanced Descriptive Words
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This vocabulary test covers 12 advanced descriptive words (adjectives and adverbs) that are frequently used by educated native speakers to describe complex situations and emotions.
+Advanced descriptive terms denote challenging conditions ('bleak' for desolate, 'daunting' for intimidating) and pervasive presence ('ubiquitous'). Character and ethical evaluations are articulated using 'egregious' (flagrantly bad), 'sanctimonious' (hypocritically self-righteous), 'callous' (unfeeling), 'adamant' (unyielding), and 'distraught' (deeply agitated).
 
 ### The Vocabulary List
 
@@ -8793,19 +5207,11 @@ This vocabulary test covers 12 advanced descriptive words (adjectives and adverb
 - Distraught: Extremely worried, nervous, or upset.
 - Example: "She was incredibly distraught after losing her dog."
 
-### Practice Prompts
-
-- Write a sentence describing a technology that is "ubiquitous" in your life.
-- If someone makes an "egregious" error at work, what is likely to happen to them?
-
 ## Understanding Jokes and Wordplay
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Humor is often the hardest part of a new language to understand because it relies on cultural context and double meanings. If you understand these jokes, your English is highly advanced.
+English humor relies heavily on homophones and idiomatic double meanings, exemplified by 'guts' (viscera vs. courage), days being 'numbered' (calendar numbers vs. impending end), and 'outstanding in his field' (pasture vs. professional excellence). Conversational terminology around humor includes 'getting' a joke (comprehending), having it 'go over one's head' (missing the point), delivering the 'punchline', and telling predictable 'corny' or 'dad jokes'.
 
 ### Vocabulary for Jokes
 
@@ -8845,19 +5251,11 @@ Humor is often the hardest part of a new language to understand because it relie
 - Atmosphere: Oxygen/air around a planet.
 - Atmosphere: The mood, ambiance, or design of a restaurant.
 
-### Practice Prompts
-
-- Tell a "dad joke" from your native country, and explain why it is funny.
-- Write a sentence using the expression "it dawned on me."
-
 ## 4 Tips for a Better Accent
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-This lesson features an interview with a communication coach and a live coaching session with a postdoctoral scholar, providing four actionable tips for sounding clear and confident.
+Professional accent clarity requires mastering the stress patterns of everyday industry-specific terms, intentionally decelerating pacing to articulate difficult consonant transitions, and prioritizing content words over function words. Communicators should prioritize operational intelligibility and vocal confidence over chasing accent perfection.
 
 ### Tip 1: Master Key Workplace Words
 
@@ -8875,19 +5273,11 @@ Do not apply strong stress to pronouns (I, me, you) or prepositions (to, for, at
 
 Do not be paralyzed by a fear of being judged for your accent. - You are speaking because you are a hired expert in your field; you deserve to be there. - Most people do not care about your accent as long as you are speaking clearly. - Ignore negative comments from insecure or jealous individuals. Speak with a strong, confident voice.
 
-### Practice Prompts
-
-- Record yourself saying this sentence quickly, and then very slowly: "Professional speech is clear speech."
-- Write down five long, difficult words that are specific to your job or major. Which syllable is stressed in each?
-
 ## Listening for the Letter "O"
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-To improve your pronunciation, you must first improve your listening skills. The letter "O" is particularly tricky in English because it makes several very different sounds.
+In unstressed syllables, the letter 'O' typically reduces to a schwa (/ə/), as heard in the terminal syllable of 'doctor' (/ˈdɑːktər/) and the initial syllable of 'control' (/kənˈtroʊl/). When stressed, 'O' realizes three distinct phonemes: /ɑː/ ('doctor'), /oʊ/ ('control'), or /ʌ/ ('color').
 
 ### The Unstressed "O" (The Schwa)
 
@@ -8899,19 +5289,11 @@ When an "O" is in the stressed syllable, it can make one of three sounds: 1. The
 
 [!TIP] Do not rely strictly on spelling! The only way to know the correct pronunciation is to listen to native speakers or check a phonetic dictionary.
 
-### Practice Prompts
-
-- Look at the word "photography". Which "O" is stressed? Which one is reduced to a schwa?
-- How is the "O" pronounced in the word "London"? (Ah, Oh, or Uh?)
-
 ## Powerful Vocabulary Building Strategies
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-Learning random lists of words is not an effective way to achieve fluency. This lesson outlines sustainable, long-term habits for acquiring a rich and powerful vocabulary.
+Broad vocabulary development relies on reading narrative fiction for contextual richness, immediately incorporating new words into spoken personal sentences, and reading across varied non-specialized disciplines. Physical paper dictionaries reinforce memory via marginal annotations, root browsing, and pencil-dot tracking of recurrently forgotten terms.
 
 ### 4 Tips for Vocabulary Acquisition
 
@@ -8931,19 +5313,11 @@ When you look up a new word, do not just read the definition and close the book.
 
 If you only read business books, you will struggle to talk about politics, art, or everyday events. Read articles on diverse topics so you can converse with anyone about anything.
 
-### Practice Prompts
-
-- What does the expression "old school" mean? Use it in a sentence.
-- Why is an online dictionary sometimes less effective for long-term memory than a paper dictionary?
-
 ## Does Perfect Grammar Matter?
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-There is a long-standing debate: should learners focus heavily on grammar, or just aim to communicate? The answer depends entirely on your goals.
+Grammatical precision is essential in academic writing and career advancement where structural flaws impair credibility, though communicative effectiveness suffices in casual social interactions. Common errors include adjective-adverb confusion ('spoke good' versus 'spoke well'), improper pronoun cases ('me and her went'), and homophone misspellings like 'should of' instead of 'should have'.
 
 ### When Grammar Matters
 
@@ -8976,19 +5350,11 @@ Native speakers do make grammar mistakes, but they are usually different from th
 - Writing should of instead of should have.
 - Confusing they're, their, and there.
 
-### Practice Prompts
-
-- Correct this sentence: "Me and my brother play tennis real good."
-- Write a sentence explaining why good grammar is important in your specific career field.
-
 ## Real Conversations: 10 Idioms in LA
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson features idioms and advanced vocabulary extracted from an interview with Michael, a videographer attending a major restaurant event in Los Angeles.
+Conversational idioms include 'debut' (silent 't', pronounced /deɪˈbjuː/), 'out of this world' (extraordinary), 'check out' (investigate), and 'stick with me' (remain vividly remembered). Social terminology distinguishes being a 'snob' (discerning enthusiast in coffee or beer) and describes community cultural hubs as a 'scene' or an eclectic 'mishmash'.
 
 ### Vocabulary & Idioms
 
@@ -9003,19 +5369,11 @@ This lesson features idioms and advanced vocabulary extracted from an interview 
 - Upbringing: How your parents raised you; how you grew up. ("His strong work ethic is a result of his upbringing.")
 - A mishmash: A confused or unique mixture of different things.
 
-### Practice Prompts
-
-- Are you a "snob" about anything (coffee, chocolate, music)? Explain why.
-- What is the difference between your "background" and your "upbringing"?
-
 ## 13 Professional English Expressions
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-If you want to sound confident and fluent at work, you must learn the specific expressions native speakers use in business settings. This lesson breaks down an interview with Ross, a Public Relations (PR) specialist.
+Professional workplace expressions include working 'in the field' (specialized domain), 'getting into' an industry, having interviews 'lined up' (scheduled), and not 'backing out' on agreements. Professional development is described through a specific 'skill set', managing 'time-sensitive' projects while 'on deadline', being 'strong at' a task, and 'moving one's way up'.
 
 ### Expressions for the Workplace
 
@@ -9032,19 +5390,11 @@ If you want to sound confident and fluent at work, you must learn the specific e
 - X, Y, or Z: Used when giving a list of hypothetical examples. ("Our product is better because of X, Y, or Z.")
 - In a [adjective] fashion: In a particular manner or way. ("Please handle this in a professional fashion.")
 
-### Practice Prompts
-
-- Describe your "skill set" using at least three specific abilities you have.
-- What is a "time-sensitive" task you have to complete this week?
-
 ## 14 Idioms for Overcoming Difficulty
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This is part two of an interview with Drake, a restaurant worker in LA, filmed during a period of high unemployment. He uses several idiomatic expressions to describe how he stays positive and productive during hard times.
+Expressions of resilience contrast 'pull together' (unite as a collective) with 'pull yourself together' (regain emotional control), alongside 'weathering the storm' through hardship. Navigating adversity involves maintaining a constructive 'mindset', resolving to 'stick it out' to completion, and recognizing that there is 'no use' in unproductive worrying.
 
 ### Idioms of Resilience and Positivity
 
@@ -9063,19 +5413,11 @@ This is part two of an interview with Drake, a restaurant worker in LA, filmed d
 - No matter what: Unconditionally; regardless of what happens. ("I will achieve my goal no matter what.")
 - To stick it out: To endure a difficult situation all the way to the end without giving up. ("This class is hard, but I will stick it out.")
 
-### Practice Prompts
-
-- Write a sentence giving advice using the phrase "There's no use in...".
-- Describe a time when you had to "weather the storm" during a difficult period in your life.
-
 ## 15 Idioms with the Word "Under"
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This quick lesson covers 15 highly common idiomatic expressions that all begin with the word "under".
+Idioms with 'under' describe mild illness ('under the weather'), intense scrutiny ('under the microscope'), illicit cash payments ('under the table'), and unnoticed actions ('under the radar'). Conflict and pressure are captured by 'getting under someone's skin' (irritating), 'throwing someone under the bus' (betraying an ally), working 'under the gun' (deadline stress), and regarding past disputes as 'water under the bridge'.
 
 ### The "Under" Idioms
 
@@ -9095,19 +5437,11 @@ This quick lesson covers 15 highly common idiomatic expressions that all begin w
 - Under the influence: Drunk; intoxicated (often related to driving).
 - Under pressure: Experiencing intense stress.
 
-### Practice Prompts
-
-- Write a sentence about a time you felt "under the gun" at work or school.
-- What is the difference between "throwing someone under the bus" and "sweeping it under the rug"?
-
 ## 16 Casual Idioms in Context
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson extracts 16 highly common, casual English idioms from an interview with Drake, a young host working at The Cheesecake Factory in Los Angeles.
+Colloquial estimation and context rely on 'give or take' (approximately), 'given the fact that' (considering), and applying an experiential 'rule of thumb'. Interpersonal interactions emphasize maintaining a 'cool head' in crises, establishing 'common ground' across differences, and describing remarkable events as 'unreal'.
 
 ### Vocabulary and Expressions
 
@@ -9128,19 +5462,11 @@ This lesson extracts 16 highly common, casual English idioms from an interview w
 - It's unreal: It is amazing, fantastic, or unbelievable. ("The weather in LA is unreal.")
 - To make it: To achieve a massive, difficult dream (like becoming a famous actor). ("He moved to Hollywood to try to make it.")
 
-### Practice Prompts
-
-- Are you a "people person"? Give an example of why or why not.
-- Write a sentence using the phrase "given the fact that."
-
 ## Idioms for Health and Modern Lifestyle
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson features an interview with Bruce, a "Rolfer" (alternative medicine practitioner) in Santa Monica. He discusses the physical consequences of our modern, sedentary lifestyles using several high-level idiomatic expressions.
+Lifestyle and health discussions feature phrases such as working 'for hours on end' (uninterrupted duration), combating a 'sedentary' routine, and exercising to 'offset' physical inactivity. Problem-solving and negotiation utilize 'wiggle room' (negotiation leeway), enduring 'relentless' strain, and managing a 'perfect storm' of coinciding difficulties.
 
 ### Vocabulary & Idioms
 
@@ -9161,19 +5487,11 @@ This lesson features an interview with Bruce, a "Rolfer" (alternative medicine p
 - To begin with: First of all; my first point. ("I don't want to go because it's too cold to begin with.")
 - The perfect storm: A rare combination of several negative events that creates a uniquely terrible result.
 
-### Practice Prompts
-
-- Describe your typical workday. Is it "sedentary" or active? How do you "offset" the physical stress of your job?
-- What is a "worst-case scenario" for traveling on an airplane?
-
 ## 20 Slang Words and Idioms
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson extracts 20 conversational expressions from unscripted interviews with chefs, security guards, and attendees at the LA Times "101 Best Restaurants" event.
+Conversational praise uses idioms like 'out of this world' and 'to die for' (superlative quality), 'put to shame' and 'blow out of the water' (decisively outperforming competitors), and having a spicy 'kick to it'. Idiomatic discourse features 'I gotta say' (emphatic assertion), growing 'by leaps and bounds' (rapid advancement), and reporting speech casually with 'they go'.
 
 ### Conversational Expressions
 
@@ -9198,19 +5516,11 @@ This lesson extracts 20 conversational expressions from unscripted interviews wi
 - Here and there: In various places; occasionally. ("You make some mistakes here and there.")
 - They go: A highly casual slang term meaning "They said." ("I go 'no', and he goes 'yes'.")
 
-### Practice Prompts
-
-- Describe a local restaurant that serves food that is "out of this world." What is their "signature dish"?
-- Use the phrase "by leaps and bounds" in an original sentence about learning a new skill.
-
 ## 21 Advanced Words and Idioms
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson features an interview with Craig, an actor who moved from New York to Los Angeles. He discusses his acting career, softening his New York accent, and the different "vibes" of the two major cities.
+Acting and career discourse employs expressions such as dwindle (shrink over time), typecast (repeat-role stereotyping), book (secure a role), wear different hats, and thrown to the wolves. Crucial pronunciations include the silent 'b' in subtle (suh-tul), the short 'uh' in Southerner (suh-ther-ner vs. 'ow' in south), and versatile (ver-suh-tul).
 
 ### Vocabulary and Expressions
 
@@ -9234,19 +5544,11 @@ This lesson features an interview with Craig, an actor who moved from New York t
 - Vibe: The mood, feeling, or atmosphere of a place. ("LA has a laid-back vibe.")
 - All year round: Continually throughout the entire year.
 
-### Practice Prompts
-
-- Are you a "high-strung" person or a "laid-back" person? Why?
-- Write a sentence explaining a situation where someone was "thrown to the wolves."
-
 ## Advanced Business Vocabulary (NYT)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-True fluency means being able to comfortably read and understand a major newspaper like The New York Times. This lesson extracts advanced vocabulary from an article about the shifting US job market and economy.
+Economic reporting uses business idioms like turnover rate, lose its sizzle, and sweeten the deal, alongside market verbs such as abate, freeze hiring, and drive up. Descriptive phrases like frenzied, steep competition, through the roof, and the tables have turned capture labor dynamics and shifting corporate leverage.
 
 ### Advanced Vocabulary
 
@@ -9265,19 +5567,11 @@ True fluency means being able to comfortably read and understand a major newspap
 - Altogether: Completely; totally. ("They stopped hiring altogether.")
 - The tables have turned: The situation has completely reversed (someone weak is now strong).
 
-### Practice Prompts
-
-- What causes a company to have a high "turnover" rate?
-- Use "sweeten the deal" in a sentence describing a negotiation (e.g., buying a car, accepting a job offer).
-
 ## Idioms in the News: Fast Food Wars
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson analyzes a news article about "value menu" price wars between major fast-food chains. Journalists frequently use colorful idiomatic expressions to make their writing more engaging.
+Journalistic coverage uses idioms such as hit the road, on the run, par for the course, follow suit, and trumpet, along with nouns like woes and casual terms like burger joint. When monetary values modify a noun, the singular form is required (e.g., a 5-dollar meal, a 2-million-dollar house vs. costs 5 dollars).
 
 ### Vocabulary & Expressions
 
@@ -9296,19 +5590,11 @@ This lesson analyzes a news article about "value menu" price wars between major 
 
 When the dollar amount modifies a noun (acts as an adjective), you remove the "S" from dollars. - Correct: It is a 5-dollar meal. (Modifies "meal") - Correct: The meal costs 5 dollars. - Correct: It is a 2-million-dollar house. - Correct: The house costs 2 million dollars.
 
-### Practice Prompts
-
-- What is an annoying problem at your job that is just "par for the course"?
-- Write a sentence explaining a time you had to do something "on the run."
-
 ## Professional English & Design Vocabulary
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson features part two of an interview with Ashley Fitch, an interior designer working for a major architecture firm in Los Angeles. She shares expressions related to business, budgets, and the realities of working in design.
+Corporate design terminology includes on staff, up front, way over budget, and value engineering (VE) for cost-cutting, paired with idioms like behind the scenes, start from scratch, and a dagger to the heart. In family lineage, generation increments use great- rather than 'grand-grand' (e.g., great-grandmother, great-uncle).
 
 ### Professional Expressions
 
@@ -9337,19 +5623,11 @@ This lesson features part two of an interview with Ashley Fitch, an interior des
 
 Do not say "Grand grand mother." - Grandmother -> Great-grandmother -> Great-great-grandmother. - The brother of your grandmother is your Great uncle.
 
-### Practice Prompts
-
-- Have you ever worked on a project that required "blood, sweat, and tears"? Describe it.
-- What is a common "misconception" people have about your job or your country?
-
 ## Descriptive News Vocabulary: Wildfires
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson uses a news article about devastating wildfires in Los Angeles to teach highly descriptive, advanced vocabulary. These words are incredibly useful for describing major events, nature, and destruction.
+Disaster journalism utilizes precise descriptive vocabulary: unprecedented, swath (swawth), render, billow, wreckage, incinerate, and the contrast between quaint or lush settings and grim aftermaths. Many English verbs of transformation are formed systematically by adding the suffix -en to adjectives, such as flatten, shorten, soften, and widen.
 
 ### Vocabulary of Nature and Destruction
 
@@ -9371,37 +5649,22 @@ This lesson uses a news article about devastating wildfires in Los Angeles to te
 
 Many verbs are created by adding "-en" to an adjective: - Flat -> Flatten - Short -> Shorten - Soft -> Soften - Sharp -> Sharpen - Wide -> Widen - Hard -> Harden - Bright -> Brighten
 
-### Practice Prompts
-
-- Write a sentence describing a "quaint" place you have visited.
-- Use the word "unprecedented" to describe a recent event in the news or in your life.
-
 ## Accent Reduction Coaching
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-This short video serves as a promotional overview for Lisa's one-on-one accent reduction training program. While it doesn't teach specific vocabulary, it highlights why professionals seek to improve their accents.
+Effective professional accent reduction prioritizes immediate phonetic clarity over total accent erasure. Ensuring listeners grasp the message without distraction prevents pronunciation from overshadowing professional expertise.
 
 ### Key Concepts
 
 - Clarity over Perfection: The goal of accent reduction is not necessarily to erase your identity, but to ensure you are easily understood the first time you speak.
 - Focus on the Message: When you speak clearly, listeners focus on the content of your message rather than the way you are pronouncing the words.
 
-### Practice Prompts
-
-- Think of three words related to your specific profession that you find difficult to pronounce. Look up their phonetic spelling and practice them slowly.
-
 ## Public Speaking with a Foreign Accent
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-This lesson features an interview with Ross, a public relations (PR) account supervisor who trains athletes and CEOs on how to speak to the media. He provides fantastic advice for anyone nervous about speaking English with an accent in public.
+Media presentation requires authoritative, conversational delivery over rigid, word-for-word memorization that sounds robotic. Key vocabulary includes succinct (suk-sinkt), come off as, get your point across, and idioms like a sports nut or the informal collective noun folks.
 
 ### Public Speaking Advice (Ross's Tips)
 
@@ -9420,19 +5683,11 @@ This lesson features an interview with Ross, a public relations (PR) account sup
 - To come off as: To appear, seem, or give a certain impression. ("He came off as arrogant.")
 - An adage (ad-ij): A wise saying, proverb, or accepted truth. ("There is an old adage...")
 
-### Practice Prompts
-
-- Do you agree with Ross that it is better to speak naturally with mistakes rather than sounding perfectly rehearsed like a robot? Why?
-- What is an "adage" (wise saying) from your native country? Translate it into English.
-
 ## Idioms and the Word "Going On"
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This is part two of an interview with Megan, an LA restaurant worker originally from a very small town in Michigan. This lesson breaks down complex pronunciations and the multiple meanings of common phrases.
+The phrase 'going on' has three distinct functions: occurring (so much going on), approaching a milestone (going on four years), and casual greeting (what's going on?). Spoken English frequently features colloquial constructs like singular there's preceding plural nouns alongside idioms such as you can't beat it and the difficult pronunciation rural (rur-ull).
 
 ### Vocabulary & Idioms
 
@@ -9456,19 +5711,11 @@ This is part two of an interview with Megan, an LA restaurant worker originally 
 
 In highly casual spoken English, native speakers often use "There's" (There is) with plural nouns, even though it is technically grammatically incorrect. - Strict Grammar: "There are interesting people to meet." - Casual Speech: "There's interesting people to meet."
 
-### Practice Prompts
-
-- Describe the "pace of life" in your hometown. Is it fast or slow?
-- Write a sentence using the phrase "to get away with it."
-
 ## 20 Modern Slang Words
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-In this lesson, Drake teaches modern slang expressions frequently used by younger generations and seen constantly on social media (Instagram, Twitter, etc.). While you shouldn't use these in formal business settings, knowing them is essential for understanding modern pop culture.
+Modern social vernacular uses slang like spill the tea (share gossip), slide into the DMs, no cap (no lie), sus (suspicious), cringe, fire, and stan (obsessive fan). Nuanced social stances are expressed through phrases like you do you, I feel you, low-key (secretly) versus high-key (openly), and keep it 100.
 
 ### Slang & Expressions
 
@@ -9495,19 +5742,11 @@ In this lesson, Drake teaches modern slang expressions frequently used by younge
 - Savage: Someone who is brutally honest and does not care about other people's feelings.
 - To tell [someone] off: To verbally attack someone or tell them exactly why you are angry at them. ("I got fired because I told my boss off.")
 
-### Practice Prompts
-
-- Have you ever had to "tell someone off"? What happened?
-- Write a sentence using "low-key" or "high-key."
-
 ## Linking Consonants: Held T and D
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-To speak smoothly and naturally, native speakers constantly link words together. This lesson focuses on a specific rule: what happens when a word ends in a 'T' or 'D' and the next word starts with a consonant.
+When a word ends in /t/ or /d/ and the following word begins with a consonant, native speakers hold the stop without releasing air (e.g., good job, that man, can't go). When the subsequent word begins with a vowel sound, the final consonant links smoothly into the vowel (good effort becomes goo-deffort).
 
 ### The Rule: Holding the Consonant
 
@@ -9519,18 +5758,11 @@ Examples with 'T': - That man - That way - I can't go (This is why "can" and "ca
 
 Note: If the following word starts with a VOWEL, the rule changes and you link them smoothly (e.g., "Good effort" becomes "Goo-deffort").
 
-### Practice Prompts
-
-- Read these phrases aloud, practicing holding the first consonant: "I don't need it," "What day is it," "Tell me about that."
-
 ## Controversial Modern Expressions
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Language is constantly evolving. This lesson covers popular new expressions that many people use daily, but that other people find highly annoying, ungrammatical, or insincere.
+Modern buzzwords and overused phrases like adulting, fur baby, literally (used for hyperbole), my bad, that's my truth, and a Karen provoke strong stylistic criticism. Workplace clichés such as circle back, with all due respect, and faux-apologies like 'I'm sorry you feel that way' frequently sound evasive or insincere.
 
 ### The Expressions
 
@@ -9559,19 +5791,11 @@ Language is constantly evolving. This lesson covers popular new expressions that
 - A Karen: A pushy, demanding, entitled woman who complains constantly (especially to store managers).
 - Why people hate it: It has ruined a perfectly nice, normal name for real women named Karen.
 
-### Practice Prompts
-
-- Do you use the word "literally" for exaggeration in your native language? Do you find it annoying?
-- Have you ever received a "non-apology" like "I'm sorry you feel that way"? How did it make you feel?
-
 ## 10 Advanced Adjectives (Part 10)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson adds 10 more advanced adjectives to your vocabulary arsenal. Mastering these specific words will instantly elevate your professional and academic English.
+Advanced descriptive adjectives include unanimous (yoo-nan-uh-mus, fully agreed), secular, sedentary, lucrative, fleeting, stagnant, idle, and delinquent (overdue or law-breaking). Stress placement differentiates structure: adjective-plus-noun phrases stress the noun (little boy), whereas compound nouns stress the first element (high school, karate class).
 
 ### Advanced Words
 
@@ -9593,19 +5817,11 @@ This lesson adds 10 more advanced adjectives to your vocabulary arsenal. Masteri
 - Adjective + Noun: Stress the NOUN. (e.g., little boy)
 - Compound Noun: Stress the FIRST word. (e.g., high school, business ideas, karate classes).
 
-### Practice Prompts
-
-- Have you ever had a "lucrative" idea? What was it?
-- Write a sentence describing a time you had to pay a "delinquent" bill or fee.
-
 ## Advanced Alternatives to "Very" (Part 2)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-To sound truly advanced in English, you should stop relying on the word "very." This lesson provides 10 high-level, extremely descriptive adjectives to replace basic "very + adjective" combinations.
+Replace basic 'very + adjective' constructions with precise descriptive alternatives: exorbitant (very expensive), sweltering (very hot), superb (very good), appalling or atrocious (very bad), horrendous (very terrible), excruciating (very painful), and minuscule (very small). Specific vivid terms include pouring for rain and stunned for surprise.
 
 ### 10 Advanced Upgrades
 
@@ -9620,19 +5836,11 @@ To sound truly advanced in English, you should stop relying on the word "very." 
 - Very small -> Minuscule ("Your problems are minuscule compared to theirs.")
 - Very old -> Ancient ("That is an ancient building.")
 
-### Practice Prompts
-
-- Describe the worst, most "sweltering" summer day you have ever experienced.
-- Have you ever seen a movie that was absolutely "atrocious"? What was it?
-
 ## Professional Apologies (Part 2)
-
-Date: 2026-06-04  
-Category: business-english
 
 ### Summary
 
-Apologizing gracefully is a critical business skill. In this lesson, Lisa teaches advanced, highly professional ways to apologize to clients and customers, elevating your communication far beyond a simple "I'm sorry."
+Professional correspondence elevates apologies using formal constructions like we deeply regret, please accept my sincerest apologies, and apologize for the delayed response. Natural lateness idioms distinguish active transit (running late, on my way) from arrival acknowledgments (sorry to have kept you waiting).
 
 ### Formal Apology Expressions
 
@@ -9657,19 +5865,11 @@ Instead of the basic "Sorry," use these sophisticated alternatives, especially i
 - On [one's] way: Currently traveling to the location.
 - "She's on her way."
 
-### Practice Prompts
-
-- Write a professional email apologizing to a client for taking three days to respond to their question.
-- You are 10 minutes late to meet a friend. Text them using the phrase "running late."
-
 ## 10 Advanced Adjectives for People (Part 6)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson focuses entirely on advanced adjectives used specifically to describe human personality and character traits, ranging from highly positive to deeply negative.
+Character description relies on precise traits: positive attributes include tactful, trustworthy, tenacious, witty, and conscientious. Negative or neutral personality traits encompass frugal (strictly economical), gullible (easily duped), outspoken, conceited (arrogant), and greedy.
 
 ### Advanced Vocabulary
 
@@ -9689,19 +5889,11 @@ This lesson focuses entirely on advanced adjectives used specifically to describ
 - Greedy: Always wanting more (usually money or food) and never being satisfied.
 - Conceited: Arrogant; feeling that you are much better than everybody else.
 
-### Practice Prompts
-
-- Think of the most "tenacious" person you know. What makes them so determined?
-- Why is being "outspoken" sometimes a good trait, but sometimes a bad trait?
-
 ## 10 Advanced "-ous" Adjectives (Part 8)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson teaches 10 advanced adjectives that all end in "-ous." Lisa focuses heavily on pronunciation, noting that the "-ous" suffix is ALWAYS reduced to an "us" sound in English, unlike in Latin-based languages.
+The English suffix -ous is consistently reduced to an unstressed /əs/ ('us') sound, found in adjectives like monotonous, tedious, hazardous, anonymous, vigorous, tremendous, studious, ambiguous, and oblivious. Note the initial-syllable stress in infamous (IN-fuh-mus), meaning renowned for negative reasons.
 
 ### Advanced "-ous" Words
 
@@ -9716,19 +5908,11 @@ This lesson teaches 10 advanced adjectives that all end in "-ous." Lisa focuses 
 - Ambiguous: Unclear; having two or more possible meanings. ("The poem is intentionally ambiguous.")
 - Oblivious: Completely unaware of what is happening around you. ("He was oblivious to his surroundings.")
 
-### Practice Prompts
-
-- What is the most "tedious" chore you have to do at home or at work?
-- Write a sentence describing a situation where instructions were too "ambiguous."
-
 ## Easily Confused Phrasal Verbs
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Phrasal verbs are essential for fluency, but they are notoriously tricky because changing just one preposition alters the entire meaning. This lesson clarifies several easily confused sets of phrasal verbs.
+Prepositional shifts radically alter verbal meaning: fill in for (substitute) versus fill out (complete a form) versus fill in on (update); come down to (hinge upon) versus come down with (fall ill); and put up (erect) versus put up with (tolerate). Automotive expressions contrast pull up (arrive alongside), pull over (stop curbside), and pull into (enter a spot).
 
 ### Phrasal Verb Sets
 
@@ -9770,19 +5954,11 @@ Phrasal verbs are essential for fluency, but they are notoriously tricky because
 - To turn to [someone]: To seek help or advice from someone. ("I turn to my brother for advice.")
 - To turn into: To transform or become. ("Ice turns into water.")
 
-### Practice Prompts
-
-- Have you ever had to "put up with" a bad roommate or noisy neighbor? How did you handle it?
-- Who is the person you "turn to" when you need good advice?
-
 ## 23 Phrasal Verbs with "GET"
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-The verb "to get" is arguably the most versatile verb in the English language. This lesson explains 23 highly common phrasal verbs using "get" that native speakers use daily.
+The verb get spans diverse idioms: get around to (finally tackle), get away with (avoid consequences), get down to (focus seriously), get through to (make someone understand), and get it together (organize oneself). For transportation, use get in / out of for cars and get on / off for public transit and open vehicles (buses, planes, trains, motorcycles).
 
 ### Phrasal Verbs with GET
 
@@ -9822,19 +5998,11 @@ The verb "to get" is arguably the most versatile verb in the English language. T
 - Get IN / Get OUT OF: Used for Cars.
 - Get ON / Get OFF: Used for Buses, Planes, Trains, Boats, Motorcycles.
 
-### Practice Prompts
-
-- What is a household chore you have been procrastinating on, but you finally need to "get around to"?
-- Write a sentence explaining how long it took you to "get over" your last cold or flu.
-
 ## Advanced Newspaper Vocabulary
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-In this lesson, Lisa breaks down a real Time Magazine article about Amazon suing fake-review groups. Analyzing real-world news articles is an incredible way to absorb advanced vocabulary used in formal, business, and journalistic contexts.
+Legal and journalistic reporting uses precise terms such as sue, allegedly (uh-LEDGE-id-lee), fraudster, broker a deal, incentivize, perpetrator, and corporate behemoth. Narrative transitions like on the heels of and executive idioms like bring someone up to speed provide concise structural clarity.
 
 ### Journalistic & Legal Vocabulary
 
@@ -9854,19 +6022,11 @@ In this lesson, Lisa breaks down a real Time Magazine article about Amazon suing
 - Guidelines: Rules or instructions.
 - To bring someone up to speed: To give someone the most recent, latest information. ("Please bring me up to speed on the project.")
 
-### Practice Prompts
-
-- Have you ever bought a product because of a "misleading" review?
-- Write a sentence asking a coworker to "bring you up to speed" after you return from a vacation.
-
 ## Conversational Fluency with Drake (Part 2)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-In part two of Lisa's conversation with Drake, he discusses moving from Los Angeles to Las Vegas. This lesson focuses on extracting natural, everyday expressions used by native speakers to describe places, costs, and weather.
+Casual regional discourse distinguishes condos (owned with a mortgage) from apartments (rented from a landlord), and uses idioms like the outskirts, laid-back, and cost estimations like you're looking at. In conversational American speech, /t/ after /n/ is regularly dropped, turning winter into winner, twenty into twenny, and interview into innerview.
 
 ### Key Expressions & Vocabulary
 
@@ -9886,19 +6046,11 @@ In part two of Lisa's conversation with Drake, he discusses moving from Los Ange
 
 In American English, when a 'T' directly follows an 'N', native speakers frequently drop the 'T'. - Winter -> Winner - Twenty -> Twenny - Interview -> Innerview - International -> Innernational
 
-### Practice Prompts
-
-- Do you prefer living in the city center or on the "outskirts"? Why?
-- Describe a movie that was "pretty decent" but not a masterpiece.
-
 ## Fitness & Body Vocabulary with Isaiah
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Lisa interviews Isaiah, a personal trainer at an exclusive Los Angeles gym (Equinox) and a fitness model. This video is packed with vocabulary related to health, fitness, body image, and general conversational idioms.
+Anatomical and athletic descriptions contrast physique and build with specific physical states like lean, bulked up, toned, and having a washboard stomach or defined glutes. Conversational idioms include sweet tooth, indulge in, make up for, throw a curveball, and the suffix -esque (e.g., modelesque, picturesque).
 
 ### Fitness & Body Vocabulary
 
@@ -9933,19 +6085,11 @@ Lisa interviews Isaiah, a personal trainer at an exclusive Los Angeles gym (Equi
 - Rates: The cost for services. ("What is your hourly rate?")
 - To go by [name]: To use a specific name/nickname. ("His name is Robert, but he goes by Bob.")
 
-### Practice Prompts
-
-- Do you have a "sweet tooth"? What do you usually "indulge in"?
-- Write a sentence about a time life "threw you a curveball."
-
 ## Newspaper Vocabulary: The Lottery Winner
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson uses a real article from the Los Angeles Times about a young man who won a $2 billion lottery jackpot and immediately bought a massive house. It covers great idioms for money, speed, and real estate.
+Financial journalism uses terms like lump sum, record-setting, splashy, and drop money (spend heavily), alongside the phrasal verb come forward. For large numerals, retain the singular form with explicit numbers (two million dollars, five thousand people) but pluralize general indefinite quantities (millions of dollars, thousands of people).
 
 ### Money & Real Estate Expressions
 
@@ -9970,19 +6114,11 @@ This lesson uses a real article from the Los Angeles Times about a young man who
 - "Millions of dollars."
 - "Thousands of people."
 
-### Practice Prompts
-
-- If you won the lottery, would you take the "lump sum" or the yearly installments? Why?
-- If you had endless money, what is something ridiculous you would "drop" a million dollars on?
-
 ## Public Speaking & Communication Tips
-
-Date: 2026-06-04  
-Category: business-english
 
 ### Summary
 
-Lisa interviews Alex Lyon, a communication coach, to discuss how non-native speakers can sound more professional, confident, and engaging during presentations and meetings.
+Executive speech requires projecting volume, maintaining an upright posture, using measured gestures, and emphasizing the final three words of a thought with deliberate cadence. Effective presentations follow a clean tripartite structure—introduction, three body points, and conclusion—while actively eliminating hesitation.
 
 ### Key Communication Tips
 
@@ -10003,19 +6139,11 @@ Lisa interviews Alex Lyon, a communication coach, to discuss how non-native spea
 - To come across: How you appear or are perceived by other people. ("She comes across as very confident.")
 - As you go: While you progress or do something. ("You will figure it out as you go.")
 
-### Practice Prompts
-
-- Do you normally feel "jittery" or "composed" when speaking in public?
-- In your culture, do people gesture a lot when they speak, or do they keep their bodies still?
-
 ## 16 Workplace Expressions
-
-Date: 2026-06-04  
-Category: business-english
 
 ### Summary
 
-In this lesson, Lisa interviews Ashley, an interior designer for exclusive restaurants like Nobu. The interview highlights 16 highly common expressions used daily in professional and corporate environments.
+Corporate communication employs functional idioms such as prior to (before), jump into, sign off on (approve officially), get on a call, take off (succeed rapidly), and blanket term. Essential homophones must be distinguished in professional writing: site (physical location), sight (vision), and cite (to reference).
 
 ### Professional Expressions
 
@@ -10038,19 +6166,11 @@ In this lesson, Lisa interviews Ashley, an interior designer for exclusive resta
 - Sight: Vision (Eyesight).
 - Cite: To quote or mention.
 
-### Practice Prompts
-
-- Have you ever had to wait for a boss or manager to "sign off on" a project?
-- Write a sentence suggesting to a coworker that you should "get on a call" instead of emailing back and forth.
-
 ## Confident Intonation & Uptalk
-
-Date: 2026-06-04  
-Category: business-english
 
 ### Summary
 
-Your words might be confident, but if your intonation (the melody of your voice) is wrong, you will sound insecure. This lesson focuses on the power of falling intonation and the dangers of "uptalk."
+Statements of fact, commands, lists, and confirmations require falling intonation at sentence ends to signal authority and finality. Uptalk—rising pitch on declarative statements—mistakenly conveys doubt, insecurity, or a request for validation, whereas rising intonation should be strictly reserved for yes/no questions and unfinished thoughts.
 
 ### Falling Intonation (Confidence)
 
@@ -10064,18 +6184,11 @@ An upward pitch at the end of a sentence communicates that something is incomple
 
 Uptalk is the habit of using rising intonation at the end of a statement, making it sound like a question. - Example: "My name is Alex?" "I think we should hire candidate B?" - Why it's bad: It makes the speaker sound unsure, insecure, weak, and less intelligent. It forces the listener to constantly validate the speaker. - The Fix: Consciously force your pitch down at the end of your declarative sentences to sound like a confident leader.
 
-### Practice Prompts
-
-- Practice saying your name, job title, and where you live using strong falling intonation. Do not sound like you are asking a question!
-
 ## Speaking Like a Leader
-
-Date: 2026-06-04  
-Category: business-english
 
 ### Summary
 
-Lisa and communication coach Alex Lyon discuss how to adjust your professional phrasing to sound like a confident leader. They highlight specific habits to break-like over-apologizing-and provide powerful alternative phrases.
+Executive presence requires replacing apologies with appreciation (e.g., 'Thank you for hearing me out' instead of 'Sorry to disagree') and articulating achievements through measurable business outcomes. Eliminate hedges like 'I think' or 'Does that make sense?' in favor of decisive phrasing: 'Based on the data,' 'I anticipate,' and 'What are your thoughts?'.
 
 ### Habit 1: Over-Apologizing
 
@@ -10093,19 +6206,11 @@ Eliminate words that make you sound unsure. - Instead of "I think / I feel" -> "
 
 Stop asking weak questions at the end of your statements out of habit. - Instead of "Does that make sense?" (which implies you explained it badly or they are too dumb to understand) -> Ask, "What are your thoughts?" or "Do you have any questions?"
 
-### Practice Prompts
-
-- Have you ever found yourself saying "I'm sorry" when you didn't actually do anything wrong?
-- Rewrite this sentence to sound more confident: "I'll try to finish this report by Friday, I think."
-
 ## The "L" Sound After Long Vowels
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-When an "L" comes at the end of a word, directly after a long vowel, native American English speakers insert a very tiny, almost invisible extra syllable (a schwa sound) before the L.
+When /l/ follows a long vowel at the end of a word (e.g., feel, school, smile, mail), American pronunciation inserts a subtle schwa transition, sounding like fee-ul, schoo-ul, and may-ul. The American 'dark L' requires lightly holding the tongue tip behind the upper teeth without excessive muscular tension.
 
 ### The Technique: Adding the "uh" Sound
 
@@ -10113,18 +6218,11 @@ If you pronounce words like "feel" as a single, hard syllable, it will sound for
 
 Important Note on the American L: The American L is not "heavy" or strong. Do not push your tongue hard against your teeth. Lightly touch your tongue behind your top teeth and hold it there longer.
 
-### Practice Prompts
-
-- Slowly pronounce these words, ensuring you hear the tiny transition syllable: "Tool," "Oil," "Deal," "Pale."
-
 ## Dropping the 'T' After 'N'
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In standard American English pronunciation, there is a very common rule regarding words that contain an 'N' followed by a 'T'.
+In standard conversational American English, /t/ immediately following /n/ is frequently dropped in unstressed syllables. This elision naturally transforms twenty into twenny, interview into innerview, international into innernational, and winter into winner.
 
 ### The Rule: N + T = N
 
@@ -10134,18 +6232,11 @@ While pronouncing the 'T' is perfectly acceptable and grammatically correct, dro
 
 Examples: - Twenty -> Twenny - Interview -> Innerview - Atlanta -> Adlanna (or Ad-lan-uh) - International -> Innernational - Plenty -> Plenny - Winter -> Winner
 
-### Practice Prompts
-
-- Read this sentence aloud naturally: "I have an international job interview in twenty minutes."
-
 ## Word Stress: Nouns vs. Adjectives
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-In English, the rhythm and melody are created by stressing specific words. This lesson breaks down a critical pronunciation rule regarding where to place the stress when combining adjectives and nouns.
+Adjective-plus-noun phrases place primary stress on the noun (new PHONE, good DAY), whereas compound nouns (noun + noun) place primary stress on the first element (CELL phone, PARKING lot, LAPtop). When an adjective precedes a compound noun, the first word of the compound noun still retains the main stress (new CELL phone, big BEDroom).
 
 ### Rule 1: Adjective + Noun
 
@@ -10159,18 +6250,11 @@ When you have two nouns put together to create a single meaning (a compound noun
 
 When you put an adjective in front of a compound noun, you still stress the first part of the compound noun. - New CELL phone - Big BEDroom - Interesting YOUTube video
 
-### Practice Prompts
-
-- Read this sentence aloud, paying careful attention to the stress: "I bought a new CELL phone because my old LAPtop broke."
-
 ## Should You Speak English Fast or Slowly?
-
-Date: 2026-06-04  
-Category: business-english
 
 ### Summary
 
-Many English learners believe that speaking very fast will make them sound more like native speakers. However, Lisa argues that rushing your speech is often a massive mistake that hurts your communication and makes you sound insecure.
+Rushing spoken English frequently signals anxiety and degrades clarity by slurring consonant clusters and distorting syllable stress. Authoritative communication relies on a controlled, deliberate cadence that slows down to accentuate key stressed syllables.
 
 ### Why Fast Speaking is Often a Mistake
 
@@ -10183,50 +6267,17 @@ Nervous and insecure people tend to rush their speech to "cover up" their gramma
 - Who is my audience? You can be sloppy when casually chatting with friends. But if you are in a professional setting or speaking to a client, clarity is much more important than speed.
 - Do people ask me to repeat myself? If people frequently say "Excuse me?" or "What did you say?", it is a massive red flag. Your primary goal is communication, not speed. Slow down immediately until people can understand you on the first try.
 
-### Practice Prompts
-
-- Do people ever ask you to repeat yourself when you speak English? If so, try intentionally slowing down your pace by 20% tomorrow.
-
 ## Advanced Vocabulary Test
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson serves as a review test for 15 advanced vocabulary words taught in previous lessons. Knowing these words helps you understand educated native speakers, read newspapers without a dictionary, and express complex thoughts accurately.
-
-### Vocabulary Review List
-
-- Inevitable: Unavoidable; certain to happen. ("Death is inevitable.")
-- Prompt: On time; never late. ("He's always prompt.")
-- Stunning: Extremely beautiful or impressive. ("You look stunning.")
-- Petrified: Terribly afraid. ("I'm petrified of flying.")
-- Sporadic: Happening occasionally or irregularly. ("Sporadic headaches.")
-- Reckless: Careless of consequences; dangerous. ("A reckless driver.")
-- Sedentary: Inactive; sitting a lot. ("A sedentary lifestyle.")
-- Eloquent: Fluent, persuasive, and articulate in speaking. ("An eloquent speaker.")
-- Bland: Plain, boring, or lacking flavor. ("The food is bland.")
-- Indignant: Angry because of an unfair situation. ("She was indignant.")
-- Gullible: Easily tricked or fooled; trusting everyone. ("Don't be so gullible.")
-- Filthy: Extremely dirty. ("The bathroom is filthy.")
-- Ambiguous: Unclear; having more than one possible meaning. ("The meaning is ambiguous.")
-- Lucrative: Making a large amount of profit. ("A lucrative business.")
-- Oblivious (to it): Completely unaware of what is happening. ("He is oblivious to the fact that he hurt her feelings.")
-
-### Practice Prompts
-
-- Describe a time when you felt completely "petrified."
-- Write a sentence about a job or industry that is currently highly "lucrative."
+Comprehensive vocabulary testing reinforces retention of advanced lexical items required for academic comprehension, media literacy, and precise spoken nuance. Active recall strengthens the transition from passive recognition to spontaneous usage in formal discourse.
 
 ## Relaxed Vowels: The Hollywood Method
 
-Date: 2026-06-04  
-Category: english-pronunciation
-
 ### Summary
 
-Lisa shows how she trains Hollywood actors to drop their foreign accents by focusing on the tiny details of neutral, relaxed vowel sounds, using a famous monologue from Kramer vs. Kramer.
+Natural American speech hinges on relaxed, neutral vowels: the unstressed /ʌ/ ('uh') sound in son, done, and mother must not broaden into an open /ɑ/ ('ah'), as illustrated by contrasting Don with done. Similarly, the relaxed /ɪ/ in live and his requires loosened lips and tongue, preventing distortion into a tense /i/ ('ee').
 
 ### The "Uh" Sound (Relaxed)
 
@@ -10240,19 +6291,11 @@ Another common mistake is making the short "ih" sound tense and turning it into 
 
 Practice drill: "I'm his mother." (Relax the tongue and lips entirely for 'his').
 
-### Practice Prompts
-
-- Read this aloud, keeping your mouth relaxed for the 'uh' sounds: "I love my son very much, but he's having too much fun in the sun."
-- Read this aloud, relaxing your lips for the 'ih' sound: "He lives in his house."
-
 ## Polyglot Wisdom with Steve Kaufmann
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-Lisa interviews Steve Kaufmann, a famous polyglot who speaks 20 languages. Steve emphasizes that having a positive attitude, engaging with interesting content, and making mistakes are the ultimate keys to language fluency.
+Sustained language acquisition requires engaging deeply with compelling native content, accepting errors outside one's comfort zone, and prioritizing high-frequency vocabulary. Idiomatic fluency relies on conversational phrasings like colloquial (co-LO-kwee-ul), get going, and understanding American pronunciation shifts such as process (PRAH-sess vs. British PRO-sess).
 
 ### Steve's Language Learning Philosophy
 
@@ -10279,19 +6322,11 @@ Lisa interviews Steve Kaufmann, a famous polyglot who speaks 20 languages. Steve
 
 - Process: Americans pronounce the 'O' as an 'Ah' sound -> PRAH-sess. (Canadians and British often say PRO-sess).
 
-### Practice Prompts
-
-- Write about a time you had to step outside of your "comfort zone." What happened?
-- What is an English TV show, movie, or book that really "grabs you"?
-
 ## Upgrading "Very": 10 Advanced Words
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Relying too much on the word "very" makes your English sound basic and repetitive. By substituting "very + adjective" with a single advanced adjective, your speech will instantly sound much more fluent and sophisticated.
+Replace basic intensifiers with high-impact vocabulary: fascinating (very interesting), transparent (very open), straightforward (very honest), destitute or impoverished (very poor), prosperous (very rich), petrified (very scared), brilliant (very intelligent), indignant (very angry), gigantic (very big), and cramped (very crowded). Fluent delivery links consonant codas into initial vowel onsets (e.g., hear da for heard a).
 
 ### 10 Advanced Substitutions
 
@@ -10310,19 +6345,11 @@ Relying too much on the word "very" makes your English sound basic and repetitiv
 
 When speaking fluently, native speakers connect the final consonant of one word to the beginning vowel of the next word. - "I heard a..." sounds like "I hear da..."
 
-### Practice Prompts
-
-- Write a sentence describing a time you felt "petrified."
-- Write a sentence about an industry that is currently "prosperous."
-
 ## Rhythm & Reduction: Or, Than, From
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Native English speakers do not pronounce every word with equal weight. They strongly stress "key words" (nouns, verbs, adjectives) and drastically reduce "function words" (conjunctions, prepositions). This lesson focuses on reducing or, than, and from while learning related idioms.
+Connected speech rhythmically reduces function words: or reduces to /ər/ in binomial pairs like sink or swim, make or break, and give or take (soup or salad sounds like super salad). Similarly, than reduces to /ðən/ (easier said than done, better late than never), and from reduces to /frəm/ in fixed idioms (from scratch, from the get-go).
 
 ### Reducing "Or"
 
@@ -10336,19 +6363,11 @@ In natural speech, the word "or" is reduced so heavily that "Soup or salad" soun
 
 "From" is reduced unless it is the final word in a sentence ("Where are you from?"). - From head to toe: Completely covered. ("Dressed in black from head to toe.") - From scratch: Beginning without using anything already prepared. ("I baked the pie from scratch.") - From the get-go: From the very beginning. ("I liked the idea from the get-go.") - From bad to worse: Getting increasingly bad.
 
-### Practice Prompts
-
-- Write a sentence about a skill that is "easier said than done."
-- Describe a meal you recently cooked entirely "from scratch."
-
 ## Rhythm & Reduction: Pronouns & "And"
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-To avoid sounding robotic or choppy, you must reduce common connecting words. This lesson focuses on the extreme reduction of the word "and" and how to pronounce classic "word pairs."
+The conjunction and typically reduces to an unstressed /n/ link in classic binomial pairs: bacon 'n' eggs, part and parcel, wear and tear, ins and outs, and spick and span. Unstressed possessive pronouns undergo severe vowel reduction, such as our reducing to /ɑr/ ('are' or 'er') rather than /aʊ.ər/.
 
 ### Reducing "And"
 
@@ -10375,19 +6394,11 @@ In natural speech, the 'A' and the 'D' in the word "and" are dropped. It simply 
 
 Pronouns are rarely stressed. The word "Our" is almost never pronounced as "Oww-er" in flowing speech. It is reduced to "Are" or "Er." ("This is our house.")
 
-### Practice Prompts
-
-- Use "on pins and needles" in a sentence about waiting for an important phone call.
-- What is an activity that requires a lot of "trial and error" to master?
-
 ## The HiNative App & Foreign Language Diaries
-
-Date: 2026-06-04  
-Category: study-skills
 
 ### Summary
 
-Active knowledge (using the language) is much harder than passive knowledge (understanding the language). Lisa shares her favorite technique for forcing active practice-keeping a foreign language diary-and introduces an app to check your work.
+Maintaining a target-language journal actively converts passive vocabulary into spontaneous production, while targeted native feedback verifies natural syntax and nuanced word choice. A vital grammatical constraint requires the prepositional phrase looking forward to to be followed by a noun or gerund (e.g., looking forward to seeing you, never the bare infinitive see).
 
 ### The Diary Technique
 
@@ -10403,18 +6414,11 @@ The main problem with keeping a diary is that no one corrects your grammar. Lisa
 - Correct: I am looking forward to seeing you.
 - Rule: The phrase "looking forward to" must be followed by a noun or a gerund (an -ing verb).
 
-### Practice Prompts
-
-- Write a short 3-sentence diary entry about what you did today. Use a dictionary if you get stuck on a specific word!
-
 ## Pronouncing "Daughter" and "Water"
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-The words "daughter" and "water" are notoriously difficult for English learners. This lesson breaks down the pronunciation into three specific rules that apply to American English.
+In American English, vowel digraphs au, aw, and ough produce a deep open /ɔ/ ('aw') in words like daughter, water, and bought. Intervocalic /t/ converts to a voiced flap /d/ (daw-der, wah-der), the rhotic coda /r/ remains fully pronounced, and rapid connected speech drops initial /h/ in unstressed pronouns (bought her becomes botter).
 
 ### Rule 1: The "Aw" Vowel Sound
 
@@ -10432,18 +6436,11 @@ Unlike British English, where the "R" at the end of a word is often dropped (e.g
 
 When speaking quickly, native speakers frequently drop the 'H' sound at the beginning of pronouns like her and him. - "I bought her a car" -> Sounds like "I botter a car."
 
-### Practice Prompts
-
-- Read this sentence aloud, utilizing the "Aw", the fast "D", and the hard "R": "The author bought water for her daughter."
-
 ## Confident Professional English
-
-Date: 2026-06-04  
-Category: professional-english
 
 ### Summary
 
-When speaking English in a professional environment, bad speech habits can make you sound insecure, hesitant, or unknowledgeable. By breaking these habits, you can immediately sound more authoritative and concise.
+Executive conciseness requires pruning wordy phrases (e.g., replacing due to the fact that with because, and for the purpose of with to), while cutting filler expressions like kind of like and habitual side particles (basically, technically). An intentional silent pause should replace reflexive filler words, projecting confidence and clarity.
 
 ### Tip 1: Don't Be Verbose (Be Concise)
 
@@ -10465,19 +6462,11 @@ A disclaimer is a phrase that instantly lowers the value of what you are about t
 
 To break these bad habits, replace the filler word or side particle with a silent pause. When you feel the urge to say "basically," say the word pause or period in your head, take a breath, and then deliver your sentence.
 
-### Practice Prompts
-
-- Rewrite this wordy sentence: "Due to the fact that it is raining, we will hold the meeting inside."
-- Read the rewritten sentence aloud, using a silent pause instead of any filler words.
-
 ## Political Vocabulary & Expressions
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Political speeches are full of rich, advanced English idioms that are heavily used in business and daily life. This lesson breaks down terms used by Kamala Harris and Donald Trump during their campaigns.
+Political and leadership discourse relies on vivid idioms such as pass the baton, vet candidates, vote up and down the ticket, endorse, and hanging by a thread. Figurative expressions like have a corner on, cover a lot of territory, at stake, and dare I say establish nuanced, persuasive positions.
 
 ### Key Political Vocabulary & Idioms
 
@@ -10498,19 +6487,11 @@ Political speeches are full of rich, advanced English idioms that are heavily us
 - To cover a lot of territory: To discuss many topics or do many different things.
 - Stranded: Left helpless without a way to move forward or escape. ("Stranded at the airport.")
 
-### Practice Prompts
-
-- Write a sentence about a business deal where there is a lot of money "at stake."
-- Write a sentence describing a time you had to "wrap up" a project quickly.
-
 ## 13 English Proverbs About Work
-
-Date: 2026-06-04  
-Category: idioms-and-proverbs
 
 ### Summary
 
-Proverbs reveal how a culture views the world. Understanding English proverbs about work and success will help you comprehend native speakers better and sound much more fluent when you use them yourself.
+Traditional proverbs encapsulate core cultural work values: opportunity (make hay while the sun shines, if you snooze, you lose), diligence (the harder you work, the luckier you get), pragmatism (if it ain't broke, don't fix it), and risk balance (nothing ventured, nothing gained; hope for the best but prepare for the worst).
 
 ### Work & Opportunity Proverbs
 
@@ -10528,19 +6509,11 @@ Proverbs reveal how a culture views the world. Understanding English proverbs ab
 - Hard work never killed anyone: A sarcastic response to someone making lazy excuses.
 - Hard work without talent is a shame, but talent without hard work is a tragedy: (A quote). Use your gifts, or they are wasted.
 
-### Practice Prompts
-
-- Think of a time you were worried about a future problem. Use "Don't cross a bridge until you come to it" in a sentence about it.
-- What is a situation where you had to "Make hay while the sun shines"?
-
 ## Advanced Vocabulary: Tech & Loneliness
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Reading the news is an excellent way to expand your vocabulary into new, diverse subjects. This lesson breaks down a Harvard study on technology and loneliness, focusing on advanced vocabulary and the American "schwa" sound.
+Sociological and psychological discourse employs terms such as stoke (fuel emotions), binge, striking, interlinked, and physiological (distinguished by an audible initial /p/, unlike silent-p psychological). Unstressed syllables across academic vocabulary routinely reduce to the schwa /ə/ (e.g., Har-vuhrd, Stan-fuhrd, Tech-nol-uh-gy).
 
 ### Key Vocabulary
 
@@ -10558,19 +6531,11 @@ Reading the news is an excellent way to expand your vocabulary into new, diverse
 
 In American English, vowels in unstressed syllables are frequently reduced to a short "uh" sound (the schwa). - Harvard -> Har-vuhrd - Stanford -> Stan-fuhrd - Princeton -> Prince-tuhn - American -> Uh-mer-i-cuhn - Technology -> Tech-nol-uh-gy
 
-### Practice Prompts
-
-- Write a sentence about a time you decided to "binge" on a TV show or food.
-- Read the names "Harvard, Stanford, Princeton" out loud, focusing on reducing the second vowel to an "uh" sound.
-
 ## Wall Street Vocabulary
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Financial news uses specific vocabulary to describe the movement of the economy and the stock market. Learning these verbs and expressions is essential for professional fluency.
+Financial reporting uses specialized verbs and idioms: rally, soar, leap, and drive the market, along with on track for and all-time high. Crucial grammatical distinctions separate intransitive rise (prices rise) from transitive raise (companies raise prices), while identical adjacent consonants blend seamlessly in connected speech (e.g., speak Spanish as spea-kpanish).
 
 ### Financial & Business Vocabulary
 
@@ -10594,19 +6559,11 @@ Financial news uses specific vocabulary to describe the movement of the economy 
 
 When one word ends with a consonant and the next word begins with the exact same consonant, do not pronounce the consonant twice. Blend them into one continuous sound. - Chipmaker stock -> Chipmaker stock - Speaks Spanish -> Speak Spanish - I'm married -> I'married
 
-### Practice Prompts
-
-- Write a sentence using the word "soar" to describe the price of a product you buy.
-- Read the phrase "speaks Spanish" out loud, blending the 's' into one smooth sound.
-
 ## Professional Voice Tips from Siri
-
-Date: 2026-06-04  
-Category: professional-english
 
 ### Summary
 
-In a professional environment, how you sound is just as important as what you say. Your voice can communicate confidence and authority, or nervousness and insecurity. Susan Bennett, a professional voice-over artist and the original voice of Apple's Siri, shares her tips for speaking professionally.
+Vocal authority requires active mouth articulation, deep diaphragmatic breathing, and lowering pitch by relaxing throat muscles. Advanced industry vocabulary includes the talent (voice performer), ubiquitous, second nature, and straddle a line, balanced by maintaining natural diction without artificial over-annunciation.
 
 ### Susan's Tips for a Professional Voice
 
@@ -10628,19 +6585,11 @@ In a professional environment, how you sound is just as important as what you sa
 - To take off: To suddenly become very successful or popular. ("Her business took off.")
 - Never ever: An extreme, emphatic version of "never."
 
-### Practice Prompts
-
-- Write a sentence describing something you learned recently that has become "second nature" to you.
-- What is a piece of technology that you consider "ubiquitous"?
-
 ## Why English Vowels Are Confusing
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Many languages, like Spanish and French, pronounce vowels with equal weight and clarity regardless of their position in a word. English does not. English is a stress-timed language that completely changes the sound of a vowel if it is unstressed.
+Because English is a stress-timed language, vowels in unstressed syllables collapse into the neutral schwa /ə/, making distinct spellings like Adam and atom or lesson and lessen phonetically identical. Natural connected speech links final consonants into opening vowels (final answer -> fi-na-lanswer) and holds stop consonants before next consonants (big cactus).
 
 ### The Rule: Reduced Vowels (The Schwa)
 
@@ -10654,18 +6603,11 @@ Example: Lesson vs. Lessen - The 'O' and the 'E' are unstressed and sound exactl
 
 Native speakers rarely pronounce words individually; they link them together. - Connect a consonant to a vowel: Final answer -> Fi-na-lanswer. - Connect similar consonants: With the elevator -> With-e-elevator. - Hold stop consonants: Big cactus -> Hold the 'G' slightly before making the 'C' sound.
 
-### Practice Prompts
-
-- Write a sentence containing the words "Adam" and "Atom". Read it out loud, focusing on making them sound completely identical.
-
 ## Real-Life Linking & Reduction
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-By analyzing an unscripted conversation with a native speaker in Los Angeles, you can observe how Americans actually reduce their words and connect their sentences in real life.
+Authentic conversational English aggressively reduces grammatical function words: to becomes /tə/ ('tuh'), can becomes /kən/ ('k'n'), and are becomes /ər/ ('er'). Unlike non-rhotic accents, American English preserves a strong, vocalic postvocalic /r/ at the ends of words like nature and fundraiser.
 
 ### Real-Life Reductions
 
@@ -10683,19 +6625,11 @@ Native speakers connect the end of one word to the beginning of the next, making
 
 When an 'R' is followed by a 'T', and then followed by a vowel, the 'T' softens into a fast 'D' sound. - Art on the street -> Ar-don the street. - Party -> Par-dy. - Started -> Star-ded.
 
-### Practice Prompts
-
-- Read this sentence aloud, reducing the words "can" and "to": "I can go to the store."
-- Read this sentence aloud, using the Flap 'T' rule for the word 'party': "The party started late."
-
 ## 20 Commonly Mispronounced Words
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Because English spelling is not perfectly phonetic, even highly advanced speakers mispronounce certain words that they have only seen in writing. This list contains 20 of the most frequently mispronounced words in the language.
+Non-phonetic English orthography requires mastering counterintuitive pronunciations: awry (uh-rye), colonel (ker-nul), cocoa (co-co), genre (zhon-ruh), hors d'oeuvre (or-derv), thorough (thur-oh), and warm (worm). Unstressed syllables elide vowels in words like automatically (au-to-mat-ic-lee), while stress falls strictly on the second syllable in develop (de-vel-up).
 
 ### Pronunciation Guide
 
@@ -10720,19 +6654,11 @@ Because English spelling is not perfectly phonetic, even highly advanced speaker
 - Thorough: (Thur-oh). Meaning: Complete and detailed.
 - Warm: (Worm). Not wahrm.
 
-### Practice Prompts
-
-- Write a sentence about an "entrepreneur" whose business plans went "awry."
-- Read the sentence aloud, focusing heavily on correct pronunciation!
-
 ## Actor Training: The Repetition Method
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-Actors approach accent training very differently than casual students. By treating your English practice like an actor preparing for a role, you can dramatically improve your pronunciation and fluency.
+Pronunciation mastery requires shifting from conscious analysis to automatic muscle memory by repeatedly rehearsing short monologues. Critical American speech mechanics include maintaining a fully rhotic postvocalic /r/, stressing the first word in compound nouns, distinguishing relaxed /ʌ/ from open /ɔ/ (hunt vs. haunt, cut vs. caught), and sounding medial /ju/ in words like particular.
 
 ### Pronunciation Corrections
 
@@ -10742,18 +6668,11 @@ In the video, Lisa corrects a Russian actor's English monologue. Key corrections
 
 To truly improve your accent, you must move from knowing the rules to making them automatic. 1. Find a short text: Pick a 1-2 minute monologue, speech, or work presentation. Do not read a whole book. 2. Mark it up: Go through the text and underline difficult words, linking opportunities, and intonation changes. 3. Repeat it 50 times: Start by reading it slowly and perfectly. Read it over and over, going slightly faster each time. 4. Memorize it: Once it is memorized, the correct mouth movements will become muscle memory. You are reprogramming your brain to stop thinking about the pronunciation.
 
-### Practice Prompts
-
-- Find a short, one-paragraph text (a news excerpt, a poem, or a business pitch). Read it out loud 10 times in a row, focusing on perfecting every single sound.
-
 ## The American "T" Sound (Fast D)
-
-Date: 2026-06-04  
-Category: english-pronunciation
 
 ### Summary
 
-One of the most defining characteristics of the American accent is how the letter "T" is pronounced. In many situations, Americans do not pronounce a hard, crisp "T." Instead, they soften it into what sounds like a fast "D."
+When /t/ is positioned between two vowel sounds—either internally within words like water (wah-der) and better (bed-er), or across word boundaries like yes it is (yes i-dis) and what a (wha-da)—it systematically converts into a voiced alveolar flap ('Fast D').
 
 ### The Rule: T Between Two Vowels
 
@@ -10763,18 +6682,11 @@ When a 'T' (or 'TT') is located between two vowel sounds, it changes into a "Fas
 
 This rule does not just apply within a single word. In flowing, connected speech, if a word ends in a 'T' and the next word begins with a vowel, the 'T' is sandwiched between two vowels and becomes a Fast D. - Yes it is -> Yes i-dis - At eleven -> A-deleven - What a nice day -> Wha-da nice day - Get in or get out -> Ge-din or ge-dout - I bought it at a computer store -> I baugh-di-da-da computer store
 
-### Practice Prompts
-
-- Read this sentence aloud, turning every 'T' into a Fast D: "I bought it at a computer store in the city."
-
 ## Advanced English Words (Part 3)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-Using the word "very" repeatedly makes your English sound basic. Upgrade your fluency by replacing "very + adjective" with these 10 advanced words.
+Upgrade repetitive 'very + adjective' constructions with specific alternatives: hilarious (very funny), stunning (very beautiful), deafening (very loud), stuffed (very full of food), crucial (very important), bewildered (very confused), and obese (very fat). Adjacent identical consonant sounds merge across word boundaries without doubling (e.g., was stuffed becomes wastuffed).
 
 ### 10 Advanced Words
 
@@ -10793,19 +6705,11 @@ Using the word "very" repeatedly makes your English sound basic. Upgrade your fl
 
 When one word ends with the same consonant sound that the next word begins with, do not pronounce it twice. Connect them and say it once. - Was stuffed -> Wastuffed - He's certain -> He'certain
 
-### Practice Prompts
-
-- Write a sentence about a time you felt "bewildered."
-- Write a sentence about a meal that left you "stuffed."
-
 ## Advanced English Words (Part 5)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-This lesson continues the series on advanced vocabulary, introducing 10 descriptive adjectives that native speakers use frequently.
+Advanced descriptive adjectives include reckless, abrupt, eager, eloquent, flawed, eccentric, gloomy, inevitable, and illegible (impossible to decipher). Fluent connected speech links final consonant codas directly into initial vowel onsets (caused an accident -> cause-dan-accident; ended abruptly -> ende-dabruptly).
 
 ### 10 Advanced Words
 
@@ -10824,19 +6728,11 @@ This lesson continues the series on advanced vocabulary, introducing 10 descript
 
 Native speakers constantly link words ending in consonants to words beginning with vowels. - Caused an accident -> Cause-dan-accident - Ended abruptly -> Ende-dabruptly - Eager to help us -> Eagertohel-pus
 
-### Practice Prompts
-
-- Write a sentence about something in life that you consider "inevitable."
-- Write a sentence about someone you know who is very "outgoing."
-
 ## Advanced English Words (Part 7)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-A strong vocabulary allows you to express your thoughts precisely without needing long explanations. Here are 10 more advanced adjectives to master.
+Expand precise descriptive vocabulary with mediocre, famished (extremely hungry), prompt, bland, filthy, reluctant, savvy, and fickle (frequently changing preferences). Structural rhythm dictates primary stress on the first element of compound nouns (acting class, social network).
 
 ### 10 Advanced Words
 
@@ -10855,19 +6751,11 @@ A strong vocabulary allows you to express your thoughts precisely without needin
 
 When two nouns are put together to create a single concept (a compound noun), stress the first word heavily. - Acting class (Not acting class) - Social network (Not social network)
 
-### Practice Prompts
-
-- Write a sentence describing a meal you had that was "mediocre" or "bland."
-- Write a sentence about a topic that you are "savvy" about.
-
 ## Advanced English Words (Part 9)
-
-Date: 2026-06-04  
-Category: vocabulary
 
 ### Summary
 
-These 10 words are considered advanced for non-native speakers, but educated native speakers use them daily in normal conversation. Learning them is essential for true fluency.
+Sophisticated formal adjectives include derogatory, irrelevant, amateur, rudimentary, chaotic, indifferent, scarce, sporadic, trivial, and subsequent. In standard American pronunciation, the letter 'o' in words like politician, apologize, comment, and topic is articulated as an open /ɑ/ ('ah') sound.
 
 ### 10 Advanced Words
 
@@ -10886,15 +6774,7 @@ These 10 words are considered advanced for non-native speakers, but educated nat
 
 In American English, the letter "O" is frequently pronounced as a wide, open "Ah" sound. - Politician -> Pahlitician - Apologize -> Apahlogize - Derogatory -> Derahgatory - Comment -> Cahmment - Topics -> Tahpics - Stop -> Stahp
 
-### Practice Prompts
-
-- Write a sentence about a skill where you only have a "rudimentary" understanding.
-- Think of a situation that felt very "chaotic" and describe it using the word.
-
 ## Complete Course Review: Accurate English
-
-Date: 2026-06-04  
-Category: course-review
 
 ### Congratulations!
 
