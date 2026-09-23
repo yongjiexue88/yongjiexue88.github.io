@@ -1,7 +1,7 @@
 ---
 title: "Interactive English Fluency Builder"
 date: 2026-06-05
-summary: "A study-book index for 749 Interactive English transcripts about advanced vocabulary, pronunciation, grammar, idioms, phrasal verbs, academic writing, and American English fluency."
+summary: "A study-book index for 749 Interactive English transcripts covering advanced vocabulary, accent training, grammar, idioms, and writing fluency."
 authors: [yongjie]
 tags: ["english-writing", "vocabulary", "pronunciation", "grammar", "idioms", "phrasal-verbs", "study-book"]
 aliases:
@@ -15,56 +15,34 @@ Category: english-writing
 
 ## Source Book
 
-Source file: `interactive_english_master.md`  
-Full text: [Read the complete Interactive English book](https://www.yongjiexue.io/transcripts/interactive-english-fluency-builder.md)  
-Channel: `@interactive_english`  
-Chapter count: 749 lessons
-
-## Why This Name Works
-
-The source file name is accurate for the transcript pipeline, but the reader-facing purpose is fluency practice. `Interactive English Fluency Builder` captures the real value of the collection: it is a large workbook for vocabulary, pronunciation, grammar, idioms, writing, listening, and natural American English.
+- **Channel**: `@interactive_english` (749 lessons)
+- **Source File**: `interactive_english_master.md`
+- **Full Text**: [Read the complete Interactive English book](https://www.yongjiexue.io/transcripts/interactive-english-fluency-builder.md)
 
 ## Overview
 
-This book collects Interactive English lessons into a broad English fluency reference. It is especially useful for advanced learners because it repeats the core skills from many angles: precise vocabulary, natural phrases, pronunciation details, fast speech, grammar accuracy, speaking confidence, and writing improvement.
+A structured English fluency reference compiled from 749 video transcripts. Designed for advanced learners to build active vocabulary, sharpen American pronunciation, and refine natural sentence patterns.
 
-The chapters work well as a long-term review library. You can use it for daily vocabulary extraction, pronunciation practice, sentence-pattern mining, or targeted grammar review.
+## Core Focus Areas
 
-## Main Learning Areas
+- **Advanced Vocabulary**: C1/C2 words, collocations, topical terminology (business, politics, health, tech).
+- **Spoken Fluency**: Connected speech, contractions, reductions, word stress, and American accent training.
+- **Grammar & Idioms**: High-frequency phrasal verbs, idioms, and prepositions.
+- **Professional Writing**: Academic, descriptive, and exam (IELTS/TOEFL) sentence construction.
 
-- Advanced vocabulary: C1 and C2 words, descriptive adjectives, strong verbs, nouns, adverbs, and collocations.
-- Speaking fluency: casual phrases, American expressions, reductions, contractions, fast speech, and connected speech.
-- Pronunciation: difficult words, word stress, American accent training, city and state names, and common mispronunciations.
-- Grammar: articles, verb tenses, conditionals, prepositions, adverb clauses, relative pronouns, and common mistakes.
-- Idioms and phrasal verbs: everyday idioms, business idioms, seasonal expressions, and high-frequency phrasal verbs.
-- Writing and academic English: professional writing, descriptive writing, graph descriptions, IELTS and TOEFL vocabulary, and sentence improvement.
-- Topic vocabulary: health, banking, courtroom, driving, flying, hospital, pharmacy, science, politics, economy, travel, jobs, social media, and technology.
+## Study Method
 
-## How To Study It
-
-1. Choose one chapter based on the skill you want to improve today.
-2. Extract ten useful words or phrases and write your own example sentence for each one.
-3. Say the example sentences aloud, especially for pronunciation and fast-speech lessons.
-4. Save one sentence pattern that you can reuse in conversation or writing.
-5. Review old notes weekly so the vocabulary becomes active, not just familiar.
+1. **Target one skill**: Pick a focused chapter (vocabulary, accent, or grammar).
+2. **Extract & apply**: Write original sentences using 5–10 key phrases and speak them aloud.
+3. **Spaced review**: Revisit notes weekly to transition vocabulary from passive recognition to active use.
 
 ## Representative Chapters
 
 - C2 Vocab Every Serious Learner Must Know
 - Improve Your Writing: Academic, Professional, and Descriptive
 - Learn Over 100 English Phrasal Verbs
-- 100 Phrases for Casual Conversation
 - 100 Collocations Native Speakers Use in Academic Discussions
-- 50 American Idioms in 60 Minutes
 - American English Accent Training
 - Advanced Vocabulary to Talk About the Economy
-- Advanced Vocabulary to Understand American Politics
 - Professional Writing for Business, University, IELTS, TOEFL
-- Sound Like an American: Accent and Pronunciation Training
 - Useful Business Expressions to Sound More Professional
-- Useful Speaking Tips to Improve Your Fluency
-- Your Path to Speaking Confidently, Clearly, and Effectively
-
-## Best Use
-
-Use this as an English fluency workbook. The best approach is to study one chapter at a time, turn useful phrases into your own sentences, and keep a spaced-review list for vocabulary and pronunciation.

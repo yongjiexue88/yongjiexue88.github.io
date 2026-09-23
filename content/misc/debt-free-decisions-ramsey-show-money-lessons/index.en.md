@@ -1,7 +1,7 @@
 ---
 title: "Debt-Free Decisions"
 date: 2026-06-05
-summary: "A study-book index for 289 Ramsey Show transcripts about debt, budgeting, financial peace, boundaries, behavior change, and long-term wealth building."
+summary: "A study-book index for 289 Ramsey Show transcripts on budgeting, debt elimination, behavioral discipline, and wealth building."
 authors: [yongjie]
 tags: ["finance-notes", "personal-finance", "debt-free", "budgeting", "wealth-building", "study-book"]
 aliases:
@@ -15,55 +15,35 @@ Category: finance-notes
 
 ## Source Book
 
-Source file: `ramsey_show_master.md`  
-Full text: [Read the complete Ramsey book (Part 1: Episodes 1-144)](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-1.md) / [(Part 2: Episodes 145-289)](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-2.md)  
-Channel: `@ramsey_show`  
-Chapter count: 289 episodes
-
-## Why This Name Works
-
-The raw transcript title identifies the channel, but the useful reader promise is bigger: this is a book about making decisions that reduce debt, lower risk, and create financial peace. `Debt-Free Decisions` is short, memorable, and broad enough to cover budgeting, relationships, housing, investing, emergencies, and behavior change.
+- **Channel**: `@ramsey_show` (289 episodes)
+- **Source File**: `ramsey_show_master.md`
+- **Full Text**: [Part 1 (Episodes 1–144)](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-1.md) / [Part 2 (Episodes 145–289)](https://www.yongjiexue.io/transcripts/debt-free-decisions-ramsey-show-money-lessons-part-2.md)
 
 ## Overview
 
-This book collects Ramsey Show transcripts into a personal finance study resource. The repeated lesson is that money problems are rarely only mathematical. They are also behavioral, relational, and emotional.
+A personal finance casebook analyzing 289 caller scenarios. The recurring lesson: money problems are behavioral and psychological, not just mathematical.
 
-The chapters return to a few practical ideas again and again: tell money where to go, stop normalizing payments, build margin before taking risks, face debt directly, set boundaries, and choose long-term peace over short-term comfort.
+## Core Principles
 
-## Main Learning Areas
+- **Zero-Based Budgeting**: Allocate every dollar on paper before the month begins.
+- **Debt Elimination**: Stop normalizing payments; attack consumer obligations systematically.
+- **Margin Over Risk**: Build emergency savings first to insulate against unexpected shocks.
+- **Relational Boundaries**: Establish clear boundaries around family loans, co-signing, and joint money decisions.
+- **Long-Term Compounding**: Prioritize consistency and patience over speculative shortcuts.
 
-- Debt payoff: attacking consumer debt, avoiding payment thinking, and rebuilding after financial mistakes.
-- Budgeting: written plans, monthly control, emergency preparation, and knowing where money goes.
-- Behavior change: discipline, sacrifice, patience, ownership, and avoiding financial shortcuts.
-- Relationships and money: boundaries, engagement, family pressure, trust, and shared financial decisions.
-- Financial stability: margin, emergency funds, risk reduction, and peace of mind.
-- Wealth building: long-term investing mindset, opportunity cost, retirement planning, and steady habits.
+## Study Method
 
-## How To Study It
+1. **Spot the root problem**: Separate the surface cash shortage from underlying behavioral habits.
+2. **Formulate the rule**: State the corrective action in one actionable principle.
+3. **Extract vocabulary**: Note effective expressions for boundaries, negotiations, and money conversations.
 
-1. Read one episode as a case study, not as entertainment.
-2. Identify the caller's visible money problem and the deeper behavior problem.
-3. Write the recommended action in one sentence.
-4. Extract useful English phrases for advice, disagreement, boundaries, and encouragement.
-5. Compare the advice with your own financial principles before adopting it.
-
-## Representative Chapters
+## Representative Episodes
 
 - "My Debt Payment is 50% of My Income"
 - A Financial Plan Only Works If It Matches Your Reality
 - A Life Built on Debt Is a Life Built on Risk
-- Before You Can Win With Money You Need To Make a PLAN
 - Break The Debt Spiral And Regain Your Life
 - Build Wealth Faster by Understanding Opportunity Cost
-- Debt Is A Solvable Math Problem
-- Financial Peace Starts With Personal Honesty
-- No Matter Your Income, You Have To Know Where Your Money Is Going
 - Stop Chasing Payments and Choose Freedom
-- Take Control Of Your Money Before It Takes Control Of You
 - You Can't Out Earn Bad Financial Behaviors
 - You Don't Have To Live One Emergency Away From Broke
-- You're Not Stuck, You Just Need a Better Plan
-
-## Best Use
-
-Use this as a financial behavior workbook. The strongest value is not memorizing every episode. It is finding repeated patterns, turning them into personal rules, and practicing clear English for money conversations.
