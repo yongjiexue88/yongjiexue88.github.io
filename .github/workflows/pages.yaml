@@ -1,6 +1,6 @@
 name: Publish Pages redirect
 
-# The site is hosted on Vercel at https://www.yongjiexue.io — this workflow does
+# The site is hosted on Cloudflare at https://www.yongjiexue.io — this workflow does
 # not build or deploy it.
 #
 # It exists only because GitHub will not let Pages be disabled on a user site
