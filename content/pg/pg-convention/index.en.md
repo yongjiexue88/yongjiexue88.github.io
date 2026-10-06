@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL Convention 2024
 date: 2023-11-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   No rules, no standards. Some developer conventions for PostgreSQL 16.
 tags: [PostgreSQL, PG Development]

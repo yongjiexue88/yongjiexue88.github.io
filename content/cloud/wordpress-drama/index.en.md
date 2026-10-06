@@ -1,7 +1,7 @@
 ---
 title: "WordPress Community Civil War: On Community Boundary Demarcation"
 date: 2024-10-17
-authors: [vonng]
+authors: [yongjie]
 summary: >
   When open source ideals meet commercial conflicts, what insights can this conflict between open source software communities and cloud vendors bring? On the importance of community boundary demarcation.
 tags: [Open Source]

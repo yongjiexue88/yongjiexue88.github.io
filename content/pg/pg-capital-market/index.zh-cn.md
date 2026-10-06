@@ -1,7 +1,7 @@
 ---
 title: "PG生态赢得资本市场青睐：Databricks收购Neon，Supabase融资两亿美元，微软财报点名PG"
 date: 2025-05-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   最近PostgreSQL生态公司备受市场青睐，Databricks拟以10亿美金估值收购 Neon，Supabase融到了D轮2亿美金。
 tags: [PostgreSQL, PG生态, 商业]

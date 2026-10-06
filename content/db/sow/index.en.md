@@ -2,7 +2,7 @@
 title: "SOW: Postpartum Care for 100,000 Packages"
 linkTitle: "SOW: 100,000 Packages, One Copy Each"
 date: 2026-08-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The hard part of maintaining a PostgreSQL distribution is not compiling packages. At 100,000 artifacts, deduplication, indexing, snapshots, atomic cutovers, and incremental publishing become the real challenge. SOW puts all of that into one self-contained binary, turning RPM and DEB repository management from ad hoc directory scripts into a recoverable, auditable state system.
 tags: [PostgreSQL, Pigsty, Repository]

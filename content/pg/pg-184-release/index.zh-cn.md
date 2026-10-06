@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL 18.4、17.10、16.14、15.18 与 14.23 发布"
 date: 2026-05-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   发布者：PostgreSQL Global Development Group 分类：PostgreSQL 项目安全
 tags: [PostgreSQL, PG管理]

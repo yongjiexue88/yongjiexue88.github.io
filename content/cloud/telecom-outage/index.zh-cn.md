@@ -1,7 +1,7 @@
 ---
 title: "接连两天，联通崩完移动崩"
 date: 2025-08-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   北京移动网络出现异常，联通崩完移动崩，压力给到电信了。
 tags: [云计算, 故障复盘]

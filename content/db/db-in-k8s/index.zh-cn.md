@@ -1,7 +1,7 @@
 ---
 title: "数据库应该放入K8S里吗？"
 date: 2023-12-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   数据库是否应该放入Kubernetes里，到今天仍然是一个充满争议的话题。K8S在无状态应用管理上非常趁手，但处理有状态服务特别是数据库时有本质局限性。本文深入探讨为什么将数据库放入K8S不是明智选择。
 series: ["正本清源"]

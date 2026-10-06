@@ -1,7 +1,7 @@
 ---
 title: "聊聊李博杰和 Deepseek 面试的瓜"
 date: 2026-07-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   今天最大的瓜应该是李博杰在推特上批评 DeepSeek 引发的争议。大意就是他去面试，被要求刷 OJ Coding 题，然后被质疑作弊。然后一下子踩中 Deepseek 爆点出圈爆炸了。
 tags: [AI, 大模型, 职业]

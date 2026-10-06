@@ -1,7 +1,7 @@
 ---
 title: "中国对PostgreSQL的贡献约等于零吗？"
 date: 2024-01-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   飞总说中国对PG的贡献≈0，所以特意去扫了一遍 PG生态的开源项目，看一看这里中国人或者中国公司作为主要贡献者的到底有多少。
 tags: [PostgreSQL, PG生态, 开源]

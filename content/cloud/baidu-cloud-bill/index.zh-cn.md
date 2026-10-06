@@ -1,7 +1,7 @@
 ---
 title: "百度云：261KB流量，收费两千万"
 date: 2025-11-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   百度BOS账单异常，一觉醒来，欠云半个亿。
 tags: [云计算, 成本, 故障复盘]

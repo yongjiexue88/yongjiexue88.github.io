@@ -1,7 +1,7 @@
 ---
 title: "用PG的开发者，年薪比MySQL多赚四成？"
 date: 2024-06-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   全球来看，PG开发者比MySQL开发者年薪中位数高15%，而中国这一比例甚至高达37%。
 tags: [PostgreSQL, MySQL, 职业]

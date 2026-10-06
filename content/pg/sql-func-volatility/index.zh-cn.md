@@ -1,7 +1,7 @@
 ---
 title: "函数易变性等级分类"
 date: 2018-04-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PgSQL中的函数默认有三种易变性等级，合理使用可以显著改善性能。
 tags: [PostgreSQL, PG开发]
@@ -50,7 +50,7 @@ $$ LANGUAGE PLPGSQL STABLE;
 当使用 `STABLE` 标签时，它会真的调用10次，而当使用 `IMMUTABLE` 标签时，它会被优化为一次调用。
 
 ```
-vonng=# select return2() from generate_series(1,10);
+yongjiexue=# select return2() from generate_series(1,10);
 NOTICE:  INVOKED
 NOTICE:  INVOKED
 NOTICE:  INVOKED
@@ -91,7 +91,7 @@ $$ LANGUAGE PLPGSQL IMMUTABLE;
 再执行同样的查询，这次函数只被调用了一次
 
 ```sql
-vonng=# select return2() from generate_series(1,10);
+yongjiexue=# select return2() from generate_series(1,10);
 NOTICE:  INVOKED
  return2
 ---------
@@ -132,7 +132,7 @@ $$ LANGUAGE 'plpgsql' IMMUTABLE;
 我们会发现，当我们在索引条件中直接使用该函数时，执行计划中的索引条件被直接求值缓存并固化为了 `id=2`
 
 ```sql
-vonng=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
+yongjiexue=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
                                QUERY PLAN
 ------------------------------------------------------------------------
  Index Only Scan using idx_id on demo  (cost=0.28..2.29 rows=1 width=4)
@@ -143,7 +143,7 @@ vonng=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
 而如果将其改为 `STABLE` 函数，则结果变为运行时求值：
 
 ```sql
-vonng=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
+yongjiexue=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
                                QUERY PLAN
 ------------------------------------------------------------------------
  Index Only Scan using idx_id on demo  (cost=0.53..2.54 rows=1 width=4)

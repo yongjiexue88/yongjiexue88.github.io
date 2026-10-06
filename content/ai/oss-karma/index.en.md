@@ -1,7 +1,7 @@
 ---
 title: "The Karma of Open Source: When Code Is Worthless, Where Does Trust Come From?"
 date: 2026-06-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AI is driving the cost of producing code toward zero. It cannot compress time, track records, or accountability. The real value of open source is not yesterday's code, but a system trusted to deliver on tomorrow's promises.
 tags: [AI, Agent, Open Source]

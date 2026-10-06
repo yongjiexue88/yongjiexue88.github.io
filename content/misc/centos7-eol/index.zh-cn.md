@@ -1,7 +1,7 @@
 ---
 title: "CentOS 7过保了，换什么OS发行版更好？"
 date: 2024-06-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   CentOS7后天过保了，换个什么操作系统发行版合适一些？分享一些亲身使用体验与选型建议。
 tags: [Linux, 软件仓库]

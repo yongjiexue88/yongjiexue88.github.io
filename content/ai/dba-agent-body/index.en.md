@@ -1,7 +1,7 @@
 ---
 title: "Give DBA Agents a Body"
 date: 2026-04-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Today's models are smart enough. What they lack is a body: a deterministic runtime that is observable, controllable, and reversible. Pigsty is evolving from a PostgreSQL distribution into an Agent Runtime, giving DBA and Dev Agents the operational reach and context they need to enter real production environments.
 tags: [AI, Agent, PostgreSQL, Pigsty]

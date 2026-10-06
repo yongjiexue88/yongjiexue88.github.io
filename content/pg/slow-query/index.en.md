@@ -1,7 +1,7 @@
 ---
 title: A Methodology for Diagnosing PostgreSQL Slow Queries
 date: 2021-02-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Slow queries are the sworn enemy of OLTP databases. Here’s how to identify, analyze, and fix them using metrics (Pigsty dashboards), pg_stat_statements, and logs.
 tags: [PostgreSQL, PG Admin, Performance]

@@ -1,7 +1,7 @@
 ---
 title: "Catalog Bullshit: Take the Database Apart, Then Rent a PostgreSQL Table Back to You"
 date: 2026-08-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Snowflake blames the lakehouse's governance gaps on multiple engines and turns the Catalog into a new billing layer. But the core of an Iceberg Catalog is just a metadata-pointer CAS; the real governance gap comes from separating the control plane from the data path.
 tags: [PostgreSQL, OLAP, Object Storage, Commentary]

@@ -1,7 +1,7 @@
 ---
 title: Getting Started with PipelineDB
 date: 2018-09-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PipelineDB is a PostgreSQL extension for streaming analytics. Here’s how to install it and build continuous views over live data.
 tags: [PostgreSQL, PG Admin, Extension]

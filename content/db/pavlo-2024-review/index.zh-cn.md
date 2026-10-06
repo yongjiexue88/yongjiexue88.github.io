@@ -1,7 +1,7 @@
 ---
 title: "Andy Pavlo: 2024年度数据库回顾"
 date: 2025-01-01
-authors: [andy-pavlo, vonng]
+authors: [andy-pavlo, yongjie]
 summary: >
   Andy Pavlo 的年度数据库回顾，算是行业里的经典材料。附上数据库老司机点评。
 tags: [数据库, 翻译]

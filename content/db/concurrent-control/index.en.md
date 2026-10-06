@@ -1,7 +1,7 @@
 ---
 title: "Concurrency Anomalies Explained"
 date: 2018-06-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Concurrent programs are hard to write correctly and even harder to write well. Many programmers simply throw these problems at the database... But even the most sophisticated databases won't help if you don't understand concurrency anomalies and isolation levels.
 tags: [Database, Transactions, PG Kernel]

@@ -2,7 +2,7 @@
 title: "Git for Data: Instant PostgreSQL Database Cloning"
 linkTitle: "Git for Data: Instant PostgreSQL Database Cloning"
 date: 2025-12-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   How to instantly clone a massive PostgreSQL database without consuming extra storage? PostgreSQL 18 and XFS can spark some serious magic.
 tags: [PostgreSQL, PG Development, GIS]
@@ -124,9 +124,9 @@ With XFS, you can use `cp --reflink=auto` to clone the entire PGDATA directory, 
 This process is also instant, regardless of database size, and the clone doesn't consume actual storage until you start writing data, which triggers CoW.
 
 ```bash
-postgres@vonng-aimax:/pg$ du -sh data
+postgres@yongjiexue-aimax:/pg$ du -sh data
 797G	data
-postgres@vonng-aimax:/pg$ time cp -r data data2
+postgres@yongjiexue-aimax:/pg$ time cp -r data data2
 
 real	0m0.586s
 user	0m0.014s

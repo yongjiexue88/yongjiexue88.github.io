@@ -1,7 +1,7 @@
 ---
 title: "开源PG全家桶上手指南"
 date: 2021-05-21
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL中文社区又开始在线直播啦！本周日（5月23日晚7:30），由我带给大家来一段单口相声 —
 tags: [PostgreSQL, PG管理]

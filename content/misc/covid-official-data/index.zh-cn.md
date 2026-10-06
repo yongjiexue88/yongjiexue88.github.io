@@ -1,7 +1,7 @@
 ---
 title: "撸一下官方疫情数据"
 date: 2020-02-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   形势不是一片小好，是一片大好。
 tags: [数据分析, 社会观察]

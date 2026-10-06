@@ -1,7 +1,7 @@
 ---
 title: "What Are PostgreSQL's Advantages?"
 date: 2018-06-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL's slogan is "The World's Most Advanced Open-Source Relational Database," but I think the most vivid characterization should be: The Full-Stack Database That Does It All - one tool to rule them all.
 tags: [PostgreSQL, PG Ecosystem]

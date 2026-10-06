@@ -1,7 +1,7 @@
 ---
 title: From Cost-Reduction Jokes to Real Cost Reduction and Efficiency
 date: 2023-11-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Alibaba-Cloud and Didi had major outages one after another. This article discusses how to move from cost-reduction jokes to real cost reduction and efficiency — what costs should we really reduce, what efficiency should we improve?
 tags: [Cloud-Exit, Alibaba Cloud, Incident]

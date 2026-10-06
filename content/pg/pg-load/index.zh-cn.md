@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL的KPI"
 date: 2020-05-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   管数据库和管人差不多，都需要定KPI。本文介绍了一种衡量PostgreSQL负载的方式：使用一种单一横向可比的指标，名曰PG Load（PG负载）。
 tags: [PostgreSQL, PG管理, 监控]

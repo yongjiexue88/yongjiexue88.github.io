@@ -1,7 +1,7 @@
 ---
 title: "What Exactly Are Natural Numbers?"
 date: 2013-04-26
-authors: [vonng]
+authors: [yongjie]
 summary: |
   The concept of natural numbers should have been learned in elementary school. The foundation of all elementary mathematics begins with such a definition. However, when I entered university, I encountered this question again in discrete mathematics.
 tags: [Essay]

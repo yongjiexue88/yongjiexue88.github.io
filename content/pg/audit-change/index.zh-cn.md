@@ -1,7 +1,7 @@
 ---
 title: "用触发器审计数据变化"
 date: 2017-06-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   有时候，我们希望记录一些重要的元数据变更，以便事后审计之用。PostgreSQL的触发器就可以很方便地自动解决这一需求。
 tags: [PostgreSQL, PG开发]

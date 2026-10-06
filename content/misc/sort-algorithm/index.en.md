@@ -1,7 +1,7 @@
 ---
 title: "Overview of Sorting Algorithms"
 date: 2016-09-23
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Sorting algorithms are the most fundamental, widely applicable, and frequently tested algorithms in interviews. This article summarizes classic sorting algorithms: selection sort, insertion sort, bubble sort, shell sort, counting sort, quicksort, merge sort, and heap sort - their principles and implementations.
 tags: [Essay]

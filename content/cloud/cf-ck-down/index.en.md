@@ -1,7 +1,7 @@
 ---
 title: Cloudflare’s Nov 18 Outage, Translated and Dissected
 date: 2025-11-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A ClickHouse permission tweak doubled a feature file, tripped a Rust hard limit, and froze Cloudflare’s core traffic for six hours—their worst outage since 2019. Here’s the full translation plus commentary.
 tags: [Cloudflare, Incident]

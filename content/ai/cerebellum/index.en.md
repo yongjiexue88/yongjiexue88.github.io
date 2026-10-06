@@ -1,7 +1,7 @@
 ---
 title: "The Cerebellum: The Other Half of Intelligence—and the Strongest AI Hasn't Touched It"
 date: 2026-06-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The cerebellum changed how I see AI's frontier: LLMs have already absorbed humanity's explicit knowledge and are beginning to acquire interventional data through agentic RL. What they still lack is a vessel for individual history.
 tags: [AI, Agent, Machine Learning, Philosophy]

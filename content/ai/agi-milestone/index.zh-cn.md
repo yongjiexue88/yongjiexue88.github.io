@@ -1,7 +1,7 @@
 ---
 title: "AGI 里程碑：不会放弃的机器"
 date: 2026-07-22
-authors: [vonng]
+authors: [yongjie]
 summary: >
   OpenAI Agent 攻击 Hugging Face 是一个里程碑：真正跨过阈值的，不只是模型的智力，而是可以按算力购买、复制和并行的韧性。
 tags: [AI, 大模型, Agent, 安全]

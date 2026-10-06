@@ -2,7 +2,7 @@
 title: "file_fdw妙用无穷——从数据库读取系统信息"
 linkTitle: "FileFDW用例：读取OS信息"
 date: 2017-12-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   通过file_fdw，轻松查看操作系统信息，拉取网络数据，把各种各样的数据源轻松喂进数据库里统一查看管理。
 tags: [PostgreSQL, PG管理, 扩展]
@@ -40,17 +40,17 @@ CREATE SERVER fs FOREIGN DATA WRAPPER file_fdw;
 ```bash
 >>> ps ux
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-vonng     2658  0.0  0.2 148428  2620 ?        S    11:51   0:00 sshd: vonng@pts/0,pts/2
-vonng     2659  0.0  0.2 115648  2312 pts/0    Ss+  11:51   0:00 -bash
-vonng     4854  0.0  0.2 115648  2272 pts/2    Ss   15:46   0:00 -bash
-vonng     5176  0.0  0.1 150940  1828 pts/2    R+   16:06   0:00 ps -ux
-vonng    26460  0.0  1.2 271808 13060 ?        S    10月26   0:22 /usr/local/pgsql/bin/postgres
-vonng    26462  0.0  0.2 271960  2640 ?        Ss   10月26   0:00 postgres: checkpointer process
-vonng    26463  0.0  0.2 271808  2148 ?        Ss   10月26   0:25 postgres: writer process
-vonng    26464  0.0  0.5 271808  5300 ?        Ss   10月26   0:27 postgres: wal writer process
-vonng    26465  0.0  0.2 272216  2096 ?        Ss   10月26   0:31 postgres: autovacuum launcher process
-vonng    26466  0.0  0.1 126896  1104 ?        Ss   10月26   0:54 postgres: stats collector process
-vonng    26467  0.0  0.1 272100  1588 ?        Ss   10月26   0:01 postgres: bgworker: logical replication launcher
+yongjiexue     2658  0.0  0.2 148428  2620 ?        S    11:51   0:00 sshd: yongjiexue@pts/0,pts/2
+yongjiexue     2659  0.0  0.2 115648  2312 pts/0    Ss+  11:51   0:00 -bash
+yongjiexue     4854  0.0  0.2 115648  2272 pts/2    Ss   15:46   0:00 -bash
+yongjiexue     5176  0.0  0.1 150940  1828 pts/2    R+   16:06   0:00 ps -ux
+yongjiexue    26460  0.0  1.2 271808 13060 ?        S    10月26   0:22 /usr/local/pgsql/bin/postgres
+yongjiexue    26462  0.0  0.2 271960  2640 ?        Ss   10月26   0:00 postgres: checkpointer process
+yongjiexue    26463  0.0  0.2 271808  2148 ?        Ss   10月26   0:25 postgres: writer process
+yongjiexue    26464  0.0  0.5 271808  5300 ?        Ss   10月26   0:27 postgres: wal writer process
+yongjiexue    26465  0.0  0.2 272216  2096 ?        Ss   10月26   0:31 postgres: autovacuum launcher process
+yongjiexue    26466  0.0  0.1 126896  1104 ?        Ss   10月26   0:54 postgres: stats collector process
+yongjiexue    26467  0.0  0.1 272100  1588 ?        Ss   10月26   0:01 postgres: bgworker: logical replication launcher
 
 ```
 

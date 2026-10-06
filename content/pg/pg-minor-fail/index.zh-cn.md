@@ -1,7 +1,7 @@
 ---
 title: "什么？PG小版本发布又翻车了？"
 date: 2025-02-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   连续第二次：PostgreSQL小版本发布当天，因紧急修复CVE漏洞引入新BUG，紧急发布号外修复版本。
 tags: [PostgreSQL, PG管理, 安全]

@@ -2,7 +2,7 @@
 title: "OINK：文档框架这件事，折腾了六年，终于靠 Codex 毕业了"
 linkTitle: "OINK 文档框架"
 date: 2026-08-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   在八套方案之间折腾六年后，我终于用 Codex 把 Docsy 的工程能力、Fumadocs 的现代体验和 Hugo 的简单交付合成了 OINK。
 tags: [Codex, 文档, 开源]

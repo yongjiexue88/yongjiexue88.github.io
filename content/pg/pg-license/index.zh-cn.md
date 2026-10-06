@@ -10,7 +10,7 @@ tags: [PostgreSQL, PG生态, 开源, 翻译]
 
 > 作者：[Jonathan Katz](https://jkatz05.com/post/postgres/)，PostgreSQL 核心组成员（1 of 7），AWS RDS 首席产品经理
 >
-> 译者：[薛永杰](https://vonng.com)，PostgreSQL 专家，Free RDS PG Alternative —— Pigsty 作者
+> 译者：[薛永杰](https://www.yongjiexue.io/)，PostgreSQL 专家，Free RDS PG Alternative —— Pigsty 作者
 
 -----------
 

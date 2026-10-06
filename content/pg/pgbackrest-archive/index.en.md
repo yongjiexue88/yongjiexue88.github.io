@@ -1,7 +1,7 @@
 ---
 title: "pgBackRest is No Longer Maintained"
 date: 2026-04-30
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Its maintainer, under pressure to make a living, has formally archived pgBackRest, the PostgreSQL ecosystem's most important backup tool. The entire PostgreSQL community needs to think seriously about how critical open-source dependencies can be sustained.
 tags: [PostgreSQL, PG Ecosystem, Open Source]

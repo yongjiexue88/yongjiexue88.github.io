@@ -1,7 +1,7 @@
 ---
 title: "一觉醒来，又上HN头条了"
 date: 2026-03-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   早上醒来看看仗打得怎么样了，结果发现 X 上有人 @我说上了 Hacker News 1。好家伙一看，这不是前几天那篇 MinIO 复活的文章嘛虽然是我的文章，但这不是我发的。
 tags: [开源, 随笔]

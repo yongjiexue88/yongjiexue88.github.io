@@ -1,7 +1,7 @@
 ---
 title: MinIO Is Dead. Who Picks Up the Pieces?
 date: 2025-12-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MinIO just entered maintenance mode. What replaces it? Can RustFS step in? I tested the contenders so you don’t have to.
 tags: [Object Storage, Database, Open Source]

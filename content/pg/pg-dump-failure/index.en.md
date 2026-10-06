@@ -2,7 +2,7 @@
 title: "Incident-Report: Connection-Pool Contamination Caused by pg_dump"
 linkTitle: "Incident-Report: Connection-Pool Contamination"
 date: 2018-12-11
-authors: [vonng]
+authors: [yongjie]
 summary: "Sometimes, interactions between components manifest in subtle ways. For example, using pg_dump to export data from a connection pool can cause connection pool contamination issues."
 tags: [PostgreSQL, PG Admin, Incident]
 ---
@@ -108,14 +108,14 @@ Using an existing database named `data` for testing, version 11.1. The Pgbouncer
 postgres = host=127.0.0.1
 
 [pgbouncer]
-logfile = /Users/vonng/pgb/pgbouncer.log
-pidfile = /Users/vonng/pgb/pgbouncer.pid
+logfile = /Users/yongjiexue/pgb/pgbouncer.log
+pidfile = /Users/yongjiexue/pgb/pgbouncer.pid
 listen_addr = *
 listen_port = 6432
 auth_type = trust
 admin_users = postgres
 stats_users = stats, postgres
-auth_file = /Users/vonng/pgb/userlist.txt
+auth_file = /Users/yongjiexue/pgb/userlist.txt
 pool_mode = transaction
 server_reset_query =
 max_client_conn = 50000
@@ -134,7 +134,7 @@ ignore_startup_parameters = extra_float_digits
 Start the connection pool and check `search_path` - normal default configuration.
 
 ```bash
-$ psql postgres://vonng:123456@:6432/data -c 'show search_path;'
+$ psql postgres://yongjiexue:123456@:6432/data -c 'show search_path;'
      search_path
 -----------------------
  app, "$user", public
@@ -144,7 +144,7 @@ Using pg_dump version 10.5, initiating dump from port 6432:
 
 ```bash
 /usr/local/Cellar/postgresql/10.5/bin/pg_dump \
-	postgres://vonng:123456@:6432/data \
+	postgres://yongjiexue:123456@:6432/data \
 	-t geo.pois -f /dev/null
 pg_dump: server version: 11.1; pg_dump version: 10.5
 pg_dump: aborting because of server version mismatch
@@ -153,7 +153,7 @@ pg_dump: aborting because of server version mismatch
 Although the dump failed, when checking the `search_path` of all connections again, you'll find that connections in the pool have been contaminated - one connection's `search_path` has been modified to empty:
 
 ```bash
-$ psql postgres://vonng:123456@:6432/data -c 'show search_path;'
+$ psql postgres://yongjiexue:123456@:6432/data -c 'show search_path;'
  search_path
 -------------
 

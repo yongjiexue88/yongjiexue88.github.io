@@ -2,7 +2,7 @@
 title: "Apple Skipped the Event and Quietly Launched a 512 GB Mac Studio"
 linkTitle: "512 GB Mac Studio"
 date: 2026-08-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   No teaser, no rumors—the website simply changed. For local AI, this may be the most important machine of the year.
 tags: [Apple, Mac Studio, Local AI]

@@ -2,7 +2,7 @@
 title: PostgreSQL, The most successful database
 linkTitle: "PG, The most successful database"
 date: 2023-06-28
-authors: [vonng]
+authors: [yongjie]
 summary: "StackOverflow 2023 Survey shows PostgreSQL is the most popular, loved, and wanted database, solidifying its status as the 'Linux of Database'."
 tags: [PostgreSQL, PG Ecosystem]
 ---

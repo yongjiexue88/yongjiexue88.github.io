@@ -1,7 +1,7 @@
 ---
 title: "高可用PgSQL集群架构设计与落地"
 date: 2021-03-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   把数据库拉起来是一回事，部署专业水准的数据库集群又是另一回事。本文介绍一种高可用PgSQL集群架构及其落地方式。
 tags: [PostgreSQL, 架构, PG管理]

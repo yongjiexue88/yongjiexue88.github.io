@@ -1,7 +1,7 @@
 ---
 title: "腾讯云：颜面尽失的草台班子"
 date: 2024-04-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   忽悠人的状态页，撒谎的官方公告，灾难级别的公关，坐实了草台班子称号。
 tags: [云计算, 故障复盘, 技术评论]

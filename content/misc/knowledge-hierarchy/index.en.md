@@ -1,7 +1,7 @@
 ---
 title: "On the Hierarchy of Knowledge"
 date: 2013-05-23
-authors: [vonng]
+authors: [yongjie]
 summary: "Through observation and reflection, we can divide the mental process of deepening understanding from accepting knowledge to the highest level of 'enlightenment' into four stages: knowledge, understanding, consciousness, and enlightenment."
 tags: [Essay]
 ---

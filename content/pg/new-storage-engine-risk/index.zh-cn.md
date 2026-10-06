@@ -1,7 +1,7 @@
 ---
 title: "尝鲜须谨慎：PG新存储引擎故障案例"
 date: 2025-10-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   上新有风险，及时下掉timescaledb/hypercore，避免数据库爆炸。
 tags: [PostgreSQL, 扩展, 故障复盘]

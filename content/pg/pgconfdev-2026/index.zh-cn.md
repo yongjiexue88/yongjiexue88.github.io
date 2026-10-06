@@ -1,7 +1,7 @@
 ---
 title: "参加 PostgreSQL 30周年开发者大会"
 date: 2026-05-21
-authors: [vonng]
+authors: [yongjie]
 summary: >
   微信原页已失效；正文从明确署名的公开镜像恢复：https://www.163.com/dy/article/KTG7NBBQ0556CSY5.html。
 tags: [PostgreSQL, PG生态, 随笔]

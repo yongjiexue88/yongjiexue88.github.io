@@ -1,7 +1,7 @@
 ---
 title: Which EL-Series OS Distribution Is Best?
 date: 2023-10-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   RHEL-series OS distribution compatibility level: RHEL = Rocky ≈ Anolis > Alma > Oracle >> Euler. Recommend using RockyLinux 8.8, or Anolis 8.8 for domestic requirements.
 series: ["信创国产化"]

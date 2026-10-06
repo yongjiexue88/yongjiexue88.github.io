@@ -1,7 +1,7 @@
 ---
 title: "MinIO已死，谁能接盘？"
 date: 2025-12-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MinIO进入维护模式，有什么替代品？Ceph、RustFS、SeaweedFS、Garage各有各的问题。老冯把这些方案都打好了包挨个试了一遍，总结一句话：没有完美替代。
 tags: [对象存储, 数据库, 开源]

@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL 号外小版本发布：17.2, 16.6, 15.10, 14.15, 13.18, 12.22"
 date: 2024-11-21
-authors: [vonng]
+authors: [yongjie]
 summary: >
   不要在星期五发布代码，否则多忙一整周！PostgreSQL小版本发布当天，因ABI变化紧急回滚。
 tags: [PostgreSQL, PG管理]

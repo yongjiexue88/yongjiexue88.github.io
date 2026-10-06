@@ -1,7 +1,7 @@
 ---
 title: "Chinese Docs for Five PostgreSQL Versions Are Now Live"
 date: 2026-03-27
-authors: [vonng]
+authors: [yongjie]
 build:
   render: never
   list: never

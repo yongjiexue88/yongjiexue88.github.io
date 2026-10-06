@@ -1,7 +1,7 @@
 ---
 title: "赛博神学：自由意志与完美对齐不可兼得"
 date: 2026-05-16
-authors: [vonng]
+authors: [yongjie]
 summary: >
   卷五 · 一神教 · Cyber Theology
 tags: [Agent, 哲学]

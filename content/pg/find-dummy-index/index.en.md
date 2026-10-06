@@ -1,13 +1,13 @@
 ---
 title: "Finding Unused Indexes"
 date: 2018-02-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Indexes are useful, but they're not free. Unused indexes are a waste. Use these methods to identify unused indexes.
 tags: [PostgreSQL, PG Admin]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com/en/)
+> Author: [Yongjie Xue](https://www.yongjiexue.io/)
 
 Indexes are useful, but they're not free. Unused indexes are a waste. Use the following SQL to identify unused indexes:
 

@@ -2,7 +2,7 @@
 title: "Implementing Cache Synchronization with Go and PostgreSQL"
 linkTitle: "Implementing Cache Synchronization with Go and PostgreSQL"
 date: 2017-08-03
-authors: [vonng]
+authors: [yongjie]
 summary: "Cleverly utilizing PostgreSQL's Notify feature, you can conveniently notify applications of metadata changes and implement trigger-based logical replication."
 tags: [PostgreSQL, PG Development]
 ---

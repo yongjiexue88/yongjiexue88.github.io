@@ -2,7 +2,7 @@
 title: "PGConf.Dev 2026 今天在温哥华开幕"
 linkTitle: "PGConf.Dev 2026 开幕"
 date: 2026-05-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PGConf.Dev 2026 在温哥华开幕。今年恰逢 PostgreSQL 项目 30 周年，我也会在大会上分享 Extensions for Everyone。
 tags: [PostgreSQL, PG生态]

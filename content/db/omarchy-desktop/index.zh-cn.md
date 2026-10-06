@@ -1,7 +1,7 @@
 ---
 title: "Omarchy：桌面 Linux 发行版有救了吗？"
 date: 2026-08-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   装了 Omarchy，然后又卸载了。Why？谁适合？谁不适合？Linux 桌面发行版还有出路吗？
 tags: [Linux, Omarchy, 操作系统]

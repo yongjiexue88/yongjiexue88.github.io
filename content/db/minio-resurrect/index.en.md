@@ -1,7 +1,7 @@
 ---
 title: "MinIO Is Dead, Long Live MinIO"
 date: 2026-02-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MinIO's repo is officially archived and abandoned. And how AI Agents helped bring it back from the dead.
   This post explains how a community fork restores the admin console and ships binaries via CI/CD pipeline.

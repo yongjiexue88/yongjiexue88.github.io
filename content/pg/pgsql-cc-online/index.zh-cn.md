@@ -1,7 +1,7 @@
 ---
 title: "PG 中文文档发布：11 个大版本，一个不落"
 date: 2026-09-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   pgsql.cc 正式上线，提供 PostgreSQL 10 到 20 共 11 个大版本的中文文档、重新美化的官网镜像与更好用的全文检索，持续跟进上游更新，不挂广告。
 tags: [PostgreSQL, 文档, 翻译, PG生态]

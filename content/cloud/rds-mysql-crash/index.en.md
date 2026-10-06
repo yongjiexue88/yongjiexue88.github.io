@@ -1,7 +1,7 @@
 ---
 title: "If There Was No Impact, Please Ignore This"
 date: 2026-07-31
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A reader's RDS MySQL instance failed over twice in five days: the cloud provider's own back-end monitoring query brought it down, and the instance failed again with the same symptoms after the provider promised to disable that collector.
 tags: [Cloud-Exit, MySQL, Alibaba Cloud, RDS]

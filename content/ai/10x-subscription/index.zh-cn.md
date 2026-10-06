@@ -1,7 +1,7 @@
 ---
 title: "如何蹬掉 10 个 200 美元的 Codex 订阅？"
 date: 2026-09-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   买 10 个 AI 订阅并不难，真正的瓶颈是把 Token 转化成有效产出，以及通过自动化放大自己的时间、注意力与验收能力。
 tags: [AI, Codex, Claude, Agent]

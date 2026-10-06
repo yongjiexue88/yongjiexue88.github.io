@@ -1,7 +1,7 @@
 ---
 title: "华为云国际站异常：与 IAM 升级有关？"
 date: 2026-07-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   华为云国际站部分账号在 IAM 计划升级窗口内出现异常；官方确认受影响账号已恢复，但 IAM 是否为根因仍无定论。
 tags: [云计算, 故障复盘]

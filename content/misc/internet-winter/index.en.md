@@ -1,7 +1,7 @@
 ---
 title: "The Internet Winter"
 date: 2018-12-09
-authors: [vonng]
+authors: [yongjie]
 summary: "It was the best of times, it was the worst of times. We were all going direct to Heaven, we were all going direct the other way."
 tags: [Essay]
 ---

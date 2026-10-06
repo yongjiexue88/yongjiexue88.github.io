@@ -1,7 +1,7 @@
 ---
 title: "你为什么不用连接池？"
 date: 2024-11-30
-authors: [vonng]
+authors: [yongjie]
 summary: >
   一个高并发连接数导致的问题，论连接池的神奇作用，以及为什么大家不喜欢用连接池？
 tags: [数据库, 性能, PG管理]

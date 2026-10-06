@@ -1,13 +1,13 @@
 ---
 title: "Backup and Recovery Methods Overview"
 date: 2018-02-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Backup is the foundation of a DBA's livelihood. With backups, there's no need to panic.
 tags: [PostgreSQL, PG Admin, Backup]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 
 Backup is the foundation of a DBA's livelihood. With backups, there's no need to panic.
 
@@ -299,10 +299,10 @@ You can see that although the position was only at `32C1D68`, it immediately jum
 When the database shuts down abnormally due to failure, after restart, it will replay WAL starting from the most recent checkpoint, which is `0/2FB0160`.
 
 ```bash
-[17:03:37] vonng@vonng-mac /var/lib/pgsql
+[17:03:37] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $  ps axu | grep postgres | grep data | awk '{print $2}' | xargs kill -9
 
-[17:06:31] vonng@vonng-mac /var/lib/pgsql
+[17:06:31] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $ pg_ctl -D /var/lib/pgsql/data start
 pg_ctl: another server might be running; trying to start server anyway
 waiting for server to start....2018-01-25 17:07:27.063 CST [9762] LOG:  listening on IPv6 address "::1", port 5432
@@ -416,7 +416,7 @@ cp: /var/lib/pgsql/wal/00000001.history: No such file or directory
 But using WAL archives for recovery also has problems. For example, querying the latest data records from the master and standby, you find a one-second time difference. This means that WAL not yet written by the master hasn't been archived and thus wasn't applied.
 
 ```bash
-[17:37:22] vonng@vonng-mac /var/lib/pgsql
+[17:37:22] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $ psql postgres -c 'SELECT max(ts) FROM foobar;'
             max
 ----------------------------
@@ -424,7 +424,7 @@ $ psql postgres -c 'SELECT max(ts) FROM foobar;'
 (1 row)
 
 
-[17:37:42] vonng@vonng-mac /var/lib/pgsql
+[17:37:42] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $ psql postgres -p 5433 -c 'SELECT max(ts) FROM foobar;'
             max
 ----------------------------
@@ -459,7 +459,7 @@ $ psql postgres -c 'SELECT now();'
 (1 row)
 
 
-[18:51:20] vonng@vonng-mac ~
+[18:51:20] yongjiexue@yongjiexue-mac ~
 $ pg_basebackup -Fp -Pv -Xs -c fast -D /var/lib/pgsql/bkup
 pg_basebackup: initiating base backup, waiting for checkpoint to complete
 pg_basebackup: checkpoint completed
@@ -537,18 +537,18 @@ You can see that two WAL segment files numbered `6` appeared in the WAL archive 
 ```bash
 $ ls -alh wal
 total 262160
-drwxr-xr-x  12 vonng  wheel   384B Jan 25 18:59 .
-drwxr-xr-x   6 vonng  wheel   192B Jan 25 18:51 ..
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000001
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000002
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000003
--rw-------   1 vonng  wheel   302B Jan 25 18:51 000000010000000000000003.00000028.backup
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000004
--rw-------   1 vonng  wheel    16M Jan 25 18:52 000000010000000000000005
--rw-------   1 vonng  wheel    16M Jan 25 18:52 000000010000000000000006
--rw-------   1 vonng  wheel    50B Jan 25 18:56 00000002.history
--rw-------   1 vonng  wheel    16M Jan 25 18:58 000000020000000000000006
--rw-------   1 vonng  wheel    16M Jan 25 18:59 000000020000000000000007
+drwxr-xr-x  12 yongjiexue  wheel   384B Jan 25 18:59 .
+drwxr-xr-x   6 yongjiexue  wheel   192B Jan 25 18:51 ..
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000001
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000002
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000003
+-rw-------   1 yongjiexue  wheel   302B Jan 25 18:51 000000010000000000000003.00000028.backup
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000004
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:52 000000010000000000000005
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:52 000000010000000000000006
+-rw-------   1 yongjiexue  wheel    50B Jan 25 18:56 00000002.history
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:58 000000020000000000000006
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:59 000000020000000000000007
 ```
 
 If you regret after completing recovery, you can use the base backup to recover again to the state when first run to 18:53 by specifying `recovery_target_timeline = '1'`.
@@ -616,7 +616,7 @@ The only difference between standby and master is an additional `recovery.conf` 
 
 ```ini
 standby_mode = 'on'
-primary_conninfo = 'user=replication passfile=''/Users/vonng/.pgpass'' host=localhost port=5432 sslmode=prefer sslcompression=1 krbsrvname=postgres target_session_attrs=any'
+primary_conninfo = 'user=replication passfile=''/Users/yongjiexue/.pgpass'' host=localhost port=5432 sslmode=prefer sslcompression=1 krbsrvname=postgres target_session_attrs=any'
 ```
 
 `standby_mode` specifies whether to start PostgreSQL as a standby.

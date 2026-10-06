@@ -1,7 +1,7 @@
 ---
 title: "The Sorrow of the Internet"
 date: 2018-12-12
-authors: [vonng]
+authors: [yongjie]
 summary: "The future may not necessarily be bright, but the path will certainly be tortuous."
 tags: [Essay]
 ---

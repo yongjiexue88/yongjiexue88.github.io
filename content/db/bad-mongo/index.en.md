@@ -2,7 +2,7 @@
 title: "MongoDB Has No Future: Good Marketing Can't Save a Rotten Mango"
 linkTitle: "Mongo Has No Future"
 date: 2024-09-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MongoDB has a terrible track record on integrity, lackluster products and technology, gets beaten by PG in correctness, performance, and functionality, with collapsing developer reputation, declining popularity, stock price halving, and expanding losses. Provocative marketing against PG can't save it with "good marketing."
 tags: [MongoDB, PostgreSQL, Database, PG Ecosystem]

@@ -1,7 +1,7 @@
 ---
 title: "没有 Token 就退学：说得还太客气了"
 date: 2026-09-02
-authors: [vonng]
+authors: [yongjie]
 summary: >
   围绕“没有 Token 的 CS 学生应该立即退学”引发的争议，谈 AI 时代消失的初级岗位、失灵的教育供给，以及年轻人为什么必须自己造梯子。
 tags: [AI, Agent, 教育, 程序员]

@@ -1,7 +1,7 @@
 ---
 title: "在线修改主键列类型"
 date: 2021-01-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   如何在线修改表中列的类型，例如从INT升级为BIGINT？
 tags: [PostgreSQL, PG管理]
@@ -93,7 +93,7 @@ commit;
 ## 以pgbench为例
 
 ```sql
-vonng=# \d pgbench_accounts
+yongjiexue=# \d pgbench_accounts
               Table "public.pgbench_accounts"
   Column  |     Type      | Collation | Nullable | Default
 ----------+---------------+-----------+----------+---------

@@ -1,7 +1,7 @@
 ---
 title: "龙芯，正式进入 PostgreSQL 官方仓库"
 date: 2026-07-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL 官方 APT 仓库正式加入对龙芯 loong64 架构的支持。从 2024 年温哥华的一次提问，到龙芯 3B6000 构建主机落地，两年后，龙芯正式进入 PGDG 的持续构建、签名发布与安全更新链路。
 tags: [PostgreSQL, PG生态, 硬件]

@@ -1,7 +1,7 @@
 ---
 title: "Fundamental Concepts of Linear Algebra"
 date: 2012-11-04
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Connecting all concepts in linear algebra through one main thread
 ai: true

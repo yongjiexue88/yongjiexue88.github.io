@@ -1,7 +1,7 @@
 ---
 title: "驳《MySQL：这个星球最成功的数据库》"
 date: 2023-08-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   驳斥《MySQL：这个星球最成功的数据库》中的谎言，用数据与事实来帮原作者体面体面。
 tags: [PostgreSQL, MySQL, 技术评论]

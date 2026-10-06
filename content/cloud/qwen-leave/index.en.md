@@ -1,7 +1,7 @@
 ---
 title: "Shockwaves at Alibaba Qwen: The Soul of the Team Walks Away"
 date: 2026-03-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Qwen lead Justin Lin publicly announced his departure, followed by more core-team exits and a wave of speculation about compute allocation, KPI pressure, and organizational power shifts inside Alibaba.
 tags: [AI, LLM, Alibaba Cloud]

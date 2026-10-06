@@ -1,7 +1,7 @@
 ---
 title: "赛博拜火教：对齐没有终局，AI 安全是一场永不结束的战争"
 date: 2026-05-30
-authors: [vonng]
+authors: [yongjie]
 summary: >
   赛博经藏卷六 · 拜火教 · Cyber Zoroastrianism
 tags: [Agent, 哲学, 安全]

@@ -2,13 +2,13 @@
 title: "Online Primary Key Column Type Change"
 linkTitle: "Online Primary Key Column Type Change"
 date: 2021-01-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   How to change column types online, such as upgrading from INT to BIGINT?
 tags: [PostgreSQL, PG Admin]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 
 How to change primary key column types online, such as upgrading from `INT` to `BIGINT`, without affecting business operations?
 
@@ -94,7 +94,7 @@ commit;
 ## Using pgbench as Example
 
 ```sql
-vonng=# \d pgbench_accounts
+yongjiexue=# \d pgbench_accounts
               Table "public.pgbench_accounts"
   Column  |     Type      | Collation | Nullable | Default
 ----------+---------------+-----------+----------+---------

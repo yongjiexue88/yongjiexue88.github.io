@@ -2,7 +2,7 @@
 title: "StackOverflow 2024 Survey: PostgreSQL Has Gone Completely Berserk"
 linkTitle: "SO 2024: PostgreSQL Has Gone Berserk"
 date: 2024-07-25
-authors: [vonng]
+authors: [yongjie]
 summary: |
   The 2024 StackOverflow Global Developer Survey results are fresh out, and PostgreSQL has become the most popular, most loved, and most wanted database globally for the second consecutive year. Nothing can stop PostgreSQL from devouring the entire database world anymore!
 tags: [PostgreSQL, PG Ecosystem]

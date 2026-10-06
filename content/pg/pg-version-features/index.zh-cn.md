@@ -1,7 +1,7 @@
 ---
 title: "快速掌握PostgreSQL版本新特性"
 date: 2024-01-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   如何学习 PostgreSQL？这里推荐一本新书《快速掌握PostgreSQL版本新特性》
 tags: [PostgreSQL, 文档]

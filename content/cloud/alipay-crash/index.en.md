@@ -1,7 +1,7 @@
 ---
 title: Alipay, Taobao, Xianyu Went Dark. Smells Like a Message Queue Meltdown.
 date: 2025-12-05
-authors: [vonng]
+authors: [yongjie]
 summary: |
     Dec 4, 2025, Taobao, Alipay, and Xianyu all cratered. Users got charged while orders still showed “unpaid,” a carbon copy of the 2024 Double-11 fiasco.
 tags: [Cloud-Exit, Alibaba Cloud, Incident]

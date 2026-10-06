@@ -1,7 +1,7 @@
 ---
 title: "阿里云周爆：云数据库管控又挂了"
 date: 2023-11-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   阿里云11. 12复盘报告还没见，结果数据库管控又来了一场大故障。
 tags: [云计算, 阿里云, 故障复盘]

@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL，三十而立"
 date: 2026-06-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   今天有个直播，是关于 PostgreSQL 三十周年的。我知道绝大多数人都没这个功夫去看一个九十分钟的直播，所以就把老冯的一些观点转成了文章，发在这里。
 tags: [PostgreSQL, PG生态]

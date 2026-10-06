@@ -1,7 +1,7 @@
 ---
 title: "RAG 没死，但也快了"
 date: 2026-09-02
-authors: [vonng]
+authors: [yongjie]
 summary: >
   RAG 这个词还活着，但向量 RAG 那套架构是 4K 窗口逼出来的应急方案。约束没了，向量召回退成了一个默认算子，活下来的检索全是数据库最擅长的事。
 tags: [AI, PostgreSQL, 向量, 技术评论]

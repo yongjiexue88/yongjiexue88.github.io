@@ -1,7 +1,7 @@
 ---
 title: "Linux 常用统计 CLI 工具"
 date: 2017-09-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   top, free, vmstat, iostat：四大常用 CLI 工具命令速查。
 tags: [PostgreSQL, PG管理, 工具]

@@ -1,7 +1,7 @@
 ---
 title: "KubeSphere：开源断供背后的信任危机"
 date: 2025-08-02
-authors: [vonng]
+authors: [yongjie]
 summary: >
   删除镜像跑路，这不是商业化闭源的问题，而是卡脖子断供问题，直接摧毁了社区多年积累的信任。
 tags: [容器化, 开源]

@@ -1,7 +1,7 @@
 ---
 title: "Put Your AI Agent's State in a Database"
 date: 2026-03-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Put an AI agent's working directory, configuration, and memory on a PGFS mount, and you are effectively storing its state in PostgreSQL.
   That gives you not only a PITR "time machine," but also a shared workspace and shared memory for multiple agents across multiple devices.

@@ -1,7 +1,7 @@
 ---
 title: "Views on Love"
 date: 2012-08-12
-authors: [vonng]
+authors: [yongjie]
 summary: What ultimately determines romance and marriage?
 tags: [Essay]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "分道扬镳：bcachefs作者对Linus口吐芬芳"
 date: 2025-07-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Kent在Linux合并窗口外提交bcachefs补丁，并对Linus口吐芬芳：估计要分道扬镳了
 tags: [Linux, 开源, 社会观察]

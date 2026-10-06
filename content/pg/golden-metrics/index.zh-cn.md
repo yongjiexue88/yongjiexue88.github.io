@@ -1,7 +1,7 @@
 ---
 title: "黄金监控指标：错误延迟吞吐饱和"
 date: 2020-11-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   了解PostgreSQL中的黄金监控指标：错误、延迟、吞吐和饱和度。
 tags: [PostgreSQL, PG管理, 监控]

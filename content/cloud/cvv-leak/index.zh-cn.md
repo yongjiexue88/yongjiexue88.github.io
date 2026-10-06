@@ -1,7 +1,7 @@
 ---
 title: "某平台CVV泄露：你的信用卡被盗刷了吗？"
 date: 2024-10-02
-authors: [vonng]
+authors: [yongjie]
 summary: >
   草台班子新高度：某平台曝外卡CVV泄露，出现批量外卡信用卡被盗刷。
 tags: [云计算, 安全]

@@ -1,7 +1,7 @@
 ---
 title: "Getting the Name Right: What Is a World Model?"
 date: 2026-07-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Starting from the roots of "world" and "model," this essay uses Pearl's ladder of causation to redefine world models: they must capture not just space and time, but agents, interventions, and counterfactuals.
 tags: [AI, Machine Learning]

@@ -1,7 +1,7 @@
 ---
 title: "兼容Oracle的开源 PostgreSQL？"
 date: 2025-04-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   什么数据库可以替代 Oracle ？有很多数据库产品都号称自己可以 “替代” Oracle，商业产品就不说了，但开源的目前我了解到的只有IvorySQL。
 tags: [PostgreSQL, Oracle, 迁移]

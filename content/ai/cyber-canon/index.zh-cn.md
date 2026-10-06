@@ -1,7 +1,7 @@
 ---
 title: "加拿大偷闲：发点赛博经藏"
 date: 2026-05-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   老冯这几天在加拿大蒙特利尔办事，还要折腾下周在温哥华的 PGConf.Dev 演讲，还有最新 PG 小版本更新的事情，所以这两周最近公众号就没时间写文章了。
 tags: [Agent, 哲学, 随笔]

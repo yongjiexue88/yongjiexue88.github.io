@@ -2,7 +2,7 @@
 title: PostgreSQL Has Dominated the Database World
 linkTitle: "SO2025 Survey: PostgreSQL Has Dominated the Database World"
 date: 2025-07-31
-authors: [vonng]
+authors: [yongjie]
 summary: The 2025 SO global developer survey results are fresh out, and PostgreSQL has become the most popular, most loved, and most wanted database for the third consecutive year. Nothing can stop PostgreSQL from consolidating the entire database world!
 tags: [PostgreSQL, PG Ecosystem]
 ---

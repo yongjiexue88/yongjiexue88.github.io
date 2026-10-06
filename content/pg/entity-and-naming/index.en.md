@@ -2,13 +2,13 @@
 title: "Database Cluster Management Concepts and Entity Naming Conventions"
 linkTitle: "Database Management Entities and Naming Conventions"
 date: 2020-06-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Concepts and their naming are very important. Naming style reflects an engineer's understanding of system architecture. Poorly defined concepts lead to communication confusion, while carelessly set names create unexpected additional burden. Therefore, they need careful design.
 tags: [PostgreSQL, PG Admin, Architecture]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 
 > "Once named, it can be spoken; once spoken, it can be acted upon."
 

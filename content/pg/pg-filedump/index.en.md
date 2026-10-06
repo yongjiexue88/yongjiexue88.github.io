@@ -1,7 +1,7 @@
 ---
 title: "How to Use pg_filedump for Data Recovery?"
 date: 2023-09-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Backups are a DBA's lifeline — but what if your PostgreSQL database has already exploded and you have no backups? Maybe pg_filedump can help you!
 tags: [PostgreSQL, PG Admin, Incident]
@@ -37,7 +37,7 @@ cd pg_filedump && make && sudo make install
 Using `pg_filedump` isn't complicated. You feed it data files, tell it the type of each column in the table, and it can help interpret them. For example, the first step is to know which databases exist in this database cluster. This information is recorded in the system view `pg_database`. This is a system-level table located in the `global` directory, assigned a fixed OID `1262` during cluster initialization, so the corresponding physical file is usually: `global/1262`.
 
 ```bash
-vonng=# select 'pg_database'::RegClass::OID;
+yongjiexue=# select 'pg_database'::RegClass::OID;
  oid
 ------
  1262

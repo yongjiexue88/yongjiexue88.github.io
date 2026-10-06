@@ -1,7 +1,7 @@
 ---
 title: "Garbage QCloud CDN: From Getting Started to Giving Up?"
 date: 2023-03-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   I originally believed that at least in IaaS fundamentals — storage, compute, and networking — public cloud vendors could still make significant contributions. However, my personal experience with Tencent Cloud CDN shook that belief: domestic cloud vendors' products and services are truly unbearable.
 tags: [Cloud, Cloudflare]

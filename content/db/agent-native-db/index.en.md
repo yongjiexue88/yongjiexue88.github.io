@@ -1,7 +1,7 @@
 ---
 title: "What Kind of Database Do AI Agents Need?"
 date: 2025-12-21
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The bottleneck for AI agents is not the database kernel, but integration above it. Muscle memory (in-database computation), associative memory (vector-graph fusion), and the courage to experiment (Git for Data) will be critical—none of them requires a new engine.
 tags: [PostgreSQL, AI, Agent, Database]

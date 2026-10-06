@@ -1,7 +1,7 @@
 ---
 title: "第七届PG生态大会：一些感想"
 date: 2025-01-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   如何请外国人参会，扩展很重要，多关注开发者，如何办好一场会？
 tags: [PostgreSQL, PG生态, 随笔]

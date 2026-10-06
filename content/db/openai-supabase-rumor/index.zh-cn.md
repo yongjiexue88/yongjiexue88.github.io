@@ -1,7 +1,7 @@
 ---
 title: "数据库茶水间：OpenAI拟收购Supabase ？"
 date: 2025-05-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   蒙特利尔下午茶，数据库八卦茶水间，老冯今天参加PGCon.Dev，与各位全球同行交流八卦，与各位读者朋友分享一下。
 tags: [PostgreSQL, 商业, 随笔]

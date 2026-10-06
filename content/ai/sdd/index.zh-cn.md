@@ -1,7 +1,7 @@
 ---
 title: "文档驱动：AI 软件工程的第一秘籍"
 date: 2026-08-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   很多人问我：AI 写代码如何确保质量？我的答案有四条：文档驱动、对抗审查、暴力测试、复杂度惩罚。
 tags: [AI, Agent, 软件工程, 文档, OINK]

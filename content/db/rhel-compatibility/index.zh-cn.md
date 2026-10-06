@@ -1,7 +1,7 @@
 ---
 title: "EL系操作系统发行版哪家强？"
 date: 2023-10-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   RHEL系列操作系统发行版兼容水平：RHEL = Rocky ≈ Anolis > Alma > Oracle >> Euler。推荐使用RockyLinux 8.8，有国产化要求可以使用Anolis 8.8。CentOS 7.9明年EOL，是时候升级OS了。
 series: ["信创国产化"]

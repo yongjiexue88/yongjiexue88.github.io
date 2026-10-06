@@ -1,7 +1,7 @@
 ---
 title: "大故障：阿里云核心域名被拖走了"
 date: 2025-06-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   阿里云aliyuncs.com被拖走了，DNS解析故障，影响对象存储等关键服务，又一场匪夷所思的大型云故障。
 tags: [云计算, 阿里云, 故障复盘]

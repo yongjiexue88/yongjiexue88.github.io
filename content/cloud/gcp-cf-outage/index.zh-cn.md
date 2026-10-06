@@ -1,7 +1,7 @@
 ---
 title: "带瘫全球互联网，Google云/Cloudflare全球故障"
 date: 2025-06-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Google云/Cloudflare全面故障，带瘫全球互联网，又一起IAM引发的血案。
 tags: [云计算, Cloudflare, 故障复盘]

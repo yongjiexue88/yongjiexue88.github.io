@@ -1,7 +1,7 @@
 ---
 title: "便宜云服务器哪家强？"
 date: 2025-08-16
-authors: [vonng]
+authors: [yongjie]
 summary: >
   比阿里云便宜十倍的好用VPS。
 tags: [云计算, 成本]

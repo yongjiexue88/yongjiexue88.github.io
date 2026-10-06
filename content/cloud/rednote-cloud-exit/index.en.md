@@ -2,7 +2,7 @@
 title: "Did RedNote Exit the Cloud?"
 linkTitle: "Did RedNote Exit the Cloud?"
 date: 2025-12-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   When a company that was "born on the cloud" goes "self-host first," does that count as cloud exit? A repost of a deleted piece on the infrastructure coming-of-age for China's internet giants.
 tags: [Cloud-Exit, Alibaba Cloud, Business]

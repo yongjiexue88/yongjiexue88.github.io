@@ -2,13 +2,13 @@
 title: "Incident-Report: Uneven Load Avalanche"
 linkTitle: "Incident: Uneven Load Avalanche"
 date: 2018-04-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Recently there was a perplexing incident where a database had half its data volume and load migrated away, but ended up being overwhelmed due to increased load.
 tags: [PostgreSQL, PG Admin, Incident]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 
 Recently there was a perplexing incident where a database had half its data volume and load migrated away.
 

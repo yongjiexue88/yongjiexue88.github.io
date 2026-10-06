@@ -1,7 +1,7 @@
 ---
 title: The Data Sovereignty Manifesto
 date: 2026-04-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   As data becomes the most important means of production in the AI age, platform lock-in and cloud dependence are rebuilding digital feudalism. This manifesto calls on us to reclaim control through open source and the ability to run our own infrastructure, so data can truly belong to its owners.
 tags: [Cloud-Exit, AI, Data Sovereignty, Open Source]

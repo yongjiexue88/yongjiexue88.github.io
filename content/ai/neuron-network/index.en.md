@@ -1,7 +1,7 @@
 ---
 title: "Basic Principles of Neural Networks"
 date: 2017-05-11
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Neural networks are inspired by how the brain works and can be used to solve general learning problems. This article introduces the basic principles and practice of neural networks.
 ai: true

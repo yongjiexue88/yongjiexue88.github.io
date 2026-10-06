@@ -1,7 +1,7 @@
 ---
 title: "一夜变天，OpenAI又开源GPT模型了？"
 date: 2025-08-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   OpenAI开源GPT 20B/120B模型，水平与 o4-mini 相当，带有思维链可微调，支持函数调用等Agent功能，原生 MXFP4 量化，120b可以跑在高端笔记本或者单…
 tags: [大模型, 开源]

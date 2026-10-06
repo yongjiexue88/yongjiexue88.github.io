@@ -1,7 +1,7 @@
 ---
 title: "Paradigm Shift: From Cloud to Local-First"
 date: 2023-02-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Cloud databases' exorbitant markups—sometimes 10x or more—are undoubtedly a scam for users outside the applicable spectrum. But we can dig deeper: why are public clouds, especially cloud databases, like this? And based on their underlying logic, make predictions about the industry's future.
 tags: [Cloud-Exit, Open Source]

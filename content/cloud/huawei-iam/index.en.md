@@ -1,7 +1,7 @@
 ---
 title: "Huawei Cloud Incident: Was IAM Involved?"
 date: 2026-07-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Huawei Cloud confirmed abnormalities affecting some International Site accounts during a scheduled IAM upgrade window. The timing is suggestive, but the causal link remains unconfirmed.
 tags: [Cloud, Incident]

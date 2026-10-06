@@ -1,7 +1,7 @@
 ---
 title: "AI 用 Rust 重写 PostgreSQL？别逗了"
 date: 2026-07-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AI 可以翻译代码，但翻译不了业力。这个项目最有价值的地方，是它用两个月时间，亲手证明了自己想推翻的东西。
 aliases: ["/db/rewrite-pg-in-rust/"]

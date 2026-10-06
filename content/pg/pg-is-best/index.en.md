@@ -2,7 +2,7 @@
 title: Why PostgreSQL is the Most Successful Database?
 linkTitle: Why PostgreSQL is Most Successful?
 date: 2022-07-12
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Database users are developers, but what about developers' preferences, likes, and choices? Looking at StackOverflow survey results over the past six years, it's clear that in 2022, PostgreSQL has won all three categories, becoming literally the "most successful database"
 tags: [PostgreSQL, PG Ecosystem]

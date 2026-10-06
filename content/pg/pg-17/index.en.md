@@ -2,7 +2,7 @@
 title: "PostgreSQL 17 Released: No More Pretending!"
 linkTitle: "PG17 Released: No More Pretending!"
 date: 2024-09-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL is now the world's most advanced open-source database and has become the preferred open-source database for organizations of all sizes, matching or exceeding top commercial databases.
 tags: [PostgreSQL]

@@ -1,7 +1,7 @@
 ---
 title: "笔记本进酱油，脑子瓦特了"
 date: 2025-05-31
-authors: [vonng]
+authors: [yongjie]
 summary: >
   4万多的笔记本被邻座老太狂暴轰入老娘舅魔法料汁，彻底瓦特了。
 tags: [硬件, 随笔]

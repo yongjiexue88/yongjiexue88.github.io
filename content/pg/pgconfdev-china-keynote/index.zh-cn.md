@@ -1,7 +1,7 @@
 ---
 title: "中国厂商首次站上 PGConf.dev 主题演讲台"
 date: 2026-02-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   三年三投，中了 PGConf.Dev 2026 演讲，也许是第一次有中国 PostgreSQL 厂商（数据库个体户）站上这个演讲台，分享对 PG 社区的贡献。
 tags: [PostgreSQL, PG生态]

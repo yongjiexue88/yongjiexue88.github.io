@@ -1,7 +1,7 @@
 ---
 title: "Azure和OpenAI来查水表了"
 date: 2025-05-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   一不小心炸到海外，五星红旗飘扬在 LinkedIn 大地上…引来了Azure和OpenAI查水表。
 tags: [云计算, 数据主权]

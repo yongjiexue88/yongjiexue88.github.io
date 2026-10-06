@@ -1,7 +1,7 @@
 ---
 title: "ISD数据集：分析全球120年气候变化"
 date: 2023-06-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   ISD 是 Intergrated Surface Dataset 的缩写，是 NOAA 美国国家海洋和大气管理局公开的一份数据集。 我最近重新整理了一下这份数据集，提供了相关的分析工具。
 tags: [随笔]

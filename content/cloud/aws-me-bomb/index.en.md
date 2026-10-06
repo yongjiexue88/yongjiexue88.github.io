@@ -1,7 +1,7 @@
 ---
 title: "Drones Took Out Three AWS AZ: Into the Era of Bombable Data Centers"
 date: 2026-03-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   On March 1, 2026, Iranian drones reportedly hit AWS facilities in the UAE and Bahrain. If the reporting is accurate, this may be the first public case of a hyperscale cloud provider suffering direct military damage to data-center infrastructure.
 tags: [Cloud-Exit, AWS, Incident]

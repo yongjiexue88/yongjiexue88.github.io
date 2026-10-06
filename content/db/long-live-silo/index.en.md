@@ -1,7 +1,7 @@
 ---
 title: "Silo: A Maintained, MinIO-Compatible Object Store"
 date: 2026-08-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Six months after forking MinIO, Silo has completed its rebrand, fixed 14 security issues,
   restored and improved the console, and grown from an emergency fork into an independent open-source project.

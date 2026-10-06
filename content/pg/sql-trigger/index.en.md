@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL Trigger Usage Considerations"
 date: 2018-07-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Detailed understanding of trigger management and usage in PostgreSQL
 tags: [PostgreSQL, PG Development]

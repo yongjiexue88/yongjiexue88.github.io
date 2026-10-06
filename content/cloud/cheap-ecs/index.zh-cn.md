@@ -1,7 +1,7 @@
 ---
 title: "薅阿里云羊毛，打造数字家园"
 date: 2023-11-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   阿里云双十一提供了一个不错的福利，2C2G3M的ECS服务器每年¥99低价用三年。本文介绍了如何利用这台ECS打造你自己的数字家园。
 tags: [下云, 阿里云]

@@ -1,7 +1,7 @@
 ---
 title: "赛博佛学：AI Agent 认知工程手册"
 date: 2026-05-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   本文是《赛博经藏》系列的第四篇。《赛博道德经》从道家的角度聊了 AI Agent 架构设计。本《赛博儒学》从儒家角度探讨 AI Agent 的治理原则。
 tags: [Agent, 哲学]

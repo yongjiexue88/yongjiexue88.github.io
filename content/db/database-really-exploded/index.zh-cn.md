@@ -1,7 +1,7 @@
 ---
 title: "这次数据库真爆炸了，但摇人也没用了"
 date: 2025-05-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   预防胜于治疗，备份是数据库的生命线，不要爆炸失去了再追悔莫及。
 tags: [数据库, 备份, 故障复盘]

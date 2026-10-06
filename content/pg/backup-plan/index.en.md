@@ -1,13 +1,13 @@
 ---
 title: "Warm Standby: Using pg_receivewal"
 date: 2019-03-02
-authors: [vonng]
+authors: [yongjie]
 summary: >
   There are various backup strategies. Physical backups can usually be divided into four types.
 tags: [PostgreSQL, PG Admin, Backup]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 
 Backup is the foundation of a DBA's livelihood and one of the most critical tasks in database management. There are various types of backups, but the backups discussed here are all physical backups. Physical backups can usually be divided into the following four types:
 

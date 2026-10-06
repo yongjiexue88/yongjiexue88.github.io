@@ -1,7 +1,7 @@
 ---
 title: "赛博诺斯替：谁来审查审查者？"
 date: 2026-05-31
-authors: [vonng]
+authors: [yongjie]
 summary: >
   卷七 · 诺斯替 · Cyber Gnosticism
 tags: [Agent, 哲学]

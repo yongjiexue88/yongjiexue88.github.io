@@ -1,7 +1,7 @@
 ---
 title: Dongchedi Just Exposed “Smart Driving.” Where’s Our Dongku-Di?
 date: 2025-07-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Imagine a “closed-course” shootout for domestic databases and clouds, the way Dongchedi just humiliated 30+ autonomous cars. This industry needs its own stress test.
 tags: [PostgreSQL, Database, Commentary, Society]

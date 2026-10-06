@@ -2,7 +2,7 @@
 title: Reclaim Hardware Bonus from the Cloud
 linkTitle: Reclaim Hardware Bonus
 date: 2023-11-16
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Hardware is interesting again, developments in CPUs and SSDs remain largely unnoticed by the majority of devs. A whole generation of developers is obscured by cloud hype and marketing noise. 
 tags: [Cloud-Exit, Cloud, Hardware]

@@ -1,7 +1,7 @@
 ---
 title: "I Translated the Docs for Three Core PG Components in a Day"
 date: 2026-03-02
-authors: [vonng]
+authors: [yongjie]
 build:
   render: never
   list: never

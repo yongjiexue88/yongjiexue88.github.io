@@ -1,7 +1,7 @@
 ---
 title: "464个扩展开箱即用：新版 PG 扩展目录发布"
 date: 2026-03-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   今天老冯又让 Claude Code 干了一件大好事 —— 做了一个全新的 PostgreSQL 扩展目录。就放在 https://pigsty.cc/ext 这里。
 tags: [PostgreSQL, 扩展, 文档]

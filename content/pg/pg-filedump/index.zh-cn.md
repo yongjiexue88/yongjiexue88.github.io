@@ -1,7 +1,7 @@
 ---
 title: "如何用 pg_filedump 抢救数据？"
 date: 2023-09-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   备份是DBA的生命线，但如果你的PostgreSQL数据库已经爆炸了又没有备份，该怎么办？也许pg_filedump可以帮到你！
 tags: [PostgreSQL, PG管理, 故障复盘]
@@ -37,7 +37,7 @@ cd pg_filedump && make && sudo make install
 `pg_filedump` 的使用方式并不复杂，你把数据文件喂给他，告诉它这张表每一列的类型，它就能帮你解读出来。比如第一步，我们就得知道这个数据库集簇中有哪几个数据库。这个信息记录在系统视图 `pg_database` 中。这是一张系统层面的表，位于 `global` 目录中，在集群初始化时会分配固定的 OID `1262`，所以对应的物理文件通常是： `global/1262`。
 
 ```bash
-vonng=# select 'pg_database'::RegClass::OID;
+yongjiexue=# select 'pg_database'::RegClass::OID;
  oid
 ------
  1262

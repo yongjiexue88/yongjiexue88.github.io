@@ -1,7 +1,7 @@
 ---
 title: "赛博道德经：设计结构，而非规定行为"
 date: 2026-05-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   赛博经藏系列：用 AI Agent 解释宗教理念，并用宗教智慧启迪工程。本文为系列第二篇 —— 赛博道教。
 tags: [Agent, 哲学, 架构]

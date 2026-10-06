@@ -1,7 +1,7 @@
 ---
 title: "是 Oracle 的失误让 PostgreSQL 赢了吗？"
 date: 2026-08-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   2026 年 8 月 19 日，The Register 刊出了一篇对 Michael Stonebraker 的采访。
 tags: [PostgreSQL, Oracle, 技术评论]

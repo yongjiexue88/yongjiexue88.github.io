@@ -1,7 +1,7 @@
 ---
 title: "The Codex Reset Party Is Over. No More Free Eggs."
 date: 2026-08-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   OpenAI's Codex Reset spree is over. The free eggs are gone—but what did one month with seven AI subscriptions, three computers, and two AGI-class models actually produce?
 tags: [AI, Codex, Claude]

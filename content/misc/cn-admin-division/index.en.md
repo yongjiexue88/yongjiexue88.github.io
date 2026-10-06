@@ -1,7 +1,7 @@
 ---
 title: "Knowledge of China's Administrative Divisions"
 date: 2018-12-09
-authors: [vonng]
+authors: [yongjie]
 summary: Information about administrative division levels, numbers, the meaning of administrative division codes, urban-rural classification, etc.
 tags: [Essay]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Apple,Google,FB,TG 160亿登录信息泄露"
 date: 2025-06-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   超过十六十亿条登录凭据被曝光，可能源自各类信息窃取木马
 tags: [安全]

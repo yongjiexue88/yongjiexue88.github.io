@@ -1,7 +1,7 @@
 ---
 title: "Frontend-Backend Communication Wire Protocol"
 date: 2019-11-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Understanding the TCP protocol used for communication between PostgreSQL server and client, and printing messages using Go
 tags: [PostgreSQL, PG Development, PG Kernel]
@@ -48,7 +48,7 @@ func main() {
 	// Establish connection
 	startupMsg := &pgproto3.StartupMessage{
 		ProtocolVersion: pgproto3.ProtocolVersionNumber,
-		Parameters:      map[string]string{"user": "vonng"},
+		Parameters:      map[string]string{"user": "yongjiexue"},
 	}
 	frontend.Send(startupMsg)
 
@@ -89,7 +89,7 @@ Output result:
 *pgproto3.ParameterStatus &{is_superuser on}
 *pgproto3.ParameterStatus &{server_encoding UTF8}
 *pgproto3.ParameterStatus &{server_version 11.3}
-*pgproto3.ParameterStatus &{session_authorization vonng}
+*pgproto3.ParameterStatus &{session_authorization yongjiexue}
 *pgproto3.ParameterStatus &{standard_conforming_strings on}
 *pgproto3.ParameterStatus &{TimeZone PRC}
 *pgproto3.BackendKeyData &{35703 345830596}
@@ -200,7 +200,7 @@ You can observe message exchanges during this process:
 [B2F] *pgproto3.ParameterStatus &{is_superuser on}
 [B2F] *pgproto3.ParameterStatus &{server_encoding UTF8}
 [B2F] *pgproto3.ParameterStatus &{server_version 11.3}
-[B2F] *pgproto3.ParameterStatus &{session_authorization vonng}
+[B2F] *pgproto3.ParameterStatus &{session_authorization yongjiexue}
 [B2F] *pgproto3.ParameterStatus &{standard_conforming_strings on}
 [B2F] *pgproto3.ParameterStatus &{TimeZone PRC}
 [B2F] *pgproto3.BackendKeyData &{41588 1354047533}

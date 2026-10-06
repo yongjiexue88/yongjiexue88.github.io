@@ -1,7 +1,7 @@
 ---
 title: "How a Word Dies"
 date: 2026-08-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   How did “far, far ahead,” “homegrown,” “innovation,” “domestic,” and “open source” become their own antonyms in China's tech industry? This essay traces a systemic inflation of language and credibility—and the bill it has left for engineering, open source, and the industry's ability to correct itself.
 tags: [Database, Open Source, Commentary]

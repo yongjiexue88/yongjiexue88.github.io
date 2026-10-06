@@ -1,7 +1,7 @@
 ---
 title: "Amateur Hour Opera: Alibaba-Cloud PostgreSQL Disaster Chronicle"
 date: 2024-08-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A customer experienced an outrageous cascade of failures on cloud database last week: a high-availability PG RDS cluster went down completely - both primary and replica servers - after attempting a simple memory expansion, troubleshooting until dawn. Poor recommendations abounded during the incident, and the postmortem was equally perfunctory. I share this case study here for reference and review.
 tags: [Cloud-Exit, RDS, Alibaba Cloud]

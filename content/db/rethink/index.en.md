@@ -1,7 +1,7 @@
 ---
 title: "Back to Basics: Tech Reflection Chronicles"
 date: 2023-05-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The cost-cutting imperative has triggered a reevaluation of all technologies, including databases. This series critiques hot DB technologies and poses fundamental questions about their trade-offs: Are cloud databases, distributed databases, microservices, and containerization real needs or false hype?
 series: ["Back to Basics"]

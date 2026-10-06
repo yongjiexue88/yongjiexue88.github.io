@@ -1,7 +1,7 @@
 ---
 title: "Incident-Report: Integer Overflow from Rapid Sequence Number Consumption"
 date: 2018-07-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   If you use Integer sequences on tables, you should consider potential overflow scenarios.
 tags: [PostgreSQL, PG Admin, Incident]
@@ -61,31 +61,31 @@ INSERT INTO sample(name, value) VALUES(?,?)
 Due to the constraint on the `name` column, if duplicate `name` fields are inserted, the transaction will error and rollback. However, the sequence number is already consumed, and even if the transaction rolls back, the sequence number doesn't rollback.
 
 ```bash
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',1);
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',1);
 INSERT 0 1
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        1
 (1 row)
 
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',1);
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',1);
 ERROR:  duplicate key value violates unique constraint "sample_name_key"
 DETAIL:  Key (name)=(Alice) already exists.
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        2
 (1 row)
 
-vonng=# BEGIN;
+yongjiexue=# BEGIN;
 BEGIN
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',1);
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',1);
 ERROR:  duplicate key value violates unique constraint "sample_name_key"
 DETAIL:  Key (name)=(Alice) already exists.
-vonng=# ROLLBACK;
+yongjiexue=# ROLLBACK;
 ROLLBACK
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        3
@@ -96,17 +96,17 @@ Therefore, when executed inserts have many duplicates, i.e., many conflicts, it 
 Another point to note is that UPSERT operations also consume sequence numbers! From the behavior perspective, this means even if the actual operation is UPDATE rather than INSERT, a sequence number is still consumed.
 
 ```sql
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',3) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',3) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
 INSERT 0 1
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        4
 (1 row)
 
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',4) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',4) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
 INSERT 0 1
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        5

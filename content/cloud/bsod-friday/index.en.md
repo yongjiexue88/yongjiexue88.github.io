@@ -1,7 +1,7 @@
 ---
 title: "Blue Screen Friday: Amateur Hour on Both Sides"
 date: 2024-07-23
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Both client and vendor failed to control blast radius, leading to this epic global security incident that will greatly benefit local-first software philosophy.
 tags: [Cloud-Exit, Incident, Cloudflare]

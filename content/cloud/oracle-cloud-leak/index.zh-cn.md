@@ -1,7 +1,7 @@
 ---
 title: "Oracle云大翻车：传6百万用户认证数据泄漏"
 date: 2025-03-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   2025 年的最大供应链黑客攻击，史诗级一锅端式泄漏，Oracle云死鸭子嘴硬不承认，GDPR 铁拳还远吗？
 tags: [Oracle, 云计算, 安全]

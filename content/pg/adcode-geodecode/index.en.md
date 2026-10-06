@@ -2,13 +2,13 @@
 title: "Efficient Administrative Region Lookup with PostGIS"
 linkTitle: "GIS Point-in-Polygon Query"
 date: 2018-06-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   How to efficiently solve the typical reverse geocoding problem: determining administrative regions based on user coordinates.
 tags: [PostgreSQL, PG Development, GIS]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 >
 > [Original WeChat article](https://mp.weixin.qq.com/s/5d681qolNZpqj5ZuHUGBow)
 

@@ -1,7 +1,7 @@
 ---
 title: "In Praise of Mathematics"
 date: 2014-04-15
-authors: [vonng]
+authors: [yongjie]
 summary: |
   What a wonderful subject mathematics is
 tags: [Essay]

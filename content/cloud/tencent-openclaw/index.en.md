@@ -1,7 +1,7 @@
 ---
 title: "Tencent Cloud 'Reduced' the Lobster King's Load by 180 GB"
 date: 2026-03-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Tencent Cloud mirrored OpenClaw's official skill marketplace into its own SkillHub and then claimed it was helping the upstream project. The incident turned into a case study in open-source manners, mirror ethics, and platform power.
 tags: [Cloud, AI, Agent, Open Source]

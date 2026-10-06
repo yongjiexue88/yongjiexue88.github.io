@@ -1,7 +1,7 @@
 ---
 title: "PG中的本地化排序规则"
 date: 2021-03-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   什么？不知道COLLATTION是什么，那记住一件事，用C COLLATE准没错！
 tags: [PostgreSQL, PG管理]
@@ -155,7 +155,7 @@ SELECT * FROM some_chinese ORDER BY name;
 执行以下SQL，按照默认的 `C` 排序规则对表中的记录排序。可以看到，这里实际上是按照字符的 `ascii|unicode` [**码位**](/db/character-encoding#编码字符集-ccs) 进行排序的。
 
 ```bash
-vonng=# SELECT name, ascii(name) FROM some_chinese ORDER BY name COLLATE "C";
+yongjiexue=# SELECT name, ascii(name) FROM some_chinese ORDER BY name COLLATE "C";
  name | ascii
 ------+-------
  佛   | 20315
@@ -298,10 +298,10 @@ postgres@meta:5432/meta=# EXPLAIN SELECT * FROM app WHERE name LIKE '中国%';
 我们发现，**这个查询无法利用索引**，走了全表扫描。查询劣化至70毫秒，性能恶化了三四十倍。
 
 ```bash
-vonng=# show lc_collate;
+yongjiexue=# show lc_collate;
  en_US.UTF-8
 
-vonng=# EXPLAIN SELECT * FROM app WHERE name LIKE '中国%';
+yongjiexue=# EXPLAIN SELECT * FROM app WHERE name LIKE '中国%';
                         QUERY PLAN
 ----------------------------------------------------------
  Seq Scan on app  (cost=0.00..29454.95 rows=151 width=25)
@@ -330,7 +330,7 @@ CREATE INDEX ON app(name text_pattern_ops);
 因此在这种情况下，只有基于 `text_pattern_ops` 操作符族建立的索引，或者基于默认的 `text_ops` 但使用 `COLLATE "C"'` 的索引，才可以用于支持 `LIKE` 查询。
 
 ```sql
-vonng=# EXPLAIN ANALYZE SELECT * FROM app WHERE name LIKE '中国%';
+yongjiexue=# EXPLAIN ANALYZE SELECT * FROM app WHERE name LIKE '中国%';
 
 Index Only Scan using app_name_idx on app  (cost=0.43..1.45 rows=151 width=25) (actual time=0.053..0.731 rows=2360 loops=1)
    Index Cond: ((name ~>=~ '中国'::text) AND (name ~<~ '中图'::text))

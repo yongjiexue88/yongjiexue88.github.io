@@ -1,7 +1,7 @@
 ---
 title: "开箱即用的PG发行版：Pigsty"
 date: 2021-05-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   昨天在PostgreSQL中文社区做了一个直播分享，介绍了开源的PostgreSQL全家桶解决方案 —— Pigsty。
 tags: [PostgreSQL, Pigsty, RDS]

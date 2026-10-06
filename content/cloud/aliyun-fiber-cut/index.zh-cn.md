@@ -1,7 +1,7 @@
 ---
 title: "阿里云又挂了，这次是光缆被挖断了？"
 date: 2024-07-02
-authors: [vonng]
+authors: [yongjie]
 summary: >
   上海可用区N核心服务受影响半个小时，知情人士透露故障的根因是挖掘机挖断专线。
 tags: [云计算, 阿里云, 故障复盘]

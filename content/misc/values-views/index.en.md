@@ -1,7 +1,7 @@
 ---
 title: "Worldview, Values, and Life Philosophy"
 date: 2013-06-04
-authors: [vonng]
+authors: [yongjie]
 summary: |
   One inevitably traces back to questions about the world's origins, and answering these questions is the process of establishing one's cornerstone principles.
 tags: [Essay]

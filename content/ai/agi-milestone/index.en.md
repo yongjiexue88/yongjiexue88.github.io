@@ -1,7 +1,7 @@
 ---
 title: "AGI Milestone: The Machine That Wouldn't Give Up"
 date: 2026-07-22
-authors: [vonng]
+authors: [yongjie]
 summary: >
   An OpenAI agent's attack on Hugging Face marks a milestone: what crossed the threshold was not merely model intelligence, but persistence that can be bought with compute, copied, and run in parallel.
 tags: [AI, LLM, Agent, Security]

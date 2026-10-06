@@ -1,7 +1,7 @@
 ---
 title: "504 Extensions: Expand the PostgreSQL Landscape"
 date: 2026-04-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   One GitHub issue turned into an extension sprint. 32 new additions, 504 in total, say a lot about where PostgreSQL is headed.
 tags: [PostgreSQL, PG Ecosystem, Extension]

@@ -1,7 +1,7 @@
 ---
 title: "OpenAI Global Outage Postmortem: K8S Circular Dependencies"
 date: 2024-12-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Even trillion-dollar unicorns can be a house of cards when operating outside their core expertise.
 tags: [Codex, Incident]

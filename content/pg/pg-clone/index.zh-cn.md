@@ -2,7 +2,7 @@
 title: "Git for Data: 瞬间克隆PG数据库"
 linkTitle: "Git for Data: 瞬间克隆PG数据库"
 date: 2025-12-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   如何在瞬间克隆一个巨大的 PostgreSQL 数据库，还不占用额外的存储？PG 18 与 XFS 可以擦出很多火花。
 tags: [PostgreSQL, PG开发, GIS]
@@ -124,9 +124,9 @@ Pigsty 提供了两种更强大的克隆方式，场景稍微不太一样：
 这个过程也是瞬间完成的，和数据库大小无关，而且克隆出来的不占用实际存储，除非你开始往里面写数据，才会触发 CoW。
 
 ```bash
-postgres@vonng-aimax:/pg$ du -sh data
+postgres@yongjiexue-aimax:/pg$ du -sh data
 797G	data
-postgres@vonng-aimax:/pg$ time cp -r data data2
+postgres@yongjiexue-aimax:/pg$ time cp -r data data2
 
 real	0m0.586s
 user	0m0.014s

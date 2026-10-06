@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL高峰论坛：参会小记"
 date: 2025-06-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   这些年来中国最大的PG会议，很高兴看到拥抱开源，拥抱PG成为大家的共识。
 tags: [PostgreSQL, PG生态, 随笔]

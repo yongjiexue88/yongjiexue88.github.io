@@ -1,7 +1,7 @@
 ---
 title: "草台回旋镖：Apple Music证书过期服务中断"
 date: 2024-11-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   刚提议将HTTPS证书最大有效期缩短到45天，结果自己就中枪了，硅谷大手子Apple也难逃草台命运？
 tags: [云计算, 故障复盘, 安全]

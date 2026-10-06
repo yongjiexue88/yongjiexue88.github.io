@@ -2,7 +2,7 @@
 title: "故障档案：PostgreSQL事务号回卷"
 linkTitle: "故障档案：XID回卷"
 date: 2018-07-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   XID WrapAround也许是PostgreSQL特有的一种故障。
 tags: [PostgreSQL, PG管理, 故障复盘]

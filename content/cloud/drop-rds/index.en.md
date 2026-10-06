@@ -1,7 +1,7 @@
 ---
 title: "Cloud RDS: From Database Drop to Exit"
 date: 2022-05-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   I recently witnessed a live cloud database drop-and-run incident. This article discusses how to handle accidentally deleted data when using PostgreSQL in production environments.
 tags: [Cloud-Exit, PG Admin, RDS]

@@ -1,7 +1,7 @@
 ---
 title: "AMD YES? 老冯的数码退烧记"
 date: 2025-07-21
-authors: [vonng]
+authors: [yongjie]
 summary: >
   从装机到退烧，从AI MAX笔记本到装机再到放弃。
 tags: [硬件, 随笔]

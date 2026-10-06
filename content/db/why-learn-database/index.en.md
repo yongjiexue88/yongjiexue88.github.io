@@ -1,7 +1,7 @@
 ---
 title: Why Study Database Principles
 date: 2018-04-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Those who only know how to code are just programmers; learn databases well, and you can at least make a living; but for excellent engineers, merely using databases is far from enough.
 tags: [Database, Career]

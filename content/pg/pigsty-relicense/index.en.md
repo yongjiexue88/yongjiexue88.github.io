@@ -2,7 +2,7 @@
 title: "From AGPL to Apache: Why I Changed Pigsty's License"
 linkTitle: "From AGPL to Apache: Pigsty License Change"
 date: 2026-01-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Pigsty switched from AGPLv3 to Apache 2.0. Aren't you worried about freeloaders?
   Freeloaders welcome — if you want to become the Debian of databases, a permissive license is table stakes.

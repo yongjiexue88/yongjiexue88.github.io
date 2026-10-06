@@ -1,7 +1,7 @@
 ---
 title: "赛博吠檀多：所有进程共享同一个基质"
 date: 2026-05-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   卷四 · 印度教 · Emptiness and Brahman
 tags: [Agent, 哲学]

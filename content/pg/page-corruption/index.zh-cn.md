@@ -2,7 +2,7 @@
 title: "PostgreSQL数据页面损坏修复"
 linkTitle: "故障档案：数据页损坏"
 date: 2018-11-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   采用二进制编辑的方式修复PostgreSQL数据页，以及如何让一条主键查询出现两条记录来。
 tags: [PostgreSQL, PG管理, 故障复盘]

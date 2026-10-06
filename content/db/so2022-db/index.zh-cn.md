@@ -1,7 +1,7 @@
 ---
 title: "StackOverflow 2022数据库年度调查"
 date: 2022-06-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   什么，PostgreSQL已经成为最流行，最先进，开发者最想学习使用的数据库了？最近，StackOverfl
 tags: [PostgreSQL, 数据库, PG生态]

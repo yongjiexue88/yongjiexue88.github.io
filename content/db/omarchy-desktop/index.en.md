@@ -1,7 +1,7 @@
 ---
 title: "Omarchy: Is There Hope for Desktop Linux?"
 date: 2026-08-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   I installed Omarchy, then removed it. Why? Who is it for, and who isn't it for? Does the Linux desktop still have a future?
 tags: [Linux, Omarchy, Operating Systems]

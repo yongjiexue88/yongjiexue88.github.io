@@ -2,7 +2,7 @@
 title: "The PostgreSQL Extension Encyclopedia: Bilingual and Ready to Use"
 linkTitle: "PG Extension Encyclopedia"
 date: 2026-03-13
-authors: [vonng]
+authors: [yongjie]
 build:
   render: never
   list: never

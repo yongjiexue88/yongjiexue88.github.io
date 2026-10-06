@@ -2,7 +2,7 @@
 title: "MySQL and Baijiu: The Internet’s Obedience Test"
 linkTitle: "MySQL and Baijiu: The Internet’s Obedience Test"
 date: 2025-12-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MySQL is to the internet what baijiu is to China: harsh, hard to swallow, yet worshipped because culture demands obedience. Both are loyalty tests—will you endure discomfort to fit in?
 series: [MySQL走好]
