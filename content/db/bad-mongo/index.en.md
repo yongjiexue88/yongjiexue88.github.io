@@ -134,7 +134,7 @@ Many developers who have used MongoDB have extremely bad impressions of it, incl
 
 During this process, I left with a **terrible impression** of MongoDB - I spent a lot of time cleaning up schema-chaotic garbage data in MongoDB. Including some mind-boggling problems (like Collections containing entire novels, SQL injection scripts, illegal null characters, Unicode code points and Surrogate Pairs, various flashy schemas), it was truly an epic-level garbage bin.
 
-During this process, I also deeply studied MongoDB's query language and translated it to standard SQL. I even used Multicorn to write a MongoDB foreign data wrapper FDW to achieve this, and incidentally published a [paper about Mongo/HBase FDW](https://vonng.com/pdf/unified_access_layer_with_postgresql_fdw.pdf). (Quite coincidentally, I didn't know at the time - MongoDB officially also used FDW for analytics like this!)
+During this process, I also deeply studied MongoDB's query language and translated it to standard SQL. I even used Multicorn to write a MongoDB foreign data wrapper FDW to achieve this, and incidentally published a paper about Mongo/HBase FDW. (Quite coincidentally, I didn't know at the time - MongoDB officially also used FDW for analytics like this!)
 
 Overall, during this deep usage and migration process, I was very disappointed with MongoDB, feeling my time was wasted on meaningless things.
 Of course, I later discovered I wasn't the only one with this feeling. On HN and Reddit, there are countless mockeries and complaints about MongoDB:

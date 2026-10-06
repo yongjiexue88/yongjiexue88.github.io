@@ -307,4 +307,4 @@ AI 能把开发工时压到极限，却压不短信任要走的日历。代码�
 - SQLite 测试方法（TH3 与 MC/DC）：<https://www.sqlite.org/testing.html>
 - Yukon（禹贡）文档与已知限制：<https://yukon.supermap.io/>
 - Apache Cloudberry 的项目历史：<https://cloudberry.apache.org/blog/cloudberry-database-enters-the-apache-incubator/>
-- 前篇：《开源的业力：当代码一文不值，信用从哪里来》：<https://vonng.com/ai/oss-karma/>
+- 前篇：《开源的业力：当代码一文不值，信用从哪里来》：

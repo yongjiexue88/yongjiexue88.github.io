@@ -8,7 +8,7 @@ tags: [AI, Agent, PostgreSQL, 数据库]
 ---
 
 
-几个月前，老冯写过一篇《[Agent 操作系统时刻](https://vonng.com/ai/agent-os/)》。那篇文章里我做了个判断：Agent 基础设施的下一场热闹会发生在“记忆”这个方向，围绕着“Agent 该怎么记住东西”会冒出一大批创业公司和开源项目，资本会涌进来，架构图会画得越来越花。
+几个月前，老冯写过一篇《Agent 操作系统时刻》。那篇文章里我做了个判断：Agent 基础设施的下一场热闹会发生在“记忆”这个方向，围绕着“Agent 该怎么记住东西”会冒出一大批创业公司和开源项目，资本会涌进来，架构图会画得越来越花。
 
 果不其然，Mem0 又融了一轮，MemGPT 改名 Letta 继续融，Zep、Cognee、Hindsight、MemoryScope、Memobase、SuperMemory、Graphiti、LangMem、EverMemOS——一抓一大把。每家的技术博客上都挂着差不多的架构图：底下一个 episodic 层，中间一个 semantic 层，顶上一个 reflection 或 procedural 层，层与层之间箭头来回穿梭，写着 consolidation、retrieval、forgetting。GitHub star 在涨，arXiv 论文在刷榜，技术大会每场都有一个 Agent Memory 的 track。热闹是真的热闹。
 

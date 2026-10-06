@@ -6,7 +6,7 @@ summary: >
 tags: [OLAP, Data Sovereignty, Philosophy, Commentary]
 ---
 
-Last month I wrote a post called ["The Palantir Ontology Scam"](https://vonng.com/db/ontology-bullshit/).
+Last month I wrote a post called "The Palantir Ontology Scam".
 The core point was simple and summarized in a Rosetta Stone-style comparison table:
 Palantir's Ontology is, at the technical level, database modeling.
 Object Type is a table. Property is a column. Link is a foreign key. Action is a stored procedure.

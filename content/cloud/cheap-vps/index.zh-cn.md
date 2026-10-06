@@ -13,7 +13,6 @@ tags: [云计算, 成本]
 
 ![图片](01.webp)
 
-教程地址：<https://pg36g.vonng.com/>
 
 所以啊，老冯就弄了个教程，选的是 ClawCloud，还有一个在 Cloudflare 上买域名的教程，算是经济实惠的最佳实践。
 

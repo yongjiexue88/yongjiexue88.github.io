@@ -58,7 +58,7 @@ DuckDB 也许是 OLAP 实战性能最快的数据库了，和 Clickhouse 不相�
 
 ![](ddia.png)
 
-> 设计数据密集型应用，Martin Kleppmann，[第三章](http://ddia.vonng.com/#/ch3)
+> 设计数据密集型应用，Martin Kleppmann，第三章
 
 与许多 “专用数据库” 一样，专业的 OLAP 组件的优势往往在于 **性能** —— 相比原生 PG 、MySQL 上有 1～3 个数量级的提升；而代价则是数据冗余、 量不必要的数据搬运工作、分布式组件之间缺乏一致性、额外的专业技能带来的复杂度成本、学习成本、以及人力成本、 额外的软件许可费用、极其有限的查询语言能力、可编程性、可扩展性、有限的工具链、以及与OLTP 数据库相比更差的数据完整性和可用性 —— **但这是一个合理的利弊权衡**。
 
@@ -234,7 +234,6 @@ PostgreSQL 生态中的一个困境就是，许多扩展插件，生态工具都
 Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外一种缩写解释：
 
 > **P**ostgres, **I**nfras, **G**raphics, **S**ervice, **T**oolbox, **Y**ours.
->
 > 属于你的图形化 Postgres 基础设施服务工具箱。
 
 ![](https://pigsty.io/img/pigsty/homepage.png)

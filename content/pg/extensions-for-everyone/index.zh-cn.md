@@ -8,7 +8,7 @@ tags: [PostgreSQL, PG生态, 扩展]
 ---
 
 
-> 在线幻灯片：[人人都能用上的 PostgreSQL 扩展](https://vonng.com/work/extensions-for-everyone/index.html)
+> 在线幻灯片：人人都能用上的 PostgreSQL 扩展
 
 --------
 
@@ -16,17 +16,17 @@ tags: [PostgreSQL, PG生态, 扩展]
 
 ### 0. 人人都能用上的扩展
 
-> [00. 人人都能用上的扩展](https://vonng.com/work/extensions-for-everyone/00-extensions-for-everyone.html)
+> 00. 人人都能用上的扩展
 
 大家好，这次演讲的题目是「人人都能用上的扩展」。
 
 它讨论的是 PostgreSQL 扩展的交付，以及一个共享的交付层，如何同时让用户、扩展作者、厂商和 PostgreSQL 内核开发者受益。
 
-[![00. 人人都能用上的扩展](00.webp)](https://vonng.com/work/extensions-for-everyone/00-extensions-for-everyone.html)
+![00. 人人都能用上的扩展](00.webp)
 
 ### 1. 我是谁
 
-> [01. 我是谁](https://vonng.com/work/extensions-for-everyone/01-who-am-i.html)
+> 01. 我是谁
 
 我是薛永杰，Pigsty 的作者和维护者。Pigsty 是一个开源 PostgreSQL 发行版。
 
@@ -34,11 +34,11 @@ tags: [PostgreSQL, PG生态, 扩展]
 
 过去两年里，我一直在为数百个扩展做编目、构建、打包和测试，覆盖不同 PostgreSQL 版本和 Linux 平台。所以这次分享不是理论推演，而是一份一线报告。
 
-[![01. 我是谁](01.webp)](https://vonng.com/work/extensions-for-everyone/01-who-am-i.html)
+![01. 我是谁](01.webp)
 
 ### 2. 可扩展性很重要
 
-> [02. 可扩展性很重要](https://vonng.com/work/extensions-for-everyone/02-extensibility-matters.html)
+> 02. 可扩展性很重要
 
 可扩展性很重要。两年前，我写过一篇文章，说 **PostgreSQL 正在吞噬数据库世界**。
 
@@ -50,11 +50,11 @@ tags: [PostgreSQL, PG生态, 扩展]
 
 这就是我开始收集和打包扩展的原因。
 
-[![02. 可扩展性很重要](02.webp)](https://vonng.com/work/extensions-for-everyone/02-extensibility-matters.html)
+![02. 可扩展性很重要](02.webp)
 
 ### 3. 两年之后
 
-> [03. 两年之后](https://vonng.com/work/extensions-for-everyone/03-two-years-later.html)
+> 03. 两年之后
 
 两年之后，我已经搭建了一套面向 PG 扩展的开源基础设施，叫 **pgext.cloud**。
 
@@ -64,11 +64,11 @@ tags: [PostgreSQL, PG生态, 扩展]
 
 真正重要的是，我们在维护这张矩阵时学到了什么。这才是我今天想分享的内容。
 
-[![03. 两年之后](03.webp)](https://vonng.com/work/extensions-for-everyone/03-two-years-later.html)
+![03. 两年之后](03.webp)
 
 ### 4. 谁会受益？
 
-> [04. 谁会受益？](https://vonng.com/work/extensions-for-everyone/04-who-benefits.html)
+> 04. 谁会受益？
 
 我说「人人都能用上的扩展」时，指的是四类人。
 
@@ -82,7 +82,7 @@ tags: [PostgreSQL, PG生态, 扩展]
 
 所以这件事本质上是一个共享交付层。它不只是为了方便，也提供了可见性。在谈交付之前，我们先看一下生态本身。我们需要先理解，我们到底要交付什么。
 
-[![04. 谁会受益？](04.webp)](https://vonng.com/work/extensions-for-everyone/04-who-benefits.html)
+![04. 谁会受益？](04.webp)
 
 --------
 
@@ -90,7 +90,7 @@ tags: [PostgreSQL, PG生态, 扩展]
 
 ### 5. 星系
 
-> [05. 星系](https://vonng.com/work/extensions-for-everyone/05-galaxy.html)
+> 05. 星系
 
 PostgreSQL 到底有多少扩展？社区里有一个很有名的、由大家共同维护的 GitHub 列表，里面有一千多个条目。我维护的目录目前跟踪了大约 1,617 个条目。
 
@@ -100,11 +100,11 @@ PostgreSQL 到底有多少扩展？社区里有一个很有名的、由大家共
 
 它意味着生态的边界很大，而且很乱。
 
-[![05. 星系](05.webp)](https://vonng.com/work/extensions-for-everyone/05-galaxy.html)
+![05. 星系](05.webp)
 
 ### 6. GitHub 星标
 
-> [06. GitHub 星标](https://vonng.com/work/extensions-for-everyone/06-github-stars.html)
+> 06. GitHub 星标
 
 第一个公开信号是 GitHub 星标。星标不能衡量质量，也不能衡量生产使用情况，而且会漏掉那些根本不托管在 GitHub 上的项目，比如 postgres 和 postgis。
 
@@ -112,11 +112,11 @@ PostgreSQL 到底有多少扩展？社区里有一个很有名的、由大家共
 
 如果观察分布，会发现它极度倾斜。少数扩展拿走了大部分关注度，后面是一条长尾。这是一个对数分布。
 
-[![06. GitHub 星标](06.webp)](https://vonng.com/work/extensions-for-everyone/06-github-stars.html)
+![06. GitHub 星标](06.webp)
 
 ### 7. 星标分层
 
-> [07. 星标分层](https://vonng.com/work/extensions-for-everyone/07-star-tiering.html)
+> 07. 星标分层
 
 按数量级给扩展分组，就会得到一个简单的分层模型。
 
@@ -134,11 +134,11 @@ PostgreSQL 到底有多少扩展？社区里有一个很有名的、由大家共
 
 但这些层级说明了一件事：可见的生态要比被发现的生态小得多。把第零层到第三层加起来，大约是 570 个超过十星的扩展，和实际可交付的规模很接近。
 
-[![07. 星标分层](07.webp)](https://vonng.com/work/extensions-for-everyone/07-star-tiering.html)
+![07. 星标分层](07.webp)
 
 ### 8. 扩展漏斗
 
-> [08. 扩展漏斗](https://vonng.com/work/extensions-for-everyone/08-the-extension-funnel.html)
+> 08. 扩展漏斗
 
 于是我们得到了一个漏斗。顶部有 1,600 个候选项。如果砍掉长尾，数量会迅速下降。
 
@@ -148,17 +148,17 @@ PostgreSQL 到底有多少扩展？社区里有一个很有名的、由大家共
 
 关键在于这个形状。发现面很宽，交付范围窄一些，实际使用又更窄。
 
-[![08. 扩展漏斗](08.webp)](https://vonng.com/work/extensions-for-everyone/08-the-extension-funnel.html)
+![08. 扩展漏斗](08.webp)
 
 ### 9. 维度分析
 
-> [09. 维度分析](https://vonng.com/work/extensions-for-everyone/09-dimension-analysis.html)
+> 09. 维度分析
 
 这个目录还跟踪星标之外的很多维度：语言、许可证、分类、最近发布日期、仓库状态、打包状态、PG 版本支持、操作系统支持。这里可以浏览 32 个不同维度。
 
 现在，我们从「存在什么」转向「什么真的可以被交付」。
 
-[![09. 维度分析](09.webp)](https://vonng.com/work/extensions-for-everyone/09-dimension-analysis.html)
+![09. 维度分析](09.webp)
 
 --------
 
@@ -166,7 +166,7 @@ PostgreSQL 到底有多少扩展？社区里有一个很有名的、由大家共
 
 ### 10. 现状
 
-> [10. 现状](https://vonng.com/work/extensions-for-everyone/10-the-status-quo.html)
+> 10. 现状
 
 打包 PostgreSQL 扩展很难。难点不是包格式有多神秘，而是矩阵太大。我们面对的是 5 个活跃 PG 大版本乘以 16 个 Linux 平台，也就是每个扩展 80 个构建槽位。真正覆盖全部槽位的扩展只有少数。
 
@@ -174,21 +174,21 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 所以这个互补仓库的目标，就是补上这些缺口。在 PGDG 覆盖不到的地方，或者构建成本太高、难以维护的地方，额外交付包。总体上大约新增 300 个扩展包。
 
-[![10. 现状](10.webp)](https://vonng.com/work/extensions-for-everyone/10-the-status-quo.html)
+![10. 现状](10.webp)
 
 ### 11. 取舍
 
-> [11. 取舍](https://vonng.com/work/extensions-for-everyone/11-the-trade-off.html)
+> 11. 取舍
 
 这背后有一个真实的取舍。C 扩展构建得很快，Rust 扩展则不是。一个 Rust 扩展的构建时间，可能比所有 C 扩展加起来还长。
 
 但用户仍然需要它们。比如自托管的 Supabase 栈大约需要十几个扩展，其中三个是 Rust 扩展。所以问题不是这件事有没有必要，而是这项工作应该放在哪里完成。
 
-[![11. 取舍](11.webp)](https://vonng.com/work/extensions-for-everyone/11-the-trade-off.html)
+![11. 取舍](11.webp)
 
 ### 12. 为什么要做 Linux 原生包？
 
-> [12. 为什么要做 Linux 原生包？](https://vonng.com/work/extensions-for-everyone/12-why-linux-native.html)
+> 12. 为什么要做 Linux 原生包？
 
 容器镜像可以减少一部分矩阵。这一点我非常认可。有了容器，每个扩展只需要构建 5 个 PG 大版本乘以 2 个架构，也就是 10 个槽位，规模缩小了 8 倍。
 
@@ -196,31 +196,31 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 所以，这些打包工作总要有人来做。
 
-[![12. 为什么要做 Linux 原生包？](12.webp)](https://vonng.com/work/extensions-for-everyone/12-why-linux-native.html)
+![12. 为什么要做 Linux 原生包？](12.webp)
 
 ### 13. 基础设施
 
-> [13. 基础设施](https://vonng.com/work/extensions-for-everyone/13-pgext-cloud.html)
+> 13. 基础设施
 
 为了把这些 RPM 和 DEB 扩展包交付给用户，我们围绕它搭建了一套开源基础设施。它有四个部分：用于发现的目录，用于交付的仓库，一个可选的 CLI，用来简化访问。
 
 在它们背后，是构建矩阵。CLI 很简单，仓库很有用，但目录和构建矩阵才是大部分工程成本所在。
 
-[![13. 基础设施](13.webp)](https://vonng.com/work/extensions-for-everyone/13-pgext-cloud.html)
+![13. 基础设施](13.webp)
 
 ### 14. 扩展目录
 
-> [14. 扩展目录](https://vonng.com/work/extensions-for-everyone/14-extension-catalog.html)
+> 14. 扩展目录
 
 目录是事实来源。它不是一个营销页面，而是一个带结构化元数据的数据库，描述扩展的一切：维度、标签、依赖、可用性矩阵，以及如何安装、配置、构建和使用的备注。
 
 这听起来像是枯燥的脏活。但正是这些枯燥的元数据，让系统的其他部分能够可预测地运行。有了这些数据，你甚至可以让 Codex 用一句提示词重新生成扩展星系图。
 
-[![14. 扩展目录](14.webp)](https://vonng.com/work/extensions-for-everyone/14-extension-catalog.html)
+![14. 扩展目录](14.webp)
 
 ### 15. 目录细节
 
-> [15. 目录细节](https://vonng.com/work/extensions-for-everyone/15-catalog-details.html)
+> 15. 目录细节
 
 目录是交付路径的一部分。网站和 CLI 工具都把它作为事实来源。
 
@@ -228,21 +228,21 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 如果有一天，这类信息能放到 postgresql.org 上，成为官方扩展目录，我会非常高兴。现在它暂时放在 pgext.cloud 和 GitHub 上。
 
-[![15. 目录细节](15.webp)](https://vonng.com/work/extensions-for-everyone/15-catalog-details.html)
+![15. 目录细节](15.webp)
 
 ### 16. 目录页访问量
 
-> [16. 目录页访问量](https://vonng.com/work/extensions-for-everyone/16-catalog-page-views.html)
+> 16. 目录页访问量
 
 目录网站也会给出页面访问量数据。它不等同于生产使用量，但能告诉我们用户在看什么。这很有用。它能告诉我们哪些扩展值得优先投入打包精力，哪些类别正在活跃起来。
 
 这里是过去一个月的扩展页面访问量数据。
 
-[![16. 目录页访问量](16.webp)](https://vonng.com/work/extensions-for-everyone/16-catalog-page-views.html)
+![16. 目录页访问量](16.webp)
 
 ### 17. 仓库
 
-> [17. 仓库](https://vonng.com/work/extensions-for-everyone/17-repository.html)
+> 17. 仓库
 
 要把这些扩展交付给用户，只有目录还不够。还需要一个仓库。
 
@@ -250,11 +250,11 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 这个仓库的目标是增强 PGDG 的 YUM 和 APT 仓库。它完全兼容 PGDG，遵循同样的约定，使用用户已经理解和熟悉的包布局。
 
-[![17. 仓库](17.webp)](https://vonng.com/work/extensions-for-everyone/17-repository.html)
+![17. 仓库](17.webp)
 
 ### 18. 仓库下载统计
 
-> [18. 仓库下载统计](https://vonng.com/work/extensions-for-everyone/18-repo-download-stats.html)
+> 18. 仓库下载统计
 
 这个仓库现在每月大约提供一百万次 RPM 和 DEB 下载。
 
@@ -262,21 +262,21 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 如果 PGDG 仓库能够共享访问日志，或者至少提供一些聚合统计，我会非常欢迎。那会成为扩展生态里非常有价值的信号。
 
-[![18. 仓库下载统计](18.webp)](https://vonng.com/work/extensions-for-everyone/18-repo-download-stats.html)
+![18. 仓库下载统计](18.webp)
 
 ### 19. 我们仍然可以推断什么
 
-> [19. 我们仍然可以推断什么](https://vonng.com/work/extensions-for-everyone/19-what-we-can-still-infer.html)
+> 19. 我们仍然可以推断什么
 
 即便下载数据是局部的、有偏的，它仍然有用。它可以显示哪些 PG 大版本仍然活跃，哪些操作系统目标重要，也可以显示某个包组合是否有足够使用量，值得继续维护。
 
 但要小心。下载量少的包仍然可能很重要。也许我们需要一个综合信号，把星标、页面访问量、可用性、构建失败和下载量结合起来，形成类似 DB-Engines 风格的 PostgreSQL 扩展评分。
 
-[![19. 我们仍然可以推断什么](19.webp)](https://vonng.com/work/extensions-for-everyone/19-what-we-can-still-infer.html)
+![19. 我们仍然可以推断什么](19.webp)
 
 ### 20. CLI：PIG
 
-> [20. CLI：PIG](https://vonng.com/work/extensions-for-everyone/20-the-cli-pig.html)
+> 20. CLI：PIG
 
 有了目录和仓库，扩展交付基本上就解决了。你可以直接使用系统包管理器，从 PGDG 和 PGEXT 仓库安装扩展，比如 `dnf` 或 `apt`。
 
@@ -288,7 +288,7 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 这就是交付层：目录、仓库、CLI，以及它们背后的构建矩阵。纸面上看起来很清晰。但在实践中，矩阵才是真正困难的地方。
 
-[![20. CLI：PIG](20.webp)](https://vonng.com/work/extensions-for-everyone/20-the-cli-pig.html)
+![20. CLI：PIG](20.webp)
 
 --------
 
@@ -296,7 +296,7 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 ### 21. 扩展矩阵
 
-> [21. 扩展矩阵](https://vonng.com/work/extensions-for-everyone/21-dimension-explosion.html)
+> 21. 扩展矩阵
 
 上一章我们谈到了矩阵：每个扩展 80 个槽位。
 
@@ -312,11 +312,11 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 本部分接下来要讨论的，就是这种爆炸式复杂度撞上现实之后，我们学到了什么。
 
-[![21. 扩展矩阵](21.webp)](https://vonng.com/work/extensions-for-everyone/21-dimension-explosion.html)
+![21. 扩展矩阵](21.webp)
 
 ### 22. PG 小版本 ABI 破坏
 
-> [22. PG 小版本 ABI 破坏](https://vonng.com/work/extensions-for-everyone/22-pg-minor-abi-break.html)
+> 22. PG 小版本 ABI 破坏
 
 去年我们遇到过一个案例。PG 17.1 在小版本升级中破坏了 ABI，导致包括 TimescaleDB 在内的一些扩展出问题。
 
@@ -324,11 +324,11 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 更好的办法是把它当作例外情况处理。但当它真的发生时，我们必须做好准备。
 
-[![22. PG 小版本 ABI 破坏](22.webp)](https://vonng.com/work/extensions-for-everyone/22-pg-minor-abi-break.html)
+![22. PG 小版本 ABI 破坏](22.webp)
 
 ### 23. 操作系统小版本破坏
 
-> [23. 操作系统小版本破坏](https://vonng.com/work/extensions-for-everyone/23-os-minor-break.html)
+> 23. 操作系统小版本破坏
 
 有时候，即使是操作系统的小版本也会破坏构建。
 
@@ -336,11 +336,11 @@ Christoph 和 Devrim 维护的 PGDG YUM 与 APT 仓库已经完成了基础工�
 
 作为回应，PGDG YUM 仓库最近修改了打包策略，从按大版本构建改为按小版本构建。所以现在我们有了 EL 10.0、10.1、9.6、9.7 的独立构建，而不只是 EL 10 和 EL 9。这又给矩阵增加了一个子维度。
 
-[![23. 操作系统小版本破坏](23.webp)](https://vonng.com/work/extensions-for-everyone/23-os-minor-break.html)
+![23. 操作系统小版本破坏](23.webp)
 
 ### 24. Rust 问题
 
-> [24. Rust 问题](https://vonng.com/work/extensions-for-everyone/24-rust-problems.html)
+> 24. Rust 问题
 
 Rust 扩展正在增长。它们给生态带来了新的人和新的想法。Rust 社区使用一个叫 pgrx 的框架来编写这些扩展，而这又引入了几个新问题。
 
@@ -350,21 +350,21 @@ Rust 扩展正在增长。它们给生态带来了新的人和新的想法。Rus
 
 所以 Rust 不只是增加了一门语言。它还增加了一条兼容性维度。
 
-[![24. Rust 问题](24.webp)](https://vonng.com/work/extensions-for-everyone/24-rust-problems.html)
+![24. Rust 问题](24.webp)
 
 ### 25. 臃肿的扩展
 
-> [25. 臃肿的扩展](https://vonng.com/work/extensions-for-everyone/25-bulky-extensions.html)
+> 25. 臃肿的扩展
 
 过去扩展通常很小，典型大小只有几百 KB。现在不总是这样了。
 
 一些新的扩展，比如 pg_search 和 pg_duckdb，体积有几十 MB。源码归档和构建产物都会迅速膨胀。放到完整矩阵里，这会变成真实的存储和带宽成本。
 
-[![25. 臃肿的扩展](25.webp)](https://vonng.com/work/extensions-for-everyone/25-bulky-extensions.html)
+![25. 臃肿的扩展](25.webp)
 
 ### 26. 命名冲突
 
-> [26. 命名冲突](https://vonng.com/work/extensions-for-everyone/26-naming-conflicts.html)
+> 26. 命名冲突
 
 矩阵是一类复杂性，扩展之间的冲突是另一类。
 
@@ -378,11 +378,11 @@ Rust 扩展正在增长。它们给生态带来了新的人和新的想法。Rus
 
 这不只是一个打包问题，而是生态元数据问题。如果目录记录的不只是包名，还包括扩展对象、库和访问方法，作者就可以在发布前检查冲突。
 
-[![26. 命名冲突](26.webp)](https://vonng.com/work/extensions-for-everyone/26-naming-conflicts.html)
+![26. 命名冲突](26.webp)
 
 ### 27. 库冲突
 
-> [27. 库冲突](https://vonng.com/work/extensions-for-everyone/27-library-conflicts.html)
+> 27. 库冲突
 
 另一个例子是，三个基于 DuckDB 的扩展都想使用同一个共享库：libduckdb。
 
@@ -392,11 +392,11 @@ Rust 扩展正在增长。它们给生态带来了新的人和新的想法。Rus
 
 教训很简单：名字也是兼容性的一部分，而且名字真的会冲突。
 
-[![27. 库冲突](27.webp)](https://vonng.com/work/extensions-for-everyone/27-library-conflicts.html)
+![27. 库冲突](27.webp)
 
 ### 28. API 破坏
 
-> [28. API 破坏](https://vonng.com/work/extensions-for-everyone/28-api-break.html)
+> 28. API 破坏
 
 我们也修复了很多缺乏活跃维护的扩展。有些扩展距离上一次发布已经过去多年。但 PostgreSQL 大版本变化仍然会影响它们。
 
@@ -406,11 +406,11 @@ Rust 扩展正在增长。它们给生态带来了新的人和新的想法。Rus
 
 我认为，构建覆盖率是一种有用信号。当一个补丁破坏了 N 个扩展时，这个数字本身就是信息。它显示了生态影响。这时，交付基础设施就开始变成反馈基础设施。
 
-[![28. API 破坏](28.webp)](https://vonng.com/work/extensions-for-everyone/28-api-break.html)
+![28. API 破坏](28.webp)
 
 ### 29. PG 19 兼容性
 
-> [29. PG 19 兼容性](https://vonng.com/work/extensions-for-everyone/29-pg-19-compatibility.html)
+> 29. PG 19 兼容性
 
 一个具体案例是，我用 PostgreSQL 19 的开发快照跑了一遍构建流水线。大约 50 个扩展构建失败。
 
@@ -420,11 +420,11 @@ Rust 扩展正在增长。它们给生态带来了新的人和新的想法。Rus
 
 我很想听听在座各位的反馈：这件事值不值得继续推进？目标是让生态影响更早可见。
 
-[![29. PG 19 兼容性](29.webp)](https://vonng.com/work/extensions-for-everyone/29-pg-19-compatibility.html)
+![29. PG 19 兼容性](29.webp)
 
 ### 30. 让它可维护
 
-> [30. 让它可维护](https://vonng.com/work/extensions-for-everyone/30-keeping-it-maintainable.html)
+> 30. 让它可维护
 
 一个现实问题是可维护性。所有这些工作都是一个人在做。我经营着一家一人公司，也维护着一个一人发行版 Pigsty。这件事我已经做了大约五年。
 
@@ -436,11 +436,11 @@ AI 也降低了测试成本。我们可以从扩展文档驱动冒烟检查，�
 
 这是一个维护者让 511 个扩展组成的矩阵继续活下去的办法。
 
-[![30. 让它可维护](30.webp)](https://vonng.com/work/extensions-for-everyone/30-keeping-it-maintainable.html)
+![30. 让它可维护](30.webp)
 
 ### 31. 三个问题
 
-> [31. 三个问题](https://vonng.com/work/extensions-for-everyone/31-three-questions.html)
+> 31. 三个问题
 
 最后，扩展是 Postgres 生态的共同财富。我希望这项工作能帮助用户、作者、厂商和 Postgres 内核开发者，一起建设更好的 Postgres。
 
@@ -454,14 +454,14 @@ AI 也降低了测试成本。我们可以从扩展文档驱动冒烟检查，�
 
 扩展是共同基础设施。交付是可扩展性的一部分。如果我们改善交付，PostgreSQL 的超能力就能触达更多人。
 
-[![31. 三个问题](31.webp)](https://vonng.com/work/extensions-for-everyone/31-three-questions.html)
+![31. 三个问题](31.webp)
 
 ### 32. 致谢
 
-> [32. 致谢](https://vonng.com/work/extensions-for-everyone/32-thank-you.html)
+> 32. 致谢
 
 谢谢大家。
 
 如果有任何问题，欢迎联系我。
 
-[![32. 致谢](32.webp)](https://vonng.com/work/extensions-for-everyone/32-thank-you.html)
+![32. 致谢](32.webp)

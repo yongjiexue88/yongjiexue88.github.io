@@ -23,7 +23,7 @@ tags: [云计算, 成本]
 
 ![图片](04.webp)
 
-在上面放着几个网站，包括我自己的个人博客 vonng.com，Pigsty 中文站 pigsty.cc，还有 PostgreSQL 中文站镜像 pg.center。
+在上面放着几个网站，包括我自己的个人博客，Pigsty 中文站 pigsty.cc，还有 PostgreSQL 中文站镜像 pg.center。
 
 老实说，要让我再找个这种价格的云服务器，还真是不太容易。我的要求是：
 

@@ -12,7 +12,6 @@ aliases: ["/ai/openai-pg/"]
 At [**PGConf.Dev 2025**](https://2025.pgconf.dev/schedule.html), [Bohan Zhang](https://www.linkedin.com/in/bohan-zhang-52b17714b) from OpenAI shared a session titled [Scaling Postgres to the next level at OpenAI](https://www.pgevents.ca/events/pgconfdev2025/schedule/session/433-scaling-postgres-to-the-next-level-at-openai/), giving us a peek into the database usage of a top-tier unicorn.
 
 > “At OpenAl, we’ve proven that PostgreSQL can scale to support massive read-heavy workloads - even without sharding - using a single primary writer”
->
 > —— Bohan Zhang from OpenAI, PGConf.Dev 2025
 
 ![1.jpg](1.jpg)
@@ -177,7 +176,6 @@ However, I can understand why OpenAI can’t use this method: it’s an undocume
 But back to the original need — fear of accidentally deleting an index. There’s a simpler solution: just confirm from monitoring view ([`pg_stat_all_indexes`](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ALL-INDEXES-VIEW)) that the index isn’t being used on either the primary or the replicas. If you know an index hasn’t been used for a long time, you can safely delete it.
 
 > Monitoring index switch with [Pigsty](https://pigsty.io/about/observability/) [PGSQL TABLES](https://demo.pigsty.io/d/pgsql-tables?viewPanel=panel-354) Dashboard
->
 > [![17.webp](17.webp)](https://demo.pigsty.io/d/pgsql-tables?viewPanel=panel-354)
 
 ```sql
@@ -262,7 +260,6 @@ If OpenAI is interested, I’d certainly be happy to provide some help. But I th
 
 [7] Bohan Zhang: https://www.linkedin.com/in/bohan-zhang-52b17714b
 
-[8] Yongjie Xue / yongjiexue88: https://github.com/vonng/
 
 [9] Pigsty: [https://pigsty.io](https://pigsty.io/)
 

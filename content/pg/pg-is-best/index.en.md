@@ -147,7 +147,6 @@ PostgreSQL's secret to virtuous victory is being **advanced** and **open source*
 ## The Virtue of Open-Source
 
 > **PG's "virtue" lies in open source**. A grandmaster-level open source project, the great achievement of global developer collaboration.
->
 > Friendly BSD license, prosperous ecosystem with many extensions. Branching widely, descendants everywhere, Oracle replacement flag bearer
 
 What is "virtue"? Conforming to the "way" is virtue. And this "way" is **open source**.
@@ -181,7 +180,6 @@ PostgreSQL can be viewed as an open source "Oracle," the only database truly thr
 ## The Talent of Being Advanced
 
 > **PG's "talent" lies in being advanced**. A jack-of-all-trades full-stack database, one against ten, naturally HTAP.
->
 > Spatiotemporal geographic distributed, time-series document super-convergent, single component covers almost all database needs.
 
 **PG's "talent" lies in versatility**. PostgreSQL is a versatile full-stack database, naturally HTAP, super-convergent database, one against ten. A single component sufficiently covers most database needs for small and medium enterprises: OLTP, OLAP, time-series database, spatial GIS, full-text search, JSON/XML, graph database, cache, etc.
@@ -237,7 +235,7 @@ This shared outsourcing model concentrates open source software jobs at cloud ve
 
 "**In 2020, the enemy of computing freedom is cloud software**."
 
-This is the [manifesto](https://pg.vonng.com/#/post/goodbye-gpl) proposed by DDIA author Martin Kleppmann in his "local-first software" movement. Cloud software refers to software running on vendor servers, like: Google Docs, Trello, Slack, Figma, Notion. And the most core cloud software, **cloud databases**.
+This is the manifesto proposed by DDIA author Martin Kleppmann in his "local-first software" movement. Cloud software refers to software running on vendor servers, like: Google Docs, Trello, Slack, Figma, Notion. And the most core cloud software, **cloud databases**.
 
 In the post-cloud era, how should open source communities respond to cloud software challenges? The Cloud Native movement provides the answer. This is a great movement to reclaim software freedom from public cloud, with databases at its core focus.
 

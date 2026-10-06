@@ -6,7 +6,7 @@ summary: >
 tags: [OLAP, 数据主权, 哲学, 技术评论]
 ---
 
-上个月我写了一篇文章叫《[Palantir 的“本体论”骗局](https://vonng.com/db/ontology-bullshit/)》，用一张“罗塞塔石碑”对照表说了一件事：Palantir 的 Ontology 在技术上就是数据库建模。Object Type 是表，Property 是列，Link 是外键，Action 是存储过程。
+上个月我写了一篇文章叫《Palantir 的“本体论”骗局》，用一张“罗塞塔石碑”对照表说了一件事：Palantir 的 Ontology 在技术上就是数据库建模。Object Type 是表，Property 是列，Link 是外键，Action 是存储过程。
 
 文章引发了激烈争论，最终演变成一场公开直播辩论。辩论的结果没啥悬念，观众投票中老冯以 75% 的支持率获胜。但赢个辩论没什么意义。上一篇只做了“拆”的工作。这一篇，我想把更深层的东西说清楚：本体论到底是什么？Palantir 到底对它做了什么？中国的模仿者为什么注定会失败？
 
@@ -43,7 +43,6 @@ Palantir 版本的本体论只取了哲学本体论中的一个范式——亚�
 如果你想知道 Palantir 的 Ontology 到底是什么，不要看它的官网，去看它的专利。在需要说真话的场合，它自己交代了。Palantir 系列 Ontology 专利（US7962495B2、US9589014B2、US11714792B2 等）的 **Background** 部分，对 “Ontology” 这个概念给出了一个非常明确的定义：
 
 > Computer-based database systems, such as relational database management systems, typically organize data according to a fixed structure of tables and relationships. The structure may be described using an ontology, embodied in a database schema, comprising a data model that is used to represent the structure and reason about objects in the structure.
->
 > https://patents.google.com/patent/US7962495B2/en
 
 这句话极其关键。专利白纸黑字写的是：
