@@ -236,4 +236,4 @@ claude mcp add -s user -t http zread https://open.bigmodel.cn/api/mcp/zread/mcp 
 - 老冯提供了墙内镜像和一键脚本，三行命令搞定
 - 用起来很简单：启动 CC → 用中文说需求 → 让它干活
 
-有问题欢迎留言，老冯会持续更新这篇教程。 https://vonng.com/db/claude-code-intro/
+有问题欢迎留言，老冯会持续更新这篇教程。

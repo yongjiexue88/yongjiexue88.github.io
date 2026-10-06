@@ -152,29 +152,29 @@ It now works and will probably land in Pigsty 5.0.
 
 ## CapsLock Enhancement
 
-[CapsLock Enhancement](https://capslock.vonng.com/) is an open-source project I wrote more than a decade ago, now getting a second life. In short, it turns Caps Lock into a new modifier, giving you up to 16 entirely new control layers and putting almost every operation at your fingertips. This is not much of an exaggeration: the software, combined with a decade of muscle memory, makes me roughly ten times faster on a computer.
+CapsLock Enhancement is an open-source project I wrote more than a decade ago, now getting a second life. In short, it turns Caps Lock into a new modifier, giving you up to 16 entirely new control layers and putting almost every operation at your fingertips. This is not much of an exaggeration: the software, combined with a decade of muscle memory, makes me roughly ten times faster on a computer.
 
-[![The origins of CapsLock Enhancement and user feedback](capslock-history.webp)](https://capslock.vonng.com/)
+![The origins of CapsLock Enhancement and user feedback](capslock-history.webp)
 
-The decade-old version was simply a [Karabiner configuration](https://github.com/vonng/Capslock). Plenty of people later borrowed the idea, and some even turned it into commercial software. I never cared enough to chase it. But now that I have tokens to spare, I do not mind building a native macOS app of my own. It is not formally released yet; I am still burning quota on it.
+The decade-old version was simply a Karabiner configuration. Plenty of people later borrowed the idea, and some even turned it into commercial software. I never cared enough to chase it. But now that I have tokens to spare, I do not mind building a native macOS app of my own. It is not formally released yet; I am still burning quota on it.
 
 Think of it as Karabiner-style key remapping bundled with little conveniences such as keep-awake controls, window management, a clipboard, an app launcher, and an app switcher. It also solves my own annoyance with installing a grab bag of tiny utilities.
 
-[![Native CapsLock Enhancement app for macOS](capslock-app.webp)](https://capslock.vonng.com/)
+![Native CapsLock Enhancement app for macOS](capslock-app.webp)
 
 ---
 
 ## AI Translation of DDIA v2
 
-The second edition of *Designing Data-Intensive Applications* is out. Early this year, I translated it with 5.3; the result was readable, if unremarkable. I have now revised it with 5.6, SoMax, and Fable, matching the style of the first edition. I think this version is on par with a solid human translation, and [the new edition](https://ddia.vonng.com/) is now published.
+The second edition of *Designing Data-Intensive Applications* is out. Early this year, I translated it with 5.3; the result was readable, if unremarkable. I have now revised it with 5.6, SoMax, and Fable, matching the style of the first edition. I think this version is on par with a solid human translation, and the new edition is now published.
 
-[![Chinese translation of Designing Data-Intensive Applications, Second Edition](ddia-v2.webp)](https://ddia.vonng.com/)
+![Chinese translation of Designing Data-Intensive Applications, Second Edition](ddia-v2.webp)
 
 The translation business is well and truly dead. I no longer even bother counting how much documentation I have translated: the official PostgreSQL documentation, the PostgreSQL website, and Chinese documentation for more than 2,200 extensions. Whenever quota is about to expire and I cannot spend it all, I pick a project and translate its docs.
 
-And if documentation is not enough, you can use the same quota to write a book. I had long meant to write [*The Thirty-Six Stratagems of PostgreSQL*](https://pg36g.vonng.com/) but never found the time, so I had AI produce a first draft. Since AI wrote it, I am not comfortable promoting or releasing it yet. I will publish it properly after human editing and review.
+And if documentation is not enough, you can use the same quota to write a book. I had long meant to write *The Thirty-Six Stratagems of PostgreSQL* but never found the time, so I had AI produce a first draft. Since AI wrote it, I am not comfortable promoting or releasing it yet. I will publish it properly after human editing and review.
 
-[![First draft of The Thirty-Six Stratagems of PostgreSQL](pg36.webp)](https://pg36g.vonng.com/)
+![First draft of The Thirty-Six Stratagems of PostgreSQL](pg36.webp)
 
 ---
 

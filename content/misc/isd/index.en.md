@@ -16,7 +16,6 @@ Public Demo: http://demo.pigsty.cc/d/isd-overview
 
 ![isd-overview.png](isd-overview.png)
 
-Project repository: https://github.com/vonng/isd
 
 ---------------
 

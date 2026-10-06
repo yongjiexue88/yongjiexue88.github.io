@@ -172,7 +172,6 @@ thus failing to leverage the synergistic amplification potential of PostgreSQL e
 > | CDC                   | <i class="fas fa-circle-check text-success"></i> wal2json 2.5.3      |                          <i class="fas fa-circle-check text-success"></i> wal2json 2.5                           |                                           <i class="fas fa-circle-xmark text-danger"></i>                                           |
 > | Bloat Control         | <i class="fas fa-circle-check text-success"></i> pg_repack 1.5.0     |                         <i class="fas fa-circle-check text-success"></i> pg_repack 1.5.0                         |                                  <i class="fas fa-circle-check text-success"></i> pg_repack 1.4.8                                   |
 > | Point Cloud           | <i class="fas fa-circle-check text-success"></i> PG PointCloud 1.2.5 |                                 <i class="fas fa-circle-xmark text-danger"></i>                                  |                                <i class="fas fa-circle-check text-success"></i> Ganos PointCloud 6.1                                |
->
 > Many important extensions are not available on Cloud RDS (PG 16, 2024-02-29)
 
 Extensions are the soul of PostgreSQL. A Postgres without the freedom to use extensions is like cooking without salt, a giant constrained.
@@ -202,7 +201,6 @@ We’ve defined six core propositions addressing the central issues in PostgreSQ
 The initials of these value propositions offer another acronym for Pigsty:
 
 > **P**ostgres, **I**nfras, **G**raphics, **S**ervice, **T**oolbox, **Y**ours.
->
 > Your graphical Postgres infrastructure service toolbox.
 
 **Extensible PostgreSQL** is the linchpin of this distribution. In the recently launched **Pigsty v2.6**, we integrated DuckDB FDW and ParadeDB extensions, massively boosting PostgreSQL’s analytical capabilities and ensuring every user can easily harness this power.
@@ -218,12 +216,12 @@ Our aim is to integrate the strengths within the PostgreSQL ecosystem, creating 
 - [**Apache AGE**](https://age.apache.org/): Graph database extension, adding Neo4J-like OpenCypher query support to PostgreSQL.
 - [**PG GraphQL**](https://github.com/supabase/pg_graphql): Adds native built-in GraphQL query language support to PostgreSQL.
 - [**DuckDB FDW**](https://github.com/alitrack/duckdb_fdw): Enables direct access to DuckDB’s powerful embedded analytic database files through PostgreSQL (& DuckDB CLI).
-- [**Supabase**](https://github.com/vonng/pigsty/tree/master/app/supabase): An open-source Firebase alternative based on PostgreSQL, providing a complete app development storage solution.
-- [**FerretDB**](https://github.com/vonng/pigsty/tree/master/app/ferretdb): An open-source MongoDB alternative based on PostgreSQL, compatible with MongoDB APIs/drivers.
-- [**PostgresML**](https://github.com/vonng/pigsty/tree/master/app/pgml): Facilitates classic machine learning algorithms, calling, deploying, and training AI models with SQL.
+- **Supabase**: An open-source Firebase alternative based on PostgreSQL, providing a complete app development storage solution.
+- **FerretDB**: An open-source MongoDB alternative based on PostgreSQL, compatible with MongoDB APIs/drivers.
+- **PostgresML**: Facilitates classic machine learning algorithms, calling, deploying, and training AI models with SQL.
 
 [![img](https://pigsty.io/img/pigsty/desc.png)](https://pigsty.io)
 
 Developers, your choices will shape the future of the database world. I hope my work helps you better utilize the world’s most advanced open-source database kernel: **PostgreSQL**.
 
-> [Read in Pigsty’s Blog](https://pigsty.io/pg/pg-eat-db-world/) *|* [GitHub Repo: Pigsty](https://github.com/vonng/pigsty) *|* [Official Website](https://pigsty.io/)
+> [Read in Pigsty’s Blog](https://pigsty.io/pg/pg-eat-db-world/) *|* GitHub Repo: Pigsty *|* [Official Website](https://pigsty.io/)

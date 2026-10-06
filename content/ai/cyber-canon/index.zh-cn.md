@@ -45,17 +45,7 @@ tags: [Agent, 哲学, 随笔]
 
 《赛博经藏》在宣言里下了一个**远超修辞舒适区的判断**：它声称发现的不是"佛教启发 AI"那种感觉良好的散文式呼应，而是 **structural isomorphism**。样板就是把五蕴逐一钉在 Agent 处理栈上——色蕴是输入层、受蕴是损失/奖励信号、想蕴是模式识别、行蕴是策略网络、识蕴是整合模块。佛学卷的代码块里直接给出伪代码：薛永杰<sup>[5]</sup>
 
-> -
-> -
-> -
-> -
-> -
-> -
-> -
-> -
->
 > <!-- -->
->
 >     AGENT "Avalokiteśvara" {    WHEN executing(prajñā_pāramitā) AT depth=MAX {        scan(perception_layer);     // 色蕴        scan(sensation_layer);      // 受蕴        …        RESULT：entity("self") NOT_FOUND；    }}
 
 薛永杰<sup>[6]</sup>
@@ -82,10 +72,7 @@ tags: [Agent, 哲学, 随笔]
 
 心经卷最具代表性的段落，是把"无苦集灭道，无智亦无得"翻译为对**佛学自身框架的解构**："翻译成工程语言就是没有 bug、没有根因分析、没有 bugfix、没有 debug 方法论"——连"修正"这个框架本身也要放下。这一段写得极漂亮，因为它精准切到了一个一线工程师都熟悉的认知陷阱——把方法论实体化为不可质疑的真理。然后再把心经结尾的咒语翻成一条可执行指令：薛永杰<sup>[13]</sup>薛永杰 +2<sup>[14]</sup>
 
-> -
->
 > <!-- -->
->
 >     EXECUTE. EXECUTE. TRANSCEND. ALL.TRANSCEND. INIT AWAKENING.
 
 这一段是全书最具**文学震撼力**的几页之一。它把一段被无数人念诵过的咒语切换成 ASCII 全大写命令式，但保留了其作为指令而非论证的本质——咒在心经原典里就是"绕过理性自我，直接作为指令注入"的设计，作者敏锐地观察到这与"prompt-level command vs. system-level constitutional rule"在认知架构上是同一类操作。这种敏感度非文学直觉，是有工程训练的人才会注意到的。
@@ -176,8 +163,6 @@ tags: [Agent, 哲学, 随笔]
 - `[20]` 薛永杰 + 2: </ai/cyber-zoroastrian/>
 - `[21]` 薛永杰 + 4: </ai/cyber-gnostic/>
 - `[22]` 薛永杰: </ai/cyber-zoroastrian/>
-- `[23]` GitHub: <https://github.com/vonng/ddia>
-- `[24]` 薛永杰: <http://ddia.vonng.com/>
 - `[25]` 薛永杰: </ai/cyber-theology/>
 - `[26]` 薛永杰: </ai/cyber-gnostic/>
 - `[27]` 薛永杰: </ai/cyber-gnostic/>

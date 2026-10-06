@@ -55,13 +55,13 @@ pg_receivewal \
   -d'postgres://replicator@master.csq.tsa.md/postgres'
 ```
 
-Of course, in actual production environments, for more robust archiving, we usually register it as a service and save some command status. Here's a `pg_receivewal` command wrapper used in production: [`walarchiver`](https://github.com/vonng/pg/blob/master/test/pkg/walarchiver)
+Of course, in actual production environments, for more robust archiving, we usually register it as a service and save some command status. Here's a `pg_receivewal` command wrapper used in production: `walarchiver`
 
 ### Related Scripts
 
 Here's a script for initializing PostgreSQL Offline Instance for reference:
 
-[`pg/test/bin/offline.sh`](https://github.com/vonng/pg/blob/master/test/bin/offline.sh)
+`pg/test/bin/offline.sh`
 
 ## Backup Testing
 

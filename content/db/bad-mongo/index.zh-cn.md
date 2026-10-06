@@ -133,7 +133,7 @@ MongoDB 和 MySQL 属于那种典型的 “面向初学者” 的数据库，针
 
 在这个过程中，我对 MongoDB 留下了 **糟糕的印象** —— 我花费了很多时间清洗 MongoDB 中模式错乱的垃圾数据。包括一些匪夷所思的问题（比如 Collection 里有整本的小说，SQL 注入的脚本，非法的零字符、Unicode码位与Surrogate Pair，各种花里胡哨的模式），堪称是一个史诗级的垃圾箱。
 
-在这个过程中，我也深入研究了 MongoDB 的查询语言，并将其翻译为标准 SQL。我甚至使用 Multicorn 写了一个 MongoDB 的外部数据源包装器 FDW 来做到这一点，顺便还水了篇 [关于 Mongo/HBase FDW 的论文](https://vonng.com/pdf/unified_access_layer_with_postgresql_fdw.pdf)。（比较巧的是，我那时候确实不知道 —— MongoDB 官方竟然也是这么用FDW干分析的！）
+在这个过程中，我也深入研究了 MongoDB 的查询语言，并将其翻译为标准 SQL。我甚至使用 Multicorn 写了一个 MongoDB 的外部数据源包装器 FDW 来做到这一点，顺便还水了篇 关于 Mongo/HBase FDW 的论文。（比较巧的是，我那时候确实不知道 —— MongoDB 官方竟然也是这么用FDW干分析的！）
 
 总体来说，在这趟深度使用与迁移过程中，我对 MongoDB 感到非常失望，感觉到自己的时间被毫无意义的东西给浪费掉了。
 当然后来我也发现，并不是只有我一个人有这种感受，在 HN 和 Reddit 上有无数关于 MongoDB 的嘲讽与吐槽：

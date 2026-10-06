@@ -6,14 +6,13 @@ The `db`, `cloud`, `pg`, `ai`, `pigsty`, `trip` and `misc` columns under `conten
 together with the author profiles under `content/authors/` and the tag descriptions
 under `content/tags/`, are **not original to this site**. They are reproduced from:
 
-- **Source**: [Yongjie Xue's Blog](https://vonng.com)
+- **Source**: Yongjie Xue's Blog
 - **Author**: 薛永杰 / Yongjie Xue ([@yongjiexue88](https://github.com/yongjiexue88))
-- **Upstream repository**: <https://github.com/vonng/vonng.com>
-- **License**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://github.com/vonng/vonng.com/blob/main/LICENSE)
+- **License**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
 CC BY 4.0 permits sharing and adaptation, including commercially, provided credit is
 given, the license is linked, and changes are indicated. This file, together with the
-per-article `authors:` front matter and the footer credit configured in `hugo.yaml`,
+per-article `authors:` front matter,
 is how that obligation is met.
 
 ### Changes made relative to the source
@@ -27,7 +26,8 @@ is how that obligation is met.
   薛永杰 / Yongjie Xue. Columns whose posts carried no explicit author cascade
   `authors: [yongjie]`; guest-author identifiers remain unchanged.
 - Local image filenames and example usernames are normalized to the corrected
-  name. Image contents, external source links, and license links are retained.
+  name. Image contents are retained. Legacy identity and source URLs are removed;
+  the license is linked directly above.
 - Upstream configuration specific to the original site was deliberately dropped:
   its Google Analytics property, its giscus comment repository, and its Chinese
   ICP filing number.

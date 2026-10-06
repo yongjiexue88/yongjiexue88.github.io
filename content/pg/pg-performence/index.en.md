@@ -31,7 +31,7 @@ If you're interested in these questions, this article will be helpful:
 - Do cloud databases/servers really have cost advantages?
   The price of c5d.metal for 1 year could buy you the server and host it for 5 years. The corresponding cloud database's 1-year cost could buy you the same EC2 for 20 years.
 
-Detailed test procedures and raw data are available at: [github.com/vonng/pgtpc](https://github.com/vonng/pgtpc)
+Detailed test procedures and raw data are available at: PGTPC
 
 ------
 
@@ -240,7 +240,7 @@ In conclusion, **PostgreSQL performs brilliantly in the TP domain and respectabl
 
 ## References
 
-[1] [Yongjie Xue: PGTPC](https://github.com/vonng/pgtpc)
+[1] Yongjie Xue: PGTPC
 
 [2] [WHY MYSQL](https://www.mysql.com/cn/why-mysql/benchmarks/mysql/)
 

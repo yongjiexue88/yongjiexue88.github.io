@@ -220,4 +220,4 @@ Various MCP marketplaces also offer all kinds of fancy capabilities. Add them as
 - I provide mirror hosting and one-liner scripts—three commands to get started
 - Using it is simple: launch CC → describe your needs → let it work
 
-Questions welcome—I'll keep updating this tutorial. https://vonng.com/db/claude-code-intro/
+Questions welcome—I'll keep updating this tutorial.

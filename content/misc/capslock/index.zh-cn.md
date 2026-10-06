@@ -45,7 +45,7 @@ tags: [工具, 开源]
 
 ![图片](03.webp)
 
-完整的功能介绍还请移步[官方文档站](https://capslock.vonng.com/zh/)。毕竟，这张图上只有最常用的 0 号控制平面，还有 15 个额外的控制平面可供自由选用与定制。\
+完整的功能介绍还请移步官方文档站。毕竟，这张图上只有最常用的 0 号控制平面，还有 15 个额外的控制平面可供自由选用与定制。\
 
 ### 一个例子
 
@@ -67,9 +67,9 @@ tags: [工具, 开源]
 
 ## 如何开始？
 
-Capslock 是一个免费开源软件，不收取任何费用，没有任何广告，不搜集任何用户信息。完全基于强大的开源改键软件 Karabiner-Elements（macOS）与 AutoHotKey（Windows）进行开发，提供 macOS 版与 Windows 版。官网地址为 [capslock.vonng.com](https://capslock.vonng.com/)。
+Capslock 是一个免费开源软件，不收取任何费用，没有任何广告，不搜集任何用户信息。完全基于强大的开源改键软件 Karabiner-Elements（macOS）与 AutoHotKey（Windows）进行开发，提供 macOS 版与 Windows 版。
 
-Capslock 的完整功能请参考[官方网站](https://capslock.vonng.com/)，您也可以从这里快速下载并体验 Capslock。
+Capslock 的完整功能请参考官方网站，您也可以从这里快速下载并体验 Capslock。
 
 ![图片](05.webp)
 

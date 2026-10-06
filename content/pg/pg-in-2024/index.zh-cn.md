@@ -11,9 +11,7 @@ tags: [PostgreSQL, PG生态, 翻译]
 本文是 PostgreSQL 核心组成员 Jonathan Katz 对 2024 年 PostgreSQL 项目的未来展望，并回顾过去几年 PostgreSQL 所取得的进展。
 
 > **作者**：Jonathan Kats，Amazon RDS 首席产品经理兼技术主管， PostgreSQL 全球开发组核心成员与主要贡献者。博客：https://jkatz05.com/。
->
-> **译者**：薛永杰，磐吉云数创始人 / CEO，[**PostgreSQL**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485685&idx=1&sn=688f6d6d0f4128d7f77d710f04ff9024&chksm=fe4b3d2ec93cb438665b7e0d554511674091b2e486a70b8a3eb7e2c7a53681fb9834a08cb3c3&scene=21#wechat_redirect) 专家与布道师，开源 RDS PG —— [**Pigsty**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485518&idx=1&sn=3d5f3c753facc829b2300a15df50d237&chksm=fe4b3d95c93cb4833b8e80433cff46a893f939154be60a2a24ee96598f96b32271301abfda1f&scene=21#wechat_redirect) 作者。博客：https://vonng.com
->
+> **译者**：薛永杰，磐吉云数创始人 / CEO，[**PostgreSQL**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485685&idx=1&sn=688f6d6d0f4128d7f77d710f04ff9024&chksm=fe4b3d2ec93cb438665b7e0d554511674091b2e486a70b8a3eb7e2c7a53681fb9834a08cb3c3&scene=21#wechat_redirect) 专家与布道师，开源 RDS PG —— [**Pigsty**](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247485518&idx=1&sn=3d5f3c753facc829b2300a15df50d237&chksm=fe4b3d95c93cb4833b8e80433cff46a893f939154be60a2a24ee96598f96b32271301abfda1f&scene=21#wechat_redirect) 作者。博客：
 > 点击“查看原文”查看英文原文：https://jkatz05.com/post/postgres/postgresql-2024/
 
 在我经常听到的问题中，有一个尤为深刻：***“PostgreSQL 将走向何方？”***  —— 这也是我经常问自己的一个问题。这个问题不仅仅局限在数据库内核引擎的技术层面，而关乎整个社区的方方面面 —— 包括相关的开源项目、活动和社区发展。PostgreSQL 已经广受欢迎，并且已经是第四次被 [DB Engine评为“**年度数据库**”](https://db-engines.com/en/blog_post/106)。尽管已取得显著成功，我们依然需要不时地后退一步，从更宏观的角度思考 PostgreSQL 的未来。虽然这种思考不会立即带来显著的变化，但它对于社区正在进行的工作提供了重要的背景板。
@@ -121,7 +119,6 @@ PostgreSQL社区的一个优势是去中心化，广泛散布于世界各处。�
 2024年将是建立更完善导师制度的起点。我们希望在5月于温哥华举行的 [PGConf.dev 2024](https://2024.pgconf.dev/) 上试验一些新想法。
 
 > 在 [PGConf.dev](https://www.pgconf.dev/) 出现前，从2007年到2023年，[PGCon](https://www.pgcon.org/)一直是PostgreSQL贡献者们集结并讨论即将开始的开发周期和关键项目的重要活动。PGCon 一直由 Dan Langille 负责组织。经过多年的辛勤工作，他决定将组织职责扩展至一个团队，并协助成立了 [PGConf.dev](https://www.pgconf.dev/)。
->
 
 [PGConf.dev](https://www.pgconf.dev/) 是专为那些希望为 PostgreSQL 做贡献的人士举办的会议。会议内容覆盖了 PostgreSQL 的开发工作（包括内核及所有相关的开源项目，如扩展和驱动程序）、社区建设以及开源意见领袖等主题。PGConf.dev 的一大特色是导师制，并计划举办关于如何为 PostgreSQL 贡献的研讨会。如果你正寻找为 PostgreSQL 贡献的机会，我强烈建议你考虑参加本活动或[提交演讲提案](https://2024.pgconf.dev/cfp/)！
 

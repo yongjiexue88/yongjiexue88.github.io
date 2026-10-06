@@ -8,7 +8,7 @@ tags: [PostgreSQL, PG Ecosystem, Extension]
 ---
 
 
-> Slide deck: [Extensions for Everyone](https://vonng.com/work/extensions-for-everyone/index.html)
+> Slide deck: Extensions for Everyone
 
 --------
 
@@ -16,17 +16,17 @@ tags: [PostgreSQL, PG Ecosystem, Extension]
 
 ### 0. Extensions for Everyone
 
-> [00. Extensions for Everyone](https://vonng.com/work/extensions-for-everyone/00-extensions-for-everyone.html)
+> 00. Extensions for Everyone
 
 Hi everyone. This talk is called **Extensions for Everyone**.
 
 It is about delivering PostgreSQL extensions, and about how a shared delivery layer can benefit users, extension authors, vendors, and PostgreSQL hackers.
 
-[![00. Extensions for Everyone](00.webp)](https://vonng.com/work/extensions-for-everyone/00-extensions-for-everyone.html)
+![00. Extensions for Everyone](00.webp)
 
 ### 1. Who am I
 
-> [01. Who am I](https://vonng.com/work/extensions-for-everyone/01-who-am-i.html)
+> 01. Who am I
 
 I am Yongjie Xue, author and maintainer of Pigsty, an open-source PostgreSQL distribution.
 
@@ -34,11 +34,11 @@ I also build pgext.cloud, an open-source delivery layer for PostgreSQL extension
 
 Over the past two years, I have been cataloging, building, packaging, and testing hundreds of extensions across PostgreSQL versions and Linux platforms. So this talk is not a theory. It is a field report.
 
-[![01. Who am I](01.webp)](https://vonng.com/work/extensions-for-everyone/01-who-am-i.html)
+![01. Who am I](01.webp)
 
 ### 2. Extensibility Matters
 
-> [02. Extensibility Matters](https://vonng.com/work/extensions-for-everyone/02-extensibility-matters.html)
+> 02. Extensibility Matters
 
 Extensibility matters. Two years ago, I wrote that **PostgreSQL is eating the database world**.
 
@@ -50,11 +50,11 @@ Extensibility alone is not enough. An extension only matters when it can be foun
 
 That is why I began collecting and packaging extensions.
 
-[![02. Extensibility Matters](02.webp)](https://vonng.com/work/extensions-for-everyone/02-extensibility-matters.html)
+![02. Extensibility Matters](02.webp)
 
 ### 3. Two Years Later
 
-> [03. Two Years Later](https://vonng.com/work/extensions-for-everyone/03-two-years-later.html)
+> 03. Two Years Later
 
 Two years later, I have been building open-source infrastructure for PostgreSQL extensions. It is called **pgext.cloud**.
 
@@ -64,11 +64,11 @@ The repository serves roughly one million downloads per month. Several PostgreSQ
 
 The main point is what we have learned while maintaining this matrix. That is what I want to share today.
 
-[![03. Two Years Later](03.webp)](https://vonng.com/work/extensions-for-everyone/03-two-years-later.html)
+![03. Two Years Later](03.webp)
 
 ### 4. Who Benefits?
 
-> [04. Who Benefits?](https://vonng.com/work/extensions-for-everyone/04-who-benefits.html)
+> 04. Who Benefits?
 
 When I say "extensions for everyone", I mean four groups of people.
 
@@ -82,7 +82,7 @@ Fourth, PostgreSQL hackers. They need signals. When compatibility breaks, extens
 
 So this is about a shared delivery layer. Not just for convenience, but also for visibility. Before we talk about delivery, let us look at the ecosystem. We need to understand what we are trying to deliver.
 
-[![04. Who Benefits?](04.webp)](https://vonng.com/work/extensions-for-everyone/04-who-benefits.html)
+![04. Who Benefits?](04.webp)
 
 --------
 
@@ -90,7 +90,7 @@ So this is about a shared delivery layer. Not just for convenience, but also for
 
 ### 5. Galaxy
 
-> [05. Galaxy](https://vonng.com/work/extensions-for-everyone/05-galaxy.html)
+> 05. Galaxy
 
 How many PostgreSQL extensions exist? There is a well-known community-maintained GitHub list with more than a thousand entries. The catalog I maintain currently tracks about 1,617 entries.
 
@@ -100,11 +100,11 @@ Some projects are active. Some are abandoned. Some are only available on cloud p
 
 It means the ecosystem boundary is large and messy.
 
-[![05. Galaxy](05.webp)](https://vonng.com/work/extensions-for-everyone/05-galaxy.html)
+![05. Galaxy](05.webp)
 
 ### 6. GitHub Stars
 
-> [06. GitHub Stars](https://vonng.com/work/extensions-for-everyone/06-github-stars.html)
+> 06. GitHub Stars
 
 The first public signal is GitHub stars. Stars do not measure quality. They do not measure production usage. They also miss projects that are not hosted on GitHub at all, such as postgres and postgis.
 
@@ -112,11 +112,11 @@ But stars are still useful. They show attention, reputation, and rough awareness
 
 If we look at the distribution, it is extremely skewed. A few extensions get most of the attention, followed by a very long tail. It is a logarithmic distribution.
 
-[![06. GitHub Stars](06.webp)](https://vonng.com/work/extensions-for-everyone/06-github-stars.html)
+![06. GitHub Stars](06.webp)
 
 ### 7. Star Tiering
 
-> [07. Star Tiering](https://vonng.com/work/extensions-for-everyone/07-star-tiering.html)
+> 07. Star Tiering
 
 If we group extensions by order of magnitude, we get a simple tier model.
 
@@ -134,11 +134,11 @@ This is not a quality ranking. Some popular projects are no longer active, such 
 
 But the tiers tell us something. The visible ecosystem is much smaller than the discovered one. Adding tiers zero through three gives about 570 extensions with more than ten stars, which is close to what is actually deliverable.
 
-[![07. Star Tiering](07.webp)](https://vonng.com/work/extensions-for-everyone/07-star-tiering.html)
+![07. Star Tiering](07.webp)
 
 ### 8. The Extension Funnel
 
-> [08. The Extension Funnel](https://vonng.com/work/extensions-for-everyone/08-the-extension-funnel.html)
+> 08. The Extension Funnel
 
 This gives us a funnel. At the top, there are about 1,600 candidates. If we cut the long tail, the number drops quickly.
 
@@ -148,17 +148,17 @@ We can split this by source: about 330 from the Pigsty repository, and 160 from 
 
 The point is the shape. Discovery is broad. Delivery is narrower. Usage is narrower again.
 
-[![08. The Extension Funnel](08.webp)](https://vonng.com/work/extensions-for-everyone/08-the-extension-funnel.html)
+![08. The Extension Funnel](08.webp)
 
 ### 9. Dimension Analysis
 
-> [09. Dimension Analysis](https://vonng.com/work/extensions-for-everyone/09-dimension-analysis.html)
+> 09. Dimension Analysis
 
 The catalog also tracks dimensions beyond stars: language, license, category, last release date, repository status, packaging status, PostgreSQL version support, and operating system support. We can browse 32 different dimensions here.
 
 Now let us move from "what exists" to "what can actually be delivered".
 
-[![09. Dimension Analysis](09.webp)](https://vonng.com/work/extensions-for-everyone/09-dimension-analysis.html)
+![09. Dimension Analysis](09.webp)
 
 --------
 
@@ -166,7 +166,7 @@ Now let us move from "what exists" to "what can actually be delivered".
 
 ### 10. The Status Quo
 
-> [10. The Status Quo](https://vonng.com/work/extensions-for-everyone/10-the-status-quo.html)
+> 10. The Status Quo
 
 Packaging PostgreSQL extensions is hard. Not because package formats are mysterious, but because the matrix is large. We are talking about 5 active PostgreSQL major versions times 16 Linux platforms. That is 80 build slots per extension. Only a handful of extensions actually cover all of it.
 
@@ -174,21 +174,21 @@ The PGDG YUM and APT repositories, maintained by Christoph and Devrim, already d
 
 So the complementary repository aims to fill that gap. It adds packages where PGDG coverage is missing, or where the build is too expensive to maintain. In total, that is about 300 additional extension packages.
 
-[![10. The Status Quo](10.webp)](https://vonng.com/work/extensions-for-everyone/10-the-status-quo.html)
+![10. The Status Quo](10.webp)
 
 ### 11. The Trade-Off
 
-> [11. The Trade-Off](https://vonng.com/work/extensions-for-everyone/11-the-trade-off.html)
+> 11. The Trade-Off
 
 There is a real trade-off behind that. C extensions build quickly. Rust extensions do not. One Rust build can take longer than all the C builds combined.
 
 But users still need them. A self-hosted Supabase stack, for example, needs about a dozen extensions, three of them written in Rust. So the question is not whether the work is necessary. The question is where the work should live.
 
-[![11. The Trade-Off](11.webp)](https://vonng.com/work/extensions-for-everyone/11-the-trade-off.html)
+![11. The Trade-Off](11.webp)
 
 ### 12. Why Linux Native?
 
-> [12. Why Linux Native?](https://vonng.com/work/extensions-for-everyone/12-why-linux-native.html)
+> 12. Why Linux Native?
 
 Container images reduce part of the matrix. I really admire that. With containers, you only build for 5 PostgreSQL majors times 2 architectures. That is 10 slots per extension, an 8x reduction.
 
@@ -196,11 +196,11 @@ But Linux-native packages are still important. Many users still install Postgres
 
 So the packaging has to be done somewhere.
 
-[![12. Why Linux Native?](12.webp)](https://vonng.com/work/extensions-for-everyone/12-why-linux-native.html)
+![12. Why Linux Native?](12.webp)
 
 ### 13. PGEXT.CLOUD
 
-> [13. PGEXT.CLOUD](https://vonng.com/work/extensions-for-everyone/13-pgext-cloud.html)
+> 13. PGEXT.CLOUD
 
 To deliver all these RPM and DEB extension packages, we have built open-source infrastructure around the problem.
 
@@ -208,21 +208,21 @@ It has four parts: a catalog for discovery, a repository for delivery, an option
 
 The CLI is simple. The repository is useful. But the catalog and the build matrix are where most of the engineering cost lives.
 
-[![13. PGEXT.CLOUD](13.webp)](https://vonng.com/work/extensions-for-everyone/13-pgext-cloud.html)
+![13. PGEXT.CLOUD](13.webp)
 
 ### 14. Extension Catalog
 
-> [14. Extension Catalog](https://vonng.com/work/extensions-for-everyone/14-extension-catalog.html)
+> 14. Extension Catalog
 
 The catalog is the source of truth. It is not a marketing page. It is a database with structured metadata describing everything about an extension: dimensions, tags, dependencies, availability matrix, and notes on how to install, configure, build, and use it.
 
 This sounds like boring grunt work. But boring metadata is what lets the rest of the system behave predictably. With that data, you can ask Codex to regenerate the extension galaxy in one prompt.
 
-[![14. Extension Catalog](14.webp)](https://vonng.com/work/extensions-for-everyone/14-extension-catalog.html)
+![14. Extension Catalog](14.webp)
 
 ### 15. Catalog Details
 
-> [15. Catalog Details](https://vonng.com/work/extensions-for-everyone/15-catalog-details.html)
+> 15. Catalog Details
 
 The catalog is part of the delivery path. The website and the CLI tools all use it as the source of truth.
 
@@ -230,21 +230,21 @@ Currently, that metadata is exported as several CSV files and updated regularly.
 
 I would be very happy if this kind of information could one day live on postgresql.org as an official extension directory. For now, it lives on pgext.cloud and GitHub.
 
-[![15. Catalog Details](15.webp)](https://vonng.com/work/extensions-for-everyone/15-catalog-details.html)
+![15. Catalog Details](15.webp)
 
 ### 16. Catalog Page Views
 
-> [16. Catalog Page Views](https://vonng.com/work/extensions-for-everyone/16-catalog-page-views.html)
+> 16. Catalog Page Views
 
 The catalog website also gives us pageview data. It is not the same as production usage, but it tells us what users are looking at. That can be useful. It tells us which extensions deserve packaging effort first, and which categories are becoming active.
 
 Here is the extension pageview data from the last month.
 
-[![16. Catalog Page Views](16.webp)](https://vonng.com/work/extensions-for-everyone/16-catalog-page-views.html)
+![16. Catalog Page Views](16.webp)
 
 ### 17. Repository
 
-> [17. Repository](https://vonng.com/work/extensions-for-everyone/17-repository.html)
+> 17. Repository
 
 To deliver these extensions to users, the catalog itself is not sufficient. You also need a repository.
 
@@ -252,11 +252,11 @@ Technically, the repository is an APT and YUM repository with signed Linux-nativ
 
 This repository aims to enhance the PGDG YUM and APT repositories. It is fully compatible, built under the same conventions, with the package layout users already understand and use.
 
-[![17. Repository](17.webp)](https://vonng.com/work/extensions-for-everyone/17-repository.html)
+![17. Repository](17.webp)
 
 ### 18. Repo Download Stats
 
-> [18. Repo Download Stats](https://vonng.com/work/extensions-for-everyone/18-repo-download-stats.html)
+> 18. Repo Download Stats
 
 The repository now serves roughly one million RPM and DEB downloads per month.
 
@@ -264,21 +264,21 @@ But these numbers have limits. They do not include the PGDG side. Cloudflare als
 
 I would really welcome it if the PGDG repository could share access logs, or at least some aggregate statistics. That would be a very useful signal for the extension ecosystem.
 
-[![18. Repo Download Stats](18.webp)](https://vonng.com/work/extensions-for-everyone/18-repo-download-stats.html)
+![18. Repo Download Stats](18.webp)
 
 ### 19. What We Can Still Infer
 
-> [19. What We Can Still Infer](https://vonng.com/work/extensions-for-everyone/19-what-we-can-still-infer.html)
+> 19. What We Can Still Infer
 
 Even partial and biased download data is still useful. It can show which PostgreSQL major versions are active. It can show which operating system targets matter. It can show whether a package cell is used enough to justify maintenance.
 
 But be careful. A package with few downloads may still be important. Maybe we need a combined signal: stars, pageviews, availability, build failures, and downloads. Something like a DB-Engines-style score for Postgres extensions.
 
-[![19. What We Can Still Infer](19.webp)](https://vonng.com/work/extensions-for-everyone/19-what-we-can-still-infer.html)
+![19. What We Can Still Infer](19.webp)
 
 ### 20. The CLI - PIG
 
-> [20. The CLI - PIG](https://vonng.com/work/extensions-for-everyone/20-the-cli-pig.html)
+> 20. The CLI - PIG
 
 Once we have the catalog and repository, extension delivery is almost solved. You can use the operating system package manager, `dnf` or `apt`, to install directly from the PGDG and PGEXT repositories.
 
@@ -290,7 +290,7 @@ This matters for supply-chain trust. Users can rebuild everything themselves if 
 
 So that is the delivery layer: catalog, repository, CLI, and the build matrix behind them. On paper, it looks clean. In practice, the matrix is where things get hard.
 
-[![20. The CLI - PIG](20.webp)](https://vonng.com/work/extensions-for-everyone/20-the-cli-pig.html)
+![20. The CLI - PIG](20.webp)
 
 --------
 
@@ -298,7 +298,7 @@ So that is the delivery layer: catalog, repository, CLI, and the build matrix be
 
 ### 21. Dimension Explosion!
 
-> [21. Dimension Explosion!](https://vonng.com/work/extensions-for-everyone/21-dimension-explosion.html)
+> 21. Dimension Explosion!
 
 In the previous chapter, we talked about the matrix: 80 slots per extension.
 
@@ -314,11 +314,11 @@ When you multiply all of these together, the combination explodes very quickly.
 
 The rest of this part is about what we learn when that explosion meets reality.
 
-[![21. Dimension Explosion!](21.webp)](https://vonng.com/work/extensions-for-everyone/21-dimension-explosion.html)
+![21. Dimension Explosion!](21.webp)
 
 ### 22. PG Minor ABI Break
 
-> [22. PG Minor ABI Break](https://vonng.com/work/extensions-for-everyone/22-pg-minor-abi-break.html)
+> 22. PG Minor ABI Break
 
 Last year, we hit a concrete case. PostgreSQL 17.1 broke ABI compatibility during a minor upgrade. That broke certain extensions, including TimescaleDB.
 
@@ -326,11 +326,11 @@ In response, some maintainers switched to building for every PostgreSQL minor ve
 
 It is better to treat this as an exceptional case. But when it happens, we have to be ready.
 
-[![22. PG Minor ABI Break](22.webp)](https://vonng.com/work/extensions-for-everyone/22-pg-minor-abi-break.html)
+![22. PG Minor ABI Break](22.webp)
 
 ### 23. OS Minor Break
 
-> [23. OS Minor Break](https://vonng.com/work/extensions-for-everyone/23-os-minor-break.html)
+> 23. OS Minor Break
 
 Sometimes even an operating system minor version will break your build.
 
@@ -338,11 +338,11 @@ For example, EL changed the OpenSSL version from 3.2 to 3.5, and some extensions
 
 In response, the PGDG YUM repository recently changed its packaging policy. It now builds per minor version instead of per major version. So we have separate builds for EL 10.0, 10.1, 9.6, and 9.7, instead of just EL 10 and EL 9. That is yet another sub-dimension on the matrix.
 
-[![23. OS Minor Break](23.webp)](https://vonng.com/work/extensions-for-everyone/23-os-minor-break.html)
+![23. OS Minor Break](23.webp)
 
 ### 24. Rust Problems
 
-> [24. Rust Problems](https://vonng.com/work/extensions-for-everyone/24-rust-problems.html)
+> 24. Rust Problems
 
 Rust extensions are growing. They bring new people and new ideas into the ecosystem. The Rust community uses a framework called pgrx to write them, and that introduces a few new problems.
 
@@ -352,21 +352,21 @@ Second, pgrx itself has versions: 0.16, 0.17, 0.18, and so on. They are not inte
 
 So Rust does not just add another language. It adds another compatibility axis.
 
-[![24. Rust Problems](24.webp)](https://vonng.com/work/extensions-for-everyone/24-rust-problems.html)
+![24. Rust Problems](24.webp)
 
 ### 25. Bulky Extensions
 
-> [25. Bulky Extensions](https://vonng.com/work/extensions-for-everyone/25-bulky-extensions.html)
+> 25. Bulky Extensions
 
 Extensions used to be small, typically a few hundred kilobytes. That is no longer always true.
 
 Some newer extensions, such as pg_search and pg_duckdb, are tens of megabytes. Source archives and build outputs both add up quickly. Across the full matrix, this turns into real storage and bandwidth cost.
 
-[![25. Bulky Extensions](25.webp)](https://vonng.com/work/extensions-for-everyone/25-bulky-extensions.html)
+![25. Bulky Extensions](25.webp)
 
 ### 26. Naming Conflicts
 
-> [26. Naming Conflicts](https://vonng.com/work/extensions-for-everyone/26-naming-conflicts.html)
+> 26. Naming Conflicts
 
 The matrix is one kind of complexity. Conflicts between extensions are another.
 
@@ -380,11 +380,11 @@ Unlike Citus and Hydra, you can install these three together. But you cannot cre
 
 This is not just a packaging issue. It is an ecosystem metadata problem. If the catalog records not just package names, but also extension objects, libraries, and access methods, authors can check for collisions before release.
 
-[![26. Naming Conflicts](26.webp)](https://vonng.com/work/extensions-for-everyone/26-naming-conflicts.html)
+![26. Naming Conflicts](26.webp)
 
 ### 27. Library Conflicts
 
-> [27. Library Conflicts](https://vonng.com/work/extensions-for-everyone/27-library-conflicts.html)
+> 27. Library Conflicts
 
 Here is another example. Three DuckDB-based extensions wanted to use the same shared library: libduckdb.
 
@@ -394,11 +394,11 @@ The practical resolution was to mount two of the extensions as sub-extensions un
 
 The lesson is simple: names are part of compatibility, and names do conflict.
 
-[![27. Library Conflicts](27.webp)](https://vonng.com/work/extensions-for-everyone/27-library-conflicts.html)
+![27. Library Conflicts](27.webp)
 
 ### 28. API Break
 
-> [28. API Break](https://vonng.com/work/extensions-for-everyone/28-api-break.html)
+> 28. API Break
 
 We also fix many extensions that lack active maintenance. The last release date for some of them was years ago, but PostgreSQL major version changes still affect them.
 
@@ -408,11 +408,11 @@ We have talked about how this work helps the first three groups: users, authors,
 
 I think build coverage is a useful signal. When a patch breaks N extensions, that number is information. It shows ecosystem impact. This is where delivery infrastructure starts to look like feedback infrastructure.
 
-[![28. API Break](28.webp)](https://vonng.com/work/extensions-for-everyone/28-api-break.html)
+![28. API Break](28.webp)
 
 ### 29. PG 19 Compatibility
 
-> [29. PG 19 Compatibility](https://vonng.com/work/extensions-for-everyone/29-pg-19-compatibility.html)
+> 29. PG 19 Compatibility
 
 Here is a concrete case. I ran the build pipeline against PostgreSQL 19 development snapshots. Around 50 extensions failed to build.
 
@@ -424,11 +424,11 @@ I would really like feedback from this room on whether that is worth pursuing.
 
 The goal is not to block progress. The goal is to make ecosystem impact visible earlier.
 
-[![29. PG 19 Compatibility](29.webp)](https://vonng.com/work/extensions-for-everyone/29-pg-19-compatibility.html)
+![29. PG 19 Compatibility](29.webp)
 
 ### 30. Keeping It Maintainable
 
-> [30. Keeping It Maintainable](https://vonng.com/work/extensions-for-everyone/30-keeping-it-maintainable.html)
+> 30. Keeping It Maintainable
 
 A practical question is maintainability. All of this work is done by one person. I run a one-person company and a one-person distribution called Pigsty. I have been doing this for about five years.
 
@@ -442,11 +442,11 @@ AI may not be ready to commit Postgres core patches. But it is clearly qualified
 
 This is the only way a 511-extension matrix stays alive with one maintainer.
 
-[![30. Keeping It Maintainable](30.webp)](https://vonng.com/work/extensions-for-everyone/30-keeping-it-maintainable.html)
+![30. Keeping It Maintainable](30.webp)
 
 ### 31. Three Questions
 
-> [31. Three Questions](https://vonng.com/work/extensions-for-everyone/31-three-questions.html)
+> 31. Three Questions
 
 To close, extensions are the collective treasure of the Postgres ecosystem. I hope this work helps users, authors, vendors, and Postgres hackers build a better Postgres.
 
@@ -460,11 +460,11 @@ Third, should some of this metadata live closer to PostgreSQL community infrastr
 
 Extensions are collective infrastructure. Delivery is part of extensibility. If we improve delivery, PostgreSQL's superpower reaches more people.
 
-[![31. Three Questions](31.webp)](https://vonng.com/work/extensions-for-everyone/31-three-questions.html)
+![31. Three Questions](31.webp)
 
 ### 32. Thank You
 
-> [32. Thank You](https://vonng.com/work/extensions-for-everyone/32-thank-you.html)
+> 32. Thank You
 
 Thank you.
 
@@ -472,4 +472,4 @@ If you have any questions, please contact me.
 
 Yongjie Xue yongjiexue88@gmail.com
 
-[![32. Thank You](32.webp)](https://vonng.com/work/extensions-for-everyone/32-thank-you.html)
+![32. Thank You](32.webp)

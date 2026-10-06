@@ -28,7 +28,6 @@ tags: [随笔]
 
 ![图片](640-20231108093250327.png)
 
-代码地址：https://github.com/vonng/pigsty/tree/v1.1/app/applog
 
 演示程序：http://demo.pigsty.cc/d/applog-summary
 

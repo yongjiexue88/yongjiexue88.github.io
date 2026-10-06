@@ -28,7 +28,6 @@ This morning I also quickly created a privacy log analysis application that can 
 
 ![Image](640-20231108093250327.png)
 
-Code repository: https://github.com/vonng/pigsty/tree/v1.1/app/applog
 
 Demo program: http://demo.pigsty.cc/d/applog-summary
 

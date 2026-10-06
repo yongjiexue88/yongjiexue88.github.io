@@ -12,7 +12,6 @@ Winter is coming, tech giants are laying off workers entering cost-reduction mod
 Recently, an article by DHH, co-founder of Basecamp & HEY, caused a stir【1,2】. The main content can be summarized in one sentence:
 
 > "We spend $500,000 annually on cloud databases (RDS/ES). Do you know how many awesome servers $500,000 can buy?
->
 > **We're exiting the cloud, bye bye!"**
 
 **So, how many awesome servers can $500,000 buy?**
@@ -233,16 +232,12 @@ Whether public cloud vendors, Kubernetes-represented cloud-native/private cloud,
 Quoting DDIA author Martin Kelppmann【13】:
 
 > **In 2020, computing freedom's enemy is cloud computing software**
->
 > — software mainly running on vendor servers, with all your data stored on these servers. These "cloud software" might have client components (mobile apps, web apps, JavaScript running in browsers), but they only work with vendor backend services. Cloud software has many problems:
->
 > - If the cloud software company goes bankrupt or decides to discontinue, the software stops working, and documents and data created with this software get locked. This is common with startup software: these companies might be acquired by big companies uninterested in maintaining startup products.
 > - Google and other cloud services might suddenly suspend your account without warning or recourse. For example, you might be completely innocent but judged by automated systems as violating terms of service: others might hack your account and use it to send malware or phishing emails without your knowledge, triggering terms violations. Therefore, you might suddenly find all documents created with Google Docs or other apps permanently locked and inaccessible.
 > - Software running on your own computer continues working even if software vendors go bankrupt, until forever. (If software no longer compatible with your OS, you can run it in VMs and emulators, provided it doesn't need to contact servers for license checks). For example, Internet Archive has a collection of over 100,000 historical software pieces you can run in browser emulators! In contrast, if cloud software shuts down, you have no way to preserve it because you never had server software copies, neither source code nor compiled form.
 > - The inability to customize or extend software you use, a problem from the 1990s, is further exacerbated in cloud software. For closed-source software running on your computer, at least someone can reverse-engineer its data file formats so you can load them into other alternative software (like Microsoft Office file formats before OOXML, or Photoshop files before specification publication). With cloud software, even this is impossible because data only exists in the cloud, not in files on your computer.
->
 > **If all software were free and open source, these problems would be solved**. However, open source isn't actually necessary to solve cloud software problems; even closed-source software can avoid above problems if it runs on your computer, not vendor cloud servers. Note that Internet Archive can maintain historical software operation without source code: for archival purposes, running compiled machine code in emulators suffices. Maybe having source code makes things easier, but it's not critical - **the most important thing is having a copy of the software**.
->
 > My collaborators and I previously advocated **local-first software** concepts as a response to cloud software problems. Local-first software runs on your computer, stores data on your local hard drive, while retaining cloud computing software convenience like real-time collaboration and data synchronization across all devices. Open source local-first software is certainly great, but not necessary - 90% of local-first software benefits apply to closed-source software too. Cloud software, not closed-source software, is the real threat to software freedom because: **cloud vendors can suddenly whimsically lock all your data at will, far more harmful than inability to view and modify your software source code**. Therefore, promoting local-first software is more important and urgent.
 
 There's action for every force. Local-first software corresponding to cloud software is emerging like bamboo shoots after rain. For example, the Cloud Native movement represented by Kubernetes. "Cloud Native" - cloud vendors interpret "Native" as "native": "software natively born in public cloud environments"; while its true meaning should be "local," i.e., "Local" corresponding to "Cloud" - local cloud/private cloud/dedicated cloud/native cloud, names don't matter, what matters is it runs wherever users want (including cloud servers), not exclusively on public cloud!
@@ -309,7 +304,7 @@ Pigsty lets you practice ultimate FinOps philosophy — using prices almost appr
 
 【5】 [AWS Pricing Calculator](https://calculator.amazonaws.cn/#/?trk=pricing-ban) (China Ningxia)
 
-【6】[FIO Testing AWS EBS Performance](https://github.com/vonng/pgtpc/blob/master/fio/aws-ebs-bench.md)
+【6】FIO Testing AWS EBS Performance
 
 【7】[Alibaba-Cloud RDS PG Enhanced Monitoring](https://help.aliyun.com/document_detail/299200.html)
 

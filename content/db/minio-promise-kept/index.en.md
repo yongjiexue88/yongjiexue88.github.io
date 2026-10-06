@@ -124,4 +124,4 @@ If you're running OSS MinIO, the migration is cheap and the patches are current.
 
 - [**MinIO Is Dead, Long Live MinIO**](/en/db/minio-resurrect)
 - [**From AGPL to Apache: Reflections on Pigsty's License Change**](/en/pg/pigsty-relicense/)
-- [**Originally published in Chinese**](https://vonng.com/db/minio-promise-kept)
+- **Originally published in Chinese**

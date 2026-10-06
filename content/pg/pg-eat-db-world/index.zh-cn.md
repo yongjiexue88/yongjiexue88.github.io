@@ -41,7 +41,7 @@ ParadeDB 与 DuckDB 的出现让 PostgreSQL 的分析性能来到了 OLAP 的第
 
 ![ddia](ddia.png)
 
-> 设计数据密集型应用，Martin Kleppmann，[第三章](http://ddia.vonng.com/#/ch3)
+> 设计数据密集型应用，Martin Kleppmann，第三章
 
 与许多 “专用数据库” 一样，专业的 OLAP 组件的优势往往在于 **性能** —— 相比原生 PG、MySQL 上有 1～3 个数量级的提升；而代价则是数据冗余、大量不必要的数据搬运工作、分布式组件之间缺乏一致性、额外的专业技能带来的复杂度成本、学习成本、以及人力成本、额外的软件许可费用、极其有限的查询语言能力、可编程性、可扩展性、有限的工具链、以及与 OLTP 数据库相比更差的数据完整性和可用性 —— **但这是一个合理的利弊权衡**。
 
@@ -154,7 +154,6 @@ PostgreSQL 生态中的一个困境就是，许多扩展插件，生态工具都
 即使是类似于 AWS RDS 这样的服务提供商与生态整合者，在诸多扩展面前也依然力有所不逮，只能提供其中的少数。更多的强力扩展出于各种原因（AGPLv3 协议，多租户租赁带来的安全挑战）而无法使用。从而难以发挥 PostgreSQL 生态扩展的协同增幅作用。
 
 > 这里列出了一些重要扩展，对比基于最新的 PostgreSQL 16 主干版本进行，截止至 2024-02-28
->
 > | **扩展类目** | [**Pigsty RDS**](https://pigsty.cc/docs/reference/extension) / PGDG 官方仓库                      | [**阿里云 RDS**](https://help.aliyun.com/zh/rds/apsaradb-rds-for-postgresql/extensions-supported-by-apsaradb-rds-for-postgresql) | [**AWS RDS PG**](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-extensions.html) |
 > |----------|---------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
 > | 加装扩展     | <i class="fas fa-circle-check text-success"></i> 自由加装                           |                                      <i class="fas fa-circle-xmark text-danger"></i> 不允许                                      |                               <i class="fas fa-circle-xmark text-danger"></i> 不允许                                |
@@ -174,8 +173,6 @@ PostgreSQL 生态中的一个困境就是，许多扩展插件，生态工具都
 > | 模糊分词     | <i class="fas fa-circle-check text-success"></i> zhparser 1.1 / pg_bigm 1.2     |                           <i class="fas fa-circle-check text-success"></i> zhparser 1.0 / pg_jieba                            |                           <i class="fas fa-circle-check text-success"></i> pg_bigm 1.2                           |
 > | CDC 抽取    | <i class="fas fa-circle-check text-success"></i> wal2json 2.5.3                 |                                        <i class="fas fa-circle-xmark text-danger"></i>                                        |                          <i class="fas fa-circle-check text-success"></i> wal2json 2.5                           |
 > | 膨胀治理     | <i class="fas fa-circle-check text-success"></i> pg_repack 1.5.0                |                               <i class="fas fa-circle-check text-success"></i> pg_repack 1.4.8                                |                         <i class="fas fa-circle-check text-success"></i> pg_repack 1.5.0                         |
->
->
 > 许多关键扩展在 RDS 中并不可用
 
 扩展是 PostgreSQL 的灵魂，无法自由使用扩展的 Postgres 就像做菜不放盐。只能和 MySQL 放在同一个 RDS 的框子里同台，龙游浅水，虎落平阳。
@@ -203,7 +200,6 @@ PostgreSQL 生态中的一个困境就是，许多扩展插件，生态工具都
 Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外一种缩写解释：
 
 > **P**ostgres, **I**nfras, **G**raphics, **S**ervice, **T**oolbox, **Y**ours.
->
 > 属于你的图形化 Postgres 基础设施服务工具箱。
 
 ![homepage](https://pigsty.io/img/pigsty/homepage.png)
@@ -225,8 +221,8 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 - [**Apache AGE**](https://age.apache.org/)：图数据库扩展，为 PostgreSQL 添加类 Neo4J 的 OpenCypher 查询支持，
 - [**PG GraphQL**](https://github.com/supabase/pg_graphql)：为 PostgreSQL 添加原生内建的 GraphQL 查询语言支持。
 - [**DuckDB FDW**](https://github.com/alitrack/duckdb_fdw)：允许您通过 PostgreSQL 直接读写强力的嵌入式分析数据库 [**DuckDB**](https://duckdb.org/) 文件 （& DuckDB CLI 本体）。
-- [**Supabase**](https://github.com/vonng/pigsty/tree/master/app/supabase)：基于 PostgreSQL 的开源的 Firebase 替代，提供完整的应用开发存储解决方案。
-- [**FerretDB**](https://github.com/vonng/pigsty/tree/master/app/ferretdb)：基于 PostgreSQL 的开源 MongoDB 替代，兼容 MongoDB API / 驱动协议。
+- **Supabase**：基于 PostgreSQL 的开源的 Firebase 替代，提供完整的应用开发存储解决方案。
+- **FerretDB**：基于 PostgreSQL 的开源 MongoDB 替代，兼容 MongoDB API / 驱动协议。
 - [**PostgresML**](https://github.com/postgresml/postgresml)：使用 SQL 完成经典机器学习算法，调用、部署、训练 AI 模型。
 
 > Pigsty 支持的 180+ [**扩展列表**](https://pigsty.cc/docs/reference/extension/)
@@ -235,7 +231,7 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 开发者朋友们，你们的选择会塑造数据库世界的未来。希望我的这些工作，可以帮助你们更好的用好这世界上最先进的开源数据库内核 —— PostgreSQL。
 
-> [Medium 英文版](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4) | [GitHub 仓库：Pigsty](https://github.com/vonng/pigsty)
+> [Medium 英文版](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4) | GitHub 仓库：Pigsty
 
 ---
 

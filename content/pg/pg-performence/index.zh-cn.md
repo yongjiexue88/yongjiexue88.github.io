@@ -31,7 +31,7 @@ tags: [PostgreSQL, PG生态, 性能]
 - 云数据库 / 云服务器 的成本到底有没有优势？
   c5d.metal 用1年的价格，可以把服务器买下来托管用5年。对应规格云数据库用1年的价格，可以供你买同样的EC2用20年
 
-详细测试过程与原始数据放置于：[github.com/vonng/pgtpc](https://github.com/vonng/pgtpc)
+详细测试过程与原始数据放置于：PGTPC
 
 ------
 
@@ -242,7 +242,7 @@ TPC-H 是一个模拟数仓，包含8张数据表，与22条复杂分析类SQL�
 
 ## 参考
 
-[1]  [Yongjie Xue: PGTPC](https://github.com/vonng/pgtpc)
+[1]  Yongjie Xue: PGTPC
 
 [2]  [WHY MYSQL](https://www.mysql.com/cn/why-mysql/benchmarks/mysql/)
 
