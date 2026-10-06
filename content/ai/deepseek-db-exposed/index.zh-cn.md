@@ -1,7 +1,7 @@
 ---
 title: "Wiz: DeepSeek数据库暴露"
 date: 2025-01-30
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Wiz Research发现DeepSeek一套公开的ClickHouse，含有聊天记录、密钥、后端细节及其他高度敏感信息，Wiz已向DeepSeek披露此问题，DS也已经修复此暴…
 tags: [AI, 安全, 数据库, 翻译]

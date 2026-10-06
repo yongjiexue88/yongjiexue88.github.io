@@ -1,7 +1,7 @@
 ---
 title: "MySQL's ACID is a real mess"
 date: 2023-12-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MySQL's transaction ACID has flaws and doesn't match documentation promises. This may lead to serious correctness issues - use with caution.
 tags: [MySQL, Database, Transactions]

@@ -1,7 +1,7 @@
 ---
 title: Can Luo Yonghao Save Toothpaste Cloud?
 date: 2024-04-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Luo Yonghao's livestream first spent half an hour selling robot vacuums, then Luo himself belatedly appeared to read scripts selling "cloud computing" for forty minutes — before seamlessly transitioning to selling Colgate enzyme-free toothpaste — leaving viewers bewildered between toothpaste and cloud computing.
 tags: [Cloud-Exit, Alibaba Cloud]

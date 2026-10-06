@@ -2,7 +2,7 @@
 title: "PostgreSQL 高可用到底怎么做？"
 linkTitle: "PostgreSQL 高可用到底怎么做？"
 date: 2026-01-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   详细介绍 PG 高可用 SOTA 方案，RTO / RPO 拆解，从原理到实战，一步到位。如果你还在折腾 PG HA，希望能帮你少走几年弯路。
 tags: [PostgreSQL, PG管理]

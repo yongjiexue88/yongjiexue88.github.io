@@ -1,7 +1,7 @@
 ---
 title: "是 Oracle 的失误让 PostgreSQL 赢了吗？"
 date: 2026-08-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   从 Stonebraker 的一句「感谢 Oracle」说起，聊聊 PostgreSQL 社区的独特的治理结构，与新时代面临的挑战
 tags: [PostgreSQL, 开源, 社区治理, 云计算]

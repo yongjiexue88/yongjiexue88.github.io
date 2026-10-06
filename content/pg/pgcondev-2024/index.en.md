@@ -1,7 +1,7 @@
 ---
 title: PGCon.Dev 2024, The conf that shutdown PG for a week
 date: 2024-06-17
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Experience & Feeling on the PGCon.Dev 2024   
 tags: [PostgreSQL, PG Ecosystem]
@@ -154,7 +154,7 @@ The sessions on the second day were slightly less intense than the first, so man
 
 ![hallway-track.jpg](hallway-track.jpg)
 
-Despite being a first-timer at PGCon.Dev, I was surprised by the recognition and attention I received, largely thanks to the widely read article, "[PostgreSQL is eating the Database world](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4)." Many recognized me by my badge [Yongjie Xue](https://vonng.com/en/) / [Pigsty](https://pigsty.io).
+Despite being a first-timer at PGCon.Dev, I was surprised by the recognition and attention I received, largely thanks to the widely read article, "[PostgreSQL is eating the Database world](https://medium.com/@yongjiexue88/postgres-is-eating-the-database-world-157c204dcfc4)." Many recognized me by my badge [Yongjie Xue](https://www.yongjiexue.io/) / [Pigsty](https://pigsty.io).
 
 A simple yet effective networking trick is never to underestimate small gifts' effect. I handed out gold-plated Slonik pins, PostgreSQL's mascot, which became a coveted item at the conference. Everyone who talked with me received one, and those who didn't have one were left asking where to get one. LOL
 

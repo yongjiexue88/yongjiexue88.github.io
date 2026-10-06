@@ -1,7 +1,7 @@
 ---
 title: "数据库老司机勇闯现代前端大观园"
 date: 2025-06-18
-authors: [vonng]
+authors: [yongjie]
 summary: >
   在前端大手子与Claude Code帮助下，从JQuery原始人迈入Next.js现代前端时代。
 tags: [软件工程, 随笔]

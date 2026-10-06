@@ -1,7 +1,7 @@
 ---
 title: "Don't Run Docker Postgres for Production!"
 date: 2025-11-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Tons of users running the official docker postgres image got burned during recent minor version upgrades. A friendly reminder: think twice before containerizing production databases.
 tags: [PostgreSQL, Containers, Incident]

@@ -1,7 +1,7 @@
 ---
 title: "AWS 收购 DuckDB：鸭子飞进亚马逊雨林"
 date: 2026-08-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AWS 买走了做鸭子的人，把鸭子留给了基金会。
 tags: [DuckDB, AWS, 数据库, 开源]

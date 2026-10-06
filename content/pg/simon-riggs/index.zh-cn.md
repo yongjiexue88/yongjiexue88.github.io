@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL 主要贡献者 Simon Riggs 因坠机去世"
 date: 2024-03-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL 核心贡献者，2ndQudrant创始人，EDB掌舵者，《Postgres管理员手册》作者西蒙不幸在坠机事件中丧生，谨致以最诚挚的哀悼，并愿他安息。
 tags: [PostgreSQL, PG生态]

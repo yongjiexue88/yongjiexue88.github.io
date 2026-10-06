@@ -1,7 +1,7 @@
 ---
 title: Is DBA Still a Good Job?
 date: 2022-05-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Ant Financial had a self-deprecating joke: besides regulation, only DBAs could bring down Alipay. Although DBA sounds like a profession with glorious history and dim prospects, who knows if it might become trendy again after a few terrifying major cloud database incidents?
 tags: [Cloud-Exit, RDS, PG Admin]

@@ -1,7 +1,7 @@
 ---
 title: "GPT Astra Launch Giveaway: Free Banked Resets"
 date: 2026-09-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   As Astra began rolling out, Tibo announced one banked reset per day for paid users still waiting for access. I'm stocking up for when Astra arrives.
 tags: [AI, Codex]

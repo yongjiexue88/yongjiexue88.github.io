@@ -1,7 +1,7 @@
 ---
 title: "PII数据安全合规与PG Anonymizer最佳实践"
 date: 2025-01-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   今天我们来聊一聊个人信息合规问题，以及如何在数据库中实践各国法律的 “匿名化” 要求。最后介绍新出炉的 PostgreSQL Anonymizer 2.0 以及使用方法。
 tags: [PostgreSQL, 安全, 扩展]

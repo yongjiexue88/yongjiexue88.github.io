@@ -1,7 +1,7 @@
 ---
 title: "Function Volatility Classification Levels"
 date: 2018-04-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL functions have three volatility levels by default. Proper use can significantly improve performance.
 tags: [PostgreSQL, PG Development]
@@ -48,7 +48,7 @@ $$ LANGUAGE PLPGSQL STABLE;
 When using the `STABLE` tag, it actually calls 10 times, but when using the `IMMUTABLE` tag, it's optimized to a single call.
 
 ```
-vonng=# select return2() from generate_series(1,10);
+yongjiexue=# select return2() from generate_series(1,10);
 NOTICE:  INVOKED
 NOTICE:  INVOKED
 NOTICE:  INVOKED
@@ -89,7 +89,7 @@ $$ LANGUAGE PLPGSQL IMMUTABLE;
 Running the same query again, this time the function is called only once:
 
 ```sql
-vonng=# select return2() from generate_series(1,10);
+yongjiexue=# select return2() from generate_series(1,10);
 NOTICE:  INVOKED
  return2
 ---------
@@ -130,7 +130,7 @@ $$ LANGUAGE 'plpgsql' IMMUTABLE;
 We'll find that when we use this function directly in index conditions, the index condition in the execution plan is directly evaluated, cached, and solidified as `id=2`:
 
 ```sql
-vonng=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
+yongjiexue=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
                                QUERY PLAN
 ------------------------------------------------------------------------
  Index Only Scan using idx_id on demo  (cost=0.28..2.29 rows=1 width=4)
@@ -141,7 +141,7 @@ vonng=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
 But if we change it to a `STABLE` function, the result becomes runtime evaluation:
 
 ```sql
-vonng=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
+yongjiexue=# EXPLAIN SELECT * FROM demo WHERE id = mymax(1,2);
                                QUERY PLAN
 ------------------------------------------------------------------------
  Index Only Scan using idx_id on demo  (cost=0.53..2.54 rows=1 width=4)

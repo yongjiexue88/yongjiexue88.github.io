@@ -1,7 +1,7 @@
 ---
 title: "关系膨胀的监控与治理"
 date: 2018-10-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL使用了MVCC作为主要并发控制技术，它有很多好处，但也会带来一些其他的影响，例如关系膨胀。
 tags: [PostgreSQL, PG管理]
@@ -53,7 +53,7 @@ PostgreSQL使用了MVCC作为主要并发控制技术，它有很多好处，但
 PostgreSQL自带了 `pgstattuple` 模块，可用于精确计算表的膨胀率。譬如这里的 `tuple_percent` 字段就是元组实际字节占关系总大小的百分比，用1减去该值即为膨胀率。
 
 ```sql
-vonng@[local]:5432/bench# select *,
+yongjiexue@[local]:5432/bench# select *,
                           1.0 - tuple_len::numeric / table_len as bloat 
                           from pgstattuple('pgbench_accounts');
 ┌─[ RECORD 1 ]───────┬────────────────────────┐

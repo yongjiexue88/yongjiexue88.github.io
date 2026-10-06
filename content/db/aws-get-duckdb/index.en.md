@@ -1,7 +1,7 @@
 ---
 title: "AWS Acquires DuckDB: The Duck Flies into the Amazon Rainforest"
 date: 2026-08-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AWS bought the people who build the duck and left the duck itself to the foundation.
 tags: [DuckDB, AWS, Database, Open Source]

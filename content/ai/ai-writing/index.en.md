@@ -1,7 +1,7 @@
 ---
 title: "Yes, I Use AI to Write"
 date: 2026-04-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AI is a multiplier. It amplifies depth and mediocrity alike. In an age where answers are cheap, questions are the real currency. There is nothing to hide about writing with AI.
 tags: [AI, Documentation]

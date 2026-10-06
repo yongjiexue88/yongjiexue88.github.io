@@ -2,7 +2,7 @@
 title: "KNN极致优化：从RDS到PostGIS"
 linkTitle: "KNN极致优化：GIS圈选"
 date: 2018-06-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   KNN问题极致优化，从传统关系型设计到PostGIS，实现GIS圈选场景下三万倍的性能提升。
 tags: [PostgreSQL, PG开发, 机器学习, GIS]

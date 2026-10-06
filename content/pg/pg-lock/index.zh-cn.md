@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL中的锁"
 date: 2019-06-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   详细介绍PostgreSQL中的各种锁：表级锁、行级锁、页级锁、咨询锁等。
 tags: [PostgreSQL, PG开发, PG管理]

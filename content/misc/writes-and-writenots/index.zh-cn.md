@@ -1,7 +1,7 @@
 ---
 title: "YC教父Paul Graham：写作者与非写作者"
 date: 2024-10-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   硅谷投资教父PG：写作就是思考，而AI会让大多数人失去写作能力，也就是思考能力。
 tags: [社会观察, 翻译]

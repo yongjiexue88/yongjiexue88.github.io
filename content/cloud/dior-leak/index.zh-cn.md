@@ -1,7 +1,7 @@
 ---
 title: "深度分析：迪奥数据泄露事件，云配置失当的锅？"
 date: 2025-05-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   迪奥/Dior数据泄漏，疑似云上配置不当导致CRM数据库被拖。
 tags: [云计算, 安全]

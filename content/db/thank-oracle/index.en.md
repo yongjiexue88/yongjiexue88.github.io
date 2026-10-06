@@ -1,7 +1,7 @@
 ---
 title: "Did PostgreSQL Win Because Oracle Screwed Up?"
 date: 2026-08-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Starting with Stonebraker's remark that PostgreSQL should "thank Oracle," this essay looks at the community's unusual governance model and the challenges it now faces.
 tags: [PostgreSQL, Open Source, Governance, Cloud]

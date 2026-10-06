@@ -1,7 +1,7 @@
 ---
 title: "360安全龙虾，把自己的泛域名私钥打进了安装包"
 date: 2026-03-16
-authors: [vonng]
+authors: [yongjie]
 summary: >
   360 刚发布的 AI Agent 产品“360安全龙虾”，被发现公开安装包中直接包含
   *.myclaw.360.cn 泛域名证书私钥；进一步的公开验证与本地复现还暴露出

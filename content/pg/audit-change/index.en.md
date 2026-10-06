@@ -1,13 +1,13 @@
 ---
 title: "Auditing Data Changes with Triggers"
 date: 2017-06-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Sometimes we want to record important metadata changes for audit purposes. PostgreSQL triggers can conveniently solve this need automatically.
 tags: [PostgreSQL, PG Development]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 
 Sometimes we want to record important metadata changes for audit purposes.
 

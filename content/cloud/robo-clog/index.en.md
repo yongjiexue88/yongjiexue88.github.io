@@ -1,7 +1,7 @@
 ---
 title: "When AI Gets the Power to Gridlock a City"
 date: 2026-04-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   On the night of March 31, a large number of Apollo Go robotaxis in Wuhan failed at the same time. The real concern is not merely that autonomous driving failed, but that a centrally controlled, cloud-based architecture may amplify a single-vehicle failure into a city-scale systemic risk.
 tags: [AI, Incident, Society]

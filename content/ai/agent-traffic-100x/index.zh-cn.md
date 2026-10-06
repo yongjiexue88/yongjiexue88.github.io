@@ -1,7 +1,7 @@
 ---
 title: "三个月翻 100 倍：Agent 时代的流量画像"
 date: 2026-05-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   过去三个月，Pigsty.io 的月度 PV 翻了大约 100 倍。
 tags: [Agent, 商业]

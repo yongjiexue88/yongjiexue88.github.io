@@ -9,7 +9,7 @@ series: ["MySQL走好"]
 tags: [MySQL, Oracle, 数据库, 技术评论]
 ---
 
-> [Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[薛永杰](https://vonng.com)（[@yongjiexue88](https://vonng.com/en/)） | [微信原文](https://mp.weixin.qq.com/s/1zlDPie_bVvP7eO6_uTkSw) | [Percona's Blog](https://www.percona.com/blog/is-oracle-finally-killing-mysql/)
+> [Peter Zaitsev](https://www.percona.com/blog/author/pz/) | 译：[薛永杰](https://www.yongjiexue.io/)（[@yongjiexue88](https://github.com/yongjiexue88)） | [微信原文](https://mp.weixin.qq.com/s/1zlDPie_bVvP7eO6_uTkSw) | [Percona's Blog](https://www.percona.com/blog/is-oracle-finally-killing-mysql/)
 
 大约15年前，[Oracle收购了Sun公司](https://www.oracle.com/corporate/pressrelease/oracle-buys-sun-042009.html)，从而也拥有了MySQL，互联网上关于Oracle何时会“扼杀MySQL”的[讨论](https://www.quora.com/Did-Oracle-buy-MySQL-in-order-to-kill-it)此起彼伏。当时流传有各种理论：从彻底扼杀 MySQL 以减少对 Oracle 专有数据库的竞争，到干掉 MySQL 开源项目，只留下 “MySQL企业版” 作为唯一选择。这些谣言的传播对 MariaDB，PostgreSQL 以及其他小众竞争者来说都是好生意，因此在当时传播得非常广泛。
 

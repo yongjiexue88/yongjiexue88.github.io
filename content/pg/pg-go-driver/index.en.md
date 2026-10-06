@@ -1,7 +1,7 @@
 ---
 title: "Go Database Tutorial: database/sql"
 date: 2017-08-24
-authors: [vonng]
+authors: [yongjie]
 summary: "Similar to JDBC, Go also has a standard database access interface. This article details how to use database/sql in Go and important considerations."
 tags: [PostgreSQL, Software Engineering]
 ---

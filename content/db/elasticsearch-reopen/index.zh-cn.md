@@ -1,7 +1,7 @@
 ---
 title: "ElasticSearch又重新开源了？？？"
 date: 2024-08-30
-authors: [vonng]
+authors: [yongjie]
 summary: >
   ElasticSearch官宣使用AGPLv3协议“再次开源”，老实说再不这么搞，生态位就全被Tantivy，PostgreSQL和Grafana占走了。
 tags: [数据库, 开源]

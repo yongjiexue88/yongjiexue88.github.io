@@ -1,7 +1,7 @@
 ---
 title: "用Capslock重新定义键盘"
 date: 2021-03-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   时隔五年，Capslock推出3.0版本。正所谓酒香也怕巷子深，好东西还是要多推广。今儿就来介绍如何用Capslock让你的键盘焕然一新！
 tags: [工具, 开源]

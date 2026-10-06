@@ -1,7 +1,7 @@
 ---
 title: "MinIO 已死，MinIO 复生"
 date: 2026-02-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MinIO 仓库正式归档并彻底放弃维护，开源对象存储用户将何去何从？AI Agent 如何助力 MinIO 起死回生？
 tags: [对象存储, 开源]

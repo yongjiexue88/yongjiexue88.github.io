@@ -1,7 +1,7 @@
 ---
 title: What Can We Learn from Tencent Cloud's Major Outage?
 date: 2024-04-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Tencent Cloud's epic global outage after Double 11 set industry records. How should we evaluate and view this failure, and what lessons can we learn from it?
 tags: [Cloud-Exit, Cloud, Incident]

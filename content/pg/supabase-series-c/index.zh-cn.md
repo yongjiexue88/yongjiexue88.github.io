@@ -1,7 +1,7 @@
 ---
 title: "PG系创业公司Supabase：$80M C轮融资"
 date: 2024-09-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL生态的创业公司不断融资，高歌猛进，吞噬整个数据库世界指日可待。附：Supabase自建教程
 tags: [PostgreSQL, PG生态, 商业]

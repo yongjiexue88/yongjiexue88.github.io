@@ -1,7 +1,7 @@
 ---
 title: "SQL实现ItemCF推荐系统"
 date: 2017-04-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   用PostgreSQL 5分钟实现一个最简单ItemCF推荐系统。
 tags: [PostgreSQL, PG开发, 机器学习]
@@ -91,7 +91,7 @@ CREATE TABLE mls_ratings (
 );
 
 -- 从CSV导入数据，并将评分乘以2变为2~10的整数便于处理，将Unix时间戳转换为日期类型
-COPY mls_ratings FROM '/Users/vonng/Dev/recsys/ml-latest-small/ratings.csv' DELIMITER ',' CSV HEADER;
+COPY mls_ratings FROM '/Users/yongjiexue/Dev/recsys/ml-latest-small/ratings.csv' DELIMITER ',' CSV HEADER;
 ALTER TABLE mls_ratings
   ALTER COLUMN rating SET DATA TYPE INTEGER USING (rating :: DECIMAL * 2) :: INTEGER;
 ALTER TABLE mls_ratings

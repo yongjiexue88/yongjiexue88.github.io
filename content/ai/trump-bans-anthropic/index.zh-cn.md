@@ -1,7 +1,7 @@
 ---
 title: "特朗普下令全面封杀人工智能公司 Anthropic"
 date: 2026-02-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   2026年2月27日，美国总统特朗普通过Truth Social发布声明，命令所有联邦机构立即停止使用AI公司Anthropic的技术。
 tags: [Claude, 社会观察]

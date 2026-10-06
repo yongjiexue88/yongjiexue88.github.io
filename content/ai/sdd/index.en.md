@@ -1,7 +1,7 @@
 ---
 title: "Documentation-Driven Development: The First Secret to AI Software Engineering"
 date: 2026-08-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   People often ask: how do I ensure quality when AI writes the code? My answer has four parts: documentation-driven development, adversarial review, brute-force testing, and complexity penalties.
 tags: [AI, Agent, Software Engineering, Documentation, OINK]

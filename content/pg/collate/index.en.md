@@ -1,7 +1,7 @@
 ---
 title: "Localization and Collation Rules in PostgreSQL"
 date: 2021-03-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   What? Don't know what COLLATION is? Remember one thing: using C COLLATE is always the right choice!
 tags: [PostgreSQL, PG Admin]
@@ -155,7 +155,7 @@ SELECT * FROM some_chinese ORDER BY name;
 Execute the following SQL to sort table records according to the default `C` collation rule. You can see that it's actually sorting by the `ascii|unicode` [**code point**](/en/db/character-encoding/#coded-character-set-ccs) of characters.
 
 ```bash
-vonng=# SELECT name, ascii(name) FROM some_chinese ORDER BY name COLLATE "C";
+yongjiexue=# SELECT name, ascii(name) FROM some_chinese ORDER BY name COLLATE "C";
  name | ascii
 ------+-------
  佛   | 20315
@@ -298,10 +298,10 @@ postgres@meta:5432/meta=# EXPLAIN SELECT * FROM app WHERE name LIKE '中国%';
 We find that **this query cannot use indexes** and performs a full table scan. Query performance degrades to 70 milliseconds, a 30-40x performance deterioration.
 
 ```bash
-vonng=# show lc_collate;
+yongjiexue=# show lc_collate;
  en_US.UTF-8
 
-vonng=# EXPLAIN SELECT * FROM app WHERE name LIKE '中国%';
+yongjiexue=# EXPLAIN SELECT * FROM app WHERE name LIKE '中国%';
                         QUERY PLAN
 ----------------------------------------------------------
  Seq Scan on app  (cost=0.00..29454.95 rows=151 width=25)
@@ -330,7 +330,7 @@ Using the `text_pattern_ops` operator class to create indexes can also support `
 Therefore, in this situation, only indexes based on the `text_pattern_ops` operator class, or those based on the default `text_ops` but using `COLLATE "C"`, can be used to support `LIKE` queries.
 
 ```sql
-vonng=# EXPLAIN ANALYZE SELECT * FROM app WHERE name LIKE '中国%';
+yongjiexue=# EXPLAIN ANALYZE SELECT * FROM app WHERE name LIKE '中国%';
 
 Index Only Scan using app_name_idx on app  (cost=0.43..1.45 rows=151 width=25) (actual time=0.053..0.731 rows=2360 loops=1)
    Index Cond: ((name ~>=~ '中国'::text) AND (name ~<~ '中图'::text))

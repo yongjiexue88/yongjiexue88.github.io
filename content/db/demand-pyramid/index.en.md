@@ -1,7 +1,7 @@
 ---
 title: Database Demand Hierarchy Pyramid
 date: 2023-05-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Similar to Maslow's hierarchy of needs, user demands for databases also have a progressive hierarchy: physiological needs, safety needs, belonging needs, esteem needs, cognitive needs, aesthetic needs, self-actualization needs, and transcendence needs.
 tags: [Database, Architecture, Software Engineering]

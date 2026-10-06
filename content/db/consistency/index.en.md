@@ -1,7 +1,7 @@
 ---
 title: "Consistency: An Overloaded Term"
 date: 2018-05-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The term "consistency" is heavily overloaded, representing different concepts in different contexts. For example, the C in ACID and the C in CAP actually refer to different concepts.
 tags: [Database, Distributed Systems, Transactions]

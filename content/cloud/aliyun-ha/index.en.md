@@ -1,7 +1,7 @@
 ---
 title: "Alibaba-Cloud: High Availability Disaster Recovery Myth Shattered"
 date: 2024-09-17
-authors: [vonng]
+authors: [yongjie]
 summary: "Seven days after Singapore Zone C failure, availability not even reaching 8, let alone multiple 9s. But compared to data loss, availability is just a minor issue"
 tags: [Cloud-Exit, Alibaba Cloud, Incident]
 ---

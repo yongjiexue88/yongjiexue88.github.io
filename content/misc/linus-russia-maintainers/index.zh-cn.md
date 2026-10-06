@@ -1,7 +1,7 @@
 ---
 title: "Linus关于踢出毛子维护者的解释"
 date: 2024-10-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   灌水被踢，纯属活该。
 tags: [Linux, 开源, 社会观察]

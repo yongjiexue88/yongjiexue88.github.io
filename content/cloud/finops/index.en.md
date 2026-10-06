@@ -1,7 +1,7 @@
 ---
 title: "FinOps: Endgame Cloud-Exit"
 date: 2023-07-06
-authors: [vonng]
+authors: [yongjie]
 summary: |
   At the SACC 2023 FinOps session, I fiercely criticized cloud vendors. This is a transcript of my speech, introducing the ultimate FinOps concept — Cloud-Exit and its implementation path.
 categories: [Cloud]

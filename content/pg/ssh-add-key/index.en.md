@@ -1,7 +1,7 @@
 ---
 title: "Batch Configure SSH Passwordless Login"
 date: 2018-01-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Quick configuration for passwordless login to all machines
 tags: [PostgreSQL, PG Admin]

@@ -2,7 +2,7 @@
 title: "How to Actually Do PostgreSQL High Availability"
 linkTitle: "How to Actually Do PostgreSQL High Availability"
 date: 2026-01-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A deep dive into the SOTA approach for PostgreSQL HA. RTO/RPO breakdown, from theory to production. If you're still wrestling with PG HA, this might save you years.
 tags: [PostgreSQL, PG Admin]

@@ -2,7 +2,7 @@
 title: "PGFS: Using Database as a Filesystem"
 linkTitle: "PGFS: Using Database as a Filesystem"
 date: 2025-03-21
-authors: [vonng]
+authors: [yongjie]
 summary: Leverage JuiceFS to turn PostgreSQL into a filesystem with PITR capabilities!
 tags: [PostgreSQL, Object Storage]
 aliases: ["/ai/pgfs/", "/db/pgfs/"]

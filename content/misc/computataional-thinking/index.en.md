@@ -1,7 +1,7 @@
 ---
 title: "On Computational Thinking"
 date: 2014-05-11
-authors: [vonng]
+authors: [yongjie]
 summary: A paper for "History of Secrecy and Secrecy Systems" course, discussing computational thinking and its significance in undergraduate education, as well as methods for cultivating computational thinking among undergraduates.
 tags: [Essay]
 ---

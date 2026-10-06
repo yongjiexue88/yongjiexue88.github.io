@@ -2,7 +2,7 @@
 title: "PostgreSQL MongoFDW Installation and Deployment"
 linkTitle: "MongoFDW Installation and Deployment"
 date: 2016-05-28
-authors: [vonng]
+authors: [yongjie]
 summary: "Recently had business requirements to access MongoDB through PostgreSQL FDW, but compiling MongoDB FDW is really a nightmare."
 tags: [PostgreSQL, PG Admin, Extension]
 ---

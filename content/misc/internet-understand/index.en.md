@@ -1,7 +1,7 @@
 ---
 title: "Understanding the Internet"
 date: 2018-10-17
-authors: [vonng]
+authors: [yongjie]
 summary: "The world trends flow mightily. Those who follow prosper; those who resist perish. This article discusses the essence of the internet, the world under internet rule, the transfer of power, and future impacts."
 tags: [Essay]
 ---

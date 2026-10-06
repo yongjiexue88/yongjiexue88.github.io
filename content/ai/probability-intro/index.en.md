@@ -1,7 +1,7 @@
 ---
 title: "Basic Concepts of Probability Theory"
 date: 2017-03-27
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Basic knowledge notes on probability theory: axiomatic foundations, probability calculus, counting, conditional probability, random variables and distribution functions
 ai: true

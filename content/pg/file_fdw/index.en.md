@@ -2,13 +2,13 @@
 title: "The Versatile file_fdw — Reading System Information from Your Database"
 linkTitle: "FileFDW Use Case: Reading OS Info"
 date: 2017-12-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   With file_fdw, you can easily view operating system information, fetch network data, and feed various data sources into your database for unified viewing and management.
 tags: [PostgreSQL, PG Admin, Extension]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com/en/)
+> Author: [Yongjie Xue](https://www.yongjiexue.io/)
 
 PostgreSQL is the most advanced open-source database, and one of its killer features is FDW: Foreign Data Wrapper. Through FDW, users can access various external data sources from Postgres in a unified manner. `file_fdw` is one of the two FDWs that come bundled with the database. With the update to PostgreSQL 10, `file_fdw` has gained an awesome new capability: reading from program output.
 
@@ -41,17 +41,17 @@ The most typical and commonly used external data format is CSV. However, the out
 ```bash
 >>> ps ux
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-vonng     2658  0.0  0.2 148428  2620 ?        S    11:51   0:00 sshd: vonng@pts/0,pts/2
-vonng     2659  0.0  0.2 115648  2312 pts/0    Ss+  11:51   0:00 -bash
-vonng     4854  0.0  0.2 115648  2272 pts/2    Ss   15:46   0:00 -bash
-vonng     5176  0.0  0.1 150940  1828 pts/2    R+   16:06   0:00 ps -ux
-vonng    26460  0.0  1.2 271808 13060 ?        S    Oct26   0:22 /usr/local/pgsql/bin/postgres
-vonng    26462  0.0  0.2 271960  2640 ?        Ss   Oct26   0:00 postgres: checkpointer process
-vonng    26463  0.0  0.2 271808  2148 ?        Ss   Oct26   0:25 postgres: writer process
-vonng    26464  0.0  0.5 271808  5300 ?        Ss   Oct26   0:27 postgres: wal writer process
-vonng    26465  0.0  0.2 272216  2096 ?        Ss   Oct26   0:31 postgres: autovacuum launcher process
-vonng    26466  0.0  0.1 126896  1104 ?        Ss   Oct26   0:54 postgres: stats collector process
-vonng    26467  0.0  0.1 272100  1588 ?        Ss   Oct26   0:01 postgres: bgworker: logical replication launcher
+yongjiexue     2658  0.0  0.2 148428  2620 ?        S    11:51   0:00 sshd: yongjiexue@pts/0,pts/2
+yongjiexue     2659  0.0  0.2 115648  2312 pts/0    Ss+  11:51   0:00 -bash
+yongjiexue     4854  0.0  0.2 115648  2272 pts/2    Ss   15:46   0:00 -bash
+yongjiexue     5176  0.0  0.1 150940  1828 pts/2    R+   16:06   0:00 ps -ux
+yongjiexue    26460  0.0  1.2 271808 13060 ?        S    Oct26   0:22 /usr/local/pgsql/bin/postgres
+yongjiexue    26462  0.0  0.2 271960  2640 ?        Ss   Oct26   0:00 postgres: checkpointer process
+yongjiexue    26463  0.0  0.2 271808  2148 ?        Ss   Oct26   0:25 postgres: writer process
+yongjiexue    26464  0.0  0.5 271808  5300 ?        Ss   Oct26   0:27 postgres: wal writer process
+yongjiexue    26465  0.0  0.2 272216  2096 ?        Ss   Oct26   0:31 postgres: autovacuum launcher process
+yongjiexue    26466  0.0  0.1 126896  1104 ?        Ss   Oct26   0:54 postgres: stats collector process
+yongjiexue    26467  0.0  0.1 272100  1588 ?        Ss   Oct26   0:01 postgres: bgworker: logical replication launcher
 
 ```
 

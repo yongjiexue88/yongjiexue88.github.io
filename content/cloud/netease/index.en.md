@@ -1,7 +1,7 @@
 ---
 title: What Can We Learn from NetEase Cloud Music's Outage?
 date: 2024-08-18
-authors: [vonng]
+authors: [yongjie]
 summary: >
   NetEase Cloud Music experienced a two-and-a-half-hour outage this afternoon. Based on circulating online clues, we can deduce that the real cause behind this incident was...
 tags: [Incident]

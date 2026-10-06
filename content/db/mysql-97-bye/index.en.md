@@ -1,7 +1,7 @@
 ---
 title: "MySQL 9.7: Same Old Leftovers, Reheated"
 date: 2026-04-21
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MySQL 9.7 is the first LTS release in the 9.x line. Its vector support is still all show, its years-late optimizer is disabled by default,
   and three years of Innovation Releases have produced remarkably little.

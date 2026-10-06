@@ -1,7 +1,7 @@
 ---
 title: "CDC Change Data Capture Mechanisms"
 date: 2019-06-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Change Data Capture is an interesting ETL alternative solution.
 tags: [PostgreSQL, PG Development]
@@ -329,11 +329,11 @@ $ psql 'postgres://localhost:5432/postgres?replication=on&application_name=mocke
 From the system view `pg_stat_replication`, you can see the master database has identified a new "replica":
 
 ```
-vonng=# table pg_stat_replication ;
+yongjiexue=# table pg_stat_replication ;
 -[ RECORD 1 ]----+-----------------------------
 pid              | 7218
 usesysid         | 10
-usename          | vonng
+usename          | yongjiexue
 application_name | mocker
 client_addr      | ::1
 client_hostname  |
@@ -513,7 +513,7 @@ postgres=# table pg_stat_replication; -- View current replicas
 -[ RECORD 1 ]----+------------------------------
 pid              | 14082
 usesysid         | 10
-usename          | vonng
+usename          | yongjiexue
 application_name | cdc
 client_addr      | 10.1.1.95
 client_hostname  |

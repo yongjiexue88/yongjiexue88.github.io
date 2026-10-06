@@ -2,7 +2,7 @@
 title: "PGConf.Dev 2026 Opens Today in Vancouver"
 linkTitle: "PGConf.Dev 2026 Opens"
 date: 2026-05-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PGConf.Dev 2026 opens in Vancouver as the PostgreSQL project marks its 30th anniversary. I will also be speaking on Extensions for Everyone.
 tags: [PostgreSQL, PG Ecosystem]

@@ -1,7 +1,7 @@
 ---
 title: "Dify 被重复骑脸羞辱：我太难了！"
 date: 2025-03-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   丽珠医药的换 Logo PR 从天而降。被 DeepSeek 一体机厂商白嫖还没完，又有人飞龙骑脸开大羞辱，Dify 真的太难了！
 tags: [AI, 开源, 技术评论]

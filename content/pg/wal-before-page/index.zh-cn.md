@@ -1,7 +1,7 @@
 ---
 title: "PG先写脏页还是先写WAL？"
 date: 2023-09-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL 在内存中先写脏数据页再写 WAL记录。在刷盘时先刷 WAL 记录再刷脏数据页。
 tags: [PostgreSQL, PG内核]

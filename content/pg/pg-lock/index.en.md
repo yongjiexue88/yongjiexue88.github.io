@@ -1,7 +1,7 @@
 ---
 title: Locks in PostgreSQL
 date: 2019-06-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Snapshot isolation does most of the heavy lifting in PG, but locks still matter. Here’s a practical guide to table locks, row locks, intention locks, and pg_locks.
 tags: [PostgreSQL, PG Development, PG Admin]

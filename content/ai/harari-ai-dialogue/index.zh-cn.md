@@ -1,7 +1,7 @@
 ---
 title: "关于AI与人类的坦诚对话"
 date: 2026-02-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   时间： 2026年1月20日 地点： 瑞士达沃斯，世界经济论坛年会 原文链接： WEF官方页面<sup[1]</sup | 完整英文文字稿<sup[2] </sup
 tags: [AI, 社会观察, 翻译]

@@ -2,7 +2,7 @@
 title: Redis Going Non-Open-Source is a Disgrace to "Open-Source" and Public Cloud
 linkTitle: Redis Non-Open-Source is a Disgrace
 date: 2024-03-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Redis "going non-open source" is not a disgrace to Redis, but a disgrace to "open source/OSI" and even more so to public cloud. What truly matters has always been software freedom, while open source is just one means to achieve software freedom.
 tags: [Redis, Cloud, Database, Open Source]

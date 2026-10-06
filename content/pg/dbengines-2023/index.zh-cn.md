@@ -1,7 +1,7 @@
 ---
 title: "2023年度数据库：PostgreSQL (DB-Engine)"
 date: 2024-01-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   2024-01-02，DB-Engine 评选出了 2023 年度数据库 —— PostgreSQL。
 tags: [PostgreSQL, PG生态]

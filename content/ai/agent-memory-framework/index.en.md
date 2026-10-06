@@ -1,7 +1,7 @@
 ---
 title: "The Three-Way Endgame: Why Agent Memory Frameworks Are a Dead End"
 date: 2026-04-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A cold shower for the red-hot agent memory market—not because agents do not need memory, but because memory is the endgame moat. That moat belongs to models, harnesses, and databases, not today's "memory frameworks."
 tags: [AI, Agent, PostgreSQL, Database]

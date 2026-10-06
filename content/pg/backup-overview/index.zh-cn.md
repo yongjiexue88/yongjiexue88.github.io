@@ -1,7 +1,7 @@
 ---
 title: "备份恢复手段概览"
 date: 2018-02-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   备份是DBA的安身立命之本，有备份，就不用慌。
 tags: [PostgreSQL, PG管理, 备份]
@@ -298,10 +298,10 @@ psql postgres -c 'SELECT pg_switch_wal();'
 数据库因为故障异常关闭，重启之后，会从最近的检查点，也就是 `0/2FB0160` 开始重放WAL。
 
 ```bash
-[17:03:37] vonng@vonng-mac /var/lib/pgsql
+[17:03:37] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $  ps axu | grep postgres | grep data | awk '{print $2}' | xargs kill -9
 
-[17:06:31] vonng@vonng-mac /var/lib/pgsql
+[17:06:31] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $ pg_ctl -D /var/lib/pgsql/data start
 pg_ctl: another server might be running; trying to start server anyway
 waiting for server to start....2018-01-25 17:07:27.063 CST [9762] LOG:  listening on IPv6 address "::1", port 5432
@@ -415,7 +415,7 @@ cp: /var/lib/pgsql/wal/00000001.history: No such file or directory
 但是使用WAL归档的方式来恢复也有问题，例如查询主库与备库最新的数据记录，发现时间戳差了一秒。也就是说，主库还没有写完的WAL并没有被归档，因此也没有应用。
 
 ```bash
-[17:37:22] vonng@vonng-mac /var/lib/pgsql
+[17:37:22] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $ psql postgres -c 'SELECT max(ts) FROM foobar;'
             max
 ----------------------------
@@ -423,7 +423,7 @@ $ psql postgres -c 'SELECT max(ts) FROM foobar;'
 (1 row)
 
 
-[17:37:42] vonng@vonng-mac /var/lib/pgsql
+[17:37:42] yongjiexue@yongjiexue-mac /var/lib/pgsql
 $ psql postgres -p 5433 -c 'SELECT max(ts) FROM foobar;'
             max
 ----------------------------
@@ -458,7 +458,7 @@ $ psql postgres -c 'SELECT now();'
 (1 row)
 
 
-[18:51:20] vonng@vonng-mac ~
+[18:51:20] yongjiexue@yongjiexue-mac ~
 $ pg_basebackup -Fp -Pv -Xs -c fast -D /var/lib/pgsql/bkup
 pg_basebackup: initiating base backup, waiting for checkpoint to complete
 pg_basebackup: checkpoint completed
@@ -536,18 +536,18 @@ done
 ```bash
 $ ls -alh wal
 total 262160
-drwxr-xr-x  12 vonng  wheel   384B Jan 25 18:59 .
-drwxr-xr-x   6 vonng  wheel   192B Jan 25 18:51 ..
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000001
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000002
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000003
--rw-------   1 vonng  wheel   302B Jan 25 18:51 000000010000000000000003.00000028.backup
--rw-------   1 vonng  wheel    16M Jan 25 18:51 000000010000000000000004
--rw-------   1 vonng  wheel    16M Jan 25 18:52 000000010000000000000005
--rw-------   1 vonng  wheel    16M Jan 25 18:52 000000010000000000000006
--rw-------   1 vonng  wheel    50B Jan 25 18:56 00000002.history
--rw-------   1 vonng  wheel    16M Jan 25 18:58 000000020000000000000006
--rw-------   1 vonng  wheel    16M Jan 25 18:59 000000020000000000000007
+drwxr-xr-x  12 yongjiexue  wheel   384B Jan 25 18:59 .
+drwxr-xr-x   6 yongjiexue  wheel   192B Jan 25 18:51 ..
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000001
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000002
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000003
+-rw-------   1 yongjiexue  wheel   302B Jan 25 18:51 000000010000000000000003.00000028.backup
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:51 000000010000000000000004
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:52 000000010000000000000005
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:52 000000010000000000000006
+-rw-------   1 yongjiexue  wheel    50B Jan 25 18:56 00000002.history
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:58 000000020000000000000006
+-rw-------   1 yongjiexue  wheel    16M Jan 25 18:59 000000020000000000000007
 ```
 
 假设完成恢复之后又反悔了，则可以用基础备份通过指定 `recovery_target_timeline = '1'` 再次恢复回第一次运行到18:53 时的状态。
@@ -615,7 +615,7 @@ pg_ctl -D /var/lib/pgsql/slave -o "-p 5433" start
 
 ```ini
 standby_mode = 'on'
-primary_conninfo = 'user=replication passfile=''/Users/vonng/.pgpass'' host=localhost port=5432 sslmode=prefer sslcompression=1 krbsrvname=postgres target_session_attrs=any'
+primary_conninfo = 'user=replication passfile=''/Users/yongjiexue/.pgpass'' host=localhost port=5432 sslmode=prefer sslcompression=1 krbsrvname=postgres target_session_attrs=any'
 ```
 
 `standby_mode` 指明是否将PostgreSQL作为从库启动。

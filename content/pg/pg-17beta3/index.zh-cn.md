@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL小版本更新，17beta3，12将EOL"
 date: 2024-08-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL全球开发组发布了例行小版本更新，包括16.4、15.8、14.13、13.16， 12.20 以及 17 beta3，此外，PG 12 即将 EOL。
 tags: [PostgreSQL, PG管理]

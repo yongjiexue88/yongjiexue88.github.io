@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL监控系统概览"
 date: 2018-12-17
-authors: [vonng]
+authors: [yongjie]
 summary: >
   监控系统是几乎所有运维工作的基础，更亦是驾驭数据库的必备工具，本文简单介绍了一个PostgreSQL的监控系统。
 tags: [PostgreSQL, 监控, PG管理]

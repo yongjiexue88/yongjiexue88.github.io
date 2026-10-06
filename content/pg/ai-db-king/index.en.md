@@ -2,7 +2,7 @@
 title: Why PostgreSQL Will Dominate the AI Era
 linkTitle: "Why PostgreSQL Will Dominate the AI Era"
 date: 2025-12-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Context window economics, the polyglot persistence problem, and the triumph of zero-glue architecture make PostgreSQL the database king of the AI era.
 tags: [PostgreSQL, AI, Database]

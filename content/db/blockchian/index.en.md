@@ -1,7 +1,7 @@
 ---
 title: Blockchain and Distributed Databases
 date: 2018-06-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The technical essence, functionality, and evolution of blockchain is distributed databases. Specifically, it's a Byzantine Fault Tolerant (resistant to malicious node attacks) distributed (leaderless replication) database.
 tags: [Database, Distributed Systems]

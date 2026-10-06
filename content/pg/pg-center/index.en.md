@@ -1,7 +1,7 @@
 ---
 title: "pg.center: A Chinese Mirror of the PostgreSQL Website"
 date: 2026-03-26
-authors: [vonng]
+authors: [yongjie]
 build:
   render: never
   list: never

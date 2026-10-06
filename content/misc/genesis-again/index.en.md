@@ -1,7 +1,7 @@
 ---
 title: "Genesis 2.0"
 date: 2026-03-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   I asked Claude to write a short semi-realistic, semi-mythic story about mind uploading, orbital ascension, and the rebirth of gods. I suspect the premise is less absurd than it sounds.
 tags: [AI, Claude, Business]

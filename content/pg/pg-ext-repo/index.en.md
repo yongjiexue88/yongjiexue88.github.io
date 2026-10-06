@@ -1,7 +1,7 @@
 ---
 title: The Ideal Way to Deliver PostgreSQL Extensions
 date: 2024-11-02
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL is eating the database world through extensibility. This post introduces the Pigsty extension repository, which packaged 390 PostgreSQL extensions at launch and keeps growing through the Pigsty extension catalog.
 tags: [PostgreSQL, PG Ecosystem, Extension]

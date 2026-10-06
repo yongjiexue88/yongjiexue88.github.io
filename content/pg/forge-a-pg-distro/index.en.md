@@ -1,7 +1,7 @@
 ---
 title: Forging a China-Rooted, Global PostgreSQL Distro
 date: 2025-11-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL already won. The real battle is the distro layer. Will Chinese developers watch from the sideline or craft a PG “Ubuntu” for the world?
 tags: [PostgreSQL, Pigsty]

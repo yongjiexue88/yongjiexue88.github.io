@@ -1,7 +1,7 @@
 ---
 title: "PgBackRest2 Documentation"
 date: 2018-02-07
-authors: [vonng]
+authors: [yongjie]
 summary: "PgBackRest is a set of PostgreSQL backup tools written in Perl"
 tags: [PostgreSQL, PG Admin, Backup]
 ---
@@ -288,10 +288,10 @@ sudo find /Library/Perl/5.18/pgBackRest -type d -exec chmod 755 {} +
 sudo cp ~/Downloads/pgbackrest-release-1.27/bin/pgbackrest /usr/local/bin/
 sudo chmod 755 /usr/local/bin/pgbackrest
 
-# Make log dir & conf file. maybe you will change vonng to postgres
+# Make log dir & conf file. maybe you will change yongjiexue to postgres
 sudo mkdir -m 770 /var/log/pgbackrest && sudo touch /etc/pgbackrest.conf
 sudo chmod 640 /etc/pgbackrest.conf
-sudo chown vonng /etc/pgbackrest.conf /var/log/pgbackrest
+sudo chown yongjiexue /etc/pgbackrest.conf /var/log/pgbackrest
 
 # Uninstall
 # sudo rm -rf /usr/local/bin/pgbackrest /Library/Perl/5.18/pgBackRest /var/log/pgbackrest /etc/pgbackrest.conf

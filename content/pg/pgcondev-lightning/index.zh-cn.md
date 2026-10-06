@@ -1,7 +1,7 @@
 ---
 title: "PGCon.dev闪电演讲，硬控PG大佬5分钟"
 date: 2025-05-16
-authors: [vonng]
+authors: [yongjie]
 summary: >
   老冯运气不错，抽中了一个 “闪电演讲” 名额，把全球 PostgreSQL 顶尖专家摇来五分钟听俺叭叭，也不是件容易的事儿呀。
 tags: [PostgreSQL, PG生态, 随笔]

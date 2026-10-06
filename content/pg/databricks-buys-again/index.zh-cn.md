@@ -1,7 +1,7 @@
 ---
 title: "月饼好吃：又一家PG扩展公司被Databricks收购"
 date: 2025-10-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   月饼实验室被数据砖收购，老冯解读又一场PG公司收购案。
 tags: [PostgreSQL, 扩展, 商业]

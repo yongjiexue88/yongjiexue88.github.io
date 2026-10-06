@@ -1,7 +1,7 @@
 ---
 title: "Tag Classification Theory"
 date: 2016-11-03
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Recently, I needed to design a tag management system for a business. During the process of organizing existing tags, I developed this theoretical framework.
 tags: [Essay]

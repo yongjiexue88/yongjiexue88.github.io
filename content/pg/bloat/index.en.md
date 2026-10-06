@@ -2,13 +2,13 @@
 title: "Relation Bloat Monitoring and Management"
 linkTitle: "Relation Bloat Monitoring and Management"
 date: 2018-10-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL uses MVCC as its primary concurrency control technology. While it has many benefits, it also brings other effects, such as relation bloat.
 tags: [PostgreSQL, PG Admin]
 ---
 
-> Author: [Yongjie Xue](https://vonng.com) ([@yongjiexue88](https://vonng.com/en/))
+> Author: [Yongjie Xue](https://www.yongjiexue.io/) ([@yongjiexue88](https://github.com/yongjiexue88))
 
 PostgreSQL uses MVCC as its primary concurrency control technology. While it has many benefits, it also brings other effects, such as relation bloat. Relation bloat (table and index) negatively impacts database performance and wastes disk space. To keep PostgreSQL always at optimal performance, it's necessary to perform timely garbage collection on bloated relations and regularly rebuild excessively bloated relations.
 
@@ -55,7 +55,7 @@ Getting relation size is relatively simple and can be obtained directly from sys
 PostgreSQL comes with the `pgstattuple` module, which can be used to precisely calculate table bloat rates. For example, the `tuple_percent` field here is the percentage of actual tuple bytes to total relation size. Subtracting this value from 1 gives the bloat rate.
 
 ```sql
-vonng@[local]:5432/bench# select *,
+yongjiexue@[local]:5432/bench# select *,
                           1.0 - tuple_len::numeric / table_len as bloat 
                           from pgstattuple('pgbench_accounts');
 ┌─[ RECORD 1 ]───────┬────────────────────────┐

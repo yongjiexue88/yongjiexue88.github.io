@@ -1,7 +1,7 @@
 ---
 title: "DuckDB 开发者大会四连击：扩展，加密，存储过程，边缘分析"
 date: 2026-02-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   四个有趣的议题，以及老冯的点评。
 tags: [OLAP, 扩展, 随笔]

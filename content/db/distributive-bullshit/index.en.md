@@ -1,7 +1,7 @@
 ---
 title: "NewSQL: Distributive Nonsens"
 date: 2023-05-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   As hardware technology advances, the capacity and performance of standalone databases have reached unprecedented heights. which makes distributed (TP) databases appear utterly powerless, much like the "data middle platform," donning the emperor's new clothes in a state of self-deception.  
 tags: [Database, Distributed Systems, Commentary]

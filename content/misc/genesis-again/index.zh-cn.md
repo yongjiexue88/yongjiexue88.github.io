@@ -1,7 +1,7 @@
 ---
 title: "创世纪 2.0"
 date: 2026-03-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   让 Claude 写了个关于意识上传与飞升的小故事，我觉得在有生之年说不定可以看到。
 tags: [AI, Claude, 商业]

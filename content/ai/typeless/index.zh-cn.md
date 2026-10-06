@@ -1,7 +1,7 @@
 ---
 title: "Vibe神器Typeless：告别打字的语义输入法"
 date: 2026-01-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   君子动口不动手，Vibe Coding 神器出现了，动嘴语音输入的效果竟然能如此丝滑流畅。还能白用一个月，不要错过。
 tags: [AI, 工具]

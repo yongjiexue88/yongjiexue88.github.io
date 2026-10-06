@@ -1,7 +1,7 @@
 ---
 title: "机场出租车恶性循环与国产数据库怪圈"
 date: 2024-07-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   出租车恶劣的服务态度让它们在机场堆积排队，形成恶性循环，国产数据库也一样。
 tags: [国产数据库, 技术评论]

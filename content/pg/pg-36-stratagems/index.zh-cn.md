@@ -1,7 +1,7 @@
 ---
 title: "新坑：PostgreSQL 36计"
 date: 2025-08-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PG36计，一套关于 PostgreSQL 应用开发与运维管理的教程，手把手带来PG生产最佳实践。
 tags: [PostgreSQL, 文档, PG管理]

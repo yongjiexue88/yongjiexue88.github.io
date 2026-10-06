@@ -2,7 +2,7 @@
 title: "故障档案：序列号消耗过快导致整型溢出"
 linkTitle: "故障档案：序列号溢出"
 date: 2018-07-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   如果您在表上用了Interger的序列号，最好还是考虑一下可能溢出的情况。
 tags: [PostgreSQL, PG管理, 故障复盘]
@@ -63,31 +63,31 @@ INSERT INTO sample(name, value) VALUES(?,?)
 当然，实际上由于 `name` 列上的约束，如果插入了重复的 `name` 字段，事务就会报错中止并回滚。然而序列号已经被消耗掉了，即使事务回滚了，序列号也不会回滚。
 
 ```bash
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',1);
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',1);
 INSERT 0 1
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        1
 (1 row)
 
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',1);
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',1);
 ERROR:  duplicate key value violates unique constraint "sample_name_key"
 DETAIL:  Key (name)=(Alice) already exists.
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        2
 (1 row)
 
-vonng=# BEGIN;
+yongjiexue=# BEGIN;
 BEGIN
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',1);
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',1);
 ERROR:  duplicate key value violates unique constraint "sample_name_key"
 DETAIL:  Key (name)=(Alice) already exists.
-vonng=# ROLLBACK;
+yongjiexue=# ROLLBACK;
 ROLLBACK
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        3
@@ -98,17 +98,17 @@ vonng=# SELECT currval('sample_id_seq'::RegClass);
 另一个需要注意的点在于，UPSERT操作也会消耗序列号！从表现上来看，这就意味着即使实际操作是UPDATE而不是INSERT，也会消耗一个序列号。
 
 ```sql
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',3) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',3) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
 INSERT 0 1
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        4
 (1 row)
 
-vonng=# INSERT INTO sample(name, value) VALUES('Alice',4) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
+yongjiexue=# INSERT INTO sample(name, value) VALUES('Alice',4) ON CONFLICT(name) DO UPDATE SET value = EXCLUDED.value;
 INSERT 0 1
-vonng=# SELECT currval('sample_id_seq'::RegClass);
+yongjiexue=# SELECT currval('sample_id_seq'::RegClass);
  currval
 ---------
        5

@@ -1,7 +1,7 @@
 ---
 title: "这么吹国产数据库，听的尴尬癌都要犯了"
 date: 2024-11-18
-authors: [vonng]
+authors: [yongjie]
 summary: >
   国产数据库核心核心科技“有界计算”科研成果竟然是……给数据库加条件索引。
 tags: [国产数据库, 技术评论]

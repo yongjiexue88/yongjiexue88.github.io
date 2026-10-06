@@ -1,7 +1,7 @@
 ---
 title: "AWS 故障官方复盘报告"
 date: 2025-10-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AWS DynamoDB 故障的官方复盘来了，老冯带您一起看看，到底是什么故障带崩了半个互联网。
 tags: [下云, AWS, 故障复盘]

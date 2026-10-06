@@ -1,7 +1,7 @@
 ---
 title: "Using sysbench to Test PostgreSQL Performance"
 date: 2018-02-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Although PostgreSQL provides pgbench, sometimes you need sysbench to outperform MySQL.
 tags: [PostgreSQL, PG Admin, Performance]
@@ -65,7 +65,7 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua \
 	--db-driver=pgsql \
 	--pgsql-host=127.0.0.1 \
 	--pgsql-port=5432 \
-	--pgsql-user=vonng \
+	--pgsql-user=yongjiexue \
 	--pgsql-db=bench \
 	--table_size=100000 \
 	--tables=3 \
@@ -95,7 +95,7 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua \
 	--db-driver=pgsql \
 	--pgsql-host=127.0.0.1 \
 	--pgsql-port=5432 \
-	--pgsql-user=vonng \
+	--pgsql-user=yongjiexue \
 	--pgsql-db=bench \
 	--table_size=100000 \
     --tables=3 \

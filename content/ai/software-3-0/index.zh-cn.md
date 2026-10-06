@@ -1,7 +1,7 @@
 ---
 title: "软件3.0时代，AI带来的范式转移"
 date: 2025-06-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   OpenAI 创始成员Andrej介绍AI时代的软件范式转变，软件3.0时代有什么机会与挑战？不要错过这篇极富洞见的演讲。
 tags: [AI, 软件工程, 翻译]

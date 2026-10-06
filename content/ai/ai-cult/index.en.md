@@ -1,7 +1,7 @@
 ---
 title: AI Cult Rhapsody
 date: 2023-04-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A tongue-in-cheek vision of an AI-worshipping religion: scriptures, sects, philosopher-king machines, and the Book of AGI.
 ai: true

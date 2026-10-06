@@ -2,7 +2,7 @@
 title: "故障档案：pg_dump导致的连接池污染"
 linkTitle: "故障档案：连接池污染"
 date: 2018-12-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   有时候，组件之间的相互作用会以微妙的形式表现出来。例如使用pg_dump从连接池中导出数据，就可能产生连接池污染的问题。
 tags: [PostgreSQL, PG管理, 故障复盘]
@@ -111,14 +111,14 @@ PQclear(ExecuteSqlQueryForSingleRow(AH, ALWAYS_SECURE_SEARCH_PATH_SQL));
 postgres = host=127.0.0.1
 
 [pgbouncer]
-logfile = /Users/vonng/pgb/pgbouncer.log
-pidfile = /Users/vonng/pgb/pgbouncer.pid
+logfile = /Users/yongjiexue/pgb/pgbouncer.log
+pidfile = /Users/yongjiexue/pgb/pgbouncer.pid
 listen_addr = *
 listen_port = 6432
 auth_type = trust
 admin_users = postgres
 stats_users = stats, postgres
-auth_file = /Users/vonng/pgb/userlist.txt
+auth_file = /Users/yongjiexue/pgb/userlist.txt
 pool_mode = transaction
 server_reset_query =
 max_client_conn = 50000
@@ -137,7 +137,7 @@ ignore_startup_parameters = extra_float_digits
 启动连接池，检查 `search_path`，正常的默认配置。
 
 ```bash
-$ psql postgres://vonng:123456@:6432/data -c 'show search_path;'
+$ psql postgres://yongjiexue:123456@:6432/data -c 'show search_path;'
      search_path
 -----------------------
  app, "$user", public
@@ -147,7 +147,7 @@ $ psql postgres://vonng:123456@:6432/data -c 'show search_path;'
 
 ```bash
 /usr/local/Cellar/postgresql/10.5/bin/pg_dump \
-	postgres://vonng:123456@:6432/data \
+	postgres://yongjiexue:123456@:6432/data \
 	-t geo.pois -f /dev/null
 pg_dump: server version: 11.1; pg_dump version: 10.5
 pg_dump: aborting because of server version mismatch
@@ -156,7 +156,7 @@ pg_dump: aborting because of server version mismatch
 虽然Dump失败，但再次检查所有连接的 `search_path` 时，就会发现池里的连接已经被污染了，一条连接的 `search_path` 已经被修改为空
 
 ```bash
-$ psql postgres://vonng:123456@:6432/data -c 'show search_path;'
+$ psql postgres://yongjiexue:123456@:6432/data -c 'show search_path;'
  search_path
 -------------
 

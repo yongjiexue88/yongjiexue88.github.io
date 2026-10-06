@@ -1,7 +1,7 @@
 ---
 title: "阿里云盘灾难级BUG：能看别人照片？"
 date: 2024-09-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   网传阿里云盘灾难级BUG可以看到其他用户云盘图片。
 tags: [云计算, 阿里云, 安全]

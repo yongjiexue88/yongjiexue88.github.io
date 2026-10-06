@@ -1,7 +1,7 @@
 ---
 title: "紧急福利：GPT Astra 发布，重置卡大放送"
 date: 2026-09-04
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Astra 发布初期，Tibo 宣布向尚未获得访问权限的付费用户每天补一张重置卡。老冯准备囤好 Reset，等 Astra 到手就开蹬。
 tags: [AI, Codex]

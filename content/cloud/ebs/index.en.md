@@ -1,7 +1,7 @@
 ---
 title: "EBS: Pig Slaughter Scam"
 date: 2023-03-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The real business model of cloud: "Cheap" EC2/S3 to attract customers, and fleece with "Expensive" EBS/RDS.
 categories: [Cloud]

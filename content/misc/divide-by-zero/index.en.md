@@ -1,7 +1,7 @@
 ---
 title: "Starting from /0: Understanding Errors and Exceptions"
 date: 2016-11-09
-authors: [vonng]
+authors: [yongjie]
 summary: What happens when you divide by 0 in a computer? The answer isn't fixed - it can differ across different operating systems, programming languages, and even different compilers.
 tags: [Essay]
 ---

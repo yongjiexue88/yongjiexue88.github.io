@@ -1,7 +1,7 @@
 ---
 title: "腾讯眼中的《非法加冯》公众号 @ 2023"
 date: 2024-01-23
-authors: [vonng]
+authors: [yongjie]
 summary: >
   本号的年度关键数据总结，也顺便分享一些搞公众号的感想。
 tags: [随笔]

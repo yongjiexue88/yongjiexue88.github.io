@@ -1,7 +1,7 @@
 ---
 title: "New PostgreSQL Ecosystem Player: ParadeDB"
 date: 2024-02-18
-authors: [vonng]
+authors: [yongjie]
 summary: >
   ParadeDB aims to be an Elasticsearch alternative: "Modern Elasticsearch Alternative built on Postgres" — PostgreSQL for search and analytics.
 tags: [PostgreSQL, PG Ecosystem, Extension]

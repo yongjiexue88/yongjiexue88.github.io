@@ -1,7 +1,7 @@
 ---
 title: Cloudflare - The Cyber Buddha That Destroys Public Cloud
 date: 2024-04-03
-authors: [vonng]
+authors: [yongjie]
 summary: |
   While I've always advocated for cloud exit, if it's about adopting a cyber bodhisattva cloud like Cloudflare, I'm all in with both hands raised.
 tags: [Cloud-Exit, Cloudflare]

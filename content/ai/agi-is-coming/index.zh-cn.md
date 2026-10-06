@@ -1,7 +1,7 @@
 ---
 title: "AGI 已经来了，但你有船票吗？"
 date: 2026-04-09
-authors: [vonng]
+authors: [yongjie]
 summary: >
   当最强的AI不是买不起，而是没资格买——世界线正在向数字封建主义收束。而行动的窗口正在收窄。
 tags: [AI, Claude]

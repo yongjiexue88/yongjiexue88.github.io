@@ -1,7 +1,7 @@
 ---
 title: "Go数据库教程：database/sql"
 date: 2017-08-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   同JDBC类似，Go也有标准的数据库访问接口。本文详细介绍了Go语言中database/sql的使用方法和注意事项。
 tags: [PostgreSQL, 软件工程]

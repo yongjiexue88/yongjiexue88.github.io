@@ -1,7 +1,7 @@
 ---
 title: "如何办外卡买 GPT/Claude"
 date: 2026-01-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   国内用户方便、安全、低成本订阅 ChatGPT ，Claude 等海外服务的新路子：Visa 卡正式支持绑定 Apple Pay！
 tags: [AI, 工具]

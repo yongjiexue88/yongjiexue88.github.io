@@ -1,7 +1,7 @@
 ---
 title: "Extensions for Everyone"
 date: 2026-05-20
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A field report on the PostgreSQL extension ecosystem: 1,617 discovered projects, 511 deliverable extensions, and the shared delivery layer needed to make extensibility work for users, authors, vendors, and PostgreSQL hackers.
 tags: [PostgreSQL, PG Ecosystem, Extension]

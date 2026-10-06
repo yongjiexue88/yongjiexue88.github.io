@@ -1,7 +1,7 @@
 ---
 title: "Fully Loaded M5 Max: What Does a RMB 58,200 Laptop Look Like?"
 date: 2026-03-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Apple opened preorders for the M5 Max and I immediately maxed one out at RMB 58,200. This is less a consumer electronics post than a look at what an AI-era personal workstation is becoming.
 tags: [AI, Hardware]

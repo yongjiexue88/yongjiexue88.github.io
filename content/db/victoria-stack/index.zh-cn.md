@@ -2,7 +2,7 @@
 title: "Victoria：吊打业界的可观测性全家桶来了"
 linkTitle: "Victoria可观测性全家桶来了"
 date: 2025-12-17
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Victoria是朴实无华的强悍— — 用几分之一的资源，实现Prometheus + Loki几倍的效果。Pigsty v4.0将全面采用Victoria全家桶。
 tags: [监控]

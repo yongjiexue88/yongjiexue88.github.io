@@ -1,7 +1,7 @@
 ---
 title: "The PostgreSQL 'Supply Cut' and Trust Issues in Software Supply Chain"
 date: 2025-08-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PostgreSQL official repos cut off global mirror sync channels, open-source binaries supply disrupted, revealing the true colors of various database and cloud vendors.
 tags: [PostgreSQL, PG Admin]

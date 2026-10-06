@@ -1,7 +1,7 @@
 ---
 title: "CDC 变更数据捕获机理"
 date: 2019-06-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   数据变更捕获是一种很有趣的ETL替代方案，以流式的方式持续收集状态变化事件。
 tags: [PostgreSQL, PG开发]
@@ -327,11 +327,11 @@ $ psql 'postgres://localhost:5432/postgres?replication=on&application_name=mocke
 从系统视图 `pg_stat_replication` 可以看到主库识别到了一个新的"从库"
 
 ```
-vonng=# table pg_stat_replication ;
+yongjiexue=# table pg_stat_replication ;
 -[ RECORD 1 ]----+-----------------------------
 pid              | 7218
 usesysid         | 10
-usename          | vonng
+usename          | yongjiexue
 application_name | mocker
 client_addr      | ::1
 client_hostname  |
@@ -511,7 +511,7 @@ postgres=# table pg_stat_replication; -- 查看当前从库
 -[ RECORD 1 ]----+------------------------------
 pid              | 14082
 usesysid         | 10
-usename          | vonng
+usename          | yongjiexue
 application_name | cdc
 client_addr      | 10.1.1.95
 client_hostname  |

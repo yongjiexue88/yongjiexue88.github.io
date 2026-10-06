@@ -1,7 +1,7 @@
 ---
 title: "Those Who Left the Cloud Made a Killing"
 date: 2026-08-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   I spent years urging people to leave the cloud. Those who listened two years ago made a killing. Leaving has never been just about savings; it is about buying back your freedom. Cost curves move. Sovereignty does not.
 tags: [Cloud-Exit, Cloud, Data Sovereignty]

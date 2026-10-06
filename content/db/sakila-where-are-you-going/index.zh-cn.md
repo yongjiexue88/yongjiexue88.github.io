@@ -10,7 +10,7 @@ series: ["MySQL走好"]
 tags: [MySQL, 数据库, 性能, 技术评论]
 ---
 
-> 作者： [Marco Tusa](https://www.percona.com/blog/author/tusa) | 译：[薛永杰](https://vonng.com)（[@yongjiexue88](https://vonng.com/en/)） | [微信原文](https://mp.weixin.qq.com/s/nKD00j84R-EcOU1VPL1ibA) | [Percona's Blog](https://www.percona.com/blog/sakila-where-are-you-going/)
+> 作者： [Marco Tusa](https://www.percona.com/blog/author/tusa) | 译：[薛永杰](https://www.yongjiexue.io/)（[@yongjiexue88](https://github.com/yongjiexue88)） | [微信原文](https://mp.weixin.qq.com/s/nKD00j84R-EcOU1VPL1ibA) | [Percona's Blog](https://www.percona.com/blog/sakila-where-are-you-going/)
 
 在 Percona，我们时刻关注用户的需求，并尽力满足他们。我们特别监控了 MySQL 版本的分布和使用情况，发现了一个引人注目的趋势：从版本 5.7 迁移到 8.x 的步伐明显缓慢。更准确地说，许多用户仍需坚持使用 5.7 版本。
 

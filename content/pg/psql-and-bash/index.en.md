@@ -1,7 +1,7 @@
 ---
 title: "Bash and psql Tips"
 date: 2018-04-07
-authors: [vonng]
+authors: [yongjie]
 build:
   render: never
   list: never

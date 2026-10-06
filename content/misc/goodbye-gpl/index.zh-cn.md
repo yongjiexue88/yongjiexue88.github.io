@@ -1,7 +1,7 @@
 ---
 title: "是时候和GPL说再见了【译】"
 date: 2021-09-16
-authors: [vonng]
+authors: [yongjie]
 summary: >
   本文提出，在2020年，计算自由的敌人是云软件，并倡导本地优先软件的概念。
 tags: [随笔]

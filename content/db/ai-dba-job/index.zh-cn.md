@@ -1,7 +1,7 @@
 ---
 title: "AI时代的数据库与DBA将何去何从"
 date: 2025-06-30
-authors: [vonng]
+authors: [yongjie]
 summary: >
   OLTP与OLAP谁先被AI革命？一体化还是专业化，如何选型？AI时代的DBA该何去何从？来自 HOW 2025 大会圆桌讨论的观点整理：OLAP岗位正被NL2SQL替代，而DBA因语料稀缺暂时安全。
 tags: [AI, 数据库, PG管理, 职业]
@@ -19,7 +19,7 @@ aliases: ["/ai/ai-dba-job/"]
 
 与此同时，Claude Code 正在以惊人的水平替代着中低级程序员，写 SQL 的数据分析师与数据研发作为一种 Coding 工种，也落在替代光谱中。我们可以看到各种各样的 “智能分析” / 表格，数据库 MCP，Text2SQL / NL 2SQL 的方案到处冒泡。
 
-![vonng1.webp](vonng1.webp)
+![yongjie-xue1.webp](yongjie-xue1.webp)
 
 然而不同于 Github 上到处都是语料的编程数据样本，运维/数据库管理经验的公开数据积累是非常少的。SRE，DBA 则因为语料数据缺乏，加上反馈验证回路过长，在短期内还难以被直接替代。因此毫无疑问 AI 带来的 “革命性” 变化会首先发生在 OLAP 领域。
 
@@ -39,7 +39,7 @@ aliases: ["/ai/ai-dba-job/"]
 
 同理，我也见过好几次有业务号称自己有超高增长，一上来就要申请一套水平分片库，最后只有 几十 GB 数据的滑稽故事。如果你的数据连几十 TB 都没有，那根本用不上什么分布式 NewSQL 数据库 ——[OpenAI 可以用一套一主四十从 PG 支持五亿月活](/db/openai-pg/)，那 99.99% 的业务也可以靠一个 PostgreSQL 解决所有问题。[分布式数据库是伪需求](/db/distributive-bullshit/)，[甚至也开始对 OLAP 分析/大数据成立了](/db/smalldata-decade/)。
 
-![vonng2.webp](vonng2.webp)
+![yongjie-xue2.webp](yongjie-xue2.webp)
 
 我们可以把 PostgreSQL 这样的数据库比做智能手机，它可以打电话，GPS 导航，照相，干各种各样的事情。确实存在专业的场景 —— 比如航海需要卫星电话，商业摄影可能需要专业单反相机，但这些小众领域相比智能手机的市场规模差了好几个数量级，而绝大多数用户都只需要一款手机就足够解决他们的问题了。
 
@@ -69,7 +69,7 @@ AI 是极度利好专家的，在专家手中的 AI 能发挥出普通工程师 
 
 实际上这也是云厂商云数据库 RDS 团队的工作模式，像德哥这样的顶级 PG DBA 专家可以通过云管控软件，一二三四线客服与 Agent 服务成千上万的客户。当然，他以前可能要依赖云平台的能力，但现在有了开源的 PG 管控平台 Pigsty，他完全可以出来当一个 PG 顾问，用 Pigsty 交付，用 Agent 辅助，自己负责问问题与兜底，同样成为一个数据库超级个体。
 
-![vonng3.webp](vonng3.webp)
+![yongjie-xue3.webp](yongjie-xue3.webp)
 
 对于普通的 DBA 来说，我认为这里也有很多机会。一个显著的趋势是，数据库的专业知识成为了 Vibe Coding 中不可替代性最强的部份。为什么这么说，让我们看看现在的 AI / SaaS 创业者都是怎么交付，怎么出活儿的。
 

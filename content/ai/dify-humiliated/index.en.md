@@ -1,7 +1,7 @@
 ---
 title: "Dify Gets Humiliated Again: It Can't Catch a Break"
 date: 2025-03-27
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Livzon Pharmaceutical's logo-swapping PR landed out of nowhere. As if being ripped off by DeepSeek appliance vendors were not enough, someone marched into Dify's own repository to rub it in. Dify just can't catch a break.
 tags: [AI, Open Source, Commentary]

@@ -1,7 +1,7 @@
 ---
 title: "请 Claude 为老冯画像与估值"
 date: 2026-08-29
-authors: [vonng]
+authors: [yongjie]
 summary: >
   老冯请了一个没有记忆历史、中立的 Claude 来评估 PGSTY，看看能值多少
 tags: [AI, Claude, Pigsty ]

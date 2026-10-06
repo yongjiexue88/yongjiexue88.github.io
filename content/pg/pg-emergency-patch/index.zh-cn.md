@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL 号外紧急补丁版本发布！"
 date: 2026-02-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   老冯之前在号外：PG小版本BUG，暂缓一周再安装升级里面说过，之前发布的 PG 小版本有 BUG，需要等新的号外小版本更新之后再部署合适。
 tags: [PostgreSQL, PG管理, 安全]

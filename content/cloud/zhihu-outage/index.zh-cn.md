@@ -1,7 +1,7 @@
 ---
 title: "知乎挂了：证书问题还是CDN翻车？"
 date: 2025-10-17
-authors: [vonng]
+authors: [yongjie]
 summary: >
   知乎崩了俩小时，HTTP 525 到底是草台班子证书问题，还是 EdgeOne CDN 拉垮翻车？你怎么看
 tags: [云计算, 故障复盘]

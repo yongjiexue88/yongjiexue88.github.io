@@ -1,7 +1,7 @@
 ---
 title: Are Cloud Databases an IQ Tax?
 date: 2023-01-30
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Winter is coming, tech giants are laying off workers entering cost-reduction mode. Can cloud databases, the number one public cloud cash cow, still tell their story? The money you spend on cloud databases for one year is enough to buy several or even dozens of higher-performing servers. Are you paying an IQ tax by using cloud databases?
 tags: [Cloud-Exit, RDS, AWS, Alibaba Cloud]

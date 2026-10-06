@@ -2,7 +2,7 @@
 title: "OINK: After Six Years of Wrestling with Documentation Frameworks, Codex Finally Got Me Over the Line"
 linkTitle: "OINK Documentation Framework"
 date: 2026-08-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   After six years of trying eight approaches, I used Codex to combine Docsy's engineering depth, Fumadocs' modern UX, and Hugo's simple delivery model into OINK.
 tags: [Codex, Documentation, Open Source]

@@ -2,7 +2,7 @@
 title: "PostgreSQL Data Page Corruption Repair"
 linkTitle: "Incident-Report: Data Page Corruption"
 date: 2018-11-29
-authors: [vonng]
+authors: [yongjie]
 summary: "Using binary editing to repair PostgreSQL data pages, and how to make a primary key query return two records."
 tags: [PostgreSQL, PG Admin, Incident]
 ---

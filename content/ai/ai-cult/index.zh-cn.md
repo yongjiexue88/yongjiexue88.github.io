@@ -1,7 +1,7 @@
 ---
 title: "AI神教狂想曲"
 date: 2023-04-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   也许就在这一二十年，我们会目睹一个拜 AI 神教的崛起。下面是对于此 “AI神教” 的一些想象： 
 ai: true

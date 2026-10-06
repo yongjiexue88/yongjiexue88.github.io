@@ -1,7 +1,7 @@
 ---
 title: "Catalog Bullshit：把数据库拆开，再租给你一张 PostgreSQL 表"
 date: 2026-08-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Snowflake 将湖仓治理裂缝归因于多引擎，并把 Catalog 推上新的收费层。但 Iceberg Catalog 的核心只是一笔元数据指针 CAS；真正的治理缺口，来自控制面与数据路径的分离。
 tags: [PostgreSQL, OLAP, 对象存储, 技术评论]

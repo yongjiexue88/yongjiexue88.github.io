@@ -5,12 +5,12 @@ description: Write a new article for this Hugo site (yongjiexue.io) from a one-l
 
 # Blog post — house style and publishing workflow
 
-This profile was distilled from the site's 571 bilingual article bundles (Oct 2026): ~412 technical columns by `vonng` (reposted under CC BY 4.0), 15 personal/study posts by `yongjie` (the site owner), and ~40 by guest authors. The house style below is the column style; the personal style is recorded separately because it is genuinely different. Quoted fragments are style samples, not text to reuse.
+This profile was distilled from the site's 571 bilingual article bundles (Oct 2026): ~412 technical columns credited to Yongjie Xue (`yongjie`), 15 personal/study posts by `yongjie` (the site owner), and ~40 by guest authors. The house style below is the column style; the personal style is recorded separately because it is genuinely different. Quoted fragments are style samples, not text to reuse. Source links and licensing records for reproduced material remain in `NOTICE.md`.
 
 ## 0. Ground rules (read first)
 
-- **New original posts are by `yongjie`.** The column voice is borrowed; the identity is not. Never write as “老冯”, never claim Pigsty / PGEXT / Silo / vonng's talks, group chats, purchases, or history as the author's own, and never add a `利益相关` disclosure that isn't true for the user.
-- **Generated articles never name Vonng.** No “Vonng”, “老冯”, “冯若航”, or vonng.com anywhere in the text — the only name on the piece is the user's: `authors: [yongjie]`, which renders as 薛永杰 / Yongjie Xue. If the text ever needs the author's name, use 薛永杰 (zh) / Yongjie Xue (en). When linking to an existing post on this site (most are vonng's), cite it by title only — 本站《标题》一文 / “an earlier piece on this site, ‘Title’” — never “我在《…》里写过”, which would claim someone else's work. Exception: a repost/translation of a vonng article keeps `authors: [vonng]`, because the CC BY license requires the credit.
+- **New original posts are by `yongjie`.** Use the user's verified identity and experience. Never write as “老冯”, never invent ownership of Pigsty / PGEXT / Silo or other people's talks, group chats, purchases, or history, and never add a `利益相关` disclosure that isn't true for the user.
+- **Use the site owner's name consistently.** Set `authors: [yongjie]`, which renders as 薛永杰 / Yongjie Xue. If the text needs the author's name, use 薛永杰 (zh) / Yongjie Xue (en). When linking to an existing post on this site, cite it by title — 本站《标题》一文 / “an earlier piece on this site, ‘Title’” — and only claim first-person authorship when verified. Reposts/translations keep their original author's credit and source link.
 - **Never fabricate.** No invented first-person experiences, quotes, numbers, dates, prices, benchmarks, or sources. When the user gives only one line, research the facts (WebSearch/WebFetch), cite them as inline links, and list anything you could not verify in your reply to the user — not in the article.
 - **Reposts/translations keep the original author.** `authors: [<original-author-slug>]`, an `origin:` URL, the `翻译` tag, and a first-line blockquote pointing to the original. Only translate content whose license allows it (CC BY etc.) or that the user confirms they may republish.
 - **Show, don't ship.** Create the files and show the user the result; never commit, push, or publish without an explicit yes.
@@ -71,7 +71,7 @@ The column voice is a sharp, opinionated industry commentator: confident, funny,
 **Don'ts (column)**
 - No corporate/AI-ish filler: 赋能、抓手、闭环 (unless mocking them), “在当今快速发展的时代”, “总而言之”, “值得注意的是”, “让我们一起”, “深入探讨/delve”, “leverage”, emoji.
 - No hedge-everything neutrality; no listicle of bullet points where an argument belongs (bullets are ~4 per 1,000 chars).
-- No “老冯” persona, no vonng's biography or products presented as the author's (§0).
+- No “老冯” persona, no other person's biography or products presented as the author's (§0).
 
 ## 4. Personal style (`yongjie`, misc)
 

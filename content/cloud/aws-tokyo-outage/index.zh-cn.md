@@ -1,7 +1,7 @@
 ---
 title: "AWS 东京可用区故障：影响13项服务"
 date: 2025-04-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AWS 东京可用区断电故障：影响13项服务。
 tags: [云计算, AWS, 故障复盘]

@@ -1,7 +1,7 @@
 ---
 title: "Quota Reset: Round N of the Codex/Claude War Begins"
 date: 2026-07-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Codex reset its quotas again this morning and dropped the five-hour limit. Claude immediately extended Fable access through the 17th. When vendors fight, users win—don't miss the window.
 tags: [AI, Agent, Codex, Claude]

@@ -2,7 +2,7 @@
 title: Database Deletion Supreme - Google Cloud Nuked a Major Fund's Entire Cloud Account
 linkTitle: Google Cloud Database Deletion - UniSuper
 date: 2024-05-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Due to an "unprecedented configuration error," Google Cloud mistakenly deleted trillion-RMB fund giant UniSuper's entire cloud account, cloud environment and all off-site backups, setting a new record in cloud computing history!
 tags: [Cloud-Exit, Cloud, Incident]

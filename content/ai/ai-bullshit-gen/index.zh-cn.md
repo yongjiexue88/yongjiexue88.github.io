@@ -1,7 +1,7 @@
 ---
 title: 让 AI 证明「吃大蒜能防中耳炎」
 date: 2026-05-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   让 AI 为“吃大蒜能防中耳炎”这种荒谬命题寻找真实论文背书，暴露的是“有出处”这个可信度信号正在被 AI 大规模稀释。
 tags: [AI, 大模型, 文档, 开源]

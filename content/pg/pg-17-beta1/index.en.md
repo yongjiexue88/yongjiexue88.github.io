@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL 17 Beta1 Released!
 date: 2024-05-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The PostgreSQL Global Development Group announces PostgreSQL 17's first Beta version is now available. This time, PostgreSQL has truly burst the toothpaste tube!
 tags: [PostgreSQL]

@@ -1,7 +1,7 @@
 ---
 title: "Oink: 用Markdown快速创建美观的现代网站"
 date: 2026-08-22
-authors: [vonng]
+authors: [yongjie]
 summary: >
   十几天前，我只是想给几个新项目找一套顺眼的文档主题。
 tags: [Oink, 文档, 开源]

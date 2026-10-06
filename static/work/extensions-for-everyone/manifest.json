@@ -11,19 +11,19 @@
       "index": 1,
       "title": "Who am I",
       "file": "01-who-am-i.html",
-      "source": "Speaker background; Pigsty homepage hero at https://pigsty.io/ observed on 2026-05-20; speaker photo from data/vonng.png converted to WebP; motherboard visual from local Pigsty asset converted to a static PNG frame."
+      "source": "Speaker background; Pigsty homepage hero at https://pigsty.io/ observed on 2026-05-20; speaker photo from data/yongjie-xue.png converted to WebP; motherboard visual from local Pigsty asset converted to a static PNG frame."
     },
     {
       "index": 2,
       "title": "Extensibility Matters",
       "file": "02-extensibility-matters.html",
-      "source": "PGXN About page (https://www.pgxn.org/about/) observed on 2026-05-20 lists 471 extensions; 2024 and 2025 counts are local historical snapshots. Ecosystem image copied from /Users/vonng/pgsty/pigsty.cc/static/img/pigsty/ecosystem.png and converted to WebP."
+      "source": "PGXN About page (https://www.pgxn.org/about/) observed on 2026-05-20 lists 471 extensions; 2024 and 2025 counts are local historical snapshots. Ecosystem image copied from /Users/yongjiexue/pgsty/pigsty.cc/static/img/pigsty/ecosystem.png and converted to WebP."
     },
     {
       "index": 3,
       "title": "Two Years Later",
       "file": "03-two-years-later.html",
-      "source": "/Users/vonng/pgsty/pgext/content/list/_index.md Extension Stat table; local snapshot read on 2026-05-20."
+      "source": "/Users/yongjiexue/pgsty/pgext/content/list/_index.md Extension Stat table; local snapshot read on 2026-05-20."
     },
     {
       "index": 4,
@@ -71,7 +71,7 @@
       "index": 11,
       "title": "The Trade-Off",
       "file": "11-the-trade-off.html",
-      "source": "data/extension.csv; average package size estimated from local pgext RPM/DEB package files under /Users/vonng/pgsty/repo/yum/pgsql and /Users/vonng/pgsty/repo/apt/pgsql."
+      "source": "data/extension.csv; average package size estimated from local pgext RPM/DEB package files under /Users/yongjiexue/pgsty/repo/yum/pgsql and /Users/yongjiexue/pgsty/repo/apt/pgsql."
     },
     {
       "index": 12,
@@ -125,7 +125,7 @@
       "index": 20,
       "title": "The CLI - PIG",
       "file": "20-the-cli-pig.html",
-      "source": "PIG documentation under /Users/vonng/pgsty/pigsty.io/content/docs/pig/, especially ext.md, repo.md, and build.md; local recording data/pig-build.cast."
+      "source": "PIG documentation under /Users/yongjiexue/pgsty/pigsty.io/content/docs/pig/, especially ext.md, repo.md, and build.md; local recording data/pig-build.cast."
     },
     {
       "index": 21,
@@ -155,7 +155,7 @@
       "index": 25,
       "title": "Bulky Extensions",
       "file": "25-bulky-extensions.html",
-      "source": "Local file sizes from /Users/vonng/pgsty/repo/ext/src, sorted by byte size with stat on 2026-05-20; matches the ncdu top view provided for slide 25."
+      "source": "Local file sizes from /Users/yongjiexue/pgsty/repo/ext/src, sorted by byte size with stat on 2026-05-20; matches the ncdu top view provided for slide 25."
     },
     {
       "index": 26,

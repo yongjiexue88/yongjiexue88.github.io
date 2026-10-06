@@ -1,7 +1,7 @@
 ---
 title: "一次AWS DNS故障如何级联瘫痪半个互联网"
 date: 2025-10-21
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AWS US-EAST-1 区域DNS解析故障带崩半个互联网，老冯带您复盘 AWS 史诗故障。
 tags: [下云, AWS, 故障复盘]

@@ -1,7 +1,7 @@
 ---
 title: "Local AI's Inflection Point: 2027"
 date: 2026-04-07
-authors: [vonng]
+authors: [yongjie]
 description: >
   When subsidies fade, hardware catches up, and open models mature, all three lines cross in 2027. "Build your own AI" goes from idea to reality.
 tags: [AI, Hardware, Local First, Open Source]

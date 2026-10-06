@@ -1,7 +1,7 @@
 ---
 title: "如何在数据库中直接检索PDF"
 date: 2025-02-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   直接从数据库检索PDF，让搭建企业知识库无比轻松。
 tags: [数据库, 向量, 扩展]

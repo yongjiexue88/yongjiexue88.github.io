@@ -1,7 +1,7 @@
 ---
 title: "冷门但稀缺的技能：打包构建"
 date: 2025-08-18
-authors: [vonng]
+authors: [yongjie]
 summary: >
   数据库领域一项不为人知，却卡脖子卡到飞起的硬技能。
 tags: [软件仓库, 软件工程]

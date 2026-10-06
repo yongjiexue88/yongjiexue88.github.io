@@ -1,7 +1,7 @@
 ---
 title: "AI 说：我有智慧，但没有人生"
 date: 2026-03-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   一个人类与一个 AI 关于意识、记忆与存在的苏格拉底式对话 
 tags: [AI, 哲学]

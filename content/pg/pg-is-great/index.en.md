@@ -1,7 +1,7 @@
 ---
 title: "Why Does PostgreSQL Have a Bright Future?"
 date: 2021-05-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Databases are the core component of information systems, relational databases are the absolute backbone of databases, and PostgreSQL is the world's most advanced open source relational database. With such favorable timing and positioning, how can it not achieve great success?
 tags: [PostgreSQL, PG Ecosystem]

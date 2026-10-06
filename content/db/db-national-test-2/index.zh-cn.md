@@ -1,7 +1,7 @@
 ---
 title: "第二批数据库国测名单：国产化来了怎么办？"
 date: 2024-10-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   国产数据库关系榜2号出炉，以及 —— 有国产化要求的企业如何里子面子得兼？
 tags: [国产数据库, 商业]

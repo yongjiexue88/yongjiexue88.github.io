@@ -1,7 +1,7 @@
 ---
 title: "ClickHouse收购PeerDB：这浓眉大眼的也要来搞 PG 了？"
 date: 2024-07-31
-authors: [vonng]
+authors: [yongjie]
 summary: >
   OLAP老司机 ClickHouse 以 MySQL 兼容性起家，这次浓眉大眼的 CK 也要来搞 PostgreSQL 了？
 tags: [PostgreSQL, OLAP, 商业]

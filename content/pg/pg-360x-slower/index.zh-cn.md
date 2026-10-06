@@ -1,7 +1,7 @@
 ---
 title: "PG被黑慢MySQL 360倍，这次我真忍不了"
 date: 2025-04-16
-authors: [vonng]
+authors: [yongjie]
 summary: >
   昨天，至少在十几个微信群里都有人 @ 我，发给我这条消息 《有图有真相，MySQL性能是PG的360倍，DS还
 tags: [PostgreSQL, MySQL, 性能]

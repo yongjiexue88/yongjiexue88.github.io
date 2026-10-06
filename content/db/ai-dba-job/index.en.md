@@ -1,7 +1,7 @@
 ---
 title: Where Will Databases and DBAs Go in the AI Era?
 date: 2025-06-30
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Who will be revolutionized first - OLTP or OLAP? Integration vs specialization, how to choose? Where will DBAs go in the AI era? Feng's views from the HOW 2025 conference roundtable, organized and published.
 tags: [AI, Database, PG Admin, Career]
@@ -20,7 +20,7 @@ The day before yesterday at the HOW 2025 conference roundtable, Chairman Xiao as
 
 Meanwhile, Claude Code is replacing junior to mid-level programmers at an astonishing rate. Data analysts and data developers who write SQL, as a coding profession, also fall within this replacement spectrum. We can see various "intelligent analysis" solutions, spreadsheets, database MCPs, Text2SQL/NL2SQL solutions popping up everywhere.
 
-![vonng1.webp](vonng1.webp)
+![yongjie-xue1.webp](yongjie-xue1.webp)
 
 However, unlike the abundant programming data samples on GitHub, the public data accumulation of operations/database management experience is very scarce. SREs and DBAs face difficulties in direct replacement in the short term due to lack of training data and long feedback validation loops. Therefore, there's no doubt that AI's "revolutionary" changes will first occur in the OLAP domain.
 
@@ -40,7 +40,7 @@ A few days ago, a friend asked me about a vector RAG scenario - should they use 
 
 Similarly, I've seen several ridiculous stories where businesses claimed super high growth and immediately applied for a horizontally sharded database setup, only to end up with just a few dozen GB of data. If your data doesn't even reach dozens of TB, you don't need any distributed NewSQL database - [OpenAI can support 500 million monthly active users with one primary and forty read replicas of PG](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247489761&idx=1&sn=9aeb45c299618fef1dd28635720bfa86&scene=21#wechat_redirect), so 99.99% of businesses can solve all problems with one PostgreSQL. [Distributed databases are a false need](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247489590&idx=1&sn=5dab5e2601bcc88cbc3fc8ec210efaec&scene=21#wechat_redirect), [and this is even starting to apply to OLAP analytics/big data](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247489788&idx=1&sn=23befb6797fdd4ac7a073d49802aa980&scene=21#wechat_redirect).
 
-![vonng2.webp](vonng2.webp)
+![yongjie-xue2.webp](yongjie-xue2.webp)
 
 We can compare PostgreSQL to smartphones - they can make calls, GPS navigation, take photos, and do all sorts of things. There are indeed specialized scenarios - like maritime navigation needing satellite phones, commercial photography possibly needing professional DSLR cameras, but these niche markets are several orders of magnitude smaller than the smartphone market, and most users only need one phone to solve all their problems.
 
@@ -70,7 +70,7 @@ This means a DBA database expert can achieve hundreds to thousands of times leve
 
 This is actually the working model of cloud vendor cloud database RDS teams. Top PG DBA experts like Brother De can serve thousands of customers through cloud management software, first through fourth-tier customer service and Agents. Of course, he might have had to rely on cloud platform capabilities before, but now with open-source PG management platform Pigsty, he can completely come out as a PG consultant, deliver with Pigsty, assist with Agents, and handle questioning and troubleshooting himself, similarly becoming a database super individual.
 
-![vonng3.webp](vonng3.webp)
+![yongjie-xue3.webp](yongjie-xue3.webp)
 
 For ordinary DBAs, I think there are many opportunities here too. A significant trend is that database expertise has become the most irreplaceable part of Vibe Coding. Why do I say this? Let's look at how current AI/SaaS entrepreneurs deliver and produce output.
 

@@ -1,7 +1,7 @@
 ---
 title: Understanding Character Encoding
 date: 2018-07-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Code is literally “encoding,” and everything collapses if you mishandle text. Here’s a practical tour of characters, glyphs, Unicode, and UTF encodings.
 tags: [Essay]

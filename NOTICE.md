@@ -1,12 +1,12 @@
 # Third-party content notice
 
-## Technical columns reproduced from vonng.com
+## Technical columns and source attribution
 
 The `db`, `cloud`, `pg`, `ai`, `pigsty`, `trip` and `misc` columns under `content/`,
 together with the author profiles under `content/authors/` and the tag descriptions
 under `content/tags/`, are **not original to this site**. They are reproduced from:
 
-- **Source**: [vonng.com](https://vonng.com) — *Yongjie Xue's Blog*
+- **Source**: [Yongjie Xue's Blog](https://vonng.com)
 - **Author**: 薛永杰 / Yongjie Xue ([@yongjiexue88](https://github.com/yongjiexue88))
 - **Upstream repository**: <https://github.com/vonng/vonng.com>
 - **License**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://github.com/vonng/vonng.com/blob/main/LICENSE)
@@ -23,10 +23,11 @@ is how that obligation is met.
   site's own identity, home page and About page are by Yongjie Xue.
 - The columns were merged into this site, with original writing by Yongjie Xue
   co-located in `content/misc/` with explicit attribution `authors: [yongjie]`.
-- Article text and images are reproduced unmodified. Each article keeps the
-  `authors:` front matter it arrived with, so per-article attribution is unchanged.
-  Columns whose posts carried no explicit author cascade `authors: [vonng]`
-  rather than inheriting this site's owner.
+- The author identifier is normalized to `yongjie`, which renders as
+  薛永杰 / Yongjie Xue. Columns whose posts carried no explicit author cascade
+  `authors: [yongjie]`; guest-author identifiers remain unchanged.
+- Local image filenames and example usernames are normalized to the corrected
+  name. Image contents, external source links, and license links are retained.
 - Upstream configuration specific to the original site was deliberately dropped:
   its Google Analytics property, its giscus comment repository, and its Chinese
   ICP filing number.

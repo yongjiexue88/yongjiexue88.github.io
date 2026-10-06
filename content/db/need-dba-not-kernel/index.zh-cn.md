@@ -1,7 +1,7 @@
 ---
 title: "不缺好数据库内核，缺能用好数据库的DBA"
 date: 2025-05-18
-authors: [vonng]
+authors: [yongjie]
 summary: >
   最近知乎上的老问题 “postgresql也很强大，为何在中国大陆，mysql成为主流，postgresql屈
 tags: [数据库, 职业, 技术评论]

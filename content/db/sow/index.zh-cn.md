@@ -2,7 +2,7 @@
 title: "SOW：论母猪的产后护理"
 linkTitle: "SOW：十万个包，如何只存一份"
 date: 2026-08-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   维护一个 PostgreSQL 发行版，真正让人头大的是十万级制品背后的去重、索引、快照、原子切换与增量发布。SOW 用一个自包含二进制，把 RPM / DEB 仓库从目录脚本变成可恢复、可审计的状态系统。
 tags: [PostgreSQL, Pigsty, 软件仓库]

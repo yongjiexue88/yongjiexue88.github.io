@@ -2,7 +2,7 @@
 title: "AI Large Models and Vector Database PGVector"
 linkTitle: "AI LLMs and PGVector"
 date: 2023-05-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   This article focuses on vector databases hyped by AI, introduces the basic principles of AI embeddings and vector storage/retrieval, and demonstrates the functionality, performance, acquisition, and application of the vector database extension PGVECTOR through a concrete knowledge base retrieval case study.
 tags: [PostgreSQL, PG Development, Extension, Vector]

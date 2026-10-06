@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL取得对MySQL的压倒性优势"
 date: 2025-03-01
-authors: [vonng]
+authors: [yongjie]
 summary: >
   在全球云厂商中，PostgreSQL的规模与增速远超MySQL，这场纷争已经不再有任何悬念了 —— PostgreSQL 将成为数据库世界的 Linux，而 MySQL 会成为数据…
 tags: [PostgreSQL, MySQL, 技术评论]

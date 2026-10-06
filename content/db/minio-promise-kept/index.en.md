@@ -1,7 +1,7 @@
 ---
 title: "Two months into maintaining a MinIO fork"
 date: 2026-04-17
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Two months after forking MinIO, pgsty/minio ships patches for four CVEs and related security issues. 
   No new features — just working builds, a restored console, and timely security fixes.

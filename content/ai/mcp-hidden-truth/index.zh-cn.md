@@ -1,7 +1,7 @@
 ---
 title: "Claude Code泄密：MCP 爆火的隐藏真相"
 date: 2025-04-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   中文互联网还没看到有人说出MCP爆火背后的真相：Claude Code 的发布与代码泄密，“被开源”了一个能实用能打的写代码Agent，正式拉开Agent时代的序幕。
 tags: [Claude, Agent, 技术评论]

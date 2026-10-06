@@ -1,7 +1,7 @@
 ---
 title: "Distinct On: Remove Duplicate Data"
 date: 2018-04-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Use Distinct On extension clause to quickly find records with maximum/minimum values within groups
 tags: [PostgreSQL, PG Development]

@@ -1,7 +1,7 @@
 ---
 title: Analyzing Alibaba-Cloud Server Computing Cost
 date: 2024-03-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Alibaba-Cloud claimed major price cuts, but a detailed analysis of cloud server costs reveals that cloud computing and storage remain outrageously expensive. 
 tags: [Cloud-Exit, Alibaba Cloud]

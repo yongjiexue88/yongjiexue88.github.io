@@ -1,7 +1,7 @@
 ---
 title: "SLA: Placebo or Insurance?"
 date: 2023-06-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   SLA is a marketing tool rather than insurance. In the worst-case scenario, it's an unavoidable loss; at best, it provides emotional comfort.
 tags: [Cloud-Exit, Cloud]

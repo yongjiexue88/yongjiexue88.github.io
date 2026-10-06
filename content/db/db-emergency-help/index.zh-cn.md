@@ -1,7 +1,7 @@
 ---
 title: "数据库爆炸了怎么摇人？"
 date: 2025-04-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   真正有价值的数据库服务其实就是大翻车的时候，能不能摇来真正的专家兜底。
 tags: [数据库, 故障复盘, 职业]

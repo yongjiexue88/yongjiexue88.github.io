@@ -1,7 +1,7 @@
 ---
 title: Understanding Time - Leap Years, Leap Seconds, Time and Time Zones
 date: 2018-12-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A proper understanding of time is very helpful for correctly handling time-related issues in work and life. For example, time representation and processing in computers, as well as time handling in databases and programming languages.
 tags: [PG Development, Database]
@@ -139,13 +139,13 @@ PostgreSQL's timestamp implementation uses 8 bytes, representing a time range fr
 
 ```sql
 -- Get local transaction start timestamp
-vonng=# SELECT now(), CURRENT_TIMESTAMP;
+yongjiexue=# SELECT now(), CURRENT_TIMESTAMP;
               now              |       current_timestamp
 -------------------------------+-------------------------------
  2018-12-11 21:50:15.317141+08 | 2018-12-11 21:50:15.317141+08
 
 -- now()/CURRENT_TIMESTAMP returns timestamps with time zone information
- vonng=# SELECT pg_typeof(now()),pg_typeof(CURRENT_TIMESTAMP);
+ yongjiexue=# SELECT pg_typeof(now()),pg_typeof(CURRENT_TIMESTAMP);
         pg_typeof         |        pg_typeof
 --------------------------+--------------------------
  timestamp with time zone | timestamp with time zone
@@ -153,19 +153,19 @@ vonng=# SELECT now(), CURRENT_TIMESTAMP;
 
 -- Convert local time zone +8 time to UTC time, conversion yields TIMESTAMP
 -- Note: don't use TIMESTAMPTZ to TIMESTAMP cast, which directly truncates time zone info.
- vonng=# SELECT now() AT TIME ZONE 'UTC';
+ yongjiexue=# SELECT now() AT TIME ZONE 'UTC';
           timezone
 ----------------------------
  2018-12-11 13:50:25.790108
 
 -- Convert UTC time to Pacific time again
-vonng=# SELECT (now() AT TIME ZONE 'UTC') AT TIME ZONE 'PST';
+yongjiexue=# SELECT (now() AT TIME ZONE 'UTC') AT TIME ZONE 'PST';
            timezone
 -------------------------------
  2018-12-12 05:50:37.770066+08
  
  -- View PG's built-in time zone data table
- vonng=# TABLE pg_timezone_names LIMIT 4;
+ yongjiexue=# TABLE pg_timezone_names LIMIT 4;
        name       | abbrev | utc_offset | is_dst
 ------------------+--------+------------+--------
  Indian/Mauritius | +04    | 04:00:00   | f
@@ -175,7 +175,7 @@ vonng=# SELECT (now() AT TIME ZONE 'UTC') AT TIME ZONE 'PST';
 ...
 
 -- View PG's built-in time zone abbreviations
-vonng=# TABLE pg_timezone_abbrevs  LIMIT 4;
+yongjiexue=# TABLE pg_timezone_abbrevs  LIMIT 4;
  abbrev | utc_offset | is_dst
 --------+------------+--------
  ACDT   | 10:30:00   | t
@@ -231,14 +231,14 @@ A frequently confusing issue in PostgreSQL is the mutual conversion between `TIM
 ```sql
 -- Using `::TIMESTAMP` to cast `TIMESTAMPTZ` to `TIMESTAMP` directly truncates the time zone part
 -- The remaining "content" of the time stays unchanged
-vonng=# SELECT now(), now()::TIMESTAMP;
+yongjiexue=# SELECT now(), now()::TIMESTAMP;
              now               |           now
 -------------------------------+--------------------------
  2018-12-12 05:50:37.770066+08 |  2018-12-12 05:50:37.770066+08
 
 -- Using AT TIME ZONE syntax on TIMESTAMPTZ with time zones
 -- converts it to TIMESTAMP without time zones, returning time in the given time zone
-vonng=# SELECT now(), now() AT TIME ZONE 'UTC';
+yongjiexue=# SELECT now(), now() AT TIME ZONE 'UTC';
               now              |          timezone
 -------------------------------+----------------------------
  2019-05-23 16:58:47.071135+08 | 2019-05-23 08:58:47.071135
@@ -246,7 +246,7 @@ vonng=# SELECT now(), now() AT TIME ZONE 'UTC';
  
 -- Using AT TIME ZONE syntax on TIMESTAMP without time zones
 -- converts it to TIMESTAMPTZ with time zones, i.e., interpreting that timezone-free timestamp in the given time zone.
-vonng=# SELECT now()::TIMESTAMP, now()::TIMESTAMP AT TIME ZONE 'UTC';
+yongjiexue=# SELECT now()::TIMESTAMP, now()::TIMESTAMP AT TIME ZONE 'UTC';
             now             |           timezone
 ----------------------------+-------------------------------
  2019-05-23 17:03:00.872533 | 2019-05-24 01:03:00.872533+08

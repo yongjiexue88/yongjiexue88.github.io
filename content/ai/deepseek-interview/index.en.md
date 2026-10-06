@@ -1,7 +1,7 @@
 ---
 title: "The Bojie Li–DeepSeek Interview Controversy"
 date: 2026-07-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Today's biggest tech drama began when Bojie Li criticized DeepSeek's interview process on Twitter: he was asked to solve online-judge coding problems, then suspected of cheating. Add the DeepSeek name, and the story exploded.
 tags: [AI, LLM, Career]

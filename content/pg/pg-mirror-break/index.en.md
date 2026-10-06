@@ -1,7 +1,7 @@
 ---
 title: "PGDG Cuts Off Mirror Sync Channel"
 date: 2025-07-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PGDG cuts off FTP rsync sync channels, global mirror sites universally disconnected - this time they really strangled global users' supply chain.
 tags: [PostgreSQL, PG Admin]

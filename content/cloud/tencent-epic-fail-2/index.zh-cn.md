@@ -1,7 +1,7 @@
 ---
 title: "【腾讯】云计算史诗级二翻车来了"
 date: 2024-04-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   腾讯云管控面大故障，阿里云双十一大故障翻版。疑似 Auth 问题 —— 云计算史诗级二故障来了
 tags: [云计算, 故障复盘]

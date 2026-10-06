@@ -2,7 +2,7 @@
 title: "使用sysbench测试PostgreSQL性能"
 linkTitle: "使用sysbench测试性能"
 date: 2018-02-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   尽管PostgreSQL提供了pgbench，但有时候为了吊打一下MySQL，还是需要用到sysbench的。
 tags: [PostgreSQL, PG管理, 性能]
@@ -68,7 +68,7 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua \
 	--db-driver=pgsql \
 	--pgsql-host=127.0.0.1 \
 	--pgsql-port=5432 \
-	--pgsql-user=vonng \
+	--pgsql-user=yongjiexue \
 	--pgsql-db=bench \
 	--table_size=100000 \
 	--tables=3 \
@@ -98,7 +98,7 @@ sysbench /usr/local/share/sysbench/oltp_read_write.lua \
 	--db-driver=pgsql \
 	--pgsql-host=127.0.0.1 \
 	--pgsql-port=5432 \
-	--pgsql-user=vonng \
+	--pgsql-user=yongjiexue \
 	--pgsql-db=bench \
 	--table_size=100000 \
     --tables=3 \

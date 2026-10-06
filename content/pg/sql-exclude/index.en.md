@@ -1,7 +1,7 @@
 ---
 title: "Implementing Mutual Exclusion Constraints with Exclude"
 date: 2018-04-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Exclude constraint is a PostgreSQL extension that can implement more advanced and sophisticated database constraints.
 tags: [PostgreSQL, PG Development]

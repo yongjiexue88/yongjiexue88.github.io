@@ -1,7 +1,7 @@
 ---
 title: Self-Hosting Dify with PG, PGVector, and Pigsty
 date: 2024-06-22
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Dify is an open-source LLM app development platform. This article explains how to self-host Dify using Pigsty.
 tags: [PostgreSQL, Pigsty, Containers]

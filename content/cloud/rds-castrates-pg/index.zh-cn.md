@@ -1,7 +1,7 @@
 ---
 title: "RDS阉掉了PostgreSQL的灵魂"
 date: 2024-03-14
-authors: [vonng]
+authors: [yongjie]
 summary: >
   RDS 上缺少了许多重要扩展，用户无法在 RDS 上自由加装扩展，而这些强力扩展也注定不会出现在云RDS中。
 tags: [PostgreSQL, RDS, 扩展]

@@ -2,7 +2,7 @@
 title: AWS’s Official DynamoDB Outage Postmortem
 linkTitle: AWS’s Official DynamoDB Outage Postmortem
 date: 2025-10-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   AWS finally published the Oct 20 us-east-1 postmortem. I translated the key parts and added commentary on how one DNS bug toppled half the internet.
 tags: [Cloud-Exit, AWS, Incident]

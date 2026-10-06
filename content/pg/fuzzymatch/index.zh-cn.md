@@ -1,7 +1,7 @@
 ---
 title: "高级模糊查询的实现"
 date: 2021-03-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   如何在PostgreSQL中实现比较复杂的模糊查询逻辑？
 tags: [PostgreSQL, PG开发]

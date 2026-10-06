@@ -1,7 +1,7 @@
 ---
 title: "Did AI Rewrite PostgreSQL in Rust? Not Quite"
 date: 2026-07-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   pgrust's clean-room rewrite failed. Its mechanical port passed. The difference shows what AI can copy—and what it cannot.
 aliases: ["/db/rewrite-pg-in-rust/"]

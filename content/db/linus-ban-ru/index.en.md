@@ -2,7 +2,7 @@
 title: Open-Source "Tyrant" Linus's Purge
 linkTitle: "Open-Source Tyrant Linus Purges His Court"
 date: 2024-10-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The Linux community is essentially imperial — and Linus himself is the earliest and most successful technical dictator. People are used to Linus's generosity but forget this point.
 tags: [Linux, Open Source, Commentary]

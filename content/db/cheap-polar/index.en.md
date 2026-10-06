@@ -1,7 +1,7 @@
 ---
 title: "The $20 Brother PolarDB: What Should Databases Actually Cost?"
 date: 2024-04-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Today we discuss the fair pricing of commercial databases, open-source databases, cloud databases, and domestic Chinese databases.
 series: ["Xinchang Localization"]

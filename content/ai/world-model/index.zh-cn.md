@@ -1,7 +1,7 @@
 ---
 title: "正名：什么是世界模型"
 date: 2026-07-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   从「世界」与「模型」的词源出发，用 Pearl 的因果阶梯重新界定世界模型：它不只要描述时空，更要容纳行动者、干预与反事实。
 tags: [AI, 机器学习]

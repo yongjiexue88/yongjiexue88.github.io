@@ -1,7 +1,7 @@
 ---
 title: "Silo 发布：兼容 S3/MinIO 的开源对象存储"
 date: 2026-08-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MinIO 社区分支 Silo 完成整体更名，修复高危漏洞，带来改进后的双语控制台，正式从“应急续命 Fork”转变为独立开源项目。
 tags: [对象存储, 开源]

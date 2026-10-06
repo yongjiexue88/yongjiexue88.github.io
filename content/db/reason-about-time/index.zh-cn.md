@@ -1,7 +1,7 @@
 ---
 title: "理解时间：闰年闰秒，时间与时区"
 date: 2018-12-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   四年一遇的闰年2月29日，总有土鳖软件出现大翻车。对时间的正确理解，对正确处理工作生活中的时间问题很有帮助。本文聊一聊闰年、闰秒、时间与时区的原理，以及在数据库与编程语言中的注意事项。
 tags: [PG开发, 数据库]
@@ -145,34 +145,34 @@ PostgreSQL 的时间戳实现用的是 8 字节，表示的时间范围从公元
 ---
 
     -- 获取本地事务开始时的时间戳
-    vonng=# SELECT now(), CURRENT_TIMESTAMP;
+    Yongjie Xue=# SELECT now(), CURRENT_TIMESTAMP;
     now              |       current_timestamp
     -------------------------------+-------------------------------
      2018-12-11 21:50:15.317141+08 | 2018-12-11 21:50:15.317141+08
 
     -- now()/CURRENT_TIMESTAMP 返回的是带有时区信息的时间戳
-     vonng=# SELECT pg_typeof(now()),pg_typeof(CURRENT_TIMESTAMP);
+     Yongjie Xue=# SELECT pg_typeof(now()),pg_typeof(CURRENT_TIMESTAMP);
     pg_typeof         |        pg_typeof
     --------------------------+--------------------------
      timestamp with time zone | timestamp with time zone
 
     -- 将本地时区+8 时间转换为 UTC 时间，转化得到的是 TIMESTAMP
     -- 注意不要使用从 TIMESTAMPTZ 到 TIMESTAMP 的强制类型转换，会直接截断时区信息。
-     vonng=# SELECT now() AT TIME ZONE 'UTC';
+     Yongjie Xue=# SELECT now() AT TIME ZONE 'UTC';
 
     timezone
 
      2018-12-11 13:50:25.790108
 
     -- 再将 UTC 时间转换为太平洋时间
-    vonng=# SELECT (now() AT TIME ZONE 'UTC') AT TIME ZONE 'PST';
+    Yongjie Xue=# SELECT (now() AT TIME ZONE 'UTC') AT TIME ZONE 'PST';
 
     timezone
 
      2018-12-12 05:50:37.770066+08
 
      -- 查看 PG 自带的时区数据表
-     vonng=# TABLE pg_timezone_names LIMIT 4;
+     Yongjie Xue=# TABLE pg_timezone_names LIMIT 4;
     name       | abbrev | utc_offset | is_dst
     ------------------+--------+------------+--------
      Indian/Mauritius | +04    | 04:00:00   | f
@@ -182,7 +182,7 @@ PostgreSQL 的时间戳实现用的是 8 字节，表示的时间范围从公元
     ...
 
     -- 查看 PG 自带的时区缩写
-    vonng=# TABLE pg_timezone_abbrevs  LIMIT 4;
+    Yongjie Xue=# TABLE pg_timezone_abbrevs  LIMIT 4;
     abbrev | utc_offset | is_dst
     --------+------------+--------
      ACDT   | 10:30:00   | t
@@ -239,21 +239,21 @@ PostgreSQL 中一个经常让人困惑的问题就是`TIMESTAMP`与`TIMESTAMPTZ`
 
     -- 使用 `::TIMESTAMP` 将 `TIMESTAMPTZ` 强制转换为 `TIMESTAMP`，会直接截断时区部分内容
     -- 时间的其余"内容"保持不变
-    vonng=# SELECT now(), now()::TIMESTAMP;
+    Yongjie Xue=# SELECT now(), now()::TIMESTAMP;
     now               |           now
     -------------------------------+--------------------------
     2018-12-12 05:50:37.770066+08 |  2018-12-12 05:50:37.770066+08
 
     -- 对有时区版 TIMESTAMPTZ 使用 AT TIME ZONE 语法
     -- 会将其转换为无时区版的 TIMESTAMP，返回给定时区下的时间
-    vonng=# SELECT now(), now() AT TIME ZONE 'UTC';
+    Yongjie Xue=# SELECT now(), now() AT TIME ZONE 'UTC';
     now              |          timezone
     -------------------------------+----------------------------
     2019-05-23 16:58:47.071135+08 | 2019-05-23 08:58:47.071135
 
     -- 对无时区版 TIMESTAMP 使用 AT TIME ZONE 语法
     -- 会将其转换为带时区版的 TIMESTAMPTZ，即在给定时区下解释该无时区时间戳。
-    vonng=# SELECT now()::TIMESTAMP, now()::TIMESTAMP AT TIME ZONE 'UTC';
+    Yongjie Xue=# SELECT now()::TIMESTAMP, now()::TIMESTAMP AT TIME ZONE 'UTC';
     now             |           timezone
     ----------------------------+-------------------------------
     2019-05-23 17:03:00.872533 | 2019-05-24 01:03:00.872533+08

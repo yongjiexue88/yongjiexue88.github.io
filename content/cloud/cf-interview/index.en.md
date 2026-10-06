@@ -1,7 +1,7 @@
 ---
 title: Cloudflare Roundtable Interview and Q&A Record
 date: 2024-04-23
-authors: [vonng]
+authors: [yongjie]
 summary: |
   As a roundtable guest, I was invited to participate in Cloudflare's Immerse conference in Shenzhen. During the dinner, I had in-depth discussions with Cloudflare's APAC CMO, Greater China Technical Director, and front-line engineers about many questions of interest to netizens.
 tags: [Cloud-Exit, Cloudflare]

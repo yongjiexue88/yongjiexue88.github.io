@@ -1,7 +1,7 @@
 ---
 title: "如何快速上手学习 PostgreSQL？"
 date: 2026-01-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   老冯最近多次被人问到这个问题，授人以渔不如授人以渔，这次就来一次性领进门。10分钟准备好标准环境+耐心的高水平老师。
 tags: [PostgreSQL, 文档]

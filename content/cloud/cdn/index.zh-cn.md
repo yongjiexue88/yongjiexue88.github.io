@@ -1,7 +1,7 @@
 ---
 title: "垃圾腾讯云CDN：从入门到放弃？"
 date: 2023-03-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   本来我相信至少在IaaS的存储、计算、网络三大件上，公有云厂商还是可以有很大作为的。只不过在腾讯云CDN上的亲身体验让我的想法动摇了。
 tags: [云计算, Cloudflare]

@@ -1,7 +1,7 @@
 ---
 title: "AI Is Bringing Down the Scaffolding of Trust"
 date: 2026-05-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The most dangerous change in the AI era is not that machines can write articles, draw images, or generate video. It is that content itself is losing its standing as evidence.
 tags: [AI, Agent, Open Source, Society]

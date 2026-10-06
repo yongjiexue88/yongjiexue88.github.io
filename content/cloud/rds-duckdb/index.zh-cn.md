@@ -1,7 +1,7 @@
 ---
 title: "阿里云rds_duckdb：致敬还是抄袭？"
 date: 2025-03-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   商业与开源本应共生共赢，企业若只想坐享其成而不反哺开源，最终只会沦为社区鄙视的对象。
 tags: [PostgreSQL, 阿里云, PG生态, 开源]

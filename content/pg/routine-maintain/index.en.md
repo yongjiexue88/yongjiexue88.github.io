@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL Routine Maintenance"
 date: 2018-02-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Cars need oil changes, databases need maintenance. For PG, three important maintenance tasks: backup, repack, vacuum
 tags: [PostgreSQL, PG Admin]

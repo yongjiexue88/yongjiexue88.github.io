@@ -1,7 +1,7 @@
 ---
 title: "GPT5/Claude：国产数据库行业研究对比"
 date: 2025-10-13
-authors: [vonng]
+authors: [yongjie]
 summary: >
   GPT5 Pro vs ClaudeOpus 4.1 深入研究，哪个锐评更犀利？
 tags: [国产数据库, 大模型, 技术评论]

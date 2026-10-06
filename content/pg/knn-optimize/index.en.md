@@ -2,7 +2,7 @@
 title: "KNN Ultimate Optimization: From RDS to PostGIS"
 linkTitle: "KNN Ultimate Optimization: GIS Selection"
 date: 2018-06-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Ultimate optimization of KNN problems, from traditional relational design to PostGIS
 tags: [PostgreSQL, PG Development, Machine Learning, GIS]

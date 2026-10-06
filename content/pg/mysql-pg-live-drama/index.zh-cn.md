@@ -1,7 +1,7 @@
 ---
 title: "如何看待 MySQL vs PGSQL 直播闹剧"
 date: 2023-08-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   昨晚，开源中国举办了一场 《MySQL 和 PostgreSQL，谁是世界第一？》的主题辩论活动。我作为 P
 tags: [PostgreSQL, MySQL, 技术评论]

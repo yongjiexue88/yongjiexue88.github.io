@@ -2,7 +2,7 @@
 title: "苹果没开发布会，直接上线了 512 GB 的 Mac Studio"
 linkTitle: "512 GB Mac Studio"
 date: 2026-08-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   没有预热，没有传闻，官网啪的一下就更新了。对本地 AI 来说，这可能是今年最重要的一台机器。
 tags: [Apple, Mac Studio, 本地 AI]

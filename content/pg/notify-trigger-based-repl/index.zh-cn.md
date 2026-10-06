@@ -1,7 +1,7 @@
 ---
 title: "GO与PG实现缓存同步"
 date: 2017-08-03
-authors: [vonng]
+authors: [yongjie]
 summary: >
   巧妙运用Pg的Notify功能，可以方便地通知应用元数据变更，实现基于触发器的逻辑复制。
 tags: [PostgreSQL, PG开发]

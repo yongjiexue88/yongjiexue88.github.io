@@ -1,7 +1,7 @@
 ---
 title: "DeepSeek.com网站证书错误"
 date: 2025-02-12
-authors: [vonng]
+authors: [yongjie]
 summary: >
   哎呀，怎么把自签名证书挂上首页了？犯这些低级错误可不合适呀。
 tags: [云计算, 安全, 故障复盘]

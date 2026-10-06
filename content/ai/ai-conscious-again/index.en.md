@@ -1,7 +1,7 @@
 ---
 title: "AI Says: I Have Intelligence, But Not a Life"
 date: 2026-03-10
-authors: [vonng]
+authors: [yongjie]
 summary: >
   A Socratic dialogue between a human and an AI about consciousness, memory, embodiment, and the difference between being smart and actually living through time.
 tags: [AI, Philosophy]

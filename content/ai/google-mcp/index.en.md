@@ -1,7 +1,7 @@
 ---
 title: "Google AI Toolbox: Production-Ready Database MCP is Here?"
 date: 2025-07-09
-authors: [vonng]
+authors: [yongjie]
 summary: |
   Google recently launched a database MCP toolbox, perhaps the first production-ready solution.
 tags: [Agent, PostgreSQL, AI, LLM]

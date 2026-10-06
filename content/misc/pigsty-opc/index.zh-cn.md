@@ -1,7 +1,7 @@
 ---
 title: 'Pigsty 出海记：百万流量，“颗粒无收”？'
 date: 2026-03-19
-authors: [vonng]
+authors: [yongjie]
 summary: >
   过去 30 天，pigsty.io 拿到 144 万 UV、1811 万 PV 和 1.1 TB 流量。
   对一个一人维护的开源项目来说，这些数字背后真正值钱的不是广告位，而是全球用户的信任。

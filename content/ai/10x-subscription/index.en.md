@@ -1,7 +1,7 @@
 ---
 title: "How Do You Burn Through 10 $200 Codex Subscriptions?"
 date: 2026-09-07
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Buying 10 AI subscriptions is easy. The real bottleneck is turning tokens into useful output—and using automation to scale your time, attention, and ability to judge the results.
 tags: [AI, Codex, Claude, Agent]

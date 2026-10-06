@@ -1,7 +1,7 @@
 ---
 title: "The Nature of Intelligence: The Free Energy Principle"
 date: 2026-03-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   The free energy principle tries to explain life, perception, learning, action, and intelligence within one mathematical framework. It also offers a deeper lens for understanding LLMs, agents, and the next generation of AI systems.
 tags: [AI, Agent, Philosophy]

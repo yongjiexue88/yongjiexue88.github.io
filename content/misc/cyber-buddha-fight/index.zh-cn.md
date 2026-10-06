@@ -1,7 +1,7 @@
 ---
 title: "今日大瓜：赛博佛祖与赛博菩萨大打出手"
 date: 2025-03-24
-authors: [vonng]
+authors: [yongjie]
 summary: >
   赛博佛祖 Cloudflare CEO 与赛博菩萨 Vercel CEO 在 X 上中门对狙，斯文扫地，互相嘲讽甚至还做了梗图，堪称互联网一大奇景。
 tags: [云计算, 社会观察, 技术评论]

@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw Broke npm Again: What Happens When You Ship Without Testing"
 date: 2026-03-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   OpenClaw v2026.3.22 was published to npm without its web console frontend and related build assets. The bigger problem is not the packaging accident itself, but the complete absence of post-install verification in the release process.
 tags: [AI, Agent, Open Source]

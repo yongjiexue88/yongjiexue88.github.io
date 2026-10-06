@@ -1,7 +1,7 @@
 ---
 title: Harvesting Alibaba-Cloud Wool, Building Your Digital Homestead
 date: 2023-11-08
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Alibaba-Cloud's Double 11 offered a great deal: 2C2G3M ECS servers for ¥99/year, low price for three years. This article shows how to use this decent ECS to build your own digital homestead.
 tags: [Cloud-Exit, Alibaba Cloud]

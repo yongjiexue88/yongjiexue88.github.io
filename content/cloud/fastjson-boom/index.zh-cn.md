@@ -1,7 +1,7 @@
 ---
 title: "FastJSON 又炸了，糙猛快是要还的"
 date: 2026-07-31
-authors: [vonng]
+authors: [yongjie]
 summary: >
   阿里的 FastJSON 又双叒叕翻车了，“糙猛快”何时是合理的权宜之计，又如何变成需要后来者偿还的工程习惯。
 tags: [云计算, 阿里云]

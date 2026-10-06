@@ -2,7 +2,7 @@
 title: "Victoria: The Observability Stack That Slaps the Industry"
 linkTitle: "Victoria: Observability Stack Arrives"
 date: 2025-12-17
-authors: [vonng]
+authors: [yongjie]
 summary: >
   VictoriaMetrics is brutally efficient—using a fraction of Prometheus + Loki’s resources for multiples of the performance. Pigsty v4 swaps to the Victoria stack; here’s the beta for anyone eager to try it.
 tags: [Monitoring]

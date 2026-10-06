@@ -1,7 +1,7 @@
 ---
 title: "阿里云故障，CDN挂了，记得申请SLA赔付"
 date: 2025-06-26
-authors: [vonng]
+authors: [yongjie]
 summary: >
   20天不到又一场大故障，80分钟，CDN SLA跌破第一挡，赔付10%月消费代金券不要忘了申请：钱也花了，服务没到位就按SLA来呗。
 tags: [云计算, 阿里云, 故障复盘]

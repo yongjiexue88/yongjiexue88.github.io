@@ -1,7 +1,7 @@
 ---
 title: "WinStudio，一万块在本地跑200B大模型？"
 date: 2025-09-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   老冯新整了台AI迷你PC，GTR9PRo，游戏，AI，数据库，虚拟化都表现不俗，让俺爱不释手。
 tags: [大模型, 硬件]

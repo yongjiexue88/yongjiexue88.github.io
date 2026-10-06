@@ -1,7 +1,7 @@
 ---
 title: "Your SaaS, Someone Else's Kill Switch"
 date: 2026-04-06
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Slack's Greater China shutdown is a reminder: the biggest SaaS risk is not price, but having your business continuity depend on someone else's business decisions.
 tags: [Cloud-Exit, Cloud, Tools, Data Sovereignty]

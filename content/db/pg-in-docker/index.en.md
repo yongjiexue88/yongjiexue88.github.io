@@ -2,7 +2,7 @@
 title: Is running postgres in docker a good idea?
 linkTitle: "PG in Docker: Good or Bad?"
 date: 2019-01-13
-authors: [vonng]
+authors: [yongjie]
 summary: Thou shalt not run a prod database inside a container
 tags: [Database, Containers, Architecture]
 ---

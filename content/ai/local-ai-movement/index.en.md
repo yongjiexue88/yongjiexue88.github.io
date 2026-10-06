@@ -1,7 +1,7 @@
 ---
 title: "Local AI: A Question of Power, Not Price"
 date: 2026-09-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Anthropic's threat report, OpenAI's soap opera, the closure of the $200 subscription tier, and rising GPU and memory prices—all of this week's events tell the same story.
 tags: [AI, Local First, Privacy, Open Source, Hardware]

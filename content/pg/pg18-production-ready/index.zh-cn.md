@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL 18 可以上生产用了吗？"
 date: 2025-11-25
-authors: [vonng]
+authors: [yongjie]
 summary: >
   PG18.1 发布，扩展生态也基本完成18适配，Pigsty v3.7默认PG版本提升至18，是时候上生产耍耍啦！
 tags: [PostgreSQL, PG管理, 扩展]

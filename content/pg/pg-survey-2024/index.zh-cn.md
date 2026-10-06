@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL 2024 社区现状调查报告"
 date: 2024-12-18
-authors: [vonng]
+authors: [yongjie]
 summary: >
   一份PG社区的年度问卷调研报告。可扩展性成为用户喜爱的核心要素，AI，实时分析用例增加……
 tags: [PostgreSQL, PG生态]

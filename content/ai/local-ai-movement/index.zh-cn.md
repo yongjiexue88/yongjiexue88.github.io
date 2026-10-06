@@ -1,7 +1,7 @@
 ---
 title: "本地 AI：算的是政治账，不是经济账"
 date: 2026-09-11
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Anthropic 的威胁报告、OpenAI 的狗血剧、200 刀订阅关门，再加显卡内存齐涨价——这一周发生的事，说的是同一件事。
 tags: [AI, 本地优先, 隐私, 开源, 硬件]

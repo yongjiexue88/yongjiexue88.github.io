@@ -1,7 +1,7 @@
 ---
 title: "MySQL正确性竟如此垃圾？"
 date: 2023-12-28
-authors: [vonng]
+authors: [yongjie]
 summary: >
   MySQL的事务ACID存在缺陷，且与文档承诺不符。JEPSEN测试揭示MySQL的可重复读隔离级别既不原子也不单调，连基本的单调原子视图都不满足。这可能导致严重的正确性问题，使用时请务必谨慎。
 series: ["MySQL走好"]

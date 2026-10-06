@@ -1,7 +1,7 @@
 ---
 title: "阿爪云ClawCloud 跑路，换个什么 VPS？"
 date: 2026-06-05
-authors: [vonng]
+authors: [yongjie]
 summary: >
   老冯之前在《便宜云服务器哪家强？》还有 PG 上手教程里面都推荐过 ClawCloud 家的 VPS。
 tags: [云计算, 成本]

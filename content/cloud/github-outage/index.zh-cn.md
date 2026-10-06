@@ -1,7 +1,7 @@
 ---
 title: "GitHub全站故障，又是数据库上翻的车？"
 date: 2024-08-15
-authors: [vonng]
+authors: [yongjie]
 summary: >
   Github全站崩溃半小时，数据库基础设施变更翻的车。
 tags: [云计算, 故障复盘]
