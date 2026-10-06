@@ -2,7 +2,9 @@
 title: "Bash and psql Tips"
 date: 2018-04-07
 authors: [vonng]
-draft: true
+build:
+  render: never
+  list: never
 summary: "Some tips for interacting between PostgreSQL and Bash."
 tags: [PostgreSQL, PG Admin, Tools]
 ---

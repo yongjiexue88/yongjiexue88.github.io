@@ -5,7 +5,7 @@ brand:
 columns:
   - title: 导航
     links:
-      - { label: 主页, url: / }
+      - { label: 主页, url: /zh-cn/ }
       - { label: 人生旅途, url: misc/ }
       - { label: 关于我, url: about/ }
   - title: 索引
