@@ -3,7 +3,9 @@ title: "The PostgreSQL Extension Encyclopedia: Bilingual and Ready to Use"
 linkTitle: "PG Extension Encyclopedia"
 date: 2026-03-13
 authors: [vonng]
-draft: true
+build:
+  render: never
+  list: never
 summary: >
   I turned 464 PostgreSQL extensions into a bilingual, ready-to-use encyclopedia with metadata, package matrices, install commands, docs, and binary distribution all in one place.
 tags: [PostgreSQL, Pigsty, PG Ecosystem, Extension]

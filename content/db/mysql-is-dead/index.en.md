@@ -2,7 +2,9 @@
 title: MySQL is dead, Long live PostgreSQL!
 date: 2024-07-08
 authors: [vonng]
-draft: true  
+build:
+  render: never
+  list: never
 tags: [MySQL, PostgreSQL, Database, Commentary]
 ---
 

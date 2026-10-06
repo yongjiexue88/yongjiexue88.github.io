@@ -5,7 +5,7 @@ brand:
 columns:
   - title: Navigation
     links:
-      - { label: Home, url: /en/ }
+      - { label: Home, url: / }
       - { label: Miscellaneous, url: misc/ }
       - { label: About, url: about/ }
   - title: Indexes
