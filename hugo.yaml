@@ -203,6 +203,8 @@ languages:
         - { identifier: column-tags, parent: column, name: 标签, pageRef: /tags, weight: 70, params: { icon: 'fa-solid fa-tags', description: 按标签浏览全站文章 } }
         - { identifier: column-authors, parent: column, name: 作者, pageRef: /authors, weight: 80, params: { icon: 'fa-solid fa-user-pen', description: 本站原创与转载文章的作者们 } }
 
+        - { identifier: interview, name: 系统设计, url: 'https://interview.yongjiexue.io', weight: 55, params: { icon: 'fa-solid fa-sitemap' } }
+
         - { identifier: about, name: 关于, pageRef: /about, weight: 60, params: { icon: 'fa-solid fa-circle-user' } }
 
   en:
@@ -238,5 +240,7 @@ languages:
         - { identifier: column-trip, parent: column, name: Travel Notes, pageRef: /trip, weight: 60, params: { icon: 'fa-solid fa-person-hiking', description: 'Trips, hikes and things seen along the way' } }
         - { identifier: column-tags, parent: column, name: Tags, pageRef: /tags, weight: 70, params: { icon: 'fa-solid fa-tags', description: 'Browse every article by tag' } }
         - { identifier: column-authors, parent: column, name: Authors, pageRef: /authors, weight: 80, params: { icon: 'fa-solid fa-user-pen', description: 'The writers behind the originals and the reproductions' } }
+
+        - { identifier: interview, name: System Design, url: 'https://interview.yongjiexue.io', weight: 55, params: { icon: 'fa-solid fa-sitemap' } }
 
         - { identifier: about, name: About, pageRef: /about, weight: 60, params: { icon: 'fa-solid fa-circle-user' } }
