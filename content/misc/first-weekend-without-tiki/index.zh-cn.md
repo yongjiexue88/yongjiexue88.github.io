@@ -1,6 +1,11 @@
 ---
 title: "第一个没有 Tiki 的周末"
 date: 2026-05-09
+draft: true
+build:
+  render: never
+  list: never
+  publishResources: false
 summary: "关于家庭、工作、金钱、健康和时间的一点安静思考。"
 authors: [yongjie]
 tags: ["反思", "家庭", "金钱", "健康"]

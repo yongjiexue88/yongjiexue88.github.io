@@ -1,6 +1,11 @@
 ---
 title: "The Second Sunday Night Without Tiki"
 date: 2026-05-17
+draft: true
+build:
+  render: never
+  list: never
+  publishResources: false
 summary: "A Sunday night reflection on family, parenting, small life skills, and the second week with Tiki away from home."
 authors: [yongjie]
 tags: ["diary", "family", "parenting", "life"]
