@@ -1,6 +1,11 @@
 ---
 title: "First Weekend Without Tiki"
 date: 2026-05-09
+draft: true
+build:
+  render: never
+  list: never
+  publishResources: false
 summary: "A quiet weekend reflection on family, work, money, health, and time."
 authors: [yongjie]
 tags: ["reflection", "family", "money", "health"]

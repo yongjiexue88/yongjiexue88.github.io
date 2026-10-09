@@ -1,6 +1,11 @@
 ---
 title: "Tiki 不在的第二个星期天晚上"
 date: 2026-05-17
+draft: true
+build:
+  render: never
+  list: never
+  publishResources: false
 summary: "一个星期天晚上的小记，关于家人、孩子、生活技能，以及 Tiki 不在家的第二个星期。"
 authors: [yongjie]
 tags: ["日记", "家庭", "育儿", "生活"]

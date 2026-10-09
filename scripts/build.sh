@@ -41,6 +41,6 @@ go version
 
 # 3. Build static site
 echo "==> Building site with Hugo..."
-hugo --gc --minify
+hugo --gc --minify --cleanDestinationDir
 
 echo "==> Build completed successfully into public/!"
