@@ -187,7 +187,8 @@ languages:
         - { identifier: misc, name: 人生旅途, pageRef: /misc, weight: 10, params: { icon: 'fa-solid fa-feather' } }
         - { identifier: db, name: 数据库, pageRef: /db, weight: 20, params: { icon: 'fa-solid fa-database' } }
         - { identifier: ai, name: AI, pageRef: /ai, weight: 30, params: { icon: 'fa-solid fa-robot' } }
-        - { identifier: pg, name: PostgreSQL, pageRef: /pg, weight: 40, params: { icon: 'fa-solid fa-hat-wizard' } }
+        - { identifier: books, name: 书籍, pageRef: /, weight: 40, params: { icon: 'fa-solid fa-book' } }
+        - { identifier: book-ryanlpeterman, parent: books, name: The Engineering Judgment Library, url: '/books/ryanlpeterman/book.html', weight: 10, params: { icon: 'fa-solid fa-book-open' } }
 
         - identifier: column
           name: 专栏
@@ -225,7 +226,8 @@ languages:
         - { identifier: misc, name: Miscellaneous, pageRef: /misc, weight: 10, params: { icon: 'fa-solid fa-feather' } }
         - { identifier: db, name: DB, pageRef: /db, weight: 20, params: { icon: 'fa-solid fa-database' } }
         - { identifier: ai, name: AI, pageRef: /ai, weight: 30, params: { icon: 'fa-solid fa-robot' } }
-        - { identifier: pg, name: PostgreSQL, pageRef: /pg, weight: 40, params: { icon: 'fa-solid fa-hat-wizard' } }
+        - { identifier: books, name: Books, pageRef: /, weight: 40, params: { icon: 'fa-solid fa-book' } }
+        - { identifier: book-ryanlpeterman, parent: books, name: The Engineering Judgment Library, url: '/books/ryanlpeterman/book.html', weight: 10, params: { icon: 'fa-solid fa-book-open' } }
 
         - identifier: column
           name: Columns
