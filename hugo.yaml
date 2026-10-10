@@ -190,6 +190,7 @@ languages:
         - { identifier: books, name: 书籍, pageRef: /, weight: 40, params: { icon: 'fa-solid fa-book' } }
         - { identifier: book-ryanlpeterman, parent: books, name: The Engineering Judgment Library, url: '/books/ryanlpeterman/book.html', weight: 10, params: { icon: 'fa-solid fa-book-open' } }
         - { identifier: book-alifeengineered, parent: books, name: A Life Engineered, url: '/books/alifeengineered/book.html', weight: 20, params: { icon: 'fa-solid fa-book-open' } }
+        - { identifier: book-never-split-the-difference, parent: books, name: Never Split the Difference, url: '/books/never-split-the-difference-chris-voss/book-summary.html', weight: 30, params: { icon: 'fa-solid fa-book-open' } }
 
         - identifier: column
           name: 专栏
@@ -230,6 +231,7 @@ languages:
         - { identifier: books, name: Books, pageRef: /, weight: 40, params: { icon: 'fa-solid fa-book' } }
         - { identifier: book-ryanlpeterman, parent: books, name: The Engineering Judgment Library, url: '/books/ryanlpeterman/book.html', weight: 10, params: { icon: 'fa-solid fa-book-open' } }
         - { identifier: book-alifeengineered, parent: books, name: A Life Engineered, url: '/books/alifeengineered/book.html', weight: 20, params: { icon: 'fa-solid fa-book-open' } }
+        - { identifier: book-never-split-the-difference, parent: books, name: Never Split the Difference, url: '/books/never-split-the-difference-chris-voss/book-summary.html', weight: 30, params: { icon: 'fa-solid fa-book-open' } }
 
         - identifier: column
           name: Columns
