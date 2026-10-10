@@ -1,33 +1,8 @@
 # AGENT.md
 
-## Notion Repo Notes
-
-For every substantive conversation, sync concise notes to Notion.
-
-### Setup
-
-1. Determine the repo name from the current working directory basename.
-2. Find or create a child page under the notes root whose title exactly matches the repo name.
-3. Treat that page as the running knowledge base. **Append only** — never overwrite unless explicitly asked.
-
-### What to Capture
-
-- Key learnings and explanations
-- Decisions and rationale
-- Code changes and affected endpoints
-- Testing steps and results
-- Open questions and next steps
-
-### What NOT to Capture
-
-- Greetings, filler, trivial back-and-forth
-- Repeated content that adds nothing new
-
----
-
 ## LeetCode Notes
 
-When discussing any LeetCode (or similar coding) problem, append a structured note with:
+When discussing any LeetCode (or similar coding) problem, include the following details in the response:
 
 | Field | Description |
 |---|---|
@@ -49,10 +24,3 @@ When discussing any LeetCode (or similar coding) problem, append a structured no
 **Approach:** Iterate every cell; on finding '1', BFS/DFS to mark the entire island, increment count.
 **Complexity:** O(m×n) time, O(m×n) space worst-case for queue
 ```
-
----
-
-## Response Rule
-
-- After a successful Notion update → say **"Notion updated."**
-- If Notion fails → say why in one sentence.
