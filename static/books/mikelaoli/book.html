@@ -15,7 +15,7 @@ html[data-theme=night]{--paper:#192533;--surface:#202f40;--ink:#e3eaf3;--muted:#
 @media(max-width:760px){.sidebar{position:static;width:auto;max-height:none;border-right:0;border-bottom:1px solid var(--line);padding:20px}.sidebar.enhanced{display:none;position:fixed;top:var(--toolbar-height,66px);bottom:0;width:min(90vw,320px);box-shadow:8px 0 30px #0002}.sidebar.enhanced.open{display:block}.toolbar,.main{margin-left:0}.toolbar{padding:10px 12px}.toolbar .optional{display:none}.mobile-menu{display:block}.main{padding:26px 22px 60px}.cover{padding-top:10px}.part{padding-top:45px}h2{font-size:29px}.deck,.subtitle{font-size:20px}.flow{padding:18px}.qa{padding-left:20px}.q-mark{left:-34px}.callout{padding:20px}.search-wrap{min-width:120px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{html{color-scheme:light}body{--ink:#111;--muted:#444;--paper:#fff;--surface:#fff;--wash:#f2f4f6;--blue:#284766;--line:#ccc;background:white;font-size:11pt}.sidebar,.toolbar,.search-results,.reading-tools,.skip{display:none!important}.main{margin:0;padding:0}.book{max-width:none}.cover{padding-top:0}.part{break-before:page}.chapter{padding-top:25px}.flow,.callout,.qa-detail{break-inside:avoid}h2,h3{break-after:avoid}a{color:inherit}.source-details{display:block}.end{font-size:9pt}details::details-content{display:block!important}details>*{display:block!important}}
-</style>
+.back-home{font:13px var(--ui);text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:9px 12px;border-radius:5px;white-space:nowrap}.back-home:hover{border-color:var(--blue)}</style>
 </head>
 <body data-book="92f4734838f2875385e2e501">
 <a class="skip" href="#book">Skip to book</a>
@@ -27,6 +27,8 @@ html[data-theme=night]{--paper:#192533;--surface:#202f40;--ink:#e3eaf3;--muted:#
 <footer><button id="export-notes" type="button">Export my notes</button><p class="storage-warning" id="storage-warning" hidden>Browser storage is unavailable. Export your notes before closing.</p></footer>
 </aside>
 <div class="toolbar" role="toolbar" aria-label="Reading controls">
+<a class="back-home" href="/">← Back to site</a>
+<a class="back-home" href="/zh-cn/books/mikelaoli/book.html" lang="zh-CN">中文</a>
 <button class="mobile-menu" id="menu" aria-controls="sidebar" aria-expanded="false" type="button">Contents</button>
 <label class="search-wrap"><span hidden>Search the book</span><input type="search" id="search" placeholder="Search the book…" aria-label="Search the book"></label>
 <button id="font-down" aria-label="Decrease text size" type="button">A−</button><button id="font-up" aria-label="Increase text size" type="button">A+</button>
