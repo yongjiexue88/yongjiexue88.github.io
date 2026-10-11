@@ -129,12 +129,22 @@ params:
     # Dark palette and theme menu: `dark_mode: true` is the shorthand for
     # `dark_mode: { enable: true, show_menu: true }`.
     dark_mode: false
+    # Visual preset: the site's default look. paper (warm editorial reading,
+    # the default) | slate (the technical look of OINK 1.1 and earlier).
+    # Experimental, explicitly selected: ink | terminal. Reserved: folio | canvas.
+    preset: paper
+    # Reader choice of preset in the Appearance menu: false (site preset
+    # only) | true (Paper, Slate and the site default) | an explicit list.
+    # Ink and Terminal are experimental: opt in with preset: ink/terminal
+    # or preset_menu: [paper, slate, ink, terminal]. No additional fonts.
+    # Lists must include `preset`. The menu also hosts the dark_mode switch.
+    preset_menu: false
     typography: technical # technical | system
     # Font faces by typography role, for a site that wants a different face
     # without mounting SCSS or adding a stylesheet. `ui` is the main face:
     # prose and headings resolve through it, so one line moves the whole site.
     # The rest narrow from there: body | heading | code | display | meta |
-    # print. Names only -- the theme never loads a font file, so a family here
+    # brand (the wordmark) | print. Names only -- the theme never loads a font file, so a family here
     # must be one the reader has or one the site declared in an `@font-face` of
     # its own, and every list should end in a generic family.
     # fonts:
@@ -179,8 +189,8 @@ params:
     pager_types: [docs, book, blog]
     # Book pages may opt into an h2-h4 branch beneath the active sidebar row.
     sidebar_headings: false
-    # Cache section trees once a site reaches this many pages. Active state is
-    # restored client-side when the cached tree is used.
+    # Cache neutral section trees once a site reaches this many pages. Variants
+    # keep page-effective layout settings; JS adds active state without hiding it.
     sidebar_cache_limit: 500
     # Draft state is always labeled in the sidebar; this optional banner adds
     # an explicit notice at the start of draft book pages.
@@ -218,8 +228,8 @@ params:
       # {markdown_url}. No custom links are enabled by default.
       links: []
     sidebar_expand_levels: 2
-    # Bootstrap's scroll spy for the in-page outline. Off by default: the
-    # theme's own outline runtime already tracks the active heading.
+    # Compatibility no-op in 1.x. The normal shell runtime always tracks the
+    # active outline heading; keep this key quiet until a breaking release.
     scroll_spy: false
     # Copy control on code blocks. `false` sets the site-wide default only; a
     # fence that names `copy` explicitly still wins.

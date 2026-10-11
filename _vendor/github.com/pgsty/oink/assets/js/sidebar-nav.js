@@ -1,4 +1,4 @@
-// Hydrate the active path of a cached sidebar without fetching page fragments.
+// Hydrate the active path of a visible cached sidebar without fetching fragments.
 (function () {
   'use strict';
 
@@ -13,7 +13,7 @@
 
   function init() {
     var menu = document.getElementById('td-sidebar-menu');
-    if (!menu || !menu.classList.contains('d-none')) return;
+    if (!menu || !menu.hasAttribute('data-td-sidebar-hydrate-active')) return;
 
     var canonical = document.querySelector('link[rel="canonical"]');
     var current = pathOf(canonical ? canonical.href : window.location.href);
@@ -46,22 +46,21 @@
       item = item.parentElement && item.parentElement.closest('li')
     ) {
       item.classList.add('td-active-path');
+      item.classList.remove('td-shell-tree__item--hidden');
       var toggle = item.querySelector(
         ':scope > .td-shell-tree__row [data-td-shell-tree-toggle]',
       );
-      if (toggle) {
-        toggle.setAttribute('aria-expanded', 'true');
-        if (toggle.dataset.tdLabelCollapse) {
-          toggle.setAttribute('aria-label', toggle.dataset.tdLabelCollapse);
-        }
-        var target = document.getElementById(
-          toggle.getAttribute('aria-controls'),
-        );
-        if (target) target.classList.add('td-is-open');
+      if (toggle && window.OinkSidebar) {
+        window.OinkSidebar.setExpanded(toggle.getAttribute('aria-controls'), true, {
+          source: 'active-path',
+        });
       }
     }
 
-    menu.classList.remove('d-none');
+    // Resolve the marker-scoped transition suppression before restoring the
+    // ordinary disclosure motion used after hydration.
+    menu.getBoundingClientRect();
+    menu.removeAttribute('data-td-sidebar-hydrate-active');
   }
 
   if (document.readyState === 'loading') {

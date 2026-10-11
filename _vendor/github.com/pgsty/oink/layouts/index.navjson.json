@@ -8,6 +8,9 @@
 {{- $home := . -}}
 {{- $docsNav := index hugo.Data "docs_nav" | default dict -}}
 {{- $explicitSections := index $docsNav "sections" -}}
+{{- if and (isset $docsNav "sections") (not $explicitSections) -}}
+  {{- warnf "data/docs_nav.json does not define any Docs navigation sections; falling back to the section tree" -}}
+{{- end -}}
 {{- $children := slice -}}
 {{- range $section := partial "shell/nav-children.html" (dict "section" $home) -}}
   {{- if and $explicitSections
@@ -17,10 +20,7 @@
          node that is the section root itself contributes its children
          rather than nesting the root inside itself -- the same root
          handling the sidebar applies. */ -}}
-    {{- $rootURL := $section.RelPermalink -}}
-    {{- with $home.Site.LanguagePrefix -}}
-      {{- $rootURL = strings.TrimPrefix . $rootURL -}}
-    {{- end -}}
+    {{- $rootURL := printf "/%s" (strings.TrimPrefix $home.RelPermalink $section.RelPermalink) -}}
     {{- $subChildren := slice -}}
     {{- range $explicitSections -}}
       {{- if eq (strings.TrimSuffix "/" (.url | default "")) (strings.TrimSuffix "/" $rootURL) -}}

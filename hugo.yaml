@@ -1,5 +1,5 @@
 # yongjiexue.io — Hugo site configuration
-# Theme: OINK v1.0.0 (github.com/pgsty/oink)
+# Theme: OINK v1.2.0 (github.com/pgsty/oink)
 
 baseURL: https://www.yongjiexue.io/
 title: 薛永杰 · Yongjie Xue
@@ -83,7 +83,7 @@ module:
     - path: github.com/pgsty/oink
   hugoVersion:
     extended: true
-    min: 0.160.1
+    min: 0.167.0
 
 params:
   # -- Identity --------------------------------------------------------------
@@ -125,6 +125,7 @@ params:
   # rail and no sidebar. Every top-level section here is a blog column, so this
   # is the site default rather than nine identical cascades.
   ui:
+    preset: slate
     typography: technical
     dark_mode: true
     navbar_autohide: false
