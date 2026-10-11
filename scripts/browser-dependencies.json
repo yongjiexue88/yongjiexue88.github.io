@@ -1,0 +1,126 @@
+{
+  "packages": [
+    {
+      "name": "@docsearch/js",
+      "version": "5.1.2",
+      "source": "https://registry.npmjs.org/@docsearch/js/-/js-5.1.2.tgz",
+      "integrity": "sha512-ZScgB1upT5i4Ob1EYfp964lc5Xx0w9VUMLTeH099LPAU7v01STDIgIMu31rhYcLRi4RHIr0UtfB2VvcRPKvNWQ==",
+      "files": {
+        "package/dist/umd/index.js": "assets/third_party/docsearch/docsearch.js"
+      }
+    },
+    {
+      "name": "@docsearch/css",
+      "version": "5.1.2",
+      "source": "https://registry.npmjs.org/@docsearch/css/-/css-5.1.2.tgz",
+      "integrity": "sha512-zPkSBM8y6XbMfRwq4DeDSRyE0Jsx/phd2KYRgug7PvoZd9cYLqwf6nb2na4whprxCYe4NB6M5RL84C7NgRv0XA==",
+      "files": {
+        "package/dist/style.css": "assets/third_party/docsearch/docsearch.css"
+      }
+    },
+    {
+      "name": "mermaid",
+      "version": "12.1.0",
+      "source": "https://registry.npmjs.org/mermaid/-/mermaid-12.1.0.tgz",
+      "integrity": "sha512-wlVCp+8eTupfCeeFvoZNNiTuHrvag0P2jz/ILgb/f/6jkVokUefOcujefi8qUe/j2asHiSePncVsz/xzzA80LQ==",
+      "files": {
+        "package/dist/mermaid.min.js": "assets/third_party/mermaid/mermaid.min.js",
+        "package/LICENSE": "assets/third_party/mermaid/LICENSE"
+      }
+    },
+    {
+      "name": "katex",
+      "version": "0.19.0",
+      "source": "https://registry.npmjs.org/katex/-/katex-0.19.0.tgz",
+      "integrity": "sha512-v6Tznz3zJ7u3niRCoDTsumM2+HA2XXcCu+WAacCeHD2z3p9A9Ks987o5FzfTGBN0e8A0vjEgIDvLbICrXpdw/Q==",
+      "files": {
+        "package/dist/katex.min.js": "assets/third_party/katex/katex.min.js",
+        "package/dist/katex.min.css": "assets/third_party/katex/katex.min.css",
+        "package/dist/fonts/": "assets/third_party/katex/fonts/",
+        "package/LICENSE": "assets/third_party/katex/LICENSE"
+      }
+    },
+    {
+      "name": "swagger-ui-dist",
+      "version": "5.33.1",
+      "source": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-5.33.1.tgz",
+      "integrity": "sha512-H872wWkA53bFIsGgi7OWgmq+CRWw3nFQGdJWRqOB9wNwTm6e5ol34+qPDkV4AJlK+gglM2EsJiOOzsGsEGbluA==",
+      "files": {
+        "package/swagger-ui-bundle.js": "assets/third_party/swagger-ui/swagger-ui-bundle.js",
+        "package/swagger-ui-standalone-preset.js": "assets/third_party/swagger-ui/swagger-ui-standalone-preset.js",
+        "package/swagger-ui.css": "assets/third_party/swagger-ui/swagger-ui.css",
+        "package/LICENSE": "assets/third_party/swagger-ui/LICENSE",
+        "package/NOTICE": "assets/third_party/swagger-ui/NOTICE",
+        "package/swagger-ui-bundle.js.LICENSE.txt": "assets/third_party/swagger-ui/LICENSE.bundle.txt",
+        "package/swagger-ui-standalone-preset.js.LICENSE.txt": "assets/third_party/swagger-ui/LICENSE.standalone-preset.txt"
+      }
+    },
+    {
+      "name": "redoc",
+      "version": "2.5.4",
+      "source": "https://registry.npmjs.org/redoc/-/redoc-2.5.4.tgz",
+      "integrity": "sha512-M6jWhG1qoBnH6TFmzJnstyCZ87HmOY/UzDm78mHiYihEdlV/YcS9ogOo1NlElnJMeLsyxHFe2yFc4sNjHTrABQ==",
+      "files": {
+        "package/bundles/redoc.standalone.js": "assets/third_party/redoc/redoc.standalone.js",
+        "package/bundles/redoc.standalone.js.LICENSE.txt": "assets/third_party/redoc/redoc.standalone.js.LICENSE.txt",
+        "package/LICENSE": "assets/third_party/redoc/LICENSE"
+      }
+    },
+    {
+      "name": "@antv/infographic",
+      "version": "0.2.20",
+      "source": "https://registry.npmjs.org/@antv/infographic/-/infographic-0.2.20.tgz",
+      "integrity": "sha512-XC1YXpQu6lJ3ZODUS7qBtai5cA8rUrzpegiOHjeCLElzJ6fki+N3yeosIKoYCUNcRCCUovgeSyMMIzzf2ndN2w==",
+      "files": {
+        "package/dist/infographic.min.js": "assets/third_party/infographic/infographic.min.js",
+        "package/LICENSE": "assets/third_party/infographic/LICENSE"
+      }
+    },
+    {
+      "name": "pako",
+      "version": "3.0.2",
+      "source": "https://registry.npmjs.org/pako/-/pako-3.0.2.tgz",
+      "integrity": "sha512-uBv6IT2aT1A78iU6dpNEbf6+CyhlV/6g9JlJs9kpgjFGFhruIICVRysF/W0SLzXg5+hCl+KroH7e4YUyfEmgLg==",
+      "files": {
+        "package/dist/browser/pako_deflate.umd.min.js": "assets/third_party/pako/pako_deflate.min.js",
+        "package/LICENSE": "assets/third_party/pako/LICENSE"
+      }
+    },
+    {
+      "name": "asciinema-player",
+      "version": "3.17.0",
+      "source": "https://registry.npmjs.org/asciinema-player/-/asciinema-player-3.17.0.tgz",
+      "integrity": "sha512-JbjNJmA2TLIeYNaOEja+kVSzXadKoqpIzVVmfBGNj2DmdtE/vExBCnkE8NYEcpaQcDvUYg8Ltt0urT80frACmw==",
+      "files": {
+        "package/dist/bundle/asciinema-player.min.js": "static/work/extensions-for-everyone/src/vendor/asciinema-player.min.js",
+        "package/dist/bundle/asciinema-player.css": "static/work/extensions-for-everyone/src/vendor/asciinema-player.css",
+        "package/LICENSE": "static/work/extensions-for-everyone/src/vendor/LICENSE.asciinema-player"
+      }
+    },
+    {
+      "name": "external-svg-loader",
+      "version": "1.7.1",
+      "source": "https://registry.npmjs.org/external-svg-loader/-/external-svg-loader-1.7.1.tgz",
+      "integrity": "sha512-aoar7PRXhy+hNgp49Xh2rsI+9CS65IqlLc9z2CmRM5eTQdA3H/S4QkIYVT5dH5Nf0r81d/424rHYEyC3qjPvHw==",
+      "files": {
+        "package/LICENSE": "assets/third_party/external-svg-loader/LICENSE"
+      }
+    },
+    {
+      "name": "idb-keyval",
+      "version": "6.3.0",
+      "source": "https://registry.npmjs.org/idb-keyval/-/idb-keyval-6.3.0.tgz",
+      "integrity": "sha512-um+2dgAWmYsu615EXpWVwSmapJhON0G43t3Ka/EVaohzPQXSMqKEqeDK/oIW3Ow+BXaF2PvSc+oBTFp793A5Ow==",
+      "files": {
+        "package/LICENCE": "assets/third_party/external-svg-loader/LICENSE.idb-keyval"
+      }
+    },
+    {
+      "name": "esbuild",
+      "version": "0.28.2",
+      "source": "https://registry.npmjs.org/esbuild/-/esbuild-0.28.2.tgz",
+      "integrity": "sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA==",
+      "files": {}
+    }
+  ]
+}

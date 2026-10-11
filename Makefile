@@ -2,14 +2,14 @@ default: dev
 
 d:dev
 dev:
-	hugo server --renderToMemory -DFE
+	bash scripts/build.sh server --renderToMemory -DFE
 
 b:build
 build:
-	hugo --gc --minify --cleanDestinationDir --baseURL "https://www.yongjiexue.io/"
+	bash scripts/build.sh --gc --minify --cleanDestinationDir --baseURL "https://www.yongjiexue.io/"
 
 c: check
 check:
-	hugo --gc --printPathWarnings --panicOnWarning
+	bash scripts/build.sh --gc --printPathWarnings --panicOnWarning
 
 .PHONY: default d dev b build c check

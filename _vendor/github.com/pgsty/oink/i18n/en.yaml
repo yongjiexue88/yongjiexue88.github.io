@@ -51,12 +51,25 @@ ui_modules_title: Modules
 ui_module_title: Module
 ui_authors_title: Authors
 ui_author_title: Author
+ui_taxonomy_pages:
+  one: '{{ . }} page'
+  other: '{{ . }} pages'
+ui_taxonomies_title: 'Taxonomies'
 ui_theme_toggle: Toggle color theme
-ui_language: Language
-ui_theme: Theme
 ui_theme_auto: System
 ui_theme_light: Light
 ui_theme_dark: Dark
+ui_appearance: Appearance
+ui_appearance_style: Style
+ui_appearance_mode: Light
+ui_appearance_close: Close appearance settings
+ui_appearance_unsaved: Your browser is not saving settings, so this choice lasts only on this page.
+ui_preset_default: Default
+ui_preset_paper: Paper
+ui_preset_slate: Slate
+ui_preset_ink: "Ink"
+ui_preset_terminal: "Terminal"
+ui_preset_experimental: "Experimental"
 ui_toc_hide: Hide table of contents
 ui_toc_show: Show table of contents
 ui_language_select: Choose language
@@ -74,7 +87,6 @@ ui_share_email: Email
 ui_copy_link: Copy link
 ui_copy_link_success: Link copied
 ui_copy_link_error: Could not copy the link
-ui_code_copy: Copy
 ui_code_copy_label: Copy code
 ui_code_copied: Copied
 ui_code_copy_error: Copy failed
@@ -120,9 +132,7 @@ ui_asciinema_timer: Playback time
 ui_openapi_spec: OpenAPI specification
 ui_release_view: View release
 ui_release_source: Source
-ui_release_compare: Compare changes
 ui_release_released: Released
-ui_release_checksums: Checksums
 ui_assets_file: File
 ui_assets_checksum: Checksum
 ui_assets_copy: Copy checksum
