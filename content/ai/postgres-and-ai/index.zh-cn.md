@@ -29,7 +29,6 @@ tags: [AI, PostgreSQL, Agent, 数据库]
 
 《[PGSQL vs MySQL：一场已经结束的战争](/pg/pg-vs-mysql-2026/)》
 
-《[立足中国，面向全球的 PostgreSQL 发行版](/pg/forge-a-pg-distro/)》
 
 《[PostgreSQL主宰数据库世界，而谁来吞噬PG？](/pg/proprity-pg/)》
 

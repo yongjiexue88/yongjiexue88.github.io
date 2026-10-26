@@ -239,7 +239,7 @@
       "kind": "custom",
       "refersTo": "signal-cell-journal",
       "description": "Coral factual index cell reserved for a real journal entry.",
-      "html": "<a class=\"ds-signal-journal\" href=\"#journal\"><span class=\"ds-signal-journal-index\">11</span><span class=\"ds-signal-journal-label\">The Second Sunday Night Without Tiki</span></a>",
+      "html": "<a class=\"ds-signal-journal\" href=\"#journal\"><span class=\"ds-signal-journal-index\">11</span><span class=\"ds-signal-journal-label\">Notes on learning and everyday life</span></a>",
       "css": ".ds-signal-journal { display:flex; width:160px; min-height:96px; flex-direction:column; padding:10px; border:1px solid var(--signal-blue-ink, #f4fbf9); border-radius:0; background:var(--signal-coral, #f84735); color:var(--signal-deep, #0e0918); font-family:var(--font-signal-mono, 'IBM Plex Mono', monospace); text-decoration:none; transition:background-color 150ms ease-out, color 150ms ease-out; } .ds-signal-journal-index { font-size:.72rem; line-height:1; } .ds-signal-journal-label { margin-top:auto; font-size:.78rem; line-height:1.15; } .ds-signal-journal:hover, .ds-signal-journal:focus-visible { background:var(--signal-lime, #cae838); color:var(--signal-deep, #0e0918); } .ds-signal-journal:focus-visible { outline:3px solid var(--signal-deep, #0e0918); outline-offset:3px; } @media (prefers-reduced-motion: reduce) { .ds-signal-journal { transition:none; } }"
     }
   ],

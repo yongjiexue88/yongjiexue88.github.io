@@ -22,7 +22,6 @@ tags: [PostgreSQL]
 - [Whoever Integrates DuckDB Well Wins the OLAP World](/pg/pg-duckdb/)
 - [SO 2024: PostgreSQL Has Gone Crazy](/pg/pg-is-no1-again/)
 - [Self-hosting Dify with Pigsty, AI Workflows](/pg/dify-setup/)
-- [PGCon.Dev 2024 Conference Notes](/pg/pgcondev-2024/)
 - [PostgreSQL 17 beta1 Released!](/pg/pg-17-beta1/)
 - [Why is PG the Foundation of Future Data?](/pg/pg-for-everything/)
 - [Will PostgreSQL Change Its Open-Source License?](/pg/pg-license/)

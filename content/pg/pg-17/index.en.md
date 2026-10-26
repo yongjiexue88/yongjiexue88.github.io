@@ -15,7 +15,7 @@ In this major version release announcement, the PostgreSQL global community has 
 [![news.webp](news.webp)](https://www.postgresql.org/about/news/postgresql-17-released-2936/)
 
 In my early-year article "[PostgreSQL is Eating the Database World](/pg/pg-eat-db-world)," I argued that **extensibility** is PostgreSQL's unique core advantage.
-I'm delighted to see that this point became the focus and consensus of the PostgreSQL community in just six months, fully reflected in [PGCon.Dev 2024](/pg/pgcondev-2024/) and this PostgreSQL 17 release.
+I'm delighted to see that this point became the focus and consensus of the PostgreSQL community in just six months, fully reflected in PGCon.Dev 2024 and this PostgreSQL 17 release.
 
 Regarding new features, I previously covered them in "[PostgreSQL 17 Beta1 Released! The Toothpaste Tube Burst!](/pg/pg-17-beta1)," so I won't repeat them here.
 This major version has many new features, but what impressed me most is that PostgreSQL managed to double write throughput again on top of [already formidable performance](/pg/pg-performence) — **simply and powerfully impressive**.

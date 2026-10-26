@@ -82,7 +82,7 @@ Debian didn't win by restricting users. It won through openness, reusability, di
 
 ## The Debian of Databases
 
-As I discussed in "[Forging a PostgreSQL Distribution](/en/pg/forge-a-pg-distro)": Pigsty's goal is to become the Debian of the PostgreSQL world — globally useful, freely distributable, endlessly customizable.
+Pigsty's goal is to become the Debian of the PostgreSQL world — globally useful, freely distributable, endlessly customizable.
 
 My read: the next two years are a window of significant change. AI, agents, infrastructure shifts — these will reshuffle who becomes the default choice.
 

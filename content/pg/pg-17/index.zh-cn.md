@@ -15,7 +15,7 @@ tags: [PostgreSQL]
 [![news.webp](news.webp)](https://www.postgresql.org/about/news/postgresql-17-released-2936/)
 
 在年初发表的 《[PostgreSQL 正在吞噬数据库世界](/pg/pg-eat-db-world)》中，我提出 **可扩展性** 是 PostgreSQL 独一无二的核心优势。
-很高兴地看到这一点在短短半年中，就成为了 PostgreSQL 社区的关注焦点与共识，并在 [PGCon.Dev 2024](/pg/pgcondev-2024/) 与本次 PostgreSQL 17 发布中得到充分的体现。
+很高兴地看到这一点在短短半年中，就成为了 PostgreSQL 社区的关注焦点与共识，并在 PGCon.Dev 2024 与本次 PostgreSQL 17 发布中得到充分的体现。
 
 关于新特性，我先前在 《[PostgreSQL 17 Beta1 发布！牙膏管挤爆了！](/pg/pg-17-beta1)》中已经有过介绍，在此就不再赘述了。
 这个大版本有很多新特性，当然要说最让我印象深刻的是， PG竟然能在[原本就已经非常强悍的性能](/pg/pg-performence) 基础上让写入吞吐再次翻倍 —— **朴实无华的强悍**。

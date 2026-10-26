@@ -5,7 +5,7 @@ description: Write a new article for this Hugo site (yongjiexue.io) from a one-l
 
 # Blog post — house style and publishing workflow
 
-This profile was distilled from the site's 571 bilingual article bundles (Oct 2026): ~412 technical columns credited to Yongjie Xue (`yongjie`), 15 personal/study posts by `yongjie` (the site owner), and ~40 by guest authors. The house style below is the column style; the personal style is recorded separately because it is genuinely different. Quoted fragments are style samples, not text to reuse. Source links and licensing records for reproduced material remain in `NOTICE.md`.
+This profile was distilled from the site's 571 bilingual article bundles (Oct 2026): ~412 technical columns credited to Yongjie Xue (`yongjie`), 15 personal/study posts by `yongjie` (the site owner), and ~40 by guest authors. The house style below is the column style; the personal style is recorded separately because it is genuinely different. Quoted fragments are style samples, not text to reuse. Reproduced material must identify its original author, source URL, and applicable license in the article itself.
 
 ## 0. Ground rules (read first)
 

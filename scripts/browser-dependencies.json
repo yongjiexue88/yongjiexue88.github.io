@@ -87,17 +87,6 @@
       }
     },
     {
-      "name": "asciinema-player",
-      "version": "3.17.0",
-      "source": "https://registry.npmjs.org/asciinema-player/-/asciinema-player-3.17.0.tgz",
-      "integrity": "sha512-JbjNJmA2TLIeYNaOEja+kVSzXadKoqpIzVVmfBGNj2DmdtE/vExBCnkE8NYEcpaQcDvUYg8Ltt0urT80frACmw==",
-      "files": {
-        "package/dist/bundle/asciinema-player.min.js": "static/work/extensions-for-everyone/src/vendor/asciinema-player.min.js",
-        "package/dist/bundle/asciinema-player.css": "static/work/extensions-for-everyone/src/vendor/asciinema-player.css",
-        "package/LICENSE": "static/work/extensions-for-everyone/src/vendor/LICENSE.asciinema-player"
-      }
-    },
-    {
       "name": "external-svg-loader",
       "version": "1.7.1",
       "source": "https://registry.npmjs.org/external-svg-loader/-/external-svg-loader-1.7.1.tgz",

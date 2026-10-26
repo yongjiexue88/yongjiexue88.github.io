@@ -92,7 +92,6 @@ Debian 不是靠“限制谁不能用”成为 Debian 的。它靠的是：开�
 
 ## 做数据库世界的 Debian
 
-我在公开演讲《[立足中国，面向全球的 PostgreSQL 发行版](/pg/forge-a-pg-distro)》里说过：
 Pigsty 的目标是成为 PostgreSQL 世界里的 Debian —— 一个面向全球、真正好用、可分发、可复用的主流发行版。
 
 我判断：最近这两年将是数据库世界与软件形态剧烈变化的窗口期。

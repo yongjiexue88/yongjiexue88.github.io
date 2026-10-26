@@ -11,7 +11,6 @@ tags: [数据库, 技术评论]
 
 ## 自主可控篇
 
-- 2025-11-29 [打造一个立足中国，面向世界的 PG 数据库发行版](/pg/forge-a-pg-distro/)
 - 2025-11-22 [开源供应链信任：我不愿寄希望于维护者缺席的项目上](/db/tuna-mirror-site/)
 - 2025-08-15 [从 PG“断供”看软件供应链中的信任问题](/pg/pg-mirror-pigsty/)
 - 2025-02-28 [国产数据库里有能打的吗？](/db/domestic-db-any-good/)
@@ -61,7 +60,6 @@ tags: [数据库, 技术评论]
 ### PG 生态篇
 
 - 2025-12-01 [为什么 PG 将主宰 AI 时代的数据库](/pg/ai-db-king/)
-- 2025-11-29 [打造一个立足中国，面向世界的 PG 数据库发行版](/pg/forge-a-pg-distro/)
 - 2025-11-25 [PostgreSQL 18 可以上生产用了吗？](/pg/pg18-production-ready/)
 - 2025-05-16 [PGCon.dev 闪电演讲，硬控 PG 大佬 5 分钟](/pg/pgcondev-lightning/)
 - 2025-04-09 [PG 扩展峰会日程出炉，蒙特利尔见](/pg/pgext-day/)
@@ -152,7 +150,6 @@ tags: [数据库, 技术评论]
 - 2025-12-21 [MinIO 已死](/db/minio-is-dead/)
 - 2025-12-02 [当答案唾手可及，问题就成了新货币](/db/ai-question/)
 - 2025-12-01 [为什么 PG 将主宰 AI 时代的数据库](/pg/ai-db-king/)
-- 2025-11-29 [打造一个立足中国，面向世界的 PG 数据库发行版](/pg/forge-a-pg-distro/)
 - 2025-11-25 [PostgreSQL 18 可以上生产用了吗？](/pg/pg18-production-ready/)
 - 2025-11-22 [开源供应链信任：我不愿寄希望于维护者缺席的项目上](/db/tuna-mirror-site/)
 - 2025-11-21 [原地报废：不要在生产环境用 Docker 跑 PostgreSQL！](/db/no-docker-pg/)
@@ -174,7 +171,6 @@ tags: [数据库, 技术评论]
 - 2025-06-19 [软件 3.0 时代，AI 带来的范式转移](/ai/software-3-0/)
 - 2025-06-18 [数据库老司机勇闯现代前端大观园](/db/dba-meets-frontend/)
 - 2025-06-03 [别争了，AI 时代数据库已经尘埃落定](/db/db-for-ai/)
-- 2025-05-31 [笔记本进酱油，脑子瓦特了](/misc/laptop-soy-sauce/)
 - 2025-05-27 [开放数据标准：Postgres，OTel，与 Iceberg](/db/open-data-standard/)
 - 2025-05-23 [小数据的失落十年：分布式分析的错付](/db/smalldata-decade/)
 - 2025-05-19 [OpenAI：将 PostgreSQL 伸缩至新阶段](/db/openai-pg/)
@@ -245,8 +241,6 @@ tags: [数据库, 技术评论]
 - 2024-06-26 [用 PG 的开发者，年薪比 MySQL 多赚四成？](/pg/pg-dev-salary/)
 - 2024-06-20 [Oracle 最终还是杀死了 MySQL！](/db/oracle-kill-mysql/)
 - 2024-06-19 [MySQL 性能越来越差，Sakila 将何去何从？](/db/sakila-where-are-you-going/)
-- 2024-06-18 [让 PG 停摆一周的大会：PGCon.Dev 参会记](/pg/pgcondev-2024/)
-- 2024-05-29 [PGCon.Dev 2024 温哥华扩展生态峰会小记](/pg/pgcondev-2024/)
 - 2024-05-24 [PostgreSQL 17 Beta1 发布！牙膏管挤爆了！](/pg/pg-17-beta1/)
 - 2024-05-16 [为什么 PostgreSQL 是未来数据的基石？](/pg/pg-for-everything/)
 - 2024-04-25 [国产数据库到底能不能打？](/db/db-china/)

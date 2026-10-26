@@ -29,7 +29,6 @@ tags: [PostgreSQL]
 - [谁整合好DuckDB，谁赢得OLAP世界](/pg/pg-duckdb/)
 - [SO 2024：PostgreSQL已经杀疯了](/pg/pg-is-no1-again/)
 - [使用Pigsty自建Dify，AI工作流](/pg/dify-setup/)
-- [PGCon.Dev 2024 参会记](/pg/pgcondev-2024/)
 - [PostgreSQL 17 beta1 发布！](/pg/pg-17-beta1/)
 - [为什么PG是未来数据的基石？](/pg/pg-for-everything/)
 - [PostgreSQL会修改开源许可证吗？](/pg/pg-license/)

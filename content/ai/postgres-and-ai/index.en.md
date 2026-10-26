@@ -29,7 +29,6 @@ Where things get interesting is at the PG distribution layer. Whether you use RD
 
 [PostgreSQL vs MySQL: A War That Already Ended](/pg/pg-vs-mysql-2026/)
 
-[A PostgreSQL Distribution Built in China, for the World](/pg/forge-a-pg-distro/)
 
 [PostgreSQL Dominates the Database World. But Who Will Devour PG?](/pg/proprity-pg/)
 

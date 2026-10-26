@@ -118,9 +118,7 @@ Supabase 实际上分为两个部分，有状态的部分使用外部的 Postgre
 
 [谁整合好 DuckDB，谁赢得 OLAP 数据库世界](/pg/pg-duckdb/)
 
-[让 PG 停摆一周的大会：PGCon.Dev 参会记](/pg/pgcondev-2024/)
 
-[PGCon.Dev 扩展生态峰会小记 @ 温哥华](/pg/pgcondev-2024/)\
 
 #### 开箱即用的 PostgreSQL 数据库发行版 Pigsty
 

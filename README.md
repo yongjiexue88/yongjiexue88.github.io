@@ -43,7 +43,7 @@ make check
 
 ### Browser Dependencies
 
-OINK is checked into `_vendor/` at the version in `go.mod`. Project-owned files in `assets/third_party/` override bundled libraries that have newer stable releases; they survive `hugo mod vendor`. The terminal slide also carries its own pinned asciinema player.
+OINK is checked into `_vendor/` at the version in `go.mod`. Project-owned files in `assets/third_party/` override bundled libraries that have newer stable releases; they survive `hugo mod vendor`.
 
 The overrides are pinned, with npm archive integrity hashes and source-to-file mappings, in `scripts/browser-dependencies.json`. Python 3.9+ restores the committed assets; Node/npm is needed only to rebuild the SVG loader with the pinned esbuild and idb-keyval versions. Normal site builds do not need npm packages or Python.
 
