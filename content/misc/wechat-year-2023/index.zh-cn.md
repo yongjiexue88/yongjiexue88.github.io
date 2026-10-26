@@ -11,7 +11,7 @@ tags: [随笔]
 
 关键数据：原创文章 69 篇，32 万字，总阅读量 75 万，读者 35 万，4 万次分享，关注数 1.8 万，常读用户 6064，留言数量 1538，赞赏人数 132。2023 用户增长 12 倍，总赞赏收入 2428¥。
 
-关注并星标⭐️《[非法加冯](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》，老司机带逛[云计算](/cloud/debris/)与数据库。
+关注并星标⭐️《[非法加冯](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》，老司机带逛云计算与数据库。
 
 ---
 
@@ -19,11 +19,11 @@ tags: [随笔]
 
 ![图片](01.webp)
 
-在数量上，32 万字基本上够出两本书了，内容基本都是关于云计算、数据库、以及 PostgreSQL 与 Pigsty 的文章。其中，《[云计算泥石流](/cloud/debris/)》与《[数据库老司机](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》是今年新开的两个系列，重点关注“下云”，以及自建 PG RDS 这两个主题。
+在数量上，32 万字基本上够出两本书了，内容基本都是关于云计算、数据库、以及 PostgreSQL 与 Pigsty 的文章。其中，《云计算泥石流》与《[数据库老司机](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》是今年新开的两个系列，重点关注“下云”，以及自建 PG RDS 这两个主题。
 
 ![图片](02.webp)
 
-在数量上，32 万字基本上够出两本书了，内容基本都是关于云计算、数据库、以及 PostgreSQL 与 Pigsty 的文章。其中，《[云计算泥石流](/cloud/debris/)》与《[数据库老司机](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》是今年新开的两个系列，重点关注“下云”，以及自建 PG RDS 这两个主题。
+在数量上，32 万字基本上够出两本书了，内容基本都是关于云计算、数据库、以及 PostgreSQL 与 Pigsty 的文章。其中，《云计算泥石流》与《[数据库老司机](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》是今年新开的两个系列，重点关注“下云”，以及自建 PG RDS 这两个主题。
 
 ![图片](03.webp)
 
@@ -75,11 +75,11 @@ tags: [随笔]
 
 《[数据库老司机](/db/rethink/)》系列聚焦在我自己的首要专业领域上，并尝试为 DB 技术圈设置**议程**：[云是在白嫖开源吗](/cloud/paradigm/)？[RDS 能让 DBA 失业吗](/cloud/no-dba-bullshit/)？[分布式数据库是不是伪需求](/db/distributive-bullshit/)？[PG vs MySQL 哪家强](/db/bad-mysql/)？[国产数据库真卡脖子吗](/db/db-choke/)？[向量数据库能不能打](/db/svdb-is-dead/)？[数据库该不该放入容器](/db/pg-in-docker/)？[数据库该不该上 K8S](/db/db-in-k8s/)？有几个主题还搞了直播**辩经**，效果相当炸裂。数据库领域其实有许多陈词滥调、刻板印象、过时教条、皇帝的新衣。自己创业的一个好处就是，有着充分的自由进行表达。不讲假话，不讲废话，相信常识的力量，讲出自己的故事，你会发现许许多多的用户都有着一样的共鸣，这是很有乐趣的一件事。
 
-《[云计算泥石流](/cloud/debris/)》则是用数据剖析解构了公有云的方方面面：各项基础云服务的[成本与价值](/cloud/odyssey/)，[SLA 承诺](/cloud/sla/)，[商业模式](/cloud/ebs/)，[利润率](/cloud/profit/)，[大故障复盘](/cloud/aliyun/)，[未来的发展](/cloud/finops/)。有不少用户受此鼓舞，迈出了独立自主运营的第一步，并向我分享他们的激动与喜悦。比起数据库主业而言，倡导下云/自建的理念更像是一种**娱乐**与**冒险** —— 而我很高兴能看到理念的力量转变为一些现实的影响：
+《云计算泥石流》则是用数据剖析解构了公有云的方方面面：各项基础云服务的[成本与价值](/cloud/odyssey/)，[SLA 承诺](/cloud/sla/)，[商业模式](/cloud/ebs/)，[利润率](/cloud/profit/)，[大故障复盘](/cloud/aliyun/)，[未来的发展](/cloud/finops/)。有不少用户受此鼓舞，迈出了独立自主运营的第一步，并向我分享他们的激动与喜悦。比起数据库主业而言，倡导下云/自建的理念更像是一种**娱乐**与**冒险** —— 而我很高兴能看到理念的力量转变为一些现实的影响：
 
  *“不要弄些小打小闹的计划，它没有激发人们热血的魔力，本身也可能无法实现。要绘制宏伟蓝图，志存高远，并竭尽所能”。*
 
-以上就是我分享的内容。2023 年的具体文章内容，请参阅《[非法加冯文章导航](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》与《[云计算泥石流](/cloud/debris/)》。\
+以上就是我分享的内容。2023 年的具体文章内容，请参阅《[非法加冯文章导航](http://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486611&idx=1&sn=658ded908f5e8a24d01a7ccc87df5bbc&chksm=fe4b3948c93cb05ee0023eba7687ce91018a3971304229c983eeb22bc52e13128ebce73421a9&scene=21#wechat_redirect)》与《云计算泥石流》。\
 
 ---
 

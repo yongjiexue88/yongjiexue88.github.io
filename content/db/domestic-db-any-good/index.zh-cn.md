@@ -53,7 +53,6 @@ PolarDB 的第二个优势，就是可以用低成本解决国产化的问题。
 
 [**‍国产数据库是大炼钢铁吗？**](/db/great-leap-db/)
 
-[中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 
 [机场出租车恶性循环与国产数据库怪圈](/db/airport-taxi-db/)
 
@@ -95,7 +94,6 @@ PolarDB PG 选择开源并 100% 兼容 PostgreSQL 是非常重要的，如果它
 
 [‍国产数据库是大炼钢铁吗？](/db/db-china/)
 
-[中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 
 [机场出租车恶性循环与国产数据库怪圈](/db/airport-taxi-db/)
 

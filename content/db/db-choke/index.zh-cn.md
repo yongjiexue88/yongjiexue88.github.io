@@ -93,7 +93,7 @@ IT 后发国家如何保证软件系统的自主可控？[瑞士政府通过开�
 
 总书记在第二十届中央政治局第十一次集体学习会议指出：“**发展新质生产力是推动高质量发展的内在要求和重要着力点**”。那么什么是新质生产力？在基础软件领域，开源就是新质生产力，而套壳换皮魔改开源的 “国产化软件”，[走这条路是走不到世界前列的](/db/db-china/)。
 
-抛开应用 “一行代码不改” 的妄念需求，像 PostgreSQL 这样的开源数据库内核早就可以替代 Oracle 了。许多国产数据库套着 PG 的皮，打着解决 “Oracle” 卡脖子的幌子，一股脑地去做所谓 “Oracle 兼容性”，[却根本看不到数据库领域的前沿发展方向](/pg/china-pg-contribution/) —— AWS 这样的云厂商拿着开源的 PostgreSQL / MySQL 内核与自己的 [RDS 管控](/cloud/dba-vs-rds) 大杀四方，拳打 Oracle，脚踢 SQL Server，已经是数据库市场大哥大了。
+抛开应用 “一行代码不改” 的妄念需求，像 PostgreSQL 这样的开源数据库内核早就可以替代 Oracle 了。许多国产数据库套着 PG 的皮，打着解决 “Oracle” 卡脖子的幌子，一股脑地去做所谓 “Oracle 兼容性”，却根本看不到数据库领域的前沿发展方向 —— AWS 这样的云厂商拿着开源的 PostgreSQL / MySQL 内核与自己的 [RDS 管控](/cloud/dba-vs-rds) 大杀四方，拳打 Oracle，脚踢 SQL Server，已经是数据库市场大哥大了。
 
 ---
 
@@ -113,7 +113,6 @@ IT 后发国家如何保证软件系统的自主可控？[瑞士政府通过开�
 
 [基础软件到底需要什么样的自主可控？](/db/sovereign-dbos/)
 
-[中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 
 [分布式数据库是伪需求吗？](/db/distributive-bullshit)
 

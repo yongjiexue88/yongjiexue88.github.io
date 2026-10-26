@@ -44,7 +44,6 @@ tags: [国产数据库, 技术评论]
 - [数据库真被卡脖子了吗？](/db/db-choke/)
 - [国产数据库是大炼钢铁吗？](/db/great-leap-db/)
 - [基础软件到底需要什么样的自主可控？](/db/sovereign-dbos/)
-- [中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 - [CentOS 7 过保了，换什么 OS 发行版更好？](/misc/centos7-eol/)
 [EL 系操作系统发行版哪家强？](/db/rhel-compatibility/)
 

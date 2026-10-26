@@ -49,7 +49,6 @@ tags: [下云, 翻译]
 - [半年下云省千万：DHH 下云 FAQ 答疑](/cloud/cloud-exit-faq/)
 - [先优化碳基 BIO 核，再优化硅基 CPU 核](/db/bio-core-cpu-core/)
 - [单租户时代：SaaS 范式转移](/cloud/single-tenant-saas/)
-- [拒绝用复杂度自慰，下云也保稳定运行](/cloud/uptime/)
 
 ---
 

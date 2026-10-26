@@ -27,7 +27,6 @@ tags: [PostgreSQL]
 - [Why is PG the Foundation of Future Data?](/pg/pg-for-everything/)
 - [Will PostgreSQL Change Its Open-Source License?](/pg/pg-license/)
 - [PostgreSQL is Devouring the Database World](/pg/pg-eat-db-world/)
-- [Technical Minimalism: Just Use Postgres for Everything](/pg/just-use-pg/)
 - [New PG-Ecosystem Player: ParadeDB](/pg/paradedb/)
 - [Amazing PostgreSQL Scalability](/pg/pg-scalability/)
 - [PostgreSQL Wins 2024 Database of the Year! (Fifth Time)](/pg/pg-dbeng-2024/)

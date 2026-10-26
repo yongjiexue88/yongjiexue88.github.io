@@ -168,7 +168,7 @@ PostgreSQL 允许用户开发功能模块，复用数据库公共基础设施，
 许多新一代互联网公司都开始积极拥抱并 All in PostgreSQL。
 Instagram 用 PG，Notion 用 PG，OpenAI 这样的独角兽巨无霸也 All in PG。
 
-正如《[**技术极简主义：一切皆用 Postgres**](/pg/just-use-pg/) 》所言：
+正如《**技术极简主义：一切皆用 Postgres** 》所言：
 简化技术栈、减少组件、加快开发速度、降低风险并提供更多功能特性的方法之 一 就是 **“一切皆用 Postgres”**。
 Postgres 能够取代许多后端技术，包括 MySQL，Kafka、RabbitMQ、ElasticSearch，Mongo和 Redis，至少到数百万用户时都毫无问题。
 **一切皆用 Postgres** ，已经不再是少数精英团队的前沿探索，而是成为了一种进入主流视野的最佳实践。

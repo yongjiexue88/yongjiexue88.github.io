@@ -201,7 +201,6 @@ But that "installed-base advantage" is historical inertia. It does not generate 
 
 - [MySQL Won the 2000s. PostgreSQL Won the 2020s. Who Will Win the AI Era?](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247490783&idx=2&sn=056d9144511a054d0430ae6b83bef2b3&scene=21#wechat_redirect)
 - [MySQL and Baijiu: The Internet's Obedience Test](/en/db/mysql-baijiu/)
-- [MySQL vs. PostgreSQL in 2025](/en/db/mysql-vs-pgsql/)
 - [MySQL Is Dead, Long Live PostgreSQL](/db/mysql-is-dead/)
 - [PostgreSQL Is Claimed to Be 360x Slower Than MySQL—I've Had Enough](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247489496&idx=1&sn=ee3acab3c57931f80c79998216284b1c&scene=21#wechat_redirect)
 - [PostgreSQL Has Achieved an Overwhelming Advantage over MySQL](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247489241&idx=1&sn=cdee3e224c1ad79f99ce8aff1bbae5ef&scene=21#wechat_redirect)
@@ -217,7 +216,6 @@ But that "installed-base advantage" is historical inertia. It does not generate 
 - [OrioleDB Is Here: The Oreo Database Arrives!](/en/pg/orioledb-is-coming/)
 - [Stack Overflow 2024 Survey](/en/pg/pg-is-no1-again/)
 - Why Is PostgreSQL the Foundation of the Future of Data?
-- [Technical Minimalism: Just Use PostgreSQL for Everything](/en/pg/just-use-pg/)
 - [2023 Database of the Year: PostgreSQL (DB-Engines)](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247486745&idx=1&sn=b92be029db148f53239c29bea912fc78&scene=21#wechat_redirect)
 - [How Powerful Is PostgreSQL, Really?](/en/pg/pg-performence/)
 - [Why Is PostgreSQL the Most Successful Database?](/en/pg/pg-is-best/)

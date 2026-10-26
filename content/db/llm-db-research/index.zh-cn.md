@@ -59,7 +59,6 @@ OpenAI GPT 5 pro 用起来感觉更 “天真” 一些，很容易受到厂商�
 
 [分布式数据库是伪需求吗？](/db/distributive-bullshit/)
 
-[中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 
 [机场出租车恶性循环与国产数据库怪圈](/db/airport-taxi-db/)
 

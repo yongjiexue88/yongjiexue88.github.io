@@ -45,7 +45,6 @@ AWS 在海外有一个非常有效的 Marketing 策略，他们积极建设开�
 
 [单租户时代：SaaS 范式转移](/cloud/single-tenant-saas/)
 
-[拒绝用复杂度自慰，下云也保稳定运行](/cloud/uptime/)
 
 [是时候放弃云计算了吗？](/cloud/odyssey/)
 

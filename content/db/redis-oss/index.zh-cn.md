@@ -129,7 +129,7 @@ Redis 切换为更为严格的 SSPL 协议的核心原因，用 Redis Labs CEO �
 
 ### 法律工具与集体行动
 
-Copyleft 软件许可证是一种法律工具，它试图迫使更多的软件供应商公开其源码。但是对于促进软件自由而言，[Martin Keppmann 相信更有前景的法律工具是政府监管](/db/goodbye-gpl/#促进软件自由的法律工具)。例如，GDPR 提出了[数据可移植权](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-data-portability/)，这意味着用户必须可以能将他们的数据从一个服务转移到其它的服务中。另一条有希望的途径是，推动 [公共部门的采购倾向于开源、本地优先的软件](https://joinup.ec.europa.eu/sites/default/files/document/2012-07/Public_Open_Source_Software_Procurement_Models_The_Next_Generation.pdf)，而不是闭源的云软件。这为企业开发和维护高质量的开源软件创造了积极的激励机制，而版权条款却没有这样做。
+Copyleft 软件许可证是一种法律工具，它试图迫使更多的软件供应商公开其源码。但是对于促进软件自由而言，Martin Keppmann 相信更有前景的法律工具是政府监管。例如，GDPR 提出了[数据可移植权](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-data-portability/)，这意味着用户必须可以能将他们的数据从一个服务转移到其它的服务中。另一条有希望的途径是，推动 [公共部门的采购倾向于开源、本地优先的软件](https://joinup.ec.europa.eu/sites/default/files/document/2012-07/Public_Open_Source_Software_Procurement_Models_The_Next_Generation.pdf)，而不是闭源的云软件。这为企业开发和维护高质量的开源软件创造了积极的激励机制，而版权条款却没有这样做。
 
 我认为，有效的改变来自于对大问题的集体行动，而不仅仅来自于一些开源项目选择一种许可证而不是另一种。公有云反叛军联盟应该团结一切可以团结的有生力量 —— 开源平替软件社群，开发者与用户；服务器与硬件厂商，坚守 IaaS 阵地的资源云，运营商云，IDC 与 IDC 2.0，甚至是公有云厂商的 IaaS 部门。采取一切法律框架内允许的行动去推进这一点。
 

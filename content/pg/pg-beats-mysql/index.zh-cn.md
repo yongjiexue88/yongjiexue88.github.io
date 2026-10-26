@@ -73,7 +73,6 @@ tags: [PostgreSQL, MySQL, 技术评论]
 
 [为什么 PostgreSQL 是未来数据的基石？](/pg/pg-for-everything/)
 
-[技术极简主义：一切皆用 Postgres](/pg/just-use-pg/)
 
 [2023 年度数据库：PostgreSQL (DB-Engine)](/pg/dbengines-2023/)
 

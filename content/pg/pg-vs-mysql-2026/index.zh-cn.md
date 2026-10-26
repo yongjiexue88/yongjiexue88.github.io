@@ -200,7 +200,6 @@ PostgreSQL 赢了增量世界：新项目、新开发者、新平台、AI Agent 
 
 - [MySQL 赢了 2000s，PostgreSQL 赢得 2020s，谁将赢得 AI 时代？](/ai/db-choice-ai-era/)
 - [MySQL：互联网行业的服从测试](/db/mysql-baijiu/)
-- [2025 年：MySQL vs PostgreSQL](/db/mysql-vs-pgsql/)
 - [MySQL 安魂九霄，PostgreSQL 驶向云外](/db/mysql-is-dead/)
 - [PG 被黑慢 MySQL 360 倍，这次我真忍不了](/pg/pg-360x-slower/)
 - [PostgreSQL 取得对 MySQL 的压倒性优势](/pg/pg-beats-mysql/)
@@ -216,7 +215,6 @@ PostgreSQL 赢了增量世界：新项目、新开发者、新平台、AI Agent 
 - [OrioleDB 奥利奥数据库来了！](/pg/orioledb-is-coming/)
 - [StackOverflow 2024 调研](/pg/pg-is-no1-again/)
 - [为什么 PostgreSQL 是未来数据的基石？](/pg/pg-for-everything/)
-- [技术极简主义：一切皆用 Postgres](/pg/just-use-pg/)
 - [2023 年度数据库：PostgreSQL (DB-Engine)](/pg/dbengines-2023/)
 - [PostgreSQL 到底有多强？](/pg/pg-performence/)
 - [为什么 PostgreSQL 是最成功的数据库？](/pg/pg-is-best/)

@@ -88,7 +88,6 @@ tags: [随笔]
 - 2024-01-09 [互联网技术大师速成班](/misc/internet-tech-masterclass/) 马工
 - 2024-01-04 [门内的国企如何看门外的云厂商](/cloud/state-owned-enterprise-cloud-view/) Leo
 - 2023-12-29 [卡在政企客户门口的阿里云](/cloud/aliyun-enterprise-market/) 马工
-- 2024-01-12 [云计算泥石流](/cloud/debris/)
 
 ---
 
@@ -145,13 +144,11 @@ tags: [随笔]
 - 2024-03-16 [PostgreSQL is eating the database world](/db/mongo-powered-by-pg/)
 - 2024-03-14 [RDS 阉掉了 PostgreSQL 的灵魂](/cloud/rds-castrates-pg/)
 - 2024-03-04 [PostgreSQL 正在吞噬数据库世界](/pg/pg-eat-db-world/)
-- 2024-02-19 [技术极简主义：一切皆用 Postgres](/pg/just-use-pg/)
 - 2024-02-18 [PG 生态新玩家 ParadeDB](/pg/paradedb/)
 - 2024-02-02 [DBA 会被云淘汰吗？](/cloud/dba-vs-rds/)
 - 2024-01-14 [快速掌握 PostgreSQL 版本新特性](/pg/pg-version-features/)
 - 2024-01-13 [令人惊叹的 PostgreSQL 可伸缩性](/pg/pg-scalability/)
 - 2024-01-11 [国产数据库是大炼钢铁吗？](/db/great-leap-db/)
-- 2024-01-08 [中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 - 2024-01-05 [展望 PostgreSQL 的 2024 (Jonathan Katz)](/pg/pg-in-2024/)
 - 2024-01-03 [2023 年度数据库：PostgreSQL (DB-Engine)](/pg/dbengines-2023/)
 

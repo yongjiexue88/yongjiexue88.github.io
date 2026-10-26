@@ -29,7 +29,6 @@ tags: [云计算, AWS, 故障复盘]
 
 [单租户时代：SaaS 范式转移](/cloud/single-tenant-saas/)
 
-[拒绝用复杂度自慰，下云也保稳定运行](/cloud/uptime/)
 
 [是时候放弃云计算了吗？](/cloud/odyssey/)
 

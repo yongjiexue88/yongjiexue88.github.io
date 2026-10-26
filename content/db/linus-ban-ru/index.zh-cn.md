@@ -66,7 +66,6 @@ Linus 很明显已经划出了一道新的边界，将老毛子划出了社区�
 
 [**国产数据库是大炼钢铁吗？**](/db/great-leap-db/)
 
-[**中国对 PostgreSQL 的贡献约等于零吗？**](/pg/china-pg-contribution/)
 
 [**机场出租车恶性循环与国产数据库怪圈**](/db/airport-taxi-db/)
 

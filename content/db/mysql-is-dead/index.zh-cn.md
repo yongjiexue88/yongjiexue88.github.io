@@ -121,7 +121,7 @@ MySQL 在功能上缺失的绝不仅仅是是编程语言/存储过程支持，�
 
 当 MySQL 还局限在 “**关系型 OLTP 数据库**” 的定位时，PostgreSQL 早已经放飞自我，从一个关系型数据库发展成了一个多模态的数据库，成为了一个数据管理的抽象框架与开发平台。
 
-[PostgreSQL 正在吞噬数据库世界](/pg/pg-eat-db-world) —— 它正在通过插件的方式，将整个数据库世界内化其中。“[一切皆用 Postgres](/pg/just-use-pg/)” 也已经不再是少数精英团队的前沿探索，而是成为了一种进入主流视野的最佳实践。
+[PostgreSQL 正在吞噬数据库世界](/pg/pg-eat-db-world) —— 它正在通过插件的方式，将整个数据库世界内化其中。“一切皆用 Postgres” 也已经不再是少数精英团队的前沿探索，而是成为了一种进入主流视野的最佳实践。
 
 而在新功能支持上，MySQL 却显得十分消极 —— 一个应该有大量 Breaking Change 的“创新大版本更新”，不是糊弄人的摆烂特性，就是企业级的特供鸡肋，一个大版本就连鸡零狗碎的小修小补都凑不够数。
 
@@ -303,7 +303,6 @@ MySQL 曾经也辉煌过，也曾经是“开源软件”的一杆标杆，但�
 
 [PostgreSQL is eating the database world](/pg/pg-eat-db-world)
 
-[技术极简主义：一切皆用 Postgres](/pg/just-use-pg)
 
 [PostgreSQL：世界上最成功的数据库](/pg/pg-is-no1)
 

@@ -155,9 +155,7 @@ tags: [云计算, 阿里云, 故障复盘]
 
 [卡在政企客户门口的阿里云](/cloud/aliyun-enterprise-market/) 马工
 
-[云计算泥石流](/cloud/debris/)
 
-[拒绝用复杂度自慰，下云也保稳定运行](/cloud/uptime/)
 
 [扒皮对象存储：从降本到杀猪](/cloud/s3/)
 
@@ -181,7 +179,6 @@ tags: [云计算, 阿里云, 故障复盘]
 
 [是时候放弃云计算了吗？](/cloud/odyssey/)
 
-[云计算泥石流合集 —— 用数据解构公有云](/cloud/debris/)
 
 [下云奥德赛](/cloud/odyssey/)
 

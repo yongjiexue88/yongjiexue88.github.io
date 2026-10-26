@@ -41,7 +41,7 @@ I followed DHH and 37signals—the company behind Basecamp and HEY—through the
 
 **June 30, 2025:** The S3 contract expired. By then, 37signals had installed 18 PB of Pure Storage all-flash capacity across two data centers. The hardware cost about $1.5 million; five years of warranty and support cost under $1 million. DHH wrote “[It’s five grand a day to miss our S3 exit](https://world.hey.com/dhh/it-s-five-grand-a-day-to-miss-our-s3-exit-b8293563)” to keep everyone on schedule: every extra day on S3 meant $5,000—$35,000 a week or $150,000 a month. AWS ultimately granted a free 60-day egress window, waiving roughly $250,000 in transfer fees. The data moved. They parted on good terms.
 
-**Projected five-year savings:** The estimate climbed from $7 million to more than $10 million. Not a single person was added to the operations team. DHH’s [cloud-exit FAQ](https://world.hey.com/dhh/the-big-cloud-exit-faq-20274010) and the retrospective on [staying highly available after leaving the cloud](/en/cloud/uptime/) explain how.
+**Projected five-year savings:** The estimate climbed from $7 million to more than $10 million. Not a single person was added to the operations team. DHH’s [cloud-exit FAQ](https://world.hey.com/dhh/the-big-cloud-exit-faq-20274010) and the retrospective on staying highly available after leaving the cloud explain how.
 
 That is only the cost ledger. Performance is a separate matter. On-premises all-NVMe flash and network-attached cloud volumes are different species. I was running PostgreSQL on all-NVMe storage ten years ago. Most cloud users are still stuck on bargain-bin volumes with miserable IOPS.
 

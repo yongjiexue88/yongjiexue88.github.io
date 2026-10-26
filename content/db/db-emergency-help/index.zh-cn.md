@@ -52,7 +52,6 @@ tags: [数据库, 故障复盘, 职业]
 - [如何用 pg_filedump 抢救数据？](/pg/pg-filedump/)
 - [SaaS 已死？AI 时代，软件从数据库开始](/ai/ai-agent-era/)
 - [分布式数据库是伪需求吗？](/db/distributive-bullshit/)
-- [2025 年：MySQL vs PostgreSQL](/db/mysql-vs-pgsql/)
 - [Claude Code 泄密：MCP 爆火的隐藏真相](/ai/mcp-hidden-truth/)
 - [草台班子唱大戏，阿里云 RDS 翻车记](/cloud/rds-failure/)
 - [云 RDS：从删库到跑路](/cloud/drop-rds/)

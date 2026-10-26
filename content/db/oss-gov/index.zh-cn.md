@@ -56,7 +56,6 @@ EMBAG 的实施预计将成为其他国家考虑类似措施的典范。它旨�
 
 [基础软件到底需要什么样的自主可控？](/db/sovereign-dbos/)
 
-[中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 
 [分布式数据库是伪需求吗？](/db/distributive-bullshit)
 

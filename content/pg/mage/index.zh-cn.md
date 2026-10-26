@@ -34,7 +34,6 @@ tags: [PostgreSQL]
 - [为什么PG是未来数据的基石？](/pg/pg-for-everything/)
 - [PostgreSQL会修改开源许可证吗？](/pg/pg-license/)
 - [PostgreSQL正在吞噬数据库世界](/pg/pg-eat-db-world/)
-- [技术极简主义：一切皆用Postgres](/pg/just-use-pg/)
 - [PG生态新玩家：ParadeDB](/pg/paradedb/)
 - [令人惊叹的PostgreSQL可伸缩性](/pg/pg-scalability/)
 - [PostgreSQL荣获2024年度数据库之王！（第五次）](/pg/pg-dbeng-2024/)

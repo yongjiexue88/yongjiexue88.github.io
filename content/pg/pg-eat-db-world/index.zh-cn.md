@@ -129,7 +129,7 @@ PostgreSQL 允许用户开发功能模块，复用数据库公共基础设施，
 
 在引领潮流的 HackerNews StackOverflow 上，PostgreSQL 早已成为了最受欢迎的数据库。许多新的开源项目都默认使用 PostgreSQL 作为首要，甚至唯一的数据库 —— 例如，给各种数据库做模式管理的 Bytebase。《[云时代数据库 DevOps：硅谷调研](https://mp.weixin.qq.com/s/HeIGQC6JsE9ZXqJtFjiczA)》也提出，许多新一代互联网公司都开始积极拥抱并 All in PostgreSQL。
 
-正如《[**技术极简主义：一切皆用 Postgres**](/pg/just-use-pg/) 》所言：简化技术栈、减少组件、加快开发速度、降低风险并提供更多功能特性的方法之一就是 **“一切皆用 Postgres”**。Postgres 能够取代许多后端技术，包括 MySQL，Kafka、RabbitMQ、ElasticSearch，Mongo 和 Redis，至少到数百万用户时都毫无问题。**一切皆用 Postgres**，已经不再是少数精英团队的前沿探索，而是成为了一种进入主流视野的最佳实践。
+正如《**技术极简主义：一切皆用 Postgres** 》所言：简化技术栈、减少组件、加快开发速度、降低风险并提供更多功能特性的方法之一就是 **“一切皆用 Postgres”**。Postgres 能够取代许多后端技术，包括 MySQL，Kafka、RabbitMQ、ElasticSearch，Mongo 和 Redis，至少到数百万用户时都毫无问题。**一切皆用 Postgres**，已经不再是少数精英团队的前沿探索，而是成为了一种进入主流视野的最佳实践。
 
 ---
 
@@ -237,7 +237,6 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 ## 参考阅读
 
-[技术极简主义：一切皆用 Postgres](/pg/just-use-pg/)
 
 [PG 生态新玩家 ParadeDB](/pg/paradedb/)
 
@@ -245,7 +244,6 @@ Pigsty 六点价值主张的首字母合起来，则为 Pigsty 提供了另外�
 
 [令人惊叹的 PostgreSQL 可伸缩性](/pg/pg-scalability/)
 
-[中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 
 [展望 PostgreSQL 的 2024 (Jonathan Katz)](/pg/pg-in-2024/)
 

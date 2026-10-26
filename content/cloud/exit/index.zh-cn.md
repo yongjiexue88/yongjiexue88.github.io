@@ -27,7 +27,6 @@ tags: [下云]
 
 [下云奥德赛：是时候放弃云计算了吗？](/cloud/odyssey/)
 
-[拒绝用复杂度自慰，下云也保稳定运行](/cloud/uptime/)
 
 [半年下云省千万：DHH 下云 FAQ 答疑](/cloud/cloud-exit-faq/)
 
@@ -217,7 +216,6 @@ tags: [下云]
 - 2024-10-19 [DHH：下云超预期，能省一个亿](/cloud/odyssey-done/)
 - 2024-09-07 [先优化碳基 BIO 核，再优化硅基 CPU 核](/db/bio-core-cpu-core/)
 - 2024-01-16 [单租户时代：SaaS 范式转移](/cloud/single-tenant-saas/)
-- 2024-01-10 [拒绝用复杂度自慰，下云也保稳定运行](/cloud/uptime/)
 - 2023-12-22 [半年下云省千万：DHH 下云 FAQ 答疑](/cloud/cloud-exit-faq/)
 - 2023-10-29 [是时候放弃云计算了吗？](/cloud/odyssey/)
 - 2023-07-07 [下云奥德赛](/cloud/odyssey/)
@@ -314,8 +312,6 @@ tags: [下云]
 - 2024-01-09 [互联网技术大师速成班](/misc/internet-tech-masterclass/) 马工
 - 2024-01-04 [门内的国企如何看门外的云厂商](/cloud/state-owned-enterprise-cloud-view/) Leo
 - 2023-12-29 [卡在政企客户门口的阿里云](/cloud/aliyun-enterprise-market/) 马工
-- 2024-01-12 [云计算泥石流](/cloud/debris/)
-- 2024-01-10 [拒绝用复杂度自慰，下云也保稳定运行](/cloud/uptime/)
 - 2023-12-27 [扒皮对象存储：从降本到杀猪](/cloud/s3/)
 - 2023-12-22 [半年下云省千万：DHH 下云 FAQ 答疑](/cloud/cloud-exit-faq/)
 - 2023-12-06 [互联网故障背后的草台班子们](/cloud/amateur-internet-outages/) 马工
@@ -327,7 +323,6 @@ tags: [下云]
 - 2023-11-09 [阿里云的羊毛抓紧薅，五千的云服务器三百拿](/cloud/cheap-ecs/)
 - 2023-11-06 [云厂商眼中的客户：又穷又闲又缺爱](/cloud/cloud-customers-poor-bored-lonely/) 马工
 - 2023-10-29 [是时候放弃云计算了吗？](/cloud/odyssey/)
-- 2023-07-08 [云计算泥石流合集 —— 用数据解构公有云](/cloud/debris/)
 - 2023-07-07 [下云奥德赛](/cloud/odyssey/)
 - 2023-07-06 [FinOps 终点是下云](/cloud/finops/)
 - 2023-06-14 [云计算为啥还没挖沙子赚钱？](/cloud/profit/)

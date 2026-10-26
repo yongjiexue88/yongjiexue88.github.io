@@ -103,7 +103,6 @@ Supabase 实际上分为两个部分，有状态的部分使用外部的 Postgre
 
 [PostgreSQL is eating the database world](/db/mongo-powered-by-pg/)
 
-[技术极简主义：一切皆用 Postgres](/pg/just-use-pg/)\
 
 [PostgreSQL：世界上最成功的数据库](/pg/pg-is-no1/)\
 

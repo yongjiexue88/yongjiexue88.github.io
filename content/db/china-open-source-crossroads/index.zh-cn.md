@@ -13,7 +13,6 @@ tags: [国产数据库, Linux, PG内核]
 
 [国产数据库是大炼钢铁吗？](/db/great-leap-db/)
 
-[中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 
 [机场出租车恶性循环与国产数据库怪圈](/db/airport-taxi-db/)
 

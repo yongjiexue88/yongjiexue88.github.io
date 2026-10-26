@@ -113,7 +113,7 @@ These plugins enable PostgreSQL to serve diverse functionalities—geospatial, t
 
 While MySQL remains confined to its "relational OLTP database" niche, PostgreSQL has transcended its relational roots to become a multi-modal database and a platform for data management abstraction and development.
 
-[PostgreSQL is devouring the database world](/en/pg/pg-eat-db-world/), internalizing the entire database realm through its plugin architecture. "[Just use Postgres](/en/pg/just-use-pg/)" has moved from being a fringe exploration by elite teams to a mainstream best practice.
+[PostgreSQL is devouring the database world](/en/pg/pg-eat-db-world/), internalizing the entire database realm through its plugin architecture. "Just use Postgres" has moved from being a fringe exploration by elite teams to a mainstream best practice.
 
 In contrast, MySQL shows a lackluster enthusiasm for new functionalities—a major version update that should be rife with innovative 'breaking changes' turns out to be either lackluster features or insubstantial enterprise gimmicks.
 
@@ -233,7 +233,6 @@ MySQL had its days of glory and was once a benchmark of "open-source software," 
 
 [PostgreSQL is eating the database world](/pg/pg-eat-db-world)
 
-[技术极简主义：一切皆用Postgres](/pg/just-use-pg)
 
 [PostgreSQL：世界上最成功的数据库](/pg/pg-is-no1)
 

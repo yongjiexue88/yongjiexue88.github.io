@@ -21,7 +21,6 @@ tags: [云计算, 数据库, 架构, 技术评论]
 在这场技术界的惊涛骇浪中，需要有人透过现象看本质，脚踏实地的把各项技术的好与坏，适用场景与利弊权衡讲清楚。而我本人愿意作为一个亲历者，见证者，评叙者，参与者躬身入局，加入其中。这里拟定了一个议题列表集，名为《**正本清源：技术反思录**》，将依次撰文讨论评论业界关心的热点与技术：
 
 - [国产数据库是大炼钢铁吗？](/db/great-leap-db/)
-- [中国对 PostgreSQL 的贡献约等于零吗？](/pg/china-pg-contribution/)
 - [MySQL 的正确性为何如此拉垮？](/db/bad-mysql/)
 - [没错，数据库确实应该放入 K8s 里！](/db/database-in-k8s-counterpoint/)（转载 SealOS）
 - [数据库应该放入 K8S 里吗？](/db/db-in-k8s/)
@@ -43,7 +42,6 @@ tags: [云计算, 数据库, 架构, 技术评论]
 - [Redis 不开源是“开源”之耻，更是公有云之耻](/db/redis-oss/)
 - [PostgreSQL 正在吞噬数据库世界](/pg/pg-eat-db-world/)
 - [RDS 阉掉了 PostgreSQL 的灵魂](/cloud/rds-castrates-pg/)
-- [技术极简主义：一切皆用 Postgres](/pg/just-use-pg/)
 
 [![rethink](rethink.jpg)](https://mp.weixin.qq.com/s/Q0OtrpEhF24XN7gwMjbSRA)
 
@@ -91,7 +89,7 @@ tags: [云计算, 数据库, 架构, 技术评论]
 
 《[范式转移：云原生能否干翻公有云？](/cloud/paradigm/)》
 
-《[本地优先：你是否真的需要 XaaS？](/misc/goodbye-gpl/)》
+《本地优先：你是否真的需要 XaaS？》
 
 《云厂商的 SLA 到底靠不靠得住？》
 
