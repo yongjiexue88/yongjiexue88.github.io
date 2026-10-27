@@ -93,7 +93,7 @@ If these bills actually become law, the ones who suffer most may not be the clos
 
 The logic is simple. A closed model runs on the company's own servers; if something goes wrong, it can be taken offline, patched, or locked down. Once open weights are released, they sit on hard drives all over the world, and nobody can press the off switch. Intro 2602 requires that a human operator be able to shut the model down; Intro 2600 makes providers liable for third-party misuse. For open weights, those two rules are close to structurally impossible to satisfy.
 
-An earlier piece on this site, “[Jensen Huang's First-Ever Tweet Backs Open-Weight Models](/ai/open-weight/),” makes the case for open weights: exit rights, sovereignty, and nobody being able to hit pause unilaterally. I agree with it. But this hearing shows that the tension between safety regulation and open weights will have to be faced head-on sooner or later. There is no way around it.
+An earlier piece on this site, “Jensen Huang's First-Ever Tweet Backs Open-Weight Models,” makes the case for open weights: exit rights, sovereignty, and nobody being able to hit pause unilaterally. I agree with it. But this hearing shows that the tension between safety regulation and open weights will have to be faced head-on sooner or later. There is no way around it.
 
 On the other side, the likeliest winners are third-party validators. Here is a prediction that may age badly: **if even one validation bill in this package passes, the first people to make money will not be the AI companies but the people doing AI audits.** After Enron, Arthur Andersen died, yet the audit business got bigger. This time will probably be no different.
 

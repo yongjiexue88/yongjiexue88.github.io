@@ -12,11 +12,8 @@ page_width: wide
 comments: false
 profile:
   avatar: img/hero-db.jpg
-  headline: Yongjie Xue @yongjiexue88 / Pigsty
+  headline: Databases
 cascade:
   type: blog
   page_width: normal
-  # Posts without explicit authors use the Yongjie Xue profile.
-  # Guest-author identifiers remain explicit in article front matter.
-  authors: [yongjie]
 ---

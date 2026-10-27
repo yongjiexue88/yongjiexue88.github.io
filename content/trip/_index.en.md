@@ -11,9 +11,8 @@ type: blog
 page_width: wide
 comments: false
 profile:
-  headline: Yongjie Xue @yongjiexue88
+  headline: Travel Notes
 cascade:
   type: blog
   page_width: normal
-  authors: [yongjie]
 ---

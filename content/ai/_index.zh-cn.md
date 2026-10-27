@@ -11,11 +11,8 @@ type: blog
 page_width: wide
 comments: false
 profile:
-  headline: 薛永杰 @yongjiexue88 / Agent, LLM, Database
+  headline: AI 与系统
 cascade:
   type: blog
   page_width: normal
-  # Posts without explicit authors use the Yongjie Xue profile.
-  # Guest-author identifiers remain explicit in article front matter.
-  authors: [yongjie]
 ---

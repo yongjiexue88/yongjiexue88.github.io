@@ -98,7 +98,7 @@ So the sandbox's real boundary was never the boundary of a process. It's the bou
 
 ## Epilogue
 
-An earlier piece on this site, "[Agent OS: We're Building DOS Again](/ai/agent-os/)," offered an analogy: the LLM is the new CPU, and agents are the new applications. By that analogy, today's news is the **memory protection** moment.
+An earlier piece on this site, "Agent OS: We're Building DOS Again," offered an analogy: the LLM is the new CPU, and agents are the new applications. By that analogy, today's news is the **memory protection** moment.
 
 In the DOS era, any program could write to any address; one program crashed and the whole machine went down with it. Only after protected mode did the operating system truly become an operating system.
 

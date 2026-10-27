@@ -37,48 +37,48 @@ AWS 在海外有一个非常有效的 Marketing 策略，他们积极建设开�
 
 云计算的供应商和用户，基本都有不错收入，本来大家可以无所顾虑的讨论技术和产品，享受 Geek 的乐趣，但是返点进入图片之后，整个画风都歪了。各位读者，是否有类似的经验？欢迎在评论区公开留言，或者在微信对话框给我发送私信。
 
-[云计算泥石流](/cloud/exit/)点一个关注 ⭐️，精彩不迷路\
+云计算泥石流点一个关注 ⭐️，精彩不迷路\
 
 ## DHH
 
-[先优化碳基 BIO 核，再优化硅基 CPU 核](/db/bio-core-cpu-core/)
+先优化碳基 BIO 核，再优化硅基 CPU 核
 
-[单租户时代：SaaS 范式转移](/cloud/single-tenant-saas/)
+单租户时代：SaaS 范式转移
 
 
-[是时候放弃云计算了吗？](/cloud/odyssey/)
+是时候放弃云计算了吗？
 
-[下云奥德赛](/cloud/odyssey/)
+下云奥德赛
 
 ## 亚马逊
 
-[Ahrefs 不上云，省下四亿美元](/cloud/ahrefs-saving/)
+Ahrefs 不上云，省下四亿美元
 
-[云上黑暗森林：打爆云账单，只需要 S3 桶名](/cloud/s3-scam/)
+云上黑暗森林：打爆云账单，只需要 S3 桶名
 
-[Redis 不开源是“开源”之耻，更是公有云之耻](/db/redis-oss/)
+Redis 不开源是“开源”之耻，更是公有云之耻
 
-[RDS 阉掉了 PostgreSQL 的灵魂](/cloud/rds-castrates-pg/)
+RDS 阉掉了 PostgreSQL 的灵魂
 
-[扒皮对象存储：从降本到杀猪](/cloud/s3/)
+扒皮对象存储：从降本到杀猪
 
-[重新拿回计算机硬件的红利](/cloud/bonus/)
+重新拿回计算机硬件的红利
 
-[是时候放弃云计算了吗？](/cloud/odyssey/)
+是时候放弃云计算了吗？
 
-[下云奥德赛](/cloud/odyssey/)
+下云奥德赛
 
 ## 阿里云
 
-[阿里云：高可用容灾神话的破灭](/cloud/aliyun-ha/)
+阿里云：高可用容灾神话的破灭
 
-[阿里云故障预报：本次事故将持续至 20 年后？](/cloud/aliyun-ha/)
+阿里云故障预报：本次事故将持续至 20 年后？
 
 [阿里云新加坡可用区 C 故障，网传机房着火](https://mp.weixin.qq.com/s?__biz=MzU5ODAyNTM5Ng==&mid=2247488345&idx=1&sn=684398668bdddc05d4218c42f5a383b0&scene=21#wechat_redirect "阿里云新加坡可用区C故障，网传机房着火")
 
-[草台班子唱大戏，阿里云 RDS 翻车记](/cloud/rds-failure/)
+草台班子唱大戏，阿里云 RDS 翻车记
 
-[阿里云又挂了，这次是光缆被挖断了？](/cloud/aliyun-fiber-cut/)
+阿里云又挂了，这次是光缆被挖断了？
 
 [云计算：菜就是一种原罪](/cloud/cloud-incompetence/)
 
@@ -86,21 +86,21 @@ AWS 在海外有一个非常有效的 Marketing 策略，他们积极建设开�
 
 [牙膏云？您可别吹捧云厂商了](/cloud/toothpaste-cloud/)
 
-[罗永浩救不了牙膏云](/cloud/luo-live/)
+罗永浩救不了牙膏云
 
 [迷失在阿里云的年轻人](/cloud/lost-youth-at-aliyun/)
 
-[剖析云算力成本，阿里云真的降价了吗？](/cloud/ecs/)
+剖析云算力成本，阿里云真的降价了吗？
 
-[从降本增笑到真的降本增效](/cloud/smile/)
+从降本增笑到真的降本增效
 
-[阿里云周爆：云数据库管控又挂了](/cloud/aliyun-weekly-crash/)
+阿里云周爆：云数据库管控又挂了
 
-[我们能从阿里云史诗级故障中学到什么](/cloud/aliyun/)
+我们能从阿里云史诗级故障中学到什么
 
-[【阿里】云计算史诗级大翻车来了](/cloud/aliyun/)
+【阿里】云计算史诗级大翻车来了
 
-[阿里云的羊毛抓紧薅，五千的云服务器三百拿](/cloud/cheap-ecs/)
+阿里云的羊毛抓紧薅，五千的云服务器三百拿
 
 [云厂商眼中的客户：又穷又闲又缺爱](/cloud/cloud-customers-poor-bored-lonely/)
 
@@ -108,21 +108,21 @@ AWS 在海外有一个非常有效的 Marketing 策略，他们积极建设开�
 
 [腾讯真的走通云原生之路了吗？](/cloud/tencent-cloud-native/)
 
-[我们能从腾讯云故障复盘中学到什么？](/cloud/qcloud/)
+我们能从腾讯云故障复盘中学到什么？
 
-[云 SLA 是安慰剂还是厕纸合同？](/cloud/sla/)
+云 SLA 是安慰剂还是厕纸合同？
 
-[腾讯云：颜面尽失的草台班子](/cloud/tencent-disgrace/)
+腾讯云：颜面尽失的草台班子
 
-[【腾讯】云计算史诗级二翻车来了](/cloud/tencent-epic-fail-2/)
+【腾讯】云计算史诗级二翻车来了
 
-[垃圾腾讯云 CDN：从入门到放弃](/cloud/cdn/)
+垃圾腾讯云 CDN：从入门到放弃
 
 ## 其他云
 
-[删库：Google 云爆破了大基金的整个云账户](/cloud/gcp-unisuper/)
+删库：Google 云爆破了大基金的整个云账户
 
-[Oracle 云大翻车：传 6 百万用户认证数据泄漏](/cloud/oracle-cloud-leak/)
+Oracle 云大翻车：传 6 百万用户认证数据泄漏
 
 ---
 

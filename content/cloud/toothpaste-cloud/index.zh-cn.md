@@ -9,7 +9,7 @@ tags: [云计算, 阿里云, PG管理]
 
 > 原作者：瑞典马工
 
-昨天，阿里云声势浩大的邀请罗永浩直播卖云，结果老罗照本宣科之后，马上就接着卖高露洁牙膏，我的朋友冯老板哈哈大笑，[**嘲笑阿里云是个牙膏云**](/cloud/luo-live/)。\
+昨天，阿里云声势浩大的邀请罗永浩直播卖云，结果老罗照本宣科之后，马上就接着卖高露洁牙膏，我的朋友冯老板哈哈大笑，**嘲笑阿里云是个牙膏云**。\
 
 ![图片](01.webp)
 
@@ -213,7 +213,7 @@ DeveloperWorks: *<https://en.wikipedia.org/wiki/IBM_Developer#:~:text=as%20alpha
 
 #### References
 
-[罗永浩救不了牙膏云](/cloud/luo-live/) · [卡在政企客户门口的阿里云](/cloud/aliyun-enterprise-market/) · [云厂商眼中的客户：又穷又闲又缺爱](/cloud/cloud-customers-poor-bored-lonely/) [阿里云降价背后折射出的绝望](/cloud/aliyun-price-cut-despair/)迷失在阿里云的年轻人[互联网故障背后的草台班子们](/cloud/amateur-internet-outages/) [门内的国企如何看门外的云厂商](/cloud/state-owned-enterprise-cloud-view/) · [剖析云算力成本，阿里云真的降价了吗？](/cloud/ecs/)\
+罗永浩救不了牙膏云 · [卡在政企客户门口的阿里云](/cloud/aliyun-enterprise-market/) · [云厂商眼中的客户：又穷又闲又缺爱](/cloud/cloud-customers-poor-bored-lonely/) [阿里云降价背后折射出的绝望](/cloud/aliyun-price-cut-despair/)迷失在阿里云的年轻人互联网故障背后的草台班子们 门内的国企如何看门外的云厂商 · 剖析云算力成本，阿里云真的降价了吗？\
 
 ---
 

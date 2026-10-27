@@ -12,11 +12,8 @@ page_width: wide
 comments: false
 profile:
   avatar: img/hero-pg.jpg
-  headline: 薛永杰 @yongjiexue88 / Pigsty
+  headline: PostgreSQL
 cascade:
   type: blog
   page_width: normal
-  # Posts without explicit authors use the Yongjie Xue profile.
-  # Guest-author identifiers remain explicit in article front matter.
-  authors: [yongjie]
 ---

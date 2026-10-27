@@ -11,7 +11,7 @@ tags: [PostgreSQL, Codex, 成本]
 
 ## 前言
 
-今天看到冯董发了一篇 [OpenAI：将 PostgreSQL 伸缩至新阶段](/db/openai-pg/)，其中提到了 OpenAI 大量使用了 PostgreSQL，并且是一个 40+ 从库的巨无霸架构！
+今天看到冯董发了一篇 OpenAI：将 PostgreSQL 伸缩至新阶段，其中提到了 OpenAI 大量使用了 PostgreSQL，并且是一个 40+ 从库的巨无霸架构！
 
 > 在聊天提问的时候，老冯了解到 OpenAI 使用的是 Azure 上的托管 PostgreSQL，使用最高可用规格的服务器硬件，从库数量达到 40+，包括一些异地副本，这套巨无霸集群总的读写 QPS 为 100 万左右。
 

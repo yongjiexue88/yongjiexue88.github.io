@@ -73,20 +73,6 @@ tags: [PostgreSQL, 云计算, 工具]
 
 - [互联网技术大师速成班](/misc/internet-tech-masterclass/)
 - [云计算：菜就是一种原罪](/cloud/cloud-incompetence/)
-- [从降本增笑到真的降本增效](/cloud/smile/)
-- [Oracle 最终还是杀死了 MySQL！](/db/oracle-kill-mysql/)
-- [PostgreSQL 正在吞噬数据库世界](/pg/pg-eat-db-world/)
-- [腾讯云：颜面尽失的草台班子](/cloud/tencent-disgrace/)
-- [数据库真被卡脖子了吗？](/db/db-choke/)
-- [国产数据库到底能不能打？](/db/db-china/)
-- [国产数据库是大炼钢铁吗？](/db/great-leap-db/)
-- [分布式数据库是伪需求吗？](/db/distributive-bullshit/)
-- [EL 系操作系统发行版哪家强？](/db/rhel-compatibility/)
-- [基础软件到底需要什么样的自主可控？](/db/sovereign-dbos/)
-- [Redis 不开源是“开源”之耻，更是公有云之耻](/db/redis-oss/)
-- [PostgreSQL 会修改开源许可证吗？](/pg/pg-license/)
-- [RDS 阉掉了 PostgreSQL 的灵魂](/cloud/rds-castrates-pg/)
-- [DBA 会被云淘汰吗？](/cloud/dba-vs-rds/)
 
 ---
 

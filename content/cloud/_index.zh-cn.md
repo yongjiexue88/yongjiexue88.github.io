@@ -13,11 +13,8 @@ aliases: ["/tags/云计算泥石流/"]
 comments: false
 profile:
   avatar: img/hero-cloud.jpg
-  headline: 薛永杰 @yongjiexue88 / Pigsty
+  headline: 云计算
 cascade:
   type: blog
   page_width: normal
-  # Posts without explicit authors use the Yongjie Xue profile.
-  # Guest-author identifiers remain explicit in article front matter.
-  authors: [yongjie]
 ---

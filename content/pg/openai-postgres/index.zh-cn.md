@@ -12,7 +12,7 @@ aliases: ["/ai/openai-postgres/", "/db/openai-postgres/"]
 
 OpenAI 官方博客昨天发了一篇文章，专门讲他们如何把 PostgreSQL 伸缩到今天这个量级：
 一套单主 + 近 50 个只读副本的超大 PostgreSQL 集群，支撑其核心产品（ChatGPT 与 OpenAI API）的全球访问流量。
-文章的核心内容，其实在 2025 年 PGCon.Dev 上就已对外分享过 (《[OpenAI：将 PostgreSQL 伸缩至新阶段](/db/openai-pg/)》)，
+文章的核心内容，其实在 2025 年 PGCon.Dev 上就已对外分享过 (《OpenAI：将 PostgreSQL 伸缩至新阶段》)，
 但这次算是 OpenAI 官方背书，传播面与影响力都明显要大多了。
 
 [![openai-blog.webp](openai-blog.webp)](https://openai.com/index/scaling-postgresql/)
@@ -290,7 +290,7 @@ pgbouncer 的事务连接池有化腐朽为神奇的效果。举个例子，大�
 
 ### 总结
 
-我的朋友 瑞典马工 在 《[MySQL 赢了 2000s，PostgreSQL 赢得 2020s，谁将赢得 AI 时代？——数据库选型的三要素分析法](/ai/db-choice-ai-era/)》 里面提出了一个观点，
+我的朋友 瑞典马工 在 《MySQL 赢了 2000s，PostgreSQL 赢得 2020s，谁将赢得 AI 时代？——数据库选型的三要素分析法》 里面提出了一个观点，
 决定数据库胜负的三要素是：**技术套件**，**标案案例**，**生态系统**。在生态系统上，PostgreSQL 已经毫无疑问主宰了数据库世界，而 OpenAI 则提供了一个 **标杆案例**。
 而老冯这几年做的事情，就是把生产级 PostgreSQL 的技术套件做成可复制、可交付、可普及的 **技术套件**：把“能跑到 OpenAI 这个量级之前都用得上”的能力，尽量下放给更多团队。
 

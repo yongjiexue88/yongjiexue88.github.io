@@ -14,11 +14,8 @@ aliases:
   - /journal/
   - /notes/
 profile:
-  headline: 薛永杰 @yongjiexue88 / 人生旅途
+  headline: 随笔与研读
 cascade:
   type: blog
   page_width: normal
-  # Posts without explicit authors use the Yongjie Xue profile.
-  # Guest-author identifiers remain explicit in article front matter.
-  authors: [yongjie]
 ---
